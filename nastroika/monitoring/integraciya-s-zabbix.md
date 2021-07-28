@@ -2,10 +2,10 @@
 title: Интеграция с Zabbix
 description: null
 published: true
-date: 2021-06-07T11:26:30.940Z
+date: '2021-06-07T11:26:30.940Z'
 tags: zabbix
 editor: markdown
-dateCreated: 2021-04-02T07:22:56.600Z
+dateCreated: '2021-04-02T07:22:56.600Z'
 ---
 
 # Интеграция-с-Zabbix

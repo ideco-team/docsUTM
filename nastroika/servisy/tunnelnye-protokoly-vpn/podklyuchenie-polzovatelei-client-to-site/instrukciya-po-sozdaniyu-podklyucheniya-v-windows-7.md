@@ -2,10 +2,10 @@
 title: Инструкция по созданию подключения в Windows 7
 description: null
 published: true
-date: 2021-06-07T10:20:09.603Z
+date: '2021-06-07T10:20:09.603Z'
 tags: null
 editor: markdown
-dateCreated: 2021-04-02T07:28:00.411Z
+dateCreated: '2021-04-02T07:28:00.411Z'
 ---
 
 # Инструкция-по-созданию-подключения-в-Windows-7

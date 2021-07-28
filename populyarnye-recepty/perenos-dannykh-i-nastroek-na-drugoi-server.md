@@ -2,10 +2,10 @@
 title: Перенос данных и настроек на другой сервер
 description: null
 published: true
-date: 2021-06-01T11:18:22.525Z
+date: '2021-06-01T11:18:22.525Z'
 tags: null
 editor: markdown
-dateCreated: 2021-04-02T07:21:27.745Z
+dateCreated: '2021-04-02T07:21:27.745Z'
 ---
 
 # Перенос-данных-и-настроек-на-другой-сервер

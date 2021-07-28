@@ -10,7 +10,13 @@ dateCreated: '2021-04-02T07:21:55.202Z'
 
 # Особенности настроек гипервизоров
 
-> **Обязательные условия для работы Ideco UTM:** 1.Поддержка UEFI 2.Выключить режим Legacy загрузки \(он также может называться CSM \(Compatibility Support Module\) режим\) 3.Выключить опцию Secure Boot в UEFI {.is-info}
+{% hint style="info" %}
+**Обязательные условия для работы Ideco UTM:** 
+
+1. Поддержка UEFI;
+2. Выключить режим Legacy загрузки \(он также может называться CSM \(Compatibility Support Module\) режим\);
+3. Выключить опцию Secure Boot в UEFI.
+{% endhint %}
 
 Ideco UTM поддерживает работу на следующих гипервизорах:
 
@@ -63,5 +69,7 @@ Ideco UTM поддерживает работу на следующих гипе
 
    ![create-vm1.png](.gitbook/assets/create-vm1.png)
 
-> Если пункта **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd** нет в списке, то нужно доустановить пакет ovmf. В Ubuntu этот пакет устанавливается командой **sudo apt install ovmf**. {.is-info}
+{% hint style="info" %}
+Если пункта **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd** нет в списке, то нужно доустановить пакет ovmf. В Ubuntu этот пакет устанавливается командой **sudo apt install ovmf**. 
+{% endhint %}
 
