@@ -57,9 +57,9 @@
   * [Ограничение скорости](pravila-dostupa/ogranichenie-skorosti.md)
   * [Администраторы](pravila-dostupa/administratory.md)
   * [Пользовательские квоты](pravila-dostupa/polzovatelskie-kvoty.md)
-  * [Предотвращение-вторжений](pravila-dostupa/predotvrashenie-vtorzhenii.md)
+  * [Предотвращение вторжений](pravila-dostupa/predotvrashenie-vtorzhenii.md)
   * [Объекты](pravila-dostupa/obekty.md)
-  * [Защита-от-bruteforce-атак](pravila-dostupa/zashita-ot-bruteforce-atak.md)
+  * [Защита от bruteforce-атак](pravila-dostupa/zashita-ot-bruteforce-atak.md)
 * [Сервисы](servisy/README.md)
   * [Туннельные-протоколы-VPN](servisy/tunnelnye-protokoly-vpn/README.md)
     * [Подключение-пользователей-\(client-to-site\)](servisy/tunnelnye-protokoly-vpn/podklyuchenie-polzovatelei-client-to-site/README.md)
@@ -127,13 +127,13 @@
 
 ## Обслуживание <a id="obsluzhivanie-1"></a>
 
-* [Управление-лицензиями](obsluzhivanie-1/upravlenie-licenziyami.md)
-* [Обновление-сервера](obsluzhivanie-1/obnovlenie-servera.md)
+* [Управление лицензиями](obsluzhivanie-1/upravlenie-licenziyami.md)
+* [Обновление сервера](obsluzhivanie-1/obnovlenie-servera.md)
 * [Видеоинструкция регистрации сервера Ideco UTM](obsluzhivanie-1/registraciya-servera.md)
-* [Резервное-копирование-и-восстановление-данных](obsluzhivanie-1/rezervnoe-kopirovanie-i-vosstanovlenie-dannykh.md)
-* [Режим-удаленного-помощника](obsluzhivanie-1/rezhim-udalennogo-pomoshnika.md)
-* [Удаленный-доступ-для-управления-сервером](obsluzhivanie-1/udalennyi-dostup-dlya-upravleniya-serverom.md)
-* [Личный-кабинет](obsluzhivanie-1/lichnyi-kabinet.md)
+* [Резервное копирование и восстановление данных](obsluzhivanie-1/rezervnoe-kopirovanie-i-vosstanovlenie-dannykh.md)
+* [Режим удаленного помощника](obsluzhivanie-1/rezhim-udalennogo-pomoshnika.md)
+* [Удаленный доступ для управления сервером](obsluzhivanie-1/udalennyi-dostup-dlya-upravleniya-serverom.md)
+* [Личный кабинет](obsluzhivanie-1/lichnyi-kabinet.md)
 
 ## Популярные рецепты <a id="populyarnye-recepty-1"></a>
 
