@@ -2,10 +2,10 @@
 title: Общая-информация
 description: null
 published: true
-date: 2021-06-15T12:06:12.378Z
+date: '2021-06-15T12:06:12.378Z'
 tags: post
 editor: markdown
-dateCreated: 2021-04-02T07:23:52.770Z
+dateCreated: '2021-04-02T07:23:52.770Z'
 ---
 
 # Общая-информация
