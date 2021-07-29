@@ -137,15 +137,15 @@
 
 ---
 
-* [Популярные-рецепты](populyarnye-recepty/README.md)
-  * [Доступ-в-удаленные-сети-через-роутер-в-локальной-сети](populyarnye-recepty/dostup-v-udalennye-seti-cherez-router-v-lokalnoi-seti.md)
-  * [Что-делать-если-ваш-IP-попал-в-черные-списки-DNSBL](populyarnye-recepty/chto-delat-esli-vash-ip-popal-v-chernye-spiski-dnsbl.md)
-  * [Что-делать-если-не-работает-Интернет](populyarnye-recepty/chto-delat-esli-ne-rabotaet-internet.md)
+* [Популярные рецепты](populyarnye-recepty/README.md)
+  * [Доступ в удаленные сети через роутер в локальной сети](populyarnye-recepty/dostup-v-udalennye-seti-cherez-router-v-lokalnoi-seti.md)
+  * [Что делать если ваш IP попал в черные списки DNSBL](populyarnye-recepty/chto-delat-esli-vash-ip-popal-v-chernye-spiski-dnsbl.md)
+  * [Что делать если не работает Интернет](populyarnye-recepty/chto-delat-esli-ne-rabotaet-internet.md)
   * [Как восстановить доступ к Ideco UTM](populyarnye-recepty/vosstanovlenie-parolya-administratora.md)
-  * [Проверка-настроек-фильтрации-с-помощью-security-ideco](populyarnye-recepty/proverka-nastroek-filtracii-s-pomoshyu-security-ideco.md)
-  * [Выбор-аппаратной-платформы-для-Ideco-UTM](populyarnye-recepty/vybor-apparatnoi-platformy-dlya-ideco-utm.md)
-  * [Поддержка-устаревших-алгоритмов-шифрования](populyarnye-recepty/podderzhka-ustarevshikh-algoritmov-shifrovaniya.md)
-  * [Настройка-программы-Proxifier-для-прямых-подключений-к-прокси-серверу](populyarnye-recepty/nastroika-programmy-proxifier-dlya-pryamykh-podklyuchenii-k-proksi-serveru.md)
-  * [Блокировка-популярных-ресурсов](populyarnye-recepty/blokirovka-populyarnykh-resursov.md)
-  * [Перенос-данных-и-настроек-на-другой-сервер](populyarnye-recepty/perenos-dannykh-i-nastroek-na-drugoi-server.md)
+  * [Проверка настроек фильтрации с помощью security ideco](populyarnye-recepty/proverka-nastroek-filtracii-s-pomoshyu-security-ideco.md)
+  * [Выбор аппаратной платформы для Ideco UTM](populyarnye-recepty/vybor-apparatnoi-platformy-dlya-ideco-utm.md)
+  * [Поддержка устаревших алгоритмов шифрования](populyarnye-recepty/podderzhka-ustarevshikh-algoritmov-shifrovaniya.md)
+  * [Настройка программы Proxifier для прямых подключений к прокси серверу](populyarnye-recepty/nastroika-programmy-proxifier-dlya-pryamykh-podklyuchenii-k-proksi-serveru.md)
+  * [Блокировка популярных ресурсов](populyarnye-recepty/blokirovka-populyarnykh-resursov.md)
+  * [Перенос данных и настроек на другой сервер](populyarnye-recepty/perenos-dannykh-i-nastroek-na-drugoi-server.md)
 
