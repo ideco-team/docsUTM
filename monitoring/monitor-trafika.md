@@ -21,11 +21,11 @@ dateCreated: '2021-07-06T07:11:21.613Z'
 
 Пример окна вкладки мониторинга трафика по узлам локальной сети представлен на скриншоте ниже:
 
-![monitor\_local\_network.png](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/monitor_local_network.png)
+![](../.gitbook/assets/monitor_local_network.png)
 
 Например, если пользователь не загружает канал трафиком, но в таблице присутствует большое количество пакетов данных, то на вкладке **По протоколам** можно выявить приложение с подозрительной активностью.
 
 Пример окна вкладки мониторинга трафика по протоколам представлен на скриншоте ниже:
 
-![monitor\_prot.png](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/monitor_prot.png)
+![](../.gitbook/assets/monitor_prot.png)
 
