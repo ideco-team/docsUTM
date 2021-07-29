@@ -8,40 +8,46 @@ editor: markdown
 dateCreated: '2021-07-19T10:57:00.757Z'
 ---
 
-# Ideco-VPN
+# Ideco VPN
 
 Настройка VPN-подключения к Ideco UTM включает в себя следующие действия:
 
-1. Убедитесь, что на Вашей ОС Windows установлена версия .NET Framework версии 4.8. В ином случае программа Ideco VPN может запросить установить более новую версию .NET. Для этого перейдите в **Панель управления -&gt; Установка и удаление программ -&gt; Включение и отключение компонентов Windows**. ![aps-net.png](.gitbook/assets/aps-net.png)
+1. Убедитесь, что на Вашей ОС Windows установлена версия .NET Framework версии 4.8. В ином случае программа Ideco VPN может запросить установить более новую версию .NET. Для этого перейдите в **Панель управления -&gt; Установка и удаление программ -&gt; Включение и отключение компонентов Windows**.
+
+![](.gitbook/assets/aps-net.png)
+
 2. Настроить правило [обратного прокси](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Сервисы/Обратный-прокси/README.md) в веб-интерфейсе Ideco UTM.
-3. В поле **Запрашиваемый адрес в Интернете** введите домен сервера Ideco UTM в формате: `домен/wireguard`.
-4. В поле **Адрес в локальной сети** укажите URL `https://127.0.0.1:8443/wireguard`.
+
+* В поле **Запрашиваемый адрес в Интернете** введите домен сервера Ideco UTM в формате: `домен/wireguard`.
+* В поле **Адрес в локальной сети** укажите URL `https://127.0.0.1:8443/wireguard`.
 
 Пример правила представлен на скриншоте ниже:
 
 ![unknown.png](.gitbook/assets/unknown.png)
 
-1. Скачать и установить программу Ideco VPN.
+3. Скачать и установить программу Ideco VPN.
 
-> Установить программу Ideco VPN можно только на ОС семейства Windows начиная с 8 версии и новее. {.is-warning}
+{% hint style="warning" %}
+Установить программу Ideco VPN можно только на ОС семейства Windows начиная с 8 версии и новее. 
+{% endhint %}
 
 Скачать Ideco VPN агент можно несколькими способами:
 
 * В веб-интерфейсе Ideco UTM перейдите в раздел **Пользователи -&gt; Авторизация -&gt; VPN-подключение** и перейдите по ссылке **Скачать Ideco VPN клиент для Windows**.
 
-  ![download-vpn-agent.png](.gitbook/assets/download-vpn-agent.png)
+![](.gitbook/assets/download-vpn-agent.png)
 
 * В личном кабинете пользователя перейдите по ссылке **Скачать Ideco VPN клиент для Windows**.
 
-  ![lk-download-vpn-agent.png](.gitbook/assets/lk-download-vpn-agent.png)
+![](.gitbook/assets/lk-download-vpn-agent.png)
 
 После скачивания установите и запустите программу двойным нажатием левой кнопкой мыши на иконку программы.
 
-![vpn\_on\_desktop.png](.gitbook/assets/vpn_on_desktop.png)
+![](.gitbook/assets/vpn_on_desktop.png)
 
 Откроется окно, в котором вам необходимо заполнить поля **Сервер**, **Логин** и **Пароль**.
 
-![vpn-connect.png](.gitbook/assets/vpn-connect.png)
+![](.gitbook/assets/vpn-connect.png)
 
 * В поле **Сервер** введите доменное имя вашего сервера.
 * В полях **Логин** и **Пароль** введите данные от учетной записи, авторизованной на Ideco UTM.

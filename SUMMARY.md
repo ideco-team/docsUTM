@@ -116,12 +116,12 @@
 * [Публикация-ресурсов](publikaciya-resursov/README.md)
   * [Доступ до внешних ресурсов без авторизации](publikaciya-resursov/dostup-do-vneshnikh-resursov-bez-avtorizacii.md)
   * [Доступ из внешней сети без NAT](publikaciya-resursov/dostup-iz-vneshnei-seti-bez-nat.md)
-  * [Публикация-веб-приложений-\(обратный-прокси-сервер\)](publikaciya-resursov/publikaciya-veb-prilozhenii-obratnyi-proksi-server.md)
-  * [Настройка-публичного-IP-адреса-на-компьютере-в-локальной-сети](publikaciya-resursov/nastroika-publichnogo-ip-adresa-na-kompyutere-v-lokalnoi-seti.md)
-  * [Портмаппинг-\(проброс-портов,-DNAT\)](publikaciya-resursov/portmapping-probros-portov-dnat.md)
+  * [Публикация веб-приложений \(обратный прокси-сервер\)](publikaciya-resursov/publikaciya-veb-prilozhenii-obratnyi-proksi-server.md)
+  * [Настройка публичного IP-адреса на компьютере в локальной сети](publikaciya-resursov/nastroika-publichnogo-ip-adresa-na-kompyutere-v-lokalnoi-seti.md)
+  * [Портмаппинг \(проброс портов, DNAT\)](publikaciya-resursov/portmapping-probros-portov-dnat.md)
 * [Терминал](terminal.md)
-* [Ideco-VPN](ideco-vpn.md)
-* [Настройка Ideco UTM для фильтрации трафика с помощью облачного сервиса SkyDNS](integraciya-utm-i-skydns.md)
+* [Ideco VPN](ideco-vpn.md)
+* [Интеграция UTM и SkyDNS](integraciya-utm-i-skydns.md)
 
 ## Обслуживание <a id="obsluzhivanie-1"></a>
 
