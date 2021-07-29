@@ -15,7 +15,7 @@ dateCreated: '2021-04-02T07:27:01.956Z'
 Для этого нужно настроить скрипты, исполняемые при входе пользователей в систему [logon](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908%28v=ws.11%29?redirectedfrom=MSDN) и выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583%28v=ws.11%29?redirectedfrom=MSDN). Это можно сделать, например, с помощью групповых политик домена \(GPO\).
 
 {% hint style="info" %}
-Для работы данных скриптов необходимо выполнить все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Управление-пользователями/Интеграция-с-Active-Directory/Авторизация-пользователей-Active-Directory/README.md).
+Для работы данных скриптов необходимо выполнить все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](avtorizaciya-polzovatelei-active-directory.md).
 {% endhint %}
 
 ## Авторизация пользователя

@@ -30,7 +30,7 @@ IP-адрес пользователю назначается автоматич
 
 ![](../../.gitbook/assets/fixip.png)
 
-При подключении из сети интернет рекомендуем использовать IPSec IKEv2, L2TP IPSec или SSTP для более надежного шифрования трафика.
+При подключении из сети интернет рекомендуем использовать [IPSec IKEv2](../../servisy/tunnelnye-protokoly-vpn/podklyuchenie-polzovatelei-client-to-site/ipsec-ikev2.md), [L2TP IPSec](../../servisy/tunnelnye-protokoly-vpn/podklyuchenie-polzovatelei-client-to-site/l2tp-ipsec.md) или [SSTP](../../servisy/tunnelnye-protokoly-vpn/podklyuchenie-polzovatelei-client-to-site/sstp.md) для более надежного шифрования трафика.
 
-Смотрите также инструкцию по настройке PPTP для подключения из сети интернет.
+Смотрите также инструкцию по настройке [PPTP](../../servisy/tunnelnye-protokoly-vpn/podklyuchenie-polzovatelei-client-to-site/pptp.md) для подключения из сети Интернет.
 

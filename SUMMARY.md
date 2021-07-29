@@ -113,7 +113,7 @@
   * [Схема фильтрации почтового трафика](pochtovyi-server/skhema-filtracii-pochtovogo-trafika.md)
   * [Переадресация почты](pochtovyi-server/pereadresaciya-pochty.md)
   * [Настройка домена у регистратора/держателя зоны](pochtovyi-server/podgotovka-k-nastroike-pochtovogo-servera.md)
-* [Публикация-ресурсов](publikaciya-resursov/README.md)
+* [Публикация ресурсов](publikaciya-resursov/README.md)
   * [Доступ до внешних ресурсов без авторизации](publikaciya-resursov/dostup-do-vneshnikh-resursov-bez-avtorizacii.md)
   * [Доступ из внешней сети без NAT](publikaciya-resursov/dostup-iz-vneshnei-seti-bez-nat.md)
   * [Публикация веб-приложений \(обратный прокси-сервер\)](publikaciya-resursov/publikaciya-veb-prilozhenii-obratnyi-proksi-server.md)
@@ -127,7 +127,7 @@
 
 * [Управление лицензиями](obsluzhivanie-1/upravlenie-licenziyami.md)
 * [Обновление сервера](obsluzhivanie-1/obnovlenie-servera.md)
-* [Регистрации сервера Ideco UTM](obsluzhivanie-1/registraciya-servera.md)
+* [Регистрация сервера Ideco UTM](obsluzhivanie-1/registraciya-servera.md)
 * [Резервное копирование и восстановление данных](obsluzhivanie-1/rezervnoe-kopirovanie-i-vosstanovlenie-dannykh.md)
 * [Режим удаленного помощника](obsluzhivanie-1/rezhim-udalennogo-pomoshnika.md)
 * [Удаленный доступ для управления сервером](obsluzhivanie-1/udalennyi-dostup-dlya-upravleniya-serverom.md)

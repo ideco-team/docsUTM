@@ -44,7 +44,7 @@ dateCreated: '2021-04-02T07:24:52.712Z'
 
 Для примера разберем настройку файрвола разрешающую хосту 10.0.0.1 доступ к локальной сети.
 
-1. В консоли UTM \([доступ по SSH](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Правила-доступа/Администраторы/README.md)\) ввести команду:
+1. В консоли UTM \([доступ по SSH](../pravila-dostupa/administratory.md)\) ввести команду:
 
    `mcedit /usr/bin/ideco-firewall`
 

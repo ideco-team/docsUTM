@@ -23,6 +23,6 @@ dateCreated: '2021-04-02T07:25:41.698Z'
 | Состояние учетной записи пользователя | Описание |
 | :---: | :--- |
 | ![mdiaccountgreen.svg](../.gitbook/assets/mdiaccountgreen.svg) | В данный момент времени пользователь прошел процедуру авторизации, и ему был предоставлен доступ в Интернет. |
-| ![mdiaccountyellow.svg](../.gitbook/assets/mdiaccountyellow.svg) | В [настройках пользователей](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Управление-пользователями/Настройка-пользователей/README.md)  выбран запрет на авторизацию. |
+| ![mdiaccountyellow.svg](../.gitbook/assets/mdiaccountyellow.svg) | В [настройках пользователей](nastroika-polzovatelei.md)  выбран запрет на авторизацию. |
 | ![mdiaccount.svg](../.gitbook/assets/mdiaccount.svg) | В данный момент времени пользователь не прошел процедуру авторизации, и ему не был предоставлен доступ в Интернет. |
 

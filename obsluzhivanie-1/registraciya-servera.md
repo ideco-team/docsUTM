@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: '2021-04-02T07:20:25.548Z'
 ---
 
-# Регистрации сервера Ideco UTM
+# Регистрация сервера Ideco UTM
 
 {% hint style="info" %}
 Для активации лицензии необходима обязательная регистрация сервера в [личном кабинете](https://my.ideco.ru/#/login/?next=/utm/license/).
