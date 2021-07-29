@@ -127,7 +127,7 @@
 
 * [Управление лицензиями](obsluzhivanie-1/upravlenie-licenziyami.md)
 * [Обновление сервера](obsluzhivanie-1/obnovlenie-servera.md)
-* [Видеоинструкция регистрации сервера Ideco UTM](obsluzhivanie-1/registraciya-servera.md)
+* [Регистрации сервера Ideco UTM](obsluzhivanie-1/registraciya-servera.md)
 * [Резервное копирование и восстановление данных](obsluzhivanie-1/rezervnoe-kopirovanie-i-vosstanovlenie-dannykh.md)
 * [Режим удаленного помощника](obsluzhivanie-1/rezhim-udalennogo-pomoshnika.md)
 * [Удаленный доступ для управления сервером](obsluzhivanie-1/udalennyi-dostup-dlya-upravleniya-serverom.md)

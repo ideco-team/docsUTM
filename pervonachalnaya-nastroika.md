@@ -13,7 +13,7 @@ dateCreated: '2021-04-02T07:21:59.755Z'
 ## Подключение к веб-интерфейсу Ideco UTM
 
 {% hint style="info" %}
-Если вы еще не установили Ideco UTM, перейдите в раздел [Процесс установки](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Установка/Процесс-установки/README.md).
+Если вы еще не установили Ideco UTM, перейдите в раздел [Процесс установки](process-ustanovki.md).
 {% endhint %}
 
 После успешной установки Ideco UTM можно переходить к его первичной настройке.
@@ -30,7 +30,7 @@ dateCreated: '2021-04-02T07:21:59.755Z'
 
 ![](.gitbook/assets/sert_1.png)
 
-После того как вы перешли на сайт по IP-адресу, в окне браузера должно появиться окно авторизации в web-интерфейс Ideco UTM. Введите логин и пароль от учетной записи администратора, созданной на этапе установки Ideco UTM.
+После того как вы перешли на сайт по IP-адресу, в окне браузера должно появиться окно авторизации в веб-интерфейс Ideco UTM. Введите логин и пароль от учетной записи администратора, созданной на этапе установки Ideco UTM.
 
 ![](.gitbook/assets/вход.png)
 
@@ -92,14 +92,14 @@ dateCreated: '2021-04-02T07:21:59.755Z'
 
 Если ваш провайдер использует другой тип подключения, то ознакомиться с остальными инструкциями по настройке вы можете по следующим ссылкам:
 
-* [Подключение по протоколу PPPoE ](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Подключение-к-провайдеру/Подключение-по-PPPoE/README.md) 
-* [Подключение по технологии VPN \(с использованием протокола PPTP\)](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Подключение-к-провайдеру/Подключение-по-PPTP/README.md) 
-* [Подключение по L2TP](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Подключение-к-провайдеру/Подключение-по-L2TP/README.md)
-* [Подключение по Ethernet](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Подключение-к-провайдеру/Подключение-по-Ethernet/README.md)
-* [Подключение по 3G и 4G](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Подключение-к-провайдеру/Подключение-по-3G-и-4G/README.md)
-* [Одновременное подключение к нескольким провайдерам](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Настройка/Подключение-к-провайдеру/Одновременное-подключение-к-нескольким-провайдерам/README.md)
+* [Подключение по протоколу PPPoE ](podklyuchenie-k-provaideru/podklyuchenie-po-pppoe.md) 
+* [Подключение по технологии VPN \(с использованием протокола PPTP\)](podklyuchenie-k-provaideru/podklyuchenie-po-pptp.md) 
+* [Подключение по L2TP](podklyuchenie-k-provaideru/podklyuchenie-po-l2tp.md)
+* [Подключение по Ethernet](podklyuchenie-k-provaideru/podklyuchenie-po-ethernet.md)
+* [Подключение по 3G и 4G](podklyuchenie-k-provaideru/podklyuchenie-po-3g-i-4g.md)
+* [Одновременное подключение к нескольким провайдерам](podklyuchenie-k-provaideru/odnovremennoe-podklyuchenie-k-neskolkim-provaideram.md)
 
 {% hint style="info" %}
-После подключения к Интернету требуется [зарегистрировать сервер](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/Обслуживание/Регистрация-сервера/README.md). 
+После подключения к Интернету требуется [зарегистрировать сервер](obsluzhivanie-1/registraciya-servera.md). 
 {% endhint %}
 
