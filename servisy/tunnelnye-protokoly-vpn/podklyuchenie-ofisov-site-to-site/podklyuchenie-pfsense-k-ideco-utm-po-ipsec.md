@@ -1,6 +1,8 @@
 ---
 title: Подключение pfSense к Ideco UTM по IPsec
-description: null
+description: >-
+  По шагам данной статьи  можно объединить сети pfSense и Ideco UTM по IPsec с
+  использованием PSK.
 published: true
 date: '2021-06-02T10:39:48.651Z'
 tags: ipsec
@@ -8,11 +10,11 @@ editor: markdown
 dateCreated: '2021-04-02T07:27:28.235Z'
 ---
 
-# Подключение-pfSense-к-Ideco-UTM-по-IPsec
+# Подключение pfSense к Ideco UTM по IPsec
 
-По шагам ниже можно объединить сети pfSense и Ideco UTM по IPsec с использованием PSK.
-
-> Объединяемые локальные сети не должны пересекаться! {.is-info}
+{% hint style="info" %}
+Объединяемые локальные сети не должны пересекаться! 
+{% endhint %}
 
 ## Настройка Ideco UTM
 
@@ -33,31 +35,42 @@ dateCreated: '2021-04-02T07:27:28.235Z'
 ## Настройка pfSense
 
 1. В веб-интерфейсе pfSense перейдите на вкладку VPN – IPsec – Tunnels.
+
 2. Добавьте новое подключение:
-   * **Key Exchange version** – IKEv2;
-   * **Internet Protocol** – IPv4;
-   * **Interface** – выберите внешний интерфейс pfSense, который будет использоваться для подключения к Ideco UTM\);
-   * **Remote Gateway** – IP внешнего интерфейса Ideco UTM;
-   * **Description** – любое;
-   * **Authentication Method** – Mutual PSK;
-   * **My identifier и Peer identifier** – сюда вставьте значение строки rightid на Ideco UTM \(см. шаг 5 в настройке Ideco UTM\);
-   * **Pre-Shared Key** – вставьте PSK-ключ, который ранее прописывали на Ideco UTM;
-   * **Encryption Algorithm** – представлены на скриншоте ниже:
 
-     ![encryption.png](../../../.gitbook/assets/encryption.png)
+* **Key Exchange version** – IKEv2;
+* **Internet Protocol** – IPv4;
+* **Interface** – выберите внешний интерфейс pfSense, который будет использоваться для подключения к Ideco UTM\);
+* **Remote Gateway** – IP внешнего интерфейса Ideco UTM;
+* **Description** – любое;
+* **Authentication Method** – Mutual PSK;
+* **My identifier и Peer identifier** – сюда вставьте значение строки rightid на Ideco UTM \(см. шаг 5 в настройке Ideco UTM\);
+* **Pre-Shared Key** – вставьте PSK-ключ, который ранее прописывали на Ideco UTM;
+* **Encryption Algorithm** – представлены на скриншоте ниже:
 
-   * Все остальные значения можно оставить по умолчанию.
+![](../../../.gitbook/assets/encryption.png)
+
+* Все остальные значения можно оставить по умолчанию.
+
 3. Сохраните подключение.
+
 4. Нажмите на кнопку **Show Phase 2 Entries** и добавьте новую Phase 2.
+
 5. Здесь укажите:
-   * **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM;
-   * **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense;
-   * Все остальные значения можно оставить по умолчанию.
+
+* **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM;
+* **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense;
+* Все остальные значения можно оставить по умолчанию.
+
 6. Сохраняем подключение.
+
 7. Затем нужно разрешить хождение трафика между локальными сетями pfSense и Ideco UTM в файрволе pfSense \(переходим на вкладку **Firewall -&gt; Rules -&gt; IPsec** и создаём два правила, разрешающее хождение трафика между локальными сетями Ideco UTM и pfSense\).
+
 8. Также обратите внимание на раздел фарйвола WAN – по умолчанию в нём запрещён входящий трафик из "серых" подсетей, поэтому необходимо снять это ограничение.
+
 9. Теперь переходим на вкладку **Status -&gt; IPsec** \(там должно появится созданное нами подключение\), нажимаем на кнопку Connect VPN.
+
 10. Настройка завершена, соединение должно успешно установиться.
 
-Если соединение установить не удалось, а настройки файрвола pfSense сделаны верно, следует пересоздать соединение на UTM, указав в поле "Ключ идентификации" то значение, которое мы указали в My identifier и Peer identifier у pfSense, и попробовать подключиться ещё раз. На стороне pfSense никаких изменений вносить не требуется.
+Если соединение установить не удалось, а настройки файрвола pfSense сделаны верно, следует пересоздать соединение на UTM, указав в поле "Ключ идентификации", то значение, которое мы указали в My identifier и Peer identifier у pfSense, и попробовать подключиться ещё раз. На стороне pfSense никаких изменений вносить не требуется.
 
