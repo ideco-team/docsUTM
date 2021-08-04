@@ -25,12 +25,12 @@
 ---
 
 * [Подключение к провайдеру](podklyuchenie_k_provaideru/README.md)
-  * [Одновременное подключение к нескольким провайдерам](podklyuchenie_k_provaideru/odnovremennoe_podklyuchenie_k_neskolkim_provaideram.md)
-  * [Подключение по 3G, 4G \(LTE\)](podklyuchenie_k_provaideru/podklyuchenie_po_3g_4g_lte_.md)
+  * [Подключение по Ethernet](podklyuchenie_k_provaideru/podklyuchenie_po_ethernet.md)
+  * [Подключение по PPPoE](podklyuchenie_k_provaideru/podklyuchenie_po_pppoe.md)
   * [Подключение по PPTP \(VPN\)](podklyuchenie_k_provaideru/podklyuchenie_po_pptp_vpn_.md)
   * [Подключение по L2TP \(VPN\)](podklyuchenie_k_provaideru/podklyuchenie_po_l2tp_vpn_.md)
-  * [Подключение по PPPoE](podklyuchenie_k_provaideru/podklyuchenie_po_pppoe.md)
-  * [Подключение по Ethernet](podklyuchenie_k_provaideru/podklyuchenie_po_ethernet.md)
+  * [Подключение по 3G, 4G \(LTE\)](podklyuchenie_k_provaideru/podklyuchenie_po_3g_4g_lte_.md)
+  * [Одновременное подключение к нескольким провайдерам](podklyuchenie_k_provaideru/odnovremennoe_podklyuchenie_k_neskolkim_provaideram.md)
 * [Управление пользователями](upravlenie_polzovatelyami/README.md)
   * [Wi-Fi сети](upravlenie_polzovatelyami/wi-fi_seti.md)
   * [Пользователи\_терминального\_сервера](upravlenie_polzovatelyami/polzovateli_terminalnogo_servera.md)
