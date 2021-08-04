@@ -13,11 +13,10 @@
 
 ---
 
-* [Установка](ustanovka.md)
+* [Создание загрузочного USB flash диска](sozdanie_zagruzochnogo_usb_flash_diska.md)
+* [Особенности настроек гипервизоров](osobennosti_nastroek_gipervizorov.md)
 * [Системные требования](sistemnye_trebovaniya.md)
 * [Подготовка к установке](podgotovka_k_ustanovke.md)
-* [Особенности настроек гипервизоров](osobennosti_nastroek_gipervizorov.md)
-* [Создание загрузочного USB flash диска](sozdanie_zagruzochnogo_usb_flash_diska.md)
 * [Процесс установки](process_ustanovki.md)
 * [Первоначальная настройка](pervonachalnaya_nastroika.md)
 
@@ -25,7 +24,6 @@
 
 ---
 
-* [Настройка](nastroika.md)
 * [Подключение к провайдеру](podklyuchenie_k_provaideru/README.md)
   * [Одновременное подключение к нескольким провайдерам](podklyuchenie_k_provaideru/odnovremennoe_podklyuchenie_k_neskolkim_provaideram.md)
   * [Подключение по 3G, 4G \(LTE\)](podklyuchenie_k_provaideru/podklyuchenie_po_3g_4g_lte_.md)

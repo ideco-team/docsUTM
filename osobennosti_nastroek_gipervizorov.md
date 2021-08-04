@@ -36,11 +36,9 @@ Ideco UTM поддерживает работу на следующих гипе
 ### Загрузка с установочного носителя
 
 Иногда xenserver не может понять что нужно загружаться с ISO-образа.  
-Выполните xe vm-list. Эта команда покажет список виртуальных машин на xenserver.  
+Выполните команду `xe vm-list`. Она покажет список виртуальных машин на xenserver.  
 Найдите виртуальную машину с UTM и запомните ее UUID.  
-Затем выполните: xe vm-param-set uuid= HVM-boot-policy=BIOS\ order HVM-boot-params:order=dcПосле чего загрузка с установочного носителя должна пойти.
+Затем выполните: `xe vm-param-set uuid= HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc`
 
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[hyper-v.jpg\]\(attachments/4982707/4982714.jpg\) \(image/jpeg\)
+После чего загрузка с установочного носителя должна начаться.
 
