@@ -1,0 +1,59 @@
+# Маршрутизация
+
+## Общие принципы маршрутизации
+
+Для перенаправления сетевого трафика, проходящего через Ideco UTM, используется система маршрутизации. Она имеет ряд преимуществ по сравнению с некоторыми другими традиционными системами маршрутизации. Среди них:
+
+* Возможность указывать сеть источника прямо в маршруте.
+
+Создавать и редактировать маршруты можно через веб-интерфейс Ideco UTM в разделе **«Сервисы ➔ Маршрутизация**». Для добавления нового маршрута нажмите кнопку **\*\*«**Добавить»\*\*.  
+На странице откроется конструктор маршрута:
+
+![](.gitbook/assets/11436066%20%281%29.jpg)
+
+Опишем назначение каждой опции:
+
+* Адрес сети источника - Адрес источника с маской, маска может быть
+
+  прописана как в классическом виде, так и в виде количества бит.
+
+* Адрес сети назначения - Адрес назначения с маской. Маска может быть
+
+  прописана как в классическом виде, так и в виде количества бит. 
+
+* Шлюз/интерфейс - Куда перенаправить трафик.
+
+ Если маршрутизация осуществляется на Ethernet интерфейс, то всегда указывается адрес шлюза этого Ethernet-интерфейса. Для виртуальных интерфейсов \(РРТР, РРРоЕ, OpenVPN\) всегда указывается интерфейс.
+
+&lt;/div&gt;
+
+После сохранения маршрута страница выглядит так:
+
+![](.gitbook/assets/11436067.jpg)
+
+Для применения параметров маршрутизации требуется нажать на ссылку **«Применить»** в верхней части страницы .  
+Это приведёт к кратковременной разавторизации всех пользователей и быстрому перезапуску сетевой подсистемы для создания нужных записей в системной таблице маршрутизации.  
+****
+
+## Примеры популярных маршрутов:
+
+ При маршрутизации трафика на внешний интерфейс важно понимать, что чаще всего одного маршрута недостаточно, понадобится также переопределить адрес NAT, иначе такой маршрут просто не будет работать. NAT можно переопределить двумя способами: - через системный файрвол, - через профили пользователя.
+
+&lt;/div&gt;
+
+**Задача**: любой трафик в подсеть 150.1.0.0/16 направлять на шлюз 67.12.8.9:
+
+![](.gitbook/assets/11436069.jpg)
+
+**Задача**: любой трафик из подсети 192.168.50.0/24 направлять на шлюз 66.77.88.1:
+
+![](.gitbook/assets/11436066.jpg)
+
+ Если вы настраиваете маршрут в удаленную сеть, доступную через дополнительный роутер, расположенный в той же локальной сети, что и клиенты, то убедитесь, что вы избежали "\[ассиметричной маршрутизации\]\(Доступ\_в\_удаленные\_сети\_через\_роутер\_в\_локальной\_сети\)" и вынесли роутер в DMZ.
+
+&lt;/div&gt;
+
+ \#\# Attachments:
+
+ !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_01.PNG\]\(attachments/1703979/4325472.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_02.png\]\(attachments/1703979/2031619.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_02.png\]\(attachments/1703979/4325477.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_03.PNG\]\(attachments/1703979/4325479.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_04.PNG\]\(attachments/1703979/2031621.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_05.PNG\]\(attachments/1703979/2031622.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_06.PNG\]\(attachments/1703979/2031623.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_07.PNG\]\(attachments/1703979/2031624.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_01.PNG\]\(attachments/1703979/1835052.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_02.png\]\(attachments/1703979/2031618.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing\\_03.PNG\]\(attachments/1703979/2031620.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing005.jpg\]\(attachments/1703979/6062233.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing005.jpg\]\(attachments/1703979/6062234.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing005.jpg\]\(attachments/1703979/6062232.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing004.jpg\]\(attachments/1703979/6062235.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing003.jpg\]\(attachments/1703979/6062236.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing002.jpg\]\(attachments/1703979/6062237.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing001.jpg\]\(attachments/1703979/6062238.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[routing000.jpg\]\(attachments/1703979/6062240.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[2\\_rule\\_creation.png\]\(attachments/1703979/6586612.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[3\\_route\\_example\\_1.png\]\(attachments/1703979/6586614.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[3\\_route\\_example\\_2.png\]\(attachments/1703979/6586615.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[4\\_route\\_table.png\]\(attachments/1703979/6586616.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[маршрутизация.JPG\]\(attachments/1703979/11436066.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[маршрутизация 3.JPG\]\(attachments/1703979/11436067.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[маршрутизация2.JPG\]\(attachments/1703979/11436069.jpg\) \(image/jpeg\)
+
