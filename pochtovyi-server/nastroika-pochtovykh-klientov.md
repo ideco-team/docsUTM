@@ -42,15 +42,15 @@ dateCreated: '2021-04-02T07:23:48.430Z'
 
 Пример настроек клиента Microsoft Outlook 2013 по протоколу IMAP:  
 
-![](../.gitbook/assets/outlook2013.jpg)
+![](../.gitbook/assets/4982578.jpg)
 
 Пример настроек клиента Microsoft Outlook 2016 по протоколу IMAP:  
 
-![](../.gitbook/assets/outlook2016.jpg)
+![](../.gitbook/assets/4982695.jpg)
 
 Для отображения IMAP-папок снимите галочку **При просмотре дерева в Outlook показывать только подписанные папки** в свойствах IMAP-папок:  
 
-![](../.gitbook/assets/imap_outlook.png)
+![](../.gitbook/assets/4982906.png)
 
 ![](../.gitbook/assets/imap_outlook2.png)
 
@@ -58,11 +58,11 @@ dateCreated: '2021-04-02T07:23:48.430Z'
 
 Перед настройкой ящика надо установить корневой SSL сертификат UTM. Его можно скачать в разделе **Сервисы -&gt; Сертификаты**. Например, прислав сертификат себе на почту, откройте его на iPhone. Нажмите кнопку **Установить**. После этого зайдите в раздел **Настройки -&gt; Основные -&gt; Об этом устройстве -&gt; Доверие сертификатов** и включите настройку **Доверять корневым сертификатам полностью**.
 
-![](../.gitbook/assets/iphonecert004.png)
+![](../.gitbook/assets/5472456.png)
 
-![](../.gitbook/assets/iphonecert005.png)
+![](../.gitbook/assets/5472457.png)
 
-![](../.gitbook/assets/iphonecert006.png)
+![](../.gitbook/assets/5472458.png)
 
 После установки сертификата настройте доступ в почтовый ящик как показано на следующих скриншотах:
 
@@ -74,9 +74,9 @@ dateCreated: '2021-04-02T07:23:48.430Z'
 
 ### Настройка почтового клиента Thunderbird
 
-![](../.gitbook/assets/thunder001.png)
+![](../.gitbook/assets/4982737.png)
 
-![](../.gitbook/assets/thunder002.png)
+![](../.gitbook/assets/4982738.png)
 
-![](../.gitbook/assets/thunder003.png)
+![](../.gitbook/assets/4982739.png)
 

@@ -50,9 +50,9 @@ dateCreated: '2021-04-02T07:28:00.411Z'
 
 10. Выберите протокол IKEv2 и обязательное шифрование.
 
-![](../../../.gitbook/assets/windows7-ikev2vpn-ru-11.png)
+![](../../../.gitbook/assets/17072215.png)
 
 11. Подключитесь к IKEv2 VPN серверу в Windows 7.
 
-![](../../../.gitbook/assets/windows7-ikev2vpn-ru-12.png)
+![](../../../.gitbook/assets/17072216.png)
 
