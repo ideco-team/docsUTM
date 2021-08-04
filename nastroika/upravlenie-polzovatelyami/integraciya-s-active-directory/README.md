@@ -1,2 +1,0 @@
-# Интеграция-с-Active-Directory
-
