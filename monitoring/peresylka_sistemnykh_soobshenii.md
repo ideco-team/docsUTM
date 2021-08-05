@@ -8,11 +8,9 @@
 
 ![](../.gitbook/assets/11436175.png)
 
- Передача системных сообщений происходит согласно RFC-5424 \(транспорт UDP\).
+{% hint style="info" %}
+Передача системных сообщений происходит согласно RFC-5424 \(транспорт UDP\).
+{% endhint %}
 
-&lt;/div&gt;
 
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[image2017-11-29\\_14-14-28.png\]\(attachments/5472407/5832738.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[syslog.png\]\(attachments/5472407/11436175.png\) \(image/png\)
 
