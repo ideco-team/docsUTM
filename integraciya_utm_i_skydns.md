@@ -1,4 +1,4 @@
-# Интеграция\_UTM\_и\_SkyDNS
+# Интеграция UTM и SkyDNS
 
 ## Интеграция UTM и SkyDNS
 

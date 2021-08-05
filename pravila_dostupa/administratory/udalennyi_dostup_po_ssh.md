@@ -10,9 +10,5 @@
 
 ![](../../.gitbook/assets/24182785.png)
 
-Подробнее о настройке подключения к веб-интерфейсу при удаленном доступе смотрите в статье: [Удаленный доступ для управления сервером](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Удаленный_доступ_для_управления_сервером/README.md)
-
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[SSH.JPG\]\(attachments/6586932/8388615.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[ssh799.PNG\]\(attachments/6586932/24182785.png\) \(image/png\)
+Подробнее о настройке подключения к веб-интерфейсу при удаленном доступе смотрите в статье: [Удаленный доступ для управления сервером](../../obsluzhivanie/udalennyi_dostup_dlya_upravleniya_serverom.md)
 
