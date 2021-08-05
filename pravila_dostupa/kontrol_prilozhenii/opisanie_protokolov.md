@@ -3,17 +3,21 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">AFP</th>
-      <th style="text-align:left">Apple Filing Protocol - &#x441;&#x435;&#x442;&#x435;&#x432;&#x43E;&#x439;
+      <th style="text-align:left">&#x41F;&#x440;&#x43E;&#x442;&#x43E;&#x43A;&#x43E;&#x43B;</th>
+      <th style="text-align:left">&#x41E;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x435;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">AFP</td>
+      <td style="text-align:left">Apple Filing Protocol - &#x441;&#x435;&#x442;&#x435;&#x432;&#x43E;&#x439;
         &#x43F;&#x440;&#x43E;&#x442;&#x43E;&#x43A;&#x43E;&#x43B; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x441;&#x43A;&#x43E;&#x433;&#x43E;
         &#x438; &#x43F;&#x440;&#x438;&#x43A;&#x43B;&#x430;&#x434;&#x43D;&#x43E;&#x433;&#x43E;
         &#x443;&#x440;&#x43E;&#x432;&#x43D;&#x435;&#x439; &#x441;&#x435;&#x442;&#x435;&#x432;&#x43E;&#x439;
         &#x43C;&#x43E;&#x434;&#x435;&#x43B;&#x438; OSI, &#x43F;&#x440;&#x435;&#x434;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x44E;&#x449;&#x438;&#x439;
         &#x434;&#x43E;&#x441;&#x442;&#x443;&#x43F; &#x43A; &#x444;&#x430;&#x439;&#x43B;&#x430;&#x43C;
-        &#x432; Mac OS X.</th>
+        &#x432; Mac OS X</td>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td style="text-align:left">Aimini</td>
       <td style="text-align:left">&#x421;&#x435;&#x440;&#x432;&#x438;&#x441; &#x434;&#x43B;&#x44F; &#x441;&#x43A;&#x430;&#x447;&#x438;&#x432;&#x430;&#x43D;&#x438;&#x44F;
