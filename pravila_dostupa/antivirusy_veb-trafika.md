@@ -12,19 +12,9 @@
 
 В антивирус попадает веб-трафик при выполнении следующих условий:
 
-* веб-ресурс не находится в списках исключений
-
-  [прокси-сервера](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Прокси/README.md) по назначению,
-
-* пользователь, к которому поступает трафик не включен в исключения
-
-  [прокси-сервера](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Прокси/README.md) по источнику,
-
-* HTTPS-сайт проверяется только в случае
-
-  [расшифровки](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Настройка_фильтрации_HTTPS/README.md)
-
-  HTTPS-трафика [контент-фильтром](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Контент-фильтр/README.md).
+* веб-ресурс не находится в списках исключений [прокси-сервера](../servisy/proksi/) по назначению,
+* пользователь, к которому поступает трафик не включен в исключения [прокси-сервера](../servisy/proksi/) по источнику,
+* HTTPS-сайт проверяется только в случае [расшифровки](kontent-filtr/nastroika_filtracii_https.md) HTTPS-трафика [контент-фильтром](kontent-filtr/).
 
 ## Проверка работы антивируса
 
@@ -39,8 +29,4 @@
 Данный модуль в нашем продукте создан на базе Kaspersky Anti-Virus Software Development Kit и лицензируется совместно с Ideco UTM компанией "Айдеко".
 
 Корпоративные ключи для других продуктов Лаборатории Касперского не могут быть использованы для его активации.
-
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[антивирусы.JPG\]\(attachments/7110815/7110817.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[антивирусы2.JPG\]\(attachments/7110815/7110818.jpg\) \(image/jpeg\)
 
