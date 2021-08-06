@@ -48,7 +48,5 @@
 
 При добавлении новых локальных сетей \(например, 192.168.0.0/24\), на Ideco необходимо добавлять адрес этой сети на существующий или новый локальный интерфейс \(например, 192.168.1.1\). Этот адрес будет являться шлюзом и DNS-сервером для сетевых устройств из этого адресного пространства \(например, для хоста с адресом 192.168.1.10\).
 
- \#\# Attachments:
 
- !\[\]\(images/icons/bullet\_blue.gif\) \[triangle\\_routing\\_01.png\]\(attachments/2261350/2424922.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[triangle\\_routing\\_02.png\]\(attachments/2261350/2424923.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[triangle\\_routing\\_03.png\]\(attachments/2261350/2424924.png\) \(image/png\)
 

@@ -152,10 +152,10 @@
   * [Доступ в удаленные сети через роутер в локальной сети](populyarnye_recepty/dostup_v_udalennye_seti_cherez_router_v_lokalnoi_seti.md)
   * [Перенос данных и настроек на другой сервер](populyarnye_recepty/perenos_dannykh_i_nastroek_na_drugoi_server.md)
   * [Выбор аппаратной платформы для Ideco UTM](populyarnye_recepty/vybor_apparatnoi_platformy_dlya_ideco_utm.md)
-  * [Восстановление\_пароля\_администратора](populyarnye_recepty/vosstanovlenie_parolya_administratora/README.md)
-    * [Для\_версий\_6.0\_-\_7.6](populyarnye_recepty/vosstanovlenie_parolya_administratora/dlya_versii_6.0_-_7.6.md)
+  * [Восстановление пароля администратора](populyarnye_recepty/vosstanovlenie_parolya_administratora/README.md)
+    * [Для версий 6.0 - 7.6](populyarnye_recepty/vosstanovlenie_parolya_administratora/dlya_versii_6.0_-_7.6.md)
   * [Особенности подключения через ADSL-модем](populyarnye_recepty/osobennosti_podklyucheniya_cherez_adsl-modem.md)
   * [Использование ics\_tune.sh](populyarnye_recepty/ispolzovanie_ics_tune.sh.md)
-  * [Блокировка\_популярных\_ресурсов](populyarnye_recepty/blokirovka_populyarnykh_resursov.md)
+  * [Блокировка популярных ресурсов](populyarnye_recepty/blokirovka_populyarnykh_resursov.md)
   * [Что делать если не работает Интернет](populyarnye_recepty/chto_delat_esli_ne_rabotaet_internet.md)
 
