@@ -1,10 +1,6 @@
-# Регистрация\_сервера
-
-## Регистрация сервера
+# Регистрация сервера
 
 Для активации лицензии необходима обязательная регистрация сервера в [личном кабинете](https://my.ideco.ru).
-
- - \[Личный кабинет\]\(\#id-Регистрациясервера-Личныйкабинет\) - \[Регистрация в личном кабинете\]\(\#id-Регистрациясервера-Регистрациявличномкабинете\) - \[Регистрация сервера\]\(\#id-Регистрациясервера-Регистрациясервера\) - \[Просмотр информации о лицензиях\]\(\#id-Регистрациясервера-Просмотринформацииолицензиях\) - \[Управление лицензиями\]\(\#id-Регистрациясервера-Управлениелицензиями\) - \[Добавление коммерческой лицензии\]\(\#id-Регистрациясервера-Добавлениекоммерческойлицензии\)
 
 ## Личный кабинет
 
@@ -93,8 +89,4 @@
 После этого токен будет недействителен, а в свободных лицензиях появится купленная вами лицензия.
 
 Методом drag-and-drop привяжите лицензию к нужному вам серверу \(после его регистрации в кабинете, см. следующий раздел\).
-
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[reg.JPG\]\(attachments/4982927/4982932.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[license2.JPG\]\(attachments/4982927/4982946.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[token.JPG\]\(attachments/4982927/4982950.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[reg2.JPG\]\(attachments/4982927/4982951.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[reg3.JPG\]\(attachments/4982927/4982956.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[license.png\]\(attachments/4982927/6357122.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[reg\\_myideco.PNG\]\(attachments/4982927/6586839.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[reg2019.png\]\(attachments/4982927/12025909.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[reg2019-myideco.JPG\]\(attachments/4982927/12025910.jpg\) \(image/jpeg\)
 

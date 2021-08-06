@@ -136,7 +136,7 @@
 * [Обслуживание](obsluzhivanie/README.md)
   * [Обновление сервера](obsluzhivanie/obnovlenie_servera.md)
   * [Удаленный доступ для управления сервером](obsluzhivanie/udalennyi_dostup_dlya_upravleniya_serverom.md)
-  * [Регистрация\_сервера](obsluzhivanie/registraciya_servera.md)
+  * [Регистрация сервера](obsluzhivanie/registraciya_servera.md)
   * [Резервное копирование и восстановление данных](obsluzhivanie/rezervnoe_kopirovanie_i_vosstanovlenie_dannykh.md)
   * [Режим удаленного помощника](obsluzhivanie/rezhim_udalennogo_pomoshnika.md)
 
