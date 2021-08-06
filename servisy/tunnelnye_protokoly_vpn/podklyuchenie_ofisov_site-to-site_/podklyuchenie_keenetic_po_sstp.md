@@ -1,7 +1,6 @@
 # Подключение Keenetic по SSTP
 
-Вы можете подключить роутеры с поддержкой протокола SSTP в режиме site-to-site VPN.  
-\(если доступ из центрального офиса в сеть за Keenetic не нужен, то воспользуйтесь [инструкцией](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Подключение_Wi-Fi_роутеров_Keenetic/README.md) по cline-to-site подключению\).
+Вы можете подключить роутеры с поддержкой протокола SSTP в режиме site-to-site VPN \(если доступ из центрального офиса в сеть за Keenetic не нужен, то воспользуйтесь [инструкцией](https://github.com/ideco-team/docsUTM/tree/54be5c28981601375569bdca6ef75ead87808b16/Подключение_Wi-Fi_роутеров_Keenetic/README.md) по cline-to-site подключению\).
 
 ## Настройка Ideco UTM
 
