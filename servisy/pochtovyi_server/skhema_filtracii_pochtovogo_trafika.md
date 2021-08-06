@@ -11,7 +11,3 @@
 
 **Белый список** в настройках почты обеспечивает прохождение писем без фильтрации начиная с уровня "Фильтрации по серым спискам и проверки DKIM/SPF". Предварительные спам-фильтры срабатывают для любых адресатов.
 
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[email\\_filter.jpg\]\(attachments/4981837/4982304.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[email\\_filter.jpg\]\(attachments/4981837/5472417.jpg\) \(image/jpeg\) !\[\]\(images/icons/bullet\_blue.gif\) \[email\\_filter.jpg\]\(attachments/4981837/4981836.jpg\) \(image/jpeg\)
-
