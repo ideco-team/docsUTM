@@ -2,52 +2,48 @@
 
 Вам потребуется доменное вашего сервера \(можно получить у системного администратора\) и учетные данные пользователя \(логин/пароль\).
 
-1. Откройте Центр управления сетями и общим доступом.  
+1. Откройте **Центр управления сетями и общим доступом**.  
 
-   ![](../../../../.gitbook/assets/17072204.png)
+![](../../../../.gitbook/assets/17072204.png)
 
-2. Выберите Настройка нового подключения или сети.  
+2. Выберите **Настройка нового подключения или сети**.  
 
-   ![](../../../../.gitbook/assets/17072206.png)
+![](../../../../.gitbook/assets/17072206.png)
 
-3. Выберите Подключение к рабочему месту.  
+3. Выберите **Подключение к рабочему месту**.  
 
-   ![](../../../../.gitbook/assets/17072207.png)
+![](../../../../.gitbook/assets/17072207.png)
 
-4. Выберите Использовать мое подключение к Интернету \(VPN\).  
+4. Выберите **Использовать мое подключение к Интернету \(VPN**\).  
 
-   ![](../../../../.gitbook/assets/17072208.png)
+![](../../../../.gitbook/assets/17072208.png)
 
 5. Введите доменное имя сервера в качестве адреса подключений.  
-   Имя местоназначения может быть произвольным.
+Имя местоназначения может быть произвольным.
 
-   ![](../../../../.gitbook/assets/17072209.png)
+![](../../../../.gitbook/assets/17072209.png)
 
-6. Введите ваш логи и пароль  
+6. Введите ваш логи и пароль.
 
-   ![](../../../../.gitbook/assets/17072210.png)
+![](../../../../.gitbook/assets/17072210.png)
 
-7. Нажмите "Закрыть"  
+7. Нажмите **Закрыть.**  
 
-   ![](../../../../.gitbook/assets/17072211.png)
+![](../../../../.gitbook/assets/17072211.png)
 
 8. Выберите Подключение к IKEv2 VPN серверу в Windows 7.  
 
-   ![](../../../../.gitbook/assets/17072212.png)
+![](../../../../.gitbook/assets/17072212.png)
 
-9. Выберите Свойства.  
+9. Выберите **Свойства**.  
 
-   ![](../../../../.gitbook/assets/17072214.png)
+![](../../../../.gitbook/assets/17072214.png)
 
-10. Выберите протокол IKEv2 и обязательное шифрование.  
+10. Выберите протокол **IKEv2** и **обязательное шифрование**.  
 
-    ![](../../../../.gitbook/assets/17072215.png)
+![](../../../../.gitbook/assets/17072215.png)
 
 11. Подключитесь к IKEv2 VPN серверу в Windows 7.  
 
-    ![](../../../../.gitbook/assets/17072216.png)
-
- \#\# Attachments:
-
- !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-1.png\]\(attachments/17072171/17072204.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-2.png\]\(attachments/17072171/17072206.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-3.png\]\(attachments/17072171/17072207.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-4.png\]\(attachments/17072171/17072208.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-5.png\]\(attachments/17072171/17072209.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-6.png\]\(attachments/17072171/17072210.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-7.png\]\(attachments/17072171/17072211.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-8.png\]\(attachments/17072171/17072212.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-9.png\]\(attachments/17072171/17072214.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-11.png\]\(attachments/17072171/17072215.png\) \(image/png\) !\[\]\(images/icons/bullet\_blue.gif\) \[windows7-ikev2vpn-ru-12.png\]\(attachments/17072171/17072216.png\) \(image/png\)
+![](../../../../.gitbook/assets/17072216.png)
 

@@ -126,7 +126,6 @@
       * [Инструкция по запуску PowerShell-скриптов](servisy/tunnelnye_protokoly_vpn/podklyuchenie_polzovatelei_client-to-site_/instrukciya_po_zapusku_powershell-skriptov/README.md)
         * [Инструкция по созданию подключения в Windows 7](servisy/tunnelnye_protokoly_vpn/podklyuchenie_polzovatelei_client-to-site_/instrukciya_po_zapusku_powershell-skriptov/instrukciya_po_sozdaniyu_podklyucheniya_v_windows_7.md)
   * [Дополнительно](servisy/dopolnitelno.md)
-  * [Сертификаты](servisy/sertifikaty.md)
 * [Отчеты](otchety.md)
 * [Интеграция UTM и SkyDNS](integraciya_utm_i_skydns.md)
 

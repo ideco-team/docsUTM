@@ -7,36 +7,51 @@
 Подключение будет создано со следующими параметрами:
 
 1. Протокол L2TP/IPsec с использованием PSK-ключа.
-2. Параметр "Использовать основной шлюз в удаленной сети" выключен.  
+2. Параметр **Использовать основной шлюз в удаленной сети** выключен.  
 
    Доступ к локальным сетям того же класса, что были получены для
 
-   VPN-подключения по-умолчанию в Windows 7 и 10 будет осуществляться
+   VPN-подключения по умолчанию в Windows 7 и 10 будет осуществляться через VPN-подключение, поэтому дополнительных маршрутов создавать не нужно \(если вы не используете разные классы сетей в локальной сети офиса\).
 
-   через VPN-подключение, поэтому дополнительных маршрутов создавать не
+Создайте текстовый файл с именем **ideco\_utm\_sstp.ps1** \(в Блокноте или редакторе Windows PowerShell ISE\) и скопируйте туда следующий текст:
 
-   нужно \(если вы не используете разные классы сетей в локальной сети
+```text
 
-   офиса\).
+### Ideco UTM SSTP connection ###
+param([switch]$Elevated)
+$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
+if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator))  {
+  if (!$elevated) {
+    Start-Process `
+            powershell.exe `
+            -Verb RunAs `
+            -ArgumentList ('-noprofile -noexit -file "{0}" -elevated' -f ( $myinvocation.MyCommand.Definition ))
+  }
+  exit
+}
+Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
+Add-VpnConnection `
+    -Force `
+    -Name "Ideco UTM SSTP VPN" `
+    -TunnelType SSTP `
+    -ServerAddress my.domain.com:4443 `
+    -EncryptionLevel "Required" `
+    -AuthenticationMethod MSChapV2 `
+    -SplitTunneling $False `
+    -DnsSuffix activedirectory.domain `
+    -RememberCredential
+```
 
-Создайте текстовый файл с именем ideco\_utm\_sstp.ps1 \(в Блокноте или редакторе Windows PowerShell ISE\) и скопируйте туда следующий текст:
+Поменяйте в нем необходимые параметры на соответствующие вашим настройкам:
 
- \#\#\# Ideco UTM SSTP connection \#\#\# param\(\[switch\]$Elevated\) $currentUser = New-Object Security.Principal.WindowsPrincipal $\(\[Security.Principal.WindowsIdentity\]::GetCurrent\(\)\) if \(!$currentUser.IsInRole\(\[Security.Principal.WindowsBuiltinRole\]::Administrator\)\) { if \(!$elevated\) { Start-Process \` powershell.exe \` -Verb RunAs \` -ArgumentList \('-noprofile -noexit -file "{0}" -elevated' -f \( $myinvocation.MyCommand.Definition \)\) } exit } Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502" Add-VpnConnection \` -Force \` -Name "Ideco UTM SSTP VPN" \` -TunnelType SSTP \` -ServerAddress my.domain.com:4443 \` -EncryptionLevel "Required" \` -AuthenticationMethod MSChapV2 \` -SplitTunneling $False \` -DnsSuffix activedirectory.domain \` -RememberCredential
-
-&lt;/div&gt;
-
-Поменяйте в нем необходимые параметры на соответствующие вашим настойкам:
-
-1. **"Ideco UTM SSTP VPN"** - имя подключения в системе \(может быть произвольным\)
-2. **"my.domain.com:4443"** - домен внешнего интерфейса Ideco UTM и порт, на котором вы включили SSTP
-3. **"activedirectory.domain"** - ваш домен Active Directory \(если есть, если нет нужно удалить эту строчку из скрипта\)
+1. **Ideco UTM SSTP VPN** - имя подключения в системе \(может быть произвольным\).
+2. **my.domain.com:4443** - домен внешнего интерфейса Ideco UTM и порт, на котором вы включили SSTP.
+3. **activedirectory.domain** - ваш домен Active Directory \(если есть, если нет нужно удалить эту строчку из скрипта\).
 
 **Запустить скрипт на компьютере пользователя можно из контекстного меню файла "Выполнить с помощью PowerShell". Нажмите "Ок" в диалоге повышения прав \(они требуются для разрешения доступа к общим файлам и принтерам\).**    
 
 
-После этого подключение в системе будет создано, а также включен общий доступ к файлам и принтерам для всех сетей \(иначе доступ к файловым ресурсам в локальной сети может быть невозможен\).
-
-Пользователю при первой авторизации необходимо ввести свой логин/пароль.
+После этого подключение в системе будет создано, а также включен общий доступ к файлам и принтерам для всех сетей \(иначе доступ к файловым ресурсам в локальной сети может быть невозможен\). Пользователю при первой авторизации необходимо ввести свой логин/пароль.
 
 ## Возможные ошибки при выполнении скрипта
 
