@@ -8,7 +8,7 @@
 
 IP-адрес пользователю назначается автоматически из пула адресов для VPN, настраиваемого в разделе **Сервисы -&gt; Авторизация пользователей** \(например 10.128.0.0/16\). Вы можете настроить статическую привязку адресов выдаваемых по VPN определенным пользователям в разделе **Сервисы -&gt; Авторизация пользователей -&gt; Фиксированные IP-адреса в VPN**.
 
-**При подключении из сети интернет рекомендуем использовать** [**L2TP/IPsec**](../servisy/tunnelnye_protokoly_vpn/podklyuchenie_polzovatelei_client-to-site_/l2tp_ipsec/) **или** [**SSTP**](../servisy/tunnelnye_protokoly_vpn/podklyuchenie_polzovatelei_client-to-site_/sstp/) **для более надежного шифрования трафика.**
+**При подключении из сети интернет рекомендуем использовать** [**L2TP/IPsec**](../services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec/) **или** [**SSTP**](../services/vpn-tunnel-protocols/client-to-site/sstp/) **для более надежного шифрования трафика.**
 
-Смотрите также [инструкцию по настройке PPTP для подключения из сети интернет](../servisy/tunnelnye_protokoly_vpn/podklyuchenie_polzovatelei_client-to-site_/pptp.md).
+Смотрите также [инструкцию по настройке PPTP для подключения из сети интернет](../services/vpn-tunnel-protocols/client-to-site/pptp.md).
 

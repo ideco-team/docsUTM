@@ -11,7 +11,7 @@ description: >-
 
 Пользователь автоматически разавторизуется при не активности \(отсутствии соединений с сетью Интернет\) в течении заданного в настройках времени \(от 10 минут до суток\) \(кроме подключений по VPN\).
 
-Вы можете также авторизовать пользователей подключающихся по VPN по протоколам IKEv2/IPSec, SSTP, L2TP/IPSec и PPTP. Подробнее эти настройки описаны в соответствующем [разделе](../servisy/tunnelnye_protokoly_vpn/podklyuchenie_polzovatelei_client-to-site_/).
+Вы можете также авторизовать пользователей подключающихся по VPN по протоколам IKEv2/IPSec, SSTP, L2TP/IPSec и PPTP. Подробнее эти настройки описаны в соответствующем [разделе](../services/vpn-tunnel-protocols/client-to-site/).
 
 {% embed url="https://www.youtube.com/watch?v=W\_wDYuXHDf4" %}
 
