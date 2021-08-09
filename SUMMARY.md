@@ -140,7 +140,7 @@
 * [Популярные рецепты](popular-recipes/README.md)
   * [Доступ в удаленные сети через роутер в локальной сети](popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](popular-recipes/dnsbl-list.md)
-  * [Что делать если не работает Интернет](popular-recipes/internet-does-not-work.md)
+  * [Что делать если не работает Интернет](popular-recipes/what-to-do-if-the-internet-does-not-work.md)
   * [Как восстановить доступ к Ideco UTM](popular-recipes/restore-access-to-ideco-utm.md)
   * [Проверка настроек фильтрации с помощью security ideco](popular-recipes/security-ideco.md)
   * [Выбор аппаратной платформы для Ideco UTM](popular-recipes/choosing-hardware-platform.md)
