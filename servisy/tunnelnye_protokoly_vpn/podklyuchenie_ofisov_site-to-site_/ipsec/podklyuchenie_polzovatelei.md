@@ -1,6 +1,6 @@
 # Подключение пользователей
 
-Настройки для подключения пользователей \(client-to-site VPN\) описаны в следующей статье документации: [подключение по VPN L2TP/IPsec.](../../../../podklyuchenie_k_provaideru/podklyuchenie_po_l2tp_vpn_.md)
+Настройки для подключения пользователей \(client-to-site VPN\) описаны в следующей статье документации: [подключение по VPN L2TP/IPsec.](../../../../connection-to-provider/l2tp-vpn-connection.md)
 
 ## Разрешить подключение удалённых пользователей по протоколу L2TP/IPsec
 
