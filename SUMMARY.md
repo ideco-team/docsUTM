@@ -2,7 +2,7 @@
 
 * [Об Ideco UTM](README.md)
 
-## Общая информация <a id="obshaya-informaciya-1"></a>
+## Общая информация <a id="general"></a>
 
 ---
 
@@ -10,7 +10,7 @@
 * [Источники обновлений данных Ideco UTM](data-update-source-ideco-utm.md)
 * [Техническая поддержка](technical-support.md)
 
-## Установка <a id="ustanovka-1"></a>
+## Установка <a id="installation"></a>
 
 ---
 
@@ -19,7 +19,7 @@
 * [Процесс установки](installation-process.md)
 * [Первоначальная настройка](initial-setup.md)
 
-## Настройка <a id="nastroika-2"></a>
+## Настройка <a id="settings"></a>
 
 ---
 
@@ -123,17 +123,17 @@
 * [Ideco VPN](ideco-vpn.md)
 * [Интеграция UTM и SkyDNS](skydns.md)
 
-## Обслуживание <a id="obsluzhivanie-1"></a>
+## Обслуживание <a id="service-1"></a>
 
-* [Управление лицензиями](obsluzhivanie-1/license-management.md)
-* [Обновление сервера](obsluzhivanie-1/server-update.md)
-* [Регистрация сервера](obsluzhivanie-1/server-registration.md)
-* [Резервное копирование и восстановление данных](obsluzhivanie-1/backup.md)
-* [Режим удаленного помощника](obsluzhivanie-1/remote-assistant.md)
-* [Удаленный доступ для управления сервером](obsluzhivanie-1/remote-access-for-server-management.md)
-* [Личный кабинет](obsluzhivanie-1/lk.md)
+* [Управление лицензиями](service-1/license-management.md)
+* [Обновление сервера](service-1/server-update.md)
+* [Регистрация сервера](service-1/server-registration.md)
+* [Резервное копирование и восстановление данных](service-1/backup.md)
+* [Режим удаленного помощника](service-1/remote-assistant.md)
+* [Удаленный доступ для управления сервером](service-1/remote-access-for-server-management.md)
+* [Личный кабинет](service-1/lk.md)
 
-## Популярные рецепты <a id="populyarnye-recepty-1"></a>
+## Популярные рецепты <a id="recipes"></a>
 
 ---
 

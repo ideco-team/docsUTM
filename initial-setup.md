@@ -100,6 +100,6 @@ dateCreated: '2021-04-02T07:21:59.755Z'
 * [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous--connections.md)
 
 {% hint style="info" %}
-После подключения к Интернету требуется [зарегистрировать сервер](obsluzhivanie-1/server-registration.md). 
+После подключения к Интернету требуется [зарегистрировать сервер](service-1/server-registration.md). 
 {% endhint %}
 

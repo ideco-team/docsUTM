@@ -53,5 +53,5 @@ dateCreated: '2021-04-02T07:21:41.339Z'
 
 ## Шаг 6. Обратитесь в техподдержку.
 
-Сделайте скриншоты вкладки **Основное** у пользователя в развёрнутом виде и создайте обращение на [портале поддержки](https://help.ideco.ru/) или напишите письмо на support@ideco.ru. Включите [режим удалённого помощника](../obsluzhivanie-1/remote-assistant.md) и обратитесь в службу технической поддержки: [https://ideco.ru/support/remote-help](https://ideco.ru/support/remote-help).
+Сделайте скриншоты вкладки **Основное** у пользователя в развёрнутом виде и создайте обращение на [портале поддержки](https://help.ideco.ru/) или напишите письмо на support@ideco.ru. Включите [режим удалённого помощника](../service-1/remote-assistant.md) и обратитесь в службу технической поддержки: [https://ideco.ru/support/remote-help](https://ideco.ru/support/remote-help).
 
