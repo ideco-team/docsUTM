@@ -6,7 +6,7 @@
 
 ---
 
-* [Техническая поддержка](tekhnicheskaya_podderzhka.md)
+* [Техническая поддержка](technical-support.md)
 * [Лицензирование Ideco UTM](licenzirovanie_ideco_utm.md)
 
 ## Установка <a id="ustanovka-1"></a>
