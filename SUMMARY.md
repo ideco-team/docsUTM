@@ -6,7 +6,7 @@
 
 ---
 
-* [Лицензирование](licenzirovanie.md)
+* [Лицензирование](license.md)
 * [Источники обновлений данных Ideco UTM](istochniki-obnovlenii-dannykh-ideco-utm.md)
 * [Техническая поддержка](technical-support.md)
 
