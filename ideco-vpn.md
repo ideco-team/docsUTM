@@ -16,7 +16,7 @@ dateCreated: '2021-07-19T10:57:00.757Z'
 
 ![](.gitbook/assets/aps-net.png)
 
-2. Настроить правило [обратного прокси](servisy/obratnyi-proksi.md) в веб-интерфейсе Ideco UTM.
+2. Настроить правило [обратного прокси](service/obratnyi-proksi.md) в веб-интерфейсе Ideco UTM.
 
 * В поле **Запрашиваемый адрес в Интернете** введите домен сервера Ideco UTM в формате: `домен/wireguard`.
 * В поле **Адрес в локальной сети** укажите URL `https://127.0.0.1:8443/wireguard`.

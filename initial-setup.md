@@ -92,14 +92,14 @@ dateCreated: '2021-04-02T07:21:59.755Z'
 
 Если ваш провайдер использует другой тип подключения, то ознакомиться с остальными инструкциями по настройке вы можете по следующим ссылкам:
 
-* [Подключение по протоколу PPPoE ](podklyuchenie-k-provaideru/podklyuchenie-po-pppoe.md) 
-* [Подключение по технологии VPN \(с использованием протокола PPTP\)](podklyuchenie-k-provaideru/podklyuchenie-po-pptp.md) 
-* [Подключение по L2TP](podklyuchenie-k-provaideru/podklyuchenie-po-l2tp.md)
-* [Подключение по Ethernet](podklyuchenie-k-provaideru/podklyuchenie-po-ethernet.md)
-* [Подключение по 3G и 4G](podklyuchenie-k-provaideru/podklyuchenie-po-3g-i-4g.md)
-* [Одновременное подключение к нескольким провайдерам](podklyuchenie-k-provaideru/odnovremennoe-podklyuchenie-k-neskolkim-provaideram.md)
+* [Подключение по протоколу PPPoE ](connection-to-provider/pppoe-connection.md) 
+* [Подключение по технологии VPN \(с использованием протокола PPTP\)](connection-to-provider/pptp-connection.md) 
+* [Подключение по L2TP](connection-to-provider/l2tp-connection.md)
+* [Подключение по Ethernet](connection-to-provider/ethernet-connection.md)
+* [Подключение по 3G и 4G](connection-to-provider/3g-4g-connection.md)
+* [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous--connections.md)
 
 {% hint style="info" %}
-После подключения к Интернету требуется [зарегистрировать сервер](obsluzhivanie-1/registraciya-servera.md). 
+После подключения к Интернету требуется [зарегистрировать сервер](obsluzhivanie-1/server-registration.md). 
 {% endhint %}
 
