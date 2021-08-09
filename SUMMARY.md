@@ -132,12 +132,12 @@
 
 ---
 
-* [Обслуживание](service-1/README.md)
-  * [Обновление сервера](service-1/server-update.md)
-  * [Удаленный доступ для управления сервером](service-1/remote-access-for-server-management.md)
-  * [Регистрация сервера](service-1/server-registration.md)
-  * [Резервное копирование и восстановление данных](service-1/backup.md)
-  * [Режим удаленного помощника](service-1/remote-assistant.md)
+* [Обслуживание сервера](server-administration/README.md)
+  * [Обновление сервера](server-administration/server-update.md)
+  * [Удаленный доступ для управления сервером](server-administration/remote-access-for-server-management.md)
+  * [Регистрация сервера](server-administration/server-registration.md)
+  * [Резервное копирование и восстановление данных](server-administration/backup.md)
+  * [Режим удаленного помощника](server-administration/remote-assistant.md)
 
 ## Популярные рецепты <a id="recipes"></a>
 

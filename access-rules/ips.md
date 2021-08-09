@@ -89,7 +89,7 @@ reference:url,wiki.theory.org/BitTorrentDraftDHTProtocol; reference:url,doc.emer
 
 `07/03/2015-14:52:07.654757 [Drop] [**] [1:2403302:1942] ET CINS Active Threat Intelligence Poor Reputation IP group 3 [**] [Classification: Misc Attack] [Priority: 2] {UDP} 24.43.1.206:10980 -> 192.168.10.14:32346`
 
-Для более подробного анализа логов с IP компьютера 192.168.10.14 в [консоли](../service-1/remote-access-for-server-management.md) сервера выполняем команду:
+Для более подробного анализа логов с IP компьютера 192.168.10.14 в [консоли](../server-administration/remote-access-for-server-management.md) сервера выполняем команду:
 
 `grep "10.80.1.13:" /var/log/suricata/fast.log`
 
