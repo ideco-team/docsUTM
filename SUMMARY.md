@@ -7,39 +7,39 @@
 ---
 
 * [Лицензирование](license.md)
-* [Источники обновлений данных Ideco UTM](istochniki-obnovlenii-dannykh-ideco-utm.md)
+* [Источники обновлений данных Ideco UTM](data-update-source-ideco-utm.md)
 * [Техническая поддержка](technical-support.md)
 
 ## Установка <a id="ustanovka-1"></a>
 
 ---
 
-* [Создание загрузочного USB flash диска](sozdanie-zagruzochnogo-usb-flash-diska.md)
-* [Особенности настроек гипервизоров](osobennosti-nastroek-gipervizorov.md)
-* [Процесс установки](process-ustanovki.md)
-* [Первоначальная настройка](pervonachalnaya-nastroika.md)
+* [Создание загрузочного USB flash диска](usb.md)
+* [Особенности настроек гипервизоров](specifics-of-hypervisor-settings.md)
+* [Процесс установки](installation-process.md)
+* [Первоначальная настройка](initial-setup.md)
 
 ## Настройка <a id="nastroika-2"></a>
 
 ---
 
-* [Пользователи](polzovateli/README.md)
-  * [Дерево пользователей](polzovateli/derevo-polzovatelei.md)
-  * [Управление пользователями](polzovateli/upravlenie-polzovatelyami.md)
-  * [Настройка пользователей](polzovateli/nastroika-polzovatelei.md)
-  * [Пользователи терминального сервера](polzovateli/polzovateli-terminalnogo-servera.md)
-  * [Авторизация пользователей](polzovateli/avtorizaciya-polzovatelei/README.md)
-    * [Авторизация по PPTP](polzovateli/avtorizaciya-polzovatelei/avtorizaciya-po-pptp.md)
-    * [Авторизация по PPPoE](polzovateli/avtorizaciya-polzovatelei/avtorizaciya-po-pppoe.md)
-    * [Авторизация по IP-адресу](polzovateli/avtorizaciya-polzovatelei/avtorizaciya-po-ip-adresu.md)
-    * [Авторизация через Ideco Agent](polzovateli/avtorizaciya-polzovatelei/avtorizaciya-cherez-ideco-agent.md)
-    * [Веб авторизация](polzovateli/avtorizaciya-polzovatelei/veb-avtorizaciya.md)
-  * [Интеграция с Active Directory](polzovateli/integraciya-s-active-directory/README.md)
-    * [Авторизация пользователей Active Directory](polzovateli/integraciya-s-active-directory/avtorizaciya-polzovatelei-active-directory.md)
-    * [Ввод сервера в домен](polzovateli/integraciya-s-active-directory/vvod-servera-v-domen.md)
-    * [Скрипты автоматической авторизации и разавторизации](polzovateli/integraciya-s-active-directory/skripty-avtomaticheskoi-avtorizacii-i-razavtorizacii.md)
-    * [Импорт пользователей](polzovateli/integraciya-s-active-directory/import-polzovatelei.md)
-  * [Wi-Fi-сети](polzovateli/wi-fi-seti.md)
+* [Пользователи](users/README.md)
+  * [Дерево пользователей](users/user-tree.md)
+  * [Управление пользователями](users/user-management.md)
+  * [Настройка пользователей](users/customization-of-users.md)
+  * [Пользователи терминального сервера](users/terminal-server-users.md)
+  * [Авторизация пользователей](users/user-authorization/README.md)
+    * [Авторизация по PPTP](users/user-authorization/pptp.md)
+    * [Авторизация по PPPoE](users/user-authorization/avtorizaciya-po-pppoe.md)
+    * [Авторизация по IP-адресу](users/user-authorization/avtorizaciya-po-ip-adresu.md)
+    * [Авторизация через Ideco Agent](users/user-authorization/avtorizaciya-cherez-ideco-agent.md)
+    * [Веб авторизация](users/user-authorization/veb-avtorizaciya.md)
+  * [Интеграция с Active Directory](users/integraciya-s-active-directory/README.md)
+    * [Авторизация пользователей Active Directory](users/integraciya-s-active-directory/avtorizaciya-polzovatelei-active-directory.md)
+    * [Ввод сервера в домен](users/integraciya-s-active-directory/vvod-servera-v-domen.md)
+    * [Скрипты автоматической авторизации и разавторизации](users/integraciya-s-active-directory/skripty-avtomaticheskoi-avtorizacii-i-razavtorizacii.md)
+    * [Импорт пользователей](users/integraciya-s-active-directory/import-polzovatelei.md)
+  * [Wi-Fi-сети](users/wi-fi-seti.md)
 * [Мониторинг](monitoring/README.md)
   * [Монитор трафика](monitoring/monitor-trafika.md)
   * [Telegram-бот](monitoring/telegram-bot.md)
