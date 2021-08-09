@@ -2,14 +2,14 @@
 
 * [Об Ideco UTM](README.md)
 
-## Общая информация
+## Общая информация <a id="general"></a>
 
 ---
 
 * [Лицензирование](license.md)
 * [Техническая поддержка](technical-support.md)
 
-## Установка <a id="ustanovka-1"></a>
+## Установка <a id="installation"></a>
 
 ---
 
@@ -20,7 +20,7 @@
 * [Процесс установки](installation-process.md)
 * [Первоначальная настройка](initial-setup.md)
 
-## Настройка <a id="nastroika-1"></a>
+## Настройка <a id="settings"></a>
 
 ---
 
@@ -128,7 +128,7 @@
 * [Отчеты](reports.md)
 * [Интеграция UTM и SkyDNS](skydns.md)
 
-## Обслуживание <a id="obsluzhivanie-1"></a>
+## Обслуживание <a id="service"></a>
 
 ---
 
@@ -139,7 +139,7 @@
   * [Резервное копирование и восстановление данных](service-1/backup.md)
   * [Режим удаленного помощника](service-1/remote-assistant.md)
 
-## Популярные рецепты
+## Популярные рецепты <a id="recipes"></a>
 
 ---
 
