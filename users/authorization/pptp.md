@@ -30,7 +30,7 @@ IP-адрес пользователю назначается автоматич
 
 ![](../../.gitbook/assets/fixip.png)
 
-При подключении из сети интернет рекомендуем использовать [IPSec IKEv2](../../service/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md), [L2TP IPSec](../../service/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md) или [SSTP](../../service/vpn-tunnel-protocols/client-to-site/sstp.md) для более надежного шифрования трафика.
+При подключении из сети интернет рекомендуем использовать [IPSec IKEv2](../../services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md), [L2TP IPSec](../../services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md) или [SSTP](../../services/vpn-tunnel-protocols/client-to-site/sstp.md) для более надежного шифрования трафика.
 
-Смотрите также инструкцию по настройке [PPTP](../../service/vpn-tunnel-protocols/client-to-site/pptp.md) для подключения из сети Интернет.
+Смотрите также инструкцию по настройке [PPTP](../../services/vpn-tunnel-protocols/client-to-site/pptp.md) для подключения из сети Интернет.
 

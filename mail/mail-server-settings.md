@@ -50,7 +50,7 @@ dateCreated: '2021-04-02T07:23:43.713Z'
 {% endhint %}
 
 {% hint style="info" %}
-Для загрузки своего сертификата на сервер вы можете воспользоваться [инструкцией](../service/certificates/upload-ssl-certificate-to-server.md).
+Для загрузки своего сертификата на сервер вы можете воспользоваться [инструкцией](../services/certificates/upload-ssl-certificate-to-server.md).
 {% endhint %}
 
 ## Расширенные настройки
