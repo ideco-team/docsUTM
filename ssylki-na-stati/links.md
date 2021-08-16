@@ -14,66 +14,66 @@
 * \*\*\*\*[**Восстановление пароля администратора**](https://docs.ideco.ru/popular-recipes/restore-access-to-ideco-utm)\*\*\*\*
 * \*\*\*\*[**Удаленный доступ для управления сервером**](https://docs.ideco.ru/service/remote-access-for-server-management)\*\*\*\*
 
-### [antivirus](https://docs.ideco.ru/?q=antivirus)
+### antivirus
 
 * \*\*\*\*[**Антивирусы веб-трафика**](https://docs.ideco.ru/access-rules/antivirus)\*\*\*\*
 
-### [application\_control](https://docs.ideco.ru/?q=application_control)
+### application\_control
 
 * \*\*\*\*[**Блокировка популярных ресурсов**](https://docs.ideco.ru/popular-recipes/blocking-popular-resources)\*\*\*\*
 * \*\*\*\*[**Контроль приложений**](https://docs.ideco.ru/access-rules/application-control)\*\*\*\*
 
-### [backup](https://docs.ideco.ru/?q=backup)
+### backup
 
 * \*\*\*\*[**Резервное копирование и восстановление данных**](https://docs.ideco.ru/service/backup)\*\*\*\*
 
-### [balancing\_and\_reserving](https://docs.ideco.ru/?q=balancing_and_reserving)
+### balancing\_and\_reserving
 
 * \*\*\*\*[**Одновременное подключение к нескольким провайдерам**](https://docs.ideco.ru/connection-to-provider/multiple-simultaneous--connections)\*\*\*\*
 
-### [certificate](https://docs.ideco.ru/?q=certificate)
+### certificate
 
 * \*\*\*\*[**Загрузка своего SSL-сертификата на сервер**](https://docs.ideco.ru/services/certificates/upload-ssl-certificate-to-server)
 * \*\*\*\*[**Сертификаты**](https://docs.ideco.ru/services/certificates)\*\*\*\*
 
-### [cluster](https://docs.ideco.ru/?q=cluster)
+### cluster
 
 * -
 
-### [content\_filter](https://docs.ideco.ru/?q=content_filter)
+### content\_filter
 
 * \*\*\*\*[**Блокировка популярных ресурсов**](https://docs.ideco.ru/popular-recipes/blocking-popular-resources)\*\*\*\*
 * \*\*\*\*[**Настройка фильтрации HTTPS**](https://docs.ideco.ru/access-rules/content-filter/filtering-https-traffic)\*\*\*\*
 * \*\*\*\*[**Настройка контент-фильтра**](https://docs.ideco.ru/access-rules/content-filter/settings#nastroika-kontent-filtra)\*\*\*\*
 * \*\*\*\*[**Описание категорий контент-фильтра**](https://docs.ideco.ru/access-rules/content-filter/custom-categories)\*\*\*\*
 
-### [device\_detection](https://docs.ideco.ru/?q=device_detection)
+### device\_detection
 
 * \*\*\*\*[**Обнаружение устройств**](https://docs.ideco.ru/services/device-discovery)\*\*\*\*
 
-### [dhcp](https://docs.ideco.ru/?q=dhcp)
+### dhcp
 
 * \*\*\*\*[**DHCP**](https://docs.ideco.ru/services/dhcp)\*\*\*\*
 
-### [firewall](https://docs.ideco.ru/?q=firewall)
+### firewall
 
 * \*\*\*\*[**Блокировка популярных ресурсов**](https://docs.ideco.ru/popular-recipes/blocking-popular-resources)\*\*\*\*
 * \*\*\*\*[**Портмаппинг \(проброс портов, DNAT\)**](https://docs.ideco.ru/publishing-resources/portmapping)\*\*\*\*
 * \*\*\*\*[**Файрвол**](https://docs.ideco.ru/access-rules/firewall)\*\*\*\*
 
-### [https\_filtration](https://docs.ideco.ru/?q=https_filtration)
+### https\_filtration
 
 * \*\*\*\*[**Настройка фильтрации HTTPS**](https://docs.ideco.ru/access-rules/content-filter/filtering-https-traffic)\*\*\*\*
 
-### [ids\_ips](https://docs.ideco.ru/?q=ids_ips)
+### ids\_ips
 
 * \*\*\*\*[**Предотвращение вторжений**](https://docs.ideco.ru/access-rules/ips)\*\*\*\*
 
-### [install](https://docs.ideco.ru/?q=install)
+### install
 
 * \*\*\*\*[**Установка**](https://docs.ideco.ru/installation-process)\*\*\*\*
 
-### [ipsec](https://docs.ideco.ru/?q=ipsec)
+### ipsec
 
 * \*\*\*\*[**Подключение Kerio Control к Ideco UTM по IPSec**](https://docs.ideco.ru/services/vpn-tunnel-protocols/site-to-site/ipsec-connection-kerio-control-to-utm)\*\*\*\*
 * \*\*\*\*[**Подключение pfSense к Ideco UTM по IPsec**](https://docs.ideco.ru/services/vpn-tunnel-protocols/site-to-site/ipsec-connection-pfsense-to-utm)\*\*\*\*
@@ -81,13 +81,13 @@
 * \*\*\*\*[**Подключение устройств**](https://docs.ideco.ru/services/vpn-tunnel-protocols/site-to-site/ipsec/connecting-devices)\*\*\*\*
 * \*\*\*\*[**Филиалы и главный офис**](https://docs.ideco.ru/services/vpn-tunnel-protocols/site-to-site/ipsec/branch-office-and-main-office)\*\*\*\*
 
-### [license](https://docs.ideco.ru/?q=license)
+### license
 
 * \*\*\*\*[**Личный кабинет**](https://docs.ideco.ru/service/lk)\*\*\*\*
 * \*\*\*\*[**Регистрация сервера**](https://docs.ideco.ru/service/server-registration)\*\*\*\*
 * \*\*\*\*[**Управление лицензиями**](https://docs.ideco.ru/service/license-management)\*\*\*\*
 
-### [network\_interface](https://docs.ideco.ru/?q=network_interface)
+### network\_interface
 
 * \*\*\*\*[**Настройка подключения по PPTP**](https://docs.ideco.ru/connection-to-provider/pptp-connection)
 * \*\*\*\*[**Настройка подключения по PPPoE**](https://docs.ideco.ru/connection-to-provider/pppoe-connection)
@@ -96,19 +96,19 @@
 * \*\*\*\*[**Настройка подключения по L2TP**](https://docs.ideco.ru/connection-to-provider/l2tp-connection)
 * \*\*\*\*[**Одновременное подключение к нескольким провайдерам**](https://docs.ideco.ru/connection-to-provider/multiple-simultaneous--connections)
 
-### [nextdns](https://docs.ideco.ru/?q=nextdns)
+### nextdns
 
 * -
 
-### [object](https://docs.ideco.ru/?q=object)
+### object
 
 * \*\*\*\*[**Объекты**](https://docs.ideco.ru/access-rules/aliases)\*\*\*\*
 
-### [portmapping](https://docs.ideco.ru/?q=portmapping)
+### portmapping
 
 * \*\*\*\*[**Портмаппинг \(проброс портов, DNAT\)**](https://docs.ideco.ru/publishing-resources/portmapping)\*\*\*\*
 
-### [post](https://docs.ideco.ru/?q=post)
+### post
 
 * \*\*\*\*[**Почтовый сервер**](https://docs.ideco.ru/mail)\*\*\*\*
 * \*\*\*\*[**Настройка почтового сервера**](https://docs.ideco.ru/mail/mail-server-settings)\*\*\*\*
@@ -119,80 +119,103 @@
 * \*\*\*\*[**Переадресация почты**](https://docs.ideco.ru/mail/mail-forwarding)\*\*\*\*
 * \*\*\*\*[**Настройка домена у регистратора/держателя зоны**](https://docs.ideco.ru/mail/domain-settings-at-zone-holder)\*\*\*\*
 
-### [powershell](https://docs.ideco.ru/?q=powershell)
+### powershell
 
 * \*\*\*\*[**Инструкция по запуску PowerShell скриптов**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts)\*\*\*\*
 
-### [proxy](https://docs.ideco.ru/?q=proxy)
+### proxy
 
-* 
-[d\_proxyocs8](https://docs8.ideco.ru/t/proxy)
+* \*\*\*\*[**Исключить IP-адреса из обработки прокси сервером**](https://docs.ideco.ru/services/proxy/exclusions)\*\*\*\*
+* \*\*\*\*[**Настройка программы Proxifier для прямых подключений к прокси серверу**](https://docs.ideco.ru/popular-recipes/configuring-proxifier)\*\*\*\*
+* \*\*\*\*[**Настройка прокси с одним интерфейсом**](https://docs.ideco.ru/services/proxy/proxy-setting)\*\*\*\*
+* \*\*\*\*[**Подключение к внешним ICAP-сервисам**](https://docs.ideco.ru/services/proxy/icap)
+* \*\*\*\*[**Прокси сервер**](https://docs.ideco.ru/services/proxy/proxy-server)
 
-### [report](https://docs.ideco.ru/?q=report)
+### report
 
-[do\_reportcs8](https://docs8.ideco.ru/t/report)
+* \*\*\*\*[**Журнал авторизации**](https://docs.ideco.ru/reports/authorization-log)
+* \*\*\*\*[**Сайты**](https://docs.ideco.ru/reports/sites)\*\*\*\*
 
-### [reverse\_proxy](https://docs.ideco.ru/?q=reverse_proxy)
+### reverse\_proxy
 
-[docs8\_reverse\_proxy](https://docs8.ideco.ru/t/reverse_proxy)
+* \*\*\*\*[**Обратный прокси**](https://docs.ideco.ru/services/reverse-proxy)
 
-### [routing](https://docs.ideco.ru/?q=routing)
+### routing
 
-[doc\_routings8](https://docs8.ideco.ru/t/routing)
+* \*\*\*\*[**Доступ в удаленные сети через роутер в локальной сети**](https://docs.ideco.ru/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network)\*\*\*\*
+* \*\*\*\*[**Маршрутизация**](https://docs.ideco.ru/services/routing)\*\*\*\*
+* \*\*\*\*[**Особенности маршрутизации и организации доступа**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/features)
 
-### [server\_registration](https://docs.ideco.ru/?q=server_registration)
+### server\_registration
 
-[docs8\_server\_registration](https://docs8.ideco.ru/t/server_registration)
+* \*\*\*\*[**Личный кабинет**](https://docs.ideco.ru/service/lk)\*\*\*\*
+* \*\*\*\*[**Регистрация сервера**](https://docs.ideco.ru/service/server-registration)\*\*\*\*
 
-### [server\_update](https://docs.ideco.ru/?q=server_update)
+### server\_update
 
-[docs8\_server\_update](https://docs8.ideco.ru/t/server_update)
+* [**Обновление сервера** ](https://docs.ideco.ru/service/server-update)\*\*\*\*
 
-### [snmp](https://docs.ideco.ru/?q=snmp)
+### snmp
 
-[\_snmpdocs8](https://docs8.ideco.ru/t/snmp)
+* \*\*\*\*[**SNMP**](https://docs.ideco.ru/monitor/snmp)\*\*\*\*
 
-### [speed\_limit](https://docs.ideco.ru/?q=speed_limit)
+### speed\_limit
 
-[docs8\_speed\_limit](https://docs8.ideco.ru/t/speed_limit)
+* \*\*\*\*[**Ограничение скорости**](https://docs.ideco.ru/access-rules/shaper)\*\*\*\*
 
-### [support](https://docs.ideco.ru/?q=support)
+### support
 
-[doc\_supports8](https://docs8.ideco.ru/t/support)
+* \*\*\*\*[**Поддержка устаревших алгоритмов шифрования**](https://docs.ideco.ru/popular-recipes/legacy-encryption-support)\*\*\*\*
+* \*\*\*\*[**Режим удаленного помощника**](https://docs.ideco.ru/service/remote-assistant)
+* \*\*\*\*[**Удаленный доступ для управления сервером**](https://docs.ideco.ru/service/remote-access-for-server-management)\*\*\*\*
 
-### [syslog](https://docs.ideco.ru/?q=syslog)
+### syslog
 
-[do\_syslogcs8](https://docs8.ideco.ru/t/syslog)
+* \*\*\*\*[**Пересылка системных сообщений**](https://docs.ideco.ru/monitor/syslog)
 
-### [telegram-bot](https://docs.ideco.ru/?q=telegram)
+### telegram-bot
 
-[docs\_telegram8](https://docs8.ideco.ru/t/telegram)
+* \*\*\*\*[**Telegram-бот**](https://docs.ideco.ru/monitor/telegram-bot)\*\*\*\*
 
-### [terminal](https://docs.ideco.ru/?q=terminal)
+### terminal
 
-[docs\_terminal8](https://docs8.ideco.ru/t/terminal)
+* \*\*\*\*[**Терминал**](https://docs.ideco.ru/terminal)\*\*\*\*
 
-### [usb](https://docs.ideco.ru/?q=usb)
+### usb
 
-\_usb[docs8](https://docs8.ideco.ru/t/usb)
+* \*\*\*\*[**Создание загрузочного USB flash диска**](https://docs.ideco.ru/usb)\*\*\*\*
 
-### [user\_authorization](https://docs.ideco.ru/?q=user_authorization)
+### user\_authorization
 
-[docs8\_user\_authorization](https://docs8.ideco.ru/t/user_authorization)
+* \*\*\*\*[**L2TP IPSec**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec)
+* \*\*\*\*[**SSTP**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/sstp)\*\*\*\*
+* \*\*\*\*[**IPSec IKEv2**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2)\*\*\*\*
+* \*\*\*\*[**Авторизация пользователей Active Directory**](https://docs.ideco.ru/users/active-directory/active-directory-user-authorization)
+* \*\*\*\*[**Личный кабинет**](https://docs.ideco.ru/service/lk)
+* \*\*\*\*[**Авторизация пользователей**](https://docs.ideco.ru/users/authorization)
 
-### [user\_management](https://docs.ideco.ru/?q=user_management)
+### user\_management
 
-[docs8\_user\_management](https://docs8.ideco.ru/t/user_management)
+* \*\*\*\*[**Wi-Fi-сети**](https://docs.ideco.ru/users/wifi-network)\*\*\*\*
+* \*\*\*\*[**Дерево пользователей**](https://docs.ideco.ru/users/user-tree)
+* \*\*\*\*[**Монитор трафика**](https://docs.ideco.ru/monitor/traffic)\*\*\*\*
+* \*\*\*\*[**Настройка пользователей**](https://docs.ideco.ru/users/customization-of-users)
+* \*\*\*\*[**Управление пользователями**](https://docs.ideco.ru/users/user-management)
 
-### [user\_quota](https://docs.ideco.ru/?q=user_quota)
+### user\_quota
 
-[docs8\_user\_quota](https://docs8.ideco.ru/t/user_quota)
+* \*\*\*\*[**Пользовательские квоты**](https://docs.ideco.ru/access-rules/quotas)\*\*\*\*
 
-### [vpn\_authorization](https://docs.ideco.ru/?q=vpn_authorization)
+### vpn\_authorization
 
-[docs8\_vpn\_authorization](https://docs8.ideco.ru/t/vpn_authorization)
+* \*\*\*\*[**Ideco VPN**](https://docs.ideco.ru/ideco-vpn)
+* \*\*\*\*[**IPSec IKEv2**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2)\*\*\*\*
+* \*\*\*\*[**L2TP IPSec**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec)
+* [**SSTP**](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/sstp)\*\*\*\*
 
-### [zabbix](https://docs.ideco.ru/?q=zabbix)
+### zabbix
 
-[do\_zabbixcs8](https://docs8.ideco.ru/t/zabbix)
+* \*\*\*\*[**Интеграция с Zabbix**](https://docs.ideco.ru/monitor/zabbix)
+
+
 
