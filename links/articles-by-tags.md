@@ -96,9 +96,9 @@
 * \*\*\*\*[**Настройка подключения по L2TP**](https://docs.ideco.ru/connection-to-provider/l2tp-connection)
 * \*\*\*\*[**Одновременное подключение к нескольким провайдерам**](https://docs.ideco.ru/connection-to-provider/multiple-simultaneous--connections)
 
-## nextdns
+## dns
 
-* -
+* \*\*\*\*[**DNS**](https://docs.ideco.ru/services/dns)\*\*\*\*
 
 ## object
 
