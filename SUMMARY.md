@@ -122,6 +122,7 @@
 * [Терминал](terminal.md)
 * [Ideco VPN](ideco-vpn.md)
 * [Интеграция UTM и SkyDNS](skydns.md)
+* [Кластеризация](cluster.md)
 
 ## Обслуживание <a id="service"></a>
 
