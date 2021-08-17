@@ -38,7 +38,7 @@
 
 ## cluster
 
-* -
+* [**Кластеризация**](https://docs.ideco.ru/cluster)\*\*\*\*
 
 ## content\_filter
 
