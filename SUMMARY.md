@@ -149,7 +149,7 @@
   * [Блокировка популярных ресурсов](popular-recipes/blocking-popular-resources.md)
   * [Перенос данных и настроек на другой сервер](popular-recipes/transferring-data-to-another-server.md)
 
-## Ссылки <a id="tags"></a>
+## Ссылки <a id="links"></a>
 
-* [Статьи по тегам](tags/links.md)
+* [Статьи по тегам](links/articles-by-tags.md)
 
