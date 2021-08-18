@@ -20,19 +20,7 @@ DNS-сервер в Ideco UTM не доступен из вне, по сообр
 
 Формат записей для настройки Master-зоны соответствует формату записей DNS-сервера BIND.
 
-![](../.gitbook/assets/7110739.jpg)
-
-Текст для вставки:
-
-```text
-$TTL 604800
-$ORIGIN test.com.
-@ SOA test.com. administrator.test.com. ( 1 604800 86400 2419200 604800 )
-@ ns 
-@ @ A 192.168.0.1
-```
-
-
+![](../.gitbook/assets/master-zone-7-9-.jpg)
 
 ## Forward-зоны
 
