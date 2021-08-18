@@ -35,7 +35,7 @@ dateCreated: '2021-04-02T07:25:23.535Z'
 
 После сохранения маршрута страница выглядит так:
 
-![](../.gitbook/assets/route_table.png)
+![](../.gitbook/assets/routing-outside.png)
 
 Описание элементов управления маршрутами в таблице:
 
