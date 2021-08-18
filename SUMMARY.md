@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Об Ideco UTM](README.md)
+* [Об Ideco UTMqwe](README.md)
 
 ## Общая информация <a id="general"></a>
 
