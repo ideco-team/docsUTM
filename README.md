@@ -5,7 +5,7 @@ description: >-
   управляемым, безопасным и надежным.
 ---
 
-# Об Ideco UTMqwe
+# Об Ideco UTM
 
 ### Возможности Ideco UTM:
 
