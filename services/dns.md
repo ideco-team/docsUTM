@@ -75,5 +75,5 @@ DNS-сервер в Ideco UTM не доступен извне по сообра
 
 Формат записей для настройки master-зоны соответствует формату записей DNS-сервера BIND.
 
-![](../.gitbook/assets/master-zonadns.png)
+![](../.gitbook/assets/master-zona-dns.png)
 
