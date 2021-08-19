@@ -79,6 +79,7 @@
         * [Подключение пользователей](services/vpn-tunnel-protocols/site-to-site/ipsec/connecting-users.md)
       * [PPTP VPN](services/vpn-tunnel-protocols/site-to-site/pptp-vpn.md)
       * [Подключение pfSense к Ideco UTM по IPsec](services/vpn-tunnel-protocols/site-to-site/ipsec-connection-pfsense-to-utm.md)
+      * [Исходящее подключение pfSense к Ideco UTM по IPsec](services/vpn-tunnel-protocols/site-to-site/iskhodyashee-podklyuchenie-pfsense-k-ideco-utm-po-ipsec.md)
       * [Подключение Keenetic по SSTP](services/vpn-tunnel-protocols/site-to-site/sstp-connection-keenetic.md)
       * [Подключение Kerio Control к Ideco UTM по IPSec](services/vpn-tunnel-protocols/site-to-site/ipsec-connection-kerio-control-to-utm.md)
       * [Подключение Keenetic по IPSec](services/vpn-tunnel-protocols/site-to-site/keenetic-connection-via-ipsec.md)
