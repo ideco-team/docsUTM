@@ -10,7 +10,7 @@ editor: markdown
 dateCreated: '2021-04-02T07:27:28.235Z'
 ---
 
-# Подключение pfSense к Ideco UTM по IPsec
+# Входящее подключение pfSense к Ideco UTM по IPsec
 
 {% hint style="info" %}
 Объединяемые локальные сети не должны пересекаться! 
