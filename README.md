@@ -6,7 +6,6 @@ description: >-
 ---
 
 # Об Ideco UTM
-
 ### Возможности Ideco UTM:
 
 * [x] Межсетевой экран;
