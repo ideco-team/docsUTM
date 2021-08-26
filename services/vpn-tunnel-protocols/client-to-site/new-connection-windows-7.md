@@ -14,7 +14,7 @@ dateCreated: '2021-04-02T07:28:00.411Z'
 
 1. Откройте «Центр управления сетями и общим доступом».
 
-![](../../../.gitbook/assets/windows7-ikev2vpn-ru-1.png)
+![](../../../.gitbook/assets/windows7-ikev2vpn-ru-1%20%281%29.png)
 
 2. Выберите «Настройка нового подключения или сети».
 
@@ -30,7 +30,7 @@ dateCreated: '2021-04-02T07:28:00.411Z'
 
 5. Введите доменное имя сервера в качестве адреса подключений. Имя местоназначения может быть произвольным.
 
-![](../../../.gitbook/assets/windows7-ikev2vpn-ru-5.png)
+![](../../../.gitbook/assets/windows7-ikev2vpn-ru-5%20%281%29.png)
 
 6. Введите ваш логин и пароль.
 
@@ -38,7 +38,7 @@ dateCreated: '2021-04-02T07:28:00.411Z'
 
 7. Нажмите **Закрыть**.
 
-![](../../../.gitbook/assets/windows7-ikev2vpn-ru-7.png)
+![](../../../.gitbook/assets/windows7-ikev2vpn-ru-7%20%281%29.png)
 
 8. Выберите «Подключение к IKEv2 VPN серверу» в Windows 7.
 
@@ -46,7 +46,7 @@ dateCreated: '2021-04-02T07:28:00.411Z'
 
 9. Выберите «Свойства».
 
-![](../../../.gitbook/assets/windows7-ikev2vpn-ru-9.png)
+![](../../../.gitbook/assets/windows7-ikev2vpn-ru-9%20%281%29.png)
 
 10. Выберите протокол IKEv2 и обязательное шифрование.
 

@@ -42,17 +42,17 @@ dateCreated: '2021-04-02T07:23:48.430Z'
 
 Пример настроек клиента Microsoft Outlook 2013 по протоколу IMAP:  
 
-![](../.gitbook/assets/4982578.jpg)
+![](../.gitbook/assets/4982578%20%281%29.jpg)
 
 Пример настроек клиента Microsoft Outlook 2016 по протоколу IMAP:  
 
-![](../.gitbook/assets/4982695.jpg)
+![](../.gitbook/assets/outlook2016-7-9-%20%281%29.jpg)
 
 Для отображения IMAP-папок снимите галочку **При просмотре дерева в Outlook показывать только подписанные папки** в свойствах IMAP-папок:  
 
-![](../.gitbook/assets/4982906.png)
+![](../.gitbook/assets/imap_outlook-7-9-%20%281%29.png)
 
-![](../.gitbook/assets/imap_outlook2.png)
+![](../.gitbook/assets/imap_outlook2%20%281%29.png)
 
 ### Настройка почтового клиента iPhone
 
