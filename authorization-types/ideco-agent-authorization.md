@@ -37,7 +37,7 @@
         <p>&#x41E;&#x442;&#x43E;&#x431;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435;
           &#x434;&#x438;&#x430;&#x43B;&#x43E;&#x433;&#x430; &#x43F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x435;&#x43D;&#x438;&#x44F;</p>
         <p>
-          <img src="../.gitbook/assets/log_pass-7-9-.png" alt/>
+          <img src="../.gitbook/assets/11436167.png" alt/>
         </p>
         </td>
     </tr>
@@ -56,7 +56,8 @@
           &#x43E; &#x43F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x435;&#x43D;&#x438;&#x438;
           &#x43A; &#x438;&#x43D;&#x442;&#x435;&#x440;&#x43D;&#x435;&#x442;</p>
         <p>
-          <img src="../.gitbook/assets/inf_qoute-7-9-.png" alt/>
+          <img src="../.gitbook/assets/&#x438;&#x43D;&#x444;&#x430;_&#x43E;_&#x43A;&#x432;&#x43E;&#x442;&#x435; (1).png"
+          alt/>
         </p>
         </td>
     </tr>
@@ -77,7 +78,7 @@
           &#x43E; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x435;
           &#x430;&#x432;&#x442;&#x43E;&#x440;&#x438;&#x437;&#x430;&#x446;&#x438;&#x438;</p>
         <p>
-          <img src="../.gitbook/assets/about-7-9-.png" alt/>
+          <img src="../.gitbook/assets/about-7-9- (1).png" alt/>
         </p>
         </td>
     </tr>

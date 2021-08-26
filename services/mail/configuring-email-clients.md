@@ -42,7 +42,7 @@
 
 Пример настроек клиента Microsoft Outlook 2013 по протоколу IMAP: 
 
-![](../../.gitbook/assets/outlook2013-7-9-.jpg)
+![](../../.gitbook/assets/4982578.jpg)
 
  Пример настроек клиента Microsoft Outlook 2016 по протоколу IMAP:
 
@@ -52,7 +52,7 @@
 
 ![](../../.gitbook/assets/imap_outlook-7-9-.png)
 
-![](../../.gitbook/assets/imap_outlook2-7-9.png)
+![](../../.gitbook/assets/imap_outlook2.png)
 
 ### Настройка почтового клиента iphone 
 

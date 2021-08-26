@@ -26,7 +26,7 @@
 
 Также для запрета обхода контент-фильтра рекомендуем создать правило запрета прямых обращений по IP-адресам в Контент-фильтре:
 
-![](../.gitbook/assets/7110692.jpg)
+![](../.gitbook/assets/7110677%20%281%29.jpg)
 
 ### Заблокировать Opera.Turbo, Opera VPN, Yandex.Turbo, friGate, Anonymox, Browsec
 
