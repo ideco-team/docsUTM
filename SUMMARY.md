@@ -105,7 +105,7 @@
   * [Настройка подключения по Ethernet](connection-to-provider/ethernet-connection.md)
   * [Подключение по 3G и 4G](connection-to-provider/3g-4g-connection.md)
   * [Настройка подключения по L2TP](connection-to-provider/l2tp-connection.md)
-  * [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous--connections.md)
+  * [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous-connections.md)
 * [Почтовый сервер](mail/README.md)
   * [Настройка почтового сервера](mail/mail-server-settings.md)
   * [Настройка почтовых клиентов](mail/configuring-email-clients.md)

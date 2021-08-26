@@ -97,7 +97,7 @@ dateCreated: '2021-04-02T07:21:59.755Z'
 * [Подключение по L2TP](connection-to-provider/l2tp-connection.md)
 * [Подключение по Ethernet](connection-to-provider/ethernet-connection.md)
 * [Подключение по 3G и 4G](connection-to-provider/3g-4g-connection.md)
-* [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous--connections.md)
+* [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous-connections.md)
 
 {% hint style="info" %}
 После подключения к Интернету требуется [зарегистрировать сервер](service/server-registration.md). 
