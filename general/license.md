@@ -20,7 +20,7 @@ dateCreated: '2021-04-02T07:20:54.664Z'
 
 **Срок действия лицензии**: не ограничен в редакциях SMB и Enterprise \(20 лет\). По окончании срока действия лицензии отключена авторизация пользователей и фильтрация трафика.
 
-Различия между редакциями Ideco UTM опубликованы на сайте: [https://ideco.ru/products/ics/editions](https://ideco.ru/products/ics/editions).
+Различия между редакциями Ideco UTM опубликованы на сайте: [https://ideco.ru/products/ics/editions](https://ideco.ru/products/ics/editions)
 
 ## Срок действия лицензии Enterprise
 
