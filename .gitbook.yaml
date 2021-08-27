@@ -19,7 +19,7 @@ redirects:
   https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
   ids_ips: ./settings/access-rules/ips.md
   install: ./installation-process.md
-  ipsec: ./settings/service/vpn-tunnel-protocols/site-to-site/ipsec/README.md
+  ipsec: ./settings/services/vpn-tunnel-protocols/site-to-site/ipsec/README.md
   license: ./service/server-registration.md
   network_interface: ./settings/connection-to-provider/README.md
   dns: ./settings/services/dns.md
