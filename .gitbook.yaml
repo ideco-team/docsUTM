@@ -1,0 +1,47 @@
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+redirects:
+  ad_authorization: ./users/active-directory/README.md
+  additionally: ./service/additionally.md
+  admins: ./access-rules/admins.md
+  antivirus: ./access-rules/antivirus.md
+  application_control: ./access-rules/application-control.md
+  backup: ./service/backup.md
+  balancing_and_reserving: ./connection-to-provider/multiple-simultaneous-connections.md
+  certificate: ./services/certificates/README.md
+  cluster: ./cluster.md
+  content_filter: ./access-rules/content-filter/README.md
+  device_detection: ./services/device-discovery.md
+  dhcp: ./service/dhcp.md
+  firewall: ./access-rules/firewall.md
+  https_filtration: ./access-rules/content-filter/filtering-https-traffic.md
+  ids_ips: ./access-rules/ips.md
+  install: ./installation-process.md
+  ipsec: ./service/vpn-tunnel-protocols/site-to-site/ipsec/README.md
+  license: ./service/server-registration.md
+  network_interface: ./connection-to-provider/README.md
+  dns: ./services/dns.md
+  object: ./access-rules/aliases.md
+  portmapping: ./publishing-resources/portmapping.md
+  post: ./mail/README.md
+  powershell: ./services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md
+  proxy: ./services/proxy/README.md
+  report: ./reports/README.md
+  reverse_proxy: ./services/reverse-proxy.md
+  routing: ./services/routing.md
+  server_registration: .
+  server_update: ./service/server-update.md
+  snmp: ./monitor/snmp.md
+  speed_limit: ./access-rules/shaper.md
+  support: ./service/remote-assistant.md
+  syslog: ./monitor/syslog.md
+  telegram-bot: ./monitor/telegram-bot.md
+  terminal: ./terminal.md
+  usb: ./usb.md
+  user_authorization: ./users/authorization/README.md
+  user_management: ./users/README.md
+  user_quota: ./access-rules/quotas.md
+  vpn_authorization: ./services/vpn-tunnel-protocols/client-to-site/README.md
+  zabbix: ./monitor/zabbix.md
