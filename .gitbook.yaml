@@ -4,7 +4,7 @@ structure:
 
 redirects:
   ad_authorization: ./settings/users/active-directory/README.md
-  additionally: ./settings/service/additionally.md
+  additionally: ./settings/services/additionally.md
   admins: ./settings/access-rules/admins.md
   antivirus: ./settings/access-rules/antivirus.md
   application_control: ./settings/access-rules/application-control.md
