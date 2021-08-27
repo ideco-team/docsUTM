@@ -9,39 +9,38 @@ redirects:
   antivirus: ./settings/access-rules/antivirus.md
   application_control: ./settings/access-rules/application-control.md
   backup: ./service/backup.md
-  balancing_and_reserving: ./connection-to-provider/multiple-simultaneous-connections.md
-  certificate: ./services/certificates/README.md
+  balancing_and_reserving: ./settings/connection-to-provider/multiple-simultaneous-connections.md
+  certificate: ./settings/services/certificates/README.md
   cluster: ./cluster.md
-  content_filter: ./access-rules/content-filter/README.md
+  content_filter: .settings/access-rules/content-filter/README.md
   device_detection: ./services/device-discovery.md
-  dhcp: ./service/dhcp.md
-  firewall: ./access-rules/firewall.md
-  https_filtration: ./access-rules/content-filter/filtering-https-traffic.md
-  ids_ips: ./access-rules/ips.md
+  dhcp: ./settings/service/dhcp.md
+  firewall: ./settings/access-rules/firewall.md
+  https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
+  ids_ips: ./settings/access-rules/ips.md
   install: ./installation-process.md
-  ipsec: ./service/vpn-tunnel-protocols/site-to-site/ipsec/README.md
+  ipsec: ./settings/service/vpn-tunnel-protocols/site-to-site/ipsec/README.md
   license: ./service/server-registration.md
-  network_interface: ./connection-to-provider/README.md
-  dns: ./services/dns.md
-  object: ./access-rules/aliases.md
-  portmapping: ./publishing-resources/portmapping.md
-  post: ./mail/README.md
-  powershell: ./services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md
-  proxy: ./services/proxy/README.md
-  report: ./reports/README.md
-  reverse_proxy: ./services/reverse-proxy.md
-  routing: ./services/routing.md
-  server_registration: .
+  network_interface: ./settings/connection-to-provider/README.md
+  dns: ./settings/services/dns.md
+  object: ./settings/access-rules/aliases.md
+  portmapping: ./settings/publishing-resources/portmapping.md
+  post: ./settings/mail/README.md
+  powershell: ./settings/services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md
+  proxy: ./settings/services/proxy/README.md
+  report: ./settings/reports/README.md
+  reverse_proxy: ./settings/services/reverse-proxy.md
+  routing: ./settings/services/routing.md
   server_update: ./service/server-update.md
-  snmp: ./monitor/snmp.md
-  speed_limit: ./access-rules/shaper.md
+  snmp: ./settings/monitor/snmp.md
+  speed_limit: ./settings/access-rules/shaper.md
   support: ./service/remote-assistant.md
-  syslog: ./monitor/syslog.md
-  telegram-bot: ./monitor/telegram-bot.md
+  syslog: ./settings/monitor/syslog.md
+  telegram-bot: ./settings/monitor/telegram-bot.md
   terminal: ./terminal.md
   usb: ./usb.md
-  user_authorization: ./users/authorization/README.md
-  user_management: ./users/README.md
-  user_quota: ./access-rules/quotas.md
-  vpn_authorization: ./services/vpn-tunnel-protocols/client-to-site/README.md
-  zabbix: ./monitor/zabbix.md
+  user_authorization: ./settings/users/authorization/README.md
+  user_management: ./settings/users/README.md
+  user_quota: ./settings/access-rules/quotas.md
+  vpn_authorization: ./settings/services/vpn-tunnel-protocols/client-to-site/README.md
+  zabbix: ./settings/monitor/zabbix.md
