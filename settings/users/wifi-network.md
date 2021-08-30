@@ -1,6 +1,6 @@
 ---
 title: Wi-Fi сети
-description: null
+description: Настройка режимов точки доступа и роутера.
 published: true
 date: '2021-05-18T11:30:18.964Z'
 tags: user_management

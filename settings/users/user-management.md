@@ -1,6 +1,6 @@
 ---
 title: Управление пользователями
-description: null
+description: 'Создание, удаление и перемещение учетных записей пользователей.'
 published: true
 date: '2021-05-18T11:54:21.975Z'
 tags: user_management

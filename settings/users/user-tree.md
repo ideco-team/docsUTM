@@ -1,6 +1,6 @@
 ---
 title: Дерево пользователей
-description: Пользователи в интерфейсе управления Ideco UTM отображаются в виде дерева
+description: Пользователи в интерфейсе управления Ideco UTM отображаются в виде дерева.
 published: true
 date: '2021-04-16T05:46:35.723Z'
 tags: user_management

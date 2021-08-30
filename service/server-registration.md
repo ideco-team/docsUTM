@@ -1,6 +1,6 @@
 ---
 title: Регистрация сервера
-description: null
+description: Необходима для полноценной работы Ideco UTM после установки.
 published: true
 date: '2021-06-29T11:16:46.899Z'
 tags: 'server_registration, license'
@@ -13,8 +13,6 @@ dateCreated: '2021-04-02T07:20:25.548Z'
 {% hint style="info" %}
 Для активации лицензии необходима обязательная регистрация сервера в [личном кабинете](https://my.ideco.ru/#/login/?next=/utm/license/).
 {% endhint %}
-
-Для полноценной работы Ideco UTM после установки необходима его регистрация.
 
 Для регистрации сервера на нем должен быть доступен интернет \(обязательно настройте [подключение к провайдеру](../settings/connection-to-provider/ethernet-connection.md) перед регистрацией\).
 

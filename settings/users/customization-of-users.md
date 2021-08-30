@@ -1,6 +1,6 @@
 ---
 title: Настройка пользователей
-description: null
+description: Настройка параметров учетной записи пользователя.
 published: true
 date: '2021-05-18T11:46:42.237Z'
 tags: user_management
