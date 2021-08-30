@@ -1,9 +1,9 @@
 ---
 title: Подключение устройств
 description: >-
-  Раздел предназначен для описания вариантов подключения различных роутеров
-  (Mikrotik, Zyxel Keenetic и др.) к Ideco UTM для организации site-to-site VPN
-  с использованием протокола IPsec IKEv2.
+  Описание вариантов подключения различных роутеров (Mikrotik, Zyxel Keenetic и
+  др.) к Ideco UTM для организации site-to-site VPN с использованием протокола
+  IPsec IKEv2.
 published: true
 date: '2021-06-02T06:21:52.323Z'
 tags: ipsec

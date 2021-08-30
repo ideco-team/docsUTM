@@ -1,6 +1,6 @@
 ---
 title: Подключение пользователей
-description: null
+description: Подключение удалённых пользователей по протоколу L2TP/IPsec.
 published: true
 date: '2021-06-02T05:55:30.048Z'
 tags: ipsec
@@ -10,7 +10,9 @@ dateCreated: '2021-04-02T07:28:25.543Z'
 
 # Подключение пользователей
 
+{% hint style="success" %}
 Настройки для подключения пользователей \(client-to-site VPN\) описаны в статье [Подключение по VPN L2TP-IPSec](../../client-to-site/l2tp-ipsec.md).
+{% endhint %}
 
 ## Разрешить подключение удалённых пользователей по протоколу L2TP/IPsec
 
