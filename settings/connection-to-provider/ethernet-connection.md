@@ -1,6 +1,6 @@
 ---
 title: Подключение по Ethernet
-description: null
+description: Настройка вручную и автоматическая с помощью протокола DHCP.
 published: true
 date: '2021-05-18T12:06:54.975Z'
 tags: network_interface

@@ -2,7 +2,7 @@
 title: >-
   Одновременное подключение к нескольким провайдерам (балансировка и
   резервирование)
-description: null
+description: 'Настройка резервирования каналов, статической и динамической балансировки.'
 published: true
 date: '2021-05-18T12:05:40.963Z'
 tags: 'network_interface, balancing_and_reserving'
