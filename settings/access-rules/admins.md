@@ -36,5 +36,11 @@ dateCreated: '2021-04-02T07:24:09.004Z'
 
 ![](../../.gitbook/assets/remotessh.png)
 
-Подробнее о настройке подключения к веб-интерфейсу при удаленном доступе смотрите в статье [Удаленный доступ для управления сервером](../../service/remote-access-for-server-management.md#dostup-k-veb-interfeisu-upravleniya-serverom-iz-seti-internet).
+Подробнее о настройке подключения к веб-интерфейсу при удаленном доступе смотрите в статье [Удаленный доступ для управления сервером](../../service/remote-access-for-server-management.md).
+
+## Восстановление пароля администратора
+
+Подробнее о восстановлении пароля администратора смотрите в статье по [ссылке](../../recipes/popular-recipes/restore-access-to-ideco-utm.md).
+
+
 
