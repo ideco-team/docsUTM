@@ -1,6 +1,6 @@
 ---
 title: Настройка-почтовых-клиентов
-description: null
+description: Настройка и примеры настроек популярных почтовых клиентов.
 published: true
 date: '2021-05-28T07:44:16.556Z'
 tags: post

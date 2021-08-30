@@ -1,6 +1,6 @@
 ---
 title: Переадресация-почты
-description: null
+description: Настройка почтовых правил переадресации (алиасы).
 published: true
 date: '2021-04-02T07:23:59.702Z'
 tags: null
