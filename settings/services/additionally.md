@@ -1,6 +1,6 @@
 ---
 title: Дополнительно
-description: null
+description: Настройка часового пояса и сбор анонимной статистики.
 published: true
 date: '2021-07-08T05:11:16.698Z'
 tags: additionally
