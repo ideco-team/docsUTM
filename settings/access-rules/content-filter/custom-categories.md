@@ -1,6 +1,6 @@
 ---
 title: Описание категорий контент-фильтра
-description: null
+description: В статье подробно описаны категории запросов к веб-ресурсам.
 published: true
 date: '2021-04-22T06:24:05.358Z'
 tags: content_filter
