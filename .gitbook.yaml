@@ -3,6 +3,7 @@ structure:
   summary: SUMMARY.md
 
 redirects:
+  ad: ./settings/users/active-directory/README.md
   ad_authorization: ./settings/users/active-directory/README.md
   additionally: ./settings/services/additionally.md
   admins: ./settings/access-rules/admins.md
@@ -31,6 +32,7 @@ redirects:
   report: ./settings/reports/README.md
   reverse_proxy: ./settings/services/reverse-proxy.md
   routing: ./settings/services/routing.md
+  server_registration: ./service/server-registration.md
   server_update: ./service/server-update.md
   snmp: ./settings/monitor/snmp.md
   speed_limit: ./settings/access-rules/shaper.md
