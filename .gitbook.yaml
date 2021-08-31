@@ -24,6 +24,7 @@ redirects:
   license: ./service/server-registration.md
   network_interface: ./settings/connection-to-provider/README.md
   dns: ./settings/services/dns.md
+  dns_external: ./settings/services/dns.md#dns-external
   object: ./settings/access-rules/aliases.md
   portmapping: ./settings/publishing-resources/portmapping.md
   post: ./settings/mail/README.md
