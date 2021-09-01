@@ -209,3 +209,27 @@ dateCreated: '2021-04-02T07:28:30.490Z'
 
 Для того чтобы соединение установилось, необходимо сбросить блокировки по IP на Ideco UTM. О том как это сделать, читайте в статье [Защита от bruteforce атак](../../../../access-rules/fail2ban.md).
 
+## Подключение Mikrotik к Ideco UTM по L2TP/IPsec
+
+Настройте подключение, выполнив следующие команды:
+
+1. Отредактируйте IPSec profile:
+
+```text
+ip ipsec profile set default hash-algorithm=sha1 enc-algorithm=aes-256 dh-group=modp2048
+```
+
+2. Отредактируйте IPSec proposals:
+
+```text
+ip ipsec proposal set default auth-algorithms=sha1 enc-algorithms=aes-256-cbc,aes-192-cbc,aes-128-cbc pfs-group=modp2048
+```
+
+3. Создайте подключение к Ideco UTM:
+
+```text
+interface l2tp-client add connect-to={server} profile=default disabled=no name={interface_name} password="{password}" user="{login}" use-ipsec="yes" ipsec-secret="{psk}"
+```
+
+
+

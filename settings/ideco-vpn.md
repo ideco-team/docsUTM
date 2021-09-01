@@ -23,7 +23,7 @@ dateCreated: '2021-07-19T10:57:00.757Z'
 
 Пример правила представлен на скриншоте ниже:
 
-![unknown.png](../.gitbook/assets/unknown.png)
+![](../.gitbook/assets/unknown.png)
 
 3. Скачать и установить программу Ideco VPN.
 
