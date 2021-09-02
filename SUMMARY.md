@@ -117,7 +117,6 @@
 * [Терминал](settings/terminal.md)
 * [Ideco VPN](settings/ideco-vpn.md)
 * [Интеграция UTM и SkyDNS](settings/skydns.md)
-* [Кластеризация](settings/cluster.md)
 
 ## Обслуживание <a id="service"></a>
 
