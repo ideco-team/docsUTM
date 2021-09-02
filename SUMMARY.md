@@ -57,6 +57,7 @@
 * [Сервисы](settings/services/README.md)
   * [Туннельные протоколы VPN](settings/services/vpn-tunnel-protocols/README.md)
     * [Подключение пользователей \(client-to-site\)](settings/services/vpn-tunnel-protocols/client-to-site/README.md)
+      * [Ideco VPN-клиент](settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md)
       * [L2TP IPSec](settings/services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md)
       * [SSTP](settings/services/vpn-tunnel-protocols/client-to-site/sstp.md)
       * [PPTP](settings/services/vpn-tunnel-protocols/client-to-site/pptp.md)
@@ -115,7 +116,6 @@
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
   * [Портмаппинг \(проброс портов, DNAT\)](settings/publishing-resources/portmapping.md)
 * [Терминал](settings/terminal.md)
-* [Ideco VPN](settings/ideco-vpn.md)
 * [Интеграция UTM и SkyDNS](settings/skydns.md)
 
 ## Обслуживание <a id="service"></a>
