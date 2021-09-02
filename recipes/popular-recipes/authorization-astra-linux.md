@@ -11,7 +11,7 @@
 3. Скачайте браузер **Chromium** командой `apt install chromium -y` **.**
 
 3.1 Для браузера **Chromium**:   
-Создайте файл **mydomain.json** по пути **/etc/chromium/policies/managed/** и впишите в него строчку: 
+Создайте файл **mydomain.json** в директории **/etc/chromium/policies/managed/** и впишите в него строчку: 
 
 ```text
 { 
