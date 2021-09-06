@@ -41,7 +41,7 @@ redirects:
   syslog: ./settings/monitor/syslog.md
   telegram-bot: ./settings/monitor/telegram-bot.md
   terminal: ./terminal.md
-  usb: .installation/usb.md
+  usb: ./installation/usb.md
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
