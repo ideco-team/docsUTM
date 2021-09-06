@@ -14,7 +14,7 @@ redirects:
   certificate: ./settings/services/certificates/README.md
   cluster: ./settings/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
-  device_detection: ./services/device-discovery.md
+  device_detection: ./settings/services/device-discovery.md
   dhcp: ./settings/services/dhcp.md
   firewall: ./settings/access-rules/firewall.md
   https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
@@ -41,7 +41,7 @@ redirects:
   syslog: ./settings/monitor/syslog.md
   telegram-bot: ./settings/monitor/telegram-bot.md
   terminal: ./terminal.md
-  usb: ./usb.md
+  usb: .installation/usb.md
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
