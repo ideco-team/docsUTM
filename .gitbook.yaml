@@ -12,7 +12,7 @@ redirects:
   backup: ./service/backup.md
   balancing_and_reserving: ./settings/connection-to-provider/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
-  cluster: ./cluster.md
+  cluster: ./settings/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
   device_detection: ./services/device-discovery.md
   dhcp: ./settings/services/dhcp.md
