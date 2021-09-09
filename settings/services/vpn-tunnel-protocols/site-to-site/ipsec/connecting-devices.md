@@ -42,7 +42,7 @@ dateCreated: '2021-04-02T07:28:30.490Z'
     * ECP384 \(29 group\);
     * modp2048 \(14 group\).
 * **Phase 2 \(ESP\):**
-  * engryption: 
+  * enсryption: 
     * AES256-GCM; 
     * AES256.
   * integrity: 
