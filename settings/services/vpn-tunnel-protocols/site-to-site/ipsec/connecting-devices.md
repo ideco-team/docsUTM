@@ -26,15 +26,42 @@ dateCreated: '2021-04-02T07:28:30.490Z'
 
 ![](../../../../../.gitbook/assets/screenshot_9.png)
 
-Список допустимых алгоритмов шифрования и хеширования, используемых в Ideco UTM:
+### Выбор алгоритмов шифрования на удалённых устройствах по приоритету:
 
-* aes128 \(aes-128-cbc\);
-* aes256 \(aes-256-cbc\);
-* sha256;
-* sha384;
-* modp1536 \(DH группа: 5\);
-* modp2048 \(DH группа: 14\);
-* modp4096 \(DH группа: 16\).
+* **Phase 1 \(IKE\):** 
+  * encryption: 
+    * AES256-GCM;
+    * AES256.
+  * integrity: 
+    * для AES-GCM - не требуется, поскольку имеются встроенные хеш алгоритмы;
+    * для не GCM алгоритмов по приоритету - SHA512, SHA256.
+  * prf: 
+    * такие же как integrity. Как правило, настраивается автоматически, в зависимости от выбора агоритмов integrity.
+  * diffie-hellman group: 
+    * Curve25519 \(31 group\);
+    * ECP384 \(29 group\);
+    * modp2048 \(14 group\).
+* **Phase 2 \(ESP\):**
+  * engryption: 
+    * AES256-GCM; 
+    * AES256.
+  * integrity: 
+    * для AES-GCM - не требуется;
+    * для не GCM алгоритмов - SHA512, SHA256.
+  * diffie-hellman: 
+    * Curve25519 \(31 group\);
+    * ECP384 \(29 group\);
+    * modp2048 \(14 group\).
+
+#### **Пример:**
+
+* **Phase 1 \(IKE\):** 
+  * AES256-GCM\PRF-HMAC-SHA512\Curve25519 
+  * AES256\SHA512\PRF-HMAC-SHA512\ECP384 
+  * AES256\SH256\PRF-HMAC-SHA256\MODP2048 
+* **Phase 2 \(ESP\):** 
+  * AES256-GCM\ECP384 
+  * AES256\SHA256\MODP2048
 
 ## Подключение Ideco UTM к MikroTik с использованием PSK
 
