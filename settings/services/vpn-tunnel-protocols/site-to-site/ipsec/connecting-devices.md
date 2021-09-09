@@ -62,11 +62,11 @@ dateCreated: '2021-04-02T07:28:30.490Z'
 
 #### **Пример:**
 
-* **Phase 1 \(IKE\)** \(одна из строк\)**:** 
+* **Phase 1 \(IKE\)** \(нужна одна из строк\)**:** 
   * AES256-GCM\PRF-HMAC-SHA512\Curve25519 
   * AES256\SHA512\PRF-HMAC-SHA512\ECP384 
   * AES256\SHA256\PRF-HMAC-SHA256\MODP2048 
-* **Phase 2 \(ESP\)** \(одна из строк\)**:** 
+* **Phase 2 \(ESP\)** \(нужна одна из строк\)**:** 
   * AES256-GCM\ECP384 
   * AES256\SHA256\MODP2048
 
