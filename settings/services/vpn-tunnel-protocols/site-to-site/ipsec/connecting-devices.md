@@ -36,7 +36,7 @@ dateCreated: '2021-04-02T07:28:30.490Z'
     * для AES-GCM - не требуется, поскольку имеются встроенные хеш алгоритмы;
     * для не GCM алгоритмов по приоритету - SHA512, SHA256.
   * prf: 
-    * такие же как integrity. Как правило, настраивается автоматически, в зависимости от выбора агоритмов integrity.
+    * как правило, настраивается автоматически, в зависимости от выбора агоритмов integrity \(поэтому в примере [ниже](connecting-devices.md#primer-nastroiki-podklyucheniya-pfsense-k-ideco-utm-po-ipsec-predstavlen-na-skrinshotakh-nizhe) значение prf: PRF-HMAC-SHA512\).
   * diffie-hellman group: 
     * Curve25519 \(31 group\);
     * ECP384 \(29 group\);
@@ -62,6 +62,12 @@ dateCreated: '2021-04-02T07:28:30.490Z'
 * **Phase 2 \(ESP\):** 
   * AES256-GCM\ECP384 
   * AES256\SHA256\MODP2048
+
+#### Пример настройки подключения pfSense к Ideco UTM по IPsec представлен на скриншотах ниже:
+
+![](../../../../../.gitbook/assets/phase1.png)
+
+![](../../../../../.gitbook/assets/phase2.png)
 
 ## Подключение Ideco UTM к MikroTik с использованием PSK
 
