@@ -17,6 +17,7 @@
 
 ## Настройка <a id="settings"></a>
 
+* [Панель мониторинга](settings/monitor-panel.md)
 * [Пользователи](settings/users/README.md)
   * [Дерево пользователей](settings/users/user-tree.md)
   * [Управление пользователями](settings/users/user-management.md)
