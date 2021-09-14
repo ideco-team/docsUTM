@@ -36,6 +36,7 @@
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
+  * [Журналы](settings/monitor/logs.md)
   * [Монитор трафика](settings/monitor/traffic.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
