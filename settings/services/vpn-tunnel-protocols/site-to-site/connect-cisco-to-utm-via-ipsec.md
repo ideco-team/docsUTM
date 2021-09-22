@@ -65,7 +65,7 @@ write memory
 
 ## Шаг 3. Настройка IKEv2+IPSec на Cisco
 
-1. Создание proposal:
+1. Создание proposal \(подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939__GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)на официальном сайте Cisco\):
 
 ```text
 conf t
@@ -76,7 +76,7 @@ group 19
 exit
 ```
 
-2. Создание policy:
+2. Создание policy \(подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772__GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)на официальном сайте Cisco\):
 
 ```text
 crypto ikev2 policy ikev2policy 
@@ -85,7 +85,7 @@ proposal ikev2proposal
 exit
 ```
 
-3. Создание peer \(key\_id - идентификатор удаленной стороны, т.е. Ideco UTM\):
+3. Создание peer \(key\_id - идентификатор удаленной стороны, т.е. Ideco UTM\). Подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659__GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9)на официальном сайте Cisco.
 
 ```text
 crypto ikev2 keyring key
@@ -98,7 +98,7 @@ exit
 exit
 ```
 
-4. Создание IKEv2 профиля:
+4. Создание IKEv2 profile \(подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task_20288C58E8B1416897A763FABA8B0885__GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)на официальном сайте Cisco\):
 
 ```text
 crypto ikev2 profile ikev2profile
@@ -182,5 +182,64 @@ write memory
 
 5. Проверьте наличие трафика между локальными сетями \(TCP и web\).
 
+## Итоговая конфигурация Cisco IOS
 
+Итоговая конфигурация IKEv2 IPSec на Cisco IOS должна выглядеть следующим образом:
+
+```text
+crypto ikev2 proposal ikev2proposal 
+ encryption aes-cbc-256
+ integrity sha256
+ group 19
+
+crypto ikev2 policy ikev2policy 
+ match fvrf any
+ proposal ikev2proposal
+
+crypto ikev2 keyring key
+ peer strongswan
+  address 5.5.5.5
+  pre-shared-key local QWEqwe1234567890
+  pre-shared-key remote QWEqwe1234567890
+
+crypto ikev2 profile ikev2profile
+ match identity remote key-id key-id
+ authentication remote pre-share
+ authentication local pre-share
+ keyring local key
+
+crypto ipsec transform-set TS esp-gcm 256 
+ mode tunnel
+
+crypto map cmap 10 ipsec-isakmp 
+ set peer 5.5.5.5
+ set transform-set TS 
+ set ikev2-profile ikev2profile
+ match address cryptoacl
+
+interface GigabitEthernet1
+! внешний интерфейс
+ ip address 1.1.1.1 255.255.255.0
+ ip nat outside
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ crypto map cmap
+
+interface GigabitEthernet2
+! локальный интерфейс
+ ip address 2.2.2.2 255.255.255.0
+ ip nat inside
+ negotiation auto
+ no mop enabled
+ no mop sysid
+
+ip nat inside source list NAT interface GigabitEthernet1 overload
+
+ip access-list extended NAT
+ deny   ip 2.2.2.0 0.0.0.255 3.3.3.0 0.0.0.255
+ permit ip 2.2.2.0 0.0.0.255 any
+ip access-list extended cryptoacl
+ permit ip 2.2.2.0 0.0.0.255 3.3.3.0 0.0.0.255
+```
 
