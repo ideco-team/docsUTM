@@ -76,7 +76,7 @@
         * [Подключение пользователей](settings/services/vpn-tunnel-protocols/site-to-site/ipsec/connecting-users.md)
       * [PPTP VPN](settings/services/vpn-tunnel-protocols/site-to-site/pptp-vpn.md)
       * [Входящее подключение Cisco IOS к Ideco UTM по IPSec](settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md)
-      * [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](settings/services/vpn-tunnel-protocols/site-to-site/iskhodyashee-podklyuchenie-ideco-utm-k-cisco-ios-po-ipsec.md)
+      * [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md)
       * [Входящее подключение pfSense к Ideco UTM по IPsec](settings/services/vpn-tunnel-protocols/site-to-site/ipsec-connection-pfsense-to-utm.md)
       * [Исходящее подключение pfSense к Ideco UTM по IPsec](settings/services/vpn-tunnel-protocols/site-to-site/out-ipsec-connection-pfsense-to-utm.md)
       * [Подключение Keenetic по SSTP](settings/services/vpn-tunnel-protocols/site-to-site/sstp-connection-keenetic.md)
