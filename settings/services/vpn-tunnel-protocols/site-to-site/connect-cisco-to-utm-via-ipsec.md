@@ -28,6 +28,8 @@ exit
 
 ```text
 interface GigabitEthernet1
+ip address 172.16.200.100 255.255.255.0
+no shutdown
 ip nat outside
 exit
 ```
