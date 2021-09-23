@@ -24,7 +24,7 @@ description: >-
 enable
 conf t
 interface GigabitEthernet2
-ip address 10.80.211.100 255.255.255.0
+ip address {локальный IP Cisco} {маска подсети}
 no shutdown
 ip nat inside
 exit
@@ -34,7 +34,7 @@ exit
 
 ```text
 interface GigabitEthernet1
-ip address 172.16.200.100 255.255.255.0
+ip address {внешний IP Cisco} {маска подсети}
 no shutdown
 ip nat outside
 exit
@@ -46,7 +46,7 @@ exit
 
 ```text
 ip access-list extended NAT
-permit ip 10.80.211.0 0.0.0.255 any
+permit ip {локальная подсеть Cisco} {обратная маска подсети} any
 exit
 ```
 
@@ -142,7 +142,7 @@ exit
 
 ```text
 ip access-list extended cryptoacl
-permit ip 10.80.211.0 0.0.0.255 192.168.211.0 0.0.0.255
+permit ip {локальная подсеть Cisco} {обратная маска подсети} {локальная подсеть UTM} {обратная маска подсети}
 exit
 ```
 
@@ -150,9 +150,9 @@ exit
 
 ```text
 ip access-list extended NAT 
-no permit ip 10.80.211.0 0.0.0.255 any
-deny ip 10.80.211.0 0.0.0.255 192.168.211.0 0.0.0.255
-permit ip 10.80.211.0 0.0.0.255 any
+no permit ip {локальная подсеть Cisco} {обратная маска подсети} any
+deny ip {локальная подсеть Cisco} {обратная маска подсети} {локальная подсеть UTM} {обратная маска подсети}
+permit ip {локальная подсеть Cisco} {обратная маска подсети} any
 exit
 
 end
