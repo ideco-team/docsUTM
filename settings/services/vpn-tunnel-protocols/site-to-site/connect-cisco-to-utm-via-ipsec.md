@@ -90,7 +90,7 @@ exit
 ```text
 crypto ikev2 keyring key
 peer strongswan
-address {внешний IP UTM-a}
+address {внешний IP UTM}
 identity key-id {key_id}
 pre-shared-key local {psk}
 pre-shared-key remote {psk}
@@ -102,7 +102,7 @@ exit
 
 ```text
 crypto ikev2 profile ikev2profile
-match identity remote address {внешний IP UTM-a} 255.255.255.255 
+match identity remote address {внешний IP UTM} 255.255.255.255 
 authentication remote pre-share
 authentication local pre-share
 keyring local key 
@@ -121,7 +121,7 @@ exit
 
 ```text
 crypto map cmap 10 ipsec-isakmp 
-set peer {внешний IP UTM-a}
+set peer {внешний IP UTM}
 set transform-set TS 
 set ikev2-profile ikev2profile
 match address cryptoacl
