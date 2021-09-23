@@ -47,3 +47,5 @@ redirects:
   user_quota: ./settings/access-rules/quotas.md
   vpn_authorization: ./settings/services/vpn-tunnel-protocols/client-to-site/README.md
   zabbix: ./settings/monitor/zabbix.md
+  cisco2utm: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md
+  utm2cisco: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md
