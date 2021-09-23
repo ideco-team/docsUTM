@@ -12,7 +12,7 @@ description: >-
 
 ## Шаг 1. Первоначальная настройка Ideco UTM 
 
-Настройте UTM в режиме роутера \(наличие локального и [внешнего](../../../connection-to-provider/ethernet-connection.md) интерфейсов\).
+Настройте на Ideco UTM локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](../../../../installation/initial-setup.md).
 
 ## Шаг 2. Первоначальная настройка Cisco IOS EX
 
@@ -38,9 +38,9 @@ ip nat outside
 exit
 ```
 
-3. **Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco**.
+3. Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco. Для этого в консоли Cisco используйте  команду `ping {внешний IP UTM}` . Результат вывода команды - наличие ICMP-ответов. 
 
-4. Создание access-list с адресацией локальной сети:
+4. Создание access-list с адресацией локальной сети \(подробную информацию по созданию access-list вы можете прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/security/ios-firewall/23602-confaccesslists.html) на официальном сайте Cisco\):
 
 ```text
 ip access-list extended NAT
@@ -48,7 +48,7 @@ permit ip 10.80.211.0 0.0.0.255 any
 exit
 ```
 
-4. Настройка NAT:
+4. Настройка NAT \(подробную информацию по настройке данного пункта вы можете прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/ip/network-address-translation-nat/13772-12.html) на официальном сайте Cisco\):
 
 ```text
 ip nat inside source list NAT interface GigabitEthernet1 overload
@@ -61,7 +61,7 @@ exit
 write memory
 ```
 
-6. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет**.
+6. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет.** Для этого перейдите на какой-нибудь сайт \(например: [https://www.cisco.com/](https://www.cisco.com/)\) с устройства в локальной сети Cisco.
 
 ## Шаг 3. Настройка IKEv2+IPSec на Cisco
 
@@ -172,7 +172,7 @@ write memory
 * **Тип** – входящее;
 * **Тип аутентификации** – PSK;
 * **PSK** – укажите PSK-ключ, который будет использоваться для подключения \(см. [Шаг 3](connect-cisco-to-utm-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3\);
-* **Идентификатор ключа** – см. [Шаг 3](connect-cisco-to-utm-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3;
+* **Идентификатор удаленной стороны** – см. [Шаг 3](connect-cisco-to-utm-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3;
 * **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
 * **Удалённые локальные сети** – укажите локальную сеть Cisco.
 
