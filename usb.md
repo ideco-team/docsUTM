@@ -6,7 +6,7 @@
 
 В BIOS сервера включить загрузку с flash диска.
 
-1. Скачать утилиту [Universal-USB-Installer](http://ideco.ru/assets/Universal-USB-Installer-1.9.9.3.zip).
+1. Скачать утилиту [Rufus](https://rufus.ie/ru/).
 
 2. Создать загрузочный usb flash диск. Примите лицензионное соглашение. 
 
