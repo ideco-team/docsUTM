@@ -34,5 +34,5 @@ dateCreated: '2021-04-02T07:20:25.548Z'
 Привязать к серверу коммерческую или SMB—лицензию вы можете по инструкции в разделе [Управление лицензиями](license-management.md).
 {% endhint %}
 
-![](../.gitbook/assets/licenceactive9-11.png)
+![](../.gitbook/assets/info-about-license.png)
 
