@@ -35,9 +35,6 @@
 
 * \*\*\*\*[**Загрузка своего SSL-сертификата на сервер**](https://docs.ideco.ru/services/certificates/upload-ssl-certificate-to-server)
 * \*\*\*\*[**Сертификаты**](https://docs.ideco.ru/services/certificates)\*\*\*\*
-
-## cluster
-
 * [**Кластеризация**](https://docs.ideco.ru/cluster)\*\*\*\*
 
 ## content\_filter
