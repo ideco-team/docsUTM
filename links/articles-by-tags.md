@@ -1,9 +1,5 @@
 # Статьи по тегам
 
-![](../.gitbook/assets/2.gif)
-
-## 
-
 ## ad\_authorization
 
 * \*\*\*\*[**Авторизация пользователей Active Directory**](https://docs.ideco.ru/users/active-directory/active-directory-user-authorization)\*\*\*\*
