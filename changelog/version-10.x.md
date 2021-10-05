@@ -5,7 +5,7 @@
 #### Исправления и изменения
 
 * Исправлены ошибки сортировки в таблице авторизованных пользователей.
-* Добавлен генератор конфигурации подключения Ideco UTM к Cisco. Подробная информация о подключении описана в статьях [Входящее подключение Cisco IOS к Ideco UTM по IPSec](../settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md) и [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](../settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md).
+* Добавлен генератор конфигурации подключения Ideco UTM к Cisco. Подробная информация о подключении, а так же ссылка на конфигуратор находятся в статьях [Входящее подключение Cisco IOS к Ideco UTM по IPSec](../settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md) и [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](../settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md).
 * Исправлены проблемы с сетевыми адаптерами Intel.
 * Улучшена работа контроля приложений.
 * Исправлены ошибки при работе Ideco UTM с группами безопасности.
