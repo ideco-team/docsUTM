@@ -214,5 +214,3 @@
 
 * \*\*\*\*[**Интеграция с Zabbix**](https://docs.ideco.ru/monitor/zabbix)
 
-
-

@@ -122,6 +122,7 @@
   * [Портмаппинг \(проброс портов, DNAT\)](settings/publishing-resources/portmapping.md)
 * [Терминал](settings/terminal.md)
 * [Интеграция UTM и SkyDNS](settings/skydns.md)
+* [Кластеризация](settings/cluster.md)
 
 ## Обслуживание <a id="service"></a>
 

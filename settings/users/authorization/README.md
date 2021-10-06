@@ -22,5 +22,3 @@ description: Авторизация – необходимое условие д
 
 Также вы можете авторизовать пользователей, подключающихся по VPN по протоколам[ IPSec IKEv2](../../services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md), [SSTP](../../services/vpn-tunnel-protocols/client-to-site/sstp.md), [L2TP IPSec](../../services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md) и [PPTP.](pptp.md)
 
-
-

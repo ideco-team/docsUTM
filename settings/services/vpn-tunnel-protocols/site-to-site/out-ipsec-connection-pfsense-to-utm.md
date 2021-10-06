@@ -15,38 +15,35 @@
 ## Настройка pfSense
 
 1. В веб-интерфейсе pfSense перейдите на вкладку **VPN &gt; IPSec &gt; Advanced Options** и в поле **Child SA Start Action** выберите параметр **None \(Responder Only\)**.
-
 2. Добавьте новое подключение:
+3. **Key Exchange version** – IKEv2;
+4. **Internet Protocol** – IPv4;
+5. **Interface** – выберите внешний интерфейс pfSense, который будет использоваться для подключения к Ideco UTM;
+6. **Remote Gateway** – IP внешнего интерфейса Ideco UTM;
+7. **Description** – любое;
+8. **Authentication Method** – Mutual PSK;
+9. **My identifier** - My ip address;
+10. **Peer identifier** - KeyID tag. Введите идентификатор удаленной стороны, т.е. Ideco UTM;
+11. **Pre-Shared Key** – введите PSK-ключ;
+12. **Encryption Algorithm**:
+    * Для **Ideco UTM версии 10.0 и новее** используйте следующие параметры:
 
-* **Key Exchange version** – IKEv2;
-* **Internet Protocol** – IPv4;
-* **Interface** – выберите внешний интерфейс pfSense, который будет использоваться для подключения к Ideco UTM;
-* **Remote Gateway** – IP внешнего интерфейса Ideco UTM;
-* **Description** – любое;
-* **Authentication Method** – Mutual PSK;
-* **My identifier** - My ip address;
-* **Peer identifier** - KeyID tag. Введите идентификатор удаленной стороны, т.е. Ideco UTM;
-* **Pre-Shared Key** – введите PSK-ключ;
-* **Encryption Algorithm**:
-  * Для **Ideco UTM версии 10.0 и новее** используйте следующие параметры:
+      **Algorithm** - AES256-GCM;
 
-    **Algorithm** - AES256-GCM;
+      **Key length** - 128 bit;
 
-    **Key length** - 128 bit;
+      **Hash** - SHA256;
 
-    **Hash** - SHA256;
+      **DH Group** - Elliptic Curve 25519-256.
 
-    **DH Group** - Elliptic Curve 25519-256.
-
-  * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
+    * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
 ![](../../../../.gitbook/assets/aes-v9-.png)
 
-3. Сохраните подключение.
+1. Сохраните подключение.
+2. Нажмите на кнопку **Show Phase 2 Entries** и добавьте новую Phase 2 и укажите следующие значения:
 
-4. Нажмите на кнопку **Show Phase 2 Entries** и добавьте новую Phase 2 и укажите следующие значения:
-
-**Encryption Algorithm**: 
+**Encryption Algorithm**:
 
 * **Для Ideco UTM версии 10.0 и новее** используйте следующие параметры:  **Algorithm** - AES256-GCM;  **Key length** - 128 bit;  **Hash** - SHA256;  **DH Group** - Elliptic Curve 25519-256. 
 * **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:

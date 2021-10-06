@@ -2,7 +2,7 @@
 
 ## IDECO UTM 10.6 сборка 2 \(02.10.2021\)
 
-#### Исправления и изменения
+### Исправления и изменения
 
 * Исправлены ошибки сортировки в таблице авторизованных пользователей.
 * Добавлен генератор конфигурации подключения Ideco UTM к Cisco. Подробная информация о подключении, а так же ссылка на конфигуратор находятся в статьях [Входящее подключение Cisco IOS к Ideco UTM по IPSec](../settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md) и [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](../settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md).
