@@ -63,15 +63,11 @@ description: Система обнаружения и предотвращени
 
 Предупреждение системы предотвращения вторжений:
 
-`04/04/2017-19:31:14.341627 [Drop] [**] [1:2008581:3] ET P2P BitTorrent DHT ping request [**] [Classification: Запросы на скомпрометированные ресурсы] [Priority: 1] {UDP} 10.130.0.11:20417 -> 88.81.59.137:61024`
+![](../../.gitbook/assets/ex1-suricata.png)
 
-* `[Classification: Запросы на скомпрометированные ресурсы]` — трафик категоризирован правилами группы "Запросы на скомпрометированные ресурсы"
+Таким образом, на вкладке **Правила** можно открыть найденную группу и в ней найти сработавшее правило по его ID: 
 
-Таким образом, на вкладке **Правила** можно открыть найденную группу и в ней найти сработавшее правило по его ID: `drop udp $HOME_NET any -> $EXTERNAL_NET any (msg:"ET P2P BitTorrent DHT ping request"; content:"d1|3a|ad2|3a|id20|3a|"; depth:12; nocase; threshold: type both, count 1, seconds 300, track by_src; reference:url,wiki.theory.org/BitTorrentDraftDHTProtocol; reference:url,doc.emergingthreats.net/bin/view/Main/2008581; classtype:policy-violation; sid:2008581; rev:3;)`
-
-По ссылке (после url, в данном примере: doc.emergingthreats.net/bin/view/Main/2001891) можно получить дополнительную информацию о сработавшем правиле.
-
-`10.130.0.11:20417 -> 88.81.59.137:61024` — IP-адрес, с которого (в локальной сети), на который была попытка соединения.
+`drop dns $HOME_NET any -> any any (msg:"ET DNS Query for .cc TLD"; dns.query; content:".cc"; endswith; fast_pattern; classtype:bad-unknown; sid:2027758; rev:5; metadata:affected_product Any, attack_target Client_Endpoint, created_at 2019_07_26, deployment Perimeter, former_category DNS, signature_severity Minor, updated_at 2020_09_17;)`
 
 {% hint style="info" %}
 Можно проанализировать IP-адрес, с которым была попытка подозрительного соединения, через [whois](https://www.nic.ru/whois/).
@@ -81,15 +77,13 @@ description: Система обнаружения и предотвращени
 
 Предупреждение системы предотвращения вторжений:
 
-`07/03/2015-14:52:07.654757 [Drop] [**] [1:2403302:1942] ET CINS Active Threat Intelligence Poor Reputation IP group 3 [**] [Classification: Misc Attack] [Priority: 2] {UDP} 24.43.1.206:10980 -> 192.168.10.14:32346`
+![](../../.gitbook/assets/ex2-suricata.png)
 
-Для более подробного анализа логов с IP компьютера 192.168.10.14 в консоли сервера выполняем команду:
+Для более подробного анализа логов с IP компьютера 192.168.100.3 в консоли сервера выполняем команду:
 
 `grep "10.80.1.13:" /var/log/suricata/fast.log`
 
 Получаем достаточно большое количество строк с блокировками соединений с IP-адресами, классифицируемыми разными категориями опасности.
-
-В результате анализа ПО на компьютере была обнаружена и удалена adware-программа, на которую не реагировал локально установленный антивирус.
 
 ## Как исключить узел из обработки системой IDS/IPS
 
