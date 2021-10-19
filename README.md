@@ -22,7 +22,7 @@ description: >-
 {% hint style="success" %}
 Техническое описание Ideco UTM доступно по [ссылке.](https://ideco.ru/mezhsetevoj-ekran-ideco-utm)
 
-Online-документация актуальна для версий Ideco UTM 11.х.
+Online-документация актуальна для следующих версий Ideco UTM 7.9, 10.х, 11.х (выбрать нужную версию вы можете в верхней части меню).
 
 Скачать Ideco UTM можно в [личном кабинете](https://my.ideco.ru/#/login).
 
