@@ -15,17 +15,16 @@ description: >-
 * [x] Контроль приложений;
 * [x] Многоуровневая антивирусная и антиспам-проверка трафика;
 * [x] Защита от ботнетов, фишинга и spyware;
-* [x] VPN.
+* [x] VPN
 
 И это далеко не полный список возможностей и сервисов Ideco UTM, которые позволяют создать надежный барьер для защиты локальной сети от современных угроз безопасности.
 
 {% hint style="success" %}
 Техническое описание Ideco UTM доступно по [ссылке.](https://ideco.ru/mezhsetevoj-ekran-ideco-utm)
 
-Online-документация актуальна для следующих версий Ideco UTM: [7.9](https://docs.ideco.ru/v/v7.9/), [8.x](https://docs.ideco.ru/), [9.x](https://docs.ideco.ru/), [10.x](https://docs.ideco.ru/).
+Online-документация актуальна для следующих версий Ideco UTM: [7.9](https://docs.ideco.ru/v/v7.9/), [8.x](https://docs.ideco.ru), [9.x](https://docs.ideco.ru), [10.x](https://docs.ideco.ru).
 
 Скачать Ideco UTM можно в [личном кабинете](https://my.ideco.ru/#/login).
 
 Видеодокументация доступна на нашем [youtube-канале. ](https://www.youtube.com/playlist?list=PLQJTQf4Vb3wCKEEqOZFyQxjqPdan848sq)
 {% endhint %}
-
