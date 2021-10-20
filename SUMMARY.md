@@ -2,20 +2,20 @@
 
 * [Об Ideco UTM](README.md)
 
-## Общая информация <a id="general"></a>
+## Общая информация <a href="general" id="general"></a>
 
 * [Лицензирование](general/license.md)
 * [Источники обновлений данных Ideco UTM](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
 
-## Установка <a id="installation"></a>
+## Установка <a href="installation" id="installation"></a>
 
 * [Создание загрузочного USB flash диска](installation/usb.md)
 * [Особенности настроек гипервизоров](installation/specifics-of-hypervisor-settings.md)
 * [Процесс установки](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
 
-## Настройка <a id="settings"></a>
+## Настройка <a href="settings" id="settings"></a>
 
 * [Панель мониторинга](settings/monitor-panel.md)
 * [Пользователи](settings/users/README.md)
@@ -60,7 +60,7 @@
   * [Защита от bruteforce-атак](settings/access-rules/fail2ban.md)
 * [Сервисы](settings/services/README.md)
   * [Туннельные протоколы VPN](settings/services/vpn-tunnel-protocols/README.md)
-    * [Подключение пользователей \(client-to-site\)](settings/services/vpn-tunnel-protocols/client-to-site/README.md)
+    * [Подключение пользователей (client-to-site)](settings/services/vpn-tunnel-protocols/client-to-site/README.md)
       * [Ideco VPN-клиент](settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md)
       * [L2TP IPSec](settings/services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md)
       * [SSTP](settings/services/vpn-tunnel-protocols/client-to-site/sstp.md)
@@ -71,7 +71,7 @@
       * [Особенности маршрутизации и организации доступа](settings/services/vpn-tunnel-protocols/client-to-site/features.md)
       * [Подключение по SSTP Wi-Fi роутеров Keenetic](settings/services/vpn-tunnel-protocols/client-to-site/sstp-connecting-keenetic-wi-fi-routers.md)
       * [Инструкция по запуску PowerShell скриптов](settings/services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md)
-    * [Подключение офисов \(site-to-site\)](settings/services/vpn-tunnel-protocols/site-to-site/README.md)
+    * [Подключение офисов (site-to-site)](settings/services/vpn-tunnel-protocols/site-to-site/README.md)
       * [IPSec](settings/services/vpn-tunnel-protocols/site-to-site/ipsec/README.md)
         * [Филиалы и главный офис](settings/services/vpn-tunnel-protocols/site-to-site/ipsec/branch-office-and-main-office.md)
         * [Подключение устройств](settings/services/vpn-tunnel-protocols/site-to-site/ipsec/connecting-devices.md)
@@ -117,14 +117,14 @@
 * [Публикация ресурсов](settings/publishing-resources/README.md)
   * [Доступ до внешних ресурсов без авторизации](settings/publishing-resources/access-to-external-resources-without-authorization.md)
   * [Доступ из внешней сети без NAT](settings/publishing-resources/access-from-external-network-without-nat.md)
-  * [Публикация веб-приложений \(обратный прокси-сервер\)](settings/publishing-resources/publishing-web-applications.md)
+  * [Публикация веб-приложений (обратный прокси-сервер)](settings/publishing-resources/publishing-web-applications.md)
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
-  * [Портмаппинг \(проброс портов, DNAT\)](settings/publishing-resources/portmapping.md)
+  * [Портмаппинг (проброс портов, DNAT)](settings/publishing-resources/portmapping.md)
 * [Терминал](settings/terminal.md)
 * [Интеграция UTM и SkyDNS](settings/skydns.md)
 * [Кластеризация](settings/cluster.md)
 
-## Обслуживание <a id="service"></a>
+## Обслуживание <a href="service" id="service"></a>
 
 * [Управление лицензиями](service/license-management.md)
 * [Обновление сервера](service/server-update.md)
@@ -134,7 +134,7 @@
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
 * [Личный кабинет](service/lk.md)
 
-## Популярные рецепты <a id="recipes"></a>
+## Популярные рецепты <a href="recipes" id="recipes"></a>
 
 * [Популярные рецепты](recipes/popular-recipes/README.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
@@ -149,12 +149,13 @@
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
 
-## Ссылки <a id="links"></a>
+## Ссылки <a href="links" id="links"></a>
 
 * [Статьи по тегам](links/articles-by-tags.md)
 
 ## changelog
 
+* [Версия Ideco UTM 11.X](changelog/versiya-ideco-utm-11.x.md)
 * [Версия Ideco UTM 10.X](changelog/version-10.x.md)
 * [Версия Ideco UTM 9.X](changelog/version-9.x.md)
 * [Версия Ideco UTM 8.X](changelog/version-8.x.md)
@@ -165,4 +166,3 @@
   * [Версия Ideco UTM 7.6.Х](changelog/version-7.x.x/version-7.6.x.md)
   * [Версия Ideco UTM 7.5.Х](changelog/version-7.x.x/version-7.5.x.md)
   * [Версия Ideco UTM 7.4.X](changelog/version-7.x.x/version-7.4.x.md)
-
