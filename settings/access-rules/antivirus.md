@@ -53,7 +53,7 @@ touch /var/cache/ideco/av-backend/clamav_bases/whitelist.ign2
 Добавьте в созданный файл следующий текст (не забудьте заменить сигнатуру из команды ниже на ту, которую вы хотите добавить):
 
 ```
-Html.Exploit.CVE_2016_0228-6327291-2 echo 'Html.Exploit.CVE_2016_0228-6327291-2' >> /var/cache/ideco/av-backend/clamav_bases/whitelist.ign2
+echo 'Html.Exploit.CVE_2016_0228-6327291-2' >> /var/cache/ideco/av-backend/clamav_bases/whitelist.ign2
 ```
 
 Для применения изменений перезагрузите ideco-clamd.service.
