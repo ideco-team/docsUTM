@@ -61,7 +61,3 @@ echo 'Html.Exploit.CVE_2016_0228-6327291-2' >> /var/cache/ideco/av-backend/clama
 ```
 systemctl restart ideco-clamd.service
 ```
-
-{% hint style="warning" %}
-После обновления Ideco UTM все изменения будут потеряны!
-{% endhint %}
