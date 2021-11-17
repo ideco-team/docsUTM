@@ -3,7 +3,7 @@ title: Личный кабинет
 description: Зачем пользователю Ideco UTM нужен личный кабинет
 published: true
 date: '2021-06-08T10:05:06.692Z'
-tags: 'user_authorization, server_registration, license'
+tags: user_authorization, server_registration, license
 editor: markdown
 dateCreated: '2021-05-28T13:12:05.352Z'
 ---
@@ -21,11 +21,11 @@ dateCreated: '2021-05-28T13:12:05.352Z'
 
 Зайдите на [сайт](https://my.ideco.ru/#/login/?next=/utm/license/) личного кабинета и перейдите по ссылке **Зарегистрироваться**.
 
-![](../.gitbook/assets/1._регистрация.png)
+![](../.gitbook/assets/1.\_регистрация.png)
 
 Укажите свои личные данные и данные о компании.
 
-![](../.gitbook/assets/reglk%20%281%29%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/reglk (1) (1) (2) (2) (2) (2) (1) (1) (1).png>)
 
 **На указанную электронную почту придет активационное письмо.**
 
@@ -34,4 +34,3 @@ dateCreated: '2021-05-28T13:12:05.352Z'
 {% hint style="info" %}
 Также для регистрации и авторизации вы можете использовать учетные записи `Google`, `Mail.ru` или `Яндекс`. В этом случае активационного письма не будет.
 {% endhint %}
-
