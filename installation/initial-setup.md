@@ -58,7 +58,7 @@
 
 Для настройки Ethernet-подключения выполните следующие шаги:&#x20;
 
-1\. Нажмите на иконку ![ok\_with\_icon.png](<../.gitbook/assets/ok\_with\_icon (3) (3) (3) (6) (6) (5) (6).png>) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+1\. Нажмите на иконку ![ok\_with\_icon.png](<../.gitbook/assets/ok\_with\_icon (3) (3) (3) (6) (6) (5) (1).png>) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
 
 ![](../.gitbook/assets/create-interface.png)
 

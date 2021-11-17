@@ -8,21 +8,21 @@ description: >-
 
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
-![](../../../../.gitbook/assets/dia1.png)
+![](../../../../.gitbook/assets/DIA1.png)
 
-## 
+##
 
-## Шаг 1. Первоначальная настройка Ideco UTM 
+## Шаг 1. Первоначальная настройка Ideco UTM&#x20;
 
 Настройте на Ideco UTM локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](../../../../installation/initial-setup.md).
 
 ## Шаг 2. Первоначальная настройка Cisco IOS EX
 
-Настройку Cisco можно осуществить несколькими способами - через консоль устройства \(настройка описана ниже\) или, воспользовавшись нашими конфигурационными скриптами, сгенерированными по адресу [https://cisco.ideco.ru/](https://cisco.ideco.ru/).
+Настройку Cisco можно осуществить несколькими способами - через консоль устройства (настройка описана ниже) или, воспользовавшись нашими конфигурационными скриптами, сгенерированными по адресу [https://cisco.ideco.ru/](https://cisco.ideco.ru).
 
-1. Настройка локального интерфейса:
+1\. Настройка локального интерфейса:
 
-```text
+```
 enable
 conf t
 interface GigabitEthernet2
@@ -32,9 +32,9 @@ ip nat inside
 exit
 ```
 
-2. Настройка внешнего интерфейса:
+2\. Настройка внешнего интерфейса:
 
-```text
+```
 interface GigabitEthernet1
 ip address {внешний IP Cisco} {маска подсети}
 no shutdown
@@ -42,36 +42,36 @@ ip nat outside
 exit
 ```
 
-3. Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco. Для этого в консоли Cisco используйте  команду `ping {внешний IP UTM}` . Результат вывода команды - наличие ICMP-ответов. 
+3\. Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco. Для этого в консоли Cisco используйте  команду `ping {внешний IP UTM}` . Результат вывода команды - наличие ICMP-ответов.&#x20;
 
-4. Создание access-list с адресацией локальной сети \(подробную информацию по созданию access-list вы можете прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/security/ios-firewall/23602-confaccesslists.html) на официальном сайте Cisco\):
+4\. Создание access-list с адресацией локальной сети (подробную информацию по созданию access-list вы можете прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/security/ios-firewall/23602-confaccesslists.html) на официальном сайте Cisco):
 
-```text
+```
 ip access-list extended NAT
 permit ip {локальная подсеть Cisco} {обратная маска подсети} any
 exit
 ```
 
-4. Настройка NAT \(подробную информацию по настройке данного пункта вы можете прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/ip/network-address-translation-nat/13772-12.html) на официальном сайте Cisco\):
+4\. Настройка NAT (подробную информацию по настройке данного пункта вы можете прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/ip/network-address-translation-nat/13772-12.html) на официальном сайте Cisco):
 
-```text
+```
 ip nat inside source list NAT interface GigabitEthernet1 overload
 exit
 ```
 
-5. Сохранение настроек конфигурации:
+5\. Сохранение настроек конфигурации:
 
-```text
+```
 write memory
 ```
 
-6. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет.** Для этого перейдите на какой-нибудь сайт \(например: [https://www.cisco.com/](https://www.cisco.com/)\) с устройства в локальной сети Cisco.
+6\. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет.** Для этого перейдите на какой-нибудь сайт (например: [https://www.cisco.com/](https://www.cisco.com)) с устройства в локальной сети Cisco.
 
 ## Шаг 3. Настройка IKEv2+IPSec на Cisco
 
-1. Создание proposal \(подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939__GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)на официальном сайте Cisco\):
+1\. Создание proposal (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939\_\_GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)на официальном сайте Cisco):
 
-```text
+```
 conf t
 crypto ikev2 proposal ikev2proposal 
 encryption aes-cbc-256
@@ -80,18 +80,18 @@ group 19
 exit
 ```
 
-2. Создание policy \(подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772__GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)на официальном сайте Cisco\):
+2\. Создание policy (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772\_\_GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)на официальном сайте Cisco):
 
-```text
+```
 crypto ikev2 policy ikev2policy 
 match fvrf any
 proposal ikev2proposal
 exit
 ```
 
-3. Создание peer \(key\_id - идентификатор удаленной стороны, т.е. Ideco UTM\). Подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659__GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9)на официальном сайте Cisco.
+3\. Создание peer (key\_id - идентификатор удаленной стороны, т.е. Ideco UTM). Подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659\_\_GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9)на официальном сайте Cisco.
 
-```text
+```
 crypto ikev2 keyring key
 peer strongswan
 address {внешний IP UTM-a}
@@ -102,9 +102,9 @@ exit
 exit
 ```
 
-4. Создание IKEv2 profile \(подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task_20288C58E8B1416897A763FABA8B0885__GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)на официальном сайте Cisco\):
+4\. Создание IKEv2 profile (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task\_20288C58E8B1416897A763FABA8B0885\_\_GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)на официальном сайте Cisco):
 
-```text
+```
 crypto ikev2 profile ikev2profile
 match identity remote address {внешний IP UTM-a} 255.255.255.255 
 authentication remote pre-share
@@ -113,17 +113,17 @@ keyring local key
 exit
 ```
 
-5. Настройка шифрования в esp:
+5\. Настройка шифрования в esp:
 
-```text
+```
 crypto ipsec transform-set TS esp-gcm 256 
 mode tunnel
 exit
 ```
 
-6. Создание ipsec-isakmp:
+6\. Создание ipsec-isakmp:
 
-```text
+```
 crypto map cmap 10 ipsec-isakmp 
 set peer {внешний IP UTM-a}
 set transform-set TS 
@@ -132,25 +132,25 @@ match address cryptoacl
 exit
 ```
 
-7. Настройка crypto map на внешнем интерфейсе:
+7\. Настройка crypto map на внешнем интерфейсе:
 
-```text
+```
 interface GigabitEthernet1
 crypto map cmap
 exit
 ```
 
-8. Создание access-list для трафика между локальными сетями Cisco и UTM:
+8\. Создание access-list для трафика между локальными сетями Cisco и UTM:
 
-```text
+```
 ip access-list extended cryptoacl
 permit ip {локальная подсеть Cisco} {обратная маска подсети} {локальная подсеть UTM} {обратная маска подсети}
 exit
 ```
 
-9. Добавление в access-list NAT исключения трафика между локальными сетями Cisco и UTM \(правило `deny` должно оказаться выше чем `permit`\):
+9\. Добавление в access-list NAT исключения трафика между локальными сетями Cisco и UTM (правило `deny `должно оказаться выше чем `permit`):
 
-```text
+```
 ip access-list extended NAT 
 no permit ip {локальная подсеть Cisco} {обратная маска подсети} any
 deny ip {локальная подсеть Cisco} {обратная маска подсети} {локальная подсеть UTM} {обратная маска подсети}
@@ -160,31 +160,31 @@ exit
 end
 ```
 
-10. Сохранение настроек конфигурации:
+10\. Сохранение настроек конфигурации:
 
-```text
+```
 write memory
 ```
 
 ## Шаг 4. Создание исходящего IPSec подключения на Ideco UTM
 
-1. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -&gt; IPsec -&gt; Устройства**.
+1. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства**.
 2. Добавьте новое подключение:
    * **Название** – любое;
    * **Тип** – исходящее;
    * **Тип аутентификации** – PSK;
-   * **PSK** – будет сгенерирован случайный PSK-ключ. Он потребуется, чтобы настроить подключение в Csico \(см. [Шаг 3](connect-utm-to-cisco-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3\);
-   * **Идентификатор UTM** – введенный вами ключ будет использоваться для идентификации исходящего подключения. Введите также этот идентификатор в Cisco \(см. [Шаг 3](connect-utm-to-cisco-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3\);
-   * **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
+   * **PSK** – будет сгенерирован случайный PSK-ключ. Он потребуется, чтобы настроить подключение в Csico (см. [Шаг 3](connect-utm-to-cisco-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3);
+   * **Идентификатор UTM **– введенный вами ключ будет использоваться для идентификации исходящего подключения. Введите также этот идентификатор в Cisco (см. [Шаг 3](connect-utm-to-cisco-via-ipsec.md#shag-3-nastroika-ikev-2-ipsec-na-cisco) пункт 3);
+   * **Домашние локальные сети **– укажите локальную сеть Ideco UTM;
    * **Удалённые локальные сети** – укажите локальную сеть Cisco.
-3. Проверьте, что подключение установилось \(в списке подключений появится ваше подключение, в столбце **Статусы** зеленым цветом будет подсвечена надпись **Установлено**\).
-4. Проверьте наличие трафика между локальными сетями \(TCP и web\).
+3. Проверьте, что подключение установилось (в списке подключений появится ваше подключение, в столбце **Статусы** зеленым цветом будет подсвечена надпись **Установлено**).
+4. Проверьте наличие трафика между локальными сетями (TCP и web).
 
 ## Итоговая конфигурация Cisco IOS
 
 Итоговая конфигурация IKEv2 IPSec на Cisco IOS должна выглядеть следующим образом:
 
-```text
+```
 crypto ikev2 proposal ikev2proposal 
  encryption aes-cbc-256
  integrity sha256
@@ -240,4 +240,3 @@ ip access-list extended NAT
 ip access-list extended cryptoacl
  permit ip 2.2.2.0 0.0.0.255 3.3.3.0 0.0.0.255
 ```
-
