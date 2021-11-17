@@ -6,17 +6,17 @@
 
 ## additionally
 
-* [Настройка дополнительных параметров работы сервера](https://docs.ideco.ru/services/additionally)
+* [Настройка дополнительных параметров работы сервера](../settings/services/additionally.md)
 
 ## admins
 
-* [Администраторы](https://docs.ideco.ru/access-rules/admins)
+* [Администраторы](../settings/access-rules/admins.md)
 * [Восстановление пароля администратора](https://docs.ideco.ru/popular-recipes/restore-access-to-ideco-utm)
-* [Удаленный доступ для управления сервером](https://docs.ideco.ru/service/remote-access-for-server-management)
+* [Удаленный доступ для управления сервером](../service/remote-access-for-server-management.md)
 
 ## antivirus
 
-* [Антивирусы веб-трафика](https://docs.ideco.ru/access-rules/antivirus)
+* [Антивирусы веб-трафика](../settings/access-rules/antivirus.md)
 
 ## application\_control
 
@@ -43,6 +43,10 @@
 * [Настройка фильтрации HTTPS](https://docs.ideco.ru/access-rules/content-filter/filtering-https-traffic)
 * [Настройка контент-фильтра](https://docs.ideco.ru/access-rules/content-filter/settings#nastroika-kontent-filtra)
 * [Описание категорий контент-фильтра](https://docs.ideco.ru/access-rules/content-filter/custom-categories)
+
+## cluster
+
+* [Кластеризация](../settings/cluster.md)
 
 ## device\_detection
 
@@ -150,7 +154,7 @@
 
 ## server\_update
 
-* [Обновление сервера ](https://docs.ideco.ru/service/server-update)
+* [Обновление сервера](https://docs.ideco.ru/service/server-update)
 
 ## snmp
 
@@ -208,8 +212,8 @@
 * [Ideco VPN](https://docs.ideco.ru/ideco-vpn)
 * [IPSec IKEv2](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2)
 * [L2TP IPSec](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec)
-* [SSTP](https://docs.ideco.ru/services/vpn-tunnel-protocols/client-to-site/sstp)
+* [SSTP](../settings/services/vpn-tunnel-protocols/client-to-site/sstp.md)
 
 ## zabbix
 
-* [Интеграция с Zabbix](https://docs.ideco.ru/monitor/zabbix)
+* [Интеграция с Zabbix](../settings/monitor/zabbix.md)
