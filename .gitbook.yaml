@@ -49,3 +49,4 @@ redirects:
   zabbix: ./settings/monitor/zabbix.md
   cisco2utm: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md
   utm2cisco: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md
+  auto-auth-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
