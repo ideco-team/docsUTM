@@ -12,29 +12,42 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 # Доступ до внешних ресурсов без авторизации
 
-Также можно разрешить доступ к сети Интернет без фильтрации и авторизации на Ideco UTM некоторым IP-адресам и сетям \(**осторожно используйте эту возможность!**\).
+Также можно разрешить доступ к сети Интернет без фильтрации и авторизации на Ideco UTM некоторым IP-адресам и сетям (**осторожно используйте эту возможность!**).
 
 Для доступа к внешним ресурам для авторизации введите их IP-адрес или сеть вместо `X.X.X.X/X` в настройках по следующей инструкции.
 
 Аналогичным образом для открытия доступа определенным хостам внутренней сети без авторизации укажите их IP-адреса.
 
-1. Исключить внешние ресурсы \(IP-адреса или сети\) из обработки прокси сервера. В разделе **Сервисы -&gt; Прокси -&gt; Исключения** в **Сети назначения** добавить эти ресурсы.
-2. В консоли UTM \([доступ по SSH](../access-rules/admins.md)\) ввести команду:
+1\. Исключить внешние ресурсы (IP-адреса или сети) из обработки прокси сервера. В разделе **Сервисы -> Прокси -> Исключения** в **Сети назначения** добавить эти ресурсы.
 
-   `mcedit /usr/bin/ideco-firewall`
+2\. В консоли UTM ([доступ по SSH](../access-rules/admins.md)) ввести команду:
 
-3. Между строками:
+`mcedit /usr/bin/ideco-firewall`
 
-   `iptables -A FORWARD -m state --state INVALID -j DROP`
+3\. Между строками:
 
-   `iptables -A FORWARD -j forward_sys_rules`
+`iptables -A FORWARD -m state --state INVALID -j DROP`
 
-   Вписать строки:
+`iptables -A FORWARD -j forward_sys_rules`
 
-   `iptables -A FORWARD -d X.X.X.X/X -j ACCEPT`
+Вписать строки:
 
-   `iptables -A FORWARD -s X.X.X.X/X -j ACCEPT`
+`iptables -A FORWARD -d [ip/маска] -j ACCEPT`
 
-4. Сохраните файл
-5. Перезагрузите Ideco UTM
+`iptables -A FORWARD -s [ip/маска] -j ACCEPT`
 
+Для диапазона IP адресов ввести:
+
+`iptables -I FORWARD 1 -p udp -m iprange --dst-range [первый ip]-[последний IP] -m state --state `
+
+`iptables -I FORWARD 1 -p udp -m iprange --src-range [первый ip-адрес]-[последний IP-адрес] -j ACCEPT`
+
+**Например: **
+
+`iptables -I FORWARD 1 -p udp -m iprange --dst-range `**`10.0.0.1-10.0.0.200`**`  -m state --state  `
+
+`iptables -I FORWARD 1 -p udp -m iprange --src-range `**`10.0.0.1-10.0.0.200`**` -j ACCEPT`
+
+4\. Сохраните файл.
+
+5\. Перезагрузите Ideco UTM.
