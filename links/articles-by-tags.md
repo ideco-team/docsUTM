@@ -4,6 +4,10 @@
 
 * [Авторизация пользователей Active Directory](../settings/users/active-directory/active-directory-user-authorization.md)
 
+## auto-auth-script
+
+* [Скрипты автоматической авторизации и разавторизации](../settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
+
 ## additionally
 
 * [Настройка дополнительных параметров работы сервера](../settings/services/additionally.md)
@@ -34,7 +38,7 @@
 ## certificate
 
 * [Загрузка своего SSL-сертификата на сервер](../settings/services/certificates/upload-ssl-certificate-to-server.md)
-* [Сертификаты](../settings/services/certificates/README.md)
+* [Сертификаты](../settings/services/certificates/)
 * [Кластеризация](../settings/cluster.md)
 
 ## content\_filter
@@ -111,7 +115,7 @@
 
 ## post
 
-* [Почтовый сервер](../settings/mail/README.md)
+* [Почтовый сервер](../settings/mail/)
 * [Настройка почтового сервера](../settings/mail/mail-server-settings.md)
 * [Настройка почтовых клиентов](../settings/mail/configuring-email-clients.md)
 * [Настройка почтового релея](../settings/mail/mail-relay-settings.md)
@@ -193,7 +197,7 @@
 * [IPSec IKEv2](../settings/services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md)
 * [Авторизация пользователей Active Directory](../settings/users/active-directory/active-directory-user-authorization.md)
 * [Личный кабинет](../service/lk.md)
-* [Авторизация пользователей](../settings/users/authorization/README.md)
+* [Авторизация пользователей](../settings/users/authorization/)
 
 ## user\_management
 
@@ -209,7 +213,7 @@
 
 ## vpn\_authorization
 
-* [Ideco VPN](../settings/services/vpn-tunnel-protocols/README.md)
+* [Ideco VPN](../settings/services/vpn-tunnel-protocols/)
 * [IPSec IKEv2](../settings/services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md)
 * [L2TP IPSec](../settings/services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md)
 * [SSTP](../settings/services/vpn-tunnel-protocols/client-to-site/sstp.md)
