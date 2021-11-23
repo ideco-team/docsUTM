@@ -32,7 +32,7 @@ description: Система обнаружения и предотвращени
 
 ## Журнал
 
-В подразделе **Журнал** можно просмотреть последние 100 строк логов предупреждения системы предотвращения вторжений.
+В подразделе **Журнал** можно просмотреть логи предупреждения системы предотвращения вторжений.
 
 ![](../../.gitbook/assets/suricata-logi.png)
 
@@ -60,7 +60,7 @@ description: Система обнаружения и предотвращени
 
 ![](../../.gitbook/assets/ex2suricata.png)
 
-Таким образом, на вкладке **Правила** можно открыть найденную группу и в ней найти сработавшее правило по его ID:&#x20;
+Таким образом, на вкладке **Правила** можно открыть найденную группу и в ней найти сработавшее правило по его ID:
 
 `drop dns $HOME_NET any -> any any (msg:"ET DNS Query for .cc TLD"; dns.query; content:".cc"; endswith; fast_pattern; classtype:bad-unknown; sid:2027758; rev:5; metadata:affected_product Any, attack_target Client_Endpoint, created_at 2019_07_26, deployment Perimeter, former_category DNS, signature_severity Minor, updated_at 2020_09_17;)`
 
@@ -74,7 +74,7 @@ description: Система обнаружения и предотвращени
 
 **Решение:**
 
-1. В файл `/var/opt/ideco/suricata-backend/custom.rules` необходимо добавить следующую строку: `pass ip 192.168.154.7 any <> any any (sid:1;)`. Для редактирования этого файла перейдите в раздел **Терминал** и введите команду `mcedit /var/opt/ideco/suricata-backend/custom.rules`.&#x20;
+1. В файл `/var/opt/ideco/suricata-backend/custom.rules` необходимо добавить следующую строку: `pass ip 192.168.154.7 any <> any any (sid:1;)`. Для редактирования этого файла перейдите в раздел **Терминал** и введите команду `mcedit /var/opt/ideco/suricata-backend/custom.rules`.
 2. Затем в разделе **Терминал** выполнить команду `systemctl restart ideco-suricata-backend`.
 
 {% hint style="warning" %}
