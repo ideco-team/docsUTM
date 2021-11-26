@@ -149,10 +149,6 @@
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
 
-## Ссылки <a href="#links" id="links"></a>
-
-* [Статьи по тегам](links/articles-by-tags.md)
-
 ## changelog
 
 * [Версия Ideco UTM 11.X](changelog/versiya-ideco-utm-11.x.md)
