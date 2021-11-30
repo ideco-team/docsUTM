@@ -96,6 +96,7 @@
   * [Обратный прокси](settings/services/reverse-proxy.md)
   * [Настройка дополнительных параметров работы сервера](settings/services/additionally.md)
   * [Маршрутизация](settings/services/routing.md)
+  * [OSPF](settings/services/ospf.md)
 * [Отчеты](settings/reports/README.md)
   * [Журнал авторизации](settings/reports/authorization-log.md)
   * [Сайты](settings/reports/sites.md)
