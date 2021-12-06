@@ -42,5 +42,3 @@ dateCreated: '2021-04-02T07:24:09.004Z'
 
 Подробнее о восстановлении пароля администратора смотрите в статье по [ссылке](../../recipes/popular-recipes/restore-access-to-ideco-utm.md).
 
-
-
