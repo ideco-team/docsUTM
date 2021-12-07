@@ -38,15 +38,15 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 Для диапазона IP адресов ввести:
 
-`iptables -I FORWARD 1 -p udp -m iprange --dst-range [первый ip]-[последний ip] -m state --state `
+`iptables -I FORWARD 1 -p udp -m iprange --dst-range [первый ip]-[последний ip] -m state --state`&#x20;
 
 `iptables -I FORWARD 1 -p udp -m iprange --src-range [первый ip]-[последний ip] -j ACCEPT`
 
-**Например: **
+**Например:**&#x20;
 
-`iptables -I FORWARD 1 -p udp -m iprange --dst-range `**`10.0.0.1-10.0.0.200`**`  -m state --state  `
+`iptables -I FORWARD 1 -p udp -m iprange --dst-range`` `**`10.0.0.1-10.0.0.200`**` ``-m state --state`&#x20;
 
-`iptables -I FORWARD 1 -p udp -m iprange --src-range `**`10.0.0.1-10.0.0.200`**` -j ACCEPT`
+`iptables -I FORWARD 1 -p udp -m iprange --src-range`` `**`10.0.0.1-10.0.0.200`**` ``-j ACCEPT`
 
 4\. Сохраните файл.
 
