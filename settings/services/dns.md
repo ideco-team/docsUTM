@@ -99,7 +99,7 @@ DNS-сервер в Ideco UTM не доступен извне по сообра
 
 Пример записи приведен на скриншоте ниже:
 
-![](broken-reference)
+![](../../.gitbook/assets/master\_zones\_examples.png)
 
 Несколько примеров записей в master-зону:
 
@@ -124,5 +124,3 @@ DNS-сервер в Ideco UTM не доступен извне по сообра
      @ NS my-dns-server.example.com.
     my-dns-server A 1.2.3.4
     ```
-
-![](../../.gitbook/assets/master\_zones\_examples.png)
