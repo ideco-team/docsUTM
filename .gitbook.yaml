@@ -12,6 +12,7 @@ redirects:
   backup: ./service/backup.md
   balancing_and_reserving: ./settings/connection-to-provider/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
+  custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
   cluster: ./settings/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
   device_detection: ./settings/users/device-discovery.md
