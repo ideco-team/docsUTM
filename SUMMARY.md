@@ -2,20 +2,20 @@
 
 * [Об Ideco UTM](README.md)
 
-## Общая информация <a href="general" id="general"></a>
+## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
 * [Источники обновлений данных Ideco UTM](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
 
-## Установка <a href="installation" id="installation"></a>
+## Установка <a href="#installation" id="installation"></a>
 
 * [Создание загрузочного USB flash диска](installation/usb.md)
 * [Особенности настроек гипервизоров](installation/specifics-of-hypervisor-settings.md)
 * [Процесс установки](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
 
-## Настройка <a href="settings" id="settings"></a>
+## Настройка <a href="#settings" id="settings"></a>
 
 * [Панель мониторинга](settings/monitor-panel.md)
 * [Пользователи](settings/users/README.md)
@@ -32,7 +32,7 @@
   * [Интеграция с Active Directory](settings/users/active-directory/README.md)
     * [Авторизация пользователей Active Directory](settings/users/active-directory/active-directory-user-authorization.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
-    * [Скрипты автоматической авторизации и разавторизации](settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
+    * [Скрипты автоматической авторизации и разавторизации.](settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
@@ -124,7 +124,7 @@
 * [Интеграция UTM и SkyDNS](settings/skydns.md)
 * [Кластеризация](settings/cluster.md)
 
-## Обслуживание <a href="service" id="service"></a>
+## Обслуживание <a href="#service" id="service"></a>
 
 * [Управление лицензиями](service/license-management.md)
 * [Обновление сервера](service/server-update.md)
@@ -134,7 +134,7 @@
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
 * [Личный кабинет](service/lk.md)
 
-## Популярные рецепты <a href="recipes" id="recipes"></a>
+## Популярные рецепты <a href="#recipes" id="recipes"></a>
 
 * [Популярные рецепты](recipes/popular-recipes/README.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
@@ -149,7 +149,7 @@
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
 
-## Ссылки <a href="links" id="links"></a>
+## Ссылки <a href="#links" id="links"></a>
 
 * [Статьи по тегам](links/articles-by-tags.md)
 
