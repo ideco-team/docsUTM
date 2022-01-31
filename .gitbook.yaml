@@ -53,3 +53,7 @@ redirects:
   utm2cisco: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md
   auto-auth-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
   auto-logout-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
+  dashboard: ./settings/monitor-panel.md
+  traffmon: ./settings/monitor/traffic.md
+  logs: ./settings/monitor/logs.md
+  authorized: ./settings/monitor/authorized-users.md
