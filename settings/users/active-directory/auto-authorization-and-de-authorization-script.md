@@ -8,23 +8,23 @@ editor: markdown
 dateCreated: '2021-04-02T07:27:01.956Z'
 ---
 
-# Скрипты автоматической авторизации и разавторизации
+# Скрипты автоматической авторизации и разавторизации.
 
 Авторизация и разавторизация пользователей возможна в полностью автоматическом режиме.
 
-Для этого нужно настроить скрипты, исполняемые при входе пользователей в систему [logon](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908%28v=ws.11%29?redirectedfrom=MSDN) и выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583%28v=ws.11%29?redirectedfrom=MSDN). Это можно сделать, например, с помощью групповых политик домена \(GPO\).
+Для этого нужно настроить скрипты, исполняемые при входе пользователей в систему [logon](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN) и выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN). Это можно сделать, например, с помощью групповых политик домена (GPO).
 
 {% hint style="info" %}
 Для работы данных скриптов необходимо выполнить все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](active-directory-user-authorization.md).
 {% endhint %}
 
-## Авторизация пользователя
+## Авторизация пользователяqwe
 
-Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908%28v=ws.11%29?redirectedfrom=MSDN).
+Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN).
 
 **UTMLogon\_script.vbs**
 
-```text
+```
 Dim IE
 Set IE = CreateObject("InternetExplorer.Application")
 IE.Visible = True
@@ -51,36 +51,35 @@ IE.Quit
 
 HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings параметр `WarnonBadCertRecving = 0`
 
-Далее необходимо добавить скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583%28v=ws.11%29?redirectedfrom=MSDN):
+Далее необходимо добавить скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN):
 
 **UTMLogout\_script.vbs**
 
-```text
-Set objLocator = CreateObject("WbemScripting.SWbemLocator")
-Set objWMIService = objLocator.ConnectServer(".", "root\cimv2")
+```
+add-type @"
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+public class TrustAllCertsPolicy : ICertificatePolicy {
+    public bool CheckValidationResult(
+        ServicePoint srvPoint, X509Certificate certificate,
+        WebRequest request, int certificateProblem) {
+        return true;
+    }
+}
+"@
 
-Set HostNameSet = objWMIService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
-Set objHTTP = CreateObject("WinHttp.WinHttpRequest.5.1")
-For Each objitem in HostNameSet
-     If NOT IsNULL(objItem.IPAddress)Then
-         For Each Ip in objItem.IpAddress
-             Url = "https://IP-адрес UTM:8443/monitor_backend/sessions/logout/" & Ip
-             objHTTP.Open "DELETE", Url, False
-             On Error Resume Next
-             objHTTP.send("")
-        Next
-     End If
+[System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+Invoke-RestMethod -Uri "https://<utm ip-adress>:8443/monitor_backend/sessions/logout" -Method Delete
 
-Next
 ```
 
 Вместо «IP-адрес UTM» укажите IP-адрес локального интерфейса Ideco UTM.
 
 ## Возможные ошибки при выполнении скриптов
 
-* Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация**, и авторизация происходит только при ручном переходе по ссылке на авторизацию, то переход в браузере на страницу авторизации может не произойти \(он может быть ограничен настройками безопасности браузера\). В таком случае, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
+* Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация**, и авторизация происходит только при ручном переходе по ссылке на авторизацию, то переход в браузере на страницу авторизации может не произойти (он может быть ограничен настройками безопасности браузера). В таком случае, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
 
 ![](../../../.gitbook/assets/6586987.jpg)
 
 * Автоматически групповая политика обновляется не сразу после внесения изменений. Чтобы скрипты начали работать, обновите политику вручную командой `gpupdate /force` на рабочей станции.
-
