@@ -1,17 +1,17 @@
 # Настройка прозрачной авторизации на Astra linux
 
 {% hint style="warning" %}
-Данное решение подходит для браузеров **Chromium **и **Firefox.**
+Данное решение подходит для браузеров **Chromium** и **Firefox.**
 {% endhint %}
 
 1\. Для начала введите Astra linux  в домен.&#x20;
 
 2\. Зайдите под доменной учетной записью на Astra Linux.
 
-3\. Скачайте браузер **Chromium **командой `apt install chromium -y`** .**
+3\. Скачайте браузер **Chromium** командой `apt install chromium -y` **.**
 
 3.1 Для браузера **Chromium**: \
-Создайте файл **mydomain.json** в директории **/etc/chromium/policies/managed/ **и впишите в него строчку:&#x20;
+Создайте файл **mydomain.json** в директории **/etc/chromium/policies/managed/** и впишите в него строчку:&#x20;
 
 ```
 { 
@@ -22,7 +22,7 @@
 4\. Для браузера **Firefox**: \
 Запустите браузер и в адресной строке введите **about:config**, чтобы попасть в режим редактирования расширенных настроек. \
 Введите параметр **security.enterprise\_roots.enabled** и нажмите по блоку со строчкой два раза левой кнопкой мыши, чтобы значение изменилось на **True.**\
-В двух следующих параметрах впишите доменное имя UTM через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris **и** network.negotiate-auth.trusted-uris** (например, http://utm.domain.com, https://utm.domain.com).
+В двух следующих параметрах впишите доменное имя UTM через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** (например, http://utm.domain.com, https://utm.domain.com).
 
 5\.  Добавьте корневой сертификат Ideco UTM в список доверенных центров сертификации. Для этого сначала [скачайте сертификат с Ideco UTM](../../settings/services/certificates/).
 
