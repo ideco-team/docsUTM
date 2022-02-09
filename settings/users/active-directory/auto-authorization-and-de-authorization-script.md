@@ -18,7 +18,7 @@ dateCreated: '2021-04-02T07:27:01.956Z'
 Для работы данных скриптов необходимо выполнить все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](active-directory-user-authorization.md).
 {% endhint %}
 
-## Авторизация пользователяqwe
+## Авторизация пользователя
 
 Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN).
 
