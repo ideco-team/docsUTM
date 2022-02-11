@@ -27,6 +27,7 @@
     * [Авторизация по PPTP](settings/users/authorization/pptp.md)
     * [Авторизация по PPPoE](settings/users/authorization/pppoe.md)
     * [Авторизация по IP-адресу](settings/users/authorization/ip.md)
+    * [Авторизация по MAC-адресу](settings/users/authorization/mac.md)
     * [Авторизация через Ideco Agent](settings/users/authorization/ideco-agent.md)
     * [Веб авторизация](settings/users/authorization/web-authorization.md)
   * [Интеграция с Active Directory](settings/users/active-directory/README.md)
@@ -153,6 +154,7 @@
 
 ## changelog
 
+* [Версия Ideco UTM 12.X](changelog/versiya-ideco-utm-12.x.md)
 * [Версия Ideco UTM 11.X](changelog/versiya-ideco-utm-11.x.md)
 * [Версия Ideco UTM 10.X](changelog/version-10.x.md)
 * [Версия Ideco UTM 9.X](changelog/version-9.x.md)
