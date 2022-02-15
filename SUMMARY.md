@@ -86,6 +86,7 @@
       * [Подключение Kerio Control к Ideco UTM по IPSec](settings/services/vpn-tunnel-protocols/site-to-site/ipsec-connection-kerio-control-to-utm.md)
       * [Подключение Keenetic по IPSec](settings/services/vpn-tunnel-protocols/site-to-site/keenetic-connection-via-ipsec.md)
   * [DNS](settings/services/dns.md)
+    * [NextDNS](settings/services/nextdns.md)
   * [Прокси](settings/services/proxy/README.md)
     * [Прокси сервер](settings/services/proxy/proxy-server.md)
     * [Настройка прокси с одним интерфейсом](settings/services/proxy/proxy-setting.md)
