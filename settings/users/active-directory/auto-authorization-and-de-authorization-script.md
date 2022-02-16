@@ -22,7 +22,7 @@ dateCreated: '2021-04-02T07:27:01.956Z'
 
 Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908%28v=ws.11%29?redirectedfrom=MSDN).
 
-**UTMLogon\_script.vbs**
+**UTMLogon\_script.ps1**
 
 ```text
 Dim IE
@@ -53,7 +53,7 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 Далее необходимо добавить скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583%28v=ws.11%29?redirectedfrom=MSDN):
 
-**UTMLogout\_script.vbs**
+**UTMLogout\_script.ps1**
 
 ```text
 Set objLocator = CreateObject("WbemScripting.SWbemLocator")
@@ -82,5 +82,5 @@ Next
 
 ![](../../../.gitbook/assets/6586987.jpg)
 
-* Автоматически групповая политика обновляется не сразу после внесения изменений. Чтобы скрипты начали работать, обновите политику вручную командой `gpupdate /force` на рабочей станции.
-
+* Автоматически групповая политика обновляется не сразу после внесения изменений. Чтобы скрипты начали работать, обновите политику вручную командой \
+  `gpupdate /force` на рабочей станции.
