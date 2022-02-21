@@ -6,8 +6,6 @@ description: >-
 
 # Настройка почтового сервера
 
-Проверка. [#veb-interfeis-dlya-antispama](mail-server-settings.md#veb-interfeis-dlya-antispama "mention")
-
 {% hint style="info" %}
 Все возможности по фильтрации почтового трафика возможно также применить к внутреннему почтовому серверу, опубликовав его через почтовый релей.
 {% endhint %}
