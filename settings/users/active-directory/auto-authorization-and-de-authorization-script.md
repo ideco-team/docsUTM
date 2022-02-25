@@ -39,7 +39,7 @@ IE.Quit
 
 ## Разавторизация пользователя
 
-Удобно применять этот скрипт, когда один компьютер используют разные пользователи для посещения ресурсов сети Интернет.
+Удобно применять этот скрипт, когда один компьютер используют разные пользователи для посещения ресурсов сети Интернет. Данный скрипт можно скачать из веб-интерфейса, авторизовавшись под пользователем, после включения **веб-авторизации** в разделе **Пользователи -> Авторизация** 
 
 Для работы разавторизации пользователя необходима установка сертификата сервера в качестве доверенного корневого центра сертификации на компьютеры пользователей. Можно сделать это локально или через групповые политики домена, как описано в инструкции.
 
@@ -55,7 +55,7 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 **UTMLogout\_script.ps1**
 
-```
+```ps1
 add-type @"
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
@@ -70,11 +70,11 @@ public class TrustAllCertsPolicy : ICertificatePolicy {
 
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
-Invoke-RestMethod -Uri "https://<utm ip-adress>:8443/monitor_backend/sessions/logout" -Method Delete
+Invoke-RestMethod -Uri "https://<utm ip-adress>:8443/auth/sessions/logout" -Method Delete
 
 ```
 
-Вместо «IP-адрес UTM» укажите IP-адрес локального интерфейса Ideco UTM.
+Вместо «UTM ip-address» нужно указать IP-адрес локального интерфейса Ideco UTM. При наличии на Ideco UTM нескольких локальных интерфейсов, необходимо указать IP-адрес локального интерфейса из той же подсети, что и компьютер пользователя.
 
 ## Возможные ошибки при выполнении скриптов
 
