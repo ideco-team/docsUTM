@@ -29,6 +29,7 @@ redirects:
   object: ./settings/access-rules/aliases.md
   portmapping: ./settings/publishing-resources/portmapping.md
   post: ./settings/mail/README.md
+  antispam: ./settings/mail/mail-server-settings.md
   powershell: ./settings/services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md
   proxy: ./settings/services/proxy/README.md
   report: ./settings/reports/README.md
