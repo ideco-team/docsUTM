@@ -8,7 +8,7 @@
 
 2\. Зайти под доменной учетной записью на Astra Linux.
 
-3\. В зависимости от выбранного браузера, выполнить действия из подразделов: [**Chromium**]() или [**Firefox**]()
+3\. В зависимости от выбранного браузера, выполнить действия из подразделов: [**Chromium**](./authorization-astra-linux.md#dlya-brauzera-chromium) или [**Firefox**](./authorization-astra-linux.md#dlya-brauzera-firefox)
 
 4\. Добавить корневой сертификат Ideco UTM в список доверенных центров сертификации. Для этого сначала [скачайте сертификат с Ideco UTM](../../settings/services/certificates/).
 
