@@ -47,7 +47,7 @@ IE.Quit
 
 Также необходимо отключить предупреждение о несоответствии адреса сертификата в свойствах Internet Explorer:
 
-![](../../../.gitbook/assets/ie11.png)
+![](<../../../.gitbook/assets/ie11 (1).png>)
 
 Этот параметр также можно установить через GPO, изменив параметр реестра:
 
@@ -57,7 +57,7 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 **UTMLogout\_script.ps1**
 
-```ps1
+```
 add-type @"
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
@@ -73,7 +73,6 @@ public class TrustAllCertsPolicy : ICertificatePolicy {
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 Invoke-RestMethod -Uri "https://<utm ip-adress>:8443/auth/sessions/logout" -Method Delete
-
 ```
 
 Вместо «UTM ip-address» нужно указать IP-адрес локального интерфейса Ideco UTM. При наличии на Ideco UTM нескольких локальных интерфейсов, необходимо указать IP-адрес локального интерфейса из той же подсети, что и компьютер пользователя.
@@ -82,7 +81,7 @@ Invoke-RestMethod -Uri "https://<utm ip-adress>:8443/auth/sessions/logout" -Meth
 
 * Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация**, и авторизация происходит только при ручном переходе по ссылке на авторизацию, то переход в браузере на страницу авторизации может не произойти (он может быть ограничен настройками безопасности браузера). В таком случае, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
 
-![](../../../.gitbook/assets/6586987.jpg)
+![](<../../../.gitbook/assets/6586987 (1).jpg>)
 
-* Автоматически групповая политика обновляется не сразу после внесения изменений. Чтобы скрипты начали работать, обновите политику вручную командой \
+* Автоматически групповая политика обновляется не сразу после внесения изменений. Чтобы скрипты начали работать, обновите политику вручную командой\
   `gpupdate /force` на рабочей станции.
