@@ -6,7 +6,7 @@ description: Авторизация по IP и MAC
 
 ## Общая информация
 {% hint style="info" %}
-Правила **IP и MAC авторизации** также создают аналогичную привязку в [DHCP-сервере](../../../services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) Ideco UTM.
+Правила **IP и MAC авторизации** также создают аналогичную привязку в [DHCP-сервере](../../../services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) Ideco UTM. Но если одни и те же IP и MAC адреса будут использоваться в включенных правилах DHCP-сервера, то правила DHCP-сервера будут выполняться в первую очередь.
 {% endhint %}
 
 Для настройки IP и MAC авторизации, необходимо:
