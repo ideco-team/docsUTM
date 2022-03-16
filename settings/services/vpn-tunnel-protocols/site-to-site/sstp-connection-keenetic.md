@@ -20,7 +20,6 @@ description: >-
 
 ![](../../../../.gitbook/assets/route-123-1.png)
 
-
 ## Настройка роутера Keenetic
 
 Настройте VPN-подключение роутера Keenetic по инструкции для client-to-site подключений.
