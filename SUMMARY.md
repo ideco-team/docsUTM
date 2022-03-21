@@ -29,16 +29,16 @@
     * [IP и MAC авторизация](settings/users/authorization/IP-and-MAC-authorization/README.md)
       * [Авторизация по IP-адресу](settings/users/authorization/IP-and-MAC-authorization/ip.md)
       * [Авторизация по MAC-адресу](settings/users/authorization/IP-and-MAC-authorization/mac.md)
-    * [VPN-подключение](vpn-connection/../settings/users/authorization/vpn-connection/README.md)
-      * [Подключение по PPTP](settings/users/authorization/pptp.md)
-      * [Поделючение по PPPoE](settings/users/authorization/pppoe.md)
+    * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
+      * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
+      * [Поделючение по PPPoE](settings/users/authorization/vpn-connection/pppoe.md)
       * [Подключение пользователей (client-to-site)](settings/services/vpn-tunnel-protocols/client-to-site/README.md)
         * [Ideco VPN-клиент](settings/users/authorization/vpn-connection/client-to-site/ideco-vpn-client.md)
         * [L2TP IPSec](settings/users/authorization/vpn-connection/client-to-site/l2tp-ipsec.md)
-        * [SSTP](settings\users\authorization\vpn-connection\client-to-site\sstp.md)
-        * [PPTP](settings\users\authorization\vpn-connection\client-to-site\pptp.md)
-        * [IPSec IKEv2](settings\users\authorization\vpn-connection\client-to-site\ipsec-ikev2.md)
-        * [Личный кабинет пользователя](settings\users\authorization\vpn-connection\client-to-site\user-lk.md)
+        * [SSTP]
+        * [PPTP]
+        * [IPSec IKEv2]
+        * [Личный кабинет пользователя](settings/users/authorization/vpn-connection/client-to-site/user-lk.md)
         * [Инструкция по созданию подключения в Windows 7](settings\users\authorization\vpn-connection\client-to-site\new-connection-windows-7.md)
         * [Особенности маршрутизации и организации доступа](settings\users\authorization\vpn-connection\client-to-site\features.md)
         * [Подключение по SSTP Wi-Fi роутеров Keenetic](settings\users\authorization\vpn-connection\client-to-site\sstp-connecting-keenetic-wi-fi-routers.md)
