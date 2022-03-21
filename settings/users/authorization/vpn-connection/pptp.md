@@ -1,5 +1,5 @@
 ---
-title: Авторизация по PPTP
+title: Подключение по PPTP
 description: null
 published: true
 date: '2021-05-18T11:06:41.939Z'
