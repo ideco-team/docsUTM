@@ -24,4 +24,4 @@ description: Авторизация – необходимое условие д
 Для применения нового тайм-аута отключения требуется перезагрузка Ideco UTM.
 {% endhint %}
 
-Также вы можете авторизовать пользователей, подключающихся по VPN по протоколам[ IPSec IKEv2](../../services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md), [SSTP](../../services/vpn-tunnel-protocols/client-to-site/sstp.md), [L2TP IPSec](../../services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md) и [PPTP.](pptp.md)
+Также вы можете авторизовать пользователей, подключающихся по VPN по протоколам[ IPSec IKEv2](vpn-connection/ipsec-ikev2.md), [SSTP](vpn-connection/sstp.md), [L2TP IPSec](vpn-connection/l2tp-ipsec.md) и [PPTP.](vpn-connection/pptp.md)
