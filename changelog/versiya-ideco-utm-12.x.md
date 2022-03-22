@@ -19,7 +19,7 @@
 
 * Для клиентов, подключенных к Ideco UTM по IKEv2/IPsec, маршруты передаются автоматически.
 * Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети.
-* При обновлении Ideco UTM на версию 12.0 информация из [Журнала событий](../settings/access-rules/ips.md#zhurnal) теряется.
+* При обновлении Ideco UTM на версию 12.0 информация из раздела Предотвращение вторжений -> [Журнал](../settings/access-rules/ips.md#zhurnal) теряется.
 * Исходящее подключение IPSec к Mikrotik версии ниже 6.46 по сертификатам работать не будет. При этом, подключения, созданные в версии 11.х, продолжат работу.
 * Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов. 
 * Переработан [раздел с сертификатами](../settings/services/certificates/README.md). 
