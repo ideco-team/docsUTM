@@ -6,15 +6,17 @@
 
 #### Новые возможности
 
-* [Интеграция с сервисом NextDNS](../settings/services/nextdns.md). 
+* Новая платформа на базе ядра Linux 5.15
+* [Добавлена фильтрация баннерной рекламы на уровне DNS](../settings/services/nextdns.md). 
 * [Динамическая маршрутизация на базе OSPF](../settings/services/ospf.md). 
-* Добавлена возможность возврата на предыдущую версию после обновления в локальном меню.
+* Возможность отката на прошлую версию после обновления в локальном меню.
+* Новая версия модуля [Контроль приложений](../settings/access-rules/application-control.md).
 * Переработан и улучшен раздел авторизации пользоватей по [IP-адресу/MAC-адресу](../settings/users/authorization/IP-and-MAC-authorization/README.md).
-* Добавлена привязка [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
+* Привязка [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
 * Переработан [раздел с сертификатами](../settings/services/certificates/README.md). 
 * [Веб-интерфейс Антиспама Касперского](../settings/access-rules/antivirus.md). В функционал Ideco UTM 12.0 добавлена возможность запускать и веб-интерфейс для Антиспама.
 * Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
-* Обновлено ядро платформы до Linux 5.15.
+  
   
 #### Исправления и изменения
 
