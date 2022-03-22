@@ -32,15 +32,15 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 Вписать строки:
 
-`iptables -A FORWARD -d [ip/маска] -j ACCEPT`
+`iptables -A FORWARD -d ip/маска -j ACCEPT`
 
-`iptables -A FORWARD -s [ip/маска] -j ACCEPT`
+`iptables -A FORWARD -s ip/маска -j ACCEPT`
 
 Для диапазона IP адресов ввести:
 
-`iptables -I FORWARD 1 -p udp -m iprange --dst-range [первый ip]-[последний ip] -m state --state`&#x20;
+`iptables -I FORWARD 1 -p udp -m iprange --dst-range первый ip-последний ip -m state --state`&#x20;
 
-`iptables -I FORWARD 1 -p udp -m iprange --src-range [первый ip]-[последний ip] -j ACCEPT`
+`iptables -I FORWARD 1 -p udp -m iprange --src-range первый ip-последний ip -j ACCEPT`
 
 **Например:**&#x20;
 
