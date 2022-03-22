@@ -32,14 +32,14 @@
 *  **Encryption Algorithm**:
     *   Для **Ideco UTM версии 10.0 и новее** используйте следующие параметры:
 
-        **Algorithm** - AES256-GCM;
+            1. **Algorithm** - AES256-GCM;
 
-        **Key length** - 128 bit;
+            2. **Key length** - 128 bit;
 
-        **Hash** - SHA256;
+            3. **Hash** - SHA256;
 
-        **DH Group** - Elliptic Curve 25519-256.
-    * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
+            4. **DH Group** - Elliptic Curve 25519-256.
+      * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
 ![](../../../../.gitbook/assets/aes\(v9\).png)
 

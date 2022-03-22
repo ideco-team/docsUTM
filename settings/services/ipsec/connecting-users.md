@@ -11,7 +11,7 @@ dateCreated: '2021-04-02T07:28:25.543Z'
 # Подключение пользователей
 
 {% hint style="success" %}
-Настройки для подключения пользователей \(client-to-site VPN\) описаны в статье [Подключение по VPN L2TP-IPSec](../../client-to-site/l2tp-ipsec.md).
+Настройки для подключения пользователей \(client-to-site VPN\) описаны в статье [Подключение по VPN L2TP-IPSec](../../users/authorization/vpn-connection/l2tp-ipsec.md).
 {% endhint %}
 
 ## Разрешить подключение удалённых пользователей по протоколу L2TP/IPsec

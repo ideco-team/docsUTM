@@ -6,7 +6,7 @@ description: >-
 
 # Подключение Keenetic по SSTP
 
-Если доступ из центрального офиса в сеть за Keenetic не нужен, то воспользуйтесь статьей [Подключение по SSTP Wi-Fi роутеров Keenetic](../client-to-site/sstp-connecting-keenetic-wi-fi-routers.md) по cline-to-site подключению.
+Если доступ из центрального офиса в сеть за Keenetic не нужен, то воспользуйтесь статьей [Подключение по SSTP Wi-Fi роутеров Keenetic](../../../users/authorization/vpn-connection/sstp-connecting-keenetic-wi-fi-routers.md) по cline-to-site подключению.
 
 ## Настройка Ideco UTM
 
