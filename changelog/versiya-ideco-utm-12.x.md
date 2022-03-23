@@ -10,7 +10,7 @@
 * Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS. 
 * Динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md). 
 * Добавлена возможность отката на прошлую версию после обновления.
-* Добавлена привязка [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
+* Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
 * [Веб-интерфейс Антиспама Касперского](../settings/access-rules/antivirus.md). Добавлена возможность запускать и веб-интерфейс для Антиспама.
 * Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
   
