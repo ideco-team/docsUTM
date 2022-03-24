@@ -28,7 +28,7 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 2\. В консоли UTM ([доступ по SSH](../access-rules/admins.md)) ввести команду:
 
-`mcedit /usr/bin/ideco-firewall`
+`mcedit /usr/bin/ideco-firewall-static`
 
 3\. Между строками:
 
