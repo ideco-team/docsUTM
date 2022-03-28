@@ -24,13 +24,11 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 Аналогичным образом для открытия доступа определенным хостам внутренней сети без авторизации укажите их IP-адреса.
 
-1\. Исключить внешние ресурсы (IP-адреса или сети) из обработки прокси сервера. В разделе **Сервисы -> Прокси -> Исключения** в **Сети назначения** добавить эти ресурсы.
-
-2\. В консоли UTM ([доступ по SSH](../access-rules/admins.md)) ввести команду:
+1\. В консоли UTM ([доступ по SSH](../access-rules/admins.md)) ввести команду:
 
 `mcedit /usr/bin/ideco-firewall-static`
 
-3\. Между строками:
+2\. Между строками:
 
 `iptables -A FORWARD -m state --state INVALID -j DROP`
 
@@ -44,15 +42,27 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 Для диапазона IP адресов ввести:
 
-`iptables -I FORWARD 1 -m iprange --dst-range первый ip-последний ip -m state --state`&#x20;
+`iptables -I FORWARD 1 -m iprange --dst-range первый ip-последний ip -j ACCEPT`&#x20;
 
 `iptables -I FORWARD 1 -m iprange --src-range первый ip-последний ip -j ACCEPT`
 
 **Например:**&#x20;
 
-`iptables -I FORWARD 1 -m iprange --dst-range`` `**`10.0.0.1-10.0.0.200`**` ``-m state --state`&#x20;
+`iptables -I FORWARD 1 -m iprange --dst-range` **10.0.0.1-10.0.0.200** `-j ACCEPT`&#x20;
 
-`iptables -I FORWARD 1 -m iprange --src-range`` `**`10.0.0.1-10.0.0.200`**` ``-j ACCEPT`
+`iptables -I FORWARD 1 -m iprange --src-range` **10.0.0.1-10.0.0.200** `-j ACCEPT`
+
+3\. После строки `iptables -t mangle -A squid_tproxy -m condition --condition unlicensed_internet_access -j RETURN`, вписать строки:  
+
+`iptables -t mangle -A squid_tproxy -d ip/маска -j ACCEPT`
+
+`iptables -t mangle -A squid_tproxy -s ip/маска -j ACCEPT` 
+
+**Например:**
+
+`iptables -A FORWARD -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+
+`iptables -A FORWARD -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT`
 
 4\. Сохраните файл.
 
