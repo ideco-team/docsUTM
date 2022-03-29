@@ -12,18 +12,23 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 # Доступ до внешних ресурсов без авторизации
 
+{% hint style="warning" %}
 Также можно разрешить доступ к сети Интернет без фильтрации и авторизации на Ideco UTM некоторым IP-адресам и сетям \(**осторожно используйте эту возможность!**\).
+
+Данные настройки будут действовать до обновления Ideco UTM. После обновления требуется повторить настройку, пропустив пункт один.
+
+Если используется прямое подключение к прокси, то доступ до внешних ресурсов без авторизации настроить не возможно.
+{% endhint %}
 
 Для доступа к внешним ресурам для авторизации введите их IP-адрес или сеть вместо `X.X.X.X/X` в настройках по следующей инструкции.
 
 Аналогичным образом для открытия доступа определенным хостам внутренней сети без авторизации укажите их IP-адреса.
 
-1. Исключить внешние ресурсы \(IP-адреса или сети\) из обработки прокси сервера. В разделе **Сервисы -&gt; Прокси -&gt; Исключения** в **Сети назначения** добавить эти ресурсы.
-2. В консоли UTM \([доступ по SSH](../access-rules/admins.md)\) ввести команду:
+1\. В консоли UTM ([доступ по SSH](../access-rules/admins.md)) ввести команду:
 
    `mcedit /usr/bin/ideco-firewall`
 
-3. Между строками:
+2\. Между строками:
 
    `iptables -A FORWARD -m state --state INVALID -j DROP`
 
@@ -31,10 +36,34 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
    Вписать строки:
 
-   `iptables -A FORWARD -d X.X.X.X/X -j ACCEPT`
+   `iptables -A FORWARD -d ip/маска -j ACCEPT`
 
-   `iptables -A FORWARD -s X.X.X.X/X -j ACCEPT`
+   `iptables -A FORWARD -s ip/маска -j ACCEPT`
 
-4. Сохраните файл
-5. Перезагрузите Ideco UTM
+   Для диапазона IP адресов ввести:
 
+   `iptables -I FORWARD 1 -m iprange --dst-range первый ip-последний ip -j ACCEPT`
+
+   `iptables -I FORWARD 1 -m iprange --src-range первый ip-последний ip -j ACCEPT`
+
+   *Например*
+
+   `iptables -I FORWARD 1 -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+   
+   `iptables -I FORWARD 1 -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+
+3\. После строки `iptables -t mangle -A squid_tproxy -m condition --condition unlicensed_internet_access -j RETURN`, вписать строки:  
+
+   `iptables -t mangle -A squid_tproxy -d ip/маска -j ACCEPT`
+
+   `iptables -t mangle -A squid_tproxy -s ip/маска -j ACCEPT` 
+
+**Например:**
+
+   `iptables -A FORWARD -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+
+   `iptables -A FORWARD -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+
+4\. Сохраните файл.
+
+5\. Перезагрузите Ideco UTM.
