@@ -55,8 +55,8 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 *Например:*
 
-    iptables -t mangle -A squid_tproxy -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT
-    iptables -t mangle -A squid_tproxy -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT
+    iptables -t mangle -A squid_tproxy -d 10.0.0.1/24 -j ACCEPT
+    iptables -t mangle -A squid_tproxy -s 10.0.0.1/24 -j ACCEPT
 
 4\. Сохраните файл.
 
