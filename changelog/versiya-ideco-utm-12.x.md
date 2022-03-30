@@ -9,7 +9,7 @@
 * Добавлена возможность создать правило авторизации только по [MAC-адресу](/settings/users/authorization/IP-and-MAC-authorization/mac.md).
 * Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS. 
 * Добавлена динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md). 
-* Добавлена возможность отката на прошлую версию после обновления.
+* Добавлена возможность возврата на прошлую версию после обновления.
 * Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
 * Добавлена возможность запускать веб-интерфейс для [Антиспама](../settings/access-rules/antivirus.md).
 * Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
