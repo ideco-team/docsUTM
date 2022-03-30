@@ -9,17 +9,16 @@
 
 1\. Перейдите в раздел **Пользователи -&gt; Авторизация -&gt; VPN-подключение**.
 
-2\. Установите галочку **Подключение по L2TP/IPSec** и скопируйте **PSK**-ключ:
+2\. Установите флаг **Подключение по L2TP/IPSec** и скопируйте **PSK**-ключ:
 
 ![](../../../../.gitbook/assets/tray5.png)
 
 **Создание подключения в Astra Linux**
 
 1\. Откройте терминал сочетанием клавиш Ctrl+Alt+F1 и выполните две команды:
-```
-sudo apt update
-sudo apt install network-manager-l2tp network-manager-l2tp-gnome
-```
+
+    sudo apt update
+    sudo apt install network-manager-l2tp network-manager-l2tp-gnome
 
 2\. В трее в настройках сети выберите **Соединение VPN -> Добавить VPN-соединение**:
 
