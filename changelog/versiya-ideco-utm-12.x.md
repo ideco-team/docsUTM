@@ -2,16 +2,16 @@
 
 ## **IDECO UTM 12.0 СБОРКА 260**
 
-Обязательно ознакомьтесь с [примечаниями]() к релизу.
 
 #### Новые возможности
 
 * Новая платформа на базе ядра Linux 5.15.
+* Добавлена возможность создать правило авторизации только по [MAC-адресу](/settings/users/authorization/IP-and-MAC-authorization/mac.md).
 * Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS. 
-* Динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md). 
+* Добавлена динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md). 
 * Добавлена возможность отката на прошлую версию после обновления.
 * Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
-* [Веб-интерфейс Антиспама Касперского](../settings/access-rules/antivirus.md). Добавлена возможность запускать и веб-интерфейс для Антиспама.
+* Добавлена возможность запускать веб-интерфейс для [Антиспама](../settings/access-rules/antivirus.md).
 * Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
   
   
