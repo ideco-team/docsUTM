@@ -50,13 +50,23 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 3\. После строки `iptables -t mangle -A squid_tproxy -m condition --condition unlicensed_internet_access -j RETURN`, вписать строки:  
 
-    iptables -t mangle -A squid_tproxy -d ip/маска -j ACCEPT
-    iptables -t mangle -A squid_tproxy -s ip/маска -j ACCEPT
+    iptables -t mangle -A squid_tproxy -d ip/маска -j RETURN
+    iptables -t mangle -A squid_tproxy -s ip/маска -j RETURN
 
 *Например:*
 
-    iptables -t mangle -A squid_tproxy -d 10.0.0.1/24 -j ACCEPT
-    iptables -t mangle -A squid_tproxy -s 10.0.0.1/24 -j ACCEPT
+    iptables -t mangle -A squid_tproxy -d 10.0.0.1/24 -j RETURN
+    iptables -t mangle -A squid_tproxy -s 10.0.0.1/24 -j RETURN
+
+Для диапазона IP адресов ввести:
+
+    iptables -t mangle -A squid_tproxy -m iprange --dst-range первый ip-последний ip -j RETURN
+    iptables -t mangle -A squid_tproxy -m iprange --src-range первый ip-последний ip -j RETURN
+
+*Например*
+
+    iptables -t mangle -A squid_tproxy -m iprange --dst-range 10.0.0.1-10.0.0.200 -j RETURN
+    iptables -t mangle -A squid_tproxy -m iprange --src-range 10.0.0.1-10.0.0.200 -j RETURN
 
 4\. Сохраните файл.
 
