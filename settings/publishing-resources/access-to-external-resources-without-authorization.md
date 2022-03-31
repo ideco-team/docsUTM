@@ -26,43 +26,47 @@ dateCreated: '2021-04-02T07:24:48.279Z'
 
 1\. В консоли UTM ([доступ по SSH](../access-rules/admins.md)) ввести команду:
 
-   `mcedit /usr/bin/ideco-firewall`
+    mcedit /usr/bin/ideco-firewall
 
 2\. Между строками:
 
-   `iptables -A FORWARD -m state --state INVALID -j DROP`
+    iptables -A FORWARD -m state --state INVALID -j DROP
+    iptables -A FORWARD -j forward_sys_rules
 
-   `iptables -A FORWARD -j forward_sys_rules`
+Вписать строки:
 
-   Вписать строки:
+    iptables -A FORWARD -d ip/маска -j ACCEPT
+    iptables -A FORWARD -s ip/маска -j ACCEPT
 
-   `iptables -A FORWARD -d ip/маска -j ACCEPT`
+Для диапазона IP адресов ввести:
 
-   `iptables -A FORWARD -s ip/маска -j ACCEPT`
+    iptables -I FORWARD 1 -m iprange --dst-range первый ip-последний ip -j ACCEPT
+    iptables -I FORWARD 1 -m iprange --src-range первый ip-последний ip -j ACCEPT
 
-   Для диапазона IP адресов ввести:
+*Например:*
 
-   `iptables -I FORWARD 1 -m iprange --dst-range первый ip-последний ip -j ACCEPT`
-
-   `iptables -I FORWARD 1 -m iprange --src-range первый ip-последний ip -j ACCEPT`
-
-   *Например*
-
-   `iptables -I FORWARD 1 -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT`
-   
-   `iptables -I FORWARD 1 -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+    iptables -I FORWARD 1 -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT
+    iptables -I FORWARD 1 -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT
 
 3\. После строки `iptables -t mangle -A squid_tproxy -m condition --condition unlicensed_internet_access -j RETURN`, вписать строки:  
 
-   `iptables -t mangle -A squid_tproxy -d ip/маска -j ACCEPT`
+    iptables -t mangle -A squid_tproxy -d ip/маска -j RETURN
+    iptables -t mangle -A squid_tproxy -s ip/маска -j RETURN
 
-   `iptables -t mangle -A squid_tproxy -s ip/маска -j ACCEPT` 
+*Например:*
 
-**Например:**
+    iptables -t mangle -A squid_tproxy -d 10.0.0.1/24 -j RETURN
+    iptables -t mangle -A squid_tproxy -s 10.0.0.1/24 -j RETURN
 
-   `iptables -A FORWARD -m iprange --dst-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+Для диапазона IP адресов ввести:
 
-   `iptables -A FORWARD -m iprange --src-range 10.0.0.1-10.0.0.200 -j ACCEPT`
+    iptables -t mangle -A squid_tproxy -m iprange --dst-range первый ip-последний ip -j RETURN
+    iptables -t mangle -A squid_tproxy -m iprange --src-range первый ip-последний ip -j RETURN
+
+*Например*
+
+    iptables -t mangle -A squid_tproxy -m iprange --dst-range 10.0.0.1-10.0.0.200 -j RETURN
+    iptables -t mangle -A squid_tproxy -m iprange --src-range 10.0.0.1-10.0.0.200 -j RETURN
 
 4\. Сохраните файл.
 
