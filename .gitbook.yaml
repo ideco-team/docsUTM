@@ -20,18 +20,18 @@ redirects:
   firewall: ./settings/access-rules/firewall.md
   https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
   ids_ips: ./settings/access-rules/ips.md
-  install: ./installation-process.md
-  ipsec: ./settings/services/vpn-tunnel-protocols/site-to-site/ipsec/README.md
+  install: ./installation/installation-process.md
+  ipsec: ./settings/services/ipsec/README.md
   license: ./service/server-registration.md
   network_interface: ./settings/connection-to-provider/README.md
   dns: ./settings/services/dns.md
   nextdns: ./settings/services/nextdns.md
-  dns_external: ./settings/services/dns.md#dns-external
+  dns_external: ./settings/services/dns.md
   object: ./settings/access-rules/aliases.md
   portmapping: ./settings/publishing-resources/portmapping.md
   post: ./settings/mail/README.md
   antispam: ./settings/mail/mail-server-settings.md
-  powershell: ./settings/services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md
+  powershell: ./settings/users/authorization/vpn-connection/running-powershell-scripts.md
   proxy: ./settings/services/proxy/README.md
   report: ./settings/reports/README.md
   reverse_proxy: ./settings/services/reverse-proxy.md
@@ -48,11 +48,11 @@ redirects:
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
-  vpn_authorization: ./settings/services/vpn-tunnel-protocols/client-to-site/README.md
+  vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
   ideco_vpn_agent: ./settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md
   zabbix: ./settings/monitor/zabbix.md
-  cisco2utm: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-cisco-to-utm-via-ipsec.md
-  utm2cisco: ./settings/services/vpn-tunnel-protocols/site-to-site/connect-utm-to-cisco-via-ipsec.md
+  cisco2utm: ./settings/services/ipsec/site-to-site/connect-cisco-to-utm-via-ipsec.md
+  utm2cisco: ./settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md
   auto-auth-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
   auto-logout-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
   dashboard: ./settings/monitor-panel.md
