@@ -154,7 +154,7 @@
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Что делать если не работает Интернет](recipes/popular-recipes/what-to-do-if-the-internet-does-not-work.md)
   * [Как восстановить доступ к Ideco UTM](recipes/popular-recipes/restore-access-to-ideco-utm.md)
-  * [Как восстановить прошлую версию после обновления Ideco UTM](settings/publishing-resources/go-back.md)
+  * [Как восстановиться на прошлую версию после обновления Ideco UTMM](settings/publishing-resources/go-back.md)
   * [Проверка настроек фильтрации с помощью security ideco](recipes/popular-recipes/security-ideco.md)
   * [Выбор аппаратной платформы для Ideco UTM](recipes/popular-recipes/choosing-hardware-platform.md)
   * [Поддержка устаревших алгоритмов шифрования](recipes/popular-recipes/legacy-encryption-support.md)
