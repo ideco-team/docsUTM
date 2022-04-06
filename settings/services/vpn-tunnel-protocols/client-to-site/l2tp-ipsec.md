@@ -120,7 +120,7 @@ sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
 * Phase2 Algorithms: дополнительные параметры, используемые при формировании второй фазы (ESP) (по умолчанию используется Quick Mode) (необязательное поле).
 * Phase1 Lifetime: время до пересоздания IKE SA, можно оставить по умолчанию.
 * Phase2 Lifetime: время до пересоздания IPsec SA, можно оставить по умолчанию.
-* Enforce UDP encapsulation: принудительно использовать UDP инкапсуляцию, может помочь, когда файрволл блокирует ESP трафик.
+* Enforce UDP encapsulation: принудительно использовать UDP инкапсуляцию, может помочь, когда фаервола блокирует ESP трафик.
 * Use IP compression: сжатие необработанных пакетов перед их шифрованием.
 * Use IKEv2 key exchange: использование IKEv2, можно не использовать.
 * Use PFS: выключение алгоритма perfect forward secrecy.

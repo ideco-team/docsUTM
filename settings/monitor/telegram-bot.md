@@ -1,7 +1,7 @@
 ---
 title: Telegram-бот
 description: >-
-  Ideco Monitiring Bot может прислать уведомления о событиях в Ideco UTM
+  Ideco Monitоring Bot может прислать уведомления о событиях в Ideco UTM
   (уведомления из колокольчика).
 published: true
 date: '2021-04-02T07:22:55.580Z'

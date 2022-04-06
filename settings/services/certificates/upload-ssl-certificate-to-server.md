@@ -93,7 +93,7 @@ dateCreated: '2021-04-02T07:26:31.673Z'
     -----END RSA PRIVATE KEY-----
    ```
 
-   Если в сертификате написано `--BEGIN ENCRYPTED PRIVATE KEY--`, то нужно его расшифровать с помощью утилиты openssl. **Команда для расшифровки:** `openssl rsa -in certificate.pem -out certificate_decoded.pem`. **certificate.pem** - файл который вы получили после конвертации на шаге Г; **certificate\_decode.pem** - результат раcшифровки. Если в сертификате написано **--BEGIN RSA PRIVATE KEY--**, то файл сертификата уже расшифрован. Можно приступать к следующему шагу.
+   Если в сертификате написано `--BEGIN ENCRYPTED PRIVATE KEY--`, то нужно его расшифровать с помощью утилиты openssl. **Команда для расшифровки:** `openssl rsa -in certificate.pem -out certificate_decoded.pem`. **certificate.pem** - файл который вы получили после конвертации на шаге Г; **certificate\_decode.pem** - результат расшифровки. Если в сертификате написано **--BEGIN RSA PRIVATE KEY--**, то файл сертификата уже расшифрован. Можно приступать к следующему шагу.
 
 4. Создайте пустой файл с расширением `pem` \(**my\_certificate.pem**\).
 5. Откройте его с помощью текстового редактора.
