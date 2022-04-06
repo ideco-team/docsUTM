@@ -84,7 +84,6 @@ dateCreated: '2021-04-02T07:26:40.810Z'
 
 * **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** добавьте адрес локального интерфейса Ideco UTM \(например `idecoUTM.example.ru`\).
 * **security.enterprise\_roots.enabled** в значении true позволит Firefox доверять системным сертификатом и авторизовать пользователей при переходе на HTTPS-сайты.
-* **security.enterprise\_roots.enabled** = true.
 
 Также для пользователей, импортированных через AD, возможны следующие способы авторизации:
 
