@@ -46,7 +46,7 @@
   * [Syslog](settings/monitor/syslog.md)
 * [Правила доступа](settings/access-rules/README.md)
   * [Антивирусы веб-трафика](settings/access-rules/antivirus.md)
-  * [Файрвол](settings/access-rules/firewall.md)
+  * [Фаервол](settings/access-rules/firewall.md)
   * [Контроль приложений](settings/access-rules/application-control.md)
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
     * [Описание категорий контент-фильтра](settings/access-rules/content-filter/custom-categories.md)
