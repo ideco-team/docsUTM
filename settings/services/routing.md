@@ -40,15 +40,7 @@ dateCreated: '2021-04-02T07:25:23.535Z'
 
 ![](../../.gitbook/assets/routing-outside.png)
 
-Описание элементов управления маршрутами в таблице:
-
-|                         Элемент управление                        | Описание                                       |
-| :---------------------------------------------------------------: | ---------------------------------------------- |
-| ![mdipowerstandby.svg](../../.gitbook/assets/mdipowerstandby.svg) | Позволяет выключать и включать маршруты        |
-|      ![mdiarrowup.svg](../../.gitbook/assets/mdiarrowup.svg)      | Позволяет повысить приоритет правила в таблице |
-|    ![mdiarrowdown.svg](../../.gitbook/assets/mdiarrowdown.svg)    | Позволяет понизить приоритет правила в таблице |
-|       ![mdipencil.svg](../../.gitbook/assets/mdipencil.svg)       | Позволяет отредактировать правило              |
-|       ![mdidelete.svg](../../.gitbook/assets/mdidelete.svg)       | Позволяет удалить правило                      |
+Кнопки ![](../../.gitbook/assets/mdiarrowdown.svg) и ![](../../.gitbook/assets/mdiarrowup.svg) повышают или понижают приоритет выполнения правила.
 
 В таблице есть статус **Используется**. У него есть два состояния:
 
@@ -58,7 +50,7 @@ dateCreated: '2021-04-02T07:25:23.535Z'
 |                   ![frame.svg](../../.gitbook/assets/frame.svg)                   | Маршрут не активен, и трафик попадающий под условия маршрута не будет данным правилом          |
 
 {% hint style="info" %}
-Трафик, не попавший под условия правил маршрутизации, или с объектом **Любой** в качестве шлюза, будет отправлен в [Балансировку и резервирование](https://github.com/ideco-team/docsUTM/tree/c6fdc8e9437797db7478b8404ef059e57173d3af/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0/%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D1%83/%D0%9E%D0%B4%D0%BD%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D0%BC-%D0%BF%D1%80%D0%BE%D0%B2%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%D0%BC/README.md).
+Трафик, не попавший под условия правил маршрутизации, или с объектом **Любой** в качестве шлюза, будет отправлен в [Балансировку и резервирование](../connection-to-provider/multiple-simultaneous-connections.md).
 {% endhint %}
 
 ### Примеры популярных маршрутов:
