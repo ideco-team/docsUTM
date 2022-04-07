@@ -40,15 +40,7 @@ dateCreated: '2021-04-02T07:25:23.535Z'
 
 ![](../../.gitbook/assets/routing-outside.png)
 
-Описание элементов управления маршрутами в таблице:
-
-|                         Элемент управление                        | Описание                                       |
-| :---------------------------------------------------------------: | ---------------------------------------------- |
-| ![mdipowerstandby.svg](../../.gitbook/assets/mdipowerstandby.svg) | Позволяет выключать и включать маршруты        |
-|      ![mdiarrowup.svg](../../.gitbook/assets/mdiarrowup.svg)      | Позволяет повысить приоритет правила в таблице |
-|    ![mdiarrowdown.svg](../../.gitbook/assets/mdiarrowdown.svg)    | Позволяет понизить приоритет правила в таблице |
-|       ![mdipencil.svg](../../.gitbook/assets/mdipencil.svg)       | Позволяет отредактировать правило              |
-|       ![mdidelete.svg](../../.gitbook/assets/mdidelete.svg)       | Позволяет удалить правило                      |
+Кнопки ![](../../.gitbook/assets/mdiarrowdown.svg) и ![](../../.gitbook/assets/mdiarrowup.svg) повышают или понижают приоритет выполнения правила.
 
 В таблице есть статус **Используется**. У него есть два состояния:
 
