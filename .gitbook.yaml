@@ -15,17 +15,17 @@ redirects:
   custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
   cluster: ./settings/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
-  device_detection: ./settings/users/device-discovery.md
+  device_discovery: ./settings/users/device-discovery.md
   dhcp: ./settings/services/dhcp.md
   firewall: ./settings/access-rules/firewall.md
   https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
   ids_ips: ./settings/access-rules/ips.md
-  install: ./installation-process.md
+  install: ./installation/installation-process.md
   ipsec: ./settings/services/vpn-tunnel-protocols/site-to-site/ipsec/README.md
   license: ./service/server-registration.md
   network_interface: ./settings/connection-to-provider/README.md
   dns: ./settings/services/dns.md
-  dns_external: ./settings/services/dns.md#dns-external
+  dns_external: ./settings/services/dns.md
   object: ./settings/access-rules/aliases.md
   portmapping: ./settings/publishing-resources/portmapping.md
   post: ./settings/mail/README.md
