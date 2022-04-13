@@ -141,7 +141,7 @@
 * [Управление лицензиями](service/license-management.md)
 * [Обновление сервера](service/server-update.md)
 * [Регистрация сервера](service/server-registration.md)
-* [Резервное копирование и восстановление данных](service/backup.md)
+* [Резервное копирование и восстановление данных](service/backup.md) 
 * [Режим удаленного помощника](service/remote-assistant.md)
 * [Разрешить интернет всем](service/razreshit-internet-vsem.md)
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
