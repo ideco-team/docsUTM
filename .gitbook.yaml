@@ -10,7 +10,7 @@ redirects:
   antivirus: ./settings/access-rules/antivirus.md
   application_control: ./settings/access-rules/application-control.md
   backup: ./service/backup.md
-  balancing_and_reserving: ./settings/connection-to-provider/multiple-simultaneous-connections.md
+  balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
   custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
   cluster: ./settings/cluster.md
@@ -23,7 +23,7 @@ redirects:
   install: ./installation/installation-process.md
   ipsec: ./settings/services/ipsec/README.md
   license: ./service/server-registration.md
-  network_interface: ./settings/connection-to-provider/README.md
+  network_interface: ./settings/services/connection-to-provider/README.md
   dns: ./settings/services/dns.md
   nextdns: ./settings/services/nextdns.md
   dns_external: ./settings/services/dns.md
@@ -59,3 +59,16 @@ redirects:
   traffmon: ./settings/monitor/traffic.md
   logs: ./settings/monitor/logs.md
   authorized: ./settings/monitor/authorized-users.md
+  ospf: .settings/services/ospf
+  user_tree: ./settings/users/user-tree.md
+  sites: ./settings/reports/sites.md
+  reports_user: ./settings/reports-user.md
+  category-reports: ./settings/category-reports.md
+  the-event-log: ./settings/the-event-log.md
+  report-designer: ./settings/report-designer.md
+  authorization-log: ./settings/reports/authorization-log.md
+  license-management: ./service/license-management.md
+  advanced-settings: ./settings/mail/advanced-settings.md
+  antispam_chapter: ./settings/mail/antispam.md
+  regulations: ./settings/mail/regulations.md
+  mail-queue: ./settings/mail/mail-queue.md
