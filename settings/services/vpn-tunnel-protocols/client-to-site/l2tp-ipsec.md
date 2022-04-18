@@ -73,7 +73,7 @@
 3. Перезагрузить Windows.
 {% endhint %}
 
-Настройка подключения L2TP/IPsec на Ubuntu Linux подробнее в [статье](connection-for-ubuntu.md) 
+Настройка подключения L2TP/IPsec на Ubuntu Linux подробнее в статье [*Инструкция по созданию VPN-подключения в Ubuntu*](connection-for-ubuntu.md)
 
 ### Возможные неполадки
 
