@@ -148,6 +148,7 @@
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
+  * [Инструкция по созданию VPN-подключения в Ubuntu](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-ubuntu.md)
 
 ## Ссылки <a href="#links" id="links"></a>
 
