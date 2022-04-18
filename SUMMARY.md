@@ -49,7 +49,7 @@
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
-  * [Авторизованные пользователи](settings/monitor/authorized-users.md)
+  * [Авторизованные пользователи и VPN пользователи](settings/monitor/authorized-users.md)
   * [Журналы](settings/monitor/logs.md)
   * [Монитор трафика](settings/monitor/traffic.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)

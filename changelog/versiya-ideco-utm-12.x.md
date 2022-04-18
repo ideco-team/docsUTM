@@ -1,7 +1,8 @@
-# Версия Ideco UTM 12.X
+# Версия Ideco UTM 12.X 
 
-## **IDECO UTM 12.0 СБОРКА 260**
+## **IDECO UTM 12.0 СБОРКА 588**
 
+Обязательно ознакомьтесь с [примечаниями ](https://disk.yandex.ru/i/UEatJNkC-RLmcA?roistat_visit=113018) к релизу.
 
 #### Новые возможности
 
@@ -13,7 +14,6 @@
 * Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
 * Добавлена возможность запускать веб-интерфейс для [Антиспама](../settings/access-rules/antivirus.md).
 * Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
-  
   
 #### Исправления и изменения
 
