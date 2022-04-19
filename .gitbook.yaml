@@ -59,7 +59,7 @@ redirects:
   traffmon: ./settings/monitor/traffic.md
   logs: ./settings/monitor/logs.md
   authorized: ./settings/monitor/authorized-users.md
-  ospf: .settings/services/ospf
+  ospf: .settings/services/ospf.md
   user_tree: ./settings/users/user-tree.md
   sites: ./settings/reports/sites.md
   reports_user: ./settings/reports-user.md
