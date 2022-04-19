@@ -52,7 +52,7 @@
 
 * [Кластеризация](../settings/cluster.md)
 
-## device\_detection
+## device\_discovery
 
 * [Обнаружение устройств](../settings/users/device-discovery.md)
 

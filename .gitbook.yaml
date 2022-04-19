@@ -16,7 +16,6 @@ redirects:
   cluster: ./settings/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
   device_discovery: ./settings/users/device-discovery.md
-  device_detection: ./settings/users/device-detection.md
   dhcp: ./settings/services/dhcp.md
   firewall: ./settings/access-rules/firewall.md
   https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
