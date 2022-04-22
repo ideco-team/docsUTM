@@ -32,7 +32,7 @@ IP-адрес пользователю назначается автоматич
 
 Чтобы настроить **статическую** привязку адресов, выдаваемых по VPN определенным пользователям, необходимо перейти в раздел **Пользователи -> Авторизация -> Фиксированные IP-адреса VPN**, нажать иконку ![ok\_with\_icon.png](<../../../.gitbook/assets/ok\_with\_icon (3) (3) (3) (6) (6) (5) (10).png>) и указать нужного пользователя и IP-адрес. Пример настройки фиксированного IP-адреса VPN представлен ниже:
 
-![](../../../.gitbook/assets/add-ip-vpn.gif)
+![](../../../../.gitbook/assets/add-ip-vpn.png)
 
 При подключении из сети интернет рекомендуем использовать [IPSec IKEv2](../../services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2.md), [L2TP IPSec](../../services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec.md) или [SSTP](../../services/vpn-tunnel-protocols/client-to-site/sstp.md) для более надежного шифрования трафика.
 
