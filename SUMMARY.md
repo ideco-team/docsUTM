@@ -129,7 +129,6 @@
   * [Настройка почтовых клиентов](settings/mail/configuring-email-clients.md)
   * [Схема фильтрации почтового трафика](settings/mail/filtering-scheme-for-mail-traffic.md)
 * [Публикация ресурсов](settings/publishing-resources/README.md)
-  * [Доступ до внешних ресурсов без авторизации](settings/publishing-resources/access-to-external-resources-without-authorization.md)
   * [Доступ из внешней сети без NAT](settings/publishing-resources/access-from-external-network-without-nat.md)
   * [Публикация веб-приложений (обратный прокси-сервер)](settings/publishing-resources/publishing-web-applications.md)
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
@@ -147,9 +146,14 @@
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
 * [Личный кабинет](service/lk.md)
 
-## Популярные рецепты <a href="#recipes" id="recipes"></a>
+## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
-* [Популярные рецепты](recipes/popular-recipes/README.md)
+* [Популярные инструкции](recipes/popular-recipes/README.md)
+  * [Инструкции по созданию VPN-подключений](settings/services/vpn-tunnel-protocols/client-to-site/README.md)
+    * [Инструкция по созданию VPN-подключения в Ubuntu](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-ubuntu.md)
+    * [Инструкция по созданию подключения в Windows](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-windows.md)
+    * [Инструкция по созданию VPN-подключения на мобильных устройствах](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-mobile-devices.md)
+    * [Инструкция по созданию подключения в Mac OS](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-high-sierra-macos.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Что делать если не работает Интернет](recipes/popular-recipes/what-to-do-if-the-internet-does-not-work.md)
@@ -162,8 +166,8 @@
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
-  * [Инструкция по созданию VPN-подключения в Ubuntu](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-ubuntu.md)
-
+* [Диагностика проблем](problem-diagnosis/README.md)
+  * [Ошибка при открытии сайта *ERR_CONNECTION_TIMED_OUT* или Не открывается сайт](problem-diagnosis/site-does-not-open.md)
 ## changelog
 
 * [Версия Ideco UTM 12.X](changelog/versiya-ideco-utm-12.x.md)
