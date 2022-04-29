@@ -18,7 +18,7 @@
 
 В случае правильной настройки браузер выведет ошибку доступа:
 
-![](<../../.gitbook/assets/антивирусы2 (3) (1).jpeg>)
+![](<../../.gitbook/assets/антивирусы2 (1) (4).jpeg>)
 
 ## Лицензирование антивируса Касперского
 
@@ -28,7 +28,7 @@
 
 ## Добавление сигнатур в список исключений ClamAV
 
-Просмотреть логи CalmAV и определить сработавшую сигнатуру вы можете,  введя в терминале Ideco UTM команду:
+Просмотреть логи CalmAV и определить сработавшую сигнатуру вы можете, введя в терминале Ideco UTM команду:
 
 ```
 journalctl -u ideco-clamd.service
@@ -36,13 +36,13 @@ journalctl -u ideco-clamd.service
 
 Пример вывода команды:
 
-`Dec 20 13:40:40.083733 info clamd[12443]: /tmp/CI_TMP_1qlsy5: Html.Exploit.CVE_2016_0228-6327291-2(00000000000000000000000000000000:888502) FOUND Dec 20 13:40:40.083750 info clamd[12443]: /tmp/CI_TMP_1qlsy5: Html.Exploit.CVE_2016_0228-6327291-2 FOUND `
+`Dec 20 13:40:40.083733 info clamd[12443]: /tmp/CI_TMP_1qlsy5: Html.Exploit.CVE_2016_0228-6327291-2(00000000000000000000000000000000:888502) FOUND Dec 20 13:40:40.083750 info clamd[12443]: /tmp/CI_TMP_1qlsy5: Html.Exploit.CVE_2016_0228-6327291-2 FOUND`
 
-`Dec 20 14:11:24.375281 info clamd[12443]: /tmp/CI_TMP_DPpHnS: Win.Trojan.LOLBins-7360503-2(00000000000000000000000000000000:388262) FOUND Dec 20 14:11:24.375293 info clamd[12443]: /tmp/CI_TMP_DPpHnS: Win.Trojan.LOLBins-7360503-2 FOUND `
+`Dec 20 14:11:24.375281 info clamd[12443]: /tmp/CI_TMP_DPpHnS: Win.Trojan.LOLBins-7360503-2(00000000000000000000000000000000:388262) FOUND Dec 20 14:11:24.375293 info clamd[12443]: /tmp/CI_TMP_DPpHnS: Win.Trojan.LOLBins-7360503-2 FOUND`
 
-`Dec 20 15:28:11.031128 info clamd[5165]: /tmp/CI_TMP_g7aPdY: Html.Exploit.CVE_2017_0011-5752098-0(00000000000000000000000000000000:354192) FOUND Dec 20 15:28:11.031144 info clamd[5165]: /tmp/CI_TMP_g7aPdY: Html.Exploit.CVE_2017_0011-5752098-0 FOUND`&#x20;
+`Dec 20 15:28:11.031128 info clamd[5165]: /tmp/CI_TMP_g7aPdY: Html.Exploit.CVE_2017_0011-5752098-0(00000000000000000000000000000000:354192) FOUND Dec 20 15:28:11.031144 info clamd[5165]: /tmp/CI_TMP_g7aPdY: Html.Exploit.CVE_2017_0011-5752098-0 FOUND`
 
-Допустим, вы знаете, что в 13:40 открывали сайт, на котором произошло ложное срабатывание ClamAV. Исходя из логов в исключения нужно добавить сигнатуру **Html.Exploit.CVE\_2016\_0228-6327291-2**.&#x20;
+Допустим, вы знаете, что в 13:40 открывали сайт, на котором произошло ложное срабатывание ClamAV. Исходя из логов в исключения нужно добавить сигнатуру **Html.Exploit.CVE\_2016\_0228-6327291-2**.
 
 Далее создайте файл белого списка `whitelist.ign2`, введя следующую команду:
 
