@@ -46,7 +46,7 @@
   * [Syslog](settings/monitor/syslog.md)
 * [Правила доступа](settings/access-rules/README.md)
   * [Антивирусы веб-трафика](settings/access-rules/antivirus.md)
-  * [Фаервол](settings/access-rules/firewall.md)
+  * [Файрвол](settings/access-rules/firewall.md)
   * [Контроль приложений](settings/access-rules/application-control.md)
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
     * [Описание категорий контент-фильтра](settings/access-rules/content-filter/custom-categories.md)
@@ -115,7 +115,6 @@
   * [Переадресация почты](settings/mail/mail-forwarding.md)
   * [Настройка домена у регистратора/держателя зоны](settings/mail/domain-settings-at-zone-holder.md)
 * [Публикация ресурсов](settings/publishing-resources/README.md)
-  * [Доступ до внешних ресурсов без авторизации](settings/publishing-resources/access-to-external-resources-without-authorization.md)
   * [Доступ из внешней сети без NAT](settings/publishing-resources/access-from-external-network-without-nat.md)
   * [Публикация веб-приложений (обратный прокси-сервер)](settings/publishing-resources/publishing-web-applications.md)
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
@@ -149,6 +148,9 @@
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
   * [Инструкция по созданию VPN-подключения в Ubuntu](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-ubuntu.md)
+  * [Инструкция по созданию VPN-подключения в Mac OS](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-high-sierra-macos.md)
+  * [Инструкция по созданию VPN-подключения в Windows](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-windows.md)
+  * [Инструкция по созданию VPN-подключения на мобильных устройствах](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-mobile-devices.md)
 
 ## Ссылки <a href="#links" id="links"></a>
 

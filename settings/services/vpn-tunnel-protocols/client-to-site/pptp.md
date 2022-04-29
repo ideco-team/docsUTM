@@ -12,6 +12,8 @@ dateCreated: '2021-04-02T07:27:44.126Z'
 
 {% hint style="danger" %}
 Не используйте этот тип подключения. Этот способ подключения КРАЙНЕ небезопасен, оставлен исключительно для совместимости со старыми решениями. Используйте IPSec-IKEv2.
+
+Инструкции по настройке VPN-подключений на разных ОС: [Windows](connection-for-windows.md), [Ubuntu](connection-for-ubuntu.md), [Mac OS](connection-for-high-sierra-macos.md) и на [мобильных устройствах](connection-for-mobile-devices.md).
 {% endhint %}
 
 ## Настройка глобальных параметров Ideco UTM
