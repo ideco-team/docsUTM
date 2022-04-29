@@ -105,7 +105,7 @@
   * [Сайты](settings/reports/sites.md)
   * [Пользователи](settings/reports-user.md)
   * [Категории](settings/category-reports.md)
-  * [Журнал событий](settings/the-event-log.md)
+  * [Журнал событий](settings/reports_eventlog.md)
   * [Журнал авторизации](settings/reports/authorization-log.md)
   * [Конструктор отчетов](settings/report-designer.md)
 * [Управление сервером](settings/server-management.md)
