@@ -66,10 +66,10 @@ redirects:
   ospf: ./settings/services/ospf.md
   user_tree: ./settings/users/user-tree.md
   reports_sites: ./settings/reports/sites.md
-  reports_user: ./settings/reports/reports-user.md
+  reports_user: ./settings/reports-user.md
   reports_categories: ./settings/category-reports.md
-  reports_eventlog: ./settings/reports/reports_eventlog.md
-  report_designer: ./settings/reports/report-designer.md
+  reports_eventlog: ./settings/reports_eventlog.md
+  report_designer: ./settings/report-designer.md
   authorization_log: ./settings/reports/authorization-log.md
   license_management: ./service/license-management.md
   advanced_settings: ./settings/mail/advanced-settings.md
