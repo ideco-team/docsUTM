@@ -67,8 +67,8 @@ redirects:
   user_tree: ./settings/users/user-tree.md
   reports_sites: ./settings/reports/sites.md
   reports_user: ./settings/reports-user.md
-  category_reports: ./settings/category-reports.md
-  the-event_log: ./settings/the-event-log.md
+  reports_categories: ./settings/category-reports.md
+  reports_eventlog: ./settings/the-event-log.md
   report_designer: ./settings/report-designer.md
   authorization_log: ./settings/reports/authorization-log.md
   license_management: ./service/license-management.md
