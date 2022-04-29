@@ -23,6 +23,7 @@ redirects:
   install: ./installation/installation-process.md
   ipsec: ./settings/services/ipsec/README.md
   license: ./service/server-registration.md
+  reg: ./service/server-registration.md
   network_interface: ./settings/services/connection-to-provider/README.md
   dns: ./settings/services/dns.md
   nextdns: ./settings/services/nextdns.md
@@ -30,6 +31,7 @@ redirects:
   object: ./settings/access-rules/aliases.md
   portmapping: ./settings/publishing-resources/portmapping.md
   post: ./settings/mail/README.md
+  mail: ./settings/mail/README.md
   antispam: ./settings/mail/mail-server-settings.md
   powershell: ./settings/users/authorization/vpn-connection/running-powershell-scripts.md
   proxy: ./settings/services/proxy/README.md
@@ -40,9 +42,11 @@ redirects:
   server_update: ./service/server-update.md
   snmp: ./settings/monitor/snmp.md
   speed_limit: ./settings/access-rules/shaper.md
+  shaper: ./settings/access-rules/shaper.md
   support: ./service/remote-assistant.md
   syslog: ./settings/monitor/syslog.md
   telegram-bot: ./settings/monitor/telegram-bot.md
+  telegram_bot: ./settings/monitor/telegram-bot.md
   terminal: ./settings/terminal.md
   usb: ./installation/usb.md
   user_authorization: ./settings/users/authorization/README.md
@@ -61,14 +65,14 @@ redirects:
   authorized: ./settings/monitor/authorized-users.md
   ospf: ./settings/services/ospf.md
   user_tree: ./settings/users/user-tree.md
-  sites: ./settings/reports/sites.md
+  reports_sites: ./settings/reports/sites.md
   reports_user: ./settings/reports-user.md
-  category-reports: ./settings/category-reports.md
-  the-event-log: ./settings/the-event-log.md
-  report-designer: ./settings/report-designer.md
-  authorization-log: ./settings/reports/authorization-log.md
-  license-management: ./service/license-management.md
-  advanced-settings: ./settings/mail/advanced-settings.md
+  category_reports: ./settings/category-reports.md
+  the-event_log: ./settings/the-event-log.md
+  report_designer: ./settings/report-designer.md
+  authorization_log: ./settings/reports/authorization-log.md
+  license_management: ./service/license-management.md
+  advanced_settings: ./settings/mail/advanced-settings.md
   antispam_chapter: ./settings/mail/antispam.md
-  regulations: ./settings/mail/regulations.md
-  mail-queue: ./settings/mail/mail-queue.md
+  rules: ./settings/mail/regulations.md
+  mail_queue: ./settings/mail/mail-queue.md
