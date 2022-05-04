@@ -22,7 +22,7 @@
 
 Чтобы ошибка больше не появлялась, импортируйте корневой сертификат UTM в браузер. Сертификат можно скачать тремя способами:
 
-1\. В разделе **Сервисы -> Сертификаты**, нажав на иконку  ![ok\_with\_icon.png](../.gitbook/assets/icon-download.png) **Скачать**:
+1\. В разделе **Сервисы -> Сертификаты**, нажав на иконку ![ok\_with\_icon.png](../.gitbook/assets/icon-download.png) **Скачать**:
 
 ![](../.gitbook/assets/sertificate.png)
 
@@ -58,7 +58,7 @@
 
 Для настройки Ethernet-подключения выполните следующие шаги:
 
-1\. Нажмите на иконку ![ok\_with\_icon.png](../.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+1\. Нажмите на иконку ![ok\_with\_icon.png](<../.gitbook/assets/ok-with-icon (33).png>) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
 
 ![](../.gitbook/assets/create-interface.png)
 
