@@ -1,27 +1,37 @@
 # Версия Ideco UTM 12.X 
 
+## **IDECO UTM 12.1 СБОРКА 10 (04.05.2022)**
+
+#### **Исправления и изменения**
+
+* Возможность авторизации до 5-ти устройств на одного пользователя (ранее было 3 устройства);
+* Исправлена ошибка веб-авторизации при публикации через обратный прокси-сервер несуществующего домена;
+* Улучшена работа VPN-подключений;
+* Исправлены ошибки миграции конфигурации при обновлении со старых версий;
+* Исправлены небольшие ошибки.
+
 ## **IDECO UTM 12.0 СБОРКА 588**
 
 Обязательно ознакомьтесь с [примечаниями ](https://disk.yandex.ru/i/UEatJNkC-RLmcA?roistat_visit=113018) к релизу.
 
 #### Новые возможности
 
-* Новая платформа на базе ядра Linux 5.15.
-* Добавлена возможность создать правило авторизации только по [MAC-адресу](/settings/users/authorization/IP-and-MAC-authorization/mac.md).
-* Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS. 
-* Добавлена динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md). 
-* Добавлена возможность возврата на прошлую версию после обновления.
-* Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP.
-* Добавлена возможность запускать веб-интерфейс для [Антиспама](../settings/access-rules/antivirus.md).
+* Новая платформа на базе ядра Linux 5.15;
+* Добавлена возможность создать правило авторизации только по [MAC-адресу](/settings/users/authorization/IP-and-MAC-authorization/mac.md);
+* Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS;
+* Добавлена динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md);
+* Добавлена возможность возврата на прошлую версию после обновления;
+* Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP;
+* Добавлена возможность запускать веб-интерфейс для [Антиспама](../settings/access-rules/antivirus.md);
 * Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
   
 #### Исправления и изменения
 
-* Для клиентов, подключенных к Ideco UTM по IKEv2/IPsec, маршруты передаются автоматически.
-* Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети.
-* Исходящее подключение IPSec к Mikrotik версии ниже 6.46 по сертификатам работать не будет. При этом, подключения, созданные в версии 11.х, продолжат работу.
-* Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов. 
-* Переработан [раздел с сертификатами](../settings/services/certificates/README.md). 
-* Переработан и улучшен раздел авторизации пользователей по [IP-адресу/MAC-адресу](../settings/users/authorization/IP-and-MAC-authorization/README.md).
+* Для клиентов, подключенных к Ideco UTM по IKEv2/IPsec, маршруты передаются автоматически;
+* Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети;
+* Исходящее подключение IPSec к Mikrotik версии ниже 6.46 по сертификатам работать не будет. При этом, подключения, созданные в версии 11.х, продолжат работу;
+* Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов;
+* Переработан [раздел с сертификатами](../settings/services/certificates/README.md);
+* Переработан и улучшен раздел авторизации пользователей по [IP-адресу/MAC-адресу](../settings/users/authorization/IP-and-MAC-authorization/README.md);
 * Новая версия модуля [Контроль приложений](../settings/access-rules/application-control.md).
 ***
