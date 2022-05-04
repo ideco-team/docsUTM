@@ -1,11 +1,11 @@
 ---
 title: Личный кабинет
+description: Зачем пользователю Ideco UTM нужен личный кабинет
 published: true
 date: '2021-06-08T10:05:06.692Z'
 tags: user_authorization, server_registration, license
 editor: markdown
 dateCreated: '2021-05-28T13:12:05.352Z'
-description: Зачем пользователю Ideco UTM нужен личный кабинет
 ---
 
 # Личный кабинет
@@ -25,7 +25,7 @@ description: Зачем пользователю Ideco UTM нужен личны
 
 Укажите свои личные данные и данные о компании.
 
-![](<../.gitbook/assets/reglk (1) (1) (2) (2) (2) (2) (1) (1).png>)
+![](<../.gitbook/assets/reglk (1) (1) (2) (2) (2) (2) (1) (1) (1).png>)
 
 **На указанную электронную почту придет активационное письмо.**
 
