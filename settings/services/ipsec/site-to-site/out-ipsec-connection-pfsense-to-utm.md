@@ -27,21 +27,23 @@
 * **Description** – любое;
 * **Authentication Method** – Mutual PSK;
 * **My identifier** - My ip address;
-*  **Peer identifier** - KeyID tag. Введите идентификатор удаленной стороны, т.е. Ideco UTM;
-*  **Pre-Shared Key** – введите PSK-ключ;
-*  **Encryption Algorithm**:
-    *   Для **Ideco UTM версии 10.0 и новее** используйте следующие параметры:
+* **Peer identifier** - KeyID tag. Введите идентификатор удаленной стороны, т.е. Ideco UTM;
+* **Pre-Shared Key** – введите PSK-ключ;
+* **Encryption Algorithm**:
+  *   Для **Ideco UTM версии 10.0 и новее** используйте следующие параметры:
 
-            1. **Algorithm** - AES256-GCM;
+      ```
+      1. **Algorithm** - AES256-GCM;
 
-            2. **Key length** - 128 bit;
+      2. **Key length** - 128 bit;
 
-            3. **Hash** - SHA256;
+      3. **Hash** - SHA256;
 
-            4. **DH Group** - Elliptic Curve 25519-256.
-      * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
+      4. **DH Group** - Elliptic Curve 25519-256.
+      ```
+  * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/aes\(v9\).png)
+![](../../../../.gitbook/assets/aes-v9-.png)
 
 3\. Сохраните подключение.
 
@@ -49,10 +51,10 @@
 
 **Encryption Algorithm**:
 
-* **Для Ideco UTM версии 10.0 и новее** используйте следующие параметры:  **Algorithm** - AES256-GCM;  **Key length** - 128 bit;  **Hash** - SHA256;  **DH Group** - Elliptic Curve 25519-256.
+* **Для Ideco UTM версии 10.0 и новее** используйте следующие параметры: **Algorithm** - AES256-GCM; **Key length** - 128 bit; **Hash** - SHA256; **DH Group** - Elliptic Curve 25519-256.
 * **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/esp\(v9\).png)
+![](../../../../.gitbook/assets/esp-v9-.png)
 
 **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM;\
 **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense;

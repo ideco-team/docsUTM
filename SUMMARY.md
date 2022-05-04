@@ -90,7 +90,7 @@
     * [Филиалы и главный офис](settings/services/ipsec/branch-office-and-main-office.md)
     * [Подключение устройств](settings/services/ipsec/connecting-devices.md)
     * [Подключение пользователей](settings/services/ipsec/connecting-users.md)
-    * [Подключение офисов (site-to-site)](settings/services/vpn-tunnel-protocols/site-to-site/README.md)
+    * [Подключение офисов (site-to-site)](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/README.md)
       * [PPTP VPN](settings/services/ipsec/site-to-site/pptp-vpn.md)
       * [Входящее подключение Cisco IOS к Ideco UTM по IPSec](settings/services/ipsec/site-to-site/connect-cisco-to-utm-via-ipsec.md)
       * [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
@@ -98,14 +98,14 @@
       * [Исходящее подключение pfSense к Ideco UTM по IPsec](settings/services/ipsec/site-to-site/out-ipsec-connection-pfsense-to-utm.md)
       * [Подключение Keenetic по SSTP](settings/services/ipsec/site-to-site/sstp-connection-keenetic.md)
       * [Подключение Kerio Control к Ideco UTM по IPSec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
-      * [Подключение Keenetic по IPSec](settings/services/ipsec/site-to-site/keenetic-connection-via-ipsec.md)   
+      * [Подключение Keenetic по IPSec](settings/services/ipsec/site-to-site/keenetic-connection-via-ipsec.md)
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка своего SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
 * [Отчеты](settings/reports/README.md)
   * [Сайты](settings/reports/sites.md)
   * [Пользователи](settings/reports-user.md)
   * [Категории](settings/category-reports.md)
-  * [Журнал событий](settings/reports_eventlog.md)
+  * [Журнал событий](settings/reports\_eventlog.md)
   * [Журнал авторизации](settings/reports/authorization-log.md)
   * [Конструктор отчетов](settings/report-designer.md)
 * [Управление сервером](settings/server-management.md)
@@ -137,10 +137,10 @@
 
 ## Обслуживание <a href="#service" id="service"></a>
 
-* [Управление лицензиями](service/license-management.md)
-* [Обновление сервера](service/server-update.md)
+* [Управление лицензиями](service/upravlenie-licenziyami.md)
+* [Обновление сервера](service/obnovlenie-servera.md)
 * [Регистрация сервера](service/server-registration.md)
-* [Резервное копирование и восстановление данных](service/backup.md)
+* [Резервное копирование и восстановление данных](service/rezervnoe-kopirovanie-i-vosstanovlenie-dannykh.md)
 * [Режим удаленного помощника](service/remote-assistant.md)
 * [Разрешить интернет всем](service/razreshit-internet-vsem.md)
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
@@ -167,7 +167,8 @@
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
 * [Диагностика проблем](problem-diagnosis/README.md)
-  * [Ошибка при открытии сайта *ERR_CONNECTION_TIMED_OUT* или Не открывается сайт](problem-diagnosis/site-does-not-open.md)
+  * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](problem-diagnosis/site-does-not-open.md)
+
 ## changelog
 
 * [Версия Ideco UTM 12.X](changelog/versiya-ideco-utm-12.x.md)
