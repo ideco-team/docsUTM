@@ -112,7 +112,7 @@
   * [Администраторы](settings/access-rules/admins.md)
   * [Кластеризация](settings/cluster.md)
   * [Автоматическое обновление сервера](service/server-update.md)
-  * [Резервное копирование](service/backup.md)
+  * [Резервное копирование](<service/backup (1).md>)
   * [Терминал](settings/terminal.md)
   * [Лицензия](service/license-management.md)
   * [Дополнительно](settings/services/additionally.md)
@@ -137,10 +137,10 @@
 
 ## Обслуживание <a href="#service" id="service"></a>
 
-* [Управление лицензиями](service/upravlenie-licenziyami.md)
-* [Обновление сервера](service/obnovlenie-servera.md)
+* [Управление лицензиями](<service/license-management (1).md>)
+* [Обновление сервера](<service/server-update (1).md>)
 * [Регистрация сервера](service/server-registration.md)
-* [Резервное копирование и восстановление данных](service/rezervnoe-kopirovanie-i-vosstanovlenie-dannykh.md)
+* [Резервное копирование и восстановление данных](service/backup.md)
 * [Режим удаленного помощника](service/remote-assistant.md)
 * [Разрешить интернет всем](service/razreshit-internet-vsem.md)
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
