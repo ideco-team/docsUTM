@@ -27,7 +27,9 @@ dateCreated: '2021-04-02T07:25:50.439Z'
 
 Для раздельной авторизации пользователей терминального сервера на сервере терминалов нужно настроить **Remote Desktop IP Virtualization**, а на сервере Ideco UTM настроить авторизацию пользователей через [Ideco Agent](authorization/ideco-agent.md) или [веб-авторизацию (SSO или NTLM)](active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
 
-### Настройка Remote Desktop IP Virtualization на Windows Server 2012
+<details>
+
+<summary>Настройка Remote Desktop IP Virtualization на Windows Server 2012</summary>
 
 Для работы функции [Remote Desktop IP Virtualization](https://social.technet.microsoft.com/wiki/ru-ru/contents/articles/22770.windows-server-2012-r2-ip.aspx) на одном из Windows-серверов должна быть добавлена роль DHCP-сервера (с другими DHCP-серверами данная функция может работать некорректно) и выделена область IP-адресов для пользователей терминального сервера.
 
@@ -49,3 +51,5 @@ dateCreated: '2021-04-02T07:25:50.439Z'
 Где значения должны быть: `VirtualIPActive = 1` (вкл. виртуализация) и `VirtualIPMode=0` (для сессии).
 
 Воспользуйтесь [альтернативным](https://social.technet.microsoft.com/wiki/ru-ru/contents/articles/22770.windows-server-2012-r2-ip.aspx) вариантом установки, если описанный выше вариант не подходит.
+
+</details>
