@@ -152,7 +152,6 @@
     * [Инструкция по созданию VPN-подключения на мобильных устройствах](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-mobile-devices.md)
     * [Инструкция по созданию подключения в Mac OS](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-high-sierra-macos.md)
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](settings/users/authorization/vpn-connection/sstp-connecting-keenetic-wi-fi-routers.md)
-    * [Инструкция по запуску PowerShell скриптов](settings/users/authorization/vpn-connection/running-powershell-scripts.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Что делать если не работает Интернет](recipes/popular-recipes/what-to-do-if-the-internet-does-not-work.md)
