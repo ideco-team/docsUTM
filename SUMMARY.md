@@ -108,10 +108,10 @@
 * [Управление сервером](settings/server-management.md)
   * [Администраторы](settings/access-rules/admins.md)
   * [Кластеризация](settings/cluster.md)
-  * [Автоматическое обновление сервера](service/server-update.md)
-  * [Резервное копирование](<service/backup (1).md>)
+  * [Автоматическое обновление сервера](settings/server-management/avtomaticheskoe-obnovlenie-servera.md)
+  * [Резервное копирование](settings/server-management/rezervnoe-kopirovanie.md)
   * [Терминал](settings/terminal.md)
-  * [Лицензия](service/license-management.md)
+  * [Лицензия](settings/server-management/licenziya.md)
   * [Дополнительно](settings/services/additionally.md)
 * [Почтовый релей](settings/mail/README.md)
   * [Основные настройки](settings/mail/mail-server-settings.md)
@@ -134,8 +134,8 @@
 
 ## Обслуживание <a href="#service" id="service"></a>
 
-* [Управление лицензиями](<service/license-management (1).md>)
-* [Обновление сервера](<service/server-update (1).md>)
+* [Управление лицензиями](service/license-management.md)
+* [Обновление сервера](service/server-update.md)
 * [Регистрация сервера](service/server-registration.md)
 * [Резервное копирование и восстановление данных](service/backup.md)
 * [Режим удаленного помощника](service/remote-assistant.md)
