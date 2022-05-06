@@ -134,8 +134,8 @@
 
 ## Обслуживание <a href="#service" id="service"></a>
 
-* [Управление лицензиями](<service/license-management (1).md>)
-* [Обновление сервера](<service/server-update (1).md>)
+* [Управление лицензиями](service/license-management.md)
+* [Обновление сервера](service/server-update.md)
 * [Регистрация сервера](service/server-registration.md)
 * [Резервное копирование и восстановление данных](service/backup.md)
 * [Режим удаленного помощника](service/remote-assistant.md)
