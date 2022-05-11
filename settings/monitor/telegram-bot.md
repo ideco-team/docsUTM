@@ -20,7 +20,7 @@ description: >-
 ## Привязка Ideco Monitоring Bot
 
 1. Настроить Интернет на Ideco UTM.
-2. [Привязать лицензию](broken-reference) к серверу.
+2. [Привязать лицензию](../../service/license-management.md) к серверу.
 3. Перейти к диалогу с ботом: [@ideco\_monitor\_bot](https://t.me/ideco\_monitor\_bot?command=start).
 4. Написать боту `/start`.
 5. Скопировать код привязки к аккаунту.

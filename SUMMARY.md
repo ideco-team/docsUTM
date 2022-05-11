@@ -154,7 +154,6 @@
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](settings/users/authorization/vpn-connection/sstp-connecting-keenetic-wi-fi-routers.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
-  * [Что делать если не работает Интернет](recipes/popular-recipes/what-to-do-if-the-internet-does-not-work.md)
   * [Как восстановить доступ к Ideco UTM](recipes/popular-recipes/restore-access-to-ideco-utm.md)
   * [Как восстановиться на прошлую версию после обновления Ideco UTM](settings/publishing-resources/go-back.md)
   * [Проверка настроек фильтрации с помощью security ideco](recipes/popular-recipes/security-ideco.md)
@@ -166,6 +165,7 @@
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
 * [Диагностика проблем](problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](problem-diagnosis/site-does-not-open.md)
+  * [Что делать если не работает Интернет](recipes/popular-recipes/what-to-do-if-the-internet-does-not-work.md)
 
 ## changelog
 
