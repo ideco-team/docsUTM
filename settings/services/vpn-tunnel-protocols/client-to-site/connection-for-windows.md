@@ -94,35 +94,35 @@
 
 2\. Выберите **Настройка нового подключения или сети**:
 
-<img src="../../../../.gitbook/assets/windows7-2 (1).png" alt="" data-size="original">
+![](../../../../.gitbook/assets/windows7-2.png)
 
 3\. Выберите **Подключение к рабочему месту**:
 
-<img src="../../../../.gitbook/assets/windows7-3 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-3.png" alt="" data-size="original">
 
 4\. Выберите **Использовать мое подключение к Интернету (VPN)**:
 
-<img src="../../../../.gitbook/assets/windows7-4 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-4.png" alt="" data-size="original">
 
 5\. Введите доменное имя сервера в качестве адреса подключений. Имя местоназначения может быть произвольным:
 
-<img src="../../../../.gitbook/assets/windows7-5 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-5.png" alt="" data-size="original">
 
 6\. Введите ваш _логин_ и _пароль_:
 
-<img src="../../../../.gitbook/assets/windows7-6 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-6.png" alt="" data-size="original">
 
 7\. Нажмите **Закрыть**:
 
-<img src="../../../../.gitbook/assets/windows7-7 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-7.png" alt="" data-size="original">
 
 8\. Выберите **Подключение к IKEv2 VPN серверу** в Windows 7:
 
-<img src="../../../../.gitbook/assets/windows7-8 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-8.png" alt="" data-size="original">
 
 9\. Выберите **Свойства**:
 
-<img src="../../../../.gitbook/assets/windows7-9 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7-9.png" alt="" data-size="original">
 
 10\. Выберите протокол **IKEv2** и обязательное шифрование:
 
@@ -185,7 +185,7 @@
 
 6\. Подключение создано. Нажмите **Подключиться** в списке ваших сетей.
 
-<img src="../../../../.gitbook/assets/powershell4 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/powershell4.png" alt="" data-size="original">
 
 ### Что делать, если запустить скрипт не получается?
 
