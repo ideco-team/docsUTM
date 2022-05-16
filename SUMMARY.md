@@ -69,6 +69,7 @@
       * [Личный кабинет пользователя](settings/services/vpn-tunnel-protocols/client-to-site/user-lk.md)
       * [Особенности маршрутизации и организации доступа](settings/services/vpn-tunnel-protocols/client-to-site/features.md)
       * [Подключение по SSTP Wi-Fi роутеров Keenetic](settings/services/vpn-tunnel-protocols/client-to-site/sstp-connecting-keenetic-wi-fi-routers.md)
+      * [Инструкция по запуску PowerShell скриптов](settings/services/vpn-tunnel-protocols/client-to-site/running-powershell-scripts.md)
     * [Подключение офисов (site-to-site)](settings/services/vpn-tunnel-protocols/site-to-site/README.md)
       * [IPSec](settings/services/vpn-tunnel-protocols/site-to-site/ipsec/README.md)
         * [Филиалы и главный офис](settings/services/vpn-tunnel-protocols/site-to-site/ipsec/branch-office-and-main-office.md)
