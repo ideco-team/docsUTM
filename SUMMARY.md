@@ -38,6 +38,7 @@
       * [L2TP IPSec](settings/users/authorization/vpn-connection/l2tp-ipsec.md)
       * [Личный кабинет пользователя](settings/users/authorization/vpn-connection/user-lk.md)
       * [Особенности маршрутизации и организации доступа](settings/users/authorization/vpn-connection/features.md)
+      * [Инструкция по запуску PowerShell скриптов](settings/users/authorization/vpn-connection/running-powershell-scripts.md)
     * [Авторизация по подсетям](settings/users/authorization/avtorizaciya-po-podsetyam.md)
   * [Интеграция с Active Directory](settings/users/active-directory/README.md)
     * [Авторизация пользователей Active Directory](settings/users/active-directory/active-directory-user-authorization.md)
