@@ -113,7 +113,7 @@
   * [Автоматическое обновление сервера](settings/server-management/server-update.md)
   * [Резервное копирование](settings/server-management/backup.md)
   * [Терминал](settings/terminal.md)
-  * [Лицензия](service/license-management.md)
+  * [Лицензия](settings/server-management/license-management.md)
   * [Дополнительно](settings/services/additionally.md)
 * [Почтовый релей](settings/mail/README.md)
   * [Основные настройки](settings/mail/mail-server-settings.md)
