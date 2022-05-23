@@ -90,47 +90,47 @@
 
 1\. Откройте **Центр управления сетями и общим доступом**:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-1 (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-1.png" alt="" data-size="original">
 
 2\. Выберите **Настройка нового подключения или сети**:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-2 (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (2) (2) (1) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-2.png" alt="" data-size="original">
 
 3\. Выберите **Подключение к рабочему месту**:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-3 (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-3.png" alt="" data-size="original">
 
 4\. Выберите **Использовать мое подключение к Интернету (VPN)**:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-4 (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (3) (2) (1) (2).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-4.png" alt="" data-size="original">
 
 5\. Введите доменное имя сервера в качестве адреса подключений. Имя местоназначения может быть произвольным:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-5 (1) (2) (2) (2) (2) (2) (1) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-5.png" alt="" data-size="original">
 
 6\. Введите ваш _логин_ и _пароль_:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-6 (1) (2) (2) (2) (2) (2) (2) (2) (3) (3) (3) (3) (1) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-6.png" alt="" data-size="original">
 
 7\. Нажмите **Закрыть**:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-7 (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-7.png" alt="" data-size="original">
 
 8\. Выберите **Подключение к IKEv2 VPN серверу** в Windows 7:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-8 (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-8.png" alt="" data-size="original">
 
 9\. Выберите **Свойства**:
 
-<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-9 (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (1) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-9.png" alt="" data-size="original">
 
 10\. Выберите протокол **IKEv2** и обязательное шифрование:
 
-<img src="../../../.gitbook/assets/17072215.png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-10.png" alt="" data-size="original">
 
 11\. Подключитесь к IKEv2 VPN серверу в Windows 7:
 
-<img src="../../../.gitbook/assets/17072216.png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/windows7-ikev2vpn-ru-11.png" alt="" data-size="original">
 
 </details>
 

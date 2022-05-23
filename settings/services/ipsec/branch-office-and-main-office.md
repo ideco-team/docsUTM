@@ -41,7 +41,7 @@ description: >-
 
 4\. Нажмите на иконку редактирования у добавленного Главного офиса.
 
-![](<../../../.gitbook/assets/ipsec-step2 (1).png>)
+![](../../../.gitbook/assets/ipsec-step2.png)
 
 5\. Скопируйте содержимое поля **Настройки Филиала**. Содержимое нужно будет вставить при настройке Главного офиса, к которому производится подключение (см. [шаг 2](branch-office-and-main-office.md#shag-2-sozdanie-podklyucheniya-v-glavnom-ofise)).
 
