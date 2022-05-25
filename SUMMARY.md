@@ -104,7 +104,7 @@
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка своего SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
 * [Отчеты](settings/reports/README.md)
-  * [Сайты](settings/reports/traffic.md)
+  * [Трафик](settings/reports/traffic.md)
   * [События безопасности](settings/reports/security-events.md)
   * [Журнал событий](settings/reports/reports\_eventlog.md)
   * [Журнал авторизации](settings/reports/authorization-log.md)
