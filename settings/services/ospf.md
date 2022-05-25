@@ -63,10 +63,6 @@
 
 ![](../../.gitbook/assets/ospf-7.png)
 
-Пример готовой таблицы:
-
-![](<../../.gitbook/assets/image (1).png>)
-
 </details>
 
 <details>

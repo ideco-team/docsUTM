@@ -76,5 +76,5 @@ dateCreated: '2021-04-02T07:20:07.443Z'
 
 ## Схема фильтрации веб-трафика при использовании SkyDNS
 
-![](../.gitbook/assets/4982194.jpg)
+![](../.gitbook/assets/ip-kf.jpg)
 

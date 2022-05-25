@@ -90,7 +90,7 @@
 
 1\. Откройте **Центр управления сетями и общим доступом**:
 
-<img src="../../../../.gitbook/assets/windows7 (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows7.png" alt="" data-size="original">
 
 2\. Выберите **Настройка нового подключения или сети**:
 
