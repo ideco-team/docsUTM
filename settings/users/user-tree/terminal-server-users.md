@@ -19,7 +19,7 @@ description: >-
 
 Возможна **раздельная авторизация пользователей** терминального сервера (работающего под управлением ОС Windows Server 2008 R2 и Windows Server 2012) с помощью авторизации через [Ideco Agent](../authorization/ideco-agent.md) или по [SSO (NTLM)](../active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). При этом сам сервер по IP авторизовать не нужно.
 
-Для раздельной авторизации пользователей терминального сервера на сервере терминалов нужно настроить **Remote Desktop IP Virtualization**, а на сервере Ideco UTM настроить авторизацию пользователей через [Ideco Agent](../authorization/ideco-agent.md) или [веб-авторизацию (SSO или NTLM)](../active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
+Для раздельной авторизации пользователей терминального сервера на сервере терминалов нужно настроить [**Remote Desktop IP Virtualization**](https://social.technet.microsoft.com/wiki/ru-ru/contents/articles/22770.windows-server-2012-r2-ip.aspx), а на сервере Ideco UTM настроить авторизацию пользователей через [Ideco Agent](authorization/ideco-agent.md) или [веб-авторизацию (SSO или NTLM)](active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
 
 <details>
 
