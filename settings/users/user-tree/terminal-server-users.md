@@ -19,13 +19,13 @@ description: >-
 
 Возможна **раздельная авторизация пользователей** терминального сервера (работающего под управлением ОС Windows Server 2008 R2 и Windows Server 2012) с помощью авторизации через [Ideco Agent](../authorization/ideco-agent.md) или по [SSO (NTLM)](../active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). При этом сам сервер по IP авторизовать не нужно.
 
-Для раздельной авторизации пользователей терминального сервера на сервере терминалов нужно настроить [**Remote Desktop IP Virtualization**](https://social.technet.microsoft.com/wiki/ru-ru/contents/articles/22770.windows-server-2012-r2-ip.aspx), а на сервере Ideco UTM настроить авторизацию пользователей через [Ideco Agent](authorization/ideco-agent.md) или [веб-авторизацию (SSO или NTLM)](active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
+Для раздельной авторизации пользователей терминального сервера на сервере терминалов нужно настроить [**Remote Desktop IP Virtualization**](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-ip-virtualization), а на сервере Ideco UTM настроить авторизацию пользователей через [Ideco Agent](authorization/ideco-agent.md) или [веб-авторизацию (SSO или NTLM)](active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
 
 <details>
 
 <summary>Настройка Remote Desktop IP Virtualization на Windows Server 2012</summary>
 
-Для работы функции [Remote Desktop IP Virtualization](https://social.technet.microsoft.com/wiki/ru-ru/contents/articles/22770.windows-server-2012-r2-ip.aspx) на одном из Windows-серверов должна быть добавлена роль DHCP-сервера (с другими DHCP-серверами данная функция может работать некорректно) и выделена область IP-адресов для пользователей терминального сервера.
+Для работы функции [Remote Desktop IP Virtualization](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-ip-virtualization) на одном из Windows-серверов должна быть добавлена роль DHCP-сервера (с другими DHCP-серверами данная функция может работать некорректно) и выделена область IP-адресов для пользователей терминального сервера.
 
 В **Редакторе управления групповыми политиками** необходимо перейти по пути: **Computer Configation –> Policies –> Administrative Templates –> Windows Components -> Remote Desktop Service –> Remote Desktop Session Host –> Application Compatibility**
 
