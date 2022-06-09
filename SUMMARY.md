@@ -106,7 +106,6 @@
 * [Отчеты](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
   * [События безопасности](settings/reports/security-events.md)
-  * [Журнал событий](settings/reports/reports\_eventlog.md)
   * [Журнал авторизации](settings/reports/authorization-log.md)
   * [Конструктор отчетов](settings/reports/report-designer.md)
 * [Управление сервером](settings/server-management/README.md)

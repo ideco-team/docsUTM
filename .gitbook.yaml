@@ -61,7 +61,6 @@ redirects:
   authorized: ./settings/monitor/authorized-users.md
   ospf: ./settings/services/ospf.md
   user_tree: ./settings/users/user-tree.md
-  reports_eventlog: ./settings/reports_eventlog.md
   reports_designer: ./settings/report-designer.md
   authorization_log: ./settings/reports/authorization-log.md
   license_management: ./service/license-management.md
