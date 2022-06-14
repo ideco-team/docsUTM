@@ -51,6 +51,7 @@
 * [Мониторинг](settings/monitor/README.md)
   * [Авторизованные пользователи и VPN пользователи](settings/monitor/authorized-users.md)
   * [Журналы](settings/monitor/logs.md)
+  * [График загруженности](settings/monitor/workload-schedule.md)
   * [Монитор трафика](settings/monitor/traffic.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
@@ -169,6 +170,7 @@
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает Интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
+  * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
 
 ## changelog
 
