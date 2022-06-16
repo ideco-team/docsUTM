@@ -169,7 +169,7 @@
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает Интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
-  * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
+  * [Ошибка при авторизации "The browser is outdated"](problem-diagnosis/old-browser.md)
 
 ## changelog
 
