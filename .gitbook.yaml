@@ -72,3 +72,4 @@ redirects:
   authorization-by-subnet: ./settings/users/authorization/authorization-by-subnet.md
   traffic: ./settings/reports/traffic.md
   security-events: ./settings/reports/security-events.md
+  ideco_agent: ./settings/users/ideco-agent.md
