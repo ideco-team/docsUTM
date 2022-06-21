@@ -5,15 +5,15 @@ structure:
 redirects:
   ad: ./settings/users/active-directory/README.md
   ad_authorization: ./settings/users/active-directory/README.md
-  additionally: ./settings/services/additionally.md
-  admins: ./settings/access-rules/admins.md
+  additionally: ./settings/server-management/additionally.md
+  admins: ./settings/server-management/admins.md
   antivirus: ./settings/access-rules/antivirus.md
   application_control: ./settings/access-rules/application-control.md
   backup: ./service/backup.md
   balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
   custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
-  cluster: ./settings/cluster.md
+  cluster: ./settings/server-management/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
   device_detection: ./settings/users/device-discovery.md
   dhcp: ./settings/services/dhcp.md
@@ -24,7 +24,7 @@ redirects:
   ipsec: ./settings/services/ipsec/README.md
   reg: ./service/server-registration.md
   network_interface: ./settings/services/connection-to-provider/README.md
-  dns: ./settings/services/dns.md
+  dns: ./settings/services/dns/README.md
   nextdns: ./settings/services/nextdns.md
   dns_external: ./settings/services/dns.md
   object: ./settings/access-rules/aliases.md
@@ -42,8 +42,8 @@ redirects:
   shaper: ./settings/access-rules/shaper.md
   support: ./service/remote-assistant.md
   syslog: ./settings/monitor/syslog.md
-  telegram_bot: ./settings/monitor/telegram-bot.md
-  terminal: ./settings/terminal.md
+  telegram_bot: ./settings/monitor/telegram-bot.md 
+  terminal: ./settings/server-management/terminal.md
   usb: ./installation/usb.md
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
@@ -60,7 +60,7 @@ redirects:
   logs: ./settings/monitor/logs.md
   authorized: ./settings/monitor/authorized-users.md
   ospf: ./settings/services/ospf.md
-  user_tree: ./settings/users/user-tree.md
+  user_tree: ./settings/users/user-tree/README.md
   reports_designer: ./settings/report-designer.md
   authorization_log: ./settings/reports/authorization-log.md
   license_management: ./service/license-management.md
@@ -73,3 +73,4 @@ redirects:
   traffic: ./settings/reports/traffic.md
   security-events: ./settings/reports/security-events.md
   ideco_agent: ./settings/users/ideco-agent.md
+  two-factor-authentication: ./settings/users/two-factor-authentication.md
