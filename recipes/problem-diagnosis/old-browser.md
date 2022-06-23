@@ -11,4 +11,4 @@
 
 Для продолжения авторизации не смотря на риски, потребуется нажать **I understand the risks and wish to continue**.
 
-![](../.gitbook/assets/old-browser.png)
+![](../../.gitbook/assets/old-browser.png)
