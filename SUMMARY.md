@@ -57,7 +57,7 @@
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
   * [Syslog](settings/monitor/syslog.md)
-  * [Интеграция с Zabbix](settings/monitor/zabbix.md)
+  * [Zabbix агент](settings/monitor/zabbix.md)
 * [Правила трафика](settings/access-rules/README.md)
   * [Файрвол](settings/access-rules/firewall.md)
   * [Контроль приложений](settings/access-rules/application-control.md)

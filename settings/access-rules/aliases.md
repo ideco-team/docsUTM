@@ -35,12 +35,6 @@ description: >-
     <img src="../../.gitbook/assets/create_object.png" alt="create_object.png" data-size="original">
 3. Нажмите кнопку **Сохранить**.
 
-При создании объекта типа **Список IP-адресов**, Ideco UTM предложит загрузить файл с готовым списком IP-адресов:
-
-<img src="../../.gitbook/assets/" alt="" data-size="original">
-
-* **Форматы файлов** - txt, csv, doc, docx;
-* **Содержание** - 
 
 {% hint style="info" %}
 Для создания групп объектов, предварительно необходимо создать сами объекты.
