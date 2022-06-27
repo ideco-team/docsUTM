@@ -46,7 +46,6 @@
     * [Скрипты автоматической авторизации и разавторизации.](settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
   * [Двухфакторная аутентификация](settings/users/two-factor-authentication.md)
-  * [Ideco Agent](settings/users/ideco-agent.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
