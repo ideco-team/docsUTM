@@ -29,7 +29,6 @@
       * [Авторизация по IP-адресу](settings/users/authorization/ip-and-mac-authorization/ip.md)
       * [Авторизация по MAC-адресу](settings/users/authorization/ip-and-mac-authorization/mac.md)
     * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
-      * [Ideco VPN-клиент](settings/users/authorization/vpn-connection/ideco-vpn-client.md)
       * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
       * [Подключение по PPPoE](settings/users/authorization/vpn-connection/pppoe.md)
       * [IPSec IKEv2](settings/users/authorization/vpn-connection/ipsec-ikev2.md)
