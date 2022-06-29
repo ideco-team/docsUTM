@@ -175,6 +175,7 @@
 
 ## changelog
 
+* [Версия Ideco UTM 13.X](changelog/versiya-ideco-utm-13.x.md)
 * [Версия Ideco UTM 12.X](changelog/versiya-ideco-utm-12.x.md)
 * [Версия Ideco UTM 11.X](changelog/versiya-ideco-utm-11.x.md)
 * [Версия Ideco UTM 10.X](changelog/version-10.x.md)
@@ -188,7 +189,3 @@
   * [Версия Ideco UTM 7.5.Х](changelog/version-7.x.x/version-7.5.x.md)
   * [Версия Ideco UTM 7.4.X](changelog/version-7.x.x/version-7.4.x.md)
 
-***
-
-* [Import](import/README.md)
-  * [BGP](import/bgp.md)
