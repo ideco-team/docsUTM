@@ -9,6 +9,6 @@
 
 Рекомендуем обновить браузер до минимально поддерживаемой версии.
 
-Для продолжения авторизации не смотря на риски, потребуется нажать **I understand the risks and wish to continue**.
+Для продолжения авторизации несмотря на риски, потребуется нажать **I understand the risks and wish to continue**.
 
 ![](../../.gitbook/assets/old-browser.png)
