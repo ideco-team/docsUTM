@@ -36,15 +36,15 @@ description: >-
 
 2\. Щелкните правой кнопкой мыши по скаченному файлу и в контекстном меню выберите **Свойства**.
 
-<img src="../../../../.gitbook/assets/powershell1.png" alt="" data-size="original">
+![](../../../../.gitbook/assets/powershell1.png)
 
 3\. Поставьте галочку **Разблокировать** справа в нижнем углу свойств файла (по умолчанию ОС блокирует выполнение скаченных из интернета файлов):
 
-<img src="../../../../.gitbook/assets/powershell2.png" alt="" data-size="original">
+![](../../../../.gitbook/assets/powershell2.png)
 
 4\. Нажмите правой кнопкой мыши на файл и выберите **Выполнить в PowerShell** в контекстном меню:
 
-<img src="../../../../.gitbook/assets/powershell3.png" alt="" data-size="original">
+![](../../../../.gitbook/assets/powershell3.png)
 
 При появлении ошибки «Выполнение сценариев отключено в этой системе», нужно включить выполнение сценариев, выполнив команду в PowerShell (вызовите его через меню «Пуск»): `Set-ExecutionPolicy Unrestricted`;
 
@@ -52,7 +52,7 @@ description: >-
 
 6\. Подключение создано. Нажмите **Подключиться** в списке ваших сетей.
 
-<img src="../../../../.gitbook/assets/powershell4.png" alt="" data-size="original">
+![](../../../../.gitbook/assets/powershell4.png)
 
 ### Что делать, если запустить скрипт не получается?
 

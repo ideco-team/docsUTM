@@ -24,7 +24,7 @@ description: >-
 
 Импортированные из Active Directory группы безопасности и учетные записи можно использовать в качестве объектов правил фильтрации в следующий разделах:
 
-* [Фаервол](../../access-rules/firewall.md)
+* [Файрвол](../../access-rules/firewall.md)
 * [Контроль приложений](../../access-rules/application-control.md)
 * [Ограничение скорости](../../access-rules/shaper.md)
 * [Контент-фильтр](../../access-rules/content-filter/)

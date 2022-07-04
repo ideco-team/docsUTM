@@ -37,8 +37,6 @@ HTTPS-сайты без расшифровки трафика фильтруют
 
 </details>
 
-***
-
 <details>
 
 <summary>Категории контент-фильтра</summary>
@@ -81,8 +79,6 @@ HTTPS-сайты без расшифровки трафика фильтруют
 <img src="../../../.gitbook/assets/kf_form.png" alt="" data-size="original">
 
 </details>
-
-***
 
 <details>
 
