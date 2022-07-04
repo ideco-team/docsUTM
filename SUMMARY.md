@@ -2,16 +2,12 @@
 
 * [Об Ideco UTM](README.md)
 
-## Общая информация <a id="general"></a>
-
----
+## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](license.md)
 * [Техническая поддержка](technical-support.md)
 
-## Установка <a id="installation"></a>
-
----
+## Установка <a href="#installation" id="installation"></a>
 
 * [Создание загрузочного USB flash диска](usb.md)
 * [Особенности настроек гипервизоров](specifics-of-hypervisor-settings.md)
@@ -20,16 +16,14 @@
 * [Процесс установки](installation-process.md)
 * [Первоначальная настройка](initial-setup.md)
 
-## Настройка <a id="settings"></a>
-
----
+## Настройка <a href="#settings" id="settings"></a>
 
 * [Подключение к провайдеру](connection-to-provider/README.md)
   * [Подключение по Ethernet](connection-to-provider/ethernet-connection.md)
   * [Подключение по PPPoE](connection-to-provider/pppoe-connection.md)
-  * [Подключение по PPTP \(VPN\)](connection-to-provider/pptp-vpn-connection.md)
-  * [Подключение по L2TP \(VPN\)](connection-to-provider/l2tp-vpn-connection.md)
-  * [Подключение по 3G, 4G \(LTE\)](connection-to-provider/3g-4g-connection.md)
+  * [Подключение по PPTP (VPN)](connection-to-provider/pptp-vpn-connection.md)
+  * [Подключение по L2TP (VPN)](connection-to-provider/l2tp-vpn-connection.md)
+  * [Подключение по 3G, 4G (LTE)](connection-to-provider/3g-4g-connection.md)
   * [Одновременное подключение к нескольким провайдерам](connection-to-provider/multiple-simultaneous--connections.md)
 * [Управление пользователями](user-management/README.md)
   * [Дерево пользователей](user-management/user-tree.md)
@@ -50,9 +44,9 @@
   * [Single Sign-On аутентификация через Active Directory](authorization-types/single-sign-on-authorization.md)
   * [Авторизация через Ideco Agent](authorization-types/ideco-agent-authorization.md)
 * [Публикация ресурсов](publishing-resources/README.md)
-  * [Публикация веб-приложений \(обратный прокси-сервер\)](publishing-resources/publishing-web-applications.md)
+  * [Публикация веб-приложений (обратный прокси-сервер)](publishing-resources/publishing-web-applications.md)
   * [Настройка почтового релея для публикации сервера в локальной сети](publishing-resources/config-mail-relay-to-publish-on-a-local-network.md)
-  * [Портмаппинг \(проброс портов, DNAT\)](publishing-resources/portmapping.md)
+  * [Портмаппинг (проброс портов, DNAT)](publishing-resources/portmapping.md)
   * [Настройка публичного IP-адреса на компьютере в локальной сети](publishing-resources/config-public-ip-on-computer-on-the-local-net.md)
   * [Доступ из внешней сети без NAT](publishing-resources/access-from-external-network-without-nat.md)
   * [Доступ до внешних ресурсов без авторизации](publishing-resources/access-to-external-resources-without-authorization.md)
@@ -88,7 +82,7 @@
     * [Настройка почтового сервера](services/mail/mail-server-settings.md)
     * [Настройка почтовых клиентов](services/mail/configuring-email-clients.md)
     * [Web-почта](services/mail/web-mail.md)
-    * [Переадресация почты \(почтовые алиасы\)](services/mail/mail-forwarding.md)
+    * [Переадресация почты (почтовые алиасы)](services/mail/mail-forwarding.md)
     * [Дополнительные возможности и антиспам](services/mail/antispam.md)
     * [Настройка почтового релея](services/mail/mail-relay-settings.md)
     * [Fetchmail](services/mail/fetchmail.md)
@@ -96,11 +90,11 @@
     * [Схема фильтрации почтового трафика](services/mail/filtering-scheme-for-mail-traffic.md)
   * [Обратный прокси](services/reverse-proxy/README.md)
     * [Протестированные CMS](services/reverse-proxy/tested-cms.md)
-    * [Web Application Firewall](services/reverse-proxy/web_application_firewall.md)
+    * [Web Application Firewall](services/reverse-proxy/web\_application\_firewall.md)
   * [DNS](services/dns.md)
   * [DHCP](services/dhcp.md)
   * [Туннельные протоколы VPN](services/vpn-tunnel-protocols/README.md)
-    * [Подключение офисов \(site-to-site\)](services/vpn-tunnel-protocols/site-to-site/README.md)
+    * [Подключение офисов (site-to-site)](services/vpn-tunnel-protocols/site-to-site/README.md)
       * [IPSec](services/vpn-tunnel-protocols/site-to-site/ipsec/README.md)
         * [Филиалы и главный офис](services/vpn-tunnel-protocols/site-to-site/ipsec/branch-office-and-main-office.md)
         * [Подключение пользователей](services/vpn-tunnel-protocols/site-to-site/ipsec/connecting-users.md)
@@ -111,14 +105,14 @@
       * [Подключение pfSense к Ideco UTM по IPsec](services/vpn-tunnel-protocols/site-to-site/ipsec-connection-pfsense-to-utm.md)
       * [Подключение pfSense к Ideco UTM с использованием OpenVPN](services/vpn-tunnel-protocols/site-to-site/openvpn-connection-pfsense-to-utm.md)
       * [Подключение Kerio Control к Ideco UTM по IPSec](services/vpn-tunnel-protocols/site-to-site/ipsec-connection-kerio-control-to-utm.md)
-    * [Подключение пользователей \(client-to-site\)](services/vpn-tunnel-protocols/client-to-site/README.md)
+    * [Подключение пользователей (client-to-site)](services/vpn-tunnel-protocols/client-to-site/README.md)
       * [IPSec IKEv2](services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2/README.md)
-        * [Скрипт автоматического создания пользовательских подключений по IPSec IKEv2](services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2/skript_avtomaticheskogo_sozdaniya_polzovatelskikh_podklyuchenii_po_ipsec_ikev2.md)
+        * [Скрипт автоматического создания пользовательских подключений по IPSec IKEv2](services/vpn-tunnel-protocols/client-to-site/ipsec-ikev2/skript\_avtomaticheskogo\_sozdaniya\_polzovatelskikh\_podklyuchenii\_po\_ipsec\_ikev2.md)
       * [SSTP](services/vpn-tunnel-protocols/client-to-site/sstp/README.md)
-        * [Скрипт автоматического создания пользовательских подключений по SSTP](services/vpn-tunnel-protocols/client-to-site/sstp/skript_avtomaticheskogo_sozdaniya_polzovatelskikh_podklyuchenii_po_sstp.md)
-        * [Подключение Wi-Fi роутеров Keenetic](services/vpn-tunnel-protocols/client-to-site/sstp/podklyuchenie_wi-fi_routerov_keenetic.md)
+        * [Скрипт автоматического создания пользовательских подключений по SSTP](services/vpn-tunnel-protocols/client-to-site/sstp/skript\_avtomaticheskogo\_sozdaniya\_polzovatelskikh\_podklyuchenii\_po\_sstp.md)
+        * [Подключение Wi-Fi роутеров Keenetic](services/vpn-tunnel-protocols/client-to-site/sstp/podklyuchenie\_wi-fi\_routerov\_keenetic.md)
       * [L2TP/IPSec](services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec/README.md)
-        * [Скрипт автоматического создания пользовательских подключений по L2TP/IPSec](services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec/skript_avtomaticheskogo_sozdaniya_polzovatelskikh_podklyuchenii_po_l2tp_ipsec.md)
+        * [Скрипт автоматического создания пользовательских подключений по L2TP/IPSec](services/vpn-tunnel-protocols/client-to-site/l2tp-ipsec/skript\_avtomaticheskogo\_sozdaniya\_polzovatelskikh\_podklyuchenii\_po\_l2tp\_ipsec.md)
       * [PPTP](services/vpn-tunnel-protocols/client-to-site/pptp.md)
       * [Особенности маршрутизации и организации доступа](services/vpn-tunnel-protocols/client-to-site/features.md)
       * [Веб-кабинет пользователя](services/vpn-tunnel-protocols/client-to-site/users-web-account.md)
@@ -128,9 +122,7 @@
 * [Отчеты](reports.md)
 * [Интеграция UTM и SkyDNS](skydns.md)
 
-## Обслуживание <a id="service"></a>
-
----
+## Обслуживание <a href="#service" id="service"></a>
 
 * [Обслуживание сервера](server-administration/README.md)
   * [Обновление сервера](server-administration/server-update.md)
@@ -139,9 +131,7 @@
   * [Резервное копирование и восстановление данных](server-administration/backup.md)
   * [Режим удаленного помощника](server-administration/remote-assistant.md)
 
-## Популярные рецепты <a id="recipes"></a>
-
----
+## Популярные рецепты <a href="#recipes" id="recipes"></a>
 
 * [Популярные рецепты](popular-recipes/README.md)
   * [Проверка настроек фильтрации с помощью security.ideco.ru](popular-recipes/security-ideco.md)
@@ -154,7 +144,7 @@
   * [Восстановление пароля администратора](popular-recipes/admin-pass-recovery/README.md)
     * [Для версий 6.0 - 7.6](popular-recipes/admin-pass-recovery/v6.0-7.6.md)
   * [Особенности подключения через ADSL-модем](popular-recipes/connection-via-adsl-modem.md)
-  * [Использование ics\_tune.sh](popular-recipes/using-ics_tune.sh.md)
+  * [Использование ics\_tune.sh](popular-recipes/using-ics\_tune.sh.md)
   * [Блокировка популярных ресурсов](popular-recipes/blocking-popular-resources.md)
   * [Что делать если не работает Интернет](popular-recipes/what-to-do-if-the-internet-does-not-work.md)
 
@@ -167,4 +157,3 @@
   * [Версия Ideco UTM 7.6.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.6.x.md)
   * [Версия Ideco UTM 7.5.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.5.x.md)
   * [Версия Ideco UTM 7.4.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.4.x.md)
-
