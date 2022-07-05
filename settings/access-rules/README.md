@@ -14,7 +14,7 @@ description: >-
 [application-control.md](application-control.md)
 {% endcontent-ref %}
 
-{% content-ref url=".md" %}
+{% content-ref url="content-filter/README.md" %}
 [content-filter/README.md](content-filter/README.md)
 {% endcontent-ref %}
 
@@ -30,10 +30,10 @@ description: >-
 [ips.md](ips.md)
 {% endcontent-ref %}
 
-{% content-ref url=".md" %}
+{% content-ref url="aliases.md" %}
 [aliases.md](aliases.md)
 {% endcontent-ref %}
 
-{% content-ref url=".md" %}
+{% content-ref url="quotas.md" %}
 [quotas.md](quotas.md)
 {% endcontent-ref %}

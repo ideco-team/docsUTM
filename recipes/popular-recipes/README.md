@@ -1,7 +1,7 @@
 # Популярные инструкции
 
-{% content-ref url="vpn .md" %}
-[vpn .md](vpn/README.md)
+{% content-ref url="vpn/README.md" %}
+[vpn/README.md](vpn/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="access-to-remote-networks-through-a-router-in-the-local-network.md" %}
