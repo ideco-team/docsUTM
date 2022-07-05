@@ -6,3 +6,34 @@ description: >-
 
 # Правила трафика
 
+{% content-ref url="firewall.md" %}
+[firewall.md](firewall.md)
+{% endcontent-ref %}
+
+{% content-ref url="application-control.md" %}
+[application-control.md](application-control.md)
+{% endcontent-ref %}
+
+{% content-ref url=".md" %}
+[content-filter/README.md](content-filter/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="shaper.md" %}
+[shaper.md](shaper.md)
+{% endcontent-ref %}
+
+{% content-ref url="antivirus.md" %}
+[antivirus.md](antivirus.md)
+{% endcontent-ref %}
+
+{% content-ref url="ips.md" %}
+[ips.md](ips.md)
+{% endcontent-ref %}
+
+{% content-ref url=".md" %}
+[aliases.md](aliases.md)
+{% endcontent-ref %}
+
+{% content-ref url=".md" %}
+[quotas.md](quotas.md)
+{% endcontent-ref %}
