@@ -6,7 +6,7 @@ description: >-
 
 # Инструкция по запуску PowerShell скриптов
 
-Если вы используете Windows 7, необходимо создать подключение вручную(см. статью [Создание VPN-подключений на стороне пользователя вручную](../../../services/vpn-tunnel-protocols/client-to-site/connection-for-windows.md#sozdanie-vpn-podklyuchenii-na-storone-polzovatelya-vruchnuyu)).
+Если вы используете Windows 7, необходимо создать подключение вручную(см. статью [Создание VPN-подключений на стороне пользователя вручную](../../../../recipes/popular-recipes/vpn/README.md)).
 
 ## Какой протокол VPN выбрать?
 
@@ -58,4 +58,4 @@ description: >-
 
 Возможно вам не хватает прав на запуск скриптов или PowerShell не установлен в системе.
 
-Воспользуйтесь инструкцией для создания подключения в [Windows вручную](../../../services/vpn-tunnel-protocols/client-to-site/connection-for-windows.md).
+Воспользуйтесь инструкцией для создания подключения в [Windows 10](../../../../recipes/popular-recipes/vpn/connection-for-windows10.md) и [Windows 7](../../../../recipes/popular-recipes/vpn/connection-for-windows7.md) вручную.

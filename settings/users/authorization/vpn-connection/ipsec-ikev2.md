@@ -27,8 +27,7 @@
 * **KeeneticOS 3.5;**
 * Mikrotik;
 * Cisco routers.
----
 
-{% hint style="info" %}
-Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../services/vpn-tunnel-protocols/client-to-site/README.md).
+{% hint style="success" %}
+Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../../recipes/popular-recipes/vpn/README.md).
 {% endhint %}
