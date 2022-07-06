@@ -10,8 +10,8 @@ dateCreated: '2021-04-02T07:20:17.024Z'
 
 # Управление сервером
 
-{% content-ref url="admins.md" %}
-[admins.md](../access-rules/admins.md)
+{% content-ref url="../access-rules/admins.md" %}
+[../access-rules/admins.md](../access-rules/admins.md)
 {% endcontent-ref %}
 
 {% content-ref url="../cluster.md" %}

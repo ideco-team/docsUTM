@@ -12,6 +12,6 @@
 [connecting-users.md](connecting-users.md)
 {% endcontent-ref %}
 
-{% content-ref url="podklyuchenie-ofisov-site-to-site/README.md" %}
-[podklyuchenie-ofisov-site-to-site/README.md](podklyuchenie-ofisov-site-to-site/README.md)
+{% content-ref url="connect-offices/README.md" %}
+[connect-offices/README.md](connect-offices/README.md)
 {% endcontent-ref %}

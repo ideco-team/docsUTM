@@ -4,8 +4,8 @@
 [../connection-to-provider/README.md](../connection-to-provider/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="multiple-simultaneous-connections.md" %}
-[multiple-simultaneous-connections.md](../connection-to-provider/multiple-simultaneous-connections.md)
+{% content-ref url="../connection-to-provider/multiple-simultaneous-connections.md" %}
+[../connection-to-provider/multiple-simultaneous-connections.md](../connection-to-provider/multiple-simultaneous-connections.md)
 {% endcontent-ref %}
 
 {% content-ref url="routing.md" %}
