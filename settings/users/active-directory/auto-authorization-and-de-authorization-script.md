@@ -7,7 +7,7 @@ editor: markdown
 dateCreated: '2021-04-02T07:27:01.956Z'
 ---
 
-# Скрипты автоматической авторизации и разавторизации.
+# Скрипты автоматической авторизации и разавторизации
 
 Авторизация и разавторизация пользователей возможна в полностью автоматическом режиме.
 
@@ -54,7 +54,7 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 Далее необходимо добавить скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN):
 
-**UTMLogout\_script.vbs**
+**UTMLogout_script.ps1**
 
 ```
 add-type @"
