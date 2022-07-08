@@ -3,9 +3,9 @@
 Если вы используете браузер, который не поддерживает UTM, то при авторизации появится ошибка **Your browser is outdated. This version of browser is unsecure and unsupported by modern web-technologies. Please, install the latest version of one of the listed browsers**.
 
 Поддерживаемые браузеры:
-* Google Chrome версия >= 76;
-* Firefox версия >= 71;
-* Safari версия >= 13.
+* Google Chrome версия >= 90;
+* Firefox версия >= 78;
+* Safari версия >= 14.
 
 Рекомендуем обновить браузер до минимально поддерживаемой версии.
 
