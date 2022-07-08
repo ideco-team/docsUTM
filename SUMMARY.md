@@ -151,6 +151,7 @@
   * [Инструкция по созданию VPN-подключения в Mac OS](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-high-sierra-macos.md)
   * [Инструкция по созданию VPN-подключения в Windows](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-windows.md)
   * [Инструкция по созданию VPN-подключения на мобильных устройствах](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-mobile-devices.md)
+  * [Ошибка при авторизации "The browser is outdated"](recipes/popular-recipes/old-browser.md)
 
 ## Ссылки <a href="#links" id="links"></a>
 
