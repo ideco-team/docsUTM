@@ -32,5 +32,5 @@
 ***
 
 {% hint style="info" %}
-Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../../recipes/popular-recipes/client-to-site/).
+Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../../recipes/popular-recipes/vpn/README.md).
 {% endhint %}
