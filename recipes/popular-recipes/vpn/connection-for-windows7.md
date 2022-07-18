@@ -1,9 +1,7 @@
 # Инструкция по созданию подключения в Windows 7
 
 {% hint style="info" %}
-Перед настройкой VPN-подключения, в дереве пользователей в карточке нужных пользователей и установите флаг **Разрешить удаленный доступ через VPN**. Для этого перейдите в раздел **Пользователи -> Учетные записи**:
-
-<img src="../../../../.gitbook/assets/ubuntu15.png" alt="" data-size="original">
+Перед настройкой VPN-подключения, в дереве пользователей в карточке нужных пользователей и установите флаг **Разрешить удаленный доступ через VPN**. Для этого перейдите в раздел **Пользователи -> Учетные записи**.
 {% endhint %}
 
 ## Создание VPN-подключения в Windows 7
@@ -37,47 +35,47 @@
 
 1\. Откройте **Центр управления сетями и общим доступом**:
 
-<img src="../../../../.gitbook/assets/windows7.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7.png)
 
 2\. Выберите **Настройка нового подключения или сети**:
 
-![](../../../../.gitbook/assets/windows7-2.png)
+![](../../../.gitbook/assets/windows7-2.png)
 
 3\. Выберите **Подключение к рабочему месту**:
 
-<img src="../../../../.gitbook/assets/windows7-3.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-3.png)
 
 4\. Выберите **Использовать мое подключение к Интернету (VPN)**:
 
-<img src="../../../../.gitbook/assets/windows7-4.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-4.png)
 
 5\. Введите доменное имя сервера в качестве адреса подключений. Имя местоназначения может быть произвольным:
 
-<img src="../../../../.gitbook/assets/windows7-5.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-5.png)
 
 6\. Введите ваш _логин_ и _пароль_:
 
-<img src="../../../../.gitbook/assets/windows7-6.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-6.png)
 
 7\. Нажмите **Закрыть**:
 
-<img src="../../../../.gitbook/assets/windows7-7.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-7.png)
 
 8\. Выберите **Подключение к IKEv2 VPN серверу** в Windows 7:
 
-<img src="../../../../.gitbook/assets/windows7-8.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-8.png)
 
 9\. Выберите **Свойства**:
 
-<img src="../../../../.gitbook/assets/windows7-9.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-9.png)
 
 10\. Выберите протокол **IKEv2** и **обязательное шифрование**:
 
-<img src="../../../../.gitbook/assets/windows7-10.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-10.png)
 
 11\. Подключитесь к IKEv2 VPN серверу в Windows 7:
 
-<img src="../../../../.gitbook/assets/windows7-11.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows7-11.png)
 
 
 
@@ -98,7 +96,7 @@
 * Нажмите правой кнопкой мыши по параметру именем **NegotiateDH2048\_AES256** и нажмите **Изменить**.
 * В строке **Значение** укажите значение `1`:
 
-<img src="../../../../.gitbook/assets/windows-vpn.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows-vpn.png)
 
 * Нажмите **OK**.
 *   Перезагрузите Windows.
@@ -106,16 +104,16 @@
     Если параметра именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
-<img src="../../../../.gitbook/assets/windows-vpn2.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows-vpn2.png)
 
 * Задайте имя **NegotiateDH2048\_AES256**.
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
-<img src="../../../../.gitbook/assets/windows-vpn3.png" alt="" data-size="original">
+![](../../../.gitbook/assets/windows-vpn3.png)
 
 * В строке **Значение** укажите значение `1`:
 
-<img src="../../../../.gitbook/assets/windows-vpn4.png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/windows-vpn4.png" alt="" data-size="original">![](../../../.gitbook/assets/windows-vpn4.png)
 
 * Нажмите **OK**.
 

@@ -2,6 +2,8 @@
 
 {% hint style="success" %}
 Данный протокол VPN является предпочтительным и рекомендованным для всех сценариев использования.
+
+Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../../recipes/popular-recipes/vpn/README.md).
 {% endhint %}
 
 ## Настройка VPN-сервера в Ideco UTM
@@ -16,10 +18,9 @@
 
 4\. У пользователей, которым необходимо подключаться извне по VPN установите флажок **Разрешить удаленный доступ через VPN** в дереве пользователей. Указанный там логин и пароль будут использоваться для подключения.
 
----
 ## Поддержка IPSec IKEv2 в клиентских ОС
 
-* Microsoft **Windows 7** (2009 г.);
+* Microsoft **Windows 7** (2009 г.). Требует установки корневого сертификата Let's Encrypt;
 * Apple **MacOS X 10.11** "El Capitan" (2015 г.);
 * Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.);
 * Google **Android 11** (2020 г.). На более старых версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android);
@@ -28,6 +29,3 @@
 * Mikrotik;
 * Cisco routers.
 
-{% hint style="success" %}
-Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../../recipes/popular-recipes/vpn/README.md).
-{% endhint %}
