@@ -69,7 +69,7 @@ dateCreated: '2021-04-02T07:26:40.810Z'
 
 ![](../../../.gitbook/assets/6062250.jpg)
 
-Также данную настройку можно сделать с помощью групповых политик Active Directory сразу же для всех пользователей. Для этого необходимо выполнить следующие действия:
+Также данную настройку можно сделать с помощью групповых политик Active Directory сразу для всех пользователей. Для этого необходимо выполнить следующие действия:
 
 1. В групповых политиках для пользователей перейдите по пути: **Default Policy Group &gt; Computer Configuration &gt; Policies &gt; Administrative Templates &gt; Windows Components &gt; Internet Explorer &gt; Internet Control Panel &gt; Security Page &gt; Site to Zone Assignment List**
 
