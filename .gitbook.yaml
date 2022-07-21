@@ -49,6 +49,7 @@ redirects:
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
+  web_authorization: ./settings/users/authorization/web-authorization.md
   ideco_vpn_agent: ./settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md
   zabbix: ./settings/monitor/zabbix.md
   cisco2utm: ./settings/services/ipsec/site-to-site/connect-cisco-to-utm-via-ipsec.md
