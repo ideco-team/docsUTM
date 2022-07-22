@@ -74,3 +74,4 @@ redirects:
   security-events: ./settings/reports/security-events.md
   ideco_agent: ./settings/users/ideco-agent.md
   two_factor_authentication: ./settings/users/two-factor-authentication.md
+  web_authorization: ./settings/users/authorization/web-authorization.md
