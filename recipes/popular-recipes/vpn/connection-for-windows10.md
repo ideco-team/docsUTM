@@ -45,6 +45,8 @@
 
 <summary>Для L2TP/IPSec с общим ключом</summary>
 
+**Важно:** L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPSec.
+
 Имя подключения - название создаваемого подключения;
 * Имя или адрес сервера - адрес VPN-сервера;
 * Тип VPN - Протокол L2TP/IPSec с общим ключом;
