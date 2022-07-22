@@ -21,6 +21,10 @@
 Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](../../../../recipes/popular-recipes/client-to-site/).
 {% endhint %}
 
+{% hint style="warning" %}
+L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать [IKEv2 IPSec](ipsec-ikev2.md).
+{% endhint %}
+
 ### Если VPN-соединение установлено, но не получается получить доступ к ресурсам локальной сети
 
 Выполните рекомендации статьи [Особенности маршрутизации и организации доступа](features.md).
