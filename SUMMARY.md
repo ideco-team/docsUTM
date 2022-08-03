@@ -58,7 +58,7 @@
   * [Пользовательские квоты](settings/access-rules/quotas.md)
   * [Предотвращение вторжений](settings/access-rules/ips.md)
   * [Объекты](settings/access-rules/aliases.md)
-  * [Защита от bruteforce-атак](settings/access-rules/fail2ban.md)
+  * [Защита от brute-force атак](settings/access-rules/fail2ban.md)
 * [Сервисы](settings/services/README.md)
   * [Туннельные протоколы VPN](settings/services/vpn-tunnel-protocols/README.md)
     * [Подключение пользователей (client-to-site)](settings/services/vpn-tunnel-protocols/client-to-site/README.md)
@@ -133,9 +133,17 @@
 * [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
 * [Личный кабинет](service/lk.md)
 
-## Популярные рецепты <a href="#recipes" id="recipes"></a>
+## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
-* [Популярные рецепты](recipes/popular-recipes/README.md)
+* [Популярные инструкции](recipes/popular-recipes/README.md)
+  * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
+    * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
+    * [Автоматическое создание подключений](recipes/popular-recipes/vpn/auto-connect.md)
+    * [Создание подключения в Windows 10](recipes/popular-recipes/vpn/connection-for-windows10.md)
+    * [Создание подключения в Windows 7](recipes/popular-recipes/vpn/connection-for-windows7.md)
+    * [Создание VPN-подключения на мобильных устройствах](recipes/popular-recipes/vpn/connection-for-mobile-devices.md)
+    * [Создание подключения в Mac OS](recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md)
+    * [Подключение по SSTP Wi-Fi роутеров Keenetic](settings/services/vpn-tunnel-protocols/client-to-site/sstp-connecting-keenetic-wi-fi-routers.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks-through-a-router-in-the-local-network.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Что делать если не работает Интернет](recipes/popular-recipes/what-to-do-if-the-internet-does-not-work.md)
@@ -147,11 +155,6 @@
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
-  * [Инструкция по созданию VPN-подключения в Ubuntu](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-ubuntu.md)
-  * [Инструкция по созданию VPN-подключения в Mac OS](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-high-sierra-macos.md)
-  * [Инструкция по созданию VPN-подключения в Windows](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-windows.md)
-  * [Инструкция по созданию VPN-подключения на мобильных устройствах](settings/services/vpn-tunnel-protocols/client-to-site/connection-for-mobile-devices.md)
-  * [Ошибка при авторизации "The browser is outdated"](recipes/popular-recipes/old-browser.md)
 
 ## Ссылки <a href="#links" id="links"></a>
 

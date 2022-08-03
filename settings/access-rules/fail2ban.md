@@ -24,3 +24,6 @@ dateCreated: '2021-04-02T07:24:16.788Z'
 
 ![](../../.gitbook/assets/bruteforce.png)
 
+{% hint style="info" %}
+Защита от brute-force атак работает только для UTM.
+{% endhint %}
