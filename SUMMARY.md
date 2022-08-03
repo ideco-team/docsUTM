@@ -154,7 +154,7 @@
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
     * [Создание подключения в Astra Linux](recipes/popular-recipes/vpn/connection-for-astra-linux.md)
     * [Автоматическое создание подключений](recipes/popular-recipes/vpn/auto-connect.md)
-    * [Создание подключения в Windows 10 и автоматическое создание подключений](recipes/popular-recipes/vpn/connection-for-windows10.md)
+    * [Создание подключения в Windows 10](recipes/popular-recipes/vpn/connection-for-windows10.md)
     * [Создание подключения в Windows 7](recipes/popular-recipes/vpn/connection-for-windows7.md)
     * [Создание VPN-подключения на мобильных устройствах](recipes/popular-recipes/vpn/connection-for-mobile-devices.md)
     * [Создание подключения в Mac OS](recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md)
