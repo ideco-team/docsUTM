@@ -23,7 +23,3 @@
 {% content-ref url="connection-for-high-sierra-macos.md" %}
 [connection-for-high-sierra-macos.md](connection-for-high-sierra-macos.md)
 {% endcontent-ref %}
-
-{% content-ref url="sstp-connecting-keenetic-wi-fi-routers.md" %}
-[sstp-connecting-keenetic-wi-fi-routers.md](../../../settings/services/vpn-tunnel-protocols/client-to-site/sstp-connecting-keenetic-wi-fi-routers.md)
-{% endcontent-ref %}

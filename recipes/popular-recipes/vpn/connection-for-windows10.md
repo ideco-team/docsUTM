@@ -25,7 +25,7 @@
 
 <details>
 
-<summary>Для PPTP:</summary>
+<summary>Для PPTP</summary>
 
 ![](../../../.gitbook/assets/vpn-windows2.png)
 
@@ -41,7 +41,7 @@
 
 <details>
 
-<summary>Для L2TP/IPSec с общим ключом:</summary>
+<summary>Для L2TP/IPSec с общим ключом</summary>
 
 **Важно:** L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPSec.
 
@@ -72,7 +72,7 @@
 
 <details>
 
-<summary>Для SSTP:</summary>
+<summary>Для SSTP</summary>
 
 * Имя или адрес сервера - адрес VPN-сервера в формате *адрес_VPN_сервера:порт*.
 
@@ -82,7 +82,7 @@
 
 <details>
 
-<summary>Для IKEv2:</summary>
+<summary>Для IKEv2</summary>
 
 ![](../../../.gitbook/assets/vpn-windows5.png)
 
