@@ -6,6 +6,10 @@
 Инструкции по настройке VPN-подключений на разных ОС: [Windows](connection-for-windows.md), [Ubuntu](connection-for-ubuntu.md), [Mac OS](connection-for-high-sierra-macos.md) и на [мобильных устройствах](connection-for-mobile-devices.md).
 {% endhint %}
 
+{% hint style="warning" %}
+Не рекомендуем использовать для VPN-подключений кириллические логины.
+{% endhint %}
+
 ## Настройка VPN-сервера в Ideco UTM
 
 1\. Для включения авторизации по IKEv2 установите соответствующий флажок **Авторизация IKEv2/IPSec** в разделе веб-интерфейса **Пользователи -> Авторизация -> VPN-подключение**.
@@ -28,8 +32,6 @@
 * **KeeneticOS 3.5;**
 * Mikrotik;
 * Cisco routers.
-
-
 
 ### Возможные ошибки при выполнении скрипта
 
