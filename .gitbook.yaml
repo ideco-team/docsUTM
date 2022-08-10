@@ -75,3 +75,4 @@ redirects:
   ideco_agent: ./settings/users/ideco-agent.md
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
+  vpn-connection: ./settings/users/authorization/vpn-connection/README.md
