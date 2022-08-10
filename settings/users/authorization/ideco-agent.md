@@ -19,6 +19,10 @@ dateCreated: '2021-04-02T07:22:34.146Z'
 
 ![](../../../.gitbook/assets/download\_agent.png)
 
+{% hint style="success" %}
+Подробнее о настройке Ideco Agent на устройстве пользователя в статье [Ideco VPN-клиент](../../services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md).
+{% endhint %}
+
 Для успешной авторизации с помощью IdecoAgent необходимо у пользователя указать в настройках сетевой карты в качестве шлюза и в качестве сервера DNS IP-адрес интернет-шлюза Ideco UTM.
 
 {% hint style="info" %}
