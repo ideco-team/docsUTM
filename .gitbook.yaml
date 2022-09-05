@@ -25,7 +25,7 @@ redirects:
   reg: ./service/server-registration.md
   network_interface: ./settings/services/connection-to-provider/README.md
   dns: ./settings/services/dns/README.md
-  nextdns: ./settings/services/nextdns.md
+  nextdns: ./settings/services/dns/nextdns.md
   dns_external: ./settings/services/dns.md
   object: ./settings/access-rules/aliases.md
   portmapping: ./settings/publishing-resources/portmapping.md
