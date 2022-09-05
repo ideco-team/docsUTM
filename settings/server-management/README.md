@@ -4,6 +4,10 @@
 [admins.md](admins.md)
 {% endcontent-ref %}
 
+{% content-ref url="central-console.md" %}
+[central-console.md](console/central-console.md)
+{% endcontent-ref %}
+
 {% content-ref url="cluster.md" %}
 [cluster.md](cluster.md)
 {% endcontent-ref %}
