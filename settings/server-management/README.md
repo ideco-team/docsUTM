@@ -5,7 +5,7 @@
 {% endcontent-ref %}
 
 {% content-ref url="central-console.md" %}
-[central-console.md](console/central-console.md)
+[central-console.md](central-console.md)
 {% endcontent-ref %}
 
 {% content-ref url="cluster.md" %}
