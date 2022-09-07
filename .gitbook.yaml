@@ -76,7 +76,7 @@ redirects:
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   vpn-connection: ./settings/users/authorization/vpn-connection/README.md
-  central_console: .settings/server-management/console/central-console.md
-  policies_and_objects: ./settings/server-management/console/policies-and-objects.md
-  services: ./ettings/server-management/console/services.md
-  server-management: ./settings/server-management/console/server-management.md
+  central_console: .settings/server-management/central-console.md
+  policies_and_objects: ./settings/server-management/policies-and-objects.md
+  services: ./ettings/server-management/services.md
+  server-management: ./settings/server-management/server-management.md
