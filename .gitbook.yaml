@@ -23,6 +23,7 @@ redirects:
   install: ./installation/installation-process.md
   ipsec: ./settings/services/ipsec/README.md
   reg: ./service/server-registration.md
+  license: ./service/server-registration.md
   network_interface: ./settings/services/connection-to-provider/README.md
   dns: ./settings/services/dns/README.md
   nextdns: ./settings/services/dns/nextdns.md
