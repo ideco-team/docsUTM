@@ -48,7 +48,7 @@ description: >-
 * **Pre-Shared Key** – вставьте PSK-ключ, который ранее прописывали на Ideco UTM;
 * **Encryption Algorithm: Для Ideco UTM версии 10.0 и новее** используйте следующие параметры: **Algorithm** - AES256-GCM; **Key length** - 128 bit; **Hash** - SHA256; **DH Group** - Elliptic Curve 25519-256. **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](<../../../../.gitbook/assets/aes(v9) (1).png>)
+![](../../../../.gitbook/assets/esp(v9).png)
 
 Все остальные значения можно оставить по умолчанию.
 
