@@ -4,7 +4,7 @@ Zabbix - это решение распределенного мониторин
 
 Ознакомиться с Zabbix, Вы можете на [официальной странице Zabbix](https://www.zabbix.com/ru/).
 
-Вы также можете опробовать Zabbix в виде [готового решения](https://www.zabbix.com/documentation/current/ru/manual/appliance) или установить его, воспользовавшись [документацией Zabbix](https://www.zabbix.com/documentation/current/ru/manual/installation).
+Вы также можете опробовать Zabbix в виде [готового решения](https://www.zabbix.com/documentation/current/ru/manual/appliance) или установить его, воспользовавшись [документацией Zabbix](https://www.zabbix.com/documentation/current/en/manual).
 
 ## Интеграция с Zabbix
 

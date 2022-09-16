@@ -38,4 +38,4 @@ description: >-
 ### VPN
 
 Содержит информацию о количестве подключений пользователей по протоколам L2TP/IPsec, PPTP и IKEv2. \
-Инструкция по VPN-подключению пользователей доступна по [ссылке](../../recipes/popular-recipes/client-to-site/README.md).
+Инструкция по VPN-подключению пользователей доступна по [ссылке](../../recipes/popular-recipes/vpn/README.md).
