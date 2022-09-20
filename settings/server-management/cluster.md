@@ -114,7 +114,7 @@ description: >-
 
 </details>
 
-### Конфигурация активной ноды
+### Шаг 2 -Конфигурация активной ноды
 
 Для конфигурации активной ноды в веб-интерфейсе Ideco UTM выполните следующие действия:
 
@@ -175,7 +175,7 @@ description: >-
 
 <img src="../../.gitbook/assets/cluster-warning.png" alt="" data-size="original">
 
-3\. Нажмите **Да**.
+3\. Нажмите **ОК**.
 
 <img src="../../.gitbook/assets/cluster-kill.png" alt="" data-size="original">
 
