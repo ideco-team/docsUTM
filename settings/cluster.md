@@ -173,7 +173,7 @@ description: >-
 
 ![](../.gitbook/assets/cluster-warning.png)
 
-3\. Нажмите **Да:**
+3\. Нажмите **OK**:
 
 ![](../.gitbook/assets/cluster-kill.png)
 
