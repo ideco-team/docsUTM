@@ -1,19 +1,29 @@
 # API Ideco UTM
 
+Распространенные статусы:
+* **200** OK – Операция успешно завершена.
+* **302** Found – Запрашиваемая страница была найдена / временно перенесена на другой URL.
+* **400** Bad Request – Сервер не смог понять запрос из-за недействительного синтаксиса.
+* **401** Unauthorized – Запрещено. Сервер понял запрос, но он не выполняет его из-за ограничений прав доступа к указанному ресурсу.
+* **404** Not Found – Запрашиваемая страница не найдена. Сервер понял запрос, но не нашёл соответствующего ресурса по указанному URL.
+* **405** Method Not Allowed – Mетод не поддерживается. Запрос был сделан методом, который не поддерживается данным ресурсом.
+* **502** Bad Gateway – Ошибка шлюза. Сервер, выступая в роли шлюза или прокси-сервера, получил недействительное ответное сообщение от вышестоящего сервера.
+* **542** – Валидация не пропустила тело запроса.
+
 ## Авторизация
 
 ```
 POST /web/auth/login
 ```
 
-Json тела запроса:
+**Json тела запроса:**
 
 ```
 {
-    "login": string,    
-    "password": string,    
-    "recaptcha": string (по умолчанию пустая строка - ""),
-    "rest_path": string (по умолчанию строка со слешем "/")
+    "login": "string",    
+    "password": "string",    
+    "recaptcha": "string" (по умолчанию пустая строка - ""),
+    "rest_path": "string" (по умолчанию строка со слэшем "/")
 }
 
 ```
@@ -24,13 +34,7 @@ set-cookie: insecure-ideco-session=02428c1c-fcd5-42ef-a533-5353da743806
 set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4cda-a19b-9422c2897663:1663839003
 ```
 
-Эти куки нужно передавать при каждом запросе после авторизации в качестве заголовка запроса Cookie.
-
-**Пример запроса:**
-
-```
-curl -k -b /tmp/cookie -c /tmp/cookie -X POST https://51.250.13.222:8443/web/auth/login --data '{"login": "administrator", "password": "test", "recaptcha": "", "rest_path": "/"}'
-```
+Эти куки нужно передавать при каждом запросе после авторизации в заголовке запроса Cookie.
 
 ## Создание объекта IP-адрес
 
@@ -38,7 +42,7 @@ curl -k -b /tmp/cookie -c /tmp/cookie -X POST https://51.250.13.222:8443/web/aut
 POST /aliases/ip_addresses
 ```
 
-Json тела запроса:
+**Json тела запроса:**
 
 ```
 {
@@ -48,33 +52,34 @@ Json тела запроса:
 }
 ```
 
-Ответ на запрос: *{"id": "string"}*.
-
-**Пример запроса:**
+**Ответ на успешный запрос:** 
 
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://51.250.13.222:8443/aliases/ip_addresses --data '{"title": "qwe", "comment": "from rest", "value": "9.9.9.9"}'
+{
+    "id": "string"
+}
 ```
+
 
 ## Получение ID объектов
 
 ```
-GET /aliases/
+GET /aliases
 ```
 
-Json ответ на запрос:
+**Ответ на успешный запрос:**
 
 ```
 [
     {
-        "comment": "string",
         "id": "string",
-        "title": "string",
         "type": "string" (для объектов IP адрес значение = "ip")
-        "value": "string"
-    }
+        "title": "string"
+    }, 
+    ...
 ] 
 ```
+
 
 ## Создание объекта Список адресов
 
@@ -82,17 +87,23 @@ Json ответ на запрос:
 POST /aliases/lists/addresses
 ```
 
-Json тела запроса:
+**Json тела запроса:**
 
 ```
 {
-    "comment": "string",
     "title": "string",
+    "comment": "string",
     "values": ["string"]
 }
 ```
 
-Ответ на запрос: *{"id": "string"}*.
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
 
 
 ## Получение ID пользовательской категории контент-фильтра
@@ -101,41 +112,68 @@ Json тела запроса:
 GET /content-filter/users_categories
 ```
 
-Json ответ на запрос:
+**Json ответ на запрос:**
 
 ```
 {
-    "description": string,
-    "id": string,
-    "name": string,
-    "urls": [string]
+    "id": "string", (номер категории, вида - users.id.1)
+    "name": "string", (название категории, не пустая строка)
+    "description": "string",
+    "urls": ["string"] 
 }
 ```
 
+**urls** - список url. Либо полный путь до страницы, либо только доменное имя. В пути могут присутствовать, означающие любое количество любых символов на этом месте
 
 
-## Добавление URL  в пользовательскую категорию контент-фильтра
+## Управление списком пользовательских категорий
+
+### Добавление URL в пользовательскую категорию контент-фильтра
+
+```
+POST /content-filter/users_categories
+```
+
+**Json тела запроса:**
+
+```
+{
+    "name": "string",
+    "description": "string",
+    "urls": [ "string" ]
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+### Редактирование URL в пользовательской категории контент-фильтра
 ```
 PUT /content-filter/users_categories/{category_id}
 ```
 
-Json тела запроса:
+**Json тела запроса:**
 
 ```
 {
-    "description": string,
-    "name": string,
-    "urls": [string]
+    "name": "string",
+    "description": "string",
+    "urls": ["string"]
 }
 ```
 
-Json ответ на запрос:
+**Ответ на успешный запрос:**
 
 ```
 {
-    "description": string,
-    "id": string,
-    "name": string,
-    "urls": [string]
+    "id": "string",
+    "name": "string",
+    "description": "string",
+    "urls": [ "string" ]
 }
 ```
