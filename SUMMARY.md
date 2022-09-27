@@ -150,10 +150,4 @@
 
 ## Changelog
 
-* [Версия Ideco UTM 7.Х.Х](changelog/versiya-ideco-utm-7.kh.kh/README.md)
-  * [Версия Ideco UTM 7.9.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.9.x.md)
-  * [Версия Ideco UTM 7.8.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.8.x.md)
-  * [Версия Ideco UTM 7.7.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.7.x.md)
-  * [Версия Ideco UTM 7.6.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.6.x.md)
-  * [Версия Ideco UTM 7.5.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.5.x.md)
-  * [Версия Ideco UTM 7.4.X](changelog/versiya-ideco-utm-7.kh.kh/versiya-ideco-utm-7.4.x.md)
+* [Версия Ideco UTM 7.Х.Х](changelog/versiya-ideco-utm-7.kh.kh.md)

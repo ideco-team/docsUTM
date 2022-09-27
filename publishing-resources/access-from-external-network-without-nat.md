@@ -10,15 +10,15 @@
 
 2\. В файрволе в таблице SNAT создайте правило с действием **Не производить SNAT** для данного IP-адреса назначения.
 
-![](../.gitbook/assets/12025894.jpg)
+![](../attachments/4982174/12025894.jpg)
 
 3\. Следующим правилом создайте правила SNAT для своей локальной сети (чтобы остальные хосты работали через NAT).
 
-![](../.gitbook/assets/11239490.jpg)
+![](../attachments/4982174/11239490.jpg)
 
 Итоговые правила файрвола выглядят так:
 
-![](../.gitbook/assets/12025896.jpg)
+![](../attachments/4982174/12025896.jpg)
 
 {% hint style="info" %}
 На устройствах локальной сети Ideco UTM должен использоваться в качестве основного шлюза, либо должен быть прописан необходимый маршрут к внешним IP-адресам через Ideco UTM. Также устройства локальной сети должны быть авторизованы на UTM.&#x20;
@@ -40,15 +40,15 @@
 2. Ввести команду для редактирования файла  `mcedit /usr/bin/ideco-static-firewall`
 3.  Между строками: &#x20;
 
-    `iptables -A FORWARD -m state --state INVALID -j smart_drop  `
+    `iptables -A FORWARD -m state --state INVALID -j smart_drop` &#x20;
 
     `iptables -A FORWARD -j forward_sys_rules`
 
     Вписать строки: &#x20;
 
-    `iptables -A FORWARD -d `**`10.0.0.1`**` -j ACCEPT`
+    `iptables -A FORWARD -d`` `**`10.0.0.1`**` ``-j ACCEPT`
 
-    `iptables -A FORWARD -s `**`10.0.0.1`**` -j ACCEPT`
+    `iptables -A FORWARD -s`` `**`10.0.0.1`**` ``-j ACCEPT`
 4. Сохраните файл.
 5. Перезагрузите Ideco UTM.
 

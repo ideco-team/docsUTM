@@ -18,7 +18,7 @@ description: >-
 5. Запишите ISO-образ на чистый CD-R/RW диск или на [USB-flash drive](usb.md).
 6. В параметрах BIOS компьютера выберите загрузку с CD/DVD-привода или USB-flash drive и начните загрузку системы с приготовленного носителя. На экране монитора должен появиться установщик Ideco UTM, как проиллюстрировано ниже.
 
-![](.gitbook/assets/install_1.png)
+![](attachments/1277997/6586849.png)
 
 Дальнейший процесс установки описан в статье [Процесс установки](installation-process.md).
 
@@ -26,10 +26,9 @@ description: >-
 Также вы можете посмотреть видео по настройке продукта:
 
 * [Установка и первоначальная настройка Ideco](https://youtu.be/B5ggcTxbSAs) [UTM](https://youtu.be/B5ggcTxbSAs);
-* [Ideco UTM Cookbook](https://www.youtube.com/watch?v=kiJAl16RkI0&list=PLQJTQf4Vb3wCKEEqOZFyQxjqPdan848sq) - инструкции по настройке модулей.
+* [Ideco UTM Cookbook](https://www.youtube.com/watch?v=kiJAl16RkI0\&list=PLQJTQf4Vb3wCKEEqOZFyQxjqPdan848sq) - инструкции по настройке модулей.
 {% endhint %}
 
 
 
- 
-
+&#x20;

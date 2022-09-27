@@ -8,7 +8,7 @@
 
 Аналогичным образом для открытия доступа определенным хостам внутренней сети без авторизации укажите их IP-адреса.
 
-1. В консоли UTM ([доступ по SSH](../access-rules/admins/remote-ssh-access.md)) ввести команду: ` mount -o remount,rw /`
+1. В консоли UTM ([доступ по SSH](../access-rules/admins/remote-ssh-access.md)) ввести команду: `mount -o remount,rw /`
 2. Ввести команду для редактирования файла  `mcedit /usr/bin/ideco-static-firewall`
 3.  Между строками: &#x20;
 
@@ -18,8 +18,8 @@
 
     Вписать строки: &#x20;
 
-    `iptables -A FORWARD -d `**`X.X.X.X/X`**` -j ACCEPT`
+    `iptables -A FORWARD -d`` `**`X.X.X.X/X`**` ``-j ACCEPT`
 
-    `iptables -A FORWARD -s `**`X.X.X.X/X`**` -j ACCEPT`
+    `iptables -A FORWARD -s`` `**`X.X.X.X/X`**` ``-j ACCEPT`
 4. Сохраните файл.
 5. Перезагрузите Ideco UTM.
