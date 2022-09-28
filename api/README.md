@@ -2,9 +2,9 @@
 
 ## Примеры использования
 
-### Создание списка объектов
+### Создание объекта типа "Список объектов"
 
-1\. Авторизуйте пользователя: 
+**1\.** Авторизуйте администратора: 
 
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
@@ -12,7 +12,9 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/a
 
 Ответ: статус 200
 
-2\. Если требуется, создайте объект: 
+**2\.** Получите список идентификаторов объектов типа "Список объектов":
+
+**2.1\.** Если требуется, создайте объект "IP-адрес": 
 
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/ip_addresses --data '{"comment": "комментарий", "title": "название", "value": "9.9.9.9"}'
@@ -21,27 +23,51 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/alias
 Ответ: статус 200
 
 Тело ответа:
+
 ```
 {
     "id": "ip.id.3"
 }
 ```
 
-3\. Создайте список объектов: 
-
-```
-curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.3", "ip.id.2", "ip.id.1"]}'
-```
-
-3.1\. Если для создания списка требуются id объектов, отличных от пункта 2, то получите список всех id. Пример:
+**2.2\.** Если нужные объекты уже существуют, то получите список id, выполнив команду:
 
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie https://178.154.205.107:8443/aliases/
 ```
 
+В ответе будет список всех объектов системы. Выберите нужные id (вид ip.id.1):
+
+```
+[
+    {
+        comment: "test ip alias",
+        title: "test ip alias",
+        type: "ip",
+        value: "9.9.9.9",
+        id: "ip.id.1"
+    },
+    {
+        comment: "test ip alias 2",
+        title: "test ip alias 2",
+        type: "ip",
+        value: "9.9.9.10",
+        id: "ip.id.2"
+    }
+]
+```
+
+**3\.** Создайте объект типа "Список объектов": 
+
+```
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.3", "ip.id.2", "ip.id.1"]}'
+```
+
 ### Добавление URL в пользовательскую категорию контент-фильтра
 
-1\. Авторизуйте пользователя: 
+Предполагается, что уже созданы и настроены: пользователи, пользовательская категория контент-фильтра и правило контент-фильтра, в котором используются созданные пользователи и категории. Через API требуется редактировать список URL в конкретной пользовательской категории.
+
+**1\.** Авторизуйте администратора: 
 
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
@@ -49,7 +75,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/a
 
 Ответ: статус 200
 
-2\. Добавьте URL в ранее созданную пользовательскую категорию контент-фильтра:
+**2\.** Добавьте URL в ранее созданную пользовательскую категорию контент-фильтра:
 
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/content-filter/users_categories/users.id.1 --data '{"name": "название", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
@@ -60,22 +86,10 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/conten
 Тело ответа при добавлении URL в ранее созданную категорию контент-фильтра:
 
 ```
-{"id": "users.id.3", "name": "test category", "description": "test users category", "urls": ["yandex.ru", "www.standards.ru"]}
+{"id": "users.id.3", "name": "название", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}
 ```
 
-2.1\. Или создайте новую пользовательскую категорию контент-фильтра:
 
-```
-curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/content-filter/users_categories `{name: "1", description: "1", urls: ["https://wrong-url.com"]}`
-```
-
-Тело ответа при создании категории контент-фильтра:
-
-```
-{
-    "id": "users.id.6"
-}
-```
 
 ## Описание хендлеров
 
@@ -87,7 +101,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/conte
 POST /web/auth/login
 ```
 
-**Json тела запроса:**
+**Json тело запроса:**
 
 ```
 {
@@ -135,7 +149,7 @@ set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Ma
 POST /aliases/ip_addresses
 ```
 
-**Json тела запроса:**
+**Json тело запроса:**
 
 ```
 {
@@ -163,7 +177,7 @@ POST /aliases/ip_addresses
 POST /aliases/ip_ranges
 ```
 
-**Json тела запроса:**
+**Json тело запроса:**
 
 ```
 {
@@ -195,7 +209,7 @@ POST /aliases/ip_ranges
 POST /aliases/lists/addresses
 ```
 
-**Json тела запроса:**
+**Json тело запроса:**
 
 ```
 {
@@ -228,9 +242,14 @@ GET /aliases
 ```
 [
     {
-        "id": "string",
-        "type": "string" (для объектов IP адрес значение = "ip")
-        "title": "string"
+        comment: "string",
+        title: "string",
+        type: "string",
+        values: [
+            "ip.id.1",
+            "ip.id.2"
+        ],
+        id: "type.id.1"
     }, 
     ...
 ] 
@@ -242,13 +261,13 @@ GET /aliases
 
 <details>
 
-<summary>Добавление URL</summary>
+<summary>Создание пользовательской категории</summary>
 
 ```
 POST /content-filter/users_categories
 ```
 
-**Json тела запроса:**
+**Json тело запроса:**
 
 ```
 {
@@ -270,7 +289,7 @@ POST /content-filter/users_categories
 
 <details>
 
-<summary>Получение ID</summary>
+<summary>Получение пользовательских категорий</summary>
 
 ```
 GET /content-filter/users_categories
@@ -294,11 +313,12 @@ GET /content-filter/users_categories
 <details>
 
 <summary>Редактирование</summary>
+
 ```
 PUT /content-filter/users_categories/{category_id}
 ```
 
-**Json тела запроса:**
+**Json тело запроса:**
 
 ```
 {
