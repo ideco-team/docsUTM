@@ -2,7 +2,9 @@
 
 ## Примеры использования
 
-### Создание объекта типа "Список объектов"
+<details>
+
+<summary>Создание объекта типа "Список объектов"</summary>
 
 **1\.** Авторизуйте администратора: 
 
@@ -63,7 +65,11 @@ curl -k -c /tmp/cookie -b /tmp/cookie https://178.154.205.107:8443/aliases/
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.3", "ip.id.2", "ip.id.1"]}'
 ```
 
-### Добавление URL в пользовательскую категорию контент-фильтра
+</details>
+
+<details>
+
+<summary>Добавление URL в пользовательскую категорию контент-фильтра</summary>
 
 Предполагается, что уже созданы и настроены: пользователи, пользовательская категория контент-фильтра и правило контент-фильтра, в котором используются созданные пользователи и категории. Через API требуется редактировать список URL в конкретной пользовательской категории.
 
@@ -89,7 +95,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/conten
 {"id": "users.id.3", "name": "название", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}
 ```
 
-
+</details>
 
 ## Описание хендлеров
 
@@ -181,13 +187,10 @@ POST /aliases/ip_ranges
 
 ```
 {
-    "id": {
-        "type": "ip_range",
-        "title": "string",
-        "comment": "string",
-        "start": "string",
-        "end": "string",
-    },
+    "title": "string",
+    "comment": "string",
+    "start": "string",
+    "end": "string",
 }
 ```
 
