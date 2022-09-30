@@ -4,7 +4,7 @@
 
 <details>
 
-<summary>Создание объекта типа "Список объектов"</summary>
+<summary>Создание объекта типа Список объектов</summary>
 
 **1\.** Авторизуйте администратора: 
 
@@ -12,7 +12,7 @@
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
 ```
 
-Ответ: статус 200
+Ответ: статус 200.
 
 **2\.** Получите список идентификаторов объектов типа "Список объектов":
 
@@ -22,7 +22,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/a
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/ip_addresses --data '{"comment": "комментарий", "title": "название", "value": "9.9.9.9"}'
 ```
 
-Ответ: статус 200
+Ответ: статус 200.
 
 Тело ответа:
 
@@ -59,7 +59,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie https://178.154.205.107:8443/aliases/
 ]
 ```
 
-**3\.** Создайте объект типа "Список объектов": 
+**3\.** Создайте объект типа Список объектов: 
 
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.3", "ip.id.2", "ip.id.1"]}'
@@ -79,7 +79,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/alias
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
 ```
 
-Ответ: статус 200
+Ответ: статус 200.
 
 **2\.** Добавьте URL в ранее созданную пользовательскую категорию контент-фильтра:
 
@@ -87,7 +87,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/a
 curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/content-filter/users_categories/users.id.1 --data '{"name": "название", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
 ```
 
-Ответ: статус 200
+Ответ: статус 200.
 
 Тело ответа при добавлении URL в ранее созданную категорию контент-фильтра:
 
@@ -96,6 +96,63 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/conten
 ```
 
 </details>
+
+## Создание правила Forward
+
+Задача: создать правило Forward с указанием диапазона IP-адресов (192.168.0.1-192.168.0.20) в качестве источника и протоколом TCP. \
+Далее в созданное правило внести изменение, указав время действия.
+
+**1\.** Авторизуйте администратора: 
+
+```
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
+```
+
+Ответ: статус 200.
+
+**2\.** Создайте объект Диапазон IP-адресов c 192.168.0.1 по 192.168.0.20:
+
+```
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/ip_ranges --data '{"title": "test ip range", "comment": "test ip range", "start": "192.168.0.1", "end": "192.168.0.20"}'
+```
+
+Ответ: статус 200.
+
+Тело ответа:
+
+```
+{
+    "id": "ip_range.id.2"
+}
+```
+
+**3\.** Создайте правило файрвола:
+
+```
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/firewall/rules/forward --data '{"action": "действие: accept - принять пакет; drop - отклонить пакет;", "comment": "комментарий", "destination_addresses": ["адреса назначений, список ID алиасов"], "destination_ports": ["порты назначений, список ID алиасов"], "incoming_interface": "входящий интерфейс, ID алиаса", "outgoing_interface": "исходящий интерфейс, ID алиаса", "protocol": "протокол, ID алиаса", "source_addresses": ["адреса источников"], "timetable": ["время действия"], "enabled": правило включено/выключено}'
+```
+
+Ответ: статус 200.
+
+Тело ответа:
+
+```
+{"action": "drop", "destination_addresses": ["any"], "destination_ports": ["port.id.1"], "enabled": true, "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["any"], "timetable": ["any"], "comment": "", "id": 2}
+```
+
+**4\.** Отредактируйте созданное правило, указав время действия:
+
+```
+curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://51.250.72.140:8443/firewall/rules/forward/1 --data '{"action": "drop", "comment": "", "destination_addresses": ["any"], "destination_ports": ["port.id.1"], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["any"], "timetable": ["time_range.id.1"], "enabled": true, "id": 2}'
+```
+
+Ответ: статус 200.
+
+Тело ответа:
+
+```
+{"action": "drop", "comment": "", "destination_addresses": ["any"], "destination_ports": ["port.id.1"], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["any"], "timetable": ["time_range.id.1"], "enabled": true, "id": 2}
+```
 
 ## Описание хендлеров
 
@@ -177,7 +234,7 @@ POST /aliases/ip_addresses
 
 <details>
 
-<summary>Создание объекта "Диапазон IP-адресов"</summary>
+<summary>Создание объекта Диапазон IP-адресов</summary>
 
 ```
 POST /aliases/ip_ranges
@@ -206,7 +263,7 @@ POST /aliases/ip_ranges
 
 <details>
 
-<summary>Создание объекта "Список адресов"</summary>
+<summary>Создание объекта Список адресов</summary>
 
 ```
 POST /aliases/lists/addresses
