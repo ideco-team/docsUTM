@@ -54,7 +54,7 @@ description: Настройка режимов точки доступа и ро
 
 2\. В разделе **Пользователи -> Авторизация -> IP-авторизация** создайте правило следующего вида:
 
-<img src="../../.gitbook/assets/user-ip-authorization-rule.png" alt="" data-size="original">
+![](../../.gitbook/assets/user-ip-authorization-rule.png)
 
 Общие ограничения [контент-фильтра](../access-rules/content-filter/) и [файрвола](../access-rules/firewall.md) для Wi-Fi сети необходимо применять к данному пользователю.
 
