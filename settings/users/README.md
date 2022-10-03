@@ -8,6 +8,10 @@
 [authorization/README.md](authorization/README.md)
 {% endcontent-ref %}
 
+{% content-ref url="vpn-connection/README.md" %}
+[vpn-connection/README.md](authorization/vpn-connection/README.md)
+{% endcontent-ref %}
+
 {% content-ref url="two-factor-authentication.md" %}
 [two-factor-authentication.md](two-factor-authentication.md)
 {% endcontent-ref %}
