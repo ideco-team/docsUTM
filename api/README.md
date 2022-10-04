@@ -65,6 +65,11 @@ curl -k -c /tmp/cookie -b /tmp/cookie https://178.154.205.107:8443/aliases/
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.3", "ip.id.2", "ip.id.1"]}'
 ```
 
+Ответ:
+
+```
+```
+
 </details>
 
 <details>
@@ -92,12 +97,15 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/conten
 Тело ответа при добавлении URL в ранее созданную категорию контент-фильтра:
 
 ```
-{"id": "users.id.3", "name": "название", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}
+{"id": "users.id.1", "name": "название", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}
 ```
+**Важно**: Запрос перезапишут ранее созданную пользовательскую категорию. Поэтому при выполнении запроса следует указать все URL (старые и новые: указанные при создании категории и те, которые хотите добавить).
 
 </details>
 
-## Создание правила Forward
+<details>
+
+<summary>Создание правила Forward</summary>
 
 Задача: создать правило Forward с указанием диапазона IP-адресов (192.168.0.1-192.168.0.20) в качестве источника и протоколом TCP. \
 Далее в созданное правило внести изменение, указав время действия.
@@ -153,6 +161,8 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://51.250.72.140:8443/firewall
 ```
 {"action": "drop", "comment": "", "destination_addresses": ["any"], "destination_ports": ["port.id.1"], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["any"], "timetable": ["time_range.id.1"], "enabled": true, "id": 2}
 ```
+
+</details>
 
 ## Описание хендлеров
 
