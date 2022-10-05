@@ -182,9 +182,8 @@
 
 ## API <a href="#api" id="api"></a>
 
-* [API](api/README.md)
-  * [Описание хендлеров](api/description-of-handlers.md)
-  * [Примеры использования](api/examples/README.md)
+* [Описание хендлеров](api/description-of-handlers.md)
+* [Примеры использования](api/examples/README.md)
     * [Редактирование пользовательской категории контент-фильтра](api/examples/editing-a-custom-category.md)
     * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
 
