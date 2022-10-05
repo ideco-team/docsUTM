@@ -1,13 +1,13 @@
 ---
 title: Подключение pfSense к Ideco UTM по IPsec
-description: >-
-  По шагам данной статьи  можно объединить сети pfSense и Ideco UTM по IPsec с
-  использованием PSK.
 published: true
 date: '2021-06-02T10:39:48.651Z'
 tags: ipsec
 editor: markdown
 dateCreated: '2021-04-02T07:27:28.235Z'
+description: >-
+  По шагам данной статьи  можно объединить сети pfSense и Ideco UTM по IPsec с
+  использованием PSK.
 ---
 
 # Входящее подключение pfSense к Ideco UTM по IPsec
@@ -21,7 +21,7 @@ dateCreated: '2021-04-02T07:27:28.235Z'
 1\. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства**.
 
 2\. Добавьте новое подключение:
-   
+
 * **Название** – любое;
 * **Тип** – входящее;
 * **Тип аутентификации** – PSK;
@@ -29,7 +29,7 @@ dateCreated: '2021-04-02T07:27:28.235Z'
 * **Идентификатор ключа** – любой;
 * **Домашние локальные сети** – укажите локальную сеть Ideco UTM, которая будет видна из подсети pfSense;
 * **Удалённые локальные сети** – укажите локальную сеть pfSense, которая будет видна из подсети Ideco UTM.
-  
+
 3\. Сохраните созданное подключение, затем нажмите на кнопку "Включить".
 
 4\. На Ideco UTM в папке `/etc/strongswan/autogen/` будут сгенерированы два конфигурационных файла. Необходимо перейти в консоль и открыть на редактирование файл вида `device_<номер>.peer`.
@@ -43,7 +43,7 @@ dateCreated: '2021-04-02T07:27:28.235Z'
 1\. В веб-интерфейсе pfSense перейдите на вкладку **VPN –> IPsec –> Tunnels**.
 
 2\. Добавьте новое подключение:
-  
+
 * **Key Exchange version** – IKEv2;
 * **Internet Protocol** – IPv4;
 * **Interface** – выберите внешний интерфейс pfSense, который будет использоваться для подключения к Ideco UTM;
@@ -51,10 +51,10 @@ dateCreated: '2021-04-02T07:27:28.235Z'
 * **Description** – любое;
 * **Authentication Method** – Mutual PSK;
 * **My identifier и Peer identifier** – сюда вставьте значение строки rightid на Ideco UTM (см. шаг 5 в настройке Ideco UTM);
-*  **Pre-Shared Key** – вставьте PSK-ключ, который ранее прописывали на Ideco UTM;
-*  **Encryption Algorithm: Для Ideco UTM версии 10.0 и новее** используйте следующие параметры:  **Algorithm** - AES256-GCM;  **Key length** - 128 bit;  **Hash** - SHA256;  **DH Group** - Elliptic Curve 25519-256.  **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
+* **Pre-Shared Key** – вставьте PSK-ключ, который ранее прописывали на Ideco UTM;
+* **Encryption Algorithm: Для Ideco UTM версии 10.0 и новее** используйте следующие параметры: **Algorithm** - AES256-GCM; **Key length** - 128 bit; **Hash** - SHA256; **DH Group** - Elliptic Curve 25519-256. **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/aes\(v9\).png)
+![](../../../../.gitbook/assets/aes-v9-.png)
 
 Все остальные значения можно оставить по умолчанию.
 
@@ -63,9 +63,10 @@ dateCreated: '2021-04-02T07:27:28.235Z'
 4\. Нажмите на кнопку **Show Phase 2 Entries** и добавьте новую Phase 2.
 
 Здесь укажите:
+
 * **Encryption Algorithm**: **Для Ideco UTM версии 10.0 и новее** используйте следующие параметры: **Algorithm** - AES256-GCM; **Key length** - 128 bit; **Hash** - SHA256; **DH Group** - Elliptic Curve 25519-256. **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/esp\(v9\).png)
+![](../../../../.gitbook/assets/esp-v9-.png)
 
 * **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM;
 * **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense;
