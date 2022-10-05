@@ -178,7 +178,15 @@
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает Интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
   * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
-* [API: пример использования](api/README.md)
+
+
+## API <a href="#api" id="api"></a>
+
+* [API](api/README.md)
+  * [Описание хендлеров](api/description-of-handlers.md)
+  * [Примеры использования](api/examples/README.md)
+    * [Редактирование пользовательской категории контент-фильтра](api/examples/editing-a-custom-category.md)
+    * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
 
 ## changelog
 
