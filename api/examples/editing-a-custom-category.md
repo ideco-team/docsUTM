@@ -9,39 +9,49 @@
 
 **1\.** Авторизуйте администратора: 
 
+{% code overflow="wrap" %}
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
 ```
+{% endcode %}
 
 Ответ: статус 200.
 
 **2\.** Получите текущий список URL из пользовательских категории:
 
+{% code overflow="wrap" %}
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie https://178.154.205.107:8443/content-filter/users_categories/users.id.3
 ```
+{% endcode %}
 
 Ответ: статус 200.
 
 Ответ будет содержать описание всех пользовательских категорий. Среди них требуется найти `users.id.3`:
 
+{% code overflow="wrap" %}
 ```
 {"id": "users.id.1", "name": "Разрешенный сайты", "description": "Созданы по умолчанию", "urls": ["translate.google.ru", "translate.google.com", "translate.yandex.ru"]}, {"id": "users.id.2", "name": "Запрещенные сайты", "description": "Созданы по умолчанию", "urls": []}, {"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru"]}
 ```
+{% endcode %}
 
 **3\.** Отредактируйте список URL:
 
+{% code overflow="wrap" %}
 ```
 curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/content-filter/users_categories/users.id.3 --data '{"name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
 ```
+{% endcode %}
 
 Ответ: статус 200.
 
 Тело ответа при добавлении URL в ранее созданную категорию контент-фильтра:
 
+{% code overflow="wrap" %}
 ```
 {"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}
 ```
+{% endcode %}
 
 {% hint style="danger" %}
 Запрос перезапишет ранее созданную пользовательскую категорию. Поэтому при выполнении запроса следует указать все URL (старые и новые: указанные при создании категории и те, которые хотите добавить).
