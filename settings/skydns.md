@@ -71,4 +71,4 @@ description: Настройка Ideco UTM для фильтрации трафи
 
 ## Схема фильтрации веб-трафика при использовании SkyDNS
 
-![](../.gitbook/assets/4982194.jpg)
+![](../.gitbook/assets/skydns.jpg)
