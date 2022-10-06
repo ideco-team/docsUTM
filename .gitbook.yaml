@@ -76,7 +76,16 @@ redirects:
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   vpn-connection: ./settings/users/authorization/vpn-connection/README.md
-  central_console: ./settings/server-management/central-console.md
-  policies_and_objects: ./settings/server-management/policies-and-objects.md
-  services: ./ettings/server-management/services.md
-  server-management: ./settings/server-management/server-management.md
+  cc: ./settings/server-management/central-console.md
+  cc_firewall: ./settings/server-management/policies-and-objects.md
+  cc_aliases: ./settings/server-management/policies-and-objects.md
+  cc_interfaces: ./ettings/server-management/services.md
+  cc_routing: ./ettings/server-management/services.md
+  cc_certs: ./ettings/server-management/services.md
+  cc_admins: ./settings/server-management/server-management.md
+  cc_selfupdate: ./settings/server-management/server-management.md
+  cc_backup: ./settings/server-management/server-management.md
+  cc_web_terminal: ./settings/server-management/server-management.md
+  cc_characteristics: ./settings/server-management/server-management.md
+  cc_power: ./settings/server-management/server-management.md
+  cc_additionally: ./settings/server-management/server-management.md 
