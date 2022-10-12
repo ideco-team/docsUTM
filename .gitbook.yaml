@@ -79,9 +79,9 @@ redirects:
   cc: ./settings/server-management/central-console.md
   cc_firewall: ./settings/server-management/policies-and-objects.md
   cc_aliases: ./settings/server-management/policies-and-objects.md
-  cc_interfaces: ./ettings/server-management/services.md
-  cc_routing: ./ettings/server-management/services.md
-  cc_certs: ./ettings/server-management/services.md
+  cc_interfaces: ./settings/server-management/services.md
+  cc_routing: ./settings/server-management/services.md
+  cc_certs: ./settings/server-management/services.md
   cc_admins: ./settings/server-management/server-management.md
   cc_selfupdate: ./settings/server-management/server-management.md
   cc_backup: ./settings/server-management/server-management.md
