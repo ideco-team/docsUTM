@@ -4,7 +4,7 @@
 {% tab title="7.9.X" %}
 ## **IDECO UTM 7.9.9 СБОРКА 177 (12.10.2020)**
 
-**Внимание:** перед использованием веб-интерфейса необходимо очистить кэш веб-браузера: [Google Chrome](https://support.google.com/chrome/answer/95582?hl=ru), [Mozilla Firefox](https://support.mozilla.org/ru/kb/kak-ochistit-kesh-firefox).\
+**Внимание:** перед использованием веб-интерфейса необходимо очистить кэш веб-браузера: [<mark style="color:blue;">Google Chrome</mark>](https://support.google.com/chrome/answer/95582?hl=ru), [Mozilla Firefox](https://support.mozilla.org/ru/kb/kak-ochistit-kesh-firefox).\
 \
 **Исправления и изменения**
 
@@ -22,7 +22,7 @@
 **Исправления и изменения**
 
 * Антивирус ClamAV обновлен до версии 0.102.3 включающей обновления безопасности.
-* Улучшена блокировка анонимайзеров. Заблокированы Free VPN, Astar VPN, SaferVPN, Gom VPN, Runet Censorship Bypass.
+* Улучшена блокировка анонимайзеров. Заблокированы <mark style="color:blue;">Free VPN</mark>, Astar VPN, SaferVPN, Gom VPN, Runet Censorship Bypass.
 * Повышена безопасность опубликованных веб-ресурсов, включая веб-интерфейс.
 * Исправлены некоторые незначительные ошибки.
 
