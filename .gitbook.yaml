@@ -78,7 +78,10 @@ redirects:
   vpn-connection: ./settings/users/authorization/vpn-connection/README.md
   cc: ./settings/server-management/central-console.md
   cc_firewall: ./settings/server-management/policies-and-objects.md
+  cc_application_control: ./settings/server-management/policies-and-objects.md
+  cc_content_filter: ./settings/server-management/policies-and-objects.md
   cc_aliases: ./settings/server-management/policies-and-objects.md
+  cc_shaper: ./settings/server-management/policies-and-objects.md
   cc_interfaces: ./settings/server-management/services.md
   cc_routing: ./settings/server-management/services.md
   cc_certs: ./settings/server-management/services.md
