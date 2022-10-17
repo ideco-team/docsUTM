@@ -7,7 +7,7 @@
 Пример добавления правил через Ideco Center. \
 *Сверху интерфейс Ideco Center, снизу интерфейс подключенного Ideco UTM*:
 
-![](../../.gitbook/assets/policies-and-objects.gif)
+![](../../../.gitbook/assets/policies-and-objects.gif)
 
 {% tabs %}
 {% tab title="В Ideco Center" %}
@@ -16,15 +16,15 @@
 
 **Пример не заполненной таблицы:**
 
-![](../../.gitbook/assets/policies-and-objects2.png)
+![](../../../.gitbook/assets/policies-and-objects2.png)
 
 **Пример заполненной таблицы:**
 
-![](../../.gitbook/assets/policies-and-objects1.png)
+![](../../../.gitbook/assets/policies-and-objects1.png)
 
 {% hint style="success" %}
 **Локальные правила на серверах Ideco UTM** не видны в интерфейсе Ideco Center. \
- Для просмотра перейдите в раздел **Серверы**, нажмите на ![](../../.gitbook/assets/eye-icon.png) в строке с нужным Ideco UTM и перейдите в раздел **Файрвол**.
+Для просмотра перейдите в раздел **Серверы**, нажмите на ![](../../../.gitbook/assets/eye-icon.png) в строке с нужным Ideco UTM и перейдите в раздел **Файрвол**.
 {% endhint %}
 
 Чтобы созданное правило попало в таблицу **Начальные правила**, укажите в строке **Вид правила** значение **Начальный**. Если правило требуется разместить в таблице **Конечные правила**, выберите значение **Конечный**.
@@ -37,8 +37,7 @@
 {% tab title="В Ideco UTM" %}
 Таблицу в Ideco UTM визуально делится на три части: верхняя, средняя и нижняя.
 
-![](../../.gitbook/assets/policies-and-objects.png)
-
+![](../../../.gitbook/assets/policies-and-objects.png)
 
 В верхнюю и нижнюю часть переносятся правила из подключенного Ideco Center. Управление этими правилами в Ideco UTM невозможно. *Верхняя* часть соответствует таблице **Начальные правила** в Ideco Center. *Нижняя*, таблице **Конечные правила**.
 
