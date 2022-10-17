@@ -7,11 +7,11 @@
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    ![](../../../.gitbook/assets/ubuntu16.png)
+    <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
     
 *   В разделе **Сервисы -> Сертификаты**:
 
-    ![](../../../.gitbook/assets/certificates2.png)
+    <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="warning" %}
