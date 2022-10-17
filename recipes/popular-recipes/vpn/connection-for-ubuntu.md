@@ -70,11 +70,11 @@
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    ![](../../../.gitbook/assets/ubuntu16.png)
+    <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
 
 *   В разделе **Сервисы -> Сертификаты**:
 
-    <img src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
+    <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
 
 Корневой сертификат потребуется для настройки подключения рабочей станции пользователя, если не был получен корневой сертификат через Let\`s Encrypt. При необходимости перенесите файл сертификата на рабочую станцию. \
 Если для VPN-подключения используется сертификат выданный Let\`s Encrypt, то установка корневого сертификата на устройство не требуется.

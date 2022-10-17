@@ -142,11 +142,11 @@ Add-VpnConnection `
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    ![](../../../.gitbook/assets/ubuntu16.png)
+    <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
     
 *   В разделе **Сервисы -> Сертификаты**:
 
-    ![](../../../.gitbook/assets/certificates2.png)
+    <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
 
 Корневой сертификат потребуется для настройки подключения рабочей станции пользователя, если не был получен корневой сертификат через Let\`s Encrypt. \
 Если для VPN-подключения используется сертификат выданный Let\`s Encrypt, то установка корневого сертификата на устройство не требуется.
