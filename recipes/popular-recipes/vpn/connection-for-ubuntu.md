@@ -62,7 +62,7 @@
 
 1\. Перейдите в раздел **Пользователи -> VPN-подключение -> Основное**.
 
-2\. Установите флаг **Подключение по IKEv2/IPSec** и заполните поле **Домен**:
+2\. Установите флаг **Подключение по IKEv2/IPSec** и заполните поле **Домен и IP-адрес**:
 
 <img src="../../../.gitbook/assets/ipsec-ikev2-9-11.png" alt="" data-size="original">
 
@@ -70,7 +70,7 @@
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    <img src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+    ![](../../../.gitbook/assets/ubuntu16.png)
 *   В разделе **Сервисы -> Сертификаты**:
 
     <img src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
