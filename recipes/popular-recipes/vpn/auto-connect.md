@@ -143,6 +143,7 @@ Add-VpnConnection `
 *   В личном кабинете, введя логин/пароль пользователя:
 
     ![](../../../.gitbook/assets/ubuntu16.png)
+    
 *   В разделе **Сервисы -> Сертификаты**:
 
     ![](../../../.gitbook/assets/certificates2.png)
