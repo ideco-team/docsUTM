@@ -191,6 +191,7 @@
 
 ## changelog
 
+* [Версия Ideco UTM 15.X](changelog/versiya-ideco-utm-15.x.md)
 * [Версия Ideco UTM 14.X](changelog/versiya-ideco-utm-14.x.md)
 * [Версия Ideco UTM 13.X](changelog/versiya-ideco-utm-13.x.md)
 * [Версия Ideco UTM 12.X](changelog/versiya-ideco-utm-12.x.md)
