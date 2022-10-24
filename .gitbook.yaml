@@ -66,6 +66,7 @@ redirects:
   license_management: ./service/license-management.md
   advanced_settings: ./settings/mail/advanced-settings/README.md
   antispam_chapter: ./settings/mail/antispam.md
+  antispam: ./settings/mail/antispam.md
   rules: ./settings/mail/regulations/README.md
   mail_queue: ./settings/mail/mail-queue.md
   bgp: ./settings/services/bgp.md
