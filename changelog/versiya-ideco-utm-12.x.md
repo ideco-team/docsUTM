@@ -30,9 +30,9 @@
 **Исправления и изменения**
 
 * Для клиентов, подключенных к Ideco UTM по IKEv2/IPsec, маршруты передаются автоматически;
-* Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети;
+* Правила [Предотвращения вторжений](../settings/access-rules/ips/README.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети;
 * Исходящее подключение IPSec к Mikrotik версии ниже 6.46 по сертификатам работать не будет. При этом, подключения, созданные в версии 11.х, продолжат работу;
-* Правила [Предотвращения вторжений](../settings/access-rules/ips.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов;
+* Правила [Предотвращения вторжений](../settings/access-rules/ips/README.md) и [Ограничение скорости](../settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов;
 * Переработан [раздел с сертификатами](../settings/services/certificates/README.md);
 * Переработан и улучшен раздел авторизации пользователей по [IP-адресу/MAC-адресу](../settings/users/authorization/IP-and-MAC-authorization/README.md);
 * Новая версия модуля [Контроль приложений](../settings/access-rules/application-control.md).

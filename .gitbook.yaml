@@ -19,7 +19,7 @@ redirects:
   dhcp: ./settings/services/dhcp.md
   firewall: ./settings/access-rules/firewall.md
   https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
-  ids_ips: ./settings/access-rules/ips.md
+  ids_ips: ./settings/access-rules/ips/README.md
   install: ./installation/installation-process.md
   ipsec: ./settings/services/ipsec/README.md
   reg: ./service/server-registration.md

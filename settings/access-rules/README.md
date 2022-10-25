@@ -26,8 +26,8 @@ description: >-
 [antivirus.md](antivirus.md)
 {% endcontent-ref %}
 
-{% content-ref url="ips.md" %}
-[ips.md](ips.md)
+{% content-ref url="ips/README.md" %}
+[ips/README.md](ips/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="aliases.md" %}
