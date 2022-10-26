@@ -36,9 +36,9 @@ description: Система обнаружения и предотвращени
 
 Предупреждение системы предотвращения вторжений:
 
-<img src="../../.gitbook/assets/ex2suricata.png" alt="" data-size="original">
+![](../../../.gitbook/assets/ex2suricata.png)
 
-Таким образом, на вкладке **Правила** можно открыть найденную группу по **Наименованию правила**, нажать на ![](../../.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
+Таким образом, на вкладке **Правила** можно открыть найденную группу по **Наименованию правила**, нажать на ![](../../../.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
 
 `drop dns $HOME_NET any -> any any (msg:"ET DNS Query for .cc TLD"; dns.query; content:".cc"; endswith; fast_pattern; classtype:bad-unknown; sid:2027758; rev:5; metadata:affected_product Any, attack_target Client_Endpoint, created_at 2019_07_26, deployment Perimeter, former_category DNS, signature_severity Minor, updated_at 2020_09_17;)`
 
