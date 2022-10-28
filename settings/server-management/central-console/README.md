@@ -56,17 +56,3 @@ Ideco Center - это центральная консоль, разработа�
 {% hint style="info" %}
 Администратор Ideco Center с ролью "Только просмотр" не сможет производить никаких настроек в веб-интерфейсе подключенного Ideco UTM, так как при попытке внесения изменений будет появляться окно с ошибкой "Доступ запрещен".
 {% endhint %}
-
-Подробное описание функциональностей Ideco Center смотрите в соответствующих разделах.
-
-{% content-ref url="policies-and-objects.md" %}
-[policies-and-objects.md](policies-and-objects.md)
-{% endcontent-ref %}
-
-{% content-ref url="services.md" %}
-[services.md](services.md)
-{% endcontent-ref %}
-
-{% content-ref url="server-management.md" %}
-[server-management.md](server-management.md)
-{% endcontent-ref %}
