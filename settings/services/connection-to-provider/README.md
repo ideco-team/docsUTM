@@ -7,6 +7,7 @@
 * [Ethernet + PPTP](pptp-connection.md)
 * [Ethernet + L2TP](l2tp-connection.md)
 * [Ethernet + PPPoE](pppoe-connection.md)
+* [Агрегированные сети](aggregated.md)
 
 Все созданные интерфейсы представлены в виде таблицы:
 
