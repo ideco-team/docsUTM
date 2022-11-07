@@ -79,6 +79,7 @@
     * [Настройка подключения по PPTP](settings/services/connection-to-provider/pptp-connection.md)
     * [Настройка подключения по L2TP](settings/services/connection-to-provider/l2tp-connection.md)
     * [Настройка подключения по PPPoE](settings/services/connection-to-provider/pppoe-connection.md)
+    * [Агрегированные интерфейсы](settings/services/connection-to-provider/aggregated.md)
     * [Подключение по 3G и 4G](settings/services/connection-to-provider/3g-4g-connection.md)
   * [Балансировка и резервирование](settings/services/multiple-simultaneous-connections.md)
   * [Маршрутизация](settings/services/routing.md)
