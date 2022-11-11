@@ -27,7 +27,7 @@
 * Добавлена возможность скрытия панели меню; 
 * Добавлено действие **Перенаправить на** при создании правила в [Контент-фильтре](../settings/access-rules/content-filter/README.md);
 * Добавлена возможность исключения правил из обработки [Предотвращения вторжений](../settings/services/ipsec/README.md) 
-* Добавлена возможность исключения пользователя или группы пользователей из обработки [Предотвращения вторжений](../settings/services/ipsec/README.md), [Контролем приложений ](../settings/access-rules/application-control.md) и [Ограничения скорости](../settings/access-rules/shaper.md) в разделе [Исключения]();
+* Добавлена возможность исключения пользователя или группы пользователей из обработки [Предотвращения вторжений](../settings/services/ipsec/README.md), [Контролем приложений ](../settings/access-rules/application-control.md) и [Ограничения скорости](../settings/access-rules/shaper.md) в разделе **Правила трафика -> Исключения**;
 * Добавлена колонка **ID** правил в таблице [Файрвола](../settings/access-rules/firewall.md); 
 * Добавлен WHOIS по IP-адресам в таблице [Предотвращения вторжений](../settings/services/ipsec/README.md);  
 
