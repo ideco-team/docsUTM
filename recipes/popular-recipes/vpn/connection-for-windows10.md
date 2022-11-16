@@ -79,8 +79,8 @@
 
 Если вы создаете VPN-подключение к UTM через проброс портов, рекомендуем выполнить следующие действия:
 
-1. Откройте **Редактор реестра**.
-2. Перейдите в `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent` и создайте DWORD-параметр с именем AssumeUDPEncapsulationContextOnSendRule и значением `2`.
+1. Откройте **Редактор реестра**;
+2. Перейдите в `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent` и создайте DWORD-параметр с именем AssumeUDPEncapsulationContextOnSendRule и значением `2`;
 3. Перезагрузите Windows.
 
 Возможные неполадки
@@ -129,8 +129,8 @@
 * Перейдите в **Настройки параметров адаптера**;
 * Нажмите на созданное подключение правой кнопкой мыши и выберите **Свойства**;
 * Перейдите во вкладку **Безопасность** и установите:
-  * **Шифрование данных** - обязательное (отключиться, если нет шифрования)
-  * **Протокол расширенной проверки подлинности (EAP)** - Microsoft защищенный пароль (EAP MSCHAPV2)
+  * **Шифрование данных** - обязательное (отключиться, если нет шифрования);
+  * **Протокол расширенной проверки подлинности (EAP)** - Microsoft защищенный пароль (EAP MSCHAPV2).
 
 </details>
 
@@ -156,22 +156,22 @@
 
 2\. Внесите изменения в реестр:
 
-* Откройте **Редактор реестра**.
-* Перейдите по пути `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Parameters`.
-* Нажмите правой кнопкой мыши по параметру именем **NegotiateDH2048\_AES256** и нажмите **Изменить**.
+* Откройте **Редактор реестра**;
+* Перейдите по пути `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Parameters`;
+* Нажмите правой кнопкой мыши по параметру именем **NegotiateDH2048\_AES256** и нажмите **Изменить**;
 * В строке **Значение** укажите значение `1`:
 
 <img src="../../../../.gitbook/assets/windows-vpn.png" alt="" data-size="original">
 
-* Нажмите **OK**.
-*   Перезагрузите Windows.
+* Нажмите **OK**;
+* Перезагрузите Windows.
 
     Если параметра именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
 <img src="../../../../.gitbook/assets/windows-vpn2.png" alt="" data-size="original">
 
-* Задайте имя **NegotiateDH2048\_AES256**.
+* Задайте имя **NegotiateDH2048\_AES256**;
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
 <img src="../../../../.gitbook/assets/windows-vpn3.png" alt="" data-size="original">

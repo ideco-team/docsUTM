@@ -6,6 +6,6 @@
 
 ## Основные команды
 
-* **Утилиты сетевой диагностики:** `ping`, `host`, `nslookup`, `tracepath`, `tcpdump`, `arping`, `mtr`.
-* **Файловый менеджер:** `mc`.
+* **Утилиты сетевой диагностики:** `ping`, `host`, `nslookup`, `tracepath`, `tcpdump`, `arping`, `mtr`;
+* **Файловый менеджер:** `mc`;
 * **Просмотр логов:** `journalctl -u *название службы*` (например, `journalctl -u ideco-routing-backend`).
