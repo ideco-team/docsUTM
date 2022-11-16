@@ -61,7 +61,7 @@ description: >-
 ![](../../../../.gitbook/assets/esp\(v9\).png)
 
 * **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM;
-* **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense;
+* **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense.
 
 Все остальные значения можно оставить по умолчанию.
 

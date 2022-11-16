@@ -2,11 +2,11 @@
 
 Подробное описание создания и настройки каждого типа сетевого интерфейса, описаны в следующих инструкциях:
 
-* [Локальный Ethernet](local-ethernet.md)
-* [Внешний Ethernet](ethernet-connection.md)
-* [Ethernet + PPTP](pptp-connection.md)
-* [Ethernet + L2TP](l2tp-connection.md)
-* [Ethernet + PPPoE](pppoe-connection.md)
+* [Локальный Ethernet](local-ethernet.md);
+* [Внешний Ethernet](ethernet-connection.md);
+* [Ethernet + PPTP](pptp-connection.md);
+* [Ethernet + L2TP](l2tp-connection.md);
+* [Ethernet + PPPoE](pppoe-connection.md).
 
 Все созданные интерфейсы представлены в виде таблицы:
 

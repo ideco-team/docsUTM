@@ -44,10 +44,10 @@ description: Настройка параметров учетной записи
 
 Данная категория содержит правила авторизации по IP и MAC, созданные для определенного пользователя в двух разделах:
 
-* Пользователи -> Учетные записи -> IP и MAC авторизация
+* Пользователи -> Учетные записи -> IP и MAC авторизация:
   ![](../../../.gitbook/assets/userform2.png)
 
-* Пользователи -> [Авторизации](../authorization/README.md) -> [IP и MAC авторизация](../authorization/ip-and-mac-authorization/README.md) 
+* Пользователи -> [Авторизации](../authorization/README.md) -> [IP и MAC авторизация](../authorization/ip-and-mac-authorization/README.md):
  ![](../../../.gitbook/assets/userform3.png)
 
 
