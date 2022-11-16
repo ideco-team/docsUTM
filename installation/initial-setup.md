@@ -83,12 +83,12 @@
 
 Если ваш провайдер использует другой тип подключения, то ознакомиться с остальными инструкциями по настройке вы можете по следующим ссылкам:
 
-* [Подключение по протоколу PPPoE](../settings/services/connection-to-provider/pppoe-connection.md)
-* [Подключение по технологии VPN (с использованием протокола PPTP)](../settings/services/connection-to-provider/pptp-connection.md)
-* [Подключение по L2TP](../settings/services/connection-to-provider/l2tp-connection.md)
-* [Подключение Локального Ethernet](../settings/services/connection-to-provider/local-ethernet.md)
-* [Подключение по 3G и 4G](../settings/services/connection-to-provider/3g-4g-connection.md)
-* [Одновременное подключение к нескольким провайдерам](../settings/services/multiple-simultaneous-connections.md)
+* [Подключение по протоколу PPPoE](../settings/services/connection-to-provider/pppoe-connection.md);
+* [Подключение по технологии VPN (с использованием протокола PPTP)](../settings/services/connection-to-provider/pptp-connection.md);
+* [Подключение по L2TP](../settings/services/connection-to-provider/l2tp-connection.md);
+* [Подключение Локального Ethernet](../settings/services/connection-to-provider/local-ethernet.md);
+* [Подключение по 3G и 4G](../settings/services/connection-to-provider/3g-4g-connection.md);
+* [Одновременное подключение к нескольким провайдерам](../settings/services/multiple-simultaneous-connections.md).
 
 {% hint style="info" %}
 После подключения к Интернету требуется [зарегистрировать сервер](../service/server-registration.md).

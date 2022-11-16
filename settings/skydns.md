@@ -63,9 +63,9 @@ description: Настройка Ideco UTM для фильтрации трафи
 
 **Документация доступна на сайте сервиса:**
 
-* [Активация системы по регистрационному коду](https://www.skydns.ru/guides/activation/)
-* [Руководства по настройке и использованию сервиса](https://www.skydns.ru/guide/)
-* [Настройка профилей и расписания фильтрации](https://www.skydns.ru/guides/profiles/)
+* [Активация системы по регистрационному коду](https://www.skydns.ru/guides/activation/);
+* [Руководства по настройке и использованию сервиса](https://www.skydns.ru/guide/);
+* [Настройка профилей и расписания фильтрации](https://www.skydns.ru/guides/profiles/).
 
 По вопросам настройки сервиса можно обращаться в [техническую поддержку SkyDNS](https://www.skydns.ru/feedback/).
 

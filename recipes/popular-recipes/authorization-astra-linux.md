@@ -43,6 +43,6 @@
 
 ## Для браузера **Firefox**
 
-* Запустить браузер и в адресной строке ввести **about:config**, чтобы попасть в режим редактирования расширенных настроек.
-* Ввести параметр **security.enterprise\_roots.enabled** и нажать по блоку со строчкой два раза левой кнопкой мыши, чтобы значение изменилось на **True.**
+* Запустить браузер и в адресной строке ввести **about:config**, чтобы попасть в режим редактирования расширенных настроек;
+* Ввести параметр **security.enterprise\_roots.enabled** и нажать по блоку со строчкой два раза левой кнопкой мыши, чтобы значение изменилось на **True**;
 * В двух следующих параметрах вписать доменное имя UTM через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** (например, [http://utm.domain.com](http://utm.domain.com), [https://utm.domain.com\\](https://utm.domain.com)).
