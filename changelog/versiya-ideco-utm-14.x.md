@@ -19,7 +19,7 @@
 
 **Новые возможности версии 14**
 
-* Добавлена возможность создания [Агрегированных интерфейсов (LACP)](../settings/services/connection-to-provider/aggregated.md);
+* Добавлена возможность создания [Агрегированных интерфейсов (LACP)](../settings/services/connection-to-provider/README.md);
 * Добавлена возможность создания правил по GeoIP в [Файрволе](../settings/access-rules/firewall.md);
 * Добавлена отчетность по срабатываниям [Web Application Firewall](../settings/reports/security-events.md#web-application-firewall); 
 * Добавлена отправка логов IPS по syslog; 
