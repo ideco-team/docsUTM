@@ -59,6 +59,7 @@
   * [Zabbix агент](settings/monitor/zabbix.md)
 * [Правила трафика](settings/access-rules/README.md)
   * [Файрвол](settings/access-rules/firewall.md)
+    * [Таблицы файрвола (FORWARD, DNAT, INPUT и SNAT)](settings/access-rules/firewall-tables.md)
     * [Логирование](settings/access-rules/logging.md)
   * [Контроль приложений](settings/access-rules/application-control.md)
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
