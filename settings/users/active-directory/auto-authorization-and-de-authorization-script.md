@@ -12,7 +12,7 @@
 
 Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN).
 
-**UTMLogon\_script.vbs**
+Перед началом настройки, создайте файл с именем **UTMLogon_script.ps1** и содержанием:
 
 ```
 Dim IE
@@ -26,6 +26,24 @@ IE.Navigate2("http://ya.ru")
 Wscript.Sleep(20000)
 IE.Quit
 ```
+
+1\. Откройте групповые политики (gpedit.msc) от имени администратора на устройстве пользователя;
+
+2\. Перейдите в **Конфигурации пользователя**, далее в **Конфигурации Windows**:
+
+![](../../../.gitbook/assets/script.png)
+
+4\. Нажмите **Сценарии (вход/выход из системы)**;
+
+5\. Откройте **Выход из системы** и перейдите на вкладку **Сценарии PowerShell**:
+
+![](../../../.gitbook/assets/script1.png)
+
+6\. Нажмите **Добавить** и выберите скачанный файл **Ideco_UTM_VPN_IKEv2.ps1** нажав на кнопку **Обзор**:
+
+![](../../../.gitbook/assets/script2.png)
+
+7\. Обновите групповые политики, выполнив команду `gpupdate /force` в консоли.
 
 ## Разавторизация пользователя
 
@@ -43,29 +61,7 @@ IE.Quit
 
 HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings параметр `WarnonBadCertRecving = 0`
 
-Далее необходимо добавить скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN):
-
-**UTMLogout_script.ps1**
-
-```
-add-type @"
-using System.Net;
-using System.Security.Cryptography.X509Certificates;
-public class TrustAllCertsPolicy : ICertificatePolicy {
-    public bool CheckValidationResult(
-        ServicePoint srvPoint, X509Certificate certificate,
-        WebRequest request, int certificateProblem) {
-        return true;
-    }
-}
-"@
-
-[System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
-[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
-Invoke-RestMethod -Uri "https://<utm ip-adress>:8443/auth/sessions/logout" -Method Delete
-```
-
-Вместо «UTM ip-address» нужно указать IP-адрес локального интерфейса Ideco UTM. При наличии на Ideco UTM нескольких локальных интерфейсов, необходимо указать IP-адрес локального интерфейса из той же подсети, что и компьютер пользователя.
+Далее необходимо добавить скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN).
 
 ## Возможные ошибки при выполнении скриптов
 
