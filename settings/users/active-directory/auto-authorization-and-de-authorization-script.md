@@ -12,7 +12,7 @@
 
 Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN).
 
-Перед началом настройки, создайте файл с именем **UTMLogon_script.ps1** и содержанием:
+Перед началом настройки, создайте файл с именем **UTMLogon_script.vbs** и содержанием:
 
 ```
 Dim IE
