@@ -36,7 +36,7 @@
 
 1\. В консоли UTM ([доступ по SSH](../server-management/admins.md)) ввести команду:
 
-`mcedit /usr/bin/ideco-firewall-static`
+`nano /usr/bin/ideco-firewall-static`
 
 2\. Между строками:
 
