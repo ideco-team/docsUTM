@@ -25,7 +25,11 @@ Ideco Center - это центральная консоль, которая по
 
   ![](../../../.gitbook/assets/central-console1.png)
 
-  Если вместо доменного имени указан IP-адрес Ideco Center, то загрузите корневой сертификат Ideco Center в Ideco UTM. Скачать корневой сертификат можно в Ideco Center, раздел **Сервисы -> Сертификаты**.
+  Если вместо доменного имени указан IP-адрес Ideco Center, то загрузите корневой сертификат Ideco Center в Ideco UTM:
+
+  ![](../../../.gitbook/assets/central-console3.png)
+  
+  Скачать корневой сертификат можно в Ideco Center, раздел **Сервисы -> Сертификаты**.
 
 * В интерфейсе Ideco Center перейдите в раздел **Серверы** и подтвердите подключение кнопкой ![](../../../.gitbook/assets/icon-yes.png).
 
