@@ -1,18 +1,19 @@
 # Если соединение по IPSec не устанавливается
 
-1) Перезагрузите сервисы на стороне головного офиса и филиала, выполнив команду `systemctl restart ideco-ipsec-backend.service && systemctl restart strongswan.service `
+1\) Перезагрузите сервисы на стороне головного офиса и филиала, выполнив команду `systemctl restart ideco-ipsec-backend.service && systemctl restart strongswan.service `
 
-2) Проверьте работоспособность перезагруженных сервисов:
+2\) Проверьте работоспособность перезагруженных сервисов:
+
 * выполните команду `systemctl status strongswan.service`; 
 * перейдите в раздел **Сервисы -> IPSec**. 
   
 Если при переходе в раздел IPSec и выполнении команды возникли ошибки, то перейдите в пункту 3.
 
-1) Пересоздайте соединение из веб-интерфейса по инструкции [Настройка подключения между Филиалом и Главным офисом](../../settings/services/ipsec/branch-office-and-main-office.md#nastroika-podklyucheniya-mezhdu-filialom-i-glavnym-ofisom).  
+3\) Пересоздайте соединение из веб-интерфейса по инструкции [Настройка подключения между Филиалом и Главным офисом](../../settings/services/ipsec/branch-office-and-main-office.md#nastroika-podklyucheniya-mezhdu-filialom-i-glavnym-ofisom).  
 
 Если пересоздание соединения не помогло, перейдите к пункту 4.
 
-4) Проверьте, ходит ли трафик по портам 500 и 4500, выполнив команды `tcpdump -i any port 4500 -ttttnnn` и `tcpdump -i any port 500 -ttttnnn` в головном офисе и филиале./
+4\) Проверьте, ходит ли трафик по портам 500 и 4500, выполнив команды `tcpdump -i any port 4500 -ttttnnn` и `tcpdump -i any port 500 -ttttnnn` в головном офисе и филиале./
 
-Если трафик ходит, то обратитесь в [техническую поддержку](../../general/technical-support.md). \
-Если трафик уходит с одного UTM, но не приходит на второй UTM, обратитесь к провайдеру.
+Если трафик уходит с одного UTM и приходит на второй UTM, то обратитесь в [техническую поддержку](../../general/technical-support.md). \
+Если трафик уходит с одного UT и не приходит на второй UTM, обратитесь к провайдеру.
