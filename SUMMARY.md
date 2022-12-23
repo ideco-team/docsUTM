@@ -172,7 +172,7 @@
   * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
 
 ## changelog
-* [Ideco UTM]
+* [Ideco UTM](changelog/ideco-utm/README.md)
   * [Версия Ideco UTM 12.X](changelog/ideco-utm/versiya-ideco-utm-12.x.md)
   * [Версия Ideco UTM 11.X](changelog/ideco-utm/versiya-ideco-utm-11.x.md)
   * [Версия Ideco UTM 10.X](changelog/ideco-utm/version-10.x.md)
