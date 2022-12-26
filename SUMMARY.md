@@ -189,7 +189,7 @@
     * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
 
 ## changelog
-* [Ideco UTM]
+* [Ideco UTM](changelog/ideco-utm/README.md)
   * [Версия Ideco UTM 13.X](changelog/ideco-utm/versiya-ideco-utm-13.x.md)
   * [Версия Ideco UTM 12.X](changelog/ideco-utm/versiya-ideco-utm-12.x.md)
   * [Версия Ideco UTM 11.X](changelog/ideco-utm/versiya-ideco-utm-11.x.md)
