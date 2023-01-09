@@ -1,14 +1,6 @@
 # Ideco UTM
 
-{% content-ref url="versiya-ideco-utm-15.x.md" %}
-[versiya-ideco-utm-15.x.md](versiya-ideco-utm-15.x.md)
-{% endcontent-ref %}
-
-{% content-ref url="versiya-ideco-utm-14.x.md" %}
-[versiya-ideco-utm-14.x.md](versiya-ideco-utm-14.x.md)
-{% endcontent-ref %}
-
-{% content-ref url=".versiya-ideco-utm-13.x.md" %}
+{% content-ref url="versiya-ideco-utm-13.x.md" %}
 [versiya-ideco-utm-13.x.md](versiya-ideco-utm-13.x.md)
 {% endcontent-ref %}
 
