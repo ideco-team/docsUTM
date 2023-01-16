@@ -56,7 +56,7 @@ description: >-
 * **proto:** UDP - протокол;
 * **alert.signature_id:** 1003892 - ID правила системы предотвращения вторжений;
 * **alert.signature:** Windows Telemetry - сообщение из сработавшего правила;
-* **alert.category:** Telemetry Windows - описание колонки в веб-интерфейсе События безопасности;
+* **alert.category:** Telemetry Windows - описание колонки в веб-интерфейсе События безопасности; \
   Соответствие *alert.category:* -> *alert.signature* описаны в [файле](https://static.ideco.ru/static/alert.category%20-%20alert.signature.pdf).
 * **alert.severity:** 3 - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы;| Обновления Cisco | Cisco Updates,Cisco Updates |
 
