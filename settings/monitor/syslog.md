@@ -27,7 +27,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.100.2	Dec 14 15:48:38		daemon	warning		timestamp:2022-12-14 10:48:34.808465+00:00,flow_id:1189034483406353,in_iface:seq:Leth1:3:m,sensor_name:suricata_debug,event_type:alert,src_ip:192.168.100.11,src_port:61790,src_country:,src_country_code:,src_session_uuid:7100d1c8-017f-4cbf-8b78-482839300211,src_user_id:2,src_user_name:a.istomina,dest_ip:192.168.100.2,dest_port:53,dest_country:,dest_country_code:,dest_session_uuid:,dest_user_id:-1,dest_user_name:,proto:UDP,alert.signature_id:1003892,alert.signature:Windows Telemetry,alert.category:РўРµР»РµРјРµС‚СЂРёСЏ Windows,alert.severity:3,alert.gid:1,alert.action:blocked,http.hostname:,http.url:,http.http_user_agent:,flow.pkts_toserver:1,flow.pkts_toclient:0,flow.bytes_toserver:73,flow.bytes_toclient:0,flow.start:2022-12-14 10:48:34.808465+00:00,flow.end:2022-12-14 10:48:35.580143+00:00,flow.age:0,flow.state:,flow.reason:,flow.alerted:0,tcp.tcp_flags:,tcp.tcp_flags_ts:,tcp.tcp_flags_tc:,tcp.cwr:0,tcp.ecn:0,tcp.urg:0,tcp.ack:0,tcp.psh:0,tcp.rst:0,tcp.syn:0,tcp.fin:0,tcp.state:
+192.168.100.2	Dec 14 15:48:38		daemon	warning		timestamp:2022-12-14 10:48:34.808465+00:00,flow_id:1189034483406353,in_iface:seq:Leth1:3:m,sensor_name:suricata_debug,event_type:alert,src_ip:192.168.100.11,src_port:61790,src_country:,src_country_code:,src_session_uuid:7100d1c8-017f-4cbf-8b78-482839300211,src_user_id:2,src_user_name:a.istomina,dest_ip:192.168.100.2,dest_port:53,dest_country:,dest_country_code:,dest_session_uuid:,dest_user_id:-1,dest_user_name:,proto:UDP,alert.signature_id:1003892,alert.signature:Windows Telemetry,alert.category:Telemetry Windows,alert.severity:3,alert.gid:1,alert.action:blocked,http.hostname:,http.url:,http.http_user_agent:,flow.pkts_toserver:1,flow.pkts_toclient:0,flow.bytes_toserver:73,flow.bytes_toclient:0,flow.start:2022-12-14 10:48:34.808465+00:00,flow.end:2022-12-14 10:48:35.580143+00:00,flow.age:0,flow.state:,flow.reason:,flow.alerted:0,tcp.tcp_flags:,tcp.tcp_flags_ts:,tcp.tcp_flags_tc:,tcp.cwr:0,tcp.ecn:0,tcp.urg:0,tcp.ack:0,tcp.psh:0,tcp.rst:0,tcp.syn:0,tcp.fin:0,tcp.state:
 ```
 {% endcode %}
 
@@ -56,10 +56,10 @@ description: >-
 * **proto:** UDP - протокол;
 * **alert.signature_id:** 1003892 - ID правила системы предотвращения вторжений;
 * **alert.signature:** Windows Telemetry - сообщение из сработавшего правила;
-* **alert.category:** РўРµР»РµРјРµС‚СЂРёСЏ Windows - описание колонки в веб-интерфейсе События безопасности;
-* **alert.severity:** 3 - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы;
-* **alert.gid:** 1 - номер группы правил, всегда принимает значение 1;
-* **alert.action:** blocked - результат анализа(заблокировано или разрешено) .
+* **alert.category:** Telemetry Windows - описание колонки в веб-интерфейсе События безопасности;
+  Соответствие *alert.category:* -> *alert.signature* описаны в [файле](https://static.ideco.ru/static/alert.category%20-%20alert.signature.pdf).
+* **alert.severity:** 3 - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы;| Обновления Cisco | Cisco Updates,Cisco Updates |
+
 
 Служебные поля результата анализа HTTP-трафика. Заполняются в случае, если в процессе анализа трафика был определен HTTP-протокол:
 * **http.hostname:** - идентификатор хоста;
@@ -93,3 +93,94 @@ description: >-
 * **tcp.state:** - [состояния сеанса TCP](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#Состояния_сеанса_TCP).
 
 </details>
+
+<details>
+
+<summary>Файрвол</summary>
+
+{% code overflow="wrap" %}
+```
+ноя 24 09:36:27 localhost ideco-nflog[691]: UDP      src 192.168.100.12   sport 137   dst 40.125.122.151   dport 137   table FWD  rule  1    action accept
+```
+{% endcode %}
+
+* **UDP** - протокол, принимает значения UDP, TCP, ICMP, GRE, ESP и AH;
+* **src** - IP-адрес источника;
+* **dst** -  IP-адрес назначения;
+* **sport** - порт источника для UDP и TCP;
+* **dport** - порт назначения для UDP и TCP;
+* **table** - таблица правил, в которой произошло логирование;
+* **rule** - ID правила из таблицы *rule*;
+* **action** - действие, которое произошло.
+
+</details>
+
+<details>
+
+<summary>Контроль приложений</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:00:15	1	user	err		2023-01-12T11:00:14+05:00 localhost app-control 2027 - - (flow_info_rules_was_checked) 192.168.100.11:52514 -> 192.168.100.2:53 [Amazon] = 'DROP'. 
+```
+{% endcode %}
+
+* **2027** - идентификатор процесса;
+* **192.168.100.11:52514** - ip-адрес источника;
+* **192.168.100.2:53 [Amazon]** = 'DROP' - результат анализа трафика, где  *[Amazon]* название приложения, к которому был применен результат. [Список всех приложений]().
+
+</details>
+
+<details>
+
+<summary>Аутентификация через веб-интерфейс</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:02:15	1	daemon	info		2023-01-12T11:02:14+05:00 localhost fail2ban.filter 779 - - INFO [utm-web-interface] Found 192.168.100.1 - 2023-01-12 11:02:14 
+192.168.100.2	Jan 12 11:02:36	1	daemon	notice		2023-01-12T11:02:35+05:00 localhost fail2ban.actions 779 - - NOTICE [utm-web-interface] Ban 192.168.100.1 
+
+```
+{% endcode %}
+
+* **info** или **notice** - приоритет сообщения в логах в виде информационного сообщения или уведомления;
+* **779** - идентификатор процесса;
+* **INFO [utm-web-interface] Found 192.168.100.1 - 2023-01-12 11:02:14** - факт обнаружения правил безопасности с указанием группы правил ([utm-web-interface]), ip-адреса и дата/время. Список групп правил: 
+  * utm-dovecot;
+  * utm-postfix-connrate.conf;
+  * utm-postscreen-prgrt.conf; 
+  * utm-reverse-proxy.conf;
+  * utm-roundcube.conf;
+  * utm-smtp.conf;
+  * utm-ssh.conf;
+  * utm-two-factor-codes.conf;
+  * utm-vpn-authd.conf;
+  * utm-vpn-pppoe-authd.conf;
+  * utm-web-interface.conf;
+  * utm-wireguard-backend.conf.
+* **NOTICE [utm-web-interface] Ban 192.168.100.1** - факт блокировки или разблокировки ip-адреса, где:
+  * **Ban** - факт блокировки;
+  * **Unban** - факт разблокировки.
+
+</details>
+
+<details>
+
+<summary>Подключение по VPN</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:10:06	1	local0	info		2023-01-12T11:10:05+05:00 localhost ideco-vpn-authd 1356 - - Start vpn authorization ('user_1', '192.168.100.11', 'pptp'). 
+192.168.100.2	Jan 12 11:10:06	1	local0	info		2023-01-12T11:10:05+05:00 localhost ideco-vpn-authd 1356 - - Subnet 10.128.187.17/32 is authorized as user 'user_1'. Connection made from '192.168.100.11', type 'pptp'.
+```
+{% endcode %}
+
+* **1356** - идентификатор процесса;
+* **Start vpn authorization**('user_1', '192.168.100.11', 'pptp') - факт запроса на авторизацию с информацией о запрашиваемом подключении, где:
+  *  **user_1** - логин пользователя; 
+  *  **192.168.100.11** - ip-адрес, откуда установлено подключение;
+  *  **pptp** - протокол.
+* **Subnet 10.128.187.17/32** - факт успешной авторизации с локальным ip-адресом.
+
+</details>
+
