@@ -165,6 +165,7 @@
 
 ## changelog
 
+* [Версия ФСТЕК Ideco UTM 11.Х](changelog/fstek-ideco-utm-11.x.md)
 * [Версия Ideco UTM 11.X](changelog/versiya-ideco-utm-11.x.md)
 * [Версия Ideco UTM 10.X](changelog/version-10.x.md)
 * [Версия Ideco UTM 9.X](changelog/version-9.x.md)
