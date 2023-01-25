@@ -161,7 +161,7 @@
 
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
-* [Популярные инструкции](recipes/popular-recipes/README.md)
+* [FAQ ](recipes/popular-recipes/README.md)
   * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
     * [Создание подключения в Astra Linux](recipes/popular-recipes/vpn/connection-for-astra-linux.md)
