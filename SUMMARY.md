@@ -174,6 +174,7 @@
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
+  * [Порядок обработки веб-трафика в Ideco UTM](recipes/popular-recipes/processing-order.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает Интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
