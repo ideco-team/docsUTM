@@ -14,5 +14,8 @@ dateCreated: '2021-04-02T07:27:12.411Z'
 
 На стороне устройства Keenetic используйте следующие настройки протоколов шифрования:
 
-![](../../../../.gitbook/assets/keenetic_ikev2.jpg)
+![](../../../../.gitbook/assets/keenetic-ikev1.jpg)
 
+![](../../../../.gitbook/assets/keenetic-ikev2.jpg)
+
+![](../../../../.gitbook/assets/keenetic-ikev3.jpg)
