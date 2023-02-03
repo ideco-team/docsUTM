@@ -5,6 +5,11 @@ description: >-
 
 # Центральная консоль
 
+{% hint style="success" %}
+Имя службы раздела **Центральная консоль**: `ideco-central-console-backend.service`. \
+Список служб для других разделов, доступы по [ссылке](../terminal.md).
+{% endhint %}
+
 Ideco Center - это центральная консоль, которая поможет в администрировании сразу нескольких серверов Ideco UTM. 
 
 **Возможности Ideco Center:**
