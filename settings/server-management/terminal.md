@@ -40,5 +40,5 @@
 | Двухфакторная аутентификация	                | ideco-web-authd.service |
 | Active Directory	                            | ideco-ad-backend.service; ideco-ad-log-collector@<имя домена>.service |
 | Ideco агент	                                | ideco-agent-backend.service; ideco-agent-server.service; ideco-agent-websocket.service |
-| syslog	                                    | ideco-monitor-backend.service |
+| Syslog	                                    | ideco-monitor-backend.service |
 | Обнаружение устройств	                        | ideco-netscan-backend.service |
