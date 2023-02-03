@@ -5,6 +5,11 @@ description: >-
 
 # Ideco агент
 
+{% hint style="success" %}
+Имя службы раздела **Ideco агент**: `ideco-agent-backend.service`; `ideco-agent-server.service`; `ideco-agent-websocket.service`. \
+Список служб для других разделов, доступы по [ссылке](../server-management/terminal.md).
+{% endhint %}
+
 {% hint style="warning" %}
 Установить программу Ideco agent можно только на ОС семейства Windows начиная с 8 версии и новее.
 {% endhint %}

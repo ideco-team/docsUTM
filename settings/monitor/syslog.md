@@ -7,6 +7,11 @@ description: >-
 
 # Syslog
 
+{% hint style="success" %}
+Имя службы раздела **Syslog**: `ideco-monitor-backend.service`. \
+Список служб для других разделов, доступы по [ссылке](../server-management/terminal.md).
+{% endhint %}
+
 ## Пересылка системных сообщений
 
 В качестве коллектора можно указывать любой локальный «серый» или публичный «белый» IP-адрес.

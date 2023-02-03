@@ -4,6 +4,11 @@ description: Система обнаружения и предотвращени
 
 # Предотвращение вторжений
 
+{% hint style="success" %}
+Имя службы раздела *Предотвращение вторжений*: `ideco-suricata-backend.service`; `ideco-suricata.service`; `ideco-suricata-event-syncer.service`; `ideco-suricata-event-to-syslog.service`. \
+Список имен служб для других разделов, доступы по [ссылке](../../server-management/terminal.md).
+{% endhint %}
+
 {% hint style="info" %}
 Система предотвращения вторжений доступна только в **Enterprise версии Ideco UTM** для пользователей с активной подпиской на обновления.
 
