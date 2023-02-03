@@ -6,6 +6,11 @@ description: >-
 
 # Прокси
 
+{% hint style="success" %}
+Имя службы раздела **Прокси**: `ideco-proxy-backend.service`; `squid.service`. \
+Список служб для других разделов, доступы по [ссылке](../../server-management/terminal.md).
+{% endhint %}
+
 {% content-ref url="proxy-server.md" %}
 [proxy-server.md](proxy-server.md)
 {% endcontent-ref %}

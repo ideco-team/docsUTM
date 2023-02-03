@@ -1,12 +1,9 @@
 # Сетевые интерфейсы
 
-Подробное описание создания и настройки каждого типа сетевого интерфейса, описаны в следующих инструкциях:
-
-* [Локальный Ethernet](local-ethernet.md);
-* [Внешний Ethernet](ethernet-connection.md);
-* [Ethernet + PPTP](pptp-connection.md);
-* [Ethernet + L2TP](l2tp-connection.md);
-* [Ethernet + PPPoE](pppoe-connection.md).
+{% hint style="success" %}
+Имя службы раздела *Сетевые интерфейсы*: `ideco-network-backend.service`; `ideco-network-nic.service`. \
+Список имен служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
+{% endhint %}
 
 Все созданные интерфейсы представлены в виде таблицы:
 

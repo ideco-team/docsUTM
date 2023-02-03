@@ -7,6 +7,11 @@ description: >-
 
 # Объекты
 
+{% hint style="success" %}
+Имя службы раздела *Объекты*: `ideco-alias-backend.service`. \
+Список имен служб для других разделов, доступы по [ссылке](../server-management/terminal.md).
+{% endhint %}
+
 <details>
 
 <summary>Типы объектов</summary>
