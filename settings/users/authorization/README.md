@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Имя службы раздела **Авторизация**: `ideco-auth-backend.service`. \
-Список служб для других разделов, доступы по [ссылке](../../server-management/terminal.md).
+Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 
 ## Общая информация
