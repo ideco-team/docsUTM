@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Имя службы раздела **Ideco агент**: `ideco-agent-backend.service`; `ideco-agent-server.service`; `ideco-agent-websocket.service`. \
-Список служб для других разделов, доступы по [ссылке](../server-management/terminal.md).
+Список служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 
 {% hint style="warning" %}

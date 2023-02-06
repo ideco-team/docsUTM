@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Имя службы раздела **VPN-подключение**: `ideco-accel-l2tp.service`; `ideco-accel-pptp.service`; `ideco-accel-sstp.service`; `ideco-vpn-servers-backend.service`; `ideco-vpn-authd.service`. \
-Список служб для других разделов, доступы по [ссылке](../../../server-management/terminal.md).
+Список служб для других разделов, доступен по [ссылке](../../../server-management/terminal.md).
 {% endhint %}
 
 {% hint style="success" %}
