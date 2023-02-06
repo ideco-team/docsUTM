@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Имя службы раздела **Автоматическое обновление сервера**: `ideco-sysupdate-backend.service`. \
-Список служб для других разделов, доступы по [ссылке](terminal.md).
+Список служб для других разделов, доступен по [ссылке](terminal.md).
 {% endhint %}
 
 {% hint style="info" %}
