@@ -27,7 +27,8 @@
 | BGP, OSPF	                                    | frr.service; ideco-routing-backend.service |
 | Прокси	                                    | ideco-proxy-backend.service; squid.service |
 | Обратный прокси	                            | ideco-reverse-backend.service |
-| DNS                                  	        | ideco-unbound.service; ideco-dns-backend.service; nsd.service |
+| DNS                                 	        | ideco-unbound.service; ideco-dns-backend.service; nsd.service |
+| DDNS                                 	        | ideco-dns-backend.service |
 | DHCP	                                        | ideco-dnsmasq.service |
 | IPSec	                                        | ideco-ipsec-backend.service; strongswan.service |
 | Центральная консоль	                        | ideco-central-console-backend.service |
