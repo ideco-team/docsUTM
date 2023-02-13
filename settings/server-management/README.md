@@ -4,8 +4,8 @@
 [admins.md](admins.md)
 {% endcontent-ref %}
 
-{% content-ref url="central-console.md" %}
-[central-console.md](central-console.md)
+{% content-ref url="central-console/README.md" %}
+[central-console/README.md](central-console/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="cluster.md" %}
