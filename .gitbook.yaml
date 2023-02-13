@@ -94,3 +94,4 @@ redirects:
   cc_characteristics: ./settings/server-management/central-console/server-management.md
   cc_power: ./settings/server-management/central-console/server-management.md
   cc_additionally: ./settings/server-management/central-console/server-management.md 
+  cc_ddns: ./settings/services/dns/ddns.md
