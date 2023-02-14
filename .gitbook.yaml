@@ -76,6 +76,7 @@ redirects:
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   vpn-connection: ./settings/users/authorization/vpn-connection/README.md
+  ddns: ./settings/services/dns/ddns.md
   cc: ./settings/server-management/central-console/central-console.md
   cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
   cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
@@ -85,6 +86,7 @@ redirects:
   cc_interfaces: ./settings/server-management/central-console/services.md
   cc_routing: ./settings/server-management/central-console/services.md
   cc_certs: ./settings/server-management/central-console/services.md
+  cc_ddns: ./settings/server-management/central-console/services.md
   cc_admins: ./settings/server-management/central-console/server-management.md
   cc_selfupdate: ./settings/server-management/central-console/server-management.md
   cc_backup: ./settings/server-management/central-console/server-management.md
