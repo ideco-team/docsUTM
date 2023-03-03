@@ -203,7 +203,6 @@
 
 ## changelog
 * [Ideco UTM](changelog/ideco-utm/README.md)
-  * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
   * [Версия Ideco UTM 13.X](changelog/ideco-utm/versiya-ideco-utm-13.x.md)
   * [Версия Ideco UTM 12.X](changelog/ideco-utm/versiya-ideco-utm-12.x.md)
@@ -219,4 +218,3 @@
     * [Версия Ideco UTM 7.5.Х](changelog/ideco-utm/version-7.x.x/version-7.5.x.md)
     * [Версия Ideco UTM 7.4.X](changelog/ideco-utm/version-7.x.x/version-7.4.x.md)
 * [ФСТЕК Ideco UTM](changelog/fstek/fstek-ideco-utm-11.x.md)
-* [Ideco Center](changelog/cc/README.md)
