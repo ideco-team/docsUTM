@@ -1,5 +1,5 @@
 # Версия Ideco UTM 10.X
-
+ 
 <details>
 
 <summary>Примечания к релизу Ideco UTM 10.0 build 262</summary>
