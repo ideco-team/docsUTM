@@ -219,3 +219,4 @@
     * [Версия Ideco UTM 7.5.Х](changelog/ideco-utm/version-7.x.x/version-7.5.x.md)
     * [Версия Ideco UTM 7.4.X](changelog/ideco-utm/version-7.x.x/version-7.4.x.md)
 * [ФСТЕК Ideco UTM](changelog/fstek/fstek-ideco-utm-11.x.md)
+* [Ideco Center](changelog/cc/README.md)
