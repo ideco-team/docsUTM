@@ -1,9 +1,34 @@
-# Ideco UTM
+# Ideco Center 13.Х
 
-{% content-ref url="version-14.x.md" %}
-[version-14.x.md](version-14.x.md)
-{% endcontent-ref %}
+{% hint style="info" %}
+Техническая поддержка и обратная связь (поможет нам улучшить продукт):
+* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
+* Электронная почта: help@ideco.ru
+* Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-{% content-ref url="version-14.x.md" %}
-[version-13.x.md](version-13.x.md)
-{% endcontent-ref %}
+[Скачать Ideco Center 14](https://my.ideco.ru/). 
+{% endhint %}
+
+## **IDECO CENTER 13.11 СБОРКА 4 (18.01.2023)**
+
+#### **Исправления и изменения**
+
+* Исправлено автоматическое обновление Ideco Center;
+* Возможность настройки DNS-серверов.
+
+## **IDECO CENTER 13.9 СБОРКА 25 (22.12.2022)**
+
+#### **Исправления и изменения**
+ 
+* Добавлен статус подключения Ideco UTM к Ideco Center; 
+* Исправлено отображение данных Графика загруженности в подключенных UTM; 
+* Добавлено отображение времени последнего подключения и последней синхронизации Ideco Center к Ideco UTM; 
+
+## **IDECO CENTER 13.0 СБОРКА 504 (25.09.2022)**
+
+#### Новые возможности
+
+* Возможность создания и распространения правил Файрвола в подключенные Ideco UTM;
+* Возможность создания и распространения Объектов в подключенные Ideco UTM;
+* Возможность перехода в веб-интерфейс подключенных Ideco UTM из Ideco Center.
