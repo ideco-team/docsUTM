@@ -6,8 +6,6 @@
 * Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
 * Электронная почта: help@ideco.ru
 * Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
-
-[Скачать Ideco Center 14](https://my.ideco.ru/). 
 {% endhint %}
 
 ## **IDECO CENTER 13.11 СБОРКА 4 (18.01.2023)**
