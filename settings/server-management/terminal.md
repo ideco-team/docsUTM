@@ -15,7 +15,7 @@
 
 | Раздел                                        | Имя службы   |
 | :-------------------------------------------- | :------------------------- |
-| Файрвол                                       | ideco-firewall-backend.service |
+| Файрвол                                       | ideco-firewall-backend.service; ideco-nflog.service |
 | Контроль приложений                           | ideco-app-backend.service; ideco-app-control@Leth<номер локального интерфейса>.service |
 | Контент-фильтр                                | ideco-content-filter-backend.service |
 | Ограничение скорости                          | ideco-shaper-backend.service |
