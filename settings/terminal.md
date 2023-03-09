@@ -16,7 +16,8 @@ dateCreated: '2021-04-02T07:20:17.024Z'
 
 ## Основные команды
 
-* **Утилиты сетевой диагностики:** `ping`, `host`, `nslookup`, `tracepath`, `tcpdump`, `arping`, `mtr`.
-* **Файловый менеджер:** `mc`.
-* **Просмотр логов:** `journalctl -u *название службы*` \(например, `journalctl -u ideco-routing-backend`\).
+* **Утилиты сетевой диагностики:** `ping`, `host`, `nslookup`, `tracepath`, `tcpdump`, `arping`, `ss` (аналог `netstat`);
+* **Файловый редактор:** `nano`;
+* **Просмотр логов:** `journalctl -u <название службы>` (например, `journalctl -u ideco-routing-backend`);
+* **Проверка скорости интернета:** `speedtest-cli`.
 
