@@ -44,7 +44,7 @@
   * [Интеграция с Active Directory](settings/users/active-directory/README.md)
     * [Авторизация пользователей Active Directory](settings/users/active-directory/active-directory-user-authorization.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
-    * [Скрипты автоматической авторизации и разавторизации.](settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
+    * [Скрипты автоматической разавторизации.](settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)

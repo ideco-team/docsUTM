@@ -1,31 +1,14 @@
-# Скрипты автоматической авторизации и разавторизации 
+# Скрипты автоматической разавторизации 
 
-Авторизация и разавторизация пользователей возможна в полностью автоматическом режиме.
+Разавторизация пользователей возможна в полностью автоматическом режиме.
 
-Для этого нужно настроить скрипты, исполняемые при входе пользователей в систему [logon](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN) и выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN). Это можно сделать, например, с помощью групповых политик домена (GPO).
+Для этого нужно настроить скрипт, исполняемый при выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN). Это можно сделать, например, с помощью групповых политик домена (GPO).
 
 {% hint style="info" %}
-Для работы данных скриптов необходимо выполнить все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](active-directory-user-authorization.md).
+Для работы данных скрипта необходимо выполнить все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](active-directory-user-authorization.md).
+
+Для авторизации по SSO используйте [Ideco агент](../ideco-agent.md).
 {% endhint %}
-
-## Авторизация пользователя
-
-Необходимо добавить скрипт в сценарии, выполняемые [при входе в систему](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770908\(v=ws.11\)?redirectedfrom=MSDN).
-
-Перед началом настройки, создайте файл с именем **UTMLogon_script.vbs** и содержанием:
-
-```
-Dim IE
-Set IE = CreateObject("InternetExplorer.Application")
-IE.Visible = True
-IE.Fullscreen = False
-IE.Toolbar = False
-IE.StatusBar = False
-Wscript.Sleep(3000)
-IE.Navigate2("http://ya.ru")
-Wscript.Sleep(20000)
-IE.Quit
-```
 
 ## Разавторизация пользователя
 
