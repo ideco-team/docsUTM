@@ -98,7 +98,7 @@
     * [Forward-зоны](settings/services/dns/forward-zon.md)
     * [DDNS](settings/services/dns/ddns.md)
     * [NextDNS](settings/services/dns/nextdns.md)
-  * [DHCP](settings/services/dhcp.md)
+  * [DHCP-сервер](settings/services/dhcp.md)
   * [IPSec](settings/services/ipsec/README.md)
     * [Филиалы и главный офис](settings/services/ipsec/branch-office-and-main-office.md)
     * [Подключение устройств](settings/services/ipsec/connecting-devices.md)
