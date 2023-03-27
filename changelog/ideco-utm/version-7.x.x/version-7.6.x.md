@@ -26,7 +26,7 @@
 
 **Исправления и изменения**
 
-* Новая версия модуля "Контроль приложений": добавлена возможность блокирования приложений GoogleDocs, GoogleServices, GooglePlus, AmazonVideo, ApplePush, WhatsApp file exchange. Улучшена блокировка: WhatsApp, Google Drive, Skype.
+* Новая версия модуля **Контроль приложений**: добавлена возможность блокирования приложений GoogleDocs, GoogleServices, GooglePlus, AmazonVideo, ApplePush, WhatsApp file exchange. Улучшена блокировка: WhatsApp, Google Drive, Skype.
 * Обновлен веб-интерфейс встроенного почтового сервера Roundecube до версии, включающей исправления безопасности.
 * Обновлен список корневых DNS-серверов.
 * Улучшено логирование ошибок прокси-сервера \(уменьшено количество сообщений в логах\).

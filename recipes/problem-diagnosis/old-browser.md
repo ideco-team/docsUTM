@@ -1,4 +1,4 @@
-# Ошибка при авторизации "The browser is outdated"
+# Ошибка при авторизации The browser is outdated
 
 Если вы используете браузер, который не поддерживает UTM, то при авторизации появится ошибка **Your browser is outdated. This version of browser is unsecure and unsupported by modern web-technologies. Please, install the latest version of one of the listed browsers**.
 
