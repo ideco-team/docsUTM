@@ -7,7 +7,7 @@ description: >-
 # Кластеризация
 
 {% hint style="success" %}
-Имя службы раздела **Кластеризация**: `ideco-cluster-backend.service`; `ideco-cluster-backup-pusher.service`. \
+Название службы раздела **Кластеризация**: `ideco-cluster-backend.service`; `ideco-cluster-backup-pusher.service`. \
 Список служб для других разделов, доступен по [ссылке](terminal.md).
 {% endhint %}
 

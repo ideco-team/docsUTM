@@ -8,7 +8,7 @@ description: >-
 # DNS
 
 {% hint style="success" %}
-Имя службы раздела **DNS**: `ideco-unbound.service`; `ideco-dns-backend.service; nsd.service`. \
+Название службы раздела **DNS**: `ideco-unbound.service`; `ideco-dns-backend.service; nsd.service`. \
 Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 

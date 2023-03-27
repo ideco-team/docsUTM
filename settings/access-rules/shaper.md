@@ -7,7 +7,7 @@ description: >-
 # Ограничение скорости
 
 {% hint style="success" %}
-Имя службы раздела *Ограничение скорости*: `ideco-firewall-backend.service`. \
+Название службы раздела *Ограничение скорости*: `ideco-firewall-backend.service`. \
 Список имен служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

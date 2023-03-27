@@ -8,7 +8,7 @@ description: >-
 # Объекты
 
 {% hint style="success" %}
-Имя службы раздела *Объекты*: `ideco-alias-backend.service`. \
+Название службы раздела *Объекты*: `ideco-alias-backend.service`. \
 Список имен служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

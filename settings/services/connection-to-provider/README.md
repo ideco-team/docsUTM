@@ -1,7 +1,7 @@
 # Сетевые интерфейсы
 
 {% hint style="success" %}
-Имя службы раздела *Сетевые интерфейсы*: `ideco-network-backend.service`; `ideco-network-nic.service`. \
+Название службы раздела *Сетевые интерфейсы*: `ideco-network-backend.service`; `ideco-network-nic.service`. \
 Список имен служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 
