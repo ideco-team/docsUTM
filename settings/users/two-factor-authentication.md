@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Двухфакторная аутентификация**: `ideco-web-authd.service`. \
-Список служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 
 {% hint style="info" %}

@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Название службы раздела **IPSec**: `ideco-ipsec-backend.service`; `strongswan.service`. \
-Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
 
 Особенность работы некоторых Cisco: Если в подключении site2site активную сторону представляет Cisco и Child_SA закрывается, то пассивная сторона не сможет отправить пакет в сторону Cisco, пока Cisco не создаст новый Child_SA.
 {% endhint %}

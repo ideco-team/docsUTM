@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Active Directory**: `ideco-ad-backend.service`; `ideco-ad-log-collector@<имя домена>.service`. \
-Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 
 Импортируются учетные записи и номера телефонов, исключая пароли. При прохождении пользователем процедуры аутентификации, проверка осуществляется средствами Active Directory.
