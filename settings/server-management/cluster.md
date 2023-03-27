@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Кластеризация**: `ideco-cluster-backend.service`; `ideco-cluster-backup-pusher.service`. \
-Список служб для других разделов, доступен по [ссылке](terminal.md).
+Список служб для других разделов доступен по [ссылке](terminal.md).
 {% endhint %}
 
 Каждое из двух устройств Ideco UTM называется нодой.
