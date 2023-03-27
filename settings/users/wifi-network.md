@@ -27,7 +27,7 @@ description: Настройка режимов точки доступа и ро
 Пример настройки интерфейса для клиентов, подключающихся по Wi-Fi представлен\
 на скриншоте ниже:
 
-<img src="../../.gitbook/assets/utm-interfaces-for-wifi.png" alt="" data-size="original">
+![](../../.gitbook/assets/wifi-network.png)
 
 * **10.0.1.2/24** - шлюз для беспроводной Wi-Fi сети;
 * **10.0.0.1/24** - шлюз для локальной Ethernet-сети.
@@ -50,9 +50,9 @@ description: Настройка режимов точки доступа и ро
 
 Пароль у пользователя может быть любой.
 
-<img src="../../.gitbook/assets/router_user.png" alt="" data-size="original">
+![](../../.gitbook/assets/wifi-network1.png)
 
-2\. В разделе **Пользователи -> Авторизация -> IP-авторизация** создайте правило следующего вида:
+2\. В разделе **Пользователи -> Авторизация -> IP и MAC авторизация** создайте правило следующего вида:
 
 ![](../../.gitbook/assets/user-ip-authorization-rule.png)
 

@@ -43,7 +43,7 @@ description: Настройка Ideco UTM для фильтрации трафи
 
 Создав правило:
 
-![](../.gitbook/assets/ip-kf.png)
+![](../.gitbook/assets/skydns1.png)
 
 6\. Если провайдер предоставляет вам статический белый IP-адрес, то привяжите этот адрес к аккаунту SkyDNS в [личном кабинете](https://www.skydns.ru/auth/login/?next=/cabinet/guide/) на сайте SkyDNS (в разделе **Настройки -> Сети**).
 
