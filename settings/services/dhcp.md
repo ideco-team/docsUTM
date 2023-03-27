@@ -7,7 +7,7 @@ description: >-
 # DHCP
 
 {% hint style="success" %}
-Имя службы раздела **DHCP**: `ideco-dnsmasq.service`. \
+Название службы раздела **DHCP**: `ideco-dnsmasq.service`. \
 Список служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

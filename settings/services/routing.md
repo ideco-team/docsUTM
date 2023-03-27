@@ -7,7 +7,7 @@ description: >-
 # Маршрутизация
 
 {% hint style="success" %}
-Имя службы раздела **Маршрутизация**: `ideco-routing-backend.service`. \
+Название службы раздела **Маршрутизация**: `ideco-routing-backend.service`. \
 Список служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

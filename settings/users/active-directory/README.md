@@ -7,7 +7,7 @@ description: >-
 # Интеграция с Active Directory
 
 {% hint style="success" %}
-Имя службы раздела **Active Directory**: `ideco-ad-backend.service`; `ideco-ad-log-collector@<имя домена>.service`. \
+Название службы раздела **Active Directory**: `ideco-ad-backend.service`; `ideco-ad-log-collector@<имя домена>.service`. \
 Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 

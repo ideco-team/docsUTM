@@ -6,7 +6,7 @@ description: >-
 # Ideco агент
 
 {% hint style="success" %}
-Имя службы раздела **Ideco агент**: `ideco-agent-backend.service`; `ideco-agent-server.service`; `ideco-agent-websocket.service`. \
+Название службы раздела **Ideco агент**: `ideco-agent-backend.service`; `ideco-agent-server.service`; `ideco-agent-websocket.service`. \
 Список служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

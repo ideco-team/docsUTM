@@ -1,7 +1,7 @@
 # IPSec
 
 {% hint style="success" %}
-Имя службы раздела **IPSec**: `ideco-ipsec-backend.service`; `strongswan.service`. \
+Название службы раздела **IPSec**: `ideco-ipsec-backend.service`; `strongswan.service`. \
 Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 

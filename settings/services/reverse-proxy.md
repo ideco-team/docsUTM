@@ -7,7 +7,7 @@ description: >-
 # Обратный прокси
 
 {% hint style="success" %}
-Имя службы раздела **Обратный прокси**: `ideco-reverse-backend.service`. \
+Название службы раздела **Обратный прокси**: `ideco-reverse-backend.service`. \
 Список служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 
