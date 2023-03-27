@@ -1,8 +1,8 @@
 # Лицензия
 
 {% hint style="success" %}
-Имя службы раздела **Лицензия**: `ideco-license-backend.service`. \
-Список служб для других разделов, доступен по [ссылке](terminal.md). \
+Название службы раздела **Лицензия**: `ideco-license-backend.service`. \
+Список служб для других разделов доступен по [ссылке](terminal.md). \
 Для привязки лицензии к Ideco UTM версии 7.9.3, обратитесь в [техническую поддержку](../general/technical-support.md).
 {% endhint %}
 

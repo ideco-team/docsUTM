@@ -61,7 +61,7 @@
 Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации. Обязательно ознакомьтесь с [примечаниями](https://docviewer.yandex.ru/view/762948562/?\*=scbElzBZS8bzWEgIVWPBITaxE0J7InVybCI6InlhLWRpc2stcHVibGljOi8vSm53SWhyV3pOekZhSkpjcHh1NmlVenNsVU45V1NxOUtsNkE0bkRFWHJPV1NHd1JTT2x3a2Z4UFRURFRiano1dnEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoiSWRlY29fVVRNXzlfbm90ZXMucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3NjI5NDg1NjIiLCJ0cyI6MTYyNTIxMjg0MjMzNSwieXUiOiI2ODQyMDgzNTIxNjI0OTc1MjQxIn0%3D) к релизу.\
 **Исправления и изменения**
 
-* Добавлена вкладка Telegram бот в раздел "Мониторинг";
+* Добавлена вкладка Telegram бот в раздел **Мониторинг**;
 * Исправлены некоторые ошибки.
 
 ## **IDECO UTM 9.4 СБОРКА 3 (5.02.2021)**

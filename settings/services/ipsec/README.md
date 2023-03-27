@@ -1,8 +1,8 @@
 # IPSec
 
 {% hint style="success" %}
-Имя службы раздела **IPSec**: `ideco-ipsec-backend.service`; `strongswan.service`. \
-Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
+Название службы раздела **IPSec**: `ideco-ipsec-backend.service`; `strongswan.service`. \
+Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 
 {% content-ref url="branch-office-and-main-office.md" %}

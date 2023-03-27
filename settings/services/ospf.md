@@ -79,7 +79,7 @@
 * Укажите необходимые интерфейсы, но БЕЗ статичных маршрутов:
     ![](../../.gitbook/assets/ospf-mikrotik3.png)
 * Для начала установки введите **i** и нажмите **Enter**;
-* Появится сообщение "All data on the disk will be erased. Continue?", ведите **y** и нажмите **Enter**:
+* Появится сообщение **All data on the disk will be erased. Continue?**, ведите **y** и нажмите **Enter**:
     ![](../../.gitbook/assets/ospf-mikrotik1.png)
 
 2\. После установки RouterOS, требуется его перезагрузить, нажав **Enter**:

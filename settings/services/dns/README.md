@@ -8,8 +8,8 @@ description: >-
 # DNS
 
 {% hint style="success" %}
-Имя службы раздела **DNS**: `ideco-unbound.service`; `ideco-dns-backend.service; nsd.service`. \
-Список служб для других разделов, доступен по [ссылке](../../server-management/terminal.md).
+Название службы раздела **DNS**: `ideco-unbound.service`; `ideco-dns-backend.service; nsd.service`. \
+Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 
 Настройка производится в разделе **Сервер -> DNS** в следующих вкладках:
