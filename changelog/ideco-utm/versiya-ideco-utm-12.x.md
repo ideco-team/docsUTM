@@ -19,7 +19,7 @@
 **Новые возможности версии 12**
 
 * Новая платформа на базе ядра Linux 5.15;
-* Добавлена возможность создать правило авторизации только по [MAC-адресу](/settings/users/authorization/IP-and-MAC-authorization/mac.md);
+* Добавлена возможность создать правило авторизации только по [MAC-адресу](../../settings/users/authorization/ip-and-mac-authorization/mac-authorization.md);
 * Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS;
 * Добавлена динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md);
 * Добавлена возможность возврата на прошлую версию после обновления;
