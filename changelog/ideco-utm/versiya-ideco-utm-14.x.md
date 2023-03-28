@@ -19,17 +19,17 @@
 
 **Новые возможности версии 14**
 
-* Добавлена возможность создания [Агрегированных интерфейсов (LACP)](../settings/services/connection-to-provider/README.md);
-* Добавлена возможность создания правил по GeoIP в [Файрволе](../settings/access-rules/firewall.md);
-* Добавлена отчетность по срабатываниям [Web Application Firewall](../settings/reports/security-events.md#web-application-firewall); 
+* Добавлена возможность создания [Агрегированных интерфейсов (LACP)](../../settings/services/connection-to-provider/README.md);
+* Добавлена возможность создания правил по GeoIP в [Файрволе](../../settings/access-rules/firewall.md);
+* Добавлена отчетность по срабатываниям [Web Application Firewall](../../settings/reports/security-events.md);
 * Добавлена отправка логов IPS по syslog; 
-* Добавлен объект [**Список IP-адресов**](../settings/access-rules/aliases.md) с возможностью добавления списка IP и сетей из файла;
+* Добавлен объект [**Список IP-адресов**](../../settings/access-rules/aliases.md) с возможностью добавления списка IP и сетей из файла;
 * Добавлена возможность скрытия панели меню; 
-* Добавлено действие **Перенаправить на** при создании правила в [Контент-фильтре](../settings/access-rules/content-filter/README.md);
-* Добавлена возможность исключения пользователя или группы пользователей из обработки [Предотвращения вторжений](../settings/services/ipsec/README.md), [Контролем приложений ](../settings/access-rules/application-control.md) и [Ограничения скорости](../settings/access-rules/shaper.md) в разделе **Правила трафика -> Исключения**;
-* Добавлена колонка **ID** правил в таблице [Файрвола](../settings/access-rules/firewall.md); 
-* Реализована возможность логирования срабатываний правил [Файрвола](../settings/access-rules/firewall.md);
-* Добавлен WHOIS по IP-адресам в таблице [Предотвращения вторжений](../settings/services/ipsec/README.md);
+* Добавлено действие **Перенаправить на** при создании правила в [Контент-фильтре](../../settings/access-rules/content-filter/README.md);
+* Добавлена возможность исключения пользователя или группы пользователей из обработки [Предотвращения вторжений](../../settings/services/ipsec/README.md), [Контролем приложений ](../../settings/access-rules/application-control.md) и [Ограничения скорости](../../settings/access-rules/shaper.md) в разделе **Правила трафика -> Исключения**;
+* Добавлена колонка **ID** правил в таблице [Файрвола](../../settings/access-rules/firewall.md); 
+* Реализована возможность логирования срабатываний правил [Файрвола](../../settings/access-rules/firewall.md);
+* Добавлен WHOIS по IP-адресам в таблице [Предотвращения вторжений](../../settings/services/ipsec/README.md);
 * Добавлена возможность скрытия панели меню.
 
 
