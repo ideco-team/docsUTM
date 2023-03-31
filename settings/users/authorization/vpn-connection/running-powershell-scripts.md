@@ -4,7 +4,7 @@ description: >-
   VPN-подключения в ОС Windows версий 8.1 и 10.
 ---
 
-# Инструкция по запуску PowerShell скриптов connection-for-windows.md
+# Инструкция по запуску PowerShell скриптов 
 
 Если вы используете Windows 7, необходимо создать подключение вручную(см. статью [Создание VPN-подключений на стороне пользователя вручную](../../../../recipes/popular-recipes/vpn/connection-for-windows7.md)).
 
