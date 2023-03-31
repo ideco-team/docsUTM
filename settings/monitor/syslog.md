@@ -138,6 +138,39 @@ description: >-
 
 <details>
 
+<summary>Контент-фильтр</summary>
+
+Просмотр логов доступен в веб-интерфейсе в разделе **Мониторинг -> Журналы**. Название служб для фильтрации: ideco-content-filter-backend и squid ().
+
+Пример блокировки ресурса:
+
+{% code overflow="wrap" %}
+```
+192.168.101.130    Mar 31 14:56:57    1    daemon    info        2023-03-31T14:56:56+05:00 localhost squid 5950 - - 192.168.101.131 - - [31/Mar/2023:14:56:56 +0500] "GET https://www.igromania.ru/? HTTP/1.1" 403 7455 "https://yandex.ru/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" TCP_DENIED:HIER_NONE "Custom deny 8 Игры extended.id.21 group.id.1 " 
+```
+{% endcode %}
+
+* **5950** - идентификатор процесса;
+* **192.168.101.131** - IP-адрес пользователя;
+* **[31/Mar/2023:14:56:56 +0500] "GET https://www.igromania.ru/? HTTP/1.1**:
+  * **[31/Mar/2023:14:56:56 +0500]** - дата/время события блокировки;
+  * **GET** - метод;
+  * **https://www.igromania.ru/?** - URL заблокированного ресурса;
+  * **HTTP/1.1** - протокол; 
+* **403** - код состояния HTTP;
+* **7455** - передано байт (в ответ, включая HTTP заголовок);
+* **https://yandex.ru/** - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
+* **Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0** - цифровой отпечаток браузера; 
+* **TCP_DENIED:HIER_NONE** - техническое сообщение от [squid](http://wiki.squid-cache.org/SquidFaq/SquidLogs#Squid_result_codes);
+* **Custom deny 8 Игры extended.id.21 group.id.1**:
+  * **Custom deny 8 Игры** - описание и номер правила блокировки;
+  * **extended.id.21** - категория сайта;
+  * **group.id.1** - значение поля **Применяется для** в сработавшем правиле.
+
+</details>
+
+<details>
+
 <summary>Аутентификация через веб-интерфейс</summary>
 
 {% code overflow="wrap" %}
