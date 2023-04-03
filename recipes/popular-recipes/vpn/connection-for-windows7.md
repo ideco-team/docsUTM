@@ -11,7 +11,7 @@
 ## Создание VPN-подключения в Windows 7
 
 {% hint style="warning" %}
-L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPSec.
+L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPsec.
 {% endhint %}
 
 Перед созданием VPN-подключения для протоколов SSTP, L2TP и IKEv2, следует установить корневой сертификат локально на компьютер:
