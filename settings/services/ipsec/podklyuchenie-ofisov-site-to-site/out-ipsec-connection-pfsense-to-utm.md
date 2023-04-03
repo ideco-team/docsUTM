@@ -16,7 +16,7 @@
 
 ## Настройка pfSense
 
-1\. В веб-интерфейсе pfSense перейдите на вкладку **VPN > IPSec > Advanced Options** и в поле **Child SA Start Action** выберите параметр **None (Responder Only)**.
+1\. В веб-интерфейсе pfSense перейдите на вкладку **VPN > IPsec > Advanced Options** и в поле **Child SA Start Action** выберите параметр **None (Responder Only)**.
 
 2\. Добавьте новое подключение:
 

@@ -10,9 +10,9 @@
 
 <details>
 
-<summary>Протокол L2TP/IPSec</summary>
+<summary>Протокол L2TP/IPsec</summary>
 
-**Важно:** L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPSec.
+**Важно:** L2TP IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения если их более одного. Решить проблему может помочь [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPsec.
 
 Вы можете запустить следующий скрипт PowerShell для автоматического создания подключения на компьютерах пользователей с Windows 8.1 и 10. Для этого скачайте готовые скрипты подключения вашего сервера из раздела **Пользователи -> VPN-подключения -> Основное**.
 
@@ -132,7 +132,7 @@ Add-VpnConnection `
 
 <details>
 
-<summary>Протокол IPSec IKEv2</summary>
+<summary>Протокол IPsec IKEv2</summary>
 
 Запустить скрипт PowerShell для автоматического создания подключения на компьютерах пользователей с Windows 8.1 и 10, скачав готовый скрипт из раздела **Пользователи -> VPN-подключение -> Основное**.
 

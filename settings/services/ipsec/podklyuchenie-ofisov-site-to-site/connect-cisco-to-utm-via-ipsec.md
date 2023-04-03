@@ -4,7 +4,7 @@ description: >-
   использованием PSK.
 ---
 
-# Входящее подключение Cisco IOS к Ideco UTM по IPSec
+# Входящее подключение Cisco IOS к Ideco UTM по IPsec
 
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
@@ -65,7 +65,7 @@ write memory
 
 7\. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет.** Для этого перейдите на какой-нибудь сайт (например: [https://www.cisco.com/](https://www.cisco.com)) с устройства в локальной сети Cisco.
 
-## Шаг 3. Настройка IKEv2+IPSec на Cisco
+## Шаг 3. Настройка IKEv2+IPsec на Cisco
 
 1\. Создание proposal (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939\_\_GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)на официальном сайте Cisco):
 
@@ -164,7 +164,7 @@ end
 write memory
 ```
 
-## Шаг 4. Создание входящего IPSec подключения на UTM
+## Шаг 4. Создание входящего IPsec подключения на UTM
 
 1\. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства**.
 
@@ -186,7 +186,7 @@ write memory
 
 ## Итоговая конфигурация Cisco IOS
 
-Итоговая конфигурация IKEv2 IPSec на Cisco IOS должна выглядеть следующим образом:
+Итоговая конфигурация IKEv2 IPsec на Cisco IOS должна выглядеть следующим образом:
 
 ```
 crypto ikev2 proposal ikev2proposal 
