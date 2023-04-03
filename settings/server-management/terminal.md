@@ -30,7 +30,7 @@
 | Обратный прокси	                            | ideco-reverse-backend.service |
 | DNS                                  	        | ideco-unbound.service; ideco-dns-backend.service; nsd.service |
 | DHCP	                                        | ideco-dnsmasq.service |
-| IPSec	                                        | ideco-ipsec-backend.service; strongswan.service |
+| IPsec	                                        | ideco-ipsec-backend.service; strongswan.service |
 | Центральная консоль	                        | ideco-central-console-backend.service |
 | Кластеризация	                                | ideco-cluster-backend.service; ideco-cluster-backup-pusher.service |
 | Автоматическое обновление	                    | ideco-sysupdate-backend.service |
