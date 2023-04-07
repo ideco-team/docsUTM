@@ -52,6 +52,7 @@
   * [Журналы](settings/monitor/logs.md)
   * [График загруженности](settings/monitor/workload-schedule.md)
   * [Монитор трафика](settings/monitor/traffic.md)
+  * [Проверка IP/домена](settings/monitor/ip-check.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
   * [Syslog](settings/monitor/syslog.md)
