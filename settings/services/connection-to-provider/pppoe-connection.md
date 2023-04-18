@@ -28,4 +28,4 @@ description: >-
 
 **Пример настройки:**
 
-![](../../../.gitbook/assets/ethernet+pppoe.png)
+![](../../../.gitbook/assets/pppoe-connection.png)

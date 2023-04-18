@@ -31,4 +31,4 @@ description: >-
 
 **Пример настройки:**
 
-![](../../../.gitbook/assets/ethernet+l2tp.png)
+![](../../../.gitbook/assets/l2tp-connection.png)
