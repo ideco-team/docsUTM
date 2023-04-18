@@ -31,4 +31,4 @@ description: >-
 
 **Пример настройки подключения по PPTP:**
 
-![](../../../.gitbook/assets/ethernet+pptp.png)
+![](../../../.gitbook/assets/pptp-connection.png)
