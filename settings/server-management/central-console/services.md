@@ -12,7 +12,7 @@
 * **Шлюз** - IP-адрес шлюза;
 * **DNS** - Доступно два поля для указания DNS сервера (необязательно).
 
-![](../../../.gitbook/assets/create-local-ethernet.png)
+![](../../../.gitbook/assets/services.png)
 
 ## Маршрутизация
 
