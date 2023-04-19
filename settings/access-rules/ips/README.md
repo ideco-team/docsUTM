@@ -25,7 +25,7 @@ description: Система обнаружения и предотвращени
 
 Передвинув выключатель (слева от названия раздела) вправо или влево можно соответственно включить/выключить службу предотвращения вторжений.
 
-![](../../../.gitbook/assets/suricata-on-off.gif)
+![](../../../.gitbook/assets/suricata-r.gif)
 
 Для добавления правила нажмите кнопку **Добавить** и в поле **Подсеть** добавьте локальные сети, обслуживаемые UTM. Как правило, это сети локальных интерфейсов UTM, а также маршрутизируемые на них сети удаленных сегментов локальной сети вашего предприятия.
 
@@ -43,11 +43,11 @@ description: Система обнаружения и предотвращени
 
 Предупреждение системы предотвращения вторжений:
 
-![](../../../.gitbook/assets/ex2suricata.png)
+![](../../../.gitbook/assets/suricata-r1.png)
 
-Таким образом, на вкладке **Правила** можно открыть найденную группу по **Наименованию правила**, нажать на ![](../../../.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
+Таким образом, на вкладке **Правила** можно открыть найденную группу по **Событию безопасности**, нажать на ![](../../../.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
 
-`drop dns $HOME_NET any -> any any (msg:"ET DNS Query for .cc TLD"; dns.query; content:".cc"; endswith; fast_pattern; classtype:bad-unknown; sid:2027758; rev:5; metadata:affected_product Any, attack_target Client_Endpoint, created_at 2019_07_26, deployment Perimeter, former_category DNS, signature_severity Minor, updated_at 2020_09_17;)`
+`alert http $EXTERNAL_NET any -> any any (msg:"ET SCAN Zmap User-Agent (Inbound)"; flow:established,to_server; http.user_agent; content:"Mozilla/5.0 zgrab/0.x"; depth:21; endswith; classtype:network-scan; sid:2029054; rev:2; metadata:created_at 2019_11_26, former_category SCAN, updated_at 2020_10_23;)`
 
 Можно проанализировать IP-адрес, с которым была попытка подозрительного соединения, через [whois](https://www.nic.ru/whois/).
 
