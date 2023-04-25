@@ -45,6 +45,7 @@
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
     * [Скрипты автоматической разавторизации.](settings/users/active-directory/auto-authorization-and-de-authorization-script.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
+  * [ALD Pro](settings/users/ald-pro.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
