@@ -44,3 +44,4 @@
 | Ideco агент	                                | ideco-agent-backend.service; ideco-agent-server.service; ideco-agent-websocket.service |
 | Syslog	                                    | ideco-monitor-backend.service |
 | Обнаружение устройств	                        | ideco-netscan-backend.service |
+| Web Application Firewall                      | ideco-waf-backend.service; ideco-waf-event-syncer.service |
