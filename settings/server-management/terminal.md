@@ -15,33 +15,33 @@
 
 | Раздел                                        | Имя службы   |
 | :-------------------------------------------- | :------------------------- |
-| Файрвол                                       | ideco-firewall-backend.service; ideco-nflog.service |
-| Контроль приложений                           | ideco-app-backend.service; ideco-app-control@Leth<номер локального интерфейса>.service |
-| Контент-фильтр                                | ideco-content-filter-backend.service |
-| Ограничение скорости                          | ideco-shaper-backend.service |
-| Антивирусы веб-трафика                        | ideco-av-backend.service; clamav-freshclam.service; ideco-clamd.service; kav-scanner.service |
-| Предотвращение вторжений                      | ideco-suricata-backend.service; ideco-suricata.service; ideco-suricata-event-syncer.service; ideco-suricata-event-to-syslog.service |
-| Объекты                                       | ideco-alias-backend.service |
-| Квоты                                         | ideco-quotas-backend.service; systemd-quotacheck.service |
-| Сетевые интерфейсы                            | ideco-network-backend.service; ideco-network-nic.service |
-| Балансировка и резервирование, Маршрутизация  | ideco-routing-backend.service |
-| BGP, OSPF	                                    | frr.service; ideco-routing-backend.service |
-| Прокси	                                    | ideco-proxy-backend.service; squid.service |
-| Обратный прокси	                            | ideco-reverse-backend.service |
-| DNS                                 	        | ideco-unbound.service; ideco-dns-backend.service; nsd.service |
-| DDNS                                 	        | ideco-dns-backend.service |
-| DHCP	                                        | ideco-dnsmasq.service |
-| IPsec	                                        | ideco-ipsec-backend.service; strongswan.service |
-| Центральная консоль	                        | ideco-central-console-backend.service |
-| Кластеризация	                                | ideco-cluster-backend.service; ideco-cluster-backup-pusher.service |
-| Автоматическое обновление	                    | ideco-sysupdate-backend.service |
-| Резервное копирование                         | ideco-backup-backend.service; ideco-backup-create.service; ideco-backup-restore.service; ideco-backup-rotate.service |
+| Файрвол                                       | ideco-firewall-backend; ideco-nflog |
+| Контроль приложений                           | ideco-app-backend; ideco-app-control@Leth<номер локального интерфейса> |
+| Контент-фильтр                                | ideco-content-filter-backend |
+| Ограничение скорости                          | ideco-shaper-backend |
+| Антивирусы веб-трафика                        | ideco-av-backend; clamav-freshclam; ideco-clamd; kav-scanner |
+| Предотвращение вторжений                      | ideco-suricata-backend; ideco-suricata; ideco-suricata-event-syncer; ideco-suricata-event-to-syslog.service |
+| Объекты                                       | ideco-alias-backend |
+| Квоты                                         | ideco-quotas-backend; systemd-quotacheck |
+| Сетевые интерфейсы                            | ideco-network-backend; ideco-network-nic |
+| Балансировка и резервирование, Маршрутизация  | ideco-routing-backend |
+| BGP, OSPF	                                    | frr.service; ideco-routing-backend |
+| Прокси	                                    | ideco-proxy-backend; squid |
+| Обратный прокси	                            | ideco-reverse-backend |
+| DNS                                 	        | ideco-unbound; ideco-dns-backend; nsd |
+| DDNS                                 	        | ideco-dns-backend |
+| DHCP	                                        | ideco-dnsmasq |
+| IPsec	                                        | ideco-ipsec-backend; strongswan |
+| Центральная консоль	                        | ideco-central-console-backend |
+| Кластеризация	                                | ideco-cluster-backend; ideco-cluster-backup-pusher |
+| Автоматическое обновление	                    | ideco-sysupdate-backend |
+| Резервное копирование                         | ideco-backup-backend; ideco-backup-create; ideco-backup-restore; ideco-backup-rotate |
 | Лицензия	                                    | ideco-license-backend.service |
-| VPN-подключения                          	    | ideco-accel-l2tp.service; ideco-accel-pptp.service; ideco-accel-sstp.service; ideco-vpn-servers-backend.service; ideco-vpn-authd.service |
-| Авторизация	                                | ideco-auth-backend.service |
-| Двухфакторная аутентификация	                | ideco-web-authd.service |
-| Active Directory	                            | ideco-ad-backend.service; ideco-ad-log-collector@<имя домена>.service |
-| Ideco агент	                                | ideco-agent-backend.service; ideco-agent-server.service; ideco-agent-websocket.service |
-| Syslog	                                    | ideco-monitor-backend.service |
-| Обнаружение устройств	                        | ideco-netscan-backend.service |
-| Web Application Firewall                      | ideco-waf-backend.service; ideco-waf-event-syncer.service |
+| VPN-подключения                          	    | ideco-accel-l2tp; ideco-accel-pptp; ideco-accel-sstp; ideco-vpn-servers-backend; ideco-vpn-authd |
+| Авторизация	                                | ideco-auth-backend |
+| Двухфакторная аутентификация	                | ideco-web-authd |
+| Active Directory	                            | ideco-ad-backend; ideco-ad-log-collector@<имя домена> |
+| Ideco агент	                                | ideco-agent-backend; ideco-agent-server; ideco-agent-websocket |
+| Syslog	                                    | ideco-monitor-backend |
+| Обнаружение устройств	                        | ideco-netscan-backend |
+| Web Application Firewall                      | ideco-waf-backend; ideco-waf-event-syncer |

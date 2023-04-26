@@ -5,7 +5,7 @@ description: В Ideco UTM есть возможность использоват
 # Квоты
 
 {% hint style="success" %}
-Название службы раздела *Квоты*: `ideco-quotas-backend.service`; `systemd-quotacheck.service`. \
+Название службы раздела *Квоты*: `ideco-quotas-backend`; `systemd-quotacheck`. \
 Список имен служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

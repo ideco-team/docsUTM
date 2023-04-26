@@ -7,7 +7,7 @@ description: >-
 # Прокси
 
 {% hint style="success" %}
-Название службы раздела **Прокси**: `ideco-proxy-backend.service`; `squid.service`. \
+Название службы раздела **Прокси**: `ideco-proxy-backend`; `squid`. \
 Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 

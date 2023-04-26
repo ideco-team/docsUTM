@@ -8,7 +8,7 @@ description: >-
 # Syslog
 
 {% hint style="success" %}
-Название службы раздела **Syslog**: `ideco-monitor-backend.service`. \
+Название службы раздела **Syslog**: `ideco-monitor-backend`. \
 Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 
