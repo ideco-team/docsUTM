@@ -1,7 +1,7 @@
 # Резервное копирование
 
 {% hint style="success" %}
-Название службы раздела **Резервное копирование**: `ideco-backup-backend.service`; `ideco-backup-create.service`; `ideco-backup-restore.service`; `ideco-backup-rotate.service`. \
+Название службы раздела **Резервное копирование**: `ideco-backup-backend`; `ideco-backup-create`; `ideco-backup-restore`; `ideco-backup-rotate`. \
 Список служб для других разделов доступен по [ссылке](terminal.md).
 {% endhint %}
 

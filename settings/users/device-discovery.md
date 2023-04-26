@@ -7,7 +7,7 @@ description: >-
 # Обнаружение устройств
 
 {% hint style="success" %}
-Название службы раздела **Обнаружение устройств**: `ideco-netscan-backend.service`. \
+Название службы раздела **Обнаружение устройств**: `ideco-netscan-backend`. \
 Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

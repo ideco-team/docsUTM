@@ -7,7 +7,7 @@ description: >-
 # Авторизация пользователей
 
 {% hint style="success" %}
-Название службы раздела **Авторизация**: `ideco-auth-backend.service`. \
+Название службы раздела **Авторизация**: `ideco-auth-backend`. \
 Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
 {% endhint %}
 

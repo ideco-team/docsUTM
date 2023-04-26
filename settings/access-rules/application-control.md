@@ -7,7 +7,7 @@ description: >-
 # Контроль приложений
 
 {% hint style="success" %}
-Название службы раздела *Контроля приложений*: `ideco-app-backend.service` и `ideco-app-control@Leth<номер локального интерфейса>.service`. \
+Название службы раздела *Контроля приложений*: `ideco-app-backend` и `ideco-app-control@Leth<номер локального интерфейса>`. \
 Список имен служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

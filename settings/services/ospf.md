@@ -1,7 +1,7 @@
 # OSPF
 
 {% hint style="success" %}
-Название службы раздела **OSPF**: `frr.service; ideco-routing-backend.service`. \
+Название службы раздела **OSPF**: `frr.service; ideco-routing-backend`. \
 Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 

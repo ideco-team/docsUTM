@@ -6,7 +6,7 @@ description: >-
 # Центральная консоль
 
 {% hint style="success" %}
-Название службы раздела **Центральная консоль**: `ideco-central-console-backend.service`. \
+Название службы раздела **Центральная консоль**: `ideco-central-console-backend`. \
 Список служб для других разделов доступен по [ссылке](../terminal.md).
 {% endhint %}
 
