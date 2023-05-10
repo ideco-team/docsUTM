@@ -9,7 +9,8 @@
 * **Утилиты сетевой диагностики:** `ping`, `host`, `nslookup`, `tracepath`, `tcpdump`, `arping`, `ss` (аналог `netstat`);
 * **Файловый редактор:** `nano`;
 * **Просмотр логов:** `journalctl -u <название службы>` (например, `journalctl -u ideco-routing-backend`);
-* **Проверка скорости интернета:** `speedtest-cli`.
+* **Проверка скорости интернета:** `speedtest-cli`;
+* **Просмотр ARP-таблицы**: `ip neigh show`.
 
 ## Таблица служб
 
