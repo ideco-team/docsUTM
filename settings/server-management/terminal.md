@@ -46,3 +46,4 @@
 | Syslog	                                    | ideco-monitor-backend |
 | Обнаружение устройств	                        | ideco-netscan-backend |
 | Web Application Firewall                      | ideco-waf-backend; ideco-waf-event-syncer |
+| IGMP Proxy                                    | igmpproxy |

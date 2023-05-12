@@ -87,6 +87,7 @@
   * [Маршрутизация](settings/services/routing.md)
   * [BGP](settings/services/bgp.md)
   * [OSPF](settings/services/ospf.md)
+  * [IGMP Proxy](settings/services/igmp.md)
   * [Прокси](settings/services/proxy/README.md)
     * [Исключения](settings/services/proxy/exclusions.md)
     * [Настройка прямого подключения к прокси и прокси с одним интерфейсом](settings/services/proxy/proxy-server.md)
