@@ -54,7 +54,7 @@ description: Настройка режимов точки доступа и ро
 
 2\. В разделе **Пользователи -> Авторизация -> IP и MAC авторизация** создайте правило следующего вида:
 
-![](../../.gitbook/assets/user-ip-authorization-rule.png)
+![](../../.gitbook/assets/wifi-network2.png)
 
 Общие ограничения [контент-фильтра](../access-rules/content-filter/) и [файрвола](../access-rules/firewall.md) для Wi-Fi сети необходимо применять к данному пользователю.
 
