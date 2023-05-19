@@ -99,6 +99,7 @@
     * [DDNS](settings/services/dns/ddns.md)
     * [NextDNS](settings/services/dns/nextdns.md)
   * [DHCP-сервер](settings/services/dhcp.md)
+  * [NTP-сервер](settings/services/ntp.md)
   * [IPsec](settings/services/ipsec/README.md)
     * [Филиалы и главный офис](settings/services/ipsec/branch-office-and-main-office.md)
     * [Подключение устройств](settings/services/ipsec/connecting-devices.md)
