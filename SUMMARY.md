@@ -23,6 +23,7 @@
     * [Управление пользователями](settings/users/user-tree/user-management.md)
     * [Настройка пользователей](settings/users/user-tree/customization-of-users.md)
     * [Пользователи терминального сервера](settings/users/user-tree/terminal-server-users.md)
+    * [Личный кабинет пользователя](settings/users/user-tree/user-cabinet.md)
   * [Авторизация пользователей](settings/users/authorization/README.md)
     * [Веб-аутентификация](settings/users/authorization/web-authorization.md)
     * [IP и MAC авторизация](settings/users/authorization/ip-and-mac-authorization/README.md)
