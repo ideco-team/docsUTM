@@ -52,18 +52,66 @@
 
 ![](../../../.gitbook/assets/add-security.png)
 
-**Если их AD импортировались не все пользователи**, то измените метод импорта:
+<details>
+
+<summary>Если из AD импортировались не все пользователи</summary>
+
+Если из AD импортировались не все пользователи, то включите режим совместимости. **Важно**: включенный режим совместимости импортирует пользователей медленнее.
+
+Ниже приведены примеры включения через терминал и браузер:
+
+**Терминал**
+
+1\. Авторизуйтесь командой:
 
 ```
-POST /ad_backend/security_group_import_settings
+curl -c /tmp/cookie -b /tmp/cookie -X POST https://адрес_сервера/web/auth/login -d '{"login": "логин", "password": "пароль", "rest_path": "/"}' -k
+```
+
+2\. Отправьте запрос на включение режима:
+
+curl -c /tmp/cookie -b /tmp/cookie -X PUT https://адрес_сервера/ad_backend/security_group_import_settings -d '{"compatibility_mode": true}' -i -k -H 'Content-type: application/json'
+
+**Браузер**
+
+1\. Откройте веб-интерфейс Ideco UTM и нажмите F12;
+
+2\. Перейдите во вкладку **Сеть** и нажмите на любой запрос; 
+
+3\. В появившемся окне перейдите на вкладку **Новый запрос**;
+
+4\. Отправьте запрос авторизации:
+
+```
+POST https://адрес_сервера/web/auth/login
 ```
 
 Тело запроса:
 
 ```
 {
-  "compatibility_mode": "test"
+    "login": "логин", "password": "пароль", "rest_path": "/"
 }
 ```
 
-Замените в теле запроса значение `test` на `true`. 
+![](../../../.gitbook/assets/user-import.png)
+
+5\. Отправьте запрос на включение режима:
+
+```
+PUT /ad_backend/security_group_import_settings
+```
+
+Тело запроса:
+
+```
+{
+  "compatibility_mode": true
+}
+```
+
+![](../../../.gitbook/assets/user-import1.png)
+
+Чтобы выключить режим совместимости, в теле запроса вместо `true` укажите `false`.
+
+</details>
