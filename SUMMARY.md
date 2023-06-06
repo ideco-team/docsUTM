@@ -91,7 +91,6 @@
   * [IPsec](settings/services/ipsec/README.md)
     * [Филиалы и главный офис](settings/services/ipsec/branch-office-and-main-office.md)
     * [Подключение устройств](settings/services/ipsec/connecting-devices.md)
-    * [Подключение пользователей](settings/services/ipsec/connecting-users.md)
     * [Подключение офисов (site-to-site)](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/README.md)
       * [PPTP VPN](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/pptp-vpn.md)
       * [Входящее подключение Cisco IOS к Ideco UTM по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/connect-cisco-to-utm-via-ipsec.md)
