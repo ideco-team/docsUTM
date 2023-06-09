@@ -7,12 +7,12 @@ description: >-
 
 # Подключение офисов (site-to-site)
 
-{% content-ref url="pptp-vpn.md" %}
-[pptp-vpn.md](pptp-vpn.md)
-{% endcontent-ref %}
-
 {% content-ref url="connect-cisco-to-utm-via-ipsec.md" %}
 [connect-cisco-to-utm-via-ipsec.md](connect-cisco-to-utm-via-ipsec.md)
+{% endcontent-ref %}
+
+{% content-ref url="site-to-site-ideco-mikrotik.md" %}
+[site-to-site-ideco-mikrotik.md](site-to-site-ideco-mikrotik.md)
 {% endcontent-ref %}
 
 {% content-ref url="connect-utm-to-cisco-via-ipsec.md" %}
@@ -37,4 +37,8 @@ description: >-
 
 {% content-ref url="keenetic-connection-via-ipsec.md" %}
 [keenetic-connection-via-ipsec.md](keenetic-connection-via-ipsec.md)
+{% endcontent-ref %}
+
+{% content-ref url="pptp-vpn.md" %}
+[pptp-vpn.md](pptp-vpn.md)
 {% endcontent-ref %}
