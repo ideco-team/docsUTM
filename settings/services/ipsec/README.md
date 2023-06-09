@@ -15,10 +15,6 @@
 [devices.md](devices.md)
 {% endcontent-ref %}
 
-{% content-ref url="connecting-devices.md" %}
-[connecting-devices.md](connecting-devices.md)
-{% endcontent-ref %}
-
-{% content-ref url="podklyuchenie-ofisov-site-to-site/README.md" %}
-[podklyuchenie-ofisov-site-to-site/README.md](podklyuchenie-ofisov-site-to-site/README.md)
+{% content-ref url="site-to-site/README.md" %}
+[site-to-site/README.md](site-to-site/README.md)
 {% endcontent-ref %} 
