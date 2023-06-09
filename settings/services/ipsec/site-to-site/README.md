@@ -1,3 +1,10 @@
+---
+description: >-
+  Описание вариантов подключения различных роутеров (Mikrotik, Zyxel Keenetic и
+  др.) к Ideco UTM для организации site-to-site VPN с использованием протокола
+  IPsec.
+---
+
 # Подключение офисов (site-to-site)
 
 {% content-ref url="pptp-vpn.md" %}
