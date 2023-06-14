@@ -79,7 +79,7 @@ redirects:
   ddns: ./settings/services/dns/ddns.md
   ald_pro: ./settings/users/ald-pro.md
   igmp_proxy: ./settings/services/igmp.md
-  administrator-actions: ./settings/reports/administrator-actions.md
+  admin_logs: ./settings/reports/administrator-actions.md
   cc: ./settings/server-management/central-console/central-console.md
   cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
   cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
