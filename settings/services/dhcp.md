@@ -41,7 +41,7 @@ description: >-
 
 Так же, при использовании DHCP-сервера, не забывайте передвинуть ползунок в верхней части экрана около надписи **DHCP-сервер** в положение **Включен**.
 
-<img src="../../.gitbook/assets/dhcp-on.gif" alt="" data-size="original">
+![](../../.gitbook/assets/dhcp-on.gif)
 
 
 ### Настройка DHCP-сервера с привязкой IP к MAC
@@ -50,22 +50,28 @@ description: >-
 
 1\. В разделе **Сервисы -> DHCP** выберите вкладку **Привязка IP к MAC**
 
-<img src="../../.gitbook/assets/dhcp-binding-creating-rule.png" alt="" data-size="original">
+![](../../.gitbook/assets/dhcp-binding-creating-rule.png)
 
 2\. Создайте правило привязки **IP к MAC** по следующему образцу:
 
-<img src="../../.gitbook/assets/dhcp-binding-rule.png" alt="" data-size="original">
+![](../../.gitbook/assets/dhcp-binding-rule.png)
 
 Пример созданного правила привязки показан ниже на скриншоте:
 
-<img src="../../.gitbook/assets/dhcp-binding-ready-rule.png" alt="" data-size="original">
+![](../../.gitbook/assets/dhcp-binding-ready-rule.png)
 
 Для проверки созданного правила, на компьютере с указанным в правиле MAC-адресом, получите IP-адрес по DHCP и проверьте результат с помощью команды `ipconfig /all`
 
-<img src="../../.gitbook/assets/dhcp-binding-result.png" alt="" data-size="original">
+![](../../.gitbook/assets/dhcp-binding-result.png)
 
 {% hint style="info" %}
 Советы по настройке клиентов:
 
 Некоторые устройства предоставляют MAC-адрес с разделенными с помощью дефиса октетами (`01-02-03-04-05-06`). В настройках Ideco UTM октеты MAC-адреса разделяются только двоеточиями (`01:02:03:04:05:06`). Поэтому будьте внимательны при согласовании настроек клиентских устройств и DHCP-сервера на Ideco UTM.
+{% endhint %}
+
+{% hint style="info" %}
+Cоветы после обновления с 12 версии Ideco UTM:
+
+После обновления с 12 версии автоматически включится опция **Выдавать IP-адреса, указанные в авторизации по IP без MAC**. Если опция включена, то будут выдаваться IP-адреса (исключение - правило с IP+MAC), использованные в качестве фактора авторизации пользователя (раздел [Авторизация](../users/README.md)). 
 {% endhint %}
