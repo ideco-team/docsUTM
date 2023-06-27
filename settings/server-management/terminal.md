@@ -42,6 +42,7 @@
 | Авторизация	                                | ideco-auth-backend |
 | Двухфакторная аутентификация	                | ideco-web-authd |
 | Active Directory	                            | ideco-ad-backend; ideco-ad-log-collector@<имя домена> |
+| ALD Pro                                       | ideco-ald-rest; ideco-ald-backend |
 | Ideco агент	                                | ideco-agent-backend; ideco-agent-server; ideco-agent-websocket |
 | Syslog	                                    | ideco-monitor-backend |
 | Обнаружение устройств	                        | ideco-netscan-backend |
