@@ -1,9 +1,9 @@
 # IPSec IKEv2
 
 {% hint style="success" %}
-Данный протокол VPN является предпочтительным и рекомендованным для всех сценариев использования.
+Данный протокол VPN является предпочтительным и рекомендованным для всех сценариев использования. 
 
-Инструкции по настройке VPN-подключений на разных ОС: [Windows](connection-for-windows.md), [Ubuntu](connection-for-ubuntu.md), [Mac OS](connection-for-high-sierra-macos.md) и на [мобильных устройствах](connection-for-mobile-devices.md).
+Инструкции по настройке [VPN-подключений на разных ОС](/recipes/popular-recipes/vpn/README.md).
 {% endhint %}
 
 {% hint style="warning" %}
