@@ -1,11 +1,7 @@
 # Подключение офисов (site-to-site)
 
-{% content-ref url="pptp-vpn.md" %}
-[pptp-vpn.md](pptp-vpn.md)
-{% endcontent-ref %}
-
-{% content-ref url="connect-cisco-to-utm-via-ipsec.md" %}
-[connect-cisco-to-utm-via-ipsec.md](connect-cisco-to-utm-via-ipsec.md)
+{% content-ref url="site-to-site-ideco-mikrotik.md" %}
+[site-to-site-ideco-mikrotik.md](site-to-site-ideco-mikrotik.md)
 {% endcontent-ref %}
 
 {% content-ref url="connect-utm-to-cisco-via-ipsec.md" %}
@@ -16,18 +12,10 @@
 [ipsec-connection-pfsense-to-utm.md](ipsec-connection-pfsense-to-utm.md)
 {% endcontent-ref %}
 
-{% content-ref url="out-ipsec-connection-pfsense-to-utm.md" %}
-[out-ipsec-connection-pfsense-to-utm.md](out-ipsec-connection-pfsense-to-utm.md)
-{% endcontent-ref %}
-
-{% content-ref url="sstp-connection-keenetic.md" %}
-[sstp-connection-keenetic.md](sstp-connection-keenetic.md)
-{% endcontent-ref %}
-
 {% content-ref url="ipsec-connection-kerio-control-to-utm.md" %}
 [ipsec-connection-kerio-control-to-utm.md](ipsec-connection-kerio-control-to-utm.md)
 {% endcontent-ref %}
 
-{% content-ref url="keenetic-connection-via-ipsec.md" %}
-[keenetic-connection-via-ipsec.md](keenetic-connection-via-ipsec.md)
+{% content-ref url="keenetic-connection.md" %}
+[keenetic-connection-via-ipsec.md](keenetic-connection.md)
 {% endcontent-ref %}

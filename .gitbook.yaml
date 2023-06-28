@@ -55,7 +55,6 @@ redirects:
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
   ideco_vpn_agent: ./settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md
   zabbix: ./settings/monitor/zabbix.md
-  cisco2utm: ./settings/services/ipsec/site-to-site/connect-cisco-to-utm-via-ipsec.md
   utm2cisco: ./settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md
   auto-auth-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
   auto-logout-script: ./settings/users/active-directory/auto-authorization-and-de-authorization-script.md
