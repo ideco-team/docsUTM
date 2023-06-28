@@ -9,10 +9,10 @@
 [branch-office-and-main-office.md](branch-office-and-main-office.md)
 {% endcontent-ref %}
 
-{% content-ref url="connecting-devices.md" %}
-[connecting-devices.md](connecting-devices.md)
+{% content-ref url="devices.md" %}
+[devices.md](devices.md)
 {% endcontent-ref %}
 
-{% content-ref url="podklyuchenie-ofisov-site-to-site/README.md" %}
-[podklyuchenie-ofisov-site-to-site/README.md](podklyuchenie-ofisov-site-to-site/README.md)
+{% content-ref url="./podklyuchenie-ofisov-site-to-site/README.md" %}
+[./podklyuchenie-ofisov-site-to-site/README.md](./podklyuchenie-ofisov-site-to-site/README.md)
 {% endcontent-ref %} 
