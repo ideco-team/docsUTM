@@ -96,7 +96,7 @@
       * [Входящее подключение Cisco IOS к Ideco UTM по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/connect-cisco-to-utm-via-ipsec.md)
       * [Исходящее подключение Ideco UTM к Cisco IOS по IPSec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/connect-utm-to-cisco-via-ipsec.md)
       * [Входящее подключение pfSense к Ideco UTM по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/ipsec-connection-pfsense-to-utm.md)
-      * [Исходящее подключение pfSense к Ideco UTM по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/out-ipsec-connection-pfsense-to-utm.md)
+      * [Исходящее подключение pfSense к Ideco UTM по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/out-ipsec-connection-pfsense-to-utm.md) 
       * [Подключение Keenetic по SSTP](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/sstp-connection-keenetic.md)
       * [Подключение Kerio Control к Ideco UTM по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/ipsec-connection-kerio-control-to-utm.md)
       * [Подключение Keenetic по IPsec](settings/services/ipsec/podklyuchenie-ofisov-site-to-site/keenetic-connection-via-ipsec.md)
