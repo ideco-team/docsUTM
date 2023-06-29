@@ -13,10 +13,6 @@
 [connecting-devices.md](connecting-devices.md)
 {% endcontent-ref %}
 
-{% content-ref url="connecting-users.md" %}
-[connecting-users.md](connecting-users.md)
-{% endcontent-ref %}
-
 {% content-ref url="podklyuchenie-ofisov-site-to-site/README.md" %}
 [podklyuchenie-ofisov-site-to-site/README.md](podklyuchenie-ofisov-site-to-site/README.md)
 {% endcontent-ref %} 
