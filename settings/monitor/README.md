@@ -11,6 +11,10 @@ description: >-
 [authorized-users.md](authorized-users.md)
 {% endcontent-ref %}
 
+{% content-ref url="logs.md" %}
+[logs.md](logs.md)
+{% endcontent-ref %}
+
 {% content-ref url="workload-schedule.md" %}
 [workload-schedule.md](workload-schedule.md)
 {% endcontent-ref %}
