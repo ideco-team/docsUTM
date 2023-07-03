@@ -56,7 +56,6 @@
   * [Проверка IP/домена](settings/monitor/ip-check.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
-  * [Syslog](settings/monitor/syslog.md)
   * [Zabbix агент](settings/monitor/zabbix.md)
 * [Правила трафика](settings/access-rules/README.md)
   * [Файрвол](settings/access-rules/firewall.md)
