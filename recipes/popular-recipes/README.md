@@ -1,5 +1,10 @@
 # FAQ 
 
+## Есть ли возможность добавлять сигнатуры IPS?
+
+Да, добавьте сигнатуру вручную в файл `/var/opt/ideco/suricata-backend/custom.rules`. Важно: sid правила не должен совпадал с существующими. \
+Подробнее о добавлении в статье [Как исключить узел из обработки системой IDS/IPS через терминал](../../settings/access-rules/ips/README.md#kak-isklyuchit-uzel-iz-obrabotki-sistemoi-ids-ips-cherez-terminal).
+
 ## Как настроить кластеризацию Active/Active?
 
 Для настройки кластеризации Active/Active воспользуйтесь решением наших партнёров АО «НПП «Цифровые решения». Инструкция по интеграции Ideco UTM и брокера сетевых пакетов DS Integrity NG по [ссылке](/recipes/popular-recipes/integrity.md).
