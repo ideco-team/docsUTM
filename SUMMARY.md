@@ -29,7 +29,7 @@
     * [IP и MAC авторизация](settings/users/authorization/ip-and-mac-authorization/README.md)
       * [Авторизация по IP-адресу](settings/users/authorization/ip-and-mac-authorization/ip-authorization.md)
       * [Авторизация по MAC-адресу](settings/users/authorization/ip-and-mac-authorization/mac-authorization.md)
-    * [Авторизация по подсетям](settings/users/authorization/authorization-by-subnet.md) 
+    * [Авторизация по подсетям](settings/users/authorization/authorization-by-subnet.md)
   * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
     * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
     * [Подключение по PPPoE](settings/users/authorization/vpn-connection/pppoe.md)
@@ -126,7 +126,7 @@
       * [Политики безопасности](settings/server-management/central-console/security-policies.md)
       * [Объекты](settings/server-management/central-console/objects.md)
     * [Сервисы](settings/server-management/central-console/services.md)
-    * [Управление сервером](settings/server-management/central-console/server-management.md) 
+    * [Управление сервером](settings/server-management/central-console/server-management.md)
   * [Кластеризация](settings/server-management/cluster.md)
   * [Автоматическое обновление сервера](settings/server-management/server-update.md)
   * [Резервное копирование](settings/server-management/backup.md)
@@ -165,7 +165,7 @@
 
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
-* [FAQ ](recipes/popular-recipes/README.md)
+* [FAQ](recipes/popular-recipes/README.md)
   * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
     * [Создание подключения в Astra Linux](recipes/popular-recipes/vpn/connection-for-astra-linux.md)
@@ -194,15 +194,15 @@
   * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
   * [Если соединение по IPsec не устанавливается](recipes/problem-diagnosis/ipsec.md)
 
-
-## API <a href="#api" id="api"></a>
+## API
 
 * [Описание хендлеров](api/description-of-handlers.md)
 * [Примеры использования](api/examples/README.md)
-    * [Редактирование пользовательской категории контент-фильтра](api/examples/editing-a-custom-category.md)
-    * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
+  * [Редактирование пользовательской категории контент-фильтра](api/examples/editing-a-custom-category.md)
+  * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
 
 ## changelog
+
 * [Ideco UTM](changelog/ideco-utm/README.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
