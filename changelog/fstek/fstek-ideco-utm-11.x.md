@@ -1,8 +1,8 @@
-# Версия Ideco UTM 11.X
+# Версия ФСТЭК Ideco UTM 11.X
 
 <details>
 
-<summary>Примечания к релизу ФСТЕК Ideco UTM 11.1 build 13</summary>
+<summary>Примечания к релизу ФСТЭК Ideco UTM 11.1 build 13</summary>
 
 **Дата выхода версии**: 21.10.2021.
 
