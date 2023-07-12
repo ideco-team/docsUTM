@@ -40,3 +40,11 @@ dateCreated: '2021-04-02T07:23:31.089Z'
 **Пример настройки подключения по PPTP:**
 
 ![](../../.gitbook/assets/ethernet+pptp.jpg)
+
+{% hint style="info" %}
+Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
+
+Пример вывода команды:
+
+![](../../../.gitbook/assets/ethernet-connection3.png)
+{% endhint %}

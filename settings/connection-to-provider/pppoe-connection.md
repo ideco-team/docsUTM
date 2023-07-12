@@ -37,3 +37,11 @@ dateCreated: '2021-04-02T07:23:26.684Z'
 **Пример настройки:**
 
 ![](../../.gitbook/assets/ethernet+pppoe.jpg)
+
+{% hint style="info" %}
+Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
+
+Пример вывода команды:
+
+![](../../../.gitbook/assets/ethernet-connection3.png)
+{% endhint %}
