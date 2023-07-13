@@ -4,7 +4,6 @@ structure:
 
 redirects:
   ad: ./settings/users/active-directory/README.md
-  ad_authorization: ./settings/users/active-directory/README.md
   additionally: ./settings/server-management/additionally.md
   admins: ./settings/server-management/admins.md
   antivirus: ./settings/access-rules/antivirus.md
@@ -22,14 +21,10 @@ redirects:
   ids_ips: ./settings/access-rules/ips/README.md
   install: ./installation/installation-process.md
   ipsec: ./settings/services/ipsec/README.md
-  reg: ./service/server-registration.md
   network_interface: ./settings/services/connection-to-provider/README.md
   dns: ./settings/services/dns/README.md
   nextdns: ./settings/services/dns/nextdns.md
-  dns_external: ./settings/services/dns.md
   object: ./settings/access-rules/aliases.md
-  portmapping: ./settings/publishing-resources/portmapping.md
-  mail: ./settings/mail/README.md
   basic_settings: ./settings/mail/mail-server-settings/README.md
   powershell: ./settings/users/authorization/vpn-connection/running-powershell-scripts.md
   proxy: ./settings/services/proxy/README.md
@@ -44,16 +39,12 @@ redirects:
   syslog: ./settings/reports/syslog.md
   telegram_bot: ./settings/monitor/telegram-bot.md 
   terminal: ./settings/server-management/terminal.md
-  usb: ./installation/usb.md
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
   ideco_vpn_agent: ./settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md
   zabbix: ./settings/monitor/zabbix.md
-  utm2cisco: ./settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md
-  auto-auth-script: ./settings/users/active-directory/auto-de-authorization-script.md
-  auto-logout-script: ./settings/users/active-directory/auto-de-authorization-script.md
   dashboard: ./settings/monitor-panel.md
   traffmon: ./settings/monitor/traffic.md
   logs: ./settings/reports/logs.md
@@ -68,17 +59,16 @@ redirects:
   rules: ./settings/mail/regulations/README.md
   mail_queue: ./settings/mail/mail-queue.md
   bgp: ./settings/services/bgp.md
-  authorization-by-subnet: ./settings/users/authorization/authorization-by-subnet.md
   traffic: ./settings/reports/traffic.md
-  security-events: ./settings/reports/security-events.md
   ideco_agent: ./settings/users/ideco-agent.md
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
-  vpn-connection: ./settings/users/authorization/vpn-connection/README.md
-  ddns: ./settings/services/dns/ddns.md
-  ald_pro: ./settings/users/ald-pro.md
+  ddns: ./settings/services/dns/ddns.md 
+  ald_pro: ./settings/users/ald-pro.md 
   igmp_proxy: ./settings/services/igmp.md
   admin_logs: ./settings/reports/administrator-actions.md
+  vpn_connection: ./settings/users/authorization/vpn-connection/README.md
+  security_events: ./settings/reports/security-events.md
   cc: ./settings/server-management/central-console/README.md
   cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
   cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
