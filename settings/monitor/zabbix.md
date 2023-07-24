@@ -2,9 +2,9 @@
 
 Zabbix - это решение распределенного мониторинга корпоративного класса с открытыми исходными кодами.
 
-Ознакомиться с Zabbix, Вы можете на [официальной странице Zabbix](https://www.zabbix.com/ru/).
+Ознакомиться с Zabbix, можно на [официальной странице Zabbix](https://www.zabbix.com/ru/).
 
-Вы также можете опробовать Zabbix в виде [готового решения](https://www.zabbix.com/documentation/6.2/en/manual/appliance) или установить его, воспользовавшись [документацией Zabbix](https://www.zabbix.com/documentation/current/en/manual).
+Опробуйте Zabbix в виде [готового решения](https://www.zabbix.com/documentation/6.2/en/manual/appliance) или установить его, воспользовавшись [документацией Zabbix](https://www.zabbix.com/documentation/current/en/manual).
 
 ## Интеграция с Zabbix
 
