@@ -52,17 +52,17 @@ description: >-
 {% endhint %}
 
 {% hint style="success" %}
-Уведомления начнут приходить в ваш Telegram аккаунт.
+Уведомления начнут приходить в Telegram аккаунт.
 {% endhint %}
 
 ## Настройка оповещений Ideco Monitоring Bot
 
-Вы можете настраивать оповещения, которые приходят от Ideco Monitoring Bot, для каждой отдельной беседы.
+Настройте оповещения, которые приходят от Ideco Monitoring Bot, для каждой отдельной беседы.
 
 Для настройки оповещений:
 1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](../../.gitbook/assets/bot\_notification\_settings.svg).
 2. Проставьте галочки напротив тех уведомлений, которые хотели бы получать в выбранной беседе.
 
 {% hint style="info" %}
-Если вы хотите временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot\_notification\_shutdown.svg). Оповещение перестанут приходить, пока вы снова не нажмете на эту иконку.
+Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot\_notification\_shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
 {% endhint %}
