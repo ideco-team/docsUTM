@@ -298,3 +298,24 @@ ip ipsec proposal set default auth-algorithms=sha1 enc-algorithms=aes-256-cbc,ae
 ```
 interface l2tp-client add connect-to=<server> profile=default disabled=no name=<interface_name> password="<password>" user="<login>" use-ipsec="yes" ipsec-secret="<psk>"
 ```
+
+4\. Добавьте маршрут до первого адреса VPN-cети UTM (remote VPN subnet):
+
+```
+ip route add dst-address=<remote VPN subnet> gateway=l2tp-out1
+```
+
+{% hint style="info" %}
+Для работы удаленных сетей на UTM и на Mikrotik нужно создавать маршруты на обоих устройствах.
+{% endhint %}
+
+{% hint style="info" %}
+Если у вас в разделе **Правила трафика -> Файрвол -> SNAT** отключен **Автоматический SNAT локальных сетей**, то может понадобиться прописать маршрут до сети VPN, где шлюзом является UTM.
+
+Пример:
+* Aдрес UTM = 169.254.1.5
+* Первый адрес VPN = 10.128.0.1
+
+`ip route add dst-address=169.254.1.5 gateway==10.128.0.1`
+
+{% endhint %}
