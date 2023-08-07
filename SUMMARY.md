@@ -22,6 +22,7 @@
 
 ## changelog
 
+* [Ideco VPP](changelog/vpp/README.md)
 * [Ideco UTM](changelog/ideco-utm/README.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
