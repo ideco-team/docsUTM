@@ -1,5 +1,7 @@
 # Версия ФСТЭК Ideco UTM 11.X
 
+**[Описание сертифицированной версии](https://static.ideco.ru/static/Ideco_UTM_2022.pdf)**.
+
 <details>
 
 <summary>Примечания к релизу ФСТЭК Ideco UTM 14.3 build 3</summary>
