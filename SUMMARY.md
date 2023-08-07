@@ -8,17 +8,19 @@
 * [Источники обновлений данных Ideco UTM VPP](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
 
-## Установка <a href="#installation" id="installation"></a>
+## Первоначальная настройка <a href="#initial-setup" id="initial-setup"></a>
 
+* [Рекомендации при первоначальной настройке](initial-setup/rekomendacii-pri-pervonachalnoi-nastroike.md)
+* [Личный кабинет](initial-setup/lichnyi-kabinet.md)
+* [Подготовка загрузочного образа к установке](initial-setup/podgotovka-zagruzochnogo-obraza-k-ustanovke.md)
+* [Настройка гипервизоров](initial-setup/nastroika-gipervizorov.md)
+* [Установка на  сервер](initial-setup/ustanovka-na-server.md)
 
+## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
-## Настройка <a href="#settings" id="settings"></a>
-
-
-
-## Обслуживание <a href="#service" id="service"></a>
-
-
+* [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users.md)
+* [Блокировка трафика](advanced-setting/traffic-blocking.md)
+* [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
 ## changelog
 
