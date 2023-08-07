@@ -12,9 +12,9 @@
 
 * [Рекомендации при первоначальной настройке](initial-setup/rekomendacii-pri-pervonachalnoi-nastroike.md)
 * [Личный кабинет](initial-setup/lichnyi-kabinet.md)
-* [Подготовка загрузочного образа к установке](initial-setup/podgotovka-zagruzochnogo-obraza-k-ustanovke.md)
+* [Подготовка загрузочного образа](initial-setup/podgotovka-zagruzochnogo-obraza-k-ustanovke.md)
 * [Настройка гипервизоров](initial-setup/nastroika-gipervizorov.md)
-* [Установка на  сервер](initial-setup/ustanovka-na-server.md)
+* [Установка на сервер](initial-setup/ustanovka-na-server.md)
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
