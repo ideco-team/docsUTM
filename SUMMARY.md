@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Об Ideco UTM](README.md)
+* [Об Ideco UTM VPP](README.md)
 
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
-* [Источники обновлений данных Ideco UTM](general/data-update-source-ideco-utm.md)
+* [Источники обновлений данных Ideco UTM VPP](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
 
 ## Установка <a href="#installation" id="installation"></a>
@@ -22,7 +22,7 @@
 
 ## changelog
 
-* [Ideco VPP](changelog/vpp/README.md)
+* [Ideco UTM VPP](changelog/vpp/README.md)
 * [Ideco UTM](changelog/ideco-utm/README.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
