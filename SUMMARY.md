@@ -10,11 +10,12 @@
 
 ## Первоначальная настройка <a href="#initial-setup" id="initial-setup"></a>
 
-* [Рекомендации при первоначальной настройке](initial-setup/rekomendacii-pri-pervonachalnoi-nastroike.md)
-* [Личный кабинет](initial-setup/lichnyi-kabinet.md)
-* [Подготовка загрузочного образа](initial-setup/podgotovka-zagruzochnogo-obraza-k-ustanovke.md)
-* [Настройка гипервизоров](initial-setup/nastroika-gipervizorov.md)
-* [Установка на сервер](initial-setup/ustanovka-na-server.md)
+* [Рекомендации при первоначальной настройке](initial-setup/tips-for-initial-setup.md)
+* [MY.IDECO](initial-setup/my-ideco.md)
+* [Подготовка к установке на устройство](initial-setup/preparation-install.md)
+  * [Настройка гипервизора](initial-setup/setup-hypervisor.md)
+  * [Подготовка загрузочного диска](initial-setup/preparation-boot-image.md)
+* [Установка](initial-setup/setup.md)
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
