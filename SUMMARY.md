@@ -14,7 +14,7 @@
 * [MY.IDECO](initial-setup/my-ideco.md)
 * [Подготовка к установке на устройство](initial-setup/preparation-install.md)
   * [Настройка гипервизора](initial-setup/setup-hypervisor.md)
-  * [Подготовка загрузочного диска](initial-setup/preparation-boot-image.md)
+  * [Подготовка загрузочного диска](initial-setup/preparation-boot-disk.md)
 * [Установка](initial-setup/setup.md)
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
