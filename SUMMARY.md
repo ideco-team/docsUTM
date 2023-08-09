@@ -16,12 +16,13 @@
   * [Настройка гипервизора](initial-setup/setup-hypervisor.md)
   * [Подготовка загрузочного диска](initial-setup/preparation-boot-disk.md)
 * [Установка](initial-setup/setup.md)
+* [Первоначальная настройка](initial-setup/pervonachalnaya-nastroika.md)
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
 * [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking.md)
-* [Управление и настройка  сервером](advanced-setting/server-configuration-management.md)
+* [Управление и настройка сервером](advanced-setting/server-configuration-management.md)
 * [Мониторинг, отчетность и журналирование](advanced-setting/monitoring-reporting-logging.md)
 * [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
