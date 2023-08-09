@@ -21,6 +21,8 @@
 
 * [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking.md)
+* [Управление и настройка  сервером](advanced-setting/server-configuration-management.md)
+* [Мониторинг, отчетность и журналирование](advanced-setting/monitoring-reporting-logging.md)
 * [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
 ## changelog
