@@ -3,86 +3,31 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  ad: ./settings/users/active-directory/README.md
-  additionally: ./settings/server-management/additionally.md
-  admins: ./settings/server-management/admins.md
-  antivirus: ./settings/access-rules/antivirus.md
-  application_control: ./settings/access-rules/application-control.md
-  backup: ./service/backup.md
-  balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
-  certificate: ./settings/services/certificates/README.md
-  custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
-  cluster: ./settings/server-management/cluster.md
-  content_filter: ./settings/access-rules/content-filter/README.md
-  device_detection: ./settings/users/device-discovery.md
-  dhcp: ./settings/services/dhcp.md
-  firewall: ./settings/access-rules/firewall.md
-  https_filtration: ./settings/access-rules/content-filter/filtering-https-traffic.md
-  ids_ips: ./settings/access-rules/ips/README.md
-  install: ./installation/installation-process.md
-  ipsec: ./settings/services/ipsec/README.md
-  network_interface: ./settings/services/connection-to-provider/README.md
-  dns: ./settings/services/dns/README.md
-  nextdns: ./settings/services/dns/nextdns.md
-  object: ./settings/access-rules/aliases.md
-  basic_settings: ./settings/mail/mail-server-settings/README.md
-  powershell: ./settings/users/authorization/vpn-connection/running-powershell-scripts.md
-  proxy: ./settings/services/proxy/README.md
-  report: ./settings/reports/README.md
-  reverse_proxy: ./settings/services/reverse-proxy.md
-  routing: ./settings/services/routing.md
-  server_registration: ./service/server-registration.md
-  server_update: ./service/server-update.md
-  snmp: ./settings/monitor/snmp.md
-  shaper: ./settings/access-rules/shaper.md
-  support: ./service/remote-assistant.md
-  syslog: ./settings/reports/syslog.md
-  telegram_bot: ./settings/monitor/telegram-bot.md 
-  terminal: ./settings/server-management/terminal.md
-  user_authorization: ./settings/users/authorization/README.md
-  user_management: ./settings/users/README.md
-  user_quota: ./settings/access-rules/quotas.md
-  vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
-  ideco_vpn_agent: ./settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md
-  zabbix: ./settings/monitor/zabbix.md
-  dashboard: ./settings/monitor-panel.md
-  traffmon: ./settings/monitor/traffic.md
-  logs: ./settings/reports/logs.md
-  authorized: ./settings/monitor/authorized-users.md
-  ospf: ./settings/services/ospf.md
-  user_tree: ./settings/users/user-tree/README.md
-  reports_designer: ./settings/reports/report-designer.md
-  authorization_log: ./settings/reports/authorization-log.md
-  license_management: ./service/license-management.md
-  advanced_settings: ./settings/mail/advanced-settings/README.md
-  antispam_chapter: ./settings/mail/antispam.md
-  rules: ./settings/mail/regulations/README.md
-  mail_queue: ./settings/mail/mail-queue.md
-  bgp: ./settings/services/bgp.md
-  traffic: ./settings/reports/traffic.md
-  ideco_agent: ./settings/users/ideco-agent.md
-  two_factor_authentication: ./settings/users/two-factor-authentication.md
-  web_authorization: ./settings/users/authorization/web-authorization.md
-  ddns: ./settings/services/dns/ddns.md 
-  ald_pro: ./settings/users/ald-pro.md 
-  igmp_proxy: ./settings/services/igmp.md
-  admin_logs: ./settings/reports/administrator-actions.md
-  vpn_connection: ./settings/users/authorization/vpn-connection/README.md
-  security_events: ./settings/reports/security-events.md
-  cc: ./settings/server-management/central-console/README.md
-  cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
-  cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
-  cc_content_filter: ./settings/server-management/central-console/policies-and-objects.md
-  cc_aliases: ./settings/server-management/central-console/policies-and-objects.md
-  cc_shaper: ./settings/server-management/central-console/policies-and-objects.md
-  cc_interfaces: ./settings/server-management/central-console/services.md
-  cc_routing: ./settings/server-management/central-console/services.md
-  cc_certs: ./settings/server-management/central-console/services.md
-  cc_ddns: ./settings/server-management/central-console/services.md
-  cc_admins: ./settings/server-management/central-console/server-management.md
-  cc_selfupdate: ./settings/server-management/central-console/server-management.md
-  cc_backup: ./settings/server-management/central-console/server-management.md
-  cc_web_terminal: ./settings/server-management/central-console/server-management.md
-  cc_characteristics: ./settings/server-management/central-console/server-management.md
-  cc_power: ./settings/server-management/central-console/server-management.md
-  cc_additionally: ./settings/server-management/central-console/server-management.md 
+  dashboard: 
+  user_tree: 
+  ad: 
+  ald_pro: 
+  authorized: 
+  ip_checker: 
+  telegram_bot: 
+  snmp: 
+  zabbix: 
+  firewall: 
+  ids_ips: 
+  object: 
+  network_interface: 
+  dns: 
+  certificate: 
+  custom_ssl: 
+  logs: 
+  security_events: 
+  admin_logs: 
+  authorization_log: 
+  reports_designer: 
+  syslog: 
+  admins: 
+  server_update: 
+  backup: 
+  terminal: 
+  license_management: 
+  additionally: 
