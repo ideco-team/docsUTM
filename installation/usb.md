@@ -33,34 +33,30 @@
 ### Вручную в терминале:
 
 1.  Проверьте целостность образа (хеш-сумма должна совпадать с суммой в личном кабинете):
-
-```
-md5sum <путь_к_скачанному_загрузочному_образу>
-8c872cb6b720f6fd6683107681645156  /home/ideco/IdecoUTM.iso
-```
+    ```
+    md5sum <путь_к_скачанному_загрузочному_образу>
+    8c872cb6b720f6fd6683107681645156  /home/ideco/IdecoUTM.iso
+    ```
 2.  Найдите USB-носитель в системе:
-```
-lsblk --nodeps  -o name,size,fstype,tran,model,mountpoint /dev/sd*
+    ```
+    lsblk --nodeps  -o name,size,fstype,tran,model,mountpoint /dev/sd*
 
-NAME  SIZE FSTYPE TRAN MODEL        MOUNTPOINT
-sdx   7,5G        usb  USB_DISK_3.0 
-sdx1  7,5G vfat                     /run/media/ideco/D661-82E2
-```
+    NAME  SIZE FSTYPE TRAN MODEL        MOUNTPOINT
+    sdx   7,5G        usb  USB_DISK_3.0 
+    sdx1  7,5G vfat                     /run/media/ideco/D661-82E2
+    ```
 3.  Отмонтируйте файловую систему:
-
-```
-sudo umount <точка_монтирования>
-sudo umount /run/media/ideco/D661-82E2
-```
+    ```
+    sudo umount <точка_монтирования>
+    sudo umount /run/media/ideco/D661-82E2
+    ```
 4.  Запишите образ на носитель:
-
-```
-sudo dd if=<путь_к_загрузочному_образу> of=<имя_устройства> bs=1M oflag=direct status=progress
-sudo dd if=/home/ideco/IdecoUTM.iso of=/dev/sdx bs=1M oflag=direct status=progress
-```
+    ```
+    sudo dd if=<путь_к_загрузочному_образу> of=<имя_устройства> bs=1M oflag=direct status=progress
+    sudo dd if=/home/ideco/IdecoUTM.iso of=/dev/sdx bs=1M oflag=direct status=progress
+    ```
 5.  Подготовьте носитель к извлечению:
-
-```
-sudo eject <имя_устройства>
-sudo eject /dev/sdx
-```
+    ```
+    sudo eject <имя_устройства>
+    sudo eject /dev/sdx
+    ```
