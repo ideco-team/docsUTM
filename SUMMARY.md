@@ -5,7 +5,7 @@
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
-* [Источники обновлений данных Ideco UTM VPP](general/data-update-source-ideco-utm.md)
+* [Системные требования и источники обновления данных](general/data-update-source-utm-vpp.md)
 * [Техническая поддержка](general/technical-support.md)
 
 ## Первоначальная настройка <a href="#initial-setup" id="initial-setup"></a>
