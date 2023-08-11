@@ -69,6 +69,7 @@ redirects:
   admin_logs: ./settings/reports/administrator-actions.md
   vpn_connection: ./settings/users/authorization/vpn-connection/README.md
   security_events: ./settings/reports/security-events.md
+  exceptions: ./settings/access-rules/ips/user-ip-exceptions.md
   cc: ./settings/server-management/central-console/README.md
   cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
   cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
