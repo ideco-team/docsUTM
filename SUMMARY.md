@@ -20,7 +20,10 @@
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
-* [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users.md)
+* [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users/README.md)
+  * [Дерево пользователей и как создать карточку пользователя](advanced-setting/users/user-tree.md)
+  * [Настройка авторизации пользователей](advanced-setting/users/authorization.md)
+  * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking.md)
 * [Управление и настройка сервером](advanced-setting/server-configuration-management.md)
 * [Мониторинг, отчетность и журналирование](advanced-setting/monitoring-reporting-logging.md)
