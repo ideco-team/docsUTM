@@ -24,6 +24,7 @@
   * [Дерево пользователей и как создать карточку пользователя](advanced-setting/users/user-tree.md)
   * [Настройка авторизации пользователей](advanced-setting/users/authorization.md)
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
+  * [Настройка интеграции с ALD Pro](advanced-setting/ald.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking.md)
 * [Управление и настройка сервером](advanced-setting/server-configuration-management.md)
 * [Мониторинг, отчетность и журналирование](advanced-setting/monitoring-reporting-logging.md)
