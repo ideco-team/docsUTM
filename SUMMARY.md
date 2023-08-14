@@ -21,8 +21,11 @@
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
 * [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users/README.md)
-  * [Дерево пользователей и как создать карточку пользователя](advanced-setting/users/user-tree.md)
-  * [Настройка авторизации пользователей](advanced-setting/users/authorization.md)
+  * [Дерево пользователей и управление учетными записями](advanced-setting/users/user-tree.md)
+  * [Настройка авторизации пользователей](advanced-setting/authorization/README.md)
+    * [Авторизация через журнал безопасности Active Directory](advanced-setting/authorization/active-directory.md)
+    * [IP и MAC авторизация](advanced-setting/authorization/ip-mac-authorization.md)
+    * [Авторизация по подсетям](advanced-setting/authorization/authorization-by-subnet.md)
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
   * [Настройка интеграции с ALD Pro](advanced-setting/ald.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking.md)
