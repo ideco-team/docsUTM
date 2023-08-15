@@ -144,6 +144,8 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 </details>
 
+Далее начнется установка Ideco UTM VPP на виртуальную машину. Подробнее об установке в статье [Установка](../initial-setup/setup.md).
+
 {% hint style="info" %}
 При возможных проблемах проверьте соответствие параметров виртуальной машины [общим рекомендациям](#obshie-rekomendacii).
 {% endhint %}

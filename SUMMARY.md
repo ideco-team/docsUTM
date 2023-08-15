@@ -16,7 +16,7 @@
   * [Настройка гипервизора](initial-setup/setup-hypervisor.md)
   * [Подготовка загрузочного диска](initial-setup/preparation-boot-disk.md)
 * [Установка](initial-setup/setup.md)
-* [Первоначальная настройка](initial-setup/pervonachalnaya-nastroika.md)
+* [Первоначальная настройка](initial-setup/initial-setup-web.md)
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
