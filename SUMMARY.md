@@ -103,7 +103,6 @@
   * [IPsec](settings/services/ipsec/README.md)
     * [Филиалы и главный офис](settings/services/ipsec/branch-office-and-main-office.md)
     * [Устройства](settings/services/ipsec/devices.md)
-    * [Подключение офисов (site-to-site)](settings/services/ipsec/site-to-site/README.md)
       * [Подключение Ideco UTM и Mikrotik](settings/services/ipsec/site-to-site/site-to-site-ideco-mikrotik.md)
       * [Подключение Cisco IOS к Ideco UTM по IPsec](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
       * [Подключение pfSense к Ideco UTM по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-pfsense-to-utm.md)
