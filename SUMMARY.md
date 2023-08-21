@@ -27,12 +27,18 @@
     * [IP и MAC авторизация](advanced-setting/authorization/ip-mac-authorization.md)
     * [Авторизация по подсетям](advanced-setting/authorization/authorization-by-subnet.md)
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
-  * [Настройка интеграции с ALD Pro](advanced-setting/ald.md)
+  * [Настройка интеграции с ALD Pro](advanced-setting/users/ald.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking.md)
 * [Управление и настройка сервером](advanced-setting/server-configuration-management.md)
-* [Мониторинг, отчетность и журналирование](advanced-setting/monitoring-reporting-logging.md)
+* [Журналирование](advanced-setting/logging/monitoring-reporting-logging.md)
+  * [Логирование](advanced-setting/logging/log.md)
+  * [Cобытия и отчеты](advanced-setting/logging/events-reports.md)
+* [Мониторинг](advanced-setting/monitoring/monitor.md)
+  * [Информация о сессиях пользователей](advanced-setting/monitoring/authorization-info.md)
 * [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
+## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
+* [Проблемы при авторизации пользователей](problem-diagnosis/authorization.md)
 ## changelog
 
 * [Ideco UTM VPP](changelog/vpp/README.md)
