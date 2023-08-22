@@ -14,7 +14,3 @@
 {% content-ref url="devices.md" %}
 [devices.md](devices.md)
 {% endcontent-ref %}
-
-{% content-ref url="site-to-site/README.md" %}
-[site-to-site/README.md](site-to-site/README.md)
-{% endcontent-ref %} 
