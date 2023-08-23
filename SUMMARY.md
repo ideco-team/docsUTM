@@ -34,7 +34,8 @@
   * [Логирование](advanced-setting/logging/log.md)
   * [Cобытия и отчеты](advanced-setting/logging/events-reports.md)
 * [Мониторинг](advanced-setting/monitoring/monitor.md)
-  * [Информация о сессиях пользователей](advanced-setting/monitoring/authorization-info.md)
+  * [Информация об активных сессиях пользователей](advanced-setting/monitoring/authorization-info.md)
+  * 
 * [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
 ## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
