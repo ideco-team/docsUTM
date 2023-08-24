@@ -35,11 +35,12 @@
   * [Cобытия и отчеты](advanced-setting/logging/events-reports.md)
 * [Мониторинг](advanced-setting/monitoring/monitor.md)
   * [Информация об активных сессиях пользователей](advanced-setting/monitoring/authorization-info.md)
-  * 
+  * [Информация о загруженности системы](advanced-setting/monitoring/workload-schedule.md)
 * [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
 ## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
 * [Проблемы при авторизации пользователей](problem-diagnosis/authorization.md)
+* [Примеры диагностики через терминал](problem-diagnosis/diagnose-console.md)
 ## changelog
 
 * [Ideco UTM VPP](changelog/vpp/README.md)
