@@ -36,6 +36,7 @@
 * [Мониторинг](advanced-setting/monitoring/monitor.md)
   * [Информация об активных сессиях пользователей](advanced-setting/monitoring/authorization-info.md)
   * [Информация о загруженности системы](advanced-setting/monitoring/workload-schedule.md)
+  * [Подключение сторонних сервисов для мониторинга](advanced-setting/monitoring/connection-external-services.md)
 * [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
 
 ## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
