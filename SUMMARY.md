@@ -32,6 +32,7 @@
   * [Настройка файрвола](advanced-setting/traffic-blocking/firewall.md)
   * [Настройка службы предотвращения вторжений](advanced-setting/traffic-blocking/ips.md)
 * [Управление сервером и его настройка](advanced-setting/server-management/server-management.md)
+  * [Управление сетевыми интерфейсами](advanced-setting/server-configuration-management/server-configuration-management.md)
   * [Сертификаты](advanced-setting/server-management/certificates.md)
   * [Терминал](advanced-setting/server-management/terminal.md)
   * [Привязка лицензий к серверу на MY.IDECO](advanced-setting/server-management/binding-license.md)
