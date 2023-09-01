@@ -35,6 +35,7 @@
   * [Сертификаты](advanced-setting/server-management/certificates.md)
   * [Терминал](advanced-setting/server-management/terminal.md)
   * [Привязка лицензий к серверу на MY.IDECO](advanced-setting/server-management/binding-license.md)
+  * [Объекты: создание, редактирование и удаление](advanced-setting/server-management/aliases.md)
 * [Журналирование](advanced-setting/logging/monitoring-reporting-logging.md)
   * [Логирование](advanced-setting/logging/log.md)
   * [Cобытия и отчеты](advanced-setting/logging/events-reports.md)
