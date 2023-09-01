@@ -42,7 +42,8 @@
   * [Информация об активных сессиях пользователей](advanced-setting/monitoring/authorization-info.md)
   * [Информация о загруженности системы](advanced-setting/monitoring/workload-schedule.md)
   * [Подключение сторонних сервисов для мониторинга](advanced-setting/monitoring/connection-external-services.md)
-* [Настройка на клиентских машинах](advanced-setting/setup-on-client-machines.md)
+* [Настройка клиентских машин](advanced-setting/setup-client/setup-on-client-machines.md)
+  * [Настройка соединения c UTM VPP](advanced-setting/setup-client/setup-connection.md) 
 
 ## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
 * [Проблемы при авторизации пользователей](problem-diagnosis/authorization.md)
