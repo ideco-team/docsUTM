@@ -28,14 +28,16 @@
     * [Авторизация по подсетям](advanced-setting/authorization/authorization-by-subnet.md)
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
   * [Настройка интеграции с ALD Pro](advanced-setting/users/ald.md)
-* [Блокировка трафика](advanced-setting/traffic-blocking/traffic-blocking.md)
+* [Блокировка трафика](advanced-setting/traffic-blocking/README.md)
   * [Настройка файрвола](advanced-setting/traffic-blocking/firewall.md)
   * [Настройка службы предотвращения вторжений](advanced-setting/traffic-blocking/ips.md)
-* [Управление сервером и его настройка](advanced-setting/server-management/server-management.md)
+* [Управление сервером и его настройка](advanced-setting/server-management/README.md)
   * [Управление сетевыми интерфейсами](advanced-setting/server-configuration-management/server-configuration-management.md)
   * [Сертификаты](advanced-setting/server-management/certificates.md)
   * [Терминал](advanced-setting/server-management/terminal.md)
   * [Привязка лицензий к серверу на MY.IDECO](advanced-setting/server-management/binding-license.md)
+  * [Управление администраторами](advanced-setting/server-management/management-admins.md)
+  * [Настройка доступа к серверу по SSH](advanced-setting/server-management/SSH-access.md)
   * [Объекты: создание, редактирование и удаление](advanced-setting/server-management/aliases.md)
 * [Журналирование и мониторинг](advanced-setting/logging-monitoring/README.md)
   * [Логирование](advanced-setting/logging-monitoring/log.md)
@@ -43,11 +45,12 @@
   * [Информация об активных сессиях пользователей](advanced-setting/logging-monitoring/authorization-info.md)
   * [Информация о загруженности системы](advanced-setting/logging-monitoring/workload-schedule.md)
   * [Подключение сторонних сервисов для мониторинга](advanced-setting/logging-monitoring/connection-external-services.md)
-* [Настройка клиентских машин](advanced-setting/setup-client/setup-on-client-machines.md)
+* [Настройка клиентских машин](advanced-setting/setup-client/README.md)
   * [Настройка соединения c UTM VPP](advanced-setting/setup-client/setup-connection.md) 
 
 ## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
 * [Проблемы при авторизации пользователей](problem-diagnosis/authorization.md)
+* [Восстановление пароля администратора](problem-diagnosis/recovery-password-admin.md)
 * [Примеры диагностики через терминал](problem-diagnosis/diagnose-console.md)
 ## changelog
 
