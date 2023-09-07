@@ -39,6 +39,8 @@
   * [Управление администраторами](advanced-setting/server-management/management-admins.md)
   * [Настройка доступа к серверу по SSH](advanced-setting/server-management/SSH-access.md)
   * [Объекты: создание, редактирование и удаление](advanced-setting/server-management/aliases.md)
+  * [Резервное копирование](advanced-setting/server-management/backup.md)
+  * [Автоматическое обновление](advanced-setting/server-management/server-update.md)
 * [Журналирование и мониторинг](advanced-setting/logging-monitoring/README.md)
   * [Логирование](advanced-setting/logging-monitoring/log.md)
   * [Cобытия и отчеты](advanced-setting/logging-monitoring/events-reports.md)
