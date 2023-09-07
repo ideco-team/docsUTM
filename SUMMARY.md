@@ -41,6 +41,7 @@
   * [Объекты: создание, редактирование и удаление](advanced-setting/server-management/aliases.md)
   * [Резервное копирование](advanced-setting/server-management/backup.md)
   * [Автоматическое обновление](advanced-setting/server-management/server-update.md)
+  * [Настройка часового пояса и языка](advanced-setting/server-management/language-time-management.md)
 * [Журналирование и мониторинг](advanced-setting/logging-monitoring/README.md)
   * [Логирование](advanced-setting/logging-monitoring/log.md)
   * [Cобытия и отчеты](advanced-setting/logging-monitoring/events-reports.md)
