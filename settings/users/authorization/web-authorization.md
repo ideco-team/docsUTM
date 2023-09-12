@@ -37,4 +37,7 @@
 Рекомендуется указывать в качестве DNS-сервера на компьютерах и устройствах локальной сети IP-адрес локального интерфейса Ideco UTM.
 {% endhint %}
 
-Подробнее об авторизации пользователей **Active Directory** ([SSO-аутентификация](../active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm)), можно узнать по [ссылке](../active-directory/active-directory-user-authorization.md).
+Подробнее об авторизации пользователей **Active Directory** в статье [SSO-аутентификация](../active-directory/active-directory-user-authorization.md#veb-avtorizaciya-sso-ili-ntlm).
+
+Подробнее об авторизации пользователей **ALD Pro** в статье [SSO-аутентификация](../ald-pro.md#autentifikaciya-polzovatelei).
+
