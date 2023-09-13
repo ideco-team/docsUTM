@@ -22,17 +22,17 @@
 
 * [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users/README.md)
   * [Дерево пользователей и управление учетными записями](advanced-setting/users/user-tree.md)
-  * [Настройка авторизации пользователей](advanced-setting/authorization/README.md)
-    * [Авторизация через журнал безопасности Active Directory](advanced-setting/authorization/active-directory.md)
-    * [IP и MAC авторизация](advanced-setting/authorization/ip-mac-authorization.md)
-    * [Авторизация по подсетям](advanced-setting/authorization/authorization-by-subnet.md)
+  * [Настройка авторизации пользователей](advanced-setting/users/authorization/README.md)
+    * [Авторизация через журнал безопасности Active Directory](advanced-setting/users/authorization/active-directory.md)
+    * [IP и MAC авторизация](advanced-setting/users/authorization/ip-mac-authorization.md)
+    * [Авторизация по подсетям](advanced-setting/users/authorization/authorization-by-subnet.md)
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
   * [Настройка интеграции с ALD Pro](advanced-setting/users/ald.md)
 * [Блокировка трафика](advanced-setting/traffic-blocking/README.md)
   * [Настройка файрвола](advanced-setting/traffic-blocking/firewall.md)
   * [Настройка службы предотвращения вторжений](advanced-setting/traffic-blocking/ips.md)
 * [Управление сервером и его настройка](advanced-setting/server-management/README.md)
-  * [Управление сетевыми интерфейсами](advanced-setting/server-configuration-management/server-configuration-management.md)
+  * [Управление сетевыми интерфейсами](advanced-setting/server-management/server-configuration-management.md)
   * [Сертификаты](advanced-setting/server-management/certificates.md)
   * [Терминал](advanced-setting/server-management/terminal.md)
   * [Привязка лицензий к серверу на MY.IDECO](advanced-setting/server-management/binding-license.md)
@@ -41,6 +41,8 @@
   * [Объекты: создание, редактирование и удаление](advanced-setting/server-management/aliases.md)
   * [Резервное копирование](advanced-setting/server-management/backup.md)
   * [Автоматическое обновление](advanced-setting/server-management/server-update.md)
+  * [Настройка NTP-сервера](advanced-setting/server-management/ntp.md)
+  * [DNS](advanced-setting/server-management/dns.md)
   * [Настройка часового пояса и языка](advanced-setting/server-management/language-time-management.md)
 * [Журналирование и мониторинг](advanced-setting/logging-monitoring/README.md)
   * [Логирование](advanced-setting/logging-monitoring/log.md)
@@ -49,12 +51,14 @@
   * [Информация о загруженности системы](advanced-setting/logging-monitoring/workload-schedule.md)
   * [Подключение сторонних сервисов для мониторинга](advanced-setting/logging-monitoring/connection-external-services.md)
 * [Настройка клиентских машин](advanced-setting/setup-client/README.md)
-  * [Настройка соединения c UTM VPP](advanced-setting/setup-client/setup-connection.md) 
+  * [Настройка соединения c UTM VPP](advanced-setting/setup-client/setup-connection.md)
 
-## Диагностика проблем <a href="problem-diagnosis" id="problem-diagnosis"></a>
+## Диагностика проблем <a href="#problem-diagnosis" id="problem-diagnosis"></a>
+
 * [Проблемы при авторизации пользователей](problem-diagnosis/authorization.md)
 * [Восстановление пароля администратора](problem-diagnosis/recovery-password-admin.md)
 * [Примеры диагностики через терминал](problem-diagnosis/diagnose-console.md)
+
 ## changelog
 
 * [Ideco UTM VPP](changelog/vpp/README.md)

@@ -4,30 +4,30 @@ structure:
 
 redirects:
   dashboard: 
-  user_tree: 
-  ad: 
-  ald_pro: 
-  authorized: 
-  ip_checker: 
-  telegram_bot: 
-  snmp: 
-  zabbix: 
-  firewall: 
-  ids_ips: 
-  object: 
-  network_interface: 
-  dns: 
-  certificate: 
+  user_tree: ./advanced-setting/users/user-tree.md
+  ad: ./advanced-setting/users/active-directory.md
+  ald_pro: ./advanced-setting/users/ald.md
+  authorization: ./advanced-setting/users/authorization/README.md
+  telegram_bot: ./advanced-setting/logging-monitoring/connection-external-services.md
+  snmp: ./advanced-setting/logging-monitoring/connection-external-services.md
+  zabbix: ./advanced-setting/logging-monitoring/connection-external-services.md
+  firewall: ./advanced-setting/traffic-blocking/firewall.md
+  ids_ips: ./advanced-setting/traffic-blocking/ips.md
+  object: ./ advanced-setting/server-management/aliases.md
+  network_interface: ./advanced-setting/server-management/server-configuration-management.md
+  dns: ./advanced-setting/server-management/dns.md
+  ntp: ./advanced-setting/server-management/ntp.md
+  certificate: ./advanced-setting/server-management/certificates.md
   custom_ssl: 
-  logs: 
-  security_events: 
-  admin_logs: 
-  authorization_log: 
-  reports_designer: 
-  syslog: 
-  admins: 
-  server_update: 
-  backup: 
-  terminal: 
-  license_management: 
-  additionally: 
+  logs: ./advanced-setting/logging-monitoring/log.md
+  security_events: ./advanced-setting/logging-monitoring/events-reports.md
+  admin_logs: ./advanced-setting/logging-monitoring/log.md
+  authorization_log: ./advanced-setting/logging-monitoring/events-reports.md
+  reports_designer: ./advanced-setting/logging-monitoring/events-reports.md
+  syslog: ./advanced-setting/logging-monitoring/log.md
+  admins: ./advanced-setting/server-management/management-admins.md
+  server_update: ./advanced-setting/server-management/server-update.md
+  backup: ./advanced-setting/server-management/backup.md
+  terminal: ./advanced-setting/server-management/terminal.md
+  license_management: ./advanced-setting/server-management/binding-license.md
+  additionally: ./advanced-setting/server-management/language-time-management.md
