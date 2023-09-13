@@ -46,33 +46,26 @@ Cинхронизация с Active Directory(AD) приостанавливае
 
 Для работы авторизации через журнал безопасности выполните настройку на основном контроллере домена:
 
-*   В настройках брандмауэра Windows на всех контроллерах домена (или доменов) разрешите удаленный доступ к логам безопасности.
-
-    > В англоязычной версии, правило именуется: **Remote Event Log Management (RPC)**
+1. В настройках брандмауэра Windows на всех контроллерах домена (или доменов) разрешите **удаленное управление журналом событий (Remote Event Log Management)**
 
 ![](../../../.gitbook/assets/active-directory6.png)
 
-* Добавьте Ideco UTM в группу безопасности **Читатели журнала событий (Event Log Readers)**.
+2. Добавьте Ideco UTM в группу безопасности **Читатели журнала событий (Event Log Readers)**.
 
 ![](../../../.gitbook/assets/active-directory7.png)
 
-* После настройки доступа к журналу перезапустите службу **Авторизация через журнал безопасности Active Directory** на Ideco UTM. Отключите эту настройку и заново включите;
-*   При изменении стандартной политики безопасности контроллеров домена включите логирование в политиках безопасности, активировав следующий параметр: 
-<details>
-<summary>Англоязычная версия</summary>
+3. После настройки доступа к журналу перезапустите службу **Авторизация через журнал безопасности Active Directory** на Ideco UTM. Отключите эту настройку и заново включите;
 
-   **Default Domain Controllers Policy -> Computer Configuration->Policies->Windows Settings->Security Settings-> Advanced Audit Policy Configuration -> Audit Policies -> Logon/Logoff -> Audit Logon -> Success**.
+При изменении стандартной политики безопасности контроллеров домена выполните действия:
 
-   Также включите следующие параметры: **Default Domain Controllers Policy -> Computer Configuration->Policies->Windows Settings->Security Settings-> Advanced Audit Policy Configuration -> Audit Policies -> Account logon -> "Audit Kerberos Authentication Service" и "Audit Kerberos Service Ticket Operations" -> Success**.
-</details>
+**Англоязычная версия:**
 
-<details>
-<summary>Русскоязычная версия</summary>
+![](../../../.gitbook/assets/active-directory9.gif)
 
-   **Политика Default Domain Controllers Policy -> Конфигурация Windows -> Параметры безопасности -> Конфигурация расширенной политики аудита -> Политики аудита -> Вход/выход -> Аудит входа в систему -> Успех**.
+**Русскоязычная версия:**
 
-   Также включите следующие параметры: **Политика Default Domain Controllers Policy -> Конфигурация Windows -> Параметры безопасности -> Конфигурация расширенной политики аудита -> Политики аудита -> Вход учетной записи -> "Аудит службы проверки подлинности Kerberos" и "Аудит операций билета службы керберос" -> Успех**.
-</details>
+![](../../../.gitbook/assets/active-directory8.gif)
+
 
 {% hint style="info" %}
 Для обновления политик контроллеров доменов выполните `gpupdate /force`;\
@@ -104,16 +97,18 @@ Cинхронизация с Active Directory(AD) приостанавливае
 <details>
 <summary>Англоязычная версия</summary>
 
-**Default Policy Group > Computer Configuration > Policies > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page > Site to Zone Assignment List**
+**Edit group policy -> Computer Configuration -> Administrative Templates -> Windows Components -> Internet Explorer -> Internet Control Panel -> Security Page -> Site to Zone Assignment List**
+
 </details>
 
 <details>
 <summary>Русскоязычная версия</summary>
 
-**Конфигурация компьютера -> Политики -> Административные шаблоны -> Компоненты Windows -> Internet Explorer -> Панель управления браузером -> Вкладка безопасность -> Список назначений зоны для веб-сайтов**.
+**Изменение локальной групповой политики -> Политика "Локальный компьютер" -> Административные шаблоны -> Компоненты Windows -> Internet Explorer -> Панель управления браузером -> Вкладка безопасность -> Список назначений зоны для веб-сайтов**
+
 </details>
 
-2. Введите назначение зоны для DNS-имени Ideco UTM (в примере idecoics.example.ru) со значением равным 1 (интрасеть). Укажите два назначения для схем работы по http и https.
+1. Введите назначение зоны для DNS-имени Ideco UTM (в примере idecoics.example.ru) со значением равным 1 (интрасеть). Укажите два назначения для схем работы по http и https.
 
 ![](../../../.gitbook/assets/active-directory1.png)
 
@@ -130,7 +125,7 @@ Cинхронизация с Active Directory(AD) приостанавливае
 
 * **Через Ideco Agent** - подходит для аутентификации пользователей терминальных серверов (с использованием Remote Desktop IP Virtualization на терминальном сервере);
 * **Авторизация по IP-адресу** - подходит для пользователей с фиксированным IP-адресом. IP-адреса на UTM необходимо прописать вручную каждому пользователю;
-* **Авторизация по PPTP** - подходит для сетей, слабо защищенных от перехвата трафика Wi-Fi, и с повышенными требованиями к конфиденциальности информации.
+* **Авторизация по VPN** - подходит для авторизации пользователей удаленных сетей.
 
 ## Настройка аутентификации пользователей при прямых подключениях к прокси-серверу
 
