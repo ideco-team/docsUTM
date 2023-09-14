@@ -3,7 +3,7 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  dashboard: 
+  dashboard: ./advanced-setting/logging-monitoring/monitor-panel.md
   user_tree: ./advanced-setting/users/user-tree.md
   ad: ./advanced-setting/users/active-directory.md
   ald_pro: ./advanced-setting/users/ald.md

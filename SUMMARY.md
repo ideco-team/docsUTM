@@ -50,6 +50,7 @@
   * [Информация об активных сессиях пользователей](advanced-setting/logging-monitoring/authorization-info.md)
   * [Информация о загруженности системы](advanced-setting/logging-monitoring/workload-schedule.md)
   * [Подключение сторонних сервисов для мониторинга](advanced-setting/logging-monitoring/connection-external-services.md)
+  * [Панель мониторинга](advanced-setting/logging-monitoring/monitor-panel.md)
 * [Настройка клиентских машин](advanced-setting/setup-client/README.md)
   * [Настройка соединения c UTM VPP](advanced-setting/setup-client/setup-connection.md)
 
