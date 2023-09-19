@@ -18,7 +18,7 @@ redirects:
   dns: ./advanced-setting/server-management/dns.md
   ntp: ./advanced-setting/server-management/ntp.md
   certificate: ./advanced-setting/server-management/certificates.md
-  custom_ssl: 
+  custom_ssl: ./advanced-setting/server-management/upload-own-ssl.md
   logs: ./advanced-setting/logging-monitoring/log.md
   security_events: ./advanced-setting/logging-monitoring/events-reports.md
   admin_logs: ./advanced-setting/logging-monitoring/log.md

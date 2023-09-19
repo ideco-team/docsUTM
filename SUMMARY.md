@@ -34,6 +34,7 @@
 * [Управление сервером и его настройка](advanced-setting/server-management/README.md)
   * [Управление сетевыми интерфейсами](advanced-setting/server-management/server-configuration-management.md)
   * [Сертификаты](advanced-setting/server-management/certificates.md)
+  * [Загрузка своего SSL-сертификата](advanced-setting/server-management/upload-own-ssl.md)
   * [Терминал](advanced-setting/server-management/terminal.md)
   * [Привязка лицензий к серверу на MY.IDECO](advanced-setting/server-management/binding-license.md)
   * [Управление администраторами](advanced-setting/server-management/management-admins.md)
