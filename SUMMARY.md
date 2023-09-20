@@ -43,7 +43,7 @@
   * [Ideco агент](settings/users/ideco-agent.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
-    * [Авторизация пользователей AD/Samba DC](settings/users/active-directory/active-directory-user-authorization.md)
+    * [Аутентификация пользователей AD/Samba DC](settings/users/active-directory/active-directory-user-authorization.md)
     * [Скрипты автоматической разавторизации](settings/users/active-directory/auto-de-authorization-script.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
   * [ALD Pro](settings/users/ald-pro.md)
