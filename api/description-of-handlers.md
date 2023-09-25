@@ -14,7 +14,6 @@ POST /web/auth/login
 {
     "login": "string",    
     "password": "string",    
-    "recaptcha": "string" (по умолчанию пустая строка - ""),
     "rest_path": "string" (по умолчанию строка со слэшем "/")
 }
 
