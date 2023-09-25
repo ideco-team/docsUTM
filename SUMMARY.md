@@ -4,7 +4,7 @@
 
 ## Общая информация <a href="#general" id="general"></a>
 
-* [Лицензирование](general/license.md)
+* [Виды и состав лицензий](general/license.md)
 * [Системные требования и источники обновления данных](general/data-update-source-utm-vpp.md)
 * [Техническая поддержка](general/technical-support.md)
 
