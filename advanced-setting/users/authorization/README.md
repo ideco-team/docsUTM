@@ -1,14 +1,15 @@
 ---
 description: >-
-  Авторизация – необходимое условие для доступа пользователя в сеть Интернет. Для работы в пределах локальной сети авторизация не требуется.
+  Авторизация – необходимое условие для доступа пользователя в сеть Интернет.
+  Для работы в пределах локальной сети авторизация не требуется.
 ---
 
 # Настройка авторизации пользователей
 
 Существует несколько способов авторизации:
 
-{% content-ref url="active-directory.md" %}
-[active-directory.md](active-directory.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="ip-mac-authorization.md" %}
