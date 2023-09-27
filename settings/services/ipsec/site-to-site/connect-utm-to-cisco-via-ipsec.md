@@ -196,6 +196,10 @@ write memory
 
 </details>
 
+{% hint style = "info" %}
+Если Cisco передает внешний IP-адрес вместо **KeyID** (проверьте, включив расширенный лог IPsec на Cisco) укажите в качестве **Идентификатора удаленной стороны** внешний IP-адрес Cisco.
+{% endhint %}
+
 <details>
 
 <summary> Настройка  входящего подключения Ideco UTM к Cisco IOS</summary>
