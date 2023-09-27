@@ -42,7 +42,7 @@
   * [Резервное копирование](advanced-setting/server-management/backup.md)
   * [Автоматическое обновление](advanced-setting/server-management/server-update.md)
   * [NTP-сервер: принцип работы и настройка](advanced-setting/server-management/ntp.md)
-  * [DNS](advanced-setting/server-management/dns.md)
+  * [DNS-сервер: процесс добавления и рекомендации](advanced-setting/server-management/dns.md)
   * [Настройка часового пояса и языка](advanced-setting/server-management/language-time-management.md)
 * [Журналирование и мониторинг](advanced-setting/logging-monitoring/README.md)
   * [Логирование](advanced-setting/logging-monitoring/log.md)
