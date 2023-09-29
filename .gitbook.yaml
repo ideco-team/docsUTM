@@ -53,7 +53,7 @@ redirects:
   user_tree: ./settings/users/user-tree/README.md
   reports_designer: ./settings/reports/report-designer.md
   authorization_log: ./settings/reports/authorization-log.md
-  license_management: ./service/license-management.md
+  license_management: ./general/license.md
   advanced_settings: ./settings/mail/advanced-settings/README.md
   antispam_chapter: ./settings/mail/antispam.md
   rules: ./settings/mail/regulations/README.md

@@ -32,6 +32,6 @@
 [version-8.x.md](version-8.x.md)
 {% endcontent-ref %}
 
-{% content-ref url="version-7.x.x/README.md" %}
-[version-7.x.x/README.md](version-7.x.x/README.md)
+{% content-ref url="version-7.x.x/" %}
+[version-7.x.x](version-7.x.x/)
 {% endcontent-ref %}

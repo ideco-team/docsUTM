@@ -5,14 +5,18 @@
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
-* [Источники обновлений данных Ideco UTM](general/data-update-source-ideco-utm.md)
+* [Cистемные требования и источники обновления данных Ideco UTM](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
+  * [Режим удаленного помощника](service/remote-assistant.md)
 
 ## Установка <a href="#installation" id="installation"></a>
 
-* [Создание загрузочного USB flash диска](installation/usb.md)
-* [Особенности настроек гипервизоров](installation/specifics-of-hypervisor-settings.md)
-* [Процесс установки](installation/installation-process.md)
+* [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
+* [Личный кабинет my.ideco](installation/initial-action-my-ideco.md)
+* [Подготовка к установке на устройство](installation/preparation-install.md)
+  * [Настройка гипервизора](installation/specifics-of-hypervisor-settings.md)
+  * [Подготовка загрузочного диска](installation/usb.md)
+* [Установка](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
 
 ## Настройка <a href="#settings" id="settings"></a>
@@ -151,19 +155,12 @@
   * [Портмаппинг (проброс портов, DNAT)](settings/publishing-resources/portmapping.md)
 * [Интеграция UTM и SkyDNS](settings/skydns.md)
 
-## Обслуживание <a href="#service" id="service"></a>
-
-* [Управление лицензиями](service/license-management.md)
-* [Обновление сервера](service/server-update.md)
-* [Регистрация сервера](service/server-registration.md)
-* [Резервное копирование и восстановление данных](service/backup.md)
-* [Режим удаленного помощника](service/remote-assistant.md)
-* [Разрешить интернет всем](service/razreshit-internet-vsem.md)
-* [Удаленный доступ для управления сервером](service/remote-access-for-server-management.md)
-* [Личный кабинет](service/lk.md)
-
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
+* [Обслуживание сервера](recipes/server-maintenance/README.md)
+  * [Разрешить интернет всем: диагностика неполадок](recipes/server-maintenance/allow-internet-all.md)
+  * [Удаленный доступ к серверу](recipes/server-maintenance/remote-access-for-server-management.md)
+  * [Регистрация сервера](recipes/server-maintenance/server-registration.md)
 * [FAQ](recipes/popular-recipes/README.md)
   * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
