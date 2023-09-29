@@ -1,4 +1,4 @@
-# Особенности настроек гипервизоров
+# Настройка гипервизора
 
 {% hint style="warning" %}
 Для установки Ideco UTM нужно включить режим UEFI в настройках виртуальной машины.
@@ -35,7 +35,7 @@ Ideco UTM поддерживает работу на следующих гипе
 Если при установке Ideco UTM появилось окно с надписью **Installation in BIOS mode is not supported**, проверьте включение режима UEFI в настройках виртуальной машины. 
 {% endhint %}
 
-## **Microsoft Hyper-V**
+## Microsoft Hyper-V 
 
 * Поддерживается только второе поколение виртуальных машин под Windows Server 2012 R2 или выше; 
 * Отключите опцию **Secure Boot** (безопасная загрузка);
@@ -146,8 +146,11 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
     ![](../.gitbook/assets/setup-hypervisor11.png)
 
 Если пункта **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd** нет в списке, доустановите пакет ovmf. В Ubuntu этот пакет устанавливается командой `sudo apt install ovmf`.
-
 </details>
+
+Далее начнется установка Ideco UTM на виртуальную машину. Подробнее об установке в статье [Установка](installation-process.md)
+
+
 {% hint style="info" %}
 При возможных проблемах проверьте соответствие параметров виртуальной машины [общим рекомендациям](#obshie-rekomendacii).
 {% endhint %}
