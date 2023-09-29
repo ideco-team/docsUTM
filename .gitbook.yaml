@@ -20,10 +20,10 @@ redirects:
   certificate: ./advanced-setting/server-management/certificates.md
   custom_ssl: ./advanced-setting/server-management/upload-own-ssl.md
   logs: ./advanced-setting/logging-monitoring/log.md
-  security_events: ./advanced-setting/logging-monitoring/events-reports.md
+  security_events: ./advanced-setting/logging-monitoring/security-events.md
   admin_logs: ./advanced-setting/logging-monitoring/log.md
-  authorization_log: ./advanced-setting/logging-monitoring/events-reports.md
-  reports_designer: ./advanced-setting/logging-monitoring/events-reports.md
+  authorization_log: ./advanced-setting/logging-monitoring/login-log.md
+  reports_designer: ./advanced-setting/logging-monitoring/report-designer.md
   syslog: ./advanced-setting/logging-monitoring/log.md
   admins: ./advanced-setting/server-management/management-admins.md
   server_update: ./advanced-setting/server-management/server-update.md
