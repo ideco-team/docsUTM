@@ -35,7 +35,7 @@
   * [Сертификаты](advanced-setting/server-management/certificates.md)
   * [Загрузка своего SSL-сертификата](advanced-setting/server-management/upload-own-ssl.md)
   * [Терминал](advanced-setting/server-management/terminal.md)
-  * [Привязка лицензий к серверу на MY.IDECO](advanced-setting/server-management/binding-license.md)
+  * [Управление лицензиями](advanced-setting/server-management/binding-license.md)
   * [Управление администраторами](advanced-setting/server-management/management-admins.md)
   * [Настройка доступа к серверу по SSH](advanced-setting/server-management/SSH-access.md)
   * [Объекты: создание, редактирование и удаление](advanced-setting/server-management/aliases.md)
