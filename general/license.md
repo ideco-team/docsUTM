@@ -72,6 +72,6 @@
 
 Получить лицензию SMB можно в личном кабинете: [https://my.ideco.ru](https://my.ideco.ru).
 
-{% hint style="info" %}
-Подробнее об использовании лицензии в личном кабинете в статье Управление лицензиями.
+{% hint style="info" %} 
+Подробнее об использовании лицензии в личном кабинете в статье [Управление лицензиями](../advanced-setting/server-management/binding-license.md).
 {% endhint %}
