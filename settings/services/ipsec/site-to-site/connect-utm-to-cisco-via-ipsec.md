@@ -1,24 +1,24 @@
 ---
 description: >-
-  По шагам статьи можно объединить сети Cisco и Ideco UTM по IPsec с
+  По шагам статьи можно объединить сети Cisco и Ideco NGFW по IPsec с
   использованием PSK.
 ---
 
-# Подключение Cisco IOS к Ideco UTM по IPsec
+# Подключение Cisco IOS к Ideco NGFW по IPsec
 
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
 ![](../../../../.gitbook/assets/connect-utm-to-cisco-via-ipsec1.png)
 
-Для настройки подключения Cisco IOS к Ideco UTM нужно следовать инструкции в каждой из пунктов.
+Для настройки подключения Cisco IOS к Ideco NGFW нужно следовать инструкции в каждой из пунктов.
 
 <details>
 
-<summary>Первоначальная настройка Ideco UTM и Cisco IOS</summary>
+<summary>Первоначальная настройка Ideco NGFW и Cisco IOS</summary>
 
-### Настройка Ideco UTM
+### Настройка Ideco NGFW
 
-Настройте на Ideco UTM локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](../../../../installation/initial-setup.md).
+Настройте на Ideco NGFW локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](../../../../installation/initial-setup.md).
 
 ### Настройка Cisco IOS EX
 
@@ -48,7 +48,7 @@ ip nat outside
 exit
 ```
 
-3. Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco. Для этого в консоли Cisco используйте команду `ping <внешний IP UTM>`. Результат вывода команды - наличие ICMP-ответов.
+3. Проверьте наличие связи между внешними интерфейсами Ideco NGFW и Cisco. Для этого в консоли Cisco используйте команду `ping <внешний IP NGFW>`. Результат вывода команды - наличие ICMP-ответов.
 4. Создание access-list с адресацией локальной сети (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/security/ios-firewall/23602-confaccesslists.html)):
 
 ```
@@ -95,12 +95,12 @@ proposal ikev2proposal
 exit
 ```
 
-3. Создание peer (key\_id - идентификатор удаленной стороны, т.е. Ideco UTM). Подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659\_\_GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9):
+3. Создание peer (key\_id - идентификатор удаленной стороны, т.е. Ideco NGFW). Подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659\_\_GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9):
 
 ```
 crypto ikev2 keyring key
 peer strongswan
-address <внешний IP UTM-a>
+address <внешний IP NGFW>
 identity key-id <key_id>
 pre-shared-key local <psk>
 pre-shared-key remote <psk>
@@ -112,7 +112,7 @@ exit
 
 ```
 crypto ikev2 profile ikev2profile
-match identity remote address <внешний IP UTM-a> 255.255.255.255
+match identity remote address <внешний IP NGFW> 255.255.255.255
 authentication remote pre-share
 authentication local pre-share
 keyring local key
@@ -131,7 +131,7 @@ exit
 
 ```
 crypto map cmap 10 ipsec-isakmp
-set peer <внешний IP UTM-a>
+set peer <внешний IP NGFW>
 set transform-set TS
 set ikev2-profile ikev2profile
 match address cryptoacl
@@ -146,20 +146,20 @@ crypto map cmap
 exit
 ```
 
-8. Создание access-list для трафика между локальными сетями Cisco и UTM:
+8. Создание access-list для трафика между локальными сетями Cisco и NGFW:
 
 ```
 ip access-list extended cryptoacl
-permit ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть UTM> <обратная маска подсети>
+permit ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть NGFW> <обратная маска подсети>
 exit
 ```
 
-9. Добавление в access-list NAT исключения трафика между локальными сетями Cisco и UTM (правило `deny` должно оказаться выше чем `permit`):
+9. Добавление в access-list NAT исключения трафика между локальными сетями Cisco и NGFW (правило `deny` должно оказаться выше чем `permit`):
 
 ```
 ip access-list extended NAT
 no permit ip <локальная подсеть Cisco> <обратная маска подсети> any
-deny ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть UTM> <обратная маска подсети>
+deny ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть NGFW> <обратная маска подсети>
 permit ip <локальная подсеть Cisco> <обратная маска подсети> any
 exit
 
@@ -176,11 +176,11 @@ write memory
 
 <details>
 
-<summary>Настройка исходящего подключения Ideco UTM к Cisco IOS</summary>
+<summary>Настройка исходящего подключения Ideco NGFW к Cisco IOS</summary>
 
-Для настройки исходящего IPsec подключения на Ideco UTM выполните действия:
+Для настройки исходящего IPsec подключения на Ideco NGFW выполните действия:
 
-1. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**.
+1. В веб-интерфейсе Ideco NGFW откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**.
 2. Добавьте новое подключение:
 
 * **Название** – любое;
@@ -201,18 +201,18 @@ write memory
 
 <details>
 
-<summary>Настройка входящего подключения Ideco UTM к Cisco IOS</summary>
+<summary>Настройка входящего подключения Ideco NGFW к Cisco IOS</summary>
 
-Для настройки входящего IPsec подключения на Ideco UTM выполните действия:
+Для настройки входящего IPsec подключения на Ideco NGFW выполните действия:
 
-1. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**.
+1. В веб-интерфейсе Ideco NGFW откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**.
 2. Добавьте новое подключение:
 
 * **Название** – любое;
 * **Тип аутентификации** – PSK;
 * **PSK** – укажите PSK-ключ;
 * **Идентификатор удаленной стороны** – вставьте идентификатор Cisco (параметр Key ID);
-* **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
+* **Домашние локальные сети** – укажите локальную сеть Ideco NGFW;
 * **Удалённые локальные сети** – укажите локальную сеть Cisco.
 
 3. Сохраните созданное подключение, затем нажмите на кнопку **Включить**.

@@ -1,6 +1,6 @@
 ---
 description: >-
-  Ideco Monitoring Bot может прислать уведомления о событиях в Ideco UTM
+  Ideco Monitoring Bot может прислать уведомления о событиях в Ideco NGFW
   (уведомления из колокольчика).
 ---
 
@@ -19,7 +19,7 @@ description: >-
 
 <summary>Настройка привязки Ideco Monitoring Bot к одному пользователю</summary>
 
-1. Настроить Интернет на Ideco UTM.
+1. Настроить Интернет на Ideco NGFW.
 2. [Привязать лицензию](broken-reference) к серверу.
 3. Перейти к диалогу с ботом: [@ideco\_monitor\_bot](https://telegram.im/@ideco\_monitor\_bot).
 4. Написать боту `/start`.
@@ -36,7 +36,7 @@ description: >-
 
 <summary>Настройка привязки Ideco Monitoring Bot к беседе</summary>
 
-1. Настроить Интернет на Ideco UTM.
+1. Настроить Интернет на Ideco NGFW.
 2. [Привязать лицензию](broken-reference) к серверу.
 3. Перейти в группу и добавить пользователя Ideco monitoring bot.
 4. Написать `/start`.
