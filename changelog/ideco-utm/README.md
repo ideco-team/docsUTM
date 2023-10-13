@@ -1,4 +1,4 @@
-# Ideco UTM
+# Ideco NGFW
 
 {% content-ref url="versiya-ideco-utm-15.x.md" %}
 [versiya-ideco-utm-15.x.md](versiya-ideco-utm-15.x.md)

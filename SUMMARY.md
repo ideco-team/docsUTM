@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Об Ideco UTM](README.md)
+* [Об Ideco NGFW](README.md)
 
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
-* [Cистемные требования и источники обновления данных Ideco UTM](general/data-update-source-ideco-utm.md)
+* [Cистемные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
   * [Режим удаленного помощника](service/remote-assistant.md)
 
@@ -107,10 +107,10 @@
   * [IPsec](settings/services/ipsec/README.md)
     * [Филиалы и главный офис](settings/services/ipsec/branch-office-and-main-office.md)
     * [Устройства](settings/services/ipsec/devices.md)
-      * [Подключение Ideco UTM и Mikrotik](settings/services/ipsec/site-to-site/site-to-site-ideco-mikrotik.md)
-      * [Подключение Cisco IOS к Ideco UTM по IPsec](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
-      * [Подключение pfSense к Ideco UTM по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-pfsense-to-utm.md)
-      * [Подключение Kerio Control к Ideco UTM по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
+      * [Подключение Ideco NGFW и Mikrotik](settings/services/ipsec/site-to-site/site-to-site-ideco-mikrotik.md)
+      * [Подключение Cisco IOS к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
+      * [Подключение pfSense к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-pfsense-to-utm.md)
+      * [Подключение Kerio Control к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
       * [Подключение Keenetic по SSTP или IPsec](settings/services/ipsec/site-to-site/keenetic-connection.md)
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка своего SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
@@ -153,7 +153,7 @@
   * [Публикация веб-приложений (обратный прокси-сервер)](settings/publishing-resources/publishing-web-applications.md)
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
   * [Портмаппинг (проброс портов, DNAT)](settings/publishing-resources/portmapping.md)
-* [Интеграция UTM и SkyDNS](settings/skydns.md)
+* [Интеграция NGFW и SkyDNS](settings/skydns.md)
 
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
@@ -173,19 +173,19 @@
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md)
   * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
-  * [Как восстановить доступ к Ideco UTM](recipes/popular-recipes/restore-access-to-ideco-utm.md)
-  * [Как восстановиться на прошлую версию после обновления Ideco UTM](recipes/popular-recipes/go-back.md)
+  * [Как восстановить доступ к Ideco NGFW](recipes/popular-recipes/restore-access-to-ideco-utm.md)
+  * [Как восстановиться на прошлую версию после обновления Ideco NGFW](recipes/popular-recipes/go-back.md)
   * [Проверка настроек фильтрации с помощью security ideco](recipes/popular-recipes/security-ideco.md)
-  * [Выбор аппаратной платформы для Ideco UTM](recipes/popular-recipes/choosing-hardware-platform.md)
+  * [Выбор аппаратной платформы для Ideco NGFW](recipes/popular-recipes/choosing-hardware-platform.md)
   * [Поддержка устаревших алгоритмов шифрования](recipes/popular-recipes/legacy-encryption-support.md)
   * [Настройка программы Proxifier для прямых подключений к прокси серверу](recipes/popular-recipes/configuring-proxifier.md)
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
   * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
-  * [Настройка автоматической веб-аутентификации на Ideco UTM на Linux](recipes/popular-recipes/auto-authorization-linux.md)
+  * [Настройка автоматической веб-аутентификации на Ideco NGFW на Linux](recipes/popular-recipes/auto-authorization-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
-  * [Порядок обработки веб-трафика в Ideco UTM](recipes/popular-recipes/processing-order.md)
-  * [Интеграция Ideco UTM и брокера сетевых пакетов DS Integrity NG](recipes/popular-recipes/integrity.md)
-  * [Настройка cовместной работы ViPNet Координатор с Ideco UTM](./recipes/popular-recipes/vipnet-coordinator.md)
+  * [Порядок обработки веб-трафика в Ideco NGFW](recipes/popular-recipes/processing-order.md)
+  * [Интеграция Ideco NGFW и брокера сетевых пакетов DS Integrity NG](recipes/popular-recipes/integrity.md)
+  * [Настройка cовместной работы ViPNet Координатор с Ideco NGFW](./recipes/popular-recipes/vipnet-coordinator.md)
   * [Блокировка чат-ботов](./recipes/popular-recipes/block-chat-bot.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
@@ -202,7 +202,7 @@
 
 ## changelog
 
-* [Ideco UTM](changelog/ideco-utm/README.md)
+* [Ideco NGFW](changelog/ideco-utm/README.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
   * [Версия Ideco UTM 13.X](changelog/ideco-utm/versiya-ideco-utm-13.x.md)

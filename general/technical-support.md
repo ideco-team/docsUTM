@@ -29,7 +29,7 @@ description: >-
 | **Портал поддержки**. Для получения доступа к порталу отправьте запрос на электронную почту help@ideco.ru | [https://help.ideco.ru/](https://help.ideco.ru/)                                                              |
 | Телефон                                                                                                   | +7 (495) 662-87-34                                                                                            |
 | Электронная почта                                                                                         | help@ideco.ru                                                                                                 |
-| Интерактивный онлайн-чат со специалистом технической поддержки                                            | [https://my.ideco.ru/](https://my.ideco.ru/), [https://ideco.ru/](https://ideco.ru/), веб-интерфейс Ideco UTM |
+| Интерактивный онлайн-чат со специалистом технической поддержки                                            | [https://my.ideco.ru/](https://my.ideco.ru/), [https://ideco.ru/](https://ideco.ru/), веб-интерфейс Ideco NGFW |
 
 ## Правила обращения
 
