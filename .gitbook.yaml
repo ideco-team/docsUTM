@@ -31,7 +31,7 @@ redirects:
   report: ./settings/reports/README.md
   reverse_proxy: ./settings/services/reverse-proxy.md
   routing: ./settings/services/routing.md
-  server_registration: ./service/server-registration.md
+  server_registration: ./recipes/server-maintenance/server-registration.md
   server_update: ./service/server-update.md
   snmp: ./settings/monitor/snmp.md
   shaper: ./settings/access-rules/shaper.md
@@ -43,7 +43,6 @@ redirects:
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
-  ideco_vpn_agent: ./settings/services/vpn-tunnel-protocols/client-to-site/ideco-vpn-client.md
   zabbix: ./settings/monitor/zabbix.md
   dashboard: ./settings/monitor-panel.md
   traffmon: ./settings/monitor/traffic.md
@@ -60,7 +59,7 @@ redirects:
   mail_queue: ./settings/mail/mail-queue.md
   bgp: ./settings/services/bgp.md
   traffic: ./settings/reports/traffic.md
-  ideco_agent: ./settings/users/ideco-agent.md
+  ideco_client: ./settings/users/ideco-client.md
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   ddns: ./settings/services/dns/ddns.md 

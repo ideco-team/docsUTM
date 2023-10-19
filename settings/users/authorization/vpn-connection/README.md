@@ -4,7 +4,7 @@
 Название службы раздела **VPN-подключение**: `ideco-accel-l2tp`; `ideco-accel-pptp`; `ideco-accel-sstp`; `ideco-vpn-servers-backend`; `ideco-vpn-authd`.\
 Список служб для других разделов доступен по [ссылке](../../../server-management/terminal.md).
 
-Инструкция по настройке VPN-подключения через [Ideco Agent клиент для Windows](../../ideco-agent.md).
+Инструкция по настройке VPN-подключения через [Ideco Client](../../ideco-client.md).
 {% endhint %}
 
 {% hint style="warning" %}
