@@ -16,11 +16,11 @@
 
 | Раздел                                        | Имя службы   |
 | :-------------------------------------------- | :------------------------- |
-| Файрвол                                       | ideco-firewall-backend; ideco-nflog |
+| Файрвол                                       | ideco-av-backend; ideco-nflog |
 | Контроль приложений                           | ideco-app-backend; ideco-app-control@Leth<номер локального интерфейса> |
 | Контент-фильтр                                | ideco-content-filter-backend |
 | Ограничение скорости                          | ideco-shaper-backend |
-| Антивирусы веб-трафика                        | ideco-av-backend; ideco-clamd |
+| Антивирусы веб-трафика                        | ideco-av-backend;|
 | Предотвращение вторжений                      | ideco-suricata-backend; ideco-suricata; ideco-suricata-event-syncer; ideco-suricata-event-to-syslog |
 | Объекты                                       | ideco-alias-backend |
 | Квоты                                         | ideco-quotas-backend; systemd-quotacheck |
