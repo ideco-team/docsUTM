@@ -1,5 +1,9 @@
 # Сервисы
 
+{% hint style="success" %}
+Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
+{% endhint %}
+
 {% content-ref url="connection-to-provider/README.md" %}
 [connection-to-provider/README.md.md](connection-to-provider/README.md)
 {% endcontent-ref %}

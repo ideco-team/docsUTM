@@ -5,6 +5,8 @@
 Список служб для других разделов доступен по [ссылке](../../../server-management/terminal.md).
 
 Инструкция по настройке VPN-подключения через [Ideco Client](../../ideco-client.md).
+
+Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
 {% endhint %}
 
 {% hint style="warning" %}
