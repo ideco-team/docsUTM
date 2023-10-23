@@ -28,7 +28,7 @@ description: >-
 7. Нажать на кнопку **Привязать аккаунт**.
 8. Ввести код в соответствующее поле и нажать на кнопку **Привязать**.
 
-<img src="../../.gitbook/assets/monitoring_bot_link.png" alt="" data-size="original">
+![](../../.gitbook/assets/telegram-bot.png)
 
 </details>
 
@@ -45,7 +45,7 @@ description: >-
 7. Нажать на кнопку **Привязать аккаунт**.
 8. Ввести код в соответствующее поле и нажать на кнопку **Привязать**.
 
-<img src="../../.gitbook/assets/monitoring_bot_link.png" alt="" data-size="original">
+![](../../.gitbook/assets/telegram-bot.png)
 
 </details>
 
