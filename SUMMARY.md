@@ -203,6 +203,7 @@
 ## changelog
 
 * [Ideco NGFW](changelog/ideco-utm/README.md)
+  * [Версия Ideco NGFW 16.X](changelog/ideco-utm/versiya-ideco-utm-16.x.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
   * [Версия Ideco UTM 13.X](changelog/ideco-utm/versiya-ideco-utm-13.x.md)
