@@ -12,6 +12,10 @@ description: >-
 Использует протокол Wireguard.
 {% endhint %}
 
+{% hint style="success" %}
+Нужна помощь при настройке Ideco UTM? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
+{% endhint %}
+
 {% hint style="warning" %}
 Установить программу Ideco агент можно только на ОС семейства Windows с 8 версии и новее.
 {% endhint %}

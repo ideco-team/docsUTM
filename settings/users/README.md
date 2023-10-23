@@ -1,5 +1,9 @@
 # Пользователи
 
+{% hint style="success" %}
+Нужна помощь при настройке Ideco UTM? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
+{% endhint %}
+
 {% content-ref url="user-tree/README.md" %}
 [user-tree/README.md](user-tree/README.md)
 {% endcontent-ref %}
