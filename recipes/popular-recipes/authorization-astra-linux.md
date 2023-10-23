@@ -14,7 +14,7 @@
 
 5\. В настройках браузера Firefox в пункте **Защита и приватность** в разделе **Защита** выбрать **Просмотр сертификатов**.
 
-![](../../.gitbook/assets/firefix-sert.png)
+![](../../.gitbook/assets/authorization-astra-linux1.png)
 
 6\. Во вкладке **Центры сертификации** нажать **Импортировать** и выбрать скачанный с UTM сертификат.
 
@@ -39,7 +39,7 @@
 
 Пример проблемы:
 
-![](../../.gitbook/assets/chromium.png)
+![](../../.gitbook/assets/authorization-astra-linux.png)
 
 ## Для браузера **Firefox**
 
