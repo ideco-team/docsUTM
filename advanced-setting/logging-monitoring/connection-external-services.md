@@ -13,7 +13,7 @@
 
 Для привязки бота выполните действия:
 
-1. Настройте **Management** интерфейс c выходом в Интернет на Ideco UTM VPP.
+1. Настройте **Control Plane** интерфейс c выходом в Интернет на Ideco UTM VPP.
 2. [Привяжите лицензию](../../initial-setup/initial-setup-web.md#registraciya-servera) к серверу.
    * Привязка к одному пользователю:\
      3. Перейдите к диалогу с ботом: [@ideco\_monitor\_bot](https://telegram.im/@ideco_monitor_bot).
@@ -61,7 +61,7 @@
 
 ![](../../.gitbook/assets/connection-external-services2.png)
 
-В обоих случаях интеграции Zabbix-сервер должен находиться внутри **Management** сети Ideco UTM VPP. Подключение мониторинга возможно только к **Management** интерфейсам.
+В обоих случаях интеграции Zabbix-сервер должен находиться внутри **Control Plane** сети Ideco UTM VPP. Подключение мониторинга возможно только к **Control Plane** интерфейсам.
 
 {% hint style="info" %}
 В качестве шаблонов данных можно использовать стандартные шаблоны для Linux-серверов.
