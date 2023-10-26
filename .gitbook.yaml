@@ -11,8 +11,11 @@ redirects:
   telegram_bot: ./advanced-setting/logging-monitoring/connection-external-services.md
   snmp: ./advanced-setting/logging-monitoring/connection-external-services.md
   zabbix: ./advanced-setting/logging-monitoring/connection-external-services.md
-  firewall: ./advanced-setting/traffic-blocking/firewall.md
-  ids_ips: ./advanced-setting/traffic-blocking/ips.md
+  firewall: ./advanced-setting/control-blocking/firewall.md
+  ids_ips: ./advanced-setting/control-blocking/ips.md
+  proxy: ./advanced-setting/control-blocking/proxy.md
+  routing: ./advanced-setting/control-blocking/routing.md
+  content_filter_security_profiles: ./advanced-setting/control-blocking/content-filter.md
   object: ./ advanced-setting/server-management/aliases.md
   network_interface: ./advanced-setting/server-management/server-configuration-management.md
   dns: ./advanced-setting/server-management/dns.md
