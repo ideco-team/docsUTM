@@ -139,7 +139,7 @@ description: >-
 * **Peer identifier** - KeyID tag. Введите идентификатор удаленной стороны, т.е. Ideco NGFW;
 * **Pre-Shared Key** – введите PSK-ключ;
 * **Encryption Algorithm**:
-* Для **Ideco UTM версии 10.0 и новее** используйте следующие параметры:
+* Для **Ideco UTM версии 10.0 и Ideco NGFW версии 16.0 и новее** используйте следующие параметры:
   1. **Algorithm** - AES256-GCM;
   2. **Key length** - 128 bit;
   3. **Hash** - SHA256;
@@ -151,7 +151,7 @@ description: >-
 
 **Encryption Algorithm**:
 
-* **Для Ideco UTM версии 10.0 и новее** используйте следующие параметры:
+* **Для Ideco UTM версии 10.0 и Ideco NGFW версии 16.0 и новее** используйте следующие параметры:
 
 1. **Algorithm** - AES256-GCM;
 2. **Key length** - 128 bit;
