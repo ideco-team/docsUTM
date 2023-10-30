@@ -13,4 +13,4 @@
 ![](../../.gitbook/assets/ssh-access1.png)
 
 * **admin** - имя администратора.
-* **192.168.100.183** - IP-адрес UTM VPP в Control Plane сети.
+* **192.168.100.183** - IP-адрес NGFW VPP в Control Plane сети.

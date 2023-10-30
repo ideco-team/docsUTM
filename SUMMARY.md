@@ -28,8 +28,8 @@
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
   * [Настройка интеграции с ALD Pro](advanced-setting/users/ald.md)
 * [Управление трафиком](advanced-setting/control-blocking/README.md)
-  * [Файрвол](advanced-setting/control-blocking/fairvol.md)
-  * [Предотвращения вторжений](advanced-setting/control-blocking/predotvrasheniya-vtorzhenii.md)
+  * [Файрвол](advanced-setting/control-blocking/firewall.md)
+  * [Предотвращения вторжений](advanced-setting/control-blocking/ips.md)
   * [Маршрутизация](advanced-setting/control-blocking/routing.md)
   * [Контент-фильтр](advanced-setting/control-blocking/content-filter.md)
   * [Прокси](advanced-setting/control-blocking/proxy.md)
@@ -56,7 +56,7 @@
   * [Отчеты: создание шаблонов и отправка на почту](advanced-setting/logging-monitoring/report-designer.md)
   * [Информация об активных сессиях пользователей](advanced-setting/logging-monitoring/authorization-info.md)
   * [Информация о загруженности системы](advanced-setting/logging-monitoring/workload-schedule.md)
-  * [Подключение сторонних сервисов для мониторинга](advanced-setting/logging-monitoring/connection-external-services.md)
+  * [Telegram,  Ideco Monitoring Bot и Zabbix агент](advanced-setting/logging-monitoring/connection-external-services.md)
 * [Настройка клиентских машин](advanced-setting/setup-client/README.md)
   * [Настройка соединения c NGFW VPP](advanced-setting/setup-client/setup-connection.md)
 
@@ -69,7 +69,7 @@
 ## changelog
 
 * [Ideco UTM VPP](changelog/vpp/README.md)
-* [Ideco UTM](changelog/ideco-utm/README.md)
+* [Ideco NGFW](changelog/ideco-utm/README.md)
   * [Версия Ideco NGFW 16.X](changelog/ideco-utm/versiya-ideco-utm-16.x.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
