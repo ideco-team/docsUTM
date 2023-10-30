@@ -23,6 +23,7 @@
 * [Настройка пользователей и интеграция с контроллерами домена](advanced-setting/users/README.md)
   * [Дерево пользователей и управление учетными записями](advanced-setting/users/user-tree.md)
   * [Настройка авторизации пользователей](advanced-setting/users/authorization/README.md)
+    * [Авторизация через журнал безопасности Active Directory](advanced-setting/users/authorization/ad-auth-logs.md) 
     * [IP и MAC авторизация](advanced-setting/users/authorization/ip-mac-authorization.md)
     * [Авторизация по подсетям](advanced-setting/users/authorization/authorization-by-subnet.md)
   * [Настройка интеграции с Active Directory](advanced-setting/users/active-directory.md)
