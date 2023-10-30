@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Об Ideco UTM VPP](README.md)
+* [Об Ideco NGFW VPP](README.md)
 
 ## Общая информация <a href="#general" id="general"></a>
 
@@ -58,7 +58,7 @@
   * [Информация о загруженности системы](advanced-setting/logging-monitoring/workload-schedule.md)
   * [Подключение сторонних сервисов для мониторинга](advanced-setting/logging-monitoring/connection-external-services.md)
 * [Настройка клиентских машин](advanced-setting/setup-client/README.md)
-  * [Настройка соединения c UTM VPP](advanced-setting/setup-client/setup-connection.md)
+  * [Настройка соединения c NGFW VPP](advanced-setting/setup-client/setup-connection.md)
 
 ## Диагностика проблем <a href="#problem-diagnosis" id="problem-diagnosis"></a>
 
@@ -70,6 +70,7 @@
 
 * [Ideco UTM VPP](changelog/vpp/README.md)
 * [Ideco UTM](changelog/ideco-utm/README.md)
+  * [Версия Ideco NGFW 16.X](changelog/ideco-utm/versiya-ideco-utm-16.x.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/versiya-ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/versiya-ideco-utm-14.x.md)
   * [Версия Ideco UTM 13.X](changelog/ideco-utm/versiya-ideco-utm-13.x.md)
