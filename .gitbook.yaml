@@ -67,7 +67,7 @@ redirects:
   ald_pro: ./settings/users/ald-pro.md 
   igmp_proxy: ./settings/services/igmp.md
   admin_logs: ./settings/reports/administrator-actions.md
-  vpn_connection: ./settings/users/authorization/vpn-connection/README.md
+  vpn_connection: settings/users/authorization/vpn-connection/README.md
   security_events: ./settings/reports/security-events.md
   exceptions: ./settings/access-rules/ips/user-ip-exceptions.md
   ntp: ./settings/services/ntp.md
