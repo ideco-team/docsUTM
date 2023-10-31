@@ -35,7 +35,7 @@
       * [Авторизация по MAC-адресу](settings/users/authorization/ip-and-mac-authorization/mac-authorization.md)
     * [Авторизация по подсетям](settings/users/authorization/authorization-by-subnet.md)
   * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
-    * [Двухфакторная аутентификация](settings/users/two-factor-authentication.md)
+    * [Двухфакторная аутентификация](settings/users/authorization/vpn-connection/two-factor-authentication.md)
     * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
     * [Подключение по PPPoE](settings/users/authorization/vpn-connection/pppoe.md)
     * [Подключение по IKEv2/IPsec](settings/users/authorization/vpn-connection/ipsec-ikev2.md)

@@ -60,7 +60,7 @@ redirects:
   bgp: ./settings/services/bgp.md
   traffic: ./settings/reports/traffic.md
   ideco_client: ./settings/users/ideco-client.md
-  two_factor_authentication: ./settings/users/two-factor-authentication.md
+  two_factor_authentication: ./settings/users/authorization/vpn-connection/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   ddns: ./settings/services/dns/ddns.md 
   ald_pro: ./settings/users/ald-pro.md 
