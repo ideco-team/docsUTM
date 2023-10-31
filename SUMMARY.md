@@ -49,7 +49,7 @@
   * [Настройка часового пояса и языка](advanced-setting/server-management/language-time-management.md)
 * [Журналирование и мониторинг](advanced-setting/logging-monitoring/README.md)
   * [Панель мониторинга](advanced-setting/logging-monitoring/monitor-panel.md)
-  * [Логирование: логи работы служб и их отправка на удаленный сервера](advanced-setting/logging-monitoring/log.md)
+  * [Логирование: логи работы модулей и их отправка на удаленный сервера](advanced-setting/logging-monitoring/log.md)
   * [Действия администраторов](advanced-setting/logging-monitoring/admins-actions.md)
   * [Статистика и журнал событий безопасности](advanced-setting/logging-monitoring/security-events.md)
   * [История авторизации пользователей](advanced-setting/logging-monitoring/authorization-log.md)
