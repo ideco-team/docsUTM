@@ -8,10 +8,6 @@ description: >-
 
 Существует несколько способов авторизации:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="ip-mac-authorization.md" %}
 [ip-mac-authorization.md](ip-mac-authorization.md)
 {% endcontent-ref %}
