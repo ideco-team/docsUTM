@@ -140,6 +140,7 @@
   * [Основные настройки](settings/mail/mail-server-settings/README.md)
     * [Web-почта](settings/mail/mail-server-settings/web-mail.md)
     * [Настройка почтового релея](settings/mail/mail-server-settings/mail-relay-settings.md)
+    * [Настройка почтового сервера](settings/mail/mail-server-settings/mail-server-settings.md)
   * [Расширенные настройки](settings/mail/advanced-settings/README.md)
     * [Настройка домена у регистратора/держателя зоны](settings/mail/advanced-settings/domain-settings-at-zone-holder.md)
   * [Антиспам](settings/mail/antispam.md)
