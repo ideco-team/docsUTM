@@ -1,23 +1,19 @@
 # Версия Ideco NGFW VPP 16.X
 
-<details>
-
-<summary>Примечания к релизу Ideco NGFW VPP 16.0</summary>
-
-**Дата выхода версии**: ХХ.ХХ.2023.
-
+{% hint style="info" %}
 Техническая поддержка и обратная связь (поможет нам улучшить продукт):
-
 * Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
 * Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
 * Электронная почта: help@ideco.ru
 * Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-
-[Скачать Ideco NGFW VPP 16](https://my.ideco.ru/). \
+[Скачать Ideco VPP 16](https://my.ideco.ru/). \
 Автоматическая регистрация тестовой лицензии: my.ideco.ru (полный функционал на 40 дней и 10 000 пользователей). 
 
-</details>
+**Особенности обновления с версии NGFW VPP 15.X:**
+* При обновлении с версии 15.Х не переносятся правила файрвола.
+* При обновлении удаляется автоматический SNAT. Если необходим SNAT, после обновления добавьте правила вручную.
+{% endhint %}
 
 ## IDECO NGFW VPP 16.0 сборка XXX (ХХ.ХХ.2023)
 

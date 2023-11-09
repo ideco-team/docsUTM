@@ -1,23 +1,15 @@
-# Версия Ideco UTM 15.X
+# Версия Ideco VPP 15.X
 
-<details>
-
-<summary>Примечания к релизу Ideco VPP 15.0</summary>
-
-**Дата выхода версии**: 31.07.2023.
-
+{% hint style="info" %}
 Техническая поддержка и обратная связь (поможет нам улучшить продукт):
-
 * Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
 * Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
 * Электронная почта: help@ideco.ru
 * Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-
 [Скачать Ideco VPP 15](https://my.ideco.ru/). \
 Автоматическая регистрация тестовой лицензии: my.ideco.ru (полный функционал на 40 дней и 10 000 пользователей). 
-
-</details>
+{% endhint %}
 
 ## IDECO NGFW VPP 15.0 сборка XXX (31.07.2023)
 
