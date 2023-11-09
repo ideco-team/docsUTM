@@ -3,7 +3,9 @@ description: >-
   Данный тип соединения позволяет объединять локальные сети нескольких серверов Ideco NGFW.
 ---
 
-# Создание IPsec подключения между двумя Ideco NGFW
+# Подключение по IPsec между двумя Ideco NGFW
+
+## Создание IPsec подключения между двумя Ideco NGFW
 
 ![](../../../../.gitbook/assets/ipsec-step1.png)
 
