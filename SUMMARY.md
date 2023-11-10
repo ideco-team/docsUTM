@@ -128,6 +128,7 @@
       * [Политики безопасности](settings/server-management/central-console/security-policies.md)
       * [Объекты](settings/server-management/central-console/objects.md)
     * [Сервисы](settings/server-management/central-console/services.md)
+    * [Отчеты и журналы](settings/server-management/central-console/reports.md)
     * [Управление сервером](settings/server-management/central-console/server-management.md)
   * [Кластеризация](settings/server-management/cluster.md)
   * [Автоматическое обновление сервера](settings/server-management/server-update.md)
