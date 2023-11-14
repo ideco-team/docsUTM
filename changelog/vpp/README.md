@@ -1,31 +1,9 @@
-# Ideco VPP
+# Ideco NGFW VPP
 
-<details>
+{% content-ref url="versiya-vpp-ngfw-16.x.md" %}
+[versiya-vpp-ngfw-16.x.md](versiya-vpp-ngfw-16.x.md)
+{% endcontent-ref %}
 
-<summary>Примечания к релизу Ideco VPP 15.0</summary>
-
-**Дата выхода версии**: 31.07.2023.
-
-Техническая поддержка и обратная связь (поможет нам улучшить продукт):
-
-* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
-* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
-* Электронная почта: help@ideco.ru
-* Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
-
-[Скачать Ideco VPP 15](https://my.ideco.ru/). \
-Автоматическая регистрация тестовой лицензии: my.ideco.ru (полный функционал на 40 дней и 10 000 пользователей). 
-
-</details>
-
-**Новые возможности версии 15.0 сборка 0**
-
-* Единый межсетевой экран с правилами L4, L7 уровня приложений и IPS;
-* Авторизация пользователей по журналам безопасности Active Direcotry и по IP/MAC/сетям;
-* DNS и NTP сервер;
-* Поддержка VLAN и ethernet-интерфейсов.
-
-Производительность (Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz  RAM 128Gb)
-
-* Межсетевой экран c функцией определения приложений L7, трафик EMIX, Мбит/с - 8 700 Mbps;
-* Межсетевой экран c функцией определения приложений L7, СОВ (все сигнатуры включены), трафик EMIX, Мбит/с - 2 400 Mbps.
+{% content-ref url="versiya-vpp-ngfw-15.x.md" %}
+[versiya-vpp-ngfw-15.x.md](versiya-vpp-ngfw-15.x.md)
+{% endcontent-ref %}
