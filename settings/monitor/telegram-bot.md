@@ -34,10 +34,10 @@ description: >-
 
 <summary>Настройка привязки Ideco Monitoring Bot к беседе</summary>
 
-1. Настроить Интернет на Ideco UTM.
-2. [Привязать лицензию](../../service/license-management.md) к серверу.
-3. Перейти в группу и добавить пользователя Ideco monitoring bot. 
-4. Написать `/start`.
+1. Настроить Интернет на Ideco NGFW.
+2. [Привязать лицензию](broken-reference) к серверу.
+3. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
+4. Написать `/start` в группе.
 5. Скопировать код привязки к аккаунту.
 6. Перейти в раздел **Ideco Monitoring Bot** в [личном кабинете](https://my.ideco.ru/#/ideco-monitoring-bot).
 7. Нажать на кнопку **Привязать аккаунт**.
