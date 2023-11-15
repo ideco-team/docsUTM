@@ -34,7 +34,7 @@ description: >-
 | Телефон                                                        | +7 (495) 662-87-34    |
 | Telegram                                                       | [ideco_support_bot](https://t.me/ideco_support_bot?roistat_visit=386137) |
 | Электронная почта                                              | [help@ideco.ru](https://help.ideco.ru/?roistat_visit=386137)    |
-| Интерактивный онлайн-чат со специалистом технической поддержки | [https://my.ideco.ru/](https://my.ideco.ru/), [https://ideco.ru/](https://ideco.ru/), веб-интерфейс Ideco NGFW |
+| Интерактивный онлайн-чат со специалистом технической поддержки | [https://my.ideco.ru/](https://my.ideco.ru/), [https://ideco.ru/](https://ideco.ru/), веб-интерфейс Ideco UTM |
 
 ## Правила обращения
 
