@@ -14,37 +14,4 @@
 
 ## Таблица служб
 
-| Раздел                                        | Имя службы   |
-| :-------------------------------------------- | :------------------------- |
-| Файрвол                                       | ideco-av-backend; ideco-nflog |
-| Контроль приложений                           | ideco-app-backend; ideco-app-control@Leth<номер локального интерфейса> |
-| Контент-фильтр                                | ideco-content-filter-backend |
-| Ограничение скорости                          | ideco-shaper-backend |
-| Антивирусы веб-трафика                        | ideco-av-backend;|
-| Предотвращение вторжений                      | ideco-suricata-backend; ideco-suricata; ideco-suricata-event-syncer; ideco-suricata-event-to-syslog |
-| Объекты                                       | ideco-alias-backend |
-| Квоты                                         | ideco-quotas-backend; systemd-quotacheck |
-| Сетевые интерфейсы                            | ideco-network-backend; ideco-network-nic |
-| Балансировка и резервирование, Маршрутизация  | ideco-routing-backend |
-| BGP, OSPF	                                    | ideco-routing-backend |
-| Прокси	                                    | ideco-proxy-backend; squid |
-| Обратный прокси	                            | ideco-reverse-backend |
-| DNS                                 	        | ideco-dns-backend; unbound |
-| DDNS                                 	        | ideco-dns-backend |
-| DHCP	                                        | ideco-dnsmasq |
-| IPsec	                                        | ideco-ipsec-backend; strongswan |
-| Центральная консоль	                        | ideco-central-console-backend |
-| Кластеризация	                                | ideco-cluster-backend; ideco-cluster-backup-pusher |
-| Автоматическое обновление	                    | ideco-sysupdate-backend |
-| Резервное копирование                         | ideco-backup-backend; ideco-backup-create; ideco-backup-restore; ideco-backup-rotate |
-| Лицензия	                                    | ideco-license-backend |
-| VPN-подключения                          	    | ideco-accel-l2tp; ideco-accel-pptp; ideco-accel-sstp; ideco-vpn-servers-backend; ideco-vpn-authd |
-| Авторизация	                                | ideco-auth-backend |
-| Двухфакторная аутентификация	                | ideco-web-authd |
-| Active Directory	                            | ideco-ad-backend; ideco-ad-log-collector@<имя домена> |
-| ALD Pro                                       | ideco-ald-rest; ideco-ald-backend |
-| Ideco Client                                  | ideco-agent-backend; ideco-agent-websocket |
-| Syslog	                                    | ideco-monitor-backend |
-| Обнаружение устройств	                        | ideco-netscan-backend |
-| Web Application Firewall                      | ideco-waf-backend; ideco-waf-event-syncer |
-| IGMP Proxy                                    | igmpproxy |
+<table><thead><tr><th width="329">Раздел</th><th>Имя службы</th></tr></thead><tbody><tr><td>Файрвол</td><td>ideco-av-backend; ideco-nflog</td></tr><tr><td>Контроль приложений</td><td>ideco-app-backend; ideco-app-control@Leth&#x3C;номер локального интерфейса></td></tr><tr><td>Контент-фильтр</td><td>ideco-content-filter-backend</td></tr><tr><td>Ограничение скорости</td><td>ideco-shaper-backend</td></tr><tr><td>Антивирусы веб-трафика</td><td>ideco-av-backend;</td></tr><tr><td>Предотвращение вторжений</td><td>ideco-suricata-backend; ideco-suricata; ideco-suricata-event-syncer; ideco-suricata-event-to-syslog</td></tr><tr><td>Объекты</td><td>ideco-alias-backend</td></tr><tr><td>Квоты</td><td>ideco-quotas-backend; systemd-quotacheck</td></tr><tr><td>Сетевые интерфейсы</td><td>ideco-network-backend; ideco-network-nic</td></tr><tr><td>Балансировка и резервирование, Маршрутизация</td><td>ideco-routing-backend</td></tr><tr><td>BGP, OSPF</td><td>ideco-routing-backend</td></tr><tr><td>Прокси</td><td>ideco-proxy-backend; squid</td></tr><tr><td>Обратный прокси</td><td>ideco-reverse-backend</td></tr><tr><td>DNS</td><td>ideco-dns-backend; unbound</td></tr><tr><td>DDNS</td><td>ideco-dns-backend</td></tr><tr><td>DHCP</td><td>ideco-dnsmasq</td></tr><tr><td>IPsec</td><td>ideco-ipsec-backend; strongswan</td></tr><tr><td>Центральная консоль</td><td>ideco-central-console-backend</td></tr><tr><td>Кластеризация</td><td>ideco-cluster-backend; ideco-cluster-backup-pusher</td></tr><tr><td>Автоматическое обновление</td><td>ideco-sysupdate-backend</td></tr><tr><td>Резервное копирование</td><td>ideco-backup-backend; ideco-backup-create; ideco-backup-restore; ideco-backup-rotate</td></tr><tr><td>Лицензия</td><td>ideco-license-backend</td></tr><tr><td>VPN-подключения</td><td>ideco-accel-l2tp; ideco-accel-pptp; ideco-accel-sstp; ideco-vpn-servers-backend; ideco-vpn-authd</td></tr><tr><td>Авторизация</td><td>ideco-auth-backend</td></tr><tr><td>Двухфакторная аутентификация</td><td>ideco-web-authd</td></tr><tr><td>Active Directory</td><td>ideco-ad-backend; ideco-ad-log-collector@&#x3C;имя домена></td></tr><tr><td>ALD Pro</td><td>ideco-ald-rest; ideco-ald-backend</td></tr><tr><td>Ideco Client</td><td>ideco-agent-backend; ideco-agent-websocket</td></tr><tr><td>Syslog</td><td>ideco-monitor-backend</td></tr><tr><td>Обнаружение устройств</td><td>ideco-netscan-backend</td></tr><tr><td>Web Application Firewall</td><td>ideco-waf-backend; ideco-waf-event-syncer</td></tr><tr><td>IGMP Proxy</td><td>igmpproxy</td></tr></tbody></table>
