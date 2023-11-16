@@ -8,7 +8,7 @@ redirects:
   admins: ./settings/server-management/admins.md
   antivirus: ./settings/access-rules/antivirus.md
   application_control: ./settings/access-rules/application-control.md
-  backup: ./service/backup.md
+  backup: ./settings/server-management/backup.md
   balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
   custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
@@ -52,6 +52,7 @@ redirects:
   user_tree: ./settings/users/user-tree/README.md
   reports_designer: ./settings/reports/report-designer.md
   authorization_log: ./settings/reports/authorization-log.md
+  terminal_server_auth: ./settings/users/authorization/terminal-server.md
   license_management: ./general/license.md
   advanced_settings: ./settings/mail/advanced-settings/README.md
   antispam_chapter: ./settings/mail/antispam.md
