@@ -54,7 +54,7 @@
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
-  * [Авторизованные пользователи и VPN-пользователи](settings/monitor/authorized-users.md)
+  * [Авторизованные пользователи](settings/monitor/authorized-users.md)
   * [График загруженности](settings/monitor/workload-schedule.md)
   * [Монитор трафика](settings/monitor/traffic.md)
   * [Проверка IP/домена](settings/monitor/ip-check.md)
