@@ -16,8 +16,8 @@ Ideco UTM поддерживает работу на следующих гипе
 
 * VMware (Workstation и ESXi) версии не ниже 6.5.0;
 * Microsoft Hyper-V (2-го поколения);
-* VirtualBox;
-* KVM;
+* VirtualBox версии не ниже 7.0.0;
+* KVM версии не ниже 1.2.0;
 * Citrix XenServer.
 
 ## Общие рекомендации
@@ -45,7 +45,7 @@ Ideco UTM поддерживает работу на следующих гипе
 
 {% embed url="https://www.youtube.com/watch?v=238bs_4ObPY" %}
 
-## VMware ESXi
+## VMware ESXi 6.7
 
 * Перед установкой Ideco UTM увеличьте размер видеопамяти для виртуальной машины до 16 МБ;
 * Используйте виртуальные сетевые адаптеры **vmxnet3**.
@@ -103,7 +103,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 </details>
 
-## VirtualBox
+## VirtualBox 7.0.12
 * По умолчанию при создании виртуальной машины создается 1 сетевая карта с типом подключения **NAT**.
 
 <details>
