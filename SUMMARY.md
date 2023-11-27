@@ -75,6 +75,7 @@
     * [Журнал](settings/access-rules/ips/log.md)
     * [Правила](settings/access-rules/ips/rules.md)
     * [Исключения из правил](settings/access-rules/ips/exceptions-rules.md)
+    * [Настройки](settings/access-rules/ips/settings.md)
   * [Исключения](settings/access-rules/ips/user-ip-exceptions.md)
   * [Объекты](settings/access-rules/aliases.md)
   * [Квоты](settings/access-rules/quotas.md)
