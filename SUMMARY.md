@@ -126,6 +126,7 @@
 * [Управление сервером](settings/server-management/README.md)
   * [Администраторы](settings/server-management/admins.md)
   * [Центральная консоль](settings/server-management/central-console/README.md)
+    * [Установка](settings/server-management/central-console/setup.md)
     * [Политики и объекты](settings/server-management/central-console/policies-and-objects.md)
       * [Политики безопасности](settings/server-management/central-console/security-policies.md)
       * [Объекты](settings/server-management/central-console/objects.md)
