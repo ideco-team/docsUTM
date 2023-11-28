@@ -33,3 +33,7 @@ Ideco NGFW VPP использует в работе два типа сетевы
 **-> Внешние DNS-серверы** не создано правило **Использования DNS, выданного подключению**;
   
 ![](../../.gitbook/assets/server-configuration-management1.png)
+
+{% hint style="warning" %}
+Для корректной работы NGFW VPP **не указывайте** шлюз при настройке пользовательских DataPlane интерфейсов. 
+{% endhint %}
