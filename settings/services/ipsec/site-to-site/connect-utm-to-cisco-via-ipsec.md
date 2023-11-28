@@ -4,6 +4,8 @@ description: >-
   использованием PSK.
 ---
 
+# Подключение Cisco IOS к Ideco UTM по IPsec
+
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
 ![](../../../../.gitbook/assets/connect-utm-to-cisco-via-ipsec1.png)
@@ -14,15 +16,15 @@ description: >-
 
 <summary>Первоначальная настройка Ideco UTM и Cisco IOS</summary>
 
-## Настройка Ideco UTM
+### Настройка Ideco UTM
 
 Настройте на Ideco UTM локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](../../../../installation/initial-setup.md).
 
-## Настройка Cisco IOS EX
+### Настройка Cisco IOS EX
 
 Настройку Cisco можно осуществить через консоль устройства или, воспользовавшись нашими конфигурационными скриптами, сгенерированными по адресу [https://cisco.ideco.ru/](https://cisco.ideco.ru).
 
-### Настройка Cisco через консоль:
+#### Настройка Cisco через консоль:
 
 1. Настройка локального интерфейса:
 
@@ -47,8 +49,7 @@ exit
 ```
 
 3. Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco. Для этого в консоли Cisco используйте команду `ping <внешний IP UTM>`. Результат вывода команды - наличие ICMP-ответов.
-
-4. Создание access-list с адресацией локальной сети (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/security/ios-firewall/23602-confaccesslists.html)):
+4. Создание access-list с адресацией локальной сети (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/security/ios-firewall/23602-confaccesslists.html)):
 
 ```
 ip access-list extended NAT
@@ -56,7 +57,7 @@ permit ip <локальная подсеть Cisco> <обратная маска
 exit
 ```
 
-5. Настройка NAT (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/ip/network-address-translation-nat/13772-12.html)):
+5. Настройка NAT (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/ip/network-address-translation-nat/13772-12.html)):
 
 ```
 ip nat inside source list NAT interface GigabitEthernet1 overload
@@ -69,12 +70,12 @@ exit
 write memory
 ```
 
-7. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет.** \
- Для этого перейдите на какой-нибудь сайт (например: [https://www.cisco.com/](https://www.cisco.com)) с устройства в локальной сети Cisco.
+7. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть Интернет.**\
+   Для этого перейдите на какой-нибудь сайт (например: [https://www.cisco.com/](https://www.cisco.com)) с устройства в локальной сети Cisco.
 
-## Настройка IKEv2+IPsec на Cisco:
+### Настройка IKEv2+IPsec на Cisco:
 
-1. Создание proposal (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939__GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)):
+1. Создание proposal (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939\_\_GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)):
 
 ```
 conf t
@@ -85,7 +86,7 @@ group 19
 exit
 ```
 
-2. Создание policy (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772__GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)):
+2. Создание policy (подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772\_\_GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)):
 
 ```
 crypto ikev2 policy ikev2policy
@@ -94,7 +95,7 @@ proposal ikev2proposal
 exit
 ```
 
-3. Создание peer (key_id - идентификатор удаленной стороны, т.е. Ideco UTM). Подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659__GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9):
+3. Создание peer (key\_id - идентификатор удаленной стороны, т.е. Ideco UTM). Подробную информацию можно прочитать в [статье](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659\_\_GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9):
 
 ```
 crypto ikev2 keyring key
@@ -107,7 +108,7 @@ exit
 exit
 ```
 
-4. Создание IKEv2 profile (подробную информацию можно прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task_20288C58E8B1416897A763FABA8B0885__GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)):
+4. Создание IKEv2 profile (подробную информацию можно прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task\_20288C58E8B1416897A763FABA8B0885\_\_GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)):
 
 ```
 crypto ikev2 profile ikev2profile
@@ -180,47 +181,42 @@ write memory
 Для настройки исходящего IPsec подключения на Ideco UTM выполните действия:
 
 1. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**.
-
 2. Добавьте новое подключение:
 
-- **Название** – любое;
-- **Тип аутентификации** – PSK;
-- **PSK** – будет сгенерирован случайный PSK-ключ. Он потребуется, чтобы настроить подключение в Cisco;
-- **Идентификатор UTM** – введенный вами ключ будет использоваться для идентификации исходящего подключения. Введите также этот идентификатор в Cisco;
-- **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
-- **Удалённые локальные сети** – укажите локальную сеть Cisco.
+* **Название** – любое;
+* **Тип аутентификации** – PSK;
+* **PSK** – будет сгенерирован случайный PSK-ключ. Он потребуется, чтобы настроить подключение в Cisco;
+* **Идентификатор UTM** – введенный вами ключ будет использоваться для идентификации исходящего подключения. Введите также этот идентификатор в Cisco;
+* **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
+* **Удалённые локальные сети** – укажите локальную сеть Cisco.
 
 3. Проверьте, что подключение установилось (в столбце **Статусы** зеленым цветом будет подсвечена надпись **Установлено**).
-
 4. Проверьте наличие трафика между локальными сетями (TCP и web).
 
 </details>
 
-{% hint style = "info" %}
+{% hint style="info" %}
 Если Cisco передает внешний IP-адрес вместо **KeyID** (проверьте, включив расширенный лог IPsec на Cisco) укажите в качестве **Идентификатора удаленной стороны** внешний IP-адрес Cisco.
 {% endhint %}
 
 <details>
 
-<summary> Настройка  входящего подключения Ideco UTM к Cisco IOS</summary>
+<summary>Настройка входящего подключения Ideco UTM к Cisco IOS</summary>
 
 Для настройки входящего IPsec подключения на Ideco UTM выполните действия:
 
 1. В веб-интерфейсе Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**.
-
 2. Добавьте новое подключение:
 
-- **Название** – любое;
-- **Тип аутентификации** – PSK;
-- **PSK** – укажите PSK-ключ;
-- **Идентификатор удаленной стороны** – вставьте идентификатор Cisco (параметр Key ID);
-- **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
-- **Удалённые локальные сети** – укажите локальную сеть Cisco.
+* **Название** – любое;
+* **Тип аутентификации** – PSK;
+* **PSK** – укажите PSK-ключ;
+* **Идентификатор удаленной стороны** – вставьте идентификатор Cisco (параметр Key ID);
+* **Домашние локальные сети** – укажите локальную сеть Ideco UTM;
+* **Удалённые локальные сети** – укажите локальную сеть Cisco.
 
 3. Сохраните созданное подключение, затем нажмите на кнопку **Включить**.
-
 4. Проверьте, что подключение установлено (в столбце **Статусы** зеленым цветом будет подсвечена надпись **Установлено**).
-
 5. Проверьте наличие трафика между локальными сетями (TCP и web).
 
 </details>

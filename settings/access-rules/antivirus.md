@@ -1,7 +1,7 @@
 # Антивирусы веб-трафика
 
 {% hint style="success" %}
-Название службы раздела *Антивирусы веб-трафика*: `ideco-av-backend`. \
+Название службы раздела _Антивирусы веб-трафика_: `ideco-av-backend`.\
 Список имен служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
 {% endhint %}
 
@@ -25,7 +25,7 @@
 
 В случае правильной настройки браузер выведет ошибку доступа:
 
-![](../../.gitbook/assets/antivirus.jpeg)
+<img src="../../.gitbook/assets/antivirus (2).jpeg" alt="" data-size="original">
 
 </details>
 
