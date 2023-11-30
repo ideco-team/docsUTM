@@ -24,8 +24,20 @@ description: Статья описывает возможности дерева
 
 Создать учетную запись пользователя можно в определенной группе или вне групп:
 
-* **В определенной группе** - Выберите группу, нажмите кнопку **Создать пользователя** во вкладке **Основное** или ![](../../.gitbook/assets/icon-add-user.svg) рядом с названием группы в дереве: ![](../../.gitbook/assets/user-tree.gif)
-* **Вне групп** - Выберите группу **Все** в дереве пользователей и нажмите ![](../../.gitbook/assets/icon-add-user.svg): ![](../../.gitbook/assets/user-tree1.gif)
+*   **В определенной группе** - Выберите группу, нажмите кнопку **Создать пользователя** во вкладке **Основное** или ![](../../.gitbook/assets/icon-add-user.svg) рядом с названием группы в дереве:&#x20;
+
+    <div align="left">
+
+    <figure><img src="../../.gitbook/assets/user-tree.gif" alt="" width="375"><figcaption></figcaption></figure>
+
+    </div>
+*   **Вне групп** - Выберите группу **Все** в дереве пользователей и нажмите ![](../../.gitbook/assets/icon-add-user.svg):&#x20;
+
+    <div align="left">
+
+    <figure><img src="../../.gitbook/assets/user-tree1.gif" alt="" width="375"><figcaption></figcaption></figure>
+
+    </div>
 
 Логин необходимо вводить латинскими символами в нижнем регистре, например: i.ivanov.
 
