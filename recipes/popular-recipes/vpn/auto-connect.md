@@ -23,10 +23,10 @@
 
     Доступ к локальным сетям того же класса, что были получены для VPN-подключения по умолчанию в Windows 7 и 10 будет осуществляться через VPN-подключение, поэтому дополнительных маршрутов создавать не нужно (если не используются разные классы сетей в локальной сети офиса).
 
-Создайте файл с именем **ideco\_utm\_l2tp.ps1** (в Блокноте или редакторе Windows PowerShell ISE) и скопируйте в него следующий текст:
+Создайте файл с именем **ideco\_ngfw\_l2tp.ps1** (в Блокноте или редакторе Windows PowerShell ISE) и скопируйте в него следующий текст:
 
 ```
-### Ideco UTM L2TP/IPsec connection ###
+### Ideco NGFW L2TP/IPsec connection ###
 param([switch]$Elevated)
 $currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
 if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator))  {
@@ -41,7 +41,7 @@ if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrato
 Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
 Add-VpnConnection `
     -Force `
-    -Name "Ideco UTM L2TP VPN" `
+    -Name "Ideco NGFW L2TP VPN" `
     -TunnelType L2TP `
     -ServerAddress my.domain.com `
     -L2tpPsk "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" `
@@ -54,7 +54,7 @@ Add-VpnConnection `
 
 **Поменяйте в нем необходимые параметры на соответствующие вашим настройкам:**
 
-* **Ideco UTM L2TP VPN** - имя подключения в системе (может быть произвольным);
+* **Ideco NGFW L2TP VPN** - имя подключения в системе (может быть произвольным);
 * **my.domain.com** - домен или IP-адрес основного внешнего интерфейса Ideco NGFW;
 * **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX** - PSK-ключ вашего сервера;
 * **activedirectory.domain** - ваш домен Active Directory (если есть, если нет нужно удалить эту строчку из скрипта).
@@ -84,10 +84,10 @@ Add-VpnConnection `
 
     Доступ к локальным сетям того же класса, что были получены для VPN-подключения по умолчанию в Windows 7 и 10 будет осуществляться через VPN-подключение, поэтому дополнительных маршрутов создавать не нужно (если не используются разные классы сетей в локальной сети офиса).
 
-Создайте текстовый файл с именем **ideco\_utm\_sstp.ps1** (в Блокноте или редакторе Windows PowerShell ISE) и скопируйте туда следующий текст:
+Создайте текстовый файл с именем **ideco\_ngfw\_sstp.ps1** (в Блокноте или редакторе Windows PowerShell ISE) и скопируйте туда следующий текст:
 
 ```
-### Ideco UTM SSTP connection ###
+### Ideco NGFW SSTP connection ###
 param([switch]$Elevated)
 $currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
 if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator))  {
@@ -102,7 +102,7 @@ if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrato
 Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
 Add-VpnConnection `
     -Force `
-    -Name "Ideco UTM SSTP VPN" `
+    -Name "Ideco NGFW SSTP VPN" `
     -TunnelType SSTP `
     -ServerAddress my.domain.com:4443 `
     -EncryptionLevel "Required" `
@@ -114,7 +114,7 @@ Add-VpnConnection `
 
 **Поменяйте в нем необходимые параметры на соответствующие вашим настройкам:**
 
-1. **Ideco UTM SSTP VPN** - имя подключения в системе (может быть произвольным);
+1. **Ideco NGFW SSTP VPN** - имя подключения в системе (может быть произвольным);
 2. **my.domain. com:4443** - домен внешнего интерфейса Ideco NGFW и порт, на котором включили SSTP;
 3. **activedirectory.domain** - ваш домен Active Directory (если домена нет, нужно удалить эту строчку из скрипта).
 
@@ -154,10 +154,10 @@ Add-VpnConnection `
 1. Протокол IKEv2;
 2. Параметр **Использовать основной шлюз в удаленной сети** выключен. Доступ к локальным сетям того же класса, что были получены для VPN-подключения по умолчанию в Windows 7 и 10, будет осуществляться через VPN-подключение, поэтому дополнительных маршрутов создавать не нужно (если не используются разные классы сетей в локальной сети офиса).
 
-Создайте текстовый файл с именем **ideco\_utm\_ikev2.ps1** (в Блокноте или редакторе Windows PowerShell ISE) и скопируйте туда следующий текст:
+Создайте текстовый файл с именем **ideco\_ngfw\_ikev2.ps1** (в Блокноте или редакторе Windows PowerShell ISE) и скопируйте туда следующий текст:
 
 ```
-### Ideco UTM IKEv2 connection ###
+### Ideco NGFW IKEv2 connection ###
 param([switch]$Elevated)
 $currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
 if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator))  {
@@ -172,7 +172,7 @@ if (!$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrato
 Enable-NetFirewallRule -Group "@FirewallAPI.dll,-28502"
 Add-VpnConnection `
     -Force `
-    -Name "Ideco UTM IKEv2 VPN" `
+    -Name "Ideco NGFW IKEv2 VPN" `
     -TunnelType IKEv2 `
     -ServerAddress my.domain.com `
     -EncryptionLevel "Required" `
@@ -184,7 +184,7 @@ Add-VpnConnection `
 
 **Поменяйте в нем необходимые параметры на соответствующие вашим настройкам:**
 
-1. `Ideco UTM IKEv2 VPN` - название подключения в системе (может быть произвольным);
+1. `Ideco NGFW IKEv2 VPN` - название подключения в системе (может быть произвольным);
 2. `my.domain.com` - домен внешнего интерфейса Ideco NGFW (А-запись для домена должна ссылаться на IP-адрес внешнего интерфейса Ideco NGFW);
 3. `activedirectory.domain` - ваш домен Active Directory (если его, то нужно удалить эту строчку из скрипта).
 
