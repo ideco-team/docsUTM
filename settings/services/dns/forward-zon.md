@@ -6,3 +6,10 @@
 Для возможности доступа к этим ресурсам по доменным именам укажите forward-зону провайдера, как isp, и далее задайте DNS-сервер 10.10.10.10:
 
 <img src="../../../.gitbook/assets/forward_zone.png" alt="" data-size="original">
+
+{% hint style="info" %}
+Для резолвинга PTR при интеграции с Active Directory пропишите обратную forward-зону. Например, для подсети **192.168.1.0/24** в названии зоны нужно прописать **1.168.192.in-addr.arpa**:
+
+![](../../../.gitbook/assets/forward-zone1.png)
+
+{% endhint %}
