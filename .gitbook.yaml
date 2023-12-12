@@ -32,10 +32,10 @@ redirects:
   reverse_proxy: ./settings/services/reverse-proxy.md
   routing: ./settings/services/routing.md
   server_registration: ./recipes/server-maintenance/server-registration.md
-  server_update: ./service/server-update.md
+  server_update: ./settings/server-management/server-update.md
   snmp: ./settings/monitor/snmp.md
   shaper: ./settings/access-rules/shaper.md
-  support: ./service/remote-assistant.md
+  support: ./general/remote-assistant.md
   syslog: ./settings/reports/syslog.md
   telegram_bot: ./settings/monitor/telegram-bot.md 
   terminal: ./settings/server-management/terminal.md
