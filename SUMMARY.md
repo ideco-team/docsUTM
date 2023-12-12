@@ -7,7 +7,7 @@
 * [Лицензирование](general/license.md)
 * [Cистемные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
-  * [Режим удаленного помощника](service/remote-assistant.md)
+  * [Режим удаленного помощника](general/remote-assistant.md)
 
 ## Установка <a href="#installation" id="installation"></a>
 
