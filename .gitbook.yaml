@@ -14,7 +14,6 @@ redirects:
   zabbix: ./advanced-setting/logging-monitoring/connection-external-services.md
   firewall: ./advanced-setting/control-blocking/firewall.md
   ids_ips: ./advanced-setting/control-blocking/ips.md
-  proxy: ./advanced-setting/control-blocking/proxy.md
   routing: ./advanced-setting/control-blocking/routing.md
   content_filter_security_profiles: ./advanced-setting/control-blocking/content-filter.md
   object: ./advanced-setting/server-management/aliases.md

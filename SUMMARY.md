@@ -34,7 +34,6 @@
   * [Предотвращения вторжений](advanced-setting/control-blocking/ips.md)
   * [Маршрутизация](advanced-setting/control-blocking/routing.md)
   * [Контент-фильтр](advanced-setting/control-blocking/content-filter.md)
-  * [Прокси](advanced-setting/control-blocking/proxy.md)
 * [Управление сервером и его настройка](advanced-setting/server-management/README.md)
   * [Управление сетевыми интерфейсами](advanced-setting/server-management/server-configuration-management.md)
   * [Сертификаты](advanced-setting/server-management/certificates.md)
