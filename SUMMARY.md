@@ -164,6 +164,7 @@
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
 * [Обслуживание сервера](recipes/server-maintenance/README.md)
+  * [Тестирование оперативной памяти сервера](recipes/server-maintenance/memory-testing.md)
   * [Разрешить интернет всем: диагностика неполадок](recipes/server-maintenance/allow-internet-all.md)
   * [Удаленный доступ к серверу](recipes/server-maintenance/remote-access-for-server-management.md)
   * [Регистрация сервера](recipes/server-maintenance/server-registration.md)
