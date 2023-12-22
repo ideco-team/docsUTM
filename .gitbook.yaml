@@ -35,3 +35,5 @@ redirects:
   license_management: ./advanced-setting/server-management/binding-license.md
   additionally: ./advanced-setting/server-management/language-time-management.md
   application_control_security_profiles: ./advanced-setting/control-blocking/security-profiles.md
+  tls_inspection_security_profiles: ./advanced-setting/control-blocking/tls-inspection-security-profiles.md
+  

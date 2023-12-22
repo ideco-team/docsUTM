@@ -30,6 +30,7 @@
   * [Настройка интеграции с ALD Pro](advanced-setting/users/ald.md)
 * [Управление трафиком](advanced-setting/control-blocking/README.md)
   * [Профили безопасности](advanced-setting/control-blocking/security-profiles.md)
+  * [Профили TLS/SSL-инспекций](advanced-setting/control-blocking/tls-inspection-security-profiles.md)
   * [Файрвол](advanced-setting/control-blocking/firewall.md)
   * [Предотвращения вторжений](advanced-setting/control-blocking/ips.md)
   * [Маршрутизация](advanced-setting/control-blocking/routing.md)
