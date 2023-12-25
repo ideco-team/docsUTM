@@ -19,7 +19,6 @@
     ![](../../../.gitbook/assets/server-management.gif)
  
 Войти в подключенный Ideco UTM с логином и паролем администратора Ideco Center не возможно.
-  
 
 ## Дополнительно
 
