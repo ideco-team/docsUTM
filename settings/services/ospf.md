@@ -91,7 +91,7 @@
 * Появится сообщение "All data on the disk will be erased. Continue?", ведите **y** и нажмите **Enter**:
     ![](../../.gitbook/assets/ospf-mikrotik1.png)
 
-2\. После установки RouterOS, требуется его перезагрузить, нажав **Enter**:
+2\. После установки RouterOS требуется его перезагрузить, нажав **Enter**:
 
 ![](../../.gitbook/assets/ospf-mikrotik2.png)
 
@@ -101,10 +101,10 @@
 
 5\.  Выполните следующую команду:
 
-`routing ospf area add area-id=х.х.х.х default-cost=1 disabled=no inject-summary-lsa=no name=area1 type=default`\
-, где `х.х.х.х` - **название зоны, которое указали при настройке Ideco NGFW** в пределах сети;
+`routing ospf area add area-id=х.х.х.х default-cost=1 disabled=no inject-summary-lsa=no name=area1 type=default`,\
+где `х.х.х.х` - **название зоны, которое указали при настройке Ideco NGFW** в пределах сети;
 
-6\. Для передачи любых других сетей соседним устройствам по динамической маршрутизации, введите следующую команду:
+6\. Для передачи любых других сетей соседним устройствам по динамической маршрутизации введите следующую команду:
 
 `routing ospf network add network=(другие подсети)/24 area=area1`
 
@@ -126,4 +126,4 @@
 * **Redistribute static** - будут анонсироваться статические маршруты, указанные во вкладке **Сервисы -> Маршрутизация -> Локальных сетей**;
 * **Redistribute connected** - будут анонсироваться маршруты, указанные во вкладке **OSPF -> Основное**.
 
-Подробнее о значении поля **Метрика** в [статье](https://docs.frrouting.org/en/latest/ospfd.html#ospf-redistribute).
+Подробнее о значении поля **Метрика** - в [статье](https://docs.frrouting.org/en/latest/ospfd.html#ospf-redistribute).

@@ -2,7 +2,7 @@
 
 {% hint style="info" %}
 Техническая поддержка и обратная связь (поможет нам улучшить продукт):
-* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Обсудить версию в телеграм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
 * Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
 * Электронная почта: help@ideco.ru
 * Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)

@@ -33,7 +33,7 @@ def main():
     with _RULES_FILE_PATH.open('rb') as fileobj:
         with TarFile.open(mode='r:gz', fileobj=fileobj, encoding='utf-8') as tar_file:
             for tar_info in tar_file:
-                if not tar_info.isreg():  # пропускаем всё что не файл
+                if not tar_info.isreg():  # пропускаем все что не файл
                     continue
                 file_name, file_ext = os.path.splitext(os.path.basename(tar_info.name))
                 if file_ext == '.rules':

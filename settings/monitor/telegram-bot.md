@@ -19,7 +19,7 @@ description: >-
 
 <summary>Настройка привязки Ideco Monitoring Bot к одному пользователю</summary>
 
-1. Настроить Интернет на Ideco NGFW.
+1. Настроить интернет на Ideco NGFW.
 2. [Привязать лицензию](broken-reference) к серверу.
 3. Перейти к диалогу с ботом: [@ideco\_monitor\_bot](https://telegram.im/@ideco\_monitor\_bot).
 4. Написать боту `/start`.
@@ -36,7 +36,7 @@ description: >-
 
 <summary>Настройка привязки Ideco Monitoring Bot к беседе</summary>
 
-1. Настроить Интернет на Ideco NGFW.
+1. Настроить интернет на Ideco NGFW.
 2. [Привязать лицензию](broken-reference) к серверу.
 3. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
 4. Написать `/start` в группе.
@@ -54,7 +54,7 @@ description: >-
 {% endhint %}
 
 {% hint style="success" %}
-Уведомления начнут приходить в Telegram аккаунт.
+Уведомления начнут приходить в телеграм-аккаунт.
 {% endhint %}
 
 ## Настройка оповещений Ideco Monitоring Bot
@@ -67,5 +67,5 @@ description: >-
 2. Проставьте галочки напротив тех уведомлений, которые хотели бы получать в выбранной беседе.
 
 {% hint style="info" %}
-Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot\_notification\_shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
+Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot\_notification\_shutdown.svg). Оповещения перестанут приходить, пока снова не нажмете на эту иконку.
 {% endhint %}
