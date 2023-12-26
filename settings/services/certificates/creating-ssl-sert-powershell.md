@@ -19,7 +19,7 @@ New-SelfSignedCertificate -DnsName test.ideco.com -TextExtension @("2.5.29.19={t
 3. Сформируйте пароль для сертификата:
 
 ```
-$CertPassword = ConvertTo-SecureString -String “12345” -Force –AsPlainText
+$CertPassword = ConvertTo-SecureString -String “12345” -Force -AsPlainText
 ```
 
 * `12345` - пароль.
