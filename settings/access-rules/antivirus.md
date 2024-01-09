@@ -21,7 +21,7 @@
 
 <summary>Проверка работы антивируса</summary>
 
-Скачать тестовые файлы с сайта: [https://www.eicar.org/?page\_id=3950](https://www.eicar.org/?page\_id=3950).
+Можно попробовать скачать тестовые файлы с сайта: [https://www.eicar.org/download-anti-malware-testfile](https://www.eicar.org/download-anti-malware-testfile/).
 
 В случае правильной настройки браузер выведет ошибку доступа:
 
