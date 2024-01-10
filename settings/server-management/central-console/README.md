@@ -53,7 +53,7 @@ Ideco Center - это центральная консоль, которая по
 
 * В интерфейсе Ideco Center перейдите в раздел **Серверы** и подтвердите подключение кнопкой ![](../../../.gitbook/assets/icon-yes.png).
 
-  ![](../../../.gitbook/assets/central-console.png)
+  ![](../../../.gitbook/assets/cc14_2.png)
 
 {% hint style="info" %}
 Если сервер Ideco Center находится за NAT, укажите IP-адрес или доменное имя в разделе **Управление сервером -> Дополнительно -> Адрес центральной консоли**.
@@ -61,7 +61,7 @@ Ideco Center - это центральная консоль, которая по
 
 Удаление сервера Ideco UTM из Ideco Center разорвет привязку в интерфейсе Ideco UTM:
 
-![](../../../.gitbook/assets/central-console.gif)
+![](../../../.gitbook/assets/cc14_disconnect.gif)
 
 ## Переход из веб-интерфейса Ideco Center в веб-интерфейс Ideco UTM
 
@@ -69,10 +69,10 @@ Ideco Center - это центральная консоль, которая по
 
 1\. Перейдите в раздел **Серверы** нажмите на ![](../../../.gitbook/assets/icon-eye.png):
 
-![](../../../.gitbook/assets/central-console2.png)
+![](../../../.gitbook/assets/central-console14-2.gif)
 
 В новой вкладке откроется веб-интерфейс Ideco UTM.
 
-2\. Нажмите на ![](../../../.gitbook/assets/icon-cc.png)  в левом верхнем углу и выберите нужный UTM:
+2\. Нажмите на ![](../../../.gitbook/assets/icon-cc.png) в левом верхнем углу и выберите нужный UTM:
 
-![](../../../.gitbook/assets/cc.gif)
+![](../../../.gitbook/assets/cc14.gif)
