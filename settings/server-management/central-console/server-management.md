@@ -13,7 +13,10 @@
 {% endhint %}
  
 Есть два способа подключения к веб-интерфейсу Ideco NGFW из Ideco Center, которые находятся в Ideco Center:
-* Из раздела [Серверы](central-console.md) (по нажатию на ![](../../../.gitbook/assets/icon-eye.png) );
+* Из раздела [Серверы](central-console.md) (по нажатию на ![](../../../.gitbook/assets/icon-eye.png) ):
+  
+    ![](../../../.gitbook/assets/central-console2.gif)
+
 * При нажатии на стрелку в левом верхнем углу и выборе нужного NGFW:
     
     ![](../../../.gitbook/assets/server-management.gif)
