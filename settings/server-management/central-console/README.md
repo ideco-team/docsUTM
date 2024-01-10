@@ -68,7 +68,7 @@ Ideco Center - это центральная консоль, которая по
 
 1\. Перейдите в раздел **Серверы** и нажмите на ![](../../../.gitbook/assets/icon-eye.png):
 
-![](../../../.gitbook/assets/central-console2.png)
+![](../../../.gitbook/assets/central-console2.gif)
 
 В новой вкладке откроется веб-интерфейс Ideco NGFW.
 
