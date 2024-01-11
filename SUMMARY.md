@@ -114,6 +114,7 @@
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
     * [Создание самоподписанного сертификата c помощью Powershell](/settings/services/certificates/creating-ssl-sert-powershell.md)
+    * [Создание сертификата c помощью openssl](/settings/services/certificates/creating-openssl-cert.md)
 * [Отчеты](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
   * [Журнал событий](settings/reports/logs.md)
