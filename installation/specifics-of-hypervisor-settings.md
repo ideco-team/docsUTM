@@ -85,6 +85,67 @@ Ideco UTM поддерживает работу на следующих гипе
 При установке Ideco UTM на хосты кластера с разными поколениями процессоров укажите в настройках EVC самое старое поколение процессора из хостов, соответствующее минимальным системным требованиям для установки.
 {% endhint %}
 
+
+## VMware Workstation 17.0
+
+* Перед установкой Ideco NGFW увеличьте размер видеопамяти для виртуальной машины до 16 МБ;
+* Используйте виртуальные сетевые адаптеры **vmxnet3**.
+
+<details>
+<summary>Настройка</summary>
+
+1. Создайте виртуальную машину, нажав **Create a New Virtual Machine**:
+
+    ![](./../.gitbook/assets/setup-hypervisor12.png)
+
+2. Укажите загрузочный ISO-образ:
+
+    ![](./../.gitbook/assets/setup-hypervisor13.png)
+
+3. Выберите гостевую операционную систему **Linux** и в раскрывающемся списке укажите тип **Fedora 64-bit**:
+
+    ![](./../.gitbook/assets/setup-hypervisor14.png)
+
+4. Укажите имя виртуальной машины и директорию для создания виртуального диска:
+
+    ![](./../.gitbook/assets/setup-hypervisor15.png)
+
+5. Укажите размер вирутального жесткого диска **150ГБ**:
+   
+   ![](./../.gitbook/assets/setup-hypervisor16.png)
+
+6. Выберите **Customize Hardware** для изменения настроек виртуальной машины:
+
+   ![](./../.gitbook/assets/setup-hypervisor17.png)
+
+7. Укажите размер виртуальной оперативной памяти **16384МБ**:
+
+   ![](./../.gitbook/assets/setup-hypervisor18.png)
+
+8. Укажите количество ядер процесса равное 4:
+
+   ![](./../.gitbook/assets/setup-hypervisor19.png)
+
+9. Выйдите из меню и нажмите **Finish** для окончания настройки:
+
+   ![](./../.gitbook/assets/setup-hypervisor20.png)
+
+10. Перейдите в окно виртуальной машины и нажмите **Edit virtual machine settings**:
+
+   ![](./../.gitbook/assets/setup-hypervisor21.png)
+
+11. Перейдите во вкладку **Options**:
+
+   ![](./../.gitbook/assets/setup-hypervisor22.png)
+
+12. Выберите опцию **Advanced** и установите для параметра Firmware Type значение **UEFI**:
+
+   ![](./../.gitbook/assets/setup-hypervisor23.png)
+
+13. Нажмите **OK** для завершения настройки виртуальной машины.
+
+</details>
+
 ## Citrix XenServer
 
 <details>
