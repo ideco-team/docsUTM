@@ -33,6 +33,7 @@
   * [Файрвол](advanced-setting/control-blocking/firewall.md)
   * [Предотвращения вторжений](advanced-setting/control-blocking/ips.md)
   * [Маршрутизация](advanced-setting/control-blocking/routing.md)
+  * [BGP](advanced-setting/control-blocking/bgp.md)
   * [Контент-фильтр](advanced-setting/control-blocking/content-filter.md)
   * [Прокси](advanced-setting/control-blocking/proxy.md)
 * [Управление сервером и его настройка](advanced-setting/server-management/README.md)

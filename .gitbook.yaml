@@ -36,3 +36,4 @@ redirects:
   license_management: ./advanced-setting/server-management/binding-license.md
   additionally: ./advanced-setting/server-management/language-time-management.md
   application_control_security_profiles: ./advanced-setting/control-blocking/security-profiles.md
+  bgp: ./advanced-setting/control-blocking/bgp.md
