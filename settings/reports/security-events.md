@@ -97,3 +97,53 @@ IP-адреса в столбцах **Источник** и **Назначени
 ![](../../.gitbook/assets/security-events2.png)
 
 IP-адреса в столбцах **Адрес источника** и **Адрес назначения** кликабельны и при нажатии ведут на сервис [Whois](https://www.nic.ru/whois/?searchWord) для получения информации о регистрации домена.
+
+<details>
+
+<summary>Добавление правила Web Application Firewall в исключения</summary>
+
+Чтобы добавить сработавшее правило WAF в исключения, выполните действия:
+
+1\. Перейдите в раздел **Управление сервером -> Терминал**.
+
+2\. В терминале перейдите в директорию `/var/opt/ideco/reverse-backend`, введя команду `/var/opt/ideco/reverse-backend`:
+
+![](../../.gitbook/assets/waf.png)
+
+Если такой директории нет, создайте ее, выполнив команды:
+
+```
+mkdir /var/opt/ideco/reverse-backend
+chown ideco-reverse-backend:ideco-reverse-backend /var/opt/ideco/reverse-backend
+```
+
+3\. Проверьте наличие в директории `/var/opt/ideco/reverse-backend` файла `custom-waf.conf`. Для этого введите команду: `ls /var/opt/ideco/reverse-backend`. Если файл есть, он отобразится в выводе терминала:
+
+![](../../.gitbook/assets/waf3.png)
+
+Если файла нет, создайте его командами:
+
+```
+touch /var/opt/ideco/reverse-backend/custom-waf.conf
+chown ideco-reverse-backend:ideco-reverse-backend /var/opt/ideco/reverse-backend/custom-waf.conf
+```
+
+3\. Откройте файл `custom-waf.conf` в режиме редактирования, введя команду `nano custom-waf.conf`.
+
+4\. В открывшемся файле введите `SecRuleRemoveById 930 130 949 110`, где `930 130` и `949 110` - ID сработавших правил WAF:
+
+![](../../.gitbook/assets/waf1.png)
+
+5\. Сохраните файл, нажав **Ctrl + X**, а затем нажмите **Enter**.
+
+6\. Введите команду `sync --file-system /var/opt/ideco/reverse-backend/custom-waf.conf`, чтобы данные записались на диск.
+
+7\. Перезапустите службу, введя в терминале команду `systemctl restart ideco-reverse-backend.service`.
+
+8\. Введите в терминале команду `cat /run/ideco-reverse-backend/conf.d/modsec/main.conf`:
+
+![](../../.gitbook/assets/waf2.png)
+
+Внесенные в файл `custom-waf.conf` исключения из правил WAF сохранятся при обновлении сервера Ideco UTM. Создавать директорию и файл необходимо только один раз, новые исключения следует просто в него добавлять.
+
+</details>
