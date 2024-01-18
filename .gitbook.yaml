@@ -15,7 +15,6 @@ redirects:
   firewall: ./advanced-setting/control-blocking/firewall.md
   ids_ips: ./advanced-setting/control-blocking/ips.md
   routing: ./advanced-setting/control-blocking/routing.md
-  content_filter_security_profiles: ./advanced-setting/control-blocking/content-filter.md
   object: ./advanced-setting/server-management/aliases.md
   network_interface: ./advanced-setting/server-management/server-configuration-management.md
   dns: ./advanced-setting/server-management/dns.md
@@ -34,6 +33,7 @@ redirects:
   terminal: ./advanced-setting/server-management/terminal.md
   license_management: ./advanced-setting/server-management/binding-license.md
   additionally: ./advanced-setting/server-management/language-time-management.md
-  application_control_security_profiles: ./advanced-setting/control-blocking/security-profiles.md
-  tls_inspection_security_profiles: ./advanced-setting/control-blocking/tls-inspection-security-profiles.md
+  application_control_security_profiles: ./advanced-setting/control-blocking/security-profiles/application-control-profiles.md
+  tls_inspection_security_profiles: ./advanced-setting/control-blocking/security-profiles/tls-inspection-security-profiles.md
+  content_filter_security_profiles: ./advanced-setting/control-blocking/security-profiles/content-filter-profiles.md
   bgp: ./advanced-setting/control-blocking/bgp.md
