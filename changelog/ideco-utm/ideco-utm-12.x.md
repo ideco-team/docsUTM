@@ -12,9 +12,8 @@
 * Электронная почта: help@ideco.ru;
 * Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot).
 
-
-[Скачать Ideco UTM 10](https://my.ideco.ru/). \
-Автоматическая регистрация тестовой лицензии: [my.ideco.ru](my.ideco.ru) (полный функционал на 40 дней и 10 000 пользователей).
+[Скачать Ideco UTM 10](https://my.ideco.ru/).\
+Автоматическая регистрация тестовой лицензии: [my.ideco.ru](my.ideco.ru) (полная функциональность на 40 дней и 10 000 пользователей).
 
 **Обновление с релизов Ideco UTM 8.0 и старше**
 
