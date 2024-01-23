@@ -171,7 +171,7 @@
     * [Создание VPN-подключения на мобильных устройствах](recipes/popular-recipes/vpn/connection-for-mobile-devices.md)
     * [Создание подключения в Mac OS](recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md)
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md)
-  * [Доступ в удаленные сети через роутер в локальной сети](recipes/popular-recipes/access-to-remote-networks.md)
+  * [Как избавиться от асимметричной маршрутизации трафика](recipes/popular-recipes/access-to-remote-networks.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Как восстановить доступ к Ideco UTM](recipes/popular-recipes/restore-access-to-ideco-utm.md)
   * [Как восстановиться на прошлую версию после обновления Ideco UTM](recipes/popular-recipes/go-back.md)
