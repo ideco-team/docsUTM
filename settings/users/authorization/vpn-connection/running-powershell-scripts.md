@@ -29,24 +29,24 @@ description: >-
 
 **В личном кабинете пользователя:**
 
-* Скачайте скрипт, кликнув по ссылке **Скачать скрипт для создания подключения**: ![](<../../../../.gitbook/assets/powershell1 (1).png>)
+* Скачайте скрипт, кликнув по ссылке **Скачать скрипт для создания подключения**: ![](../../../../.gitbook/assets/powershell8.png)
 * Перейдите к выполнению пункта 2.
 
 {% hint style="warning" %}
-Для подключения по VPN к Ideco NGFW с белым IP адресом достаточно действий, указанных ниже. Если Ideco NGFW выходит в интернет через маршрутизатор, воспользуйтесь пунктом [Подключение по VPN к Ideco NGFW с доступом в интернет через маршрутизатор](running-powershell-scripts.md#podklyuchenie-po-vpn-k-ideco-utm-s-dostupom-v-internet-cherez-marshrutizator).
+Для подключения по VPN к Ideco NGFW с белым IP адресом достаточно действий, указанных ниже. Если Ideco NGFW выходит в интернет через маршрутизатор, воспользуйтесь пунктом [Подключение по VPN к Ideco NGFW с доступом в интернет через маршрутизатор](running-powershell-scripts.md#podklyuchenie-po-vpn-k-ideco-ngfw-s-dostupom-v-internet-cherez-marshrutizator).
 {% endhint %}
 
 2\. Щелкните правой кнопкой мыши по скачанному файлу и в контекстном меню выберите **Свойства**.
 
-![](<../../../../.gitbook/assets/powershell1 (1).png>)
+![](<../../../../.gitbook/assets/powershell1.png>)
 
 3\. Поставьте галочку **Разблокировать** справа в нижнем углу свойств файла (по умолчанию ОС блокирует выполнение скачанных из интернета файлов):
 
-![](<../../../../.gitbook/assets/powershell2 (1).png>)
+![](<../../../../.gitbook/assets/powershell2.png>)
 
 4\. Нажмите правой кнопкой мыши на файл и выберите **Выполнить в PowerShell** в контекстном меню:
 
-![](<../../../../.gitbook/assets/powershell3 (1).png>)
+![](<../../../../.gitbook/assets/powershell3.png>)
 
 При появлении ошибки "Выполнение сценариев отключено в этой системе" нужно включить выполнение сценариев, выполнив команду в PowerShell (вызовите его через меню "Пуск"): `Set-ExecutionPolicy Unrestricted`;
 
@@ -54,7 +54,7 @@ description: >-
 
 6\. Подключение создано. Нажмите **Подключиться** в списке сетей.
 
-![](<../../../../.gitbook/assets/powershell4 (1).png>)
+![](<../../../../.gitbook/assets/powershell4.png>)
 
 ## Подключение по VPN к Ideco NGFW с доступом в интернет через маршрутизатор
 
