@@ -50,6 +50,7 @@
     * [Аутентификация пользователей AD/Samba DC](settings/users/active-directory/active-directory-user-authorization.md)
     * [Скрипты автоматической разавторизации](settings/users/active-directory/auto-de-authorization-script.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
+  * [Интеграция с RADIUS-сервером](settings/users/radius.md)
   * [ALD Pro](settings/users/ald-pro.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
