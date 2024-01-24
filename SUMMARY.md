@@ -193,6 +193,7 @@
   * [Интеграция Ideco UTM и брокера сетевых пакетов DS Integrity NG](recipes/popular-recipes/integrity.md)
   * [Настройка cовместной работы ViPNet Координатор с Ideco UTM](./recipes/popular-recipes/vipnet-coordinator.md)
   * [Блокировка чат-ботов](./recipes/popular-recipes/block-chat-bot.md)
+  * [Таблица портов Ideco UTM, доступных из локальной и внешних сетей](./recipes/popular-recipes/open-ports.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает Интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
