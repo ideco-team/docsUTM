@@ -7,9 +7,9 @@
 Файрвол Ideco Center содержит только таблицы FORWARD и INPUT.
 
 Пример добавления правил через Ideco Center.\
-_Сверху интерфейс Ideco Center, снизу интерфейс подключенного Ideco NGFW_:
+_Слева интерфейс Ideco NGFW, справа интерфейс Ideco Сenter_:
 
-![](<../../../.gitbook/assets/policies-and-objects (1).gif>)
+![](../../../.gitbook/assets/policies-and-objects.gif)
 
 {% tabs %}
 {% tab title="В Ideco Center" %}
