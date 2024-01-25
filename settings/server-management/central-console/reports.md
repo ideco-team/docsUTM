@@ -31,7 +31,7 @@
 * **Автоматическое обновление** - ideco-sysupdate-backend;
 * **Резервное копирование** - ideco-backup-backend, ideco-backup-create, ideco-backup-rotate;
 * **Лицензия** - ideco-license-backend;
-* **Syslog** - ideco-monitor-backend;
+* **Syslog** - ideco-monitor-backend.
 
 </details>
 

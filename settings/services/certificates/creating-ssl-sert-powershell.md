@@ -35,4 +35,4 @@ Export-PfxCertificate -Cert cert:\LocalMachine\My\2284919151C5C624341D7B75FE034B
 
 5. Конвертируйте сертификат в расширение .pem ([пример конвертора](https://www.leaderssl.ru/tools/ssl_converter)).
 
-6. Воспользуйтесь [инструкцией по загрузке сертификата на UTM](#zagruzka-ssl-sertifikata-na-utm).
+6. Воспользуйтесь [инструкцией по загрузке сертификата на NGFW](upload-ssl-certificate-to-server.md).

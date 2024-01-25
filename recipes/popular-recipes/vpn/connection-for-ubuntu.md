@@ -26,7 +26,7 @@
 
 <img src="../../../.gitbook/assets/ubuntu4.1.png" alt="" data-size="original">
 
-3\. В разделе **Идентификация** и заполните следующие поля:
+3\. В разделе **Идентификация** заполните следующие поля:
 
 * **Название** - имя подключения;
 * **Шлюз** - доменное имя или IP-адрес интерфейса UTM;
@@ -70,9 +70,10 @@
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+    <img src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+* В разделе **Сервисы -> Сертификаты -> Загруженные сертификаты**:
 
-*   В разделе **Сервисы -> Сертификаты**:
+    <img src="../../../.gitbook/assets/certificates3.png" alt="" data-size="original">
 
     <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
 
@@ -128,7 +129,7 @@ sudo reboot
 
 2\. Установите флаг **Подключение по SSTP** и заполните поля **Домен** и **Порт**:
 
-<img src="../../../.gitbook/assets/sstp-on.png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/sstp.png" alt="" data-size="original">
 
 **Создание подключения в Ubuntu**
 
