@@ -72,4 +72,4 @@
   * Базы модуля **Предотвращения вторжений** - `python3 geoip.py <geoip-<timestamp>.mmdb>`;
   * Базы соответствия подсетей и стран - `python3 iplist.py <iplist-<timestamp>.tar.gz>`;
   * Правила фильтрации модуля **Предотвращение вторжений** - `python3 suricata.py simple.tgz`;
-  * базы модуля **Контент-фильтр** - `python3 content_filter.py <sky-from-0-to-<timestamp>.sst>`.
+  * Базы модуля **Контент-фильтр** - `python3 content_filter.py <sky-from-0-to-<timestamp>.sst>`.
