@@ -63,6 +63,7 @@
   * [Telegram,  Ideco Monitoring Bot и Zabbix агент](advanced-setting/logging-monitoring/connection-external-services.md)
 * [Настройка клиентских машин](advanced-setting/setup-client/README.md)
   * [Настройка соединения c NGFW VPP](advanced-setting/setup-client/setup-connection.md)
+  * [Настройка клиентских машин для фильтрации трафика](advanced-setting/setup-client/sertificate-setup.md)
 
 ## Диагностика проблем <a href="#problem-diagnosis" id="problem-diagnosis"></a>
 
