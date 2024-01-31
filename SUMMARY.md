@@ -139,6 +139,7 @@
       * [Загрузка своего SSL-сертификата на сервер](settings/server-management/central-console/certificates/upload-ssl-certificate-to-server.md)
     * [Отчеты и журналы](settings/server-management/central-console/reports.md)
     * [Управление сервером](settings/server-management/central-console/server-management.md)
+  * [VCE](settings/server-management/vce.md)
   * [Кластеризация](settings/server-management/cluster.md)
   * [Автоматическое обновление сервера](settings/server-management/server-update.md)
   * [Резервное копирование](settings/server-management/backup.md)
