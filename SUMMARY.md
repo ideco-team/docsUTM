@@ -59,7 +59,7 @@
   * [Монитор трафика](settings/monitor/traffic.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
-  * [Zabbix агент](settings/monitor/zabbix.md)
+  * [Zabbix-агент](settings/monitor/zabbix.md)
 * [Правила трафика](settings/access-rules/README.md)
   * [Файрвол](settings/access-rules/firewall.md)
     * [Таблицы файрвола (FORWARD, DNAT, INPUT и SNAT)](settings/access-rules/firewall-tables.md)
