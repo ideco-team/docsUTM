@@ -142,7 +142,7 @@
   * [VCE](settings/server-management/vce.md)
   * [Кластеризация](settings/server-management/cluster.md)
   * [Автоматическое обновление сервера](settings/server-management/server-update.md)
-  * [Резервное копирование](settings/server-management/backup.md)
+  * [Бекап](settings/server-management/backup.md)
   * [Терминал](settings/server-management/terminal.md)
   * [Лицензия](settings/server-management/license-management.md)
   * [Дополнительно](settings/server-management/additionally.md)
