@@ -9,7 +9,7 @@
 * [Техническая поддержка](general/technical-support.md)
   * [Режим удаленного помощника](general/remote-assistant.md)
 
-## Установка <a href="#installation" id="installation"></a>
+## Быстрый старт <a href="#installation" id="installation"></a>
 
 * [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
 * [Личный кабинет my.ideco](installation/initial-action-my-ideco.md)
@@ -116,8 +116,8 @@
     * [Подключение Keenetic по SSTP или IPsec](settings/services/ipsec/site-to-site/keenetic-connection.md)
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
-    * [Создание самоподписанного сертификата c помощью Powershell](/settings/services/certificates/creating-ssl-sert-powershell.md)
-    * [Создание сертификата c помощью openssl](/settings/services/certificates/creating-openssl-cert.md)
+    * [Создание самоподписанного сертификата c помощью Powershell](settings/services/certificates/creating-ssl-sert-powershell.md)
+    * [Создание сертификата c помощью openssl](settings/services/certificates/creating-openssl-cert.md)
 * [Отчеты](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
   * [Журнал событий](settings/reports/logs.md)
@@ -198,7 +198,7 @@
   * [Порядок обработки веб-трафика в Ideco NGFW](recipes/popular-recipes/processing-order.md)
   * [Интеграция Ideco NGFW и брокера сетевых пакетов DS Integrity NG](recipes/popular-recipes/integrity.md)
   * [Настройка cовместной работы ViPNet Координатор с Ideco NGFW](./recipes/popular-recipes/vipnet-coordinator.md)
-  * [Блокировка чат-ботов](./recipes/popular-recipes/block-chat-bot.md)
+  * [Блокировка чат-ботов](recipes/popular-recipes/block-chat-bot.md)
   * [Таблица портов Ideco NGFW, доступных из локальной и внешних сетей](./recipes/popular-recipes/open-ports.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
