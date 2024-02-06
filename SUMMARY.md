@@ -8,7 +8,7 @@
 * [Источники обновлений данных Ideco UTM](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
 
-## Установка <a href="#installation" id="installation"></a>
+## Быстрый старт <a href="#installation" id="installation"></a>
 
 * [Создание загрузочного USB flash диска](installation/usb.md)
 * [Особенности настроек гипервизоров](installation/specifics-of-hypervisor-settings.md)
@@ -109,7 +109,7 @@
       * [Подключение Keenetic по SSTP или IPsec](settings/services/ipsec/site-to-site/keenetic-connection.md)
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
-    * [Создание самоподписанного сертификата c помощью Powershell](/settings/services/certificates/creating-ssl-sert-powershell.md)
+    * [Создание самоподписанного сертификата c помощью Powershell](settings/services/certificates/creating-ssl-sert-powershell.md)
 * [Отчеты](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
   * [События безопасности](settings/reports/security-events.md)
@@ -185,9 +185,9 @@
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
   * [Порядок обработки веб-трафика в Ideco UTM](recipes/popular-recipes/processing-order.md)
   * [Интеграция Ideco UTM и брокера сетевых пакетов DS Integrity NG](recipes/popular-recipes/integrity.md)
-  * [Настройка cовместной работы ViPNet Координатор с Ideco UTM](./recipes/popular-recipes/vipnet-coordinator.md)
-  * [Блокировка чат-ботов](./recipes/popular-recipes/block-chat-bot.md)
-  * [Таблица портов Ideco UTM, доступных из локальной и внешних сетей](./recipes/popular-recipes/open-ports.md)
+  * [Настройка cовместной работы ViPNet Координатор с Ideco UTM](recipes/popular-recipes/vipnet-coordinator.md)
+  * [Блокировка чат-ботов](recipes/popular-recipes/block-chat-bot.md)
+  * [Таблица портов Ideco UTM, доступных из локальной и внешних сетей](recipes/popular-recipes/open-ports.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает Интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
