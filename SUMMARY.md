@@ -8,7 +8,7 @@
 * [Системные требования и источники обновления данных](general/data-update-source-utm-vpp.md)
 * [Техническая поддержка](general/technical-support.md)
 
-## Первоначальная настройка <a href="#initial-setup" id="initial-setup"></a>
+## Быстрый старт <a href="#initial-setup" id="initial-setup"></a>
 
 * [Рекомендации при первоначальной настройке](initial-setup/tips-for-initial-setup.md)
 * [MY.IDECO](initial-setup/my-ideco.md)
