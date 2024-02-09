@@ -2,6 +2,6 @@
 
 Ideco UTM логирует действия администраторов, которые вносят изменения в конфигурацию UTM из веб-интерфейса, локального интерфейса и терминала.
 
-![](../../.gitbook/assets/administrator-actions.png)
+![](/.gitbook/assets/administrator-actions.png)
 
 При работе Ideco UTM в режиме [кластера](settings/server-management/cluster.md) логи действия администраторов не передаются резервной ноде.

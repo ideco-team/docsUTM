@@ -14,11 +14,11 @@
 * **Действие** - SNAT;
 * **Инвертировать назначение** - Переведите в положение *Включен*, **чтобы не производить SNAT** при выбранном действии **SNAT**.
 
-![](../../.gitbook/assets/access-from-external-network-without-nat.png)
+![](/.gitbook/assets/access-from-external-network-without-nat.png)
 
 **Итоговое правило файрвола выглядят так:**
 
-![](../../.gitbook/assets/access-from-external-network-without-nat1.png)
+![](/.gitbook/assets/access-from-external-network-without-nat1.png)
 
 {% hint style="info" %}
 На устройствах локальной сети Ideco UTM должен использоваться в качестве основного шлюза, либо должен быть прописан необходимый маршрут к внешним IP-адресам через Ideco UTM. Также устройства локальной сети должны быть авторизованы на UTM. На устройствах из внешней сети (по-отношению к Ideco UTM) также Ideco UTM должен использоваться в качестве основного шлюза, либо иметься маршрут к локальной сети через Ideco UTM.

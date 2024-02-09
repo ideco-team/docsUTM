@@ -4,7 +4,7 @@ ViPNet координатор используется для шифровани
 
 Схема совместной работы Ideco UTM с ViPNet Координатор:
 
-![](../../.gitbook/assets/vipnet-coordinator1.png)
+![](/.gitbook/assets/vipnet-coordinator1.png)
 
 ## Настройка Ideco UTM и ViPNet Координатор
 

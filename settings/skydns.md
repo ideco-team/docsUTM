@@ -29,7 +29,7 @@ description: Настройка Ideco UTM для фильтрации трафи
 
 1\. Прописать DNS-сервер SkyDNS (193.58.251.251) в настройках DNS-сервера в Ideco UTM (Веб-интерфейс: **Сервисы -> DNS**).
 
-![](../.gitbook/assets/skydns.png)
+![](/.gitbook/assets/skydns.png)
 
 2\. Для запрета обращения к другим DNS-серверам включить опцию перехвата DNS-запросов (если для всей сети обязательна фильтрация через SkyDNS).
 
@@ -43,7 +43,7 @@ description: Настройка Ideco UTM для фильтрации трафи
 
 Создав правило:
 
-![](../.gitbook/assets/skydns1.png)
+![](/.gitbook/assets/skydns1.png)
 
 6\. Если провайдер предоставляет статический белый IP-адрес, то привяжите этот адрес к аккаунту SkyDNS в [личном кабинете](https://www.skydns.ru/auth/login/?next=/cabinet/guide/) на сайте SkyDNS (в разделе **Настройки -> Сети**).
 
@@ -71,4 +71,4 @@ description: Настройка Ideco UTM для фильтрации трафи
 
 ## Схема фильтрации веб-трафика при использовании SkyDNS
 
-![](../.gitbook/assets/skydns.jpg)
+![](/.gitbook/assets/skydns.jpg)

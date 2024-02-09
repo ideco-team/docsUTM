@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **DHCP**: `ideco-dnsmasq`. \
-Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 #### Интерфейс Ideco UTM:
@@ -37,7 +37,7 @@ description: >-
 
 Пример настройки DHCP-сервера:
 
-![](../../.gitbook/assets/dhcp.png)
+![](/.gitbook/assets/dhcp.png)
 
 {% hint style="info" %}
 Если не задано значение в поле DNS-1 или DNS-2, то DNS-сервером будет являться Ideco UTM для всех сетевых устройств локальной сети. 
@@ -45,13 +45,13 @@ description: >-
 
 Выберите режим работы **Relay**, если IP-адреса будет выдавать внешний DHCP-сервер:
 
-![](../../.gitbook/assets/dhcp6.png)
+![](/.gitbook/assets/dhcp6.png)
 
 Включить/выключить, редактировать или удалить правила для выдачи IP-адресов можно кнопками управления в колонке **Управление**.
 
 При использовании DHCP-сервера переключите ползунок в левом верхнем углу в положение **Включен**.
 
-![](../../.gitbook/assets/dhcp.gif)
+![](/.gitbook/assets/dhcp.gif)
 
 ## Привязка IP к MAC
 
@@ -61,15 +61,15 @@ description: >-
 
 2\. Создайте правило привязки **IP к MAC**:
 
-![](../../.gitbook/assets/dhcp2.png)
+![](/.gitbook/assets/dhcp2.png)
 
 Пример созданного правила привязки показан ниже на скриншоте:
 
-![](../../.gitbook/assets/dhcp3.png)
+![](/.gitbook/assets/dhcp3.png)
 
 Для проверки созданного правила, на компьютере с указанным в правиле MAC-адресом, получите IP-адрес по DHCP и проверьте результат с помощью команды `ipconfig /all`.
 
-![](../../.gitbook/assets/dhcp4.png)
+![](/.gitbook/assets/dhcp4.png)
 
 {% hint style="info" %}
 Будьте внимательны при согласовании настроек клиентских устройств и DHCP-сервера на Ideco UTM:
@@ -85,6 +85,6 @@ description: >-
 
 Содержит информацию об аренде IP-адресов для устройств.
 
-![](../../.gitbook/assets/dhcp5.png)
+![](/.gitbook/assets/dhcp5.png)
 
-Для привязки IP к MAC, нажмите на кнопку ![](../../.gitbook/assets/icon-tie.png) в столбце **Управление**.
+Для привязки IP к MAC, нажмите на кнопку ![](/.gitbook/assets/icon-tie.png) в столбце **Управление**.

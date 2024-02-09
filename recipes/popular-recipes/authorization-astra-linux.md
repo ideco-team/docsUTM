@@ -14,7 +14,7 @@
 
 5\. В настройках браузера Firefox в пункте **Защита и приватность** в разделе **Защита** выбрать **Просмотр сертификатов**.
 
-![](../../.gitbook/assets/authorization-astra-linux1.png)
+![](/.gitbook/assets/authorization-astra-linux1.png)
 
 6\. Во вкладке **Центры сертификации** нажать **Импортировать** и выбрать скачанный с UTM сертификат.
 
@@ -35,13 +35,13 @@
 
 При возникновении проблем с доверенным сертификатом, установите корневой сертификат UTM через браузер Yandex:
 
-1\. Скачайте корневой сертификат UTM из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](../../.gitbook/assets/icon-download.png)),
+1\. Скачайте корневой сертификат UTM из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)),
 
 2\. В браузере Yandex перейдите во вкладку **Настройки -> Системные -> Управление сертификатами -> Импорт**.
 
 Пример проблемы:
 
-![](../../.gitbook/assets/authorization-astra-linux.png)
+![](/.gitbook/assets/authorization-astra-linux.png)
 
 ## Для браузера **Chromium**
 
@@ -55,16 +55,16 @@
 
 При возникновении проблем с доверенным сертификатом, установите корневой сертификат UTM через браузер Chromium:
 
-1\. Скачайте корневой сертификат UTM из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](../../.gitbook/assets/icon-download.png)),
+1\. Скачайте корневой сертификат UTM из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)),
 
 2\. В браузере Chromium перейдите во вкладку **Безопасность -> Управление сертификатами -> Центры сертификации -> Импортировать**.
 
 Пример проблемы:
 
-![](../../.gitbook/assets/authorization-astra-linux.png)
+![](/.gitbook/assets/authorization-astra-linux.png)
 
 ## Для браузера **Firefox**
 
 1. Запустите браузер и в адресной строке введите **about:config**, чтобы попасть в режим редактирования расширенных настроек;
 2. Введите параметр **security.enterprise\_roots.enabled** и нажмите по блоку со строчкой два раза левой кнопкой мыши, чтобы значение изменилось на **True**;
-3. В двух следующих параметрах впишите доменное имя UTM через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** (например, [http://utm.domain.com](http://utm.domain.com), [https://utm.domain.com\\](https://utm.domain.com)).
+3. В двух следующих параметрах впишите доменное имя UTM через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** (например, http://utm.domain.com и https://utm.domain.com).

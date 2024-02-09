@@ -53,11 +53,11 @@ description: >-
 * **Отдаленный ИД** - укажите IP-адрес внешнего интерфейса Ideco UTM;
 * Под заданием шифров нажать на **Изменить** и задать шифры, как на скриншоте:
 
-![](../../../../.gitbook/assets/ipsec-connection-kerio-control-to-utm1.png)
+![](/.gitbook/assets/ipsec-connection-kerio-control-to-utm1.png)
 
 Пример итоговых настроек на скриншоте ниже:
 
-![](../../../../.gitbook/assets/ipsec-connection-kerio-control-to-utm2.png)
+![](/.gitbook/assets/ipsec-connection-kerio-control-to-utm2.png)
 
 5\. Перейдите в раздел **Удалённые сети**, нажмите на кнопку **Добавить** и введите сведения о локальной сети Ideco UTM, которая будет видна из подсети Kerio Control.
 
@@ -65,7 +65,7 @@ description: >-
 
 7\. После добавление нового интерфейса нажмите на кнопку **Применить**. Подключение успешно установится, информация об этом отобразится в таблице:
 
-![](../../../../.gitbook/assets/ipsec-connection-kerio-control-to-utm3.png)
+![](/.gitbook/assets/ipsec-connection-kerio-control-to-utm3.png)
 
 {% hint style="info" %}
 При возникновения проблем обратите внимание на настройки файрвола Kerio Control.

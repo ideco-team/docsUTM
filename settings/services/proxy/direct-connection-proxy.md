@@ -18,7 +18,7 @@
 * На клиентских устройствах указан адрес веб-прокси (в настройках прокси-сервера в браузерах); 
 * При [Single Sign-On](../../users/active-directory/active-directory-user-authorization.md#nastroika-ideco-utm) авторизации через Active Directory в настройках клиентских устройств указан IP-адрес Ideco UTM.
 
-![](../../../.gitbook/assets/proxy-server4.png)
+![](/.gitbook/assets/proxy-server4.png)
 
 Если в настройках программы под ОС Windows или Mac OS X нет возможности указать прокси-сервер, воспользуйтесь сторонним ПО для маршрутизации всего трафика рабочей станции на прокси-сервер. Такую возможность предоставляет программа **Proxifier**, которую можно настроить для прямых подключений к прокси, воспользовавшись [статьей](../../../recipes/popular-recipes/configuring-proxifier.md).
 

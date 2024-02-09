@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Центральная консоль**: `ideco-central-console-backend`. \
-Список служб для других разделов доступен по [ссылке](../terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 
 Нужна помощь при настройке Ideco UTM? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
 {% endhint %}
@@ -44,17 +44,17 @@ Ideco Center - это центральная консоль, которая по
 
 2\. Введите IP-адрес или доменное имя в строке **Сервер центральной консоли** и нажмите **Подключить**:
 
-  ![](../../../.gitbook/assets/central-console1.png)
+  ![](/.gitbook/assets/central-console1.png)
 
   Если вместо доменного имени указан IP-адрес Ideco Center, загрузите корневой сертификат Ideco Center в Ideco UTM:
 
-  ![](../../../.gitbook/assets/central-console3.png)
+  ![](/.gitbook/assets/central-console3.png)
   
   Скачать корневой сертификат можно в Ideco Center, раздел **Сервисы -> Сертификаты**.
 
-3\. В интерфейсе Ideco Center перейдите в раздел **Серверы** и подтвердите подключение кнопкой ![](../../../.gitbook/assets/icon-yes.png).
+3\. В интерфейсе Ideco Center перейдите в раздел **Серверы** и подтвердите подключение кнопкой ![](/.gitbook/assets/icon-yes.png).
 
-  ![](../../../.gitbook/assets/cc15_2.png)
+  ![](/.gitbook/assets/cc15_2.png)
 
 {% hint style="info" %}
 Если сервер Ideco Center находится за NAT, укажите IP-адрес или доменное имя в разделе **Управление сервером -> Дополнительно -> Адрес центральной консоли**.
@@ -62,7 +62,7 @@ Ideco Center - это центральная консоль, которая по
 
 Удаление сервера Ideco UTM из Ideco Center разорвет привязку в интерфейсе Ideco UTM:
 
-![](../../../.gitbook/assets/cc15_disconnect.gif)
+![](/.gitbook/assets/cc15_disconnect.gif)
 
 {% hint style="warning" %}
 При подключении к Ideco Center сервера, настройки которого [восстановлены](../../../recipes/popular-recipes/transferring-data-to-another-server.md) из бекапа другого сервера, такой клон не появится в таблице серверов ЦК. Возникает конфликт с донором резервной копии из-за одинакового claster_id.
@@ -74,16 +74,16 @@ Ideco Center - это центральная консоль, которая по
 
 В Ideco Center предусмотрено два способа перехода в Ideco UTM:
 
-1\. Перейдите в раздел **Серверы** нажмите на ![](../../../.gitbook/assets/icon-eye.png):
+1\. Перейдите в раздел **Серверы** нажмите на ![](/.gitbook/assets/icon-eye.png):
 
-![](../../../.gitbook/assets/central-console15-2.gif)
+![](/.gitbook/assets/central-console15-2.gif)
 
 В новой вкладке откроется веб-интерфейс Ideco UTM.
 
-2\. Нажмите на ![](../../../.gitbook/assets/icon-cc.png)  в левом верхнем углу и выберите нужный UTM:
+2\. Нажмите на ![](/.gitbook/assets/icon-cc.png)  в левом верхнем углу и выберите нужный UTM:
 
-![](../../../.gitbook/assets/cc15.gif)
+![](/.gitbook/assets/cc15.gif)
 
 {% hint style="info" %}
-Для обновления серверов, подключенных к центральной консоли, перейдите в интерфейс UTM одним из указанных выше способов и воспользуйтесь статьей [Автоматическое обновление сервера](settings\server-management\server-update.md). 
+Для обновления серверов, подключенных к центральной консоли, перейдите в интерфейс UTM одним из указанных выше способов и воспользуйтесь статьей [Автоматическое обновление сервера](/settings/server-management/server-update.md). 
 {% endhint %}

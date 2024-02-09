@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Резервное копирование**: `ideco-backup-backend`; `ideco-backup-create`; `ideco-backup-restore`; `ideco-backup-rotate`.\
-Список служб для других разделов доступен по [ссылке](terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -28,7 +28,7 @@ description: >-
 
 Хранить резервные копии можно в течение недели или месяца.
 
-![](../../.gitbook/assets/backup-add.png)
+![](/.gitbook/assets/backup-add.png)
 
 ## Резервное копирование на удаленное файловое хранилище по протоколу FTP
 
@@ -59,7 +59,7 @@ description: >-
 
 Интерфейс управления резервными копиями в веб-интерфейсе представлен на скриншоте ниже.
 
-![](../../.gitbook/assets/backup-new.png)
+![](/.gitbook/assets/backup-new.png)
 
 ### Управление резервными копиями через локальное меню
 
@@ -67,10 +67,10 @@ description: >-
 
 Пример создания резервной копии через локальное меню приведен на скриншоте ниже:
 
-![](../../.gitbook/assets/local_add_menu_backup.png)
+![](/.gitbook/assets/local_add_menu_backup.png)
 
 * Для того чтобы восстановить конфигурацию из резервной копии, выберите пункт **10** и нажмите **Enter**. Выберите из списка резервную копию (если копий несколько), введя пункт нужной копии, и нажмите **Enter**. Для восстановления из резервной копии необходимо перезагрузить сервер. Введите **y**, а затем **Enter** для перезагрузки.
 
 Пример восстановления из резервной копии через локальное меню приведен на скриншоте ниже:
 
-![](../../.gitbook/assets/local-menu-recovery.png)
+![](/.gitbook/assets/local-menu-recovery.png)

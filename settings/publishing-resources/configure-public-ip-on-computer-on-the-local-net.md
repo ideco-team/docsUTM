@@ -4,4 +4,4 @@
 
 Используйте [портмаппинг](portmapping.md), чтобы пробросить весь их диапазон от 0 до 65535 для получения эффекта присутствия локального сервера на внешнем IP-адресе.
 
-Для версий Ideco UTM 7.8.9 и младше используйте настройку по [ссылке](https://doc.ideco.ru/pages/viewpage.action?pageId=1278151).
+Для версий Ideco UTM 7.8.9 и младше используйте настройку по [ссылке](https://docs.ideco.dev/v/v7.9/settings/publishing-resources/config-public-ip-on-computer-on-the-local-net#dlya-versii-ideco-utm-7.9.0-i-starshe).

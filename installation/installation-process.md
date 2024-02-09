@@ -14,21 +14,21 @@
 
 Для установки Ideco UTM выполните действия:
 
-1. Перейдите к установке, нажав **Install Ideco UTM**.
+1\. Перейдите к установке, нажав **Install Ideco UTM**.
 
-![](../.gitbook/assets/installation-process.png)
+![](/.gitbook/assets/installation-process.png)
 
-2. Выберите диск для установки и ознакомьтесь с **предупреждением об уничтожении данных на диске**:
+2\. Выберите диск для установки и ознакомьтесь с **предупреждением об уничтожении данных на диске**:
 
-![](../.gitbook/assets/installation-process1.png)
+![](/.gitbook/assets/installation-process1.png)
 
-3. Выберите временную зону, в которой вы находитесь:
+3\. Выберите временную зону, в которой вы находитесь:
 
-![](../.gitbook/assets/installation-process2.png)
+![](/.gitbook/assets/installation-process2.png)
 
-4. Настройте дату и время в соответствии с вашей временной зоной. **Обязательно проверьте правильность даты и времени**:
+4\. Настройте дату и время в соответствии с вашей временной зоной. **Обязательно проверьте правильность даты и времени**:
 
-![](../.gitbook/assets/installation-process3.png)
+![](/.gitbook/assets/installation-process3.png)
 
 {% hint style="info" %}
 Не забудьте извлечь USB диск после установки Ideco UTM, чтобы загрузка с USB диска не началась заново.
@@ -38,7 +38,7 @@
 
 Для входа в веб-интерфейс Ideco UTM нужно создать учетную запись администратора с соблюдением требований к паролю:
 
-![](../.gitbook/assets/installation-process4.png)
+![](/.gitbook/assets/installation-process4.png)
 
 <details>
 
@@ -59,7 +59,7 @@
 
 1\. Введите **y** для начала настройки UTM как второй ноды кластера:
 
-![](../.gitbook/assets/installation-process6.png)
+![](/.gitbook/assets/installation-process6.png)
 
 2\. Для продолжения настройки воспользуйтесь статьей [Кластеризация](../settings/server-management/cluster.md).
 
@@ -73,32 +73,32 @@
 
 1\. Введите номер сетевого адаптера под локальный интерфейс:
 
-![](../.gitbook/assets/installation-process7.png)
+![](/.gitbook/assets/installation-process7.png)
 
 2\. Настройте локальную сеть автоматически через DHCP введя **y** или настройте вручную, введя **n**:
 
-![](../.gitbook/assets/installation-process8.png)
+![](/.gitbook/assets/installation-process8.png)
 
 3\. Введите локальный IP-адрес и маску подсети в формате `ip/маска` и нажмите **Enter**:
 
-![](../.gitbook/assets/installation-process5.png)
+![](/.gitbook/assets/installation-process5.png)
 
 4\. Введите адрес шлюза или оставьте пустым:
 
 *   пустым - при настройке Ideco UTM в качестве **шлюза**:
 
-    ![](../.gitbook/assets/installation-process9.png)
+    ![](/.gitbook/assets/installation-process9.png)
 *   введите шлюз с доступом в интернет - при настройке Ideco UTM в качестве **прокси**:
 
-    ![](../.gitbook/assets/installation-process10.png)
+    ![](/.gitbook/assets/installation-process10.png)
 
 5\. Задайте тег VLAN (стандарт VLAN 802.3ad) или оставьте поле пустым:
 
-![](../.gitbook/assets/installation-process11.png)
+![](/.gitbook/assets/installation-process11.png)
 
 После создания локального интерфейса откроется локальное меню управления сервером:
 
-![](../.gitbook/assets/installation-process12.png)
+![](/.gitbook/assets/installation-process12.png)
 
 {% hint style="info" %}
 Если в Ideco UTM настроен кластер, то в локальном меню будут отсутствовать пункты _Восстановиться на предыдущую версию_ и _Создание кластера_.

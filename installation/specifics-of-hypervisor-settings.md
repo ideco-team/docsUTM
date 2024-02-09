@@ -55,29 +55,29 @@ Ideco UTM поддерживает работу на следующих гипе
 
 Перед установкой Ideco UTM VPP загрузите образ, скачанный с [MY.IDECO](https://my.ideco.ru/), на VMware ESXi. При настройке виртуальной машины потребуется указать его путь.
 
-1. Создайте виртуальную машину:
+1\. Создайте виртуальную машину:
 
-    ![](../.gitbook/assets/setup-hypervisor4.png)
+![](/.gitbook/assets/setup-hypervisor4.png)
 
-2. Укажите **Имя** виртуальной машине и установите остальные настройки как на скриншоте:
+2\. Укажите **Имя** виртуальной машине и установите остальные настройки как на скриншоте:
 
-    ![](../.gitbook/assets/setup-hypervisor5.png)
+![](/.gitbook/assets/setup-hypervisor5.png)
 
-3. Выберите хранилище для виртуальной машины:
+3\. Выберите хранилище для виртуальной машины:
 
-    ![](../.gitbook/assets/setup-hypervisor6.png)
+![](/.gitbook/assets/setup-hypervisor6.png)
 
-4. Установите размер оперативной памяти **16ГБ** и размер диска **150ГБ**. После выберите в поле **CD/DVD Drive** Datastore ISO file и укажите путь к загрузочному образу:
+4\. Установите размер оперативной памяти **16ГБ** и размер диска **150ГБ**. После выберите в поле **CD/DVD Drive** Datastore ISO file и укажите путь к загрузочному образу:
    
-    ![](../.gitbook/assets/setup-hypervisor7.png)
+![](/.gitbook/assets/setup-hypervisor7.png)
 
-5. Включите **UEFI** на вкладке **VM Options**, выбрав в поле **Firmware** EFI:
+5\. Включите **UEFI** на вкладке **VM Options**, выбрав в поле **Firmware** EFI:
 
-    ![](../.gitbook/assets/setup-hypervisor8.png)
+    ![](/.gitbook/assets/setup-hypervisor8.png)
 
-6. Нажмите **Finish**.
+6\. Нажмите **Finish**.
 
-    ![](../.gitbook/assets/setup-hypervisor9.png)
+![](/.gitbook/assets/setup-hypervisor9.png)
 
 </details>
 
@@ -94,55 +94,55 @@ Ideco UTM поддерживает работу на следующих гипе
 <details>
 <summary>Настройка</summary>
 
-1. Создайте виртуальную машину, нажав **Create a New Virtual Machine**:
+1\. Создайте виртуальную машину, нажав **Create a New Virtual Machine**:
 
-    ![](./../.gitbook/assets/setup-hypervisor12.png)
+![](/.gitbook/assets/setup-hypervisor12.png)
 
-2. Укажите загрузочный ISO-образ:
+2\. Укажите загрузочный ISO-образ:
 
-    ![](./../.gitbook/assets/setup-hypervisor13.png)
+![](/.gitbook/assets/setup-hypervisor13.png)
 
-3. Выберите гостевую операционную систему **Linux** и в раскрывающемся списке укажите тип **Fedora 64-bit**:
+3\. Выберите гостевую операционную систему **Linux** и в раскрывающемся списке укажите тип **Fedora 64-bit**:
 
-    ![](./../.gitbook/assets/setup-hypervisor14.png)
+![](/.gitbook/assets/setup-hypervisor14.png)
 
-4. Укажите имя виртуальной машины и директорию для создания виртуального диска:
+4\. Укажите имя виртуальной машины и директорию для создания виртуального диска:
 
-    ![](./../.gitbook/assets/setup-hypervisor15.png)
+![](/.gitbook/assets/setup-hypervisor15.png)
 
-5. Укажите размер вирутального жесткого диска **150ГБ**:
+5\. Укажите размер вирутального жесткого диска **150ГБ**:
    
-   ![](./../.gitbook/assets/setup-hypervisor16.png)
+![](/.gitbook/assets/setup-hypervisor16.png)
 
-6. Выберите **Customize Hardware** для изменения настроек виртуальной машины:
+6\. Выберите **Customize Hardware** для изменения настроек виртуальной машины:
 
-   ![](./../.gitbook/assets/setup-hypervisor17.png)
+![](/.gitbook/assets/setup-hypervisor17.png)
 
-7. Укажите размер виртуальной оперативной памяти **16384МБ**:
+7\. Укажите размер виртуальной оперативной памяти **16384МБ**:
 
-   ![](./../.gitbook/assets/setup-hypervisor18.png)
+![](/.gitbook/assets/setup-hypervisor18.png)
 
-8. Укажите количество ядер процесса равное 4:
+8\. Укажите количество ядер процесса равное 4:
 
-   ![](./../.gitbook/assets/setup-hypervisor19.png)
+![](/.gitbook/assets/setup-hypervisor19.png)
 
-9. Выйдите из меню и нажмите **Finish** для окончания настройки:
+9\. Выйдите из меню и нажмите **Finish** для окончания настройки:
 
-   ![](./../.gitbook/assets/setup-hypervisor20.png)
+![](/.gitbook/assets/setup-hypervisor20.png)
 
-10. Перейдите в окно виртуальной машины и нажмите **Edit virtual machine settings**:
+10\. Перейдите в окно виртуальной машины и нажмите **Edit virtual machine settings**:
 
-   ![](./../.gitbook/assets/setup-hypervisor21.png)
+![](/.gitbook/assets/setup-hypervisor21.png)
 
-11. Перейдите во вкладку **Options**:
+11\. Перейдите во вкладку **Options**:
 
-   ![](./../.gitbook/assets/setup-hypervisor22.png)
+![](/.gitbook/assets/setup-hypervisor22.png)
 
-12. Выберите опцию **Advanced** и установите для параметра Firmware Type значение **UEFI**:
+12\. Выберите опцию **Advanced** и установите для параметра Firmware Type значение **UEFI**:
 
-   ![](./../.gitbook/assets/setup-hypervisor23.png)
+![](/.gitbook/assets/setup-hypervisor23.png)
 
-13. Нажмите **OK** для завершения настройки виртуальной машины.
+13\. Нажмите **OK** для завершения настройки виртуальной машины.
 
 </details>
 
@@ -170,19 +170,19 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 <details>
 <summary>Настройка</summary>
 
-1. Укажите **Имя** виртуальной машины (ВМ), выберите директорию для ВМ и установите путь до загрузочного образа UTM. Остальные параметры установите как на скриншоте:
+1\. Укажите **Имя** виртуальной машины (ВМ), выберите директорию для ВМ и установите путь до загрузочного образа UTM. Остальные параметры установите как на скриншоте:
 
-    ![](./../.gitbook/assets/setup-hypervisor1.png)
+![](/.gitbook/assets/setup-hypervisor1.png)
 
-2. Установите размер оперативной памяти ВМ (**16 ГБ**) и нажмите **Включить EFI**:
+2\. Установите размер оперативной памяти ВМ (**16 ГБ**) и нажмите **Включить EFI**:
     
-    ![](../.gitbook/assets/setup-hypervisor2.png)
+![](/.gitbook/assets/setup-hypervisor2.png)
 
-3. Cоздайте виртуальный жесткий диск под ВМ (Объем не меньше **150ГБ**):
+3\. Cоздайте виртуальный жесткий диск под ВМ (Объем не меньше **150ГБ**):
 
-    ![](../.gitbook/assets/setup-hypervisor3.png)
+![](/.gitbook/assets/setup-hypervisor3.png)
 
-4. Нажмите **Готово**
+4\. Нажмите **Готово**
 
 </details>
 
@@ -191,26 +191,25 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 <details>
 <summary>Настройка</summary>
 
-1. При установке Ideco UTM выберите тип операционной системы - **Fedora**
+1\. При установке Ideco UTM выберите тип операционной системы - **Fedora**
 
-2. На пятом шаге (virtm-manager) установки обязательно поставьте галочку **Проверить конфигурацию перед установкой** и нажмите кнопку **Готово**.
+2\. На пятом шаге (virtm-manager) установки обязательно поставьте галочку **Проверить конфигурацию перед установкой** и нажмите кнопку **Готово**.
 
-    ![](../.gitbook/assets/setup-hypervisor10.png)
+![](/.gitbook/assets/setup-hypervisor10.png)
 
-3. Для дисков и сетевых карт измените интерфейс на **virtio.**
+3\. Для дисков и сетевых карт измените интерфейс на **virtio.**
 
-4. Для дисков используйте режим кеширования **writeback**, если диски хранятся в qcow2 или raw-файлах.\
+4\. Для дисков используйте режим кеширования **writeback**, если диски хранятся в qcow2 или raw-файлах.\
 Если нет - проконсультируйтесь у администратора хранилища или нашей технической поддержки относительно выбора режима кеширования.
 
-5. В появившемся окне на вкладке **Обзор** в поле Firmware выберите пункт **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd**. Выбор этого пункта включит **UEFI** и выключит опцию **Secure Boot**.
+5\. В появившемся окне на вкладке **Обзор** в поле Firmware выберите пункт **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd**. Выбор этого пункта включит **UEFI** и выключит опцию **Secure Boot**.
 
-    ![](../.gitbook/assets/setup-hypervisor11.png)
+![](/.gitbook/assets/setup-hypervisor11.png)
 
 Если пункта **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd** нет в списке, доустановите пакет ovmf. В Ubuntu этот пакет устанавливается командой `sudo apt install ovmf`.
 </details>
 
-Далее начнется установка Ideco UTM на виртуальную машину. Подробнее об установке в статье [Установка](installation-process.md)
-
+Далее начнется установка Ideco UTM на виртуальную машину. Подробнее об установке в статье [Установка](installation-process.md).
 
 {% hint style="info" %}
 При возможных проблемах проверьте соответствие параметров виртуальной машины [общим рекомендациям](#obshie-rekomendacii).

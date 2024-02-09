@@ -8,14 +8,14 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Кластеризация**: `ideco-cluster-backend`; `ideco-cluster-backup-pusher`. \
-Список служб для других разделов доступен по [ссылке](terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 Каждое из двух устройств Ideco UTM называется нодой.
 
 Кластер работает в режиме active-passive. Активной является нода, обрабатывающая трафик в данный момент времени. В свою очередь резервная нода осуществляет непрерывный мониторинг состояния активной ноды и переводит текущие задачи обработки трафика на себя при отсутствии связи с активной нодой. **В любой момент времени заниматься обработкой трафика может только одна из нод.**
 
-Сетевое взаимодействие между нодами осуществляется по отдельному физическому каналу, под который на каждой из нод резервируется по одной физической сетевой карте. Данный канал связи называется _Кластерной сетью_. Для поддержания связи между нодами используется механизм [keep-alive](https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%B5\_HTTP-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5).
+Сетевое взаимодействие между нодами осуществляется по отдельному физическому каналу, под который на каждой из нод резервируется по одной физической сетевой карте. Данный канал связи называется _Кластерной сетью_. Для поддержания связи между нодами используется механизм keep-alive.
 
 Переключение нод происходит в случае отказа (полного зависания или перезагрузки) активной ноды, а также при потере связи между нодами по кластерной сети.\
 Кластер имеет один общий IP на внутреннем интерфейсе и другой общий IP на внешнем интерфейсе. Так как MAC-адреса у обеих нод разные, используется механизм Gratuitous ARP.
@@ -58,29 +58,29 @@ description: >-
 
 1\. При входе в локальное меню резервной ноды увидите следующее сообщение:
 
-<img src="../../.gitbook/assets/cluster8.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster8.png" alt="" data-size="original">
 
-2\. Введите *y* и нажмите Enter;
+2\. Введите *y* и нажмите Enter.
 
 3\. Выберите сетевую карту:
 
-<img src="../../.gitbook/assets/cluster9.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster9.png" alt="" data-size="original">
 
 4\. Подтвердите создание кластера введя **y** и нажав **Enter**:
 
-<img src="../../.gitbook/assets/cluster10.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster10.png" alt="" data-size="original">
 
 5\. UTM предложит изменить название сервера. При положительном  ответите на вопрос _Изменить название сервера?_, появится надпись с предложением ввести новое название сервера.\
 Минимальное количество символов в названии - 2.\
 Максимальное количество символов в названии - 62.
 
-<img src="../../.gitbook/assets/cluster11.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster11.png" alt="" data-size="original">
 
 После ввода нового названия, нажмите **Enter** для продолжения диалога.
 
 6\. Появится сообщение, что процесс создания кластера запущен:
 
-<img src="../../.gitbook/assets/cluster12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster12.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -90,33 +90,33 @@ description: >-
 
 <summary>Если создаете резервную ноду из уже установленного сервера Ideco UTM с лицензией и доступом в интернет:</summary>
 
-1\. Перейдите в локальное меню;
+1\. Перейдите в локальное меню.
 
 2\. Выберите пункт **Создание кластера**:
 
-<img src="../../.gitbook/assets/cluster4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster4.png" alt="" data-size="original">
 
 Пункты *Восстановиться на предыдущую версию* и *Создание кластера* будут отсутствовать, если кластер на ноде уже настроен
 
 3\. Выберите свободную физическую сетевую карту для создания кластерной сети и подтвердите выбор:
 
-<img src="../../.gitbook/assets/cluster5.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster5.png" alt="" data-size="original">
 
 4\. Подтвердите создание кластера введя **y** и нажав **Enter**:
 
-<img src="../../.gitbook/assets/cluster6.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster6.png" alt="" data-size="original">
 
 5\. UTM предложит изменить название сервера. При положительном ответите на вопрос _"Изменить название сервера?"_ появится надпись с предложением ввести новое название сервера.\
 Минимальное количество символов в названии - 2.\
 Максимальное количество символов в названии - 42.
 
-<img src="../../.gitbook/assets/cluster7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster7.png" alt="" data-size="original">
 
 После ввода нового названия, нажмите **Enter** для продолжения диалога.
 
 6\. Появится сообщение, что процесс создания кластера запущен.
 
-<img src="../../.gitbook/assets/cluster12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster12.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -130,19 +130,19 @@ description: >-
 
 2\. Подтвердите, что топология сети соответствует схеме на рисунке ниже:
 
-![](../../.gitbook/assets/cluster-topology.png)
+![](/.gitbook/assets/cluster-topology.png)
 
 3\. Выберите сетевую карту для соединения между нодами:
 
-![](../../.gitbook/assets/cluster1.png)
+![](/.gitbook/assets/cluster1.png)
 
 4\. Сопоставьте сетевые карты. Для этого выберите в каждом столбце по одной сетевой карте и нажмите **Сопоставить**:
 
-![](../../.gitbook/assets/cluster3.png)
+![](/.gitbook/assets/cluster3.png)
 
 5\. После применения настроек резервная нода перезагрузится, и в веб-интерфейсе активной ноды отобразится информация о том, что связь с сервером установлена.
 
-![](../../.gitbook/assets/cluster-done.png)
+![](/.gitbook/assets/cluster-done.png)
 
 ## Возможности резервной ноды:
 
@@ -163,11 +163,11 @@ description: >-
 
 <summary>Разрушение кластера из локального меню</summary>
 
-1\. Выберите пункт локального меню **Разрушение кластера**;
+1\. Выберите пункт локального меню **Разрушение кластера**.
 
 2\. Появится предупреждающая надпись:
 
-<img src="../../.gitbook/assets/cluster-warning-local.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster-warning-local.png" alt="" data-size="original">
 
 3\. Введите **y** и нажмите **Enter**.
 
@@ -181,11 +181,11 @@ description: >-
 
 2\. Появится окно с предупреждением:
 
-<img src="../../.gitbook/assets/cluster-warning.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster-warning.png" alt="" data-size="original">
 
 3\. Нажмите **ОК**.
 
-<img src="../../.gitbook/assets/cluster-kill.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster-kill.png" alt="" data-size="original">
 
 </details>
 

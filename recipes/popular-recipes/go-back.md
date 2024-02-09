@@ -14,7 +14,7 @@
 
 3\. Укажите номер пункта 15 и нажмите **Enter**:
 
-![](../../.gitbook/assets/installation-process12.png)
+![](/.gitbook/assets/installation-process12.png)
 
 Появится окно с предупреждением и описанием версии, на которую произойдет переключение.
 
@@ -24,7 +24,7 @@
 
 3\. Подтвердите выбор, введя **y** и нажав **Enter**:
 
-![](broken-reference)
+![](/.gitbook/assets/broken-reference.png)
 
 4\. После перезагрузки, Ideco UTM переключится на предыдущую версию.
 

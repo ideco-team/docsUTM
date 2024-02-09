@@ -13,7 +13,7 @@
 * При подключении нескольких устройств MikroTik к одному Ideco UTM по PSK нужно указывать разные **Идентификаторы ключа (Key id)** для каждого устройства;
 * При подключении нескольких устройств MikroTik к одному Ideco UTM по сертификатам нужно указывать разные **Имена сервера** (Common Name) для каждого устройства.
 
-![](../../../../.gitbook/assets/site-to-site-ideco-mikrotik.png)
+![](/.gitbook/assets/site-to-site-ideco-mikrotik.png)
 
 ## Выбор алгоритмов шифрования на удалённых устройствах
 
@@ -73,9 +73,9 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 Пример настройки подключения pfSense к Ideco UTM по IPsec:
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik1.png" alt="" data-size="original">
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik2.png" alt="" data-size="original">
 
 </details>
 
@@ -87,7 +87,7 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 <summary>Настройка Ideco UTM</summary>
 
-1\. Откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](../../../../.gitbook/assets/ok-with-icon.png) и заполните поля:
+1\. Откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) и заполните поля:
 
 * **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
 * **Адрес удаленного устройства** - укажите внешний IP-адрес устройства MikroTik;
@@ -96,11 +96,11 @@ Ideco UTM не поддерживает устаревшие и небезопа
 * **Домашние локальные сети** - перечислите все **локальные сети UTM**, которые будут видны противоположной стороне;
 * **Удаленные локальные сети** - перечислите все **локальные сети MikroTik**, которые будут видны противоположной стороне.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik3.png" alt="" data-size="original">
 
 2\. После заполнения всех полей нажмите **Добавить подключение**. В списке подключений появится созданное подключение:
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik4.png" alt="" data-size="original">
 
 </details>
 
@@ -128,13 +128,13 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 Сгенерируйте запрос на подпись сертификата:
 
-1\. В Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](../../../../.gitbook/assets/ok-with-icon.png) и заполните поля:
+1\. В Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(исходящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) и заполните поля:
 
 * **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
 * **Адрес удаленного устройства** - укажите внешний IP-адрес MikroTik;
 * **Запрос на подпись сертификата** - будет сгенерирован **запрос, который необходимо выслать для подписи на MikroTik**.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik5.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik5.png" alt="" data-size="original">
 
 2\. После подписания запроса необходимо продолжить настройку подключения в Ideco UTM.
 
@@ -164,7 +164,7 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 В файловой системе MikroTik появятся два файла, которые необходимо скачать, чтобы впоследствии загрузить на UTM.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik6 (1).png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik6 (1).png" alt="" data-size="original">
 
 Файл вида `cert_export_device_<случайный набор символов>.ipsec.crt` - **это подписанный сертификат UTM**.\
 Файл вида `cert_export_mk_ca.crt` - **это корневой сертификат MikroTik.**
@@ -182,7 +182,7 @@ Ideco UTM не поддерживает устаревшие и небезопа
 * **Домашние локальные сети** - перечислите все **локальные сети UTM**, которые будут видны противоположной стороне;
 * **Удаленные локальные сети** - перечислите все **локальные сети MikroTik**, которые будут видны противоположной стороне.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik7.png" alt="" data-size="original">
 
 Нажмите кнопку **Добавить подключение**.
 
@@ -210,7 +210,7 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 <summary>Настройка Ideco UTM</summary>
 
-1\. В Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](../../../../.gitbook/assets/ok-with-icon.png) и заполните поля:
+1\. В Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) и заполните поля:
 
 * **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
 * **PSK** - вставьте PSK-ключ, полученный от MikroTik;
@@ -218,11 +218,11 @@ Ideco UTM не поддерживает устаревшие и небезопа
 * **Домашние локальные сети** - перечислите все **локальные сети UTM**, которые будут видны противоположной стороне;
 * **Удаленные локальные сети** - перечислите все локальные сети MikroTik, которые будут видны противоположной стороне.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik8.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik8.png" alt="" data-size="original">
 
 2\. Нажмите кнопку **Добавить подключение**.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik9.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik9.png" alt="" data-size="original">
 
 </details>
 
@@ -246,7 +246,7 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 Перед настройкой необходимо запустить первый скрипт. В файловом хранилище MikroTik появятся два файла, которые необходимо скачать, они требуются для дальнейшей настройки:
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik10 (1).png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik10.png" alt="" data-size="original">
 
 * Файл `certificate-request.pem` - **запрос на подпись сертификата**;
 * Файл `certificate-request_key.pem` - **приватный ключ**.
@@ -259,27 +259,27 @@ Ideco UTM не поддерживает устаревшие и небезопа
 
 <summary>Настройка Ideco UTM</summary>
 
-1\. В Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](../../../../.gitbook/assets/ok-with-icon.png) и заполните поля:
+1\. В Ideco UTM откройте вкладку **Сервисы -> IPsec -> Устройства(входящие подключения)**, нажмите на **Добавить** ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) и заполните поля:
 
 * **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
 * **Запрос на подпись сертификата** - загрузите запрос на подпись, **полученный от MikroTik**;
 * **Домашние локальные сети** необходимо перечислить все локальные сети UTM, которые будут доступны в IPsec-подключении, т.е. будут видны противоположной стороне.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik11.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik11.png" alt="" data-size="original">
 
 2\. Нажмите кнопку **Добавить подключение**. Нажмите на кнопку редактирования соединения, чтобы продолжить настройку.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik12.png" alt="" data-size="original">
 
 3\. Скачайте файлы, которые находятся в полях **Корневой сертификат UTM** и **Подписанный сертификат устройства**, для их последующего использования в MikroTik.
 
-<img src="../../../../.gitbook/assets/site-to-site-ideco-mikrotik13.png" alt="" data-size="original">
+<img src="/.gitbook/assets/site-to-site-ideco-mikrotik13.png" alt="" data-size="original">
 
 </details>
 
 ### Проблемы при повторной активации входящего подключения к Ideco UTM
 
-Если подключение было отключено и при попытке включения соединение не установилось, удаленное устройство попало в fail2ban. Для установки соединения сбросьте блокировки по IP на Ideco UTM. О сбросе блокировки читайте в статье [Защита от brute-force атак](../../../reports/logs.md#защита-от-brute-force-атак).
+Если подключение было отключено и при попытке включения соединение не установилось, удаленное устройство попало в fail2ban. Для установки соединения сбросьте блокировки по IP на Ideco UTM. О сбросе блокировки читайте в статье [Защита от brute-force атак](/settings/reports/logs.md#защита-от-brute-force-атак).
 
 Fail2ban отслеживает в log-файлах попытки обратиться к сервисам, и если находит повторяющиеся неудачные попытки авторизации с одного и того же IP-адреса или хоста, блокирует IP-адрес.
 

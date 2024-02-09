@@ -23,12 +23,12 @@
 
 Для включения **SSO аутентификации** и **Авторизации через журнал безопасности Active Directory** перейдите на вкладку **Пользователи -> Авторизация -> Основное** и включите эти типы авторизации. Нажмите кнопку **Сохранить**.
 
-![](../../../.gitbook/assets/active-directory5.png)
+![](/.gitbook/assets/active-directory5.png)
 
 {% hint style="info" %}
 После заполнения поля **Доменное имя Ideco UTM** и сохранения настроек будет выдан Let’s Encrypt сертификат, и пользователь будет перенаправляться на окно авторизации, минуя страницу исключения безопасности:
 
-<img src="../../../.gitbook/assets/web-autorization2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/web-autorization2.png" alt="" data-size="original">
 
 Если сертификат для такого домена уже загружен в разделе [Сертификаты](../../services/certificates/), то будет использоваться загруженный сертификат, новый сертификат выдаваться не будет.
 {% endhint %}
@@ -45,11 +45,11 @@
 
 1. В настройках брандмауэра Windows на всех контроллерах домена (или доменов) разрешите **удаленное управление журналом событий (Remote Event Log Management)**:
 
-![](../../../.gitbook/assets/active-directory6.png)
+![](/.gitbook/assets/active-directory6.png)
 
 2. Добавьте Ideco UTM в группу безопасности **Читатели журнала событий (Event Log Readers)**:
 
-![](../../../.gitbook/assets/active-directory7.png)
+![](/.gitbook/assets/active-directory7.png)
 
 3. Перезапустите службу **Авторизация через журнал безопасности Active Directory** на Ideco UTM. Отключите эту настройку и заново включите;
 
@@ -57,11 +57,11 @@
 
 **Англоязычная версия:**
 
-![](../../../.gitbook/assets/active-directory9.gif)
+![](/.gitbook/assets/active-directory9.gif)
 
 **Русскоязычная версия:**
 
-![](../../../.gitbook/assets/active-directory8.gif)
+![](/.gitbook/assets/active-directory8.gif)
 
 {% hint style="info" %}
 Для обновления политик контроллеров доменов выполните `gpupdate /force`;\
@@ -84,7 +84,7 @@
 
 Пример введения Ideco UTM в домен `example.ru` под именем `idecoics`.
 
-![](../../../.gitbook/assets/active-directory.jpg)
+![](/.gitbook/assets/active-directory.jpg)
 
 Для применения настройки ко всем пользователям на клиентской машине выполните действия:
 
@@ -108,7 +108,7 @@
 
 2. Введите назначение зоны для DNS-имени Ideco UTM (в примере idecoics.example.ru) со значением равным 1 (интрасеть). Укажите два назначения для схем работы по http и https.
 
-![](../../../.gitbook/assets/active-directory1.png)
+![](/.gitbook/assets/active-directory1.png)
 
 {% hint style="info" %}
 При входе на HTTPS-сайт необходимо разрешить браузеру доверять сертификату Ideco UTM. Чтобы не делать это каждый раз, можно добавить корневой сертификат Ideco UTM в доверенные корневые сертификаты устройства.
@@ -134,7 +134,7 @@
 При прямых подключениях к прокси **не указывайте** в качестве шлюза IP-адрес Ideco UTM.
 {% endhint %}
 
-![](../../../.gitbook/assets/active-directory2.png)
+![](/.gitbook/assets/active-directory2.png)
 
 <details>
 
@@ -155,12 +155,12 @@
 
 Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация**, и аутентификация происходит только при ручном переходе по ссылке. Установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
 
-<img src="../../../.gitbook/assets/active-directory3 (1).jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/active-directory3.jpg" alt="" data-size="original">
 
 Доменному пользователю должно быть разрешено аутентифицироваться на Ideco UTM. На контроллере домена зайдите в свойства выбранных пользователей во вкладку **Учетная запись** -> **Вход на...**, выберите пункт **только на указанные компьютеры** и пропишите имя рабочей станции для входа в систему.
 
 Пример данной настройки представлен на скриншоте ниже:
 
-<img src="../../../.gitbook/assets/active-directory4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/active-directory4.png" alt="" data-size="original">
 
 </details>

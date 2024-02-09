@@ -9,7 +9,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **DNS**: `ideco-unbound`; `ideco-dns-backend; nsd`. \
-Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 
 Нужна помощь при настройке Ideco UTM? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
 {% endhint %}

@@ -62,20 +62,20 @@ description: Настройка параметров учетной записи
 * **Запретить доступ** - При установке этого флага, пользователь не сможет авторизоваться, соответственно пользоваться ресурсами сети Интернет, почтой и личным кабинетом;
 * **Разрешить удаленный доступ через VPN** - Разрешить подключаться к серверу Ideco UTM по VPN из интернета.
   
-![](../../../.gitbook/assets/customization-of-users.png)
+![](/.gitbook/assets/customization-of-users.png)
 
 Для пользователей, экспортированных из [Active Directory](../active-directory/README.md) во вкладке **Основное** нельзя редактировать имя, логин, телефон, перемещать в другую группу и менять пароль. Пример импортированного из AD пользователя представлен на скриншоте: 
 
-![](../../../.gitbook/assets/customization-of-users1.png)
+![](/.gitbook/assets/customization-of-users1.png)
 
 ### IP и MAC авторизация
 
 Категория содержит правила авторизации по IP и MAC, созданные для определенного пользователя в двух разделах:
 
 * Пользователи -> Учетные записи -> IP и MAC авторизация:\
-  ![](../../../.gitbook/assets/customization-of-users3.png)
+  ![](/.gitbook/assets/customization-of-users3.png)
 * Пользователи -> [Авторизации](../authorization/) -> [IP и MAC авторизация](../authorization/ip-and-mac-authorization/):\
-  ![](../../../.gitbook/assets/customization-of-users4.png)
+  ![](/.gitbook/assets/customization-of-users4.png)
 
 {% hint style="info" %}
 Правила **IP и MAC авторизации** также создают аналогичную привязку в [DHCP-сервере](../../services/dhcp.md) Ideco NGFW. Но если одни и те же IP- и MAC-адреса будут использоваться во включенных правилах DHCP-сервера, то правила DHCP-сервера будут выполняться в первую очередь.
@@ -85,21 +85,21 @@ description: Настройка параметров учетной записи
 
 Содержит таблицу с информацией обо всех активных сессиях пользователях:
 
-![](../../../.gitbook/assets/customization-of-users5.png)
+![](/.gitbook/assets/customization-of-users5.png)
 
-При нажатии на ![](../../../.gitbook/assets/icon-cross.png) в столбце **Управление** NGFW разорвет сессию пользователя.\
-Аналогичная таблица расположена в разделе **Мониторинг ->** [**Авторизованные пользователи**](../../monitor/authorized-users.md).
+При нажатии на ![](/.gitbook/assets/icon-cross.png) в столбце **Управление** NGFW разорвет сессию пользователя.\
+Аналогичная таблица расположена в разделе **Мониторинг ->** [**Авторизованные пользователи**](/settings/monitor/authorized-users.md).
 
 ### Доступ по VPN
 
 Категория позволяет просматривать правила доступа VPN, которые настраиваются в разделе **VPN-подключения -> Доступ по VPN**.
 
-![](../../../.gitbook/assets/customization-of-users7.png)
+![](/.gitbook/assets/customization-of-users7.png)
 
 {% hint style="info" %}
 Для перехода к общей таблице доступа VPN из дерева пользователей выполните действия:
 
-![](../../../.gitbook/assets/customization-of-users8.gif)
+![](/.gitbook/assets/customization-of-users8.gif)
 
 {% endhint %}
 
@@ -107,7 +107,7 @@ description: Настройка параметров учетной записи
 
 Категория позволяет просматривать и увеличивать квоту пользователя, в случае использования лимитов трафика. 
 
-![](../../../.gitbook/assets/customization-of-users2.png)
+![](/.gitbook/assets/customization-of-users2.png)
 
 Для увеличения квоты воспользуйтесь полем **Увеличить трафик на текущий период**.
 
@@ -132,10 +132,10 @@ description: Настройка параметров учетной записи
 Данная категория содержит правила авторизации по IP и MAC, созданные для определенного пользователя в двух разделах:
 
 * Пользователи -> Учетные записи -> IP и MAC авторизация: \
-  ![](../../../.gitbook/assets/customization-of-users3.png)
+  ![](/.gitbook/assets/customization-of-users3.png)
 
 * Пользователи -> [Авторизации](../authorization/README.md) -> [IP и MAC авторизация](../authorization/ip-and-mac-authorization/README.md): \
-  ![](../../../.gitbook/assets/customization-of-users4.png)
+  ![](/.gitbook/assets/customization-of-users4.png)
  
 
 {% hint style="info" %}
@@ -146,7 +146,7 @@ description: Настройка параметров учетной записи
 
 Содержит таблицу с информацией о всех активных сессиях пользователях:
 
-![](../../../.gitbook/assets/customization-of-users5.png)
+![](/.gitbook/assets/customization-of-users5.png)
 
-При нажатии на ![](../../../.gitbook/assets/icon-cross.png) в столбце **Управление**, UTM разорвет сессию пользователя. \
-Аналогичная таблица расположена в разделе **Мониторинг -> [Авторизованные пользователи](../../monitor/authorized-users.md)**. 
+При нажатии на ![](/.gitbook/assets/icon-cross.png) в столбце **Управление**, UTM разорвет сессию пользователя. \
+Аналогичная таблица расположена в разделе **Мониторинг -> [Авторизованные пользователи](/settings/monitor/authorized-users.md)**. 

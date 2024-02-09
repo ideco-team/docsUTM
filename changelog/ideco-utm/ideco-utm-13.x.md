@@ -31,12 +31,12 @@
 
 **Новые возможности версии 13**
 
-* Добавлен новый [Ideco Agent](../settings/users/ideco-agent.md) авторизации и VPN (Wireguard);
-* Добавлена [Двухфакторная аутентификация](../settings/users/two-factor-authentication.md) пользователей по VPN;
-* Добавлена динамическая маршрутизация [BGP](../settings/services/bgp.md);
+* Добавлен новый [Ideco Agent](/settings/users/ideco-agent.md) авторизации и VPN (Wireguard);
+* Добавлена [Двухфакторная аутентификация](/settings/users/two-factor-authentication.md) пользователей по VPN;
+* Добавлена динамическая маршрутизация [BGP](/settings/services/bgp.md);
 * Новая таблица в настройках модулей фильтрации трафика;
 * Новая отчетность по веб-трафику и трафику приложений (включая конструктор отчетов и полный URL в отчетах);
-* Новые отчеты по [событиям безопасности](../settings/reports/security-events.md) IDS/IPS (дашборды).
+* Новые отчеты по [событиям безопасности](/settings/reports/security-events.md) IDS/IPS (дашборды).
 
 **Исправления и изменения**
 

@@ -128,10 +128,10 @@ zhpt.tech
 
 </details>
 
-![](../../.gitbook/assets/block-chat-bot.png)
+![](/.gitbook/assets/block-chat-bot.png)
 
 4\. Сохраните правило.
 
 3\. Перейдите на вкладку **Правила** и добавьте правило с действием **Запретить**:
 
-![](../../.gitbook/assets/block-chat-bot1.png)
+![](/.gitbook/assets/block-chat-bot1.png)
