@@ -13,7 +13,7 @@ description: >-
 {% endhint %}
 
 {% hint style="warning" %}
-Установить программу Ideco Client можно только на ОС семейства Windows с 8 версии и новее.
+Установить программу Ideco Client можно только на ОС семейства Windows с 10 версии и новее.
 {% endhint %}
 
 Ideco Client управляет авторизацией пользователей при подключении к Ideco NGFW в локальной сети и по VPN из внешних сетей.
