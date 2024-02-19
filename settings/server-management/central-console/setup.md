@@ -76,7 +76,7 @@
 
 ![](/.gitbook/assets/installation-process9.png)
 
-5\. Задайте тег VLAN (стандарт VLAN 802.3ad) или оставьте поле пустым:
+5\. Задайте тег VLAN (стандарт VLAN 802.3q) или оставьте поле пустым:
 
 ![](/.gitbook/assets/installation-process11.png)
 
