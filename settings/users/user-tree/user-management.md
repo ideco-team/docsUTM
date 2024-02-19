@@ -56,7 +56,7 @@ description: Создание, удаление и перемещение уче
 
 Откроется окно, в котором вам нужно будет указать название новой группы и нажать кнопку **Сохранить**. Пример добавления группы приведен ниже:
 
-<img src="../../../.gitbook/assets/user-management1.gif" alt="" data-size="original">
+<img src="/.gitbook/assets/user-management1.gif" alt="" data-size="original">
 
 </details>
 
