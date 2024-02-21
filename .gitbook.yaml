@@ -74,6 +74,7 @@ redirects:
   ntp: ./settings/services/ntp.md
   dhcp_option: ./settings/services/dhcp.md
   auto-logout-script: ./settings/users/active-directory/auto-de-authorization-script.md
+  auto_logout_script: ./settings/users/active-directory/auto-de-authorization-script.md
   cc: ./settings/server-management/central-console/README.md
   cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
   cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
