@@ -48,7 +48,7 @@
 
 ## **IDECO UTM 9.6 СБОРКА 3 (19.02.2021)**
 
-Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации. Обязательно ознакомьтесь с [примечаниями](https://docviewer.yandex.ru/view/762948562/?\*=scbElzBZS8bzWEgIVWPBITaxE0J7InVybCI6InlhLWRpc2stcHVibGljOi8vSm53SWhyV3pOekZhSkpjcHh1NmlVenNsVU45V1NxOUtsNkE0bkRFWHJPV1NHd1JTT2x3a2Z4UFRURFRiano1dnEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoiSWRlY29fVVRNXzlfbm90ZXMucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3NjI5NDg1NjIiLCJ0cyI6MTYyNTIxMjg0MjMzNSwieXUiOiI2ODQyMDgzNTIxNjI0OTc1MjQxIn0%3D) к релизу.\
+Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации.
 **Исправления и изменения**
 
 * Добавлено оповещение в веб-интерфейсе и [телеграм-бот](https://t.me/ideco\_monitor\_bot) о наличии новой версии Ideco UTM;
@@ -58,7 +58,7 @@
 
 ## **IDECO UTM 9.5 СБОРКА 4 (12.02.2021)**
 
-Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации. Обязательно ознакомьтесь с [примечаниями](https://docviewer.yandex.ru/view/762948562/?\*=scbElzBZS8bzWEgIVWPBITaxE0J7InVybCI6InlhLWRpc2stcHVibGljOi8vSm53SWhyV3pOekZhSkpjcHh1NmlVenNsVU45V1NxOUtsNkE0bkRFWHJPV1NHd1JTT2x3a2Z4UFRURFRiano1dnEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoiSWRlY29fVVRNXzlfbm90ZXMucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3NjI5NDg1NjIiLCJ0cyI6MTYyNTIxMjg0MjMzNSwieXUiOiI2ODQyMDgzNTIxNjI0OTc1MjQxIn0%3D) к релизу.\
+Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации.
 **Исправления и изменения**
 
 * Добавлена вкладка Telegram бот в раздел "Мониторинг";
@@ -66,7 +66,7 @@
 
 ## **IDECO UTM 9.4 СБОРКА 3 (5.02.2021)**
 
-Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации. Обязательно ознакомьтесь с [примечаниями](https://docviewer.yandex.ru/view/762948562/?\*=scbElzBZS8bzWEgIVWPBITaxE0J7InVybCI6InlhLWRpc2stcHVibGljOi8vSm53SWhyV3pOekZhSkpjcHh1NmlVenNsVU45V1NxOUtsNkE0bkRFWHJPV1NHd1JTT2x3a2Z4UFRURFRiano1dnEvSjZicG1SeU9Kb25UM1ZvWG5EYWc9PSIsInRpdGxlIjoiSWRlY29fVVRNXzlfbm90ZXMucGRmIiwibm9pZnJhbWUiOmZhbHNlLCJ1aWQiOiI3NjI5NDg1NjIiLCJ0cyI6MTYyNTIxMjg0MjMzNSwieXUiOiI2ODQyMDgzNTIxNjI0OTc1MjQxIn0%3D) к релизу.\
+Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации.
 **Исправления и изменения**
 
 * Добавлена возможность печати отчетов по веб-трафику (в том числе в PDF);
@@ -79,7 +79,7 @@
 
 ## **IDECO UTM 9.3 СБОРКА 6 (29.01.2021)**
 
-Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации. Обязательно ознакомьтесь с [примечаниями](https://ideco.ru/assets/files/Ideco\_UTM\_9\_notes.pdf) к релизу.\
+Обновиться с версии 7.9.9 можно с помощью сохранения и восстановления архива конфигурации.
 **Исправления и изменения**
 
 * Добавлена возможность получения уведомлений о событиях на сервере Ideco UTM через [телеграм-бот](https://t.me/ideco\_monitor\_bot) (настраивается в [личном кабинете](https://my.ideco.ru/));

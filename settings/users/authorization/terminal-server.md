@@ -18,7 +18,7 @@ description: >-
 
 Обратите внимание, что при большом количестве пользователей на сервере терминалов может потребоваться [увеличить количество одновременных сессий](https://docs.microsoft.com/ru-ru/windows-server/remote/remote-desktop-services/troubleshoot/remote-desktop-service-currently-busy#check-the-connection-limit-policy) с одного адреса в дополнительных параметрах безопасности.
 
-Возможна **раздельная авторизация пользователей** терминального сервера (работающего под управлением ОС Windows Server 2008 R2 и Windows Server 2012) с помощью авторизации через [Ideco Client](/settings/users/ideco-client.md) или по [SSO (NTLM)](/settings/users/active-directory/active-directory-user-authorization.md). При этом сам сервер по IP авторизовать не нужно.
+Возможна **раздельная авторизация пользователей** терминального сервера (работающего под управлением ОС Windows Server 2008 R2 и Windows Server 2012) с помощью авторизации через [Ideco Client](../../../settings/users/ideco-client.md) или по [SSO (NTLM)](../../../settings/users/active-directory/active-directory-user-authorization.md). При этом сам сервер по IP авторизовать не нужно.
 
 Для раздельной авторизации пользователей терминального сервера на сервере терминалов настройте [**Remote Desktop IP Virtualization**](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-ip-virtualization), а на сервере Ideco NGFW настройте авторизацию пользователей через [Ideco Client](../ideco-client.md) или [веб-аутентификацию (SSO или NTLM)](../active-directory/active-directory-user-authorization.md). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
 

@@ -56,5 +56,5 @@ cat ca.key ca.crt > server.pem
    * server.pem - Самоподписанный сертификат для загрузки на сервер.
 
 {% hint style="info" %}
-Для загрузки сертификата на сервер воспользуйтесь статьей [Загрузка SSL-сертификата на сервер](./settings/services/certificates/upload-ssl-certificate-to-server.md)
+Для загрузки сертификата на сервер воспользуйтесь статьей [Загрузка SSL-сертификата на сервер](../../../settings/services/certificates/upload-ssl-certificate-to-server.md)
 {% endhint %}

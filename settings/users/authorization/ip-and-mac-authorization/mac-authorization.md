@@ -18,12 +18,12 @@
 1\. Узнайте MAC-адрес устройства. Для этого в командной строке Windows введите команду: `ipconfig /all | findstr Address` /
 Для русскоязычной версии `ipconfig /all | findstr адрес`
 
-![](../../../../.gitbook/assets/show\_pc\_addresses.png)
+![](../../../../.gitbook/assets/show_pc_addresses.png)
 
 2\. Удостоверьтесь что компьютер и NGFW находятся в одном широковещательном домене.\
 Для этого на NGFW в разделе **Управление сервером -> Терминал** введите команду: `ip neigh`
 
-![](../../../../.gitbook/assets/ip\_neigh\_show.png)
+![](../../../../.gitbook/assets/ip_neigh_show.png)
 
 {% hint style="info" %}
 Эта команда выводит ARP-таблицу NGFW. Наличие записи с MAC-адресом устройства и статусом REACHEBLE говорит об имеющейся L2-доступности между NGFW и устройством.

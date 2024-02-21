@@ -17,7 +17,7 @@ description: >-
 
 ![](../../../.gitbook/assets/sstp-c-01.png)
 
-Подробнее о настройках в [документации Keenetic](https://help.keenetic.com/hc/ru/articles/360000599979-%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82-SSTP).
+Подробнее о настройках в [документации Keenetic](https://help.keenetic.com/hc/ru/articles/360000599979-SSTP).
 
 4\. Создайте подключение в разделе **Интернет -> Другие подключения** нажмите кнопку **Добавить подключение**
 

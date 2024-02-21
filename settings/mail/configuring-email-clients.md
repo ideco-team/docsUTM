@@ -46,7 +46,7 @@ description: Настройка и примеры настроек популя�
 
 Для отображения IMAP-папок снимите галочку **При просмотре дерева в Outlook показывать только подписанные папки** в свойствах IMAP-папок:
 
-<img src="../../.gitbook/assets/imap_outlook1.png" alt="" data-size="original"><img src="../../.gitbook/assets/imap_outlook2 (2) (2) (2) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/imap_outlook1.png" alt="" data-size="original"><img src="../../.gitbook/assets/imap_outlook2.png" alt="" data-size="original">
 
 </details>
 

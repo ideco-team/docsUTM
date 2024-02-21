@@ -72,7 +72,7 @@
     
 *   В разделе **Сервисы -> Сертификаты**:
 
-    <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
+    <img align="left" src="../../../.gitbook/assets/certificates3.png" alt="" data-size="original">
 
 **Создание подключения в Astra Linux**
 

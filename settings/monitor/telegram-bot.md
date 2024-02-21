@@ -20,7 +20,7 @@ description: >-
 <summary>Настройка привязки Ideco Monitoring Bot к одному пользователю</summary>
 
 1. Настроить интернет на Ideco NGFW.
-2. [Привязать лицензию](broken-reference) к серверу.
+2. [Привязать лицензию](../server-management/license-management.md) к серверу.
 3. Перейти к диалогу с ботом: [@ideco\_monitor\_bot](https://telegram.im/@ideco\_monitor\_bot).
 4. Написать боту `/start`.
 5. Скопировать код привязки к аккаунту.
@@ -37,7 +37,7 @@ description: >-
 <summary>Настройка привязки Ideco Monitoring Bot к беседе</summary>
 
 1. Настроить интернет на Ideco NGFW.
-2. [Привязать лицензию](broken-reference) к серверу.
+2. [Привязать лицензию](../server-management/license-management.md) к серверу.
 3. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
 4. Написать `/start` в группе.
 5. Скопировать код привязки к аккаунту.

@@ -144,7 +144,7 @@ Add-VpnConnection `
     
 *   В разделе **Сервисы -> Сертификаты**:
 
-    <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
+    <img align="left" src="../../../.gitbook/assets/certificates3.png" alt="" data-size="original">
 
 Корневой сертификат потребуется для настройки подключения рабочей станции пользователя, если не был получен корневой сертификат через Let\`s Encrypt. \
 Если для VPN-подключения используется сертификат, выданный Let\`s Encrypt, установка корневого сертификата на устройство не требуется.
