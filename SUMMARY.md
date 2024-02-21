@@ -185,12 +185,12 @@
 
 ## changelog
 * [Ideco UTM](changelog/ideco-utm/README.md)
-  * [Версия Ideco NGFW 16.X](changelog/ideco-utm/versiya-ideco-utm-16.x.md)
-  * [Версия Ideco UTM 15.X](changelog/ideco-utm/version-ideco-utm-15.x.md)
-  * [Версия Ideco UTM 14.X](changelog/ideco-utm/version-ideco-utm-14.x.md)
-  * [Версия Ideco UTM 13.X](changelog/ideco-utm/version-ideco-utm-13.x.md)
-  * [Версия Ideco UTM 12.X](changelog/ideco-utm/version-ideco-utm-12.x.md)
-  * [Версия Ideco UTM 11.X](changelog/ideco-utm/version-ideco-utm-11.x.md)
+  * [Версия Ideco NGFW 16.X](changelog/ideco-utm/ideco-ngfw-16.x.md)
+  * [Версия Ideco UTM 15.X](changelog/ideco-utm/ideco-utm-15.x.md)
+  * [Версия Ideco UTM 14.X](changelog/ideco-utm/ideco-utm-14.x.md)
+  * [Версия Ideco UTM 13.X](changelog/ideco-utm/ideco-utm-13.x.md)
+  * [Версия Ideco UTM 12.X](changelog/ideco-utm/ideco-utm-12.x.md)
+  * [Версия Ideco UTM 11.X](changelog/ideco-utm/ideco-utm-11.x.md)
   * [Версия Ideco UTM 10.X](changelog/ideco-utm/version-10.x.md)
   * [Версия Ideco UTM 9.X](changelog/ideco-utm/version-9.x.md)
   * [Версия Ideco UTM 8.X](changelog/ideco-utm/version-8.x.md)
