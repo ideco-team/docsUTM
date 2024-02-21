@@ -76,6 +76,7 @@ redirects:
   radius: ./settings/users/radius.md
   vce: ./settings/server-management/vce.md
   antivirus_log: ./settings/reports/antivirus-logs.md
+  auto-logout-script: ./settings/users/active-directory/auto-de-authorization-script.md
   cc: ./settings/server-management/central-console/README.md
   cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
   cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
