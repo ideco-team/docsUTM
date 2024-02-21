@@ -130,7 +130,7 @@ chown ideco-reverse-backend:ideco-reverse-backend /var/opt/ideco/reverse-backend
 
 3\. Откройте файл `custom-waf.conf` в режиме редактирования, введя команду `nano custom-waf.conf`.
 
-4\. В открывшемся файле введите `SecRuleRemoveById 930 130 949 110`, где `930 130` и `949 110` - ID сработавших правил WAF:
+4\. В открывшемся файле введите `SecRuleRemoveById 930 130 949 110`, где `930130` и `949110` - ID сработавших правил WAF:
 
 ![](/.gitbook/assets/waf1.png)
 
