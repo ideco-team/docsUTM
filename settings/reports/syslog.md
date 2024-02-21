@@ -9,7 +9,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Syslog**: `ideco-monitor-backend`. \
-Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 ## Пересылка системных сообщений

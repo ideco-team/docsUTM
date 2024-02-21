@@ -6,7 +6,7 @@ description: Служба обнаружения и предотвращения
 
 {% hint style="success" %}
 Название службы раздела *Предотвращение вторжений*: `ideco-suricata-backend`; `ideco-suricata`; `ideco-suricata-event-syncer`; `ideco-suricata-event-to-syslog`. \
-Список имен служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
+Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -28,7 +28,7 @@ description: Служба обнаружения и предотвращения
 
 Для настройки службы перейдите на вкладку **Правила трафика -> Предотвращение вторжений**. Включите или выключите службу, переведя выключатель в соответствующее положение:
 
-![](../../../.gitbook/assets/ips1.gif)
+![](/.gitbook/assets/ips1.gif)
 
 Раздел состоит из четырех вкладок:
 
@@ -45,9 +45,9 @@ description: Служба обнаружения и предотвращения
 
 Предупреждение службы предотвращения вторжений:
 
-![](../../../.gitbook/assets/ips2.png)
+![](/.gitbook/assets/ips2.png)
 
-На вкладке **Правила** можно открыть найденную группу по **Событию безопасности**, нажать на ![](../../../.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
+На вкладке **Правила** можно открыть найденную группу по **Событию безопасности**, нажать на ![](/.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
 
 `alert http $EXTERNAL_NET any -> any any (msg:"ET SCAN Zmap User-Agent (Inbound)"; flow:established,to_server; http.user_agent; content:"Mozilla/5.0 zgrab/0.x"; depth:21; endswith; classtype:network-scan; sid:2029054; rev:2; metadata:created_at 2019_11_26, former_category SCAN, updated_at 2020_10_23;)`
 

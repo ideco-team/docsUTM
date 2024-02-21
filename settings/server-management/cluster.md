@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Кластеризация**: `ideco-cluster-backend`; `ideco-cluster-backup-pusher`. \
-Список служб для других разделов доступен по [ссылке](terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 Каждое из двух устройств Ideco NGFW, объединенных в кластер, называется нодой.

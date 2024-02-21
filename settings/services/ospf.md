@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Название службы раздела **OSPF**: `frr.service; ideco-routing-backend`. \
-Список служб для других разделов доступен по [ссылке](../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 В Ideco NGFW реализована поддержка OSPF (Open Shortest Path First) - протокола маршрутизации по состоянию каналов. Канал - это интерфейс маршрутизатора или сегмент сети, который соединяет два маршрутизатора. Данные о состоянии этих каналов называются состоянием канала.
@@ -15,7 +15,7 @@
 
 Пример топологии с использованием OSPF представлен на схеме ниже:
 
-![](../../.gitbook/assets/ospf-6.png)
+![](/.gitbook/assets/ospf-6.png)
 
 <details>
 
@@ -25,31 +25,31 @@
 
 Маршрутизатор, использующий OSPF, отправляет пакеты приветствия для определения всех соседних устройств в пределах этих каналов. При наличии соседнего устройства маршрутизатор пытается установить с ним отношения смежности.
 
-<img src="../../.gitbook/assets/ospf-1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-1.png" alt="" data-size="original">
 
 **2. Обмен объявлениями о состоянии каналов**
 
 После установления смежности устройства выполняют обмен объявлениями о состоянии канала (LSA). LSA содержат информацию о состоянии и стоимости каждого канала с прямым подключением.
 
-<img src="../../.gitbook/assets/ospf-2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-2.png" alt="" data-size="original">
 
 **3. Создание базы данных состояния связи**
 
 На основе объявления LSA маршрутизаторы собирают базу данных, в которой содержатся данные о топологии сети в области.
 
-<img src="../../.gitbook/assets/ospf-3.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-3.jpg" alt="" data-size="original">
 
 **4. Исполнение алгоритма SPF**
 
 Затем на устройствах выполняется алгоритм SPF, результатом которого является создание дерева кратчайших путей.
 
-<img src="../../.gitbook/assets/ospf-4.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-4.jpg" alt="" data-size="original">
 
 **5. Выбор лучшего маршрута**
 
 На основании данных дерева SPF предлагаются наилучшие пути для таблицы IP-маршрутизации. Маршрут добавляется в таблицу маршрутизации, если отсутствует источник маршрута к той же сети с меньшим административным расстоянием, например статический маршрут. Решения по маршрутизации принимаются на основе записей в таблице маршрутизации.
 
-<img src="../../.gitbook/assets/ospf-5.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-5.jpg" alt="" data-size="original">
 
 </details>
 
@@ -67,18 +67,18 @@
 2. Заполните следующие поля:
 
     * **Интерфейс** - выберите локальный интерфейс, подключенный к роутеру;
-    * **Название зоны** - введите номер зоны (для небольших сетей введите зону 0). Наименование зоны можно ввести в виде числа или IP-адреса, нажав иконку ![](../../.gitbook/assets/icon-ospf.png);
+    * **Название зоны** - введите номер зоны (для небольших сетей введите зону 0). Наименование зоны можно ввести в виде числа или IP-адреса, нажав иконку ![](/.gitbook/assets/icon-ospf.png);
     * **Вес** - введите стоимость маршрута.
   
 3. Нажмите **Сохранить.**
 
 Пример настройки:
 
-<img src="../../.gitbook/assets/ospf-7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-7.png" alt="" data-size="original">
 
 Пример готовой таблицы:
 
-<img src="../../.gitbook/assets/ospf-8.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-8.png" alt="" data-size="original">
 
 </details>
 
@@ -91,15 +91,15 @@
 * Поставьте крестик на модуле **Routing**;
 * Укажите необходимые интерфейсы, но БЕЗ статичных маршрутов:
 
-    ![](../../.gitbook/assets/ospf-mikrotik3.png)
+    ![](/.gitbook/assets/ospf-mikrotik3.png)
 
 * Для начала установки введите **i** и нажмите **Enter**;
 * Появится сообщение "All data on the disk will be erased. Continue?", ведите **y** и нажмите **Enter**:
-    ![](../../.gitbook/assets/ospf-mikrotik1.png)
+    ![](/.gitbook/assets/ospf-mikrotik1.png)
 
 2\. После установки RouterOS требуется его перезагрузить, нажав **Enter**:
 
-![](../../.gitbook/assets/ospf-mikrotik2.png)
+![](/.gitbook/assets/ospf-mikrotik2.png)
 
 3\. По умолчанию *логин* - `admin`, а *пароль* - пустое значение;
 
