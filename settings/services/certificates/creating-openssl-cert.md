@@ -7,7 +7,7 @@
 
 Для создания самоподписанного сертификата выполните действия:
 
-1. Создайте закрытый ключ для сертификата:
+1\. Создайте закрытый ключ для сертификата:
 
 ```
 openssl genrsa -out ca.key 2048
@@ -15,7 +15,7 @@ openssl genrsa -out ca.key 2048
 
    * ca.key - Файл с приватным ключом.
 
-2. Создайте запрос на подпись сертификата:
+2\. Создайте запрос на подпись сертификата:
 
 ```
 openssl req -key ca.key -new -out cert.csr
@@ -23,7 +23,7 @@ openssl req -key ca.key -new -out cert.csr
    * ca.key - Файл с приватным ключом;
    * cert.csr - Файл с запросом на подпись.
 
-3. Cоздайте файл с именем test.txt:
+3\. Cоздайте файл с именем test.txt:
 
 ```
 cat >> ./test.txt << EOF
@@ -36,18 +36,18 @@ EOF
    * test.txt - Файл с расширениями сертификата;
    * test.com - Доменное имя сервера.
 
-4. Сгенерируйте самоподписанный сертификат:
+4\. Сгенерируйте самоподписанный сертификат:
    
 ```
-openssl x509 -extfile ./test.txt -signkey ca.key -in server.csr -req -days 365 -out ca.crt
+openssl x509 -extfile ./test.txt -signkey ca.key -in cert.csr -req -days 365 -out ca.crt
 ```
 
    * test.txt - Файл, cозданный в 3 пункте;
    * ca.key - Файл с приватным ключом;
-   * server.csr - Файл с запросом на подпись сертификата;
+   * cert.csr - Файл с запросом на подпись сертификата;
    * ca.crt - Файл со сгенерированным сертификатом.
 
-5. Добавьте к сертификату приватный ключ:
+5\. Добавьте к сертификату приватный ключ:
 
 ```
 cat ca.key ca.crt > server.pem
@@ -56,5 +56,5 @@ cat ca.key ca.crt > server.pem
    * server.pem - Самоподписанный сертификат для загрузки на сервер.
 
 {% hint style="info" %}
-Для загрузки сертификата на сервер воспользуйтесь статьей [Загрузка SSL-сертификата на сервер](./upload-ssl-certificate-to-server.md)
+Для загрузки сертификата на сервер воспользуйтесь статьей [Загрузка SSL-сертификата на сервер](./settings/services/certificates/upload-ssl-certificate-to-server.md)
 {% endhint %}
