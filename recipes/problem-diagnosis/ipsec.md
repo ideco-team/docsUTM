@@ -1,6 +1,6 @@
 # Если соединение по IPsec не устанавливается
 
-1\) Перезагрузите сервисы на стороне головного офиса и филиала, выполнив команду `systemctl restart ideco-ipsec-backend.service && systemctl restart strongswan.service `
+1\) Перезагрузите сервисы на стороне головного офиса и филиала, выполнив команду `systemctl restart ideco-ipsec-backend.service && systemctl restart strongswan.service`.
 
 2\) Проверьте работоспособность перезагруженных сервисов:
 
