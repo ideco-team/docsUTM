@@ -93,4 +93,5 @@ redirects:
   cc_backup: ./settings/server-management/central-console/server-management.md
   cc_web_terminal: ./settings/server-management/central-console/server-management.md
   cc_characteristics: ./settings/server-management/central-console/server-management.md
-  cc_additionally: ./settings/server-management/central-console/server-management.md 
+  cc_additionally: ./settings/server-management/central-console/server-management.md
+  device-profiles: ./settings/users/hip-profiles.md

@@ -45,6 +45,7 @@
     * [Особенности маршрутизации и организации доступа](settings/users/authorization/vpn-connection/features.md)
     * [Инструкция по запуску PowerShell скриптов](settings/users/authorization/vpn-connection/running-powershell-scripts.md)
   * [Ideco Client](settings/users/ideco-client.md)
+  * [Профили устройств](settings/users/hip-profiles.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
     * [Аутентификация пользователей AD/Samba DC](settings/users/active-directory/active-directory-user-authorization.md)
