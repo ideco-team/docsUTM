@@ -224,6 +224,7 @@
   * [Версия Ideco NGFW VPP 16.X](changelog/vpp/versiya-vpp-ngfw-16.x.md)
   * [Версия Ideco UTM VPP 15.X](changelog/vpp/versiya-vpp-ngfw-15.x.md)
 * [ФСТЭК Ideco UTM](changelog/fstek/README.md)
+  * [ФСТЭК Ideco UTM 16.Х](changelog/fstek/fstek-ideco-utm-16.x.md)
   * [ФСТЭК Ideco UTM 15.Х](changelog/fstek/fstek-ideco-utm-15.x.md)
   * [ФСТЭК Ideco UTM 14.Х](changelog/fstek/fstek-ideco-utm-14.x.md)
   * [ФСТЭК Ideco UTM 11.Х](changelog/fstek/fstek-ideco-utm-11.x.md)
