@@ -18,6 +18,7 @@ POST /web/auth/login
 }
 
 ```
+
 После успешной авторизации, сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
 ```
@@ -42,6 +43,125 @@ DELETE /web/auth/login
 set-cookie: insecure-ideco-session=""; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/
 set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Max-Age=0; Path=/; SameSite=Strict; Secure
 ```
+
+</details>
+
+<details>
+<summary>Получение информации о лицензии</summary>
+
+```
+GET /license/info
+```
+
+**Пример ответа на успешный запрос:**
+
+```
+{
+    "modules": {
+        "active_directory": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "kaspersky_av_for_web": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "kaspersky_av_for_mail": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "application_control": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "suricata": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "advanced_content_filter": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "standard_content_filter": {
+            "available": false,
+            "expiration_date": 0
+        },
+        "ips_advanced_rules": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "icsd": {
+            "available": true,
+            "max_users_count": 10000
+        }
+    },
+    "general": {
+        "available": true,
+        "reason": "",
+        "not_upgrade_after": 1712400382.0,
+        "tech_support_end": 1712400382.0,
+        "start_date": 1708944382.2658572,
+        "expiration_date": 1712400382.0
+    },
+    "license_type": "enterprise-demo",
+    "license_id": "UTM-3883264353",
+    "server_name": "UTM",
+    "last_update_time": 1708944385.1747465,
+    "company_id": "Ideco",
+    "server_id": "OQHsviy10sEOOQXWs-8c7tnwJb4AaOvplT2iJc-im677",
+    "registered": true,
+    "unreliable": false,
+    "has_connection": true,
+    "license_server": "https://my.ideco.ru"
+}
+```
+
+**Если лицензия для данного сервера отсутствует:**
+
+```
+{
+    "registered": false,
+    "has_connection": true,
+    "license_server": "https://my.ideco.ru"
+}
+```
+
+</details>
+
+<details>
+<summary>Сбор анонимной статистики о работе сервера</summary>
+
+### Получение текущих настроек:
+
+```
+GET /gather_stat/settings
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+      "enabled": boolean
+   }
+```
+
+Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
+
+### Изменение настроек
+
+```
+PUT /gather_stat/settings
+```
+
+**Json-тело запроса**
+
+```
+{
+      "enabled": boolean
+   }
+```
+
+Ответ на такой запрос будет пустым.
 
 </details>
 
@@ -94,6 +214,90 @@ POST /aliases/ip_ranges
 }
 ```
 
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Подсеть</summary>
+
+```
+POST /aliases/networks
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string" (максимальная длина 42 символа),
+    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "value": "string" (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
+}
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Домен</summary>
+
+```
+POST /aliases/domains
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string" (максимальная длина 42 символа),
+    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "value": "string" (домен)
+}
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Порт</summary>
+
+```
+POST /aliases/ports
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "value": integer (номер порта)
+}
+```
+
 **Ответ на успешный запрос:** 
 
 ```
@@ -106,10 +310,10 @@ POST /aliases/ip_ranges
 
 <details>
 
-<summary>Создание объекта Список адресов</summary>
+<summary>Создание объекта Диапазон портов</summary>
 
 ```
-POST /aliases/lists/addresses
+POST /aliases/port_ranges
 ```
 
 **Json-тело запроса:**
@@ -118,7 +322,8 @@ POST /aliases/lists/addresses
 {
     "title": "string",
     "comment": "string",
-    "values": ["string"] (идентификаторы объектов IP-адреса, через запятую)
+    "start": integer (первый порт диапазона),
+    "end": integer (последний порт диапазона)
 }
 ```
 
@@ -146,9 +351,99 @@ POST /aliases/time_ranges
 {
     "title":"string",
     "comment":"string",
-    "weekdays":[int], (список дней недели, где 1-пн, 2-вт ... 7-вс)
-    "start":"string", (начало временного отрезка в формате: ЧЧ:ММ)
-    "end":"string"(конец временного отрезка в формате: ЧЧ:ММ)
+    "weekdays":[integer] (список дней недели, где 1-пн, 2-вт ... 7-вс),
+    "start":"string" (начало временного отрезка в формате: ЧЧ:ММ),
+    "end":"string"(конец временного отрезка в формате: ЧЧ:ММ),
+    "period": {
+            "first": integer (момент начала срока действия в формате ГГГГММДДЧЧММСС, например, 20240215000000),
+            "last": integer (момент окончания срока действия в формате ГГГГММДДЧЧММСС, например, 20240229235959)
+        }
+}
+```
+
+Если для `"period"` установить значение `null`, у объекта будет включена опция **Бессрочно**.
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Список IP-объектов</summary>
+
+```
+POST /aliases/lists/addresses
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": ["string"] (идентификаторы IP-объектов, через запятую)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Порты</summary>
+
+```
+POST /aliases/lists/ports
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (список портов)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Расписание</summary>
+
+```
+POST /aliases/lists/times
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (список id объектов Время)
 }
 ```
 
@@ -167,7 +462,7 @@ POST /aliases/time_ranges
 <summary>Получение ID объектов</summary>
 
 ```
-GET /aliases
+GET /aliases/all
 ```
 
 **Ответ на успешный запрос:**
@@ -179,16 +474,24 @@ GET /aliases
         title: "string",
         type: "string",
         values: [
-            "ip.id.1",
-            "ip.id.2"
+            "string" | integer,
+            "string" | integer
         ],
         id: "type.id.1"
     }, 
+{
+        comment: "string",
+        title: "string",
+        type: "string",
+        value: "string" | integer,
+        id: "type.id.1"
+    },
     ...
 ] 
 ```
 
 В качестве ответа будет возвращен список всех объектов, существующих в NGFW:
+
 * "protocol.ah" - протокол AH;
 * "protocol.esp" - протокол ESP;
 * "protocol.gre" - протокол GRE;
@@ -200,16 +503,23 @@ GET /aliases
 * "interface.external_any" - все внешние интерфейсы (равно таблице *Подключение к провайдеру* в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
 * "interface.external_eth" - внешние Ethernet-интерфейсы;
 * "interface.external_vpn" - внешние VPN-интерфейсы;
+* "interface.ipsec_any" - IPsec-интерфейсы;
 * "interface.local_any" - все локальные интерфейсы;
+* "interface.tunnel_any" - все туннельные интерфейсы;
 * "group.id." - идентификатор группы пользователей;
 * "interface.id." - идентификатор конкретного интерфейса;
+* "interface.utm_outgoing" - исходящий трафик устройства;
+* "interface.vpn_traffic" - клиентский VPN-трафик;
+* "interface.wccp_gre_any" - все WCCP GRE интерфейсы;
+* "hip_profile.id." - устройства без профиля;
 * "security_group.guid." - идентификатор группы безопасности AD;
 * "user.id." - идентификатор пользователя;
 * "domain.id." - идентификатор домена;
 * "ip.id." - идентификатор IP-адреса;
 * "ip_range.id." - идентификатор объекта *Диапазон адресов*;
-* "address_list.id." - идентификатор объекта *Список адресов*;
-* "port_list.id." - идентификатор объекта *Список портов*;
+* "address_list.id." - идентификатор объекта *Список IP-объектов*;
+* "list_of_iplists.id." - идентификатор объекта *Список стран*;
+* "port_list.id." - идентификатор объекта *Порты*;
 * "time_list.id." - идентификатор объекта *Расписание*;
 * "subnet.id." - идентификатор объекта *Подсеть*;
 * "port_range.id." - идентификатор объекта *Диапазон портов*;
@@ -219,6 +529,32 @@ GET /aliases
 </details>
 
 ## Пользовательские категории контент-фильтра
+
+<details>
+
+<summary>Получение пользовательских категорий</summary>
+
+```
+GET /content-filter/users_categories
+```
+
+**Json-ответ на запрос:**
+
+```
+[
+    {
+        "id": "string" (номер категории, вида - users.id.1),
+        "name": "string" (название категории, не пустая строка),
+        "comment": "string",
+        "urls": ["string"]
+    },
+    ...
+]
+```
+
+**urls** - список url. Либо полный путь до страницы, либо только доменное имя. В пути может присутствовать любое количество любых символов.
+
+</details>
 
 <details>
 
@@ -233,7 +569,7 @@ POST /content-filter/users_categories
 ```
 {
     "name": "string",
-    "description": "string",
+    "comment": "string",
     "urls": [ "string" ]
 }
 ```
@@ -252,32 +588,6 @@ POST /content-filter/users_categories
 
 <details>
 
-<summary>Получение пользовательских категорий</summary>
-
-```
-GET /content-filter/users_categories
-```
-
-**Json-ответ на запрос:**
-
-```
-[
-    {
-        "id": "string", (номер категории, вида - users.id.1)
-        "name": "string", (название категории, не пустая строка)
-        "description": "string",
-        "urls": ["string"] 
-    },
-    ...
-]
-```
-
-**urls** - список url. Либо полный путь до страницы, либо только доменное имя. В пути может присутствовать любое количество любых символов.
-
-</details>
-
-<details>
-
 <summary>Редактирование</summary>
 
 ```
@@ -289,7 +599,7 @@ PUT /content-filter/users_categories/{category_id}
 ```
 {
     "name": "string",
-    "description": "string",
+    "comment": "string",
     "urls": ["string"]
 }
 ```
@@ -300,10 +610,52 @@ PUT /content-filter/users_categories/{category_id}
 {
     "id": "string",
     "name": "string",
-    "description": "string",
+    "comment": "string",
     "urls": [ "string" ]
 }
 ```
+
+</details>
+
+## Обнаружение устройств
+
+<details>
+<summary>Получение настроек</summary>
+
+```
+GET /netscan_backend/settings
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+   "enabled": boolean,
+   "group_id": integer (идентификатор группы, в которую будут добавлены обнаруженные устройства),
+   "networks": ["string"] (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
+}
+```
+
+</details>
+
+<details>
+<summary>Изменение настроек</summary>
+
+```
+PUT /netscan_backend/settings
+```
+
+**Json-тело запроса:**
+
+```
+{
+   "enabled": boolean,
+   "group_id": integer,
+   "networks": ["string"]
+}
+```
+
+Возвращает HTTP-код **200** OK.
 
 </details>
 
