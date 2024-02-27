@@ -133,6 +133,8 @@
   * [Администраторы](settings/server-management/admins.md)
   * [Центральная консоль](settings/server-management/central-console/README.md)
     * [Установка](settings/server-management/central-console/setup.md)
+    * [Мониторинг](/settings/server-management/central-console/monitor.md)
+      * [Zabbix-агент](/settings/server-management/central-console/zabbix.md)
     * [Политики и объекты](settings/server-management/central-console/policies-and-objects.md)
       * [Политики безопасности](settings/server-management/central-console/security-policies.md)
       * [Объекты](settings/server-management/central-console/objects.md)
