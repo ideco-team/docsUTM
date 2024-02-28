@@ -134,6 +134,7 @@
   * [Центральная консоль](settings/server-management/central-console/README.md)
     * [Установка](settings/server-management/central-console/setup.md)
     * [Мониторинг](/settings/server-management/central-console/monitor.md)
+      * [SNMP](/settings/server-management/central-console/snmp.md) 
       * [Zabbix-агент](/settings/server-management/central-console/zabbix.md)
     * [Политики и объекты](settings/server-management/central-console/policies-and-objects.md)
       * [Политики безопасности](settings/server-management/central-console/security-policies.md)

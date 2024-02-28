@@ -95,4 +95,5 @@ redirects:
   cc_characteristics: ./settings/server-management/central-console/server-management.md
   cc_additionally: ./settings/server-management/central-console/server-management.md
   cc_zabbix: ./settings/server-management/central-console/zabbix.md
-  device-profiles: ./settings/users/hip-profiles.md 
+  cc_snmp: ./settings/server-management/central-console/snmp.md
+  device-profiles: ./settings/users/hip-profiles.md
