@@ -43,6 +43,16 @@ Ideco Center - это центральная консоль, которая по
 ## Подключение Ideco NGFW к Ideco Center
 
 {% hint style="info" %}
+
+При синхронизации Ideco Center и Ideco NGFW с разными мажорными версиями передача правил с Ideco Center происходить не будет.
+При этом в разделе **Серверы** будет информация о том, что Ideco Center и Ideco NGFW несовместимы:
+
+![](/.gitbook/assets/central_console4.png)
+
+{% endhint %}
+
+
+{% hint style="info" %}
 Если в подключаемом Ideco NGFW используется кластер, достаточно подключить только активную ноду, пассивная автоматически примет эту настройку. 
 
 Сетевое подключение производится в направлении от Ideco NGFW к Ideco Center, т. е. возможна связь и когда Ideco NGFW за NAT. 
