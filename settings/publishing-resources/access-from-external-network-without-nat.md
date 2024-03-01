@@ -15,11 +15,11 @@
 * **Действие** - SNAT;
 * **Инвертировать назначение** - переведите в положение *Включен*, **чтобы не производить SNAT** при выбранном действии **SNAT**.
 
-![](../../.gitbook/assets/access-from-external-network-without-nat.png)
+![](/.gitbook/assets/access-from-external-network-without-nat.png)
 
 **Итоговое правило файрвола выглядит так:**
 
-![](../../.gitbook/assets/access-from-external-network-without-nat1.png)
+![](/.gitbook/assets/access-from-external-network-without-nat1.png)
 
 {% hint style="info" %}
 На устройствах локальной сети Ideco NGFW должен использоваться в качестве основного шлюза, либо должен быть прописан необходимый маршрут к внешним IP-адресам через Ideco NGFW. Также устройства локальной сети должны быть авторизованы на NGFW. На устройствах из внешней сети (по-отношению к Ideco NGFW) Ideco NGFW также должен использоваться в качестве основного шлюза, либо должен иметься маршрут к локальной сети через Ideco NGFW.

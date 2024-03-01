@@ -8,11 +8,11 @@
 
 1. При загрузке сервера выберите **Memory test**:
    
-![](../../.gitbook/assets/memory-testing1.png)
+![](/.gitbook/assets/memory-testing1.png)
 
 2. Для начала тестов нажмите **Enter** или подождите 5 секунд до автоматического запуска тестирования:
 
-![](../../.gitbook/assets/memory-testing2.png)
+![](/.gitbook/assets/memory-testing2.png)
 
 {% hint style="info" %}
 Для выбора режима диагностики **Fail-Safe Mode** нажмите **F1**.\
@@ -21,8 +21,8 @@
 
 * Если появится запись **PASS**, тесты памяти пройдены успешно:
 
-    ![](../../.gitbook/assets/memory-testing4.png)
+    ![](/.gitbook/assets/memory-testing4.png)
 
 * При ошибке памяти появится запись вида:
     
-    ![](../../.gitbook/assets/memory-testing5.png)
+    ![](/.gitbook/assets/memory-testing5.png)

@@ -18,7 +18,7 @@ description: >-
 
 В поле **Порт** укажите любой порт из диапазона от 1 до 65535.
 
-![](../../.gitbook/assets/syslog.gif)
+![](/.gitbook/assets/syslog.gif)
 
 {% hint style="info" %}
 Передача системных сообщений происходит согласно RFC-5424 (транспорт UDP).
