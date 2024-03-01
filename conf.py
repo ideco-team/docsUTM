@@ -37,7 +37,7 @@ html_static_path = ['_static']
 latex_engine = 'pdflatex'
 latex_elements = {
     'preamble': r'''
-\\usepackage{graphicx}
+\usepackage{graphicx}
 \graphicspath{/}
 ''',
     'papersize': 'a4paper',
