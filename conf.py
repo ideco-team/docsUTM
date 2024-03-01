@@ -38,7 +38,7 @@ latex_engine = 'pdflatex'
 latex_elements = {
     'preamble': r'''
 \usepackage{graphicx}
-\graphicspath{/}
+\graphicspath{/home}
 ''',
     'papersize': 'a4paper',
     'inputenc': '\\usepackage[utf8]{inputenc}',
