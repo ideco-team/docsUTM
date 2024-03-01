@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os
 
 project = 'Test'
 copyright = '2024, me'
@@ -38,7 +39,7 @@ latex_engine = 'pdflatex'
 latex_elements = {
     'preamble': r'''
 \usepackage{graphicx}
-\graphicspath{/home}
+\graphicspath{f'{os.path.dirname(os.path.abspath(__file__))}/docsUTM'}
 ''',
     'papersize': 'a4paper',
     'inputenc': '\\usepackage[utf8]{inputenc}',
