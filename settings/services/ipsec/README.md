@@ -17,7 +17,6 @@
 Туннели создаются на всех интерфейсах со шлюзом по умолчанию.
 {% endhint %}
 
-
 ## Устройства
 
 Подключение устройств по IPsec позволит обеспечить безопасность сетевых соединений и защитить данные, передаваемые между устройствами.
@@ -98,9 +97,9 @@ Ideco NGFW не поддерживает устаревшие и небезоп�
 
 Пример настройки подключения pfSense к Ideco NGFW по IPsec:
 
-<img src="/.gitbook/assets/site-to-site-ideco-mikrotik1.png" alt="" data-size="original">
+![](/.gitbook/assets/site-to-site-ideco-mikrotik1.png)
 
-<img src="/.gitbook/assets/site-to-site-ideco-mikrotik2.png" alt="" data-size="original">
+![](/.gitbook/assets/site-to-site-ideco-mikrotik2.png)
 
 </details>
 

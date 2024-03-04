@@ -27,7 +27,7 @@ description: >-
 
 3\. Сохраните созданное подключение, затем активируйте подключение, нажав на иконку включения в столбце **Управление**.
 
-4\. Настройка завершена, теперь переходим к настройке Kerio Control.
+Настройка завершена, теперь переходим к настройке Kerio Control.
 
 ## Настройка Kerio Control
 
@@ -55,11 +55,11 @@ description: >-
 * **Отдаленный ИД** - укажите IP-адрес внешнего интерфейса Ideco NGFW;
 * Под заданием шифров нажать на **Изменить** и задать шифры, как на скриншоте:
 
-![](../../../../.gitbook/assets/ipsec-connection-kerio-control-to-utm1.png)
+![](/.gitbook/assets/ipsec-connection-kerio-control-to-utm1.png)
 
 Пример итоговых настроек на скриншоте ниже:
 
-![](../../../../.gitbook/assets/ipsec-connection-kerio-control-to-utm2.png)
+![](/.gitbook/assets/ipsec-connection-kerio-control-to-utm2.png)
 
 5\. Перейдите в раздел **Удаленные сети**, нажмите на кнопку **Добавить** и введите сведения о локальной сети Ideco NGFW, которая будет видна из подсети Kerio Control.
 
@@ -67,7 +67,7 @@ description: >-
 
 7\. После добавление нового интерфейса нажмите на кнопку **Применить**. Подключение успешно установится, информация об этом отобразится в таблице:
 
-![](../../../../.gitbook/assets/ipsec-connection-kerio-control-to-utm3.png)
+![](/.gitbook/assets/ipsec-connection-kerio-control-to-utm3.png)
 
 {% hint style="info" %}
 При возникновении проблем обратите внимание на настройки файрвола Kerio Control.
