@@ -14,21 +14,21 @@
 
 Для установки Ideco NGFW выполните действия:
 
-1. Перейдите к установке, нажав **Install Ideco NGFW**.
+1\. Перейдите к установке, нажав **Install Ideco NGFW**.
 
-![](../.gitbook/assets/installation-process.png)
+![](/.gitbook/assets/installation-process.png)
 
-2. Выберите диск для установки и ознакомьтесь с **предупреждением об уничтожении данных на диске**:
+2\. Выберите диск для установки и ознакомьтесь с **предупреждением об уничтожении данных на диске**:
 
-![](../.gitbook/assets/installation-process1.png)
+![](/.gitbook/assets/installation-process1.png)
 
-3. Выберите временную зону, в которой вы находитесь:
+3\. Выберите временную зону, в которой вы находитесь:
 
-![](../.gitbook/assets/installation-process2.png)
+![](/.gitbook/assets/installation-process2.png)
 
-4. Настройте дату и время в соответствии с вашей временной зоной. **Обязательно проверьте правильность даты и времени**:
+4\. Настройте дату и время в соответствии с вашей временной зоной. **Обязательно проверьте правильность даты и времени**:
 
-![](../.gitbook/assets/installation-process3.png)
+![](/.gitbook/assets/installation-process3.png)
 
 {% hint style="info" %}
 Не забудьте извлечь USB-диск после установки Ideco NGFW, чтобы загрузка с него не началась заново.
@@ -57,9 +57,9 @@
 
 1\. Введите **y** для начала настройки UTM как второй ноды кластера:
 
-![](../.gitbook/assets/installation-process6.png)
+![](/.gitbook/assets/installation-process6.png)
 
-2\. Для продолжения настройки воспользуйтесь статьей [Кластеризация](../settings/server-management/cluster.md).
+2\. Для продолжения настройки воспользуйтесь статьей [Кластеризация](/settings/server-management/cluster.md).
 
 ## Настройка локального интерфейса
 
@@ -72,31 +72,31 @@
 
 1\. Введите номер сетевого адаптера под локальный интерфейс:
 
-![](../.gitbook/assets/installation-process7.png)
+![](/.gitbook/assets/installation-process7.png)
 
 2\. Настройте локальную сеть автоматически через DHCP, введя **y**, или настройте вручную, введя **n**:
 
-![](../.gitbook/assets/installation-process8.png)
+![](/.gitbook/assets/installation-process8.png)
 
 3\. Введите локальный IP-адрес и маску подсети в формате `ip/маска` и нажмите **Enter**:
 
-![](../.gitbook/assets/installation-process5.png)
+![](/.gitbook/assets/installation-process5.png)
 
 4.1 При настройке Ideco NGFW в качестве **шлюза** оставьте поле шлюз пустым:
 
-   ![](../.gitbook/assets/installation-process9.png)
+   ![](/.gitbook/assets/installation-process9.png)
 
 4.2 При настройке Ideco NGFW в качестве **прокси** введите шлюз с доступом в интернет:
 
-   ![](../.gitbook/assets/installation-process10.png)
+   ![](/.gitbook/assets/installation-process10.png)
 
 5\. Задайте тег VLAN (стандарт VLAN 802.3q) или оставьте поле пустым:
 
-![](../.gitbook/assets/installation-process11.png)
+![](/.gitbook/assets/installation-process11.png)
 
 После создания локального интерфейса откроется локальное меню управления сервером: 
 
-![](../.gitbook/assets/installation-process12.png)
+![](/.gitbook/assets/installation-process12.png)
 
 {% hint style="info" %}
 Если в Ideco NGFW настроен кластер, в локальном меню будет отсутствовать пункт _Восстановиться на предыдущую версию_.
