@@ -1,57 +1,52 @@
 # Редактирование пользовательской категории контент-фильтра
 
-Предполагается, что уже созданы и настроены: 
+Предполагается, что уже созданы и настроены:
+
 * пользователи;
 * пользовательская категория контент-фильтра (`users.id.3`);
-* правило контент-фильтра, в котором используются созданные пользователи и категория. 
+* правило Контент-фильтра, в котором используются созданные пользователи и категория. 
 
 Через API требуется редактировать список URL в пользовательской категории (добавить `https://wrong-url.com`), в правила контент-фильтра и пользователей изменения не вносим.
 
-**1\.** Авторизуйте администратора: 
+{% hint style="info" %}
+Все приведенные ниже команды выполняются в bash-терминале.
 
-{% code overflow="wrap" %}
+При использовании curl в командной строке Windows замените все одинарные кавычки двойными, при этом кавычки внутри кавычек необходимо экранировать. Пример:
+
+`--data "{\"login\": \"логин\", \"password\": \"пароль\", \"rest_path\": \"/\"}"`
+{% endhint %}
+
+1\. Авторизуйте администратора: 
+
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "recaptcha": "", "rest_path": "/"}'
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "rest_path": "/"}'
 ```
-{% endcode %}
+
+* `x.x.x.x` - IP-адрес веб-интерфейса Ideco NGFW.
 
 Ответ: статус 200.
 
-**2\.** Получите текущий список URL из пользовательских категории:
+2\. Получите текущий список URL из пользовательских категории:
 
-{% code overflow="wrap" %}
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie https://178.154.205.107:8443/content-filter/users_categories/users.id.3
+curl -k -c /tmp/cookie -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_categories/users.id.3
 ```
-{% endcode %}
 
 Ответ: статус 200.
 
 Ответ будет содержать описание всех пользовательских категорий. Среди них требуется найти `users.id.3`:
 
-{% code overflow="wrap" %}
 ```
-{"id": "users.id.1", "name": "Разрешенный сайты", "description": "Созданы по умолчанию", "urls": ["translate.google.ru", "translate.google.com", "translate.yandex.ru"]}, {"id": "users.id.2", "name": "Запрещенные сайты", "description": "Созданы по умолчанию", "urls": []}, {"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru"]}
+{"id": "users.id.1", "name": "Разрешенный сайты", "comment": "Созданы по умолчанию", "urls": ["translate.google.ru", "translate.google.com", "translate.yandex.ru"]}, {"id": "users.id.2", "name": "Запрещенные сайты", "comment": "Созданы по умолчанию", "urls": []}, {"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "comment": "комментарий", "urls": ["https://yandex.ru"]}
 ```
-{% endcode %}
 
-**3\.** Отредактируйте список URL:
+3\. Отредактируйте список URL:
 
-{% code overflow="wrap" %}
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://178.154.205.107:8443/content-filter/users_categories/users.id.3 --data '{"name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
+curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://x.x.x.x:8443/content-filter/users_categories/users.id.3 --data '{"name": "Запрещенные для бухгалтеров", "comment": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
 ```
-{% endcode %}
 
 Ответ: статус 200.
-
-Тело ответа при добавлении URL в ранее созданную категорию контент-фильтра:
-
-{% code overflow="wrap" %}
-```
-{"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}
-```
-{% endcode %}
 
 {% hint style="danger" %}
 Запрос перезапишет ранее созданную пользовательскую категорию. Поэтому при выполнении запроса следует указать все URL (старые и новые - указанные при создании категории и те, которые хотите добавить).

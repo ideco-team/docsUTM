@@ -45,6 +45,125 @@ set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Ma
 
 </details>
 
+<details>
+<summary>Получение информации о лицензии</summary>
+
+```
+GET /license
+```
+
+**Пример ответа на успешный запрос:**
+
+```
+{
+    "modules": {
+        "active_directory": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "kaspersky_av_for_web": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "kaspersky_av_for_mail": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "application_control": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "suricata": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "advanced_content_filter": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "standard_content_filter": {
+            "available": false,
+            "expiration_date": 0
+        },
+        "ips_advanced_rules": {
+            "available": true,
+            "expiration_date": 1713084779.0
+        },
+        "icsd": {
+            "available": true,
+            "max_users_count": 10000
+        }
+    },
+    "general": {
+        "available": true,
+        "reason": "",
+        "not_upgrade_after": 1713084779.0,
+        "tech_support_end": 1713084779.0,
+        "start_date": 1709628779.7338443,
+        "expiration_date": 1713084779.0
+    },
+    "license_type": "enterprise-demo",
+    "license_id": "UTM-1098592203",
+    "server_name": "UTM",
+    "last_update_time": 1709628781.5150864,
+    "company_id": "Ideco",
+    "server_id": "CI-GYYWDwzjGBZ8by3drEAwdYMLIVWTa9RD-AsMGk63h",
+    "registered": true,
+    "unreliable": false,
+    "has_connection": true,
+    "license_server": "https://my.ideco.ru"
+}
+```
+
+**Если лицензия для данного сервера отсутствует:**
+
+```
+{
+    "registered": false,
+    "has_connection": true,
+    "license_server": "https://my.ideco.ru"
+}
+```
+
+</details>
+
+<details>
+<summary>Сбор анонимной статистики о работе сервера</summary>
+
+### Получение текущих настроек:
+
+```
+GET /gather_stat
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+      "enabled": boolean
+   }
+```
+
+Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
+
+### Изменение настроек
+
+```
+PUT /gather_stat
+```
+
+**Json-тело запроса**
+
+```
+{
+      "enabled": boolean
+   }
+```
+
+Возвращает HTTP-код **200** OK.
+
+</details>
+
 ## Управление объектами
 
 <details>
@@ -106,7 +225,7 @@ POST /aliases/ip_ranges
 
 <details>
 
-<summary>Создание объекта Список адресов</summary>
+<summary>Создание объекта Список IP-объектов</summary>
 
 ```
 POST /aliases/lists/addresses
@@ -119,6 +238,145 @@ POST /aliases/lists/addresses
     "title": "string",
     "comment": "string",
     "values": ["string"] (идентификаторы объектов IP-адреса, через запятую)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Создание объекта Подсеть</summary>
+
+```
+POST /aliases/networks
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string" (максимальная длина 42 символа),
+    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "value": "string" (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
+}
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Создание объекта Домен</summary>
+
+```
+POST /aliases/domains
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string" (максимальная длина 42 символа),
+    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "value": "string" (домен)
+}
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Порт</summary>
+
+```
+POST /aliases/ports
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "value": integer (номер порта)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Диапазон портов</summary>
+
+```
+POST /aliases/port_ranges
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "start": integer (первый порт диапазона),
+    "end": integer (последний порт диапазона)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Порты</summary>
+
+```
+POST /aliases/lists/ports
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (список портов)
 }
 ```
 
@@ -164,6 +422,34 @@ POST /aliases/time_ranges
 
 <details>
 
+<summary>Создание объекта Расписание</summary>
+
+```
+POST /aliases/lists/times
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (список id объектов Время)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
 <summary>Получение ID объектов</summary>
 
 ```
@@ -179,16 +465,24 @@ GET /aliases
         title: "string",
         type: "string",
         values: [
-            "ip.id.1",
-            "ip.id.2"
+            "string" | integer,
+            "string" | integer
         ],
         id: "type.id.1"
     }, 
+{
+        comment: "string",
+        title: "string",
+        type: "string",
+        value: "string" | integer,
+        id: "type.id.1"
+    },
     ...
 ] 
 ```
 
 В качестве ответа будет возвращен список всех объектов, существующих в NGFW:
+
 * "protocol.ah" - протокол AH;
 * "protocol.esp" - протокол ESP;
 * "protocol.gre" - протокол GRE;
@@ -200,25 +494,32 @@ GET /aliases
 * "interface.external_any" - все внешние интерфейсы (равно таблице *Подключение к провайдеру* в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
 * "interface.external_eth" - внешние Ethernet-интерфейсы;
 * "interface.external_vpn" - внешние VPN-интерфейсы;
+* "interface.ipsec_any" - все IPsec-интерфейсы;
 * "interface.local_any" - все локальные интерфейсы;
+* "interface.utm_outgoing" - исходящий трафик устройства;
+* "interface.vpn_traffic" - клиентский VPN трафик;
 * "group.id." - идентификатор группы пользователей;
 * "interface.id." - идентификатор конкретного интерфейса;
 * "security_group.guid." - идентификатор группы безопасности AD;
 * "user.id." - идентификатор пользователя;
 * "domain.id." - идентификатор домена;
 * "ip.id." - идентификатор IP-адреса;
-* "ip_range.id." - идентификатор объекта *Диапазон адресов*;
-* "address_list.id." - идентификатор объекта *Список адресов*;
+* "iplist." - идентификатор объекта *GeoIP (Страна)*;
+* "list_of_iplists.id." - идентификатор объекта *Список стран*;
+* "ip_range.id." - идентификатор объекта *Диапазон IP-адресов*;
+* "ip_address_list.id." - идентификатор объекта *Список IP-адресов*;
+* "address_list.id." - идентификатор объекта *Список IP-объектов*;
 * "port_list.id." - идентификатор объекта *Список портов*;
 * "time_list.id." - идентификатор объекта *Расписание*;
 * "subnet.id." - идентификатор объекта *Подсеть*;
 * "port_range.id." - идентификатор объекта *Диапазон портов*;
 * "port.id." - идентификатор объекта *Порт*;
-* "time_range.id." - идентификатор объекта *Время*.
+* "time_range.id." - идентификатор объекта *Время*;
+* "zero_subnet" - сеть `0.0.0.0/0`.
 
 </details>
 
-## Пользовательские категории контент-фильтра
+## Пользовательские категории Контент-фильтра
 
 <details>
 
@@ -233,7 +534,7 @@ POST /content-filter/users_categories
 ```
 {
     "name": "string",
-    "description": "string",
+    "comment": "string",
     "urls": [ "string" ]
 }
 ```
@@ -265,7 +566,7 @@ GET /content-filter/users_categories
     {
         "id": "string", (номер категории, вида - users.id.1)
         "name": "string", (название категории, не пустая строка)
-        "description": "string",
+        "comment": "string",
         "urls": ["string"] 
     },
     ...
@@ -289,7 +590,7 @@ PUT /content-filter/users_categories/{category_id}
 ```
 {
     "name": "string",
-    "description": "string",
+    "comment": "string",
     "urls": ["string"]
 }
 ```
@@ -304,6 +605,48 @@ PUT /content-filter/users_categories/{category_id}
     "urls": [ "string" ]
 }
 ```
+
+</details>
+
+## Обнаружение устройств
+
+<details>
+<summary>Получение настроек</summary>
+
+```
+GET /netscan_backend
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+   "enabled": boolean,
+   "group_id": integer (идентификатор группы, в которую будут добавлены обнаруженные устройства),
+   "networks": ["string"] (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
+}
+```
+
+</details>
+
+<details>
+<summary>Изменение настроек</summary>
+
+```
+PUT /netscan_backend
+```
+
+**Json-тело запроса:**
+
+```
+{
+   "enabled": boolean,
+   "group_id": integer,
+   "networks": ["string"]
+}
+```
+
+Возвращает HTTP-код **200** OK.
 
 </details>
 
