@@ -18,7 +18,7 @@ POST /web/auth/login
 }
 
 ```
-После успешной авторизации, сервер Ideco UTM передаёт в заголовках куки. Пример значений:
+После успешной авторизации, сервер Ideco UTM передает в заголовках куки. Пример значений:
 
 ```
 set-cookie: insecure-ideco-session=02428c1c-fcd5-42ef-a533-5353da743806
@@ -36,11 +36,93 @@ set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4c
 ```
 DELETE /web/auth/login
 ```
-После успешной разавторизации, сервер Ideco UTM передаёт в заголовках куки. Пример значений:
+После успешной разавторизации, сервер Ideco UTM передает в заголовках куки. Пример значений:
 
 ```
 set-cookie: insecure-ideco-session=""; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/
 set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Max-Age=0; Path=/; SameSite=Strict; Secure
+```
+
+</details>
+
+<details>
+<summary>Получение информации о лицензии</summary>
+
+```
+GET /license
+```
+
+**Пример ответа на успешный запрос:**
+
+```
+{
+    "modules": {
+        "active_directory": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "kaspersky_av_for_web": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "kaspersky_av_for_mail": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "application_control": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "suricata": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "advanced_content_filter": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "standard_content_filter": {
+            "available": false,
+            "expiration_date": 0
+        },
+        "ips_advanced_rules": {
+            "available": true,
+            "expiration_date": 1713103784.0
+        },
+        "icsd": {
+            "available": true,
+            "max_users_count": 10000
+        }
+    },
+    "general": {
+        "available": true,
+        "reason": "",
+        "not_upgrade_after": 1713103784.0,
+        "tech_support_end": 1713103784.0,
+        "start_date": 1709647784.511906,
+        "expiration_date": 1713103784.0
+    },
+    "license_type": "enterprise-demo",
+    "license_id": "UTM-1880610351",
+    "server_name": "UTM",
+    "last_update_time": 1709650768.1893554,
+    "company_id": "Ideco",
+    "server_id": "AOW8rosllirTUx94EPLb8p0atP3fmOJcXrFu3ksfak-K",
+    "registered": true,
+    "unreliable": false,
+    "has_connection": true,
+    "license_server": "https://my.ideco.ru"
+}
+```
+
+**Если лицензия для данного сервера отсутствует:**
+
+```
+{
+    "registered": false,
+    "has_connection": true,
+    "license_server": "https://my.ideco.ru"
+}
 ```
 
 </details>
@@ -106,7 +188,7 @@ POST /aliases/ip_ranges
 
 <details>
 
-<summary>Создание объекта Список адресов</summary>
+<summary>Создание объекта Список IP-объектов</summary>
 
 ```
 POST /aliases/lists/addresses
@@ -119,6 +201,145 @@ POST /aliases/lists/addresses
     "title": "string",
     "comment": "string",
     "values": ["string"] (идентификаторы объектов IP-адреса, через запятую)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Создание объекта Подсеть</summary>
+
+```
+POST /aliases/networks
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string" (максимальная длина 42 символа),
+    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "value": "string" (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
+}
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Создание объекта Домен</summary>
+
+```
+POST /aliases/domains
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string" (максимальная длина 42 символа),
+    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "value": "string" (домен)
+}
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Порт</summary>
+
+```
+POST /aliases/ports
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "value": integer (номер порта)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Диапазон портов</summary>
+
+```
+POST /aliases/port_ranges
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "start": integer (первый порт диапазона),
+    "end": integer (последний порт диапазона)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Порты</summary>
+
+```
+POST /aliases/lists/ports
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (список портов)
 }
 ```
 
@@ -164,6 +385,34 @@ POST /aliases/time_ranges
 
 <details>
 
+<summary>Создание объекта Расписание</summary>
+
+```
+POST /aliases/lists/times
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (список id объектов Время)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
 <summary>Получение ID объектов</summary>
 
 ```
@@ -179,16 +428,24 @@ GET /aliases
         title: "string",
         type: "string",
         values: [
-            "ip.id.1",
-            "ip.id.2"
+            "string" | integer,
+            "string" | integer
         ],
         id: "type.id.1"
     }, 
+{
+        comment: "string",
+        title: "string",
+        type: "string",
+        value: "string" | integer,
+        id: "type.id.1"
+    },
     ...
-] 
+]  
 ```
 
 В качестве ответа будет возвращен список всех объектов, существующих в UTM:
+
 * "protocol.ah" - протокол AH;
 * "protocol.esp" - протокол ESP;
 * "protocol.gre" - протокол GRE;
@@ -207,14 +464,17 @@ GET /aliases
 * "user.id." - идентификатор пользователя;
 * "domain.id." - идентификатор домена;
 * "ip.id." - идентификатор IP-адреса;
-* "ip_range.id." - идентификатор объекта *Диапазон адресов*;
-* "address_list.id." - идентификатор объекта *Список адресов*;
+* "iplist." - идентификатор объекта *GeoIP (Страна)*;
+* "list_of_iplists." - идентификатор объекта *Список стран*;
+* "ip_range.id." - идентификатор объекта *Диапазон IP-адресов*;
+* "address_list.id." - идентификатор объекта *Список IP-объектов*;
 * "port_list.id." - идентификатор объекта *Список портов*;
 * "time_list.id." - идентификатор объекта *Расписание*;
 * "subnet.id." - идентификатор объекта *Подсеть*;
 * "port_range.id." - идентификатор объекта *Диапазон портов*;
 * "port.id." - идентификатор объекта *Порт*;
-* "time_range.id." - идентификатор объекта *Время*.
+* "time_range.id." - идентификатор объекта *Время*;
+* "zero_subnet" - сеть `0.0.0.0/0`.
 
 </details>
 
