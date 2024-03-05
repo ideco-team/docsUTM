@@ -9,6 +9,10 @@
 
 {% hint style="info" %}
 Все приведенные ниже команды выполняются в bash-терминале.
+
+При использовании curl в командной строке Windows замените все одинарные кавычки двойными, при этом кавычки внутри кавычек необходимо экранировать. Пример:
+
+`--data "{\"login\": \"логин\", \"password\": \"пароль\", \"rest_path\": \"/\"}"`
 {% endhint %}
 
 1\. Авторизуйте администратора:
@@ -90,7 +94,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/time_
 5\. Создайте правило файрвола, используя *id* из пунктов 2 и 3:
 
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://178.154.205.107:8443/firewall/rules/forward --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["any"], "parent_id": "00000000-0000-0000-0000-000000000001"}'
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rules/forward --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["any"], "parent_id": "00000000-0000-0000-0000-000000000001"}'
 ```
 
 Значение `action`:

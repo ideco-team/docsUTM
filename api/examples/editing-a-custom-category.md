@@ -10,6 +10,10 @@
 
 {% hint style="info" %}
 Все приведенные ниже команды выполняются в bash-терминале.
+
+При использовании curl в командной строке Windows замените все одинарные кавычки двойными, при этом кавычки внутри кавычек необходимо экранировать. Пример:
+
+`--data "{\"login\": \"логин\", \"password\": \"пароль\", \"rest_path\": \"/\"}"`
 {% endhint %}
 
 1\. Авторизуйте администратора:
@@ -33,7 +37,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_
 Ответ будет содержать описание всех пользовательских категорий. Среди них требуется найти `users.id.3`:
 
 ```
-{"id": "users.id.1", "name": "Разрешенный сайты", "description": "Созданы по умолчанию", "urls": ["translate.google.ru", "translate.google.com", "translate.yandex.ru"]}, {"id": "users.id.2", "name": "Запрещенные сайты", "description": "Созданы по умолчанию", "urls": []}, {"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru"]}
+{"id": "users.id.1", "name": "Разрешенный сайты", "comment": "Созданы по умолчанию", "urls": ["translate.google.ru", "translate.google.com", "translate.yandex.ru"]}, {"id": "users.id.2", "name": "Запрещенные сайты", "comment": "Созданы по умолчанию", "urls": []}, {"id": "users.id.3", "name": "Запрещенные для бухгалтеров", "comment": "комментарий", "urls": ["https://yandex.ru"]}
 ```
 
 3\. Отредактируйте список URL:
