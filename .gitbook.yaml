@@ -96,3 +96,4 @@ redirects:
   cc_zabbix: ./settings/server-management/central-console/zabbix.md
   cc_snmp: ./settings/server-management/central-console/snmp.md
   device-profiles: ./settings/users/hip-profiles.md
+  dhcp_wpad: ./settings/services/dhcp.md
