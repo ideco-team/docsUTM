@@ -1,4 +1,4 @@
-# Описание хендлеров
+# Описание основных хендлеров
 
 <details>
 
@@ -8,7 +8,7 @@
 POST /web/auth/login
 ```
 
-**Json тело запроса:**
+**Json-тело запроса:**
 
 ```
 {
@@ -43,6 +43,61 @@ DELETE /web/auth/login
 set-cookie: insecure-ideco-session=""; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/
 set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Max-Age=0; Path=/; SameSite=Strict; Secure
 ```
+
+</details>
+
+<details>
+<summary>Регистрация сервера</summary>
+
+```
+POST /license/register
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "token": "str" (Получить токен лицензии можно в отделе продаж. Он высылается в активационном письме)
+}
+```
+
+Ответ: 200 ОК
+
+Чтобы добавить enterprise-demo лицензию, необходимо сначала получить токен лицензии в личном кабинете. Для этого выполните действия:
+
+1\. Авторизуйтесь в личном кабинете myideco.ru:
+
+```
+POST /api/v3/login
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "login": "string",
+    "password": "string",
+    "g_recaptcha_response": "string" | null
+}
+```
+
+2\. Выполните запрос на регистрацию сервера:
+
+```
+PUT /api/v3/{company_id}/go_to_product
+```
+
+*  `company_id` - id компании пользователя. Его можно получить по запросу `GET /api/v3/companies`.
+
+**Тело ответа на успешный запрос:**
+
+```
+{
+  "token": "string"
+}
+```
+
+Используйте полученный токен в теле запроса при регистрации Ideco NGFW.
 
 </details>
 
@@ -403,6 +458,34 @@ POST /aliases/lists/addresses
 
 <details>
 
+<summary>Создание объекта Список IP-адресов</summary>
+
+```
+POST /aliases/ip_address_lists
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string",
+    "comment": "string",
+    "values": [ "string" ] (Список IP-адресов без указания маски, либо с указанием маски подсети в виде десятичного числа 0...32 или четырех десятичных чисел от 0 до 255. Например: `192.168.0.0/24` или `192.168.0.1`)
+}
+```
+
+**Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
 <summary>Создание объекта Порты</summary>
 
 ```
@@ -525,95 +608,6 @@ GET /aliases/all
 * "port_range.id." - идентификатор объекта *Диапазон портов*;
 * "port.id." - идентификатор объекта *Порт*;
 * "time_range.id." - идентификатор объекта *Время*.
-
-</details>
-
-## Пользовательские категории контент-фильтра
-
-<details>
-
-<summary>Получение пользовательских категорий</summary>
-
-```
-GET /content-filter/users_categories
-```
-
-**Json-ответ на запрос:**
-
-```
-[
-    {
-        "id": "string" (номер категории, вида - users.id.1),
-        "name": "string" (название категории, не пустая строка),
-        "comment": "string",
-        "urls": ["string"]
-    },
-    ...
-]
-```
-
-**urls** - список url. Либо полный путь до страницы, либо только доменное имя. В пути может присутствовать любое количество любых символов.
-
-</details>
-
-<details>
-
-<summary>Создание пользовательской категории</summary>
-
-```
-POST /content-filter/users_categories
-```
-
-**Json-тело запроса:**
-
-```
-{
-    "name": "string",
-    "comment": "string",
-    "urls": [ "string" ]
-}
-```
-
-**urls** - список url. Полный путь до страницы или только доменное имя. В пути может присутствовать любое количество любых символов.
-
-**Ответ на успешный запрос:** 
-
-```
-{
-    "id": "string"
-}
-```
-
-</details>
-
-<details>
-
-<summary>Редактирование</summary>
-
-```
-PUT /content-filter/users_categories/{category_id}
-```
-
-**Json-тело запроса:**
-
-```
-{
-    "name": "string",
-    "comment": "string",
-    "urls": ["string"]
-}
-```
-
-**Ответ на успешный запрос:**
-
-```
-{
-    "id": "string",
-    "name": "string",
-    "comment": "string",
-    "urls": [ "string" ]
-}
-```
 
 </details>
 
