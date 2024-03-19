@@ -213,7 +213,14 @@
 
 ## API
 
-* [Описание хендлеров](api/description-of-handlers.md)
+* [Описание основных хендлеров](api/description-of-handlers.md)
+* [Управление интеграцией с Active Directory](api/active-directory-api.md)
+* [Управление правилами трафика](api/access-rules-api.md)
+* [DHCP-сервер](api/dhcp-api.md)
+* [DNS-сервер](api/dns-api.md)
+* [Настройка удаленной передачи системных логов](api/logs-api.md)
+* [Центральная консоль](api/cc-api.md)
+* [Бекапы](api/backup-api.md)
 * [Примеры использования](api/examples/README.md)
   * [Редактирование пользовательской категории контент-фильтра](api/examples/editing-a-custom-category.md)
   * [Создание правила Forward](api/examples/creating-a-forward-rule.md)

@@ -94,7 +94,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/time_
 5\. Создайте правило файрвола, используя *id* из пунктов 2 и 3:
 
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rules/forward --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["any"], "parent_id": "00000000-0000-0000-0000-000000000001"}'
+curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rules/forward --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["any"], "parent_id": "f3ffde22-a562-4f43-ac04-c40fcec6a88c"}'
 ```
 
 Значение `action`:
@@ -115,7 +115,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rule
 6\. Отредактируйте созданное правило, указав время действия:
 
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://x.x.x.x:8443/firewall/rules/forward/<id созданного в пункте 5 правила> --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["time_range.id.1"], "parent_id": "00000000-0000-0000-0000-000000000001"}'
+curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://x.x.x.x:8443/firewall/rules/forward/<id созданного в пункте 5 правила> --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["time_range.id.1"], "parent_id": "f3ffde22-a562-4f43-ac04-c40fcec6a88c"}'
 ```
 
 Ответ: статус 200.
