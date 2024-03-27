@@ -178,13 +178,41 @@ POST /aliases/ip_addresses
 
 ```
 {
-    "comment": "string",    
-    "title": "string",    
+    "comment": "string"    
+    "title": "string"   
     "value": "string"
 }
 ```
 
 **Ответ на успешный запрос:** 
+
+```
+{
+    "id": "string"
+}
+```
+
+</details>
+
+<details>
+
+<summary>Создание объекта Cписок IP-адресов</summary>
+
+```
+POST /aliases/ip_address_lists
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "values": [ "string" ]
+}
+```
+
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -206,9 +234,9 @@ POST /aliases/ip_ranges
 
 ```
 {
-    "title": "string",
-    "comment": "string",
-    "start": "string",
+    "title": "string"
+    "comment": "string"
+    "start": "string"
     "end": "string"
 }
 ```
@@ -235,8 +263,8 @@ POST /aliases/lists/addresses
 
 ```
 {
-    "title": "string",
-    "comment": "string",
+    "title": "string"
+    "comment": "string"
     "values": ["string"] (идентификаторы объектов IP-адреса, через запятую)
 }
 ```
@@ -262,8 +290,8 @@ POST /aliases/networks
 
 ```
 {
-    "title": "string" (максимальная длина 42 символа),
-    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "title": "string" (максимальная длина 42 символа)
+    "comment": "string" (может быть пустым, максимальная длина 256 символов)
     "value": "string" (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
 }
 ```
@@ -289,8 +317,8 @@ POST /aliases/domains
 
 ```
 {
-    "title": "string" (максимальная длина 42 символа),
-    "comment": "string" (может быть пустым, максимальная длина 256 символов),
+    "title": "string" (максимальная длина 42 символа)
+    "comment": "string" (может быть пустым, максимальная длина 256 символов)
     "value": "string" (домен)
 }
 ```
@@ -317,8 +345,8 @@ POST /aliases/ports
 
 ```
 {
-    "title": "string",
-    "comment": "string",
+    "title": "string"
+    "comment": "string"
     "value": integer (номер порта)
 }
 ```
@@ -345,9 +373,9 @@ POST /aliases/port_ranges
 
 ```
 {
-    "title": "string",
-    "comment": "string",
-    "start": integer (первый порт диапазона),
+    "title": "string"
+    "comment": "string"
+    "start": integer (первый порт диапазона)
     "end": integer (последний порт диапазона)
 }
 ```
@@ -374,8 +402,8 @@ POST /aliases/lists/ports
 
 ```
 {
-    "title": "string",
-    "comment": "string",
+    "title": "string"
+    "comment": "string"
     "values": [ "string" ] (список портов)
 }
 ```
@@ -402,10 +430,10 @@ POST /aliases/time_ranges
 
 ```
 {
-    "title":"string",
-    "comment":"string",
-    "weekdays":[int], (список дней недели, где 1-пн, 2-вт ... 7-вс)
-    "start":"string", (начало временного отрезка в формате: ЧЧ:ММ)
+    "title":"string"
+    "comment":"string"
+    "weekdays":[int] (список дней недели, где 1-пн, 2-вт ... 7-вс)
+    "start":"string" (начало временного отрезка в формате: ЧЧ:ММ)
     "end":"string"(конец временного отрезка в формате: ЧЧ:ММ)
 }
 ```
@@ -432,8 +460,8 @@ POST /aliases/lists/times
 
 ```
 {
-    "title": "string",
-    "comment": "string",
+    "title": "string"
+    "comment": "string"
     "values": [ "string" ] (список id объектов Время)
 }
 ```
@@ -461,20 +489,20 @@ GET /aliases
 ```
 [
     {
-        comment: "string",
-        title: "string",
-        type: "string",
+        comment: "string"
+        title: "string"
+        type: "string"
         values: [
-            "string" | integer,
+            "string" | integer
             "string" | integer
         ],
         id: "type.id.1"
     }, 
 {
-        comment: "string",
-        title: "string",
-        type: "string",
-        value: "string" | integer,
+        comment: "string"
+        title: "string"
+        type: "string"
+        value: "string" | integer
         id: "type.id.1"
     },
     ...
@@ -519,6 +547,254 @@ GET /aliases
 
 </details>
 
+<details>
+
+<summary>Редактирование объекта IP-адрес</summary>
+
+```
+PUT /aliases/ip_addresses/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "value": "string"
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Список IP-адресов</summary>
+
+```
+PUT /aliases/ip_address_lists/{id}
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "values": [ "string" ]
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Диапазон IP-адресов</summary>
+
+```
+PUT /aliases/ip_ranges/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "start": "string"
+    "end": "string"
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Список IP-объектов</summary>
+
+```
+PUT /aliases/lists/addresses/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "values": [ "string" ]
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+
+<details>
+
+<summary>Редактирование объекта Подсеть</summary>
+
+```
+PUT /aliases/networks/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "value": "string"
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Домен</summary>
+
+```
+PUT /aliases/domains/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "value": "string"
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Порт</summary>
+
+```
+PUT /aliases/ports/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "value": "integer"
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Диапазон портов</summary>
+
+```
+PUT /aliases/port_ranges/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "start": "integer"
+    "end": "integer"
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Порты</summary>
+
+```
+PUT /aliases/lists/ports/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "values": [ "string" ]
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Время</summary>
+
+```
+PUT /aliases/time_ranges/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "weekdays": [ int ]
+    "start": "string"
+    "end": "string"
+    "period": {"first": int, "last": int} | null
+}
+```
+
+**Ответ на запрос пустой**
+
+</details>
+
+<details>
+
+<summary>Редактирование объекта Расписание</summary>
+
+```
+PUT /aliases/lists/times/id
+```
+
+**Json-тело запроса:**
+
+```
+{
+    "title": "string"
+    "comment": "string"
+    "values": [ "string" ]
+}
+```
+
+**Ответ на запрос пустой.**
+
+</details>
+
 ## Пользовательские категории Контент-фильтра
 
 <details>
@@ -533,8 +809,8 @@ POST /content-filter/users_categories
 
 ```
 {
-    "name": "string",
-    "comment": "string",
+    "name": "string"
+    "comment": "string"
     "urls": [ "string" ]
 }
 ```
@@ -564,9 +840,9 @@ GET /content-filter/users_categories
 ```
 [
     {
-        "id": "string", (номер категории, вида - users.id.1)
-        "name": "string", (название категории, не пустая строка)
-        "comment": "string",
+        "id": "string" (номер категории, вида - users.id.1)
+        "name": "string" (название категории, не пустая строка)
+        "comment": "string"
         "urls": ["string"] 
     },
     ...
@@ -589,8 +865,8 @@ PUT /content-filter/users_categories/{category_id}
 
 ```
 {
-    "name": "string",
-    "comment": "string",
+    "name": "string"
+    "comment": "string"
     "urls": ["string"]
 }
 ```
@@ -599,9 +875,9 @@ PUT /content-filter/users_categories/{category_id}
 
 ```
 {
-    "id": "string",
-    "name": "string",
-    "description": "string",
+    "id": "string"
+    "name": "string"
+    "description": "string"
     "urls": [ "string" ]
 }
 ```
@@ -621,8 +897,8 @@ GET /netscan_backend
 
 ```
 {
-   "enabled": boolean,
-   "group_id": integer (идентификатор группы, в которую будут добавлены обнаруженные устройства),
+   "enabled": boolean
+   "group_id": integer (идентификатор группы, в которую будут добавлены обнаруженные устройства)
    "networks": ["string"] (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
 }
 ```
@@ -640,8 +916,8 @@ PUT /netscan_backend
 
 ```
 {
-   "enabled": boolean,
-   "group_id": integer,
+   "enabled": boolean
+   "group_id": integer
    "networks": ["string"]
 }
 ```
