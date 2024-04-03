@@ -12,7 +12,7 @@
 ## Быстрый старт <a href="#installation" id="installation"></a>
 
 * [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
-* [Личный кабинет my.ideco](installation/initial-action-my-ideco.md)
+* [MY.IDECO.RU](installation/initial-action-my-ideco.md)
 * [Подготовка к установке на устройство](installation/preparation-install.md)
   * [Настройка гипервизора](installation/specifics-of-hypervisor-settings.md)
   * [Подготовка загрузочного диска](installation/usb.md)
@@ -26,7 +26,6 @@
   * [Учетные записи](settings/users/user-tree/README.md)
     * [Управление пользователями](settings/users/user-tree/user-management.md)
     * [Настройка пользователей](settings/users/user-tree/customization-of-users.md)
-    * [Личный кабинет пользователя](settings/users/user-tree/user-cabinet.md)
   * [Авторизация пользователей](settings/users/authorization/README.md)
     * [Веб-аутентификация](settings/users/authorization/web-authorization.md)
     * [IP и MAC авторизация](settings/users/authorization/ip-and-mac-authorization/README.md)
@@ -34,6 +33,7 @@
       * [Авторизация по MAC-адресу](settings/users/authorization/ip-and-mac-authorization/mac-authorization.md)
     * [Авторизация по подсетям](settings/users/authorization/authorization-by-subnet.md)
     * [Авторизация пользователей терминальных серверов](settings/users/authorization/terminal-server.md)
+  * [Личный кабинет пользователя](/settings/users/user-personal-acсount.md)
   * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
     * [Двухфакторная аутентификация](settings/users/two-factor-authentication.md)
     * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
