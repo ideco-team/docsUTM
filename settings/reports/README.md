@@ -12,6 +12,10 @@
 [logs.md](logs.md)
 {% endcontent-ref %}
 
+{% content-ref url="web-logs.md" %}
+[web-logs.md](web-logs.md)
+{% endcontent-ref %}
+
 {% content-ref url="security-events.md" %}
 [security-events.md](security-events.md)
 {% endcontent-ref %}

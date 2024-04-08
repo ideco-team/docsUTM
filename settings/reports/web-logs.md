@@ -1,11 +1,12 @@
 # Журнал веб-доступа
+
 Раздел позволяет посмотреть результат обработки пользовательского запроса службой **Контент-фильтра**. Для просмотра **Журнала веб-доступа** перейдите в раздел **Отчеты и Журналы -> Журнал веб-доступа**.
 
 Результаты обработки службы:
-* ![](../../.gitbook/assets/icon-yes.png) - **Разрешено**
-* ![](../../.gitbook/assets/icon-unencrypted.png) - **Расшифровано**
-* ![](../../.gitbook/assets/icon-red-cross.png) - **Запрещено**
-* ![](../../.gitbook/assets/icon-translate.png) - **Перенаправлено на**
+* ![](/.gitbook/assets/icon-yes.png) - **Разрешено**
+* ![](/.gitbook/assets/icon-unencrypted.png) - **Расшифровано**
+* ![](/.gitbook/assets/icon-red-cross.png) - **Запрещено**
+* ![](/.gitbook/assets/icon-translate.png) - **Перенаправлено на**
 
 ![](../../.gitbook/assets/web-logs1.png)
 
