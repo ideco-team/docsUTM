@@ -20,11 +20,16 @@ description: >-
 
 Возможна **раздельная авторизация пользователей** терминального сервера (работающего под управлением ОС Windows Server 2008 R2 и Windows Server 2012) с помощью авторизации через [Ideco Client](../../../settings/users/ideco-client.md) или по [SSO (NTLM)](../../../settings/users/active-directory/active-directory-user-authorization.md). При этом сам сервер по IP авторизовать не нужно.
 
-Для раздельной авторизации пользователей терминального сервера на сервере терминалов настройте [**Remote Desktop IP Virtualization**](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-ip-virtualization), а на сервере Ideco NGFW настройте авторизацию пользователей через [Ideco Client](../ideco-client.md) или [веб-аутентификацию (SSO или NTLM)](../active-directory/active-directory-user-authorization.md). Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
+Для раздельной авторизации пользователей терминального сервера: 
 
-<details>
+* На сервере терминалов настройте [**Remote Desktop IP Virtualization**](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-ip-virtualization); 
+* На сервере Ideco NGFW настройте авторизацию пользователей через [Ideco Client](/settings/users/ideco-client.md) или [веб-аутентификацию (SSO или NTLM)](/settings/users/active-directory/active-directory-user-authorization.md). 
 
-<summary>Настройка Remote Desktop IP Virtualization на Windows Server 2012</summary>
+{% hint style="info" %}
+Авторизация пользователей терминального сервера по логам контроллера домена AD пока не реализована.
+{% endhint %}
+
+## Настройка Remote Desktop IP Virtualization на Windows Server 2012
 
 Для работы функции [Remote Desktop IP Virtualization](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-ip-virtualization) на одном из Windows-серверов должна быть добавлена роль DHCP-сервера (с другими DHCP-серверами эта функция может работать некорректно) и выделена область IP-адресов для пользователей терминального сервера.
 
@@ -32,7 +37,7 @@ description: >-
 
 Путь для русскоязычной версии: **Конфигурация компьютера –> Административные шаблоны –> Компоненты Windows -> Служба удаленных рабочих столов –> Узел сеансов удаленных рабочих столов –> Совместимость приложений**. Включить опцию **Turn on Remote Desktop IP Virtualization (Включить IP-виртуализацию удаленных рабочих столов)** в групповой политике с параметром **Per Session (Для сеансов)**:
 
-![](../../../.gitbook/assets/terminal-server.png)
+![](/.gitbook/assets/terminal-server.png)
 
 Рекомендуется также включить опцию **Do not use Remote Desktop Session Host server IP address when virtual IP address is not available (Не использовать IP-адрес сервера узла сеансов удаленных рабочих столов, если виртуальный IP-адрес недоступен)**.
 
@@ -42,8 +47,9 @@ description: >-
 
 `Get-WmiObject -Namespace root\cimv2\TerminalServices -query "select * from Win32_TSVirtualIP"`
 
-Где значения должны быть: `VirtualIPActive = 1` (вкл. виртуализация) и `VirtualIPMode=0` (для сессии).
+Где значения должны быть: 
+
+* `VirtualIPActive = 1` - вкл. виртуализация;
+* `VirtualIPMode=0` - для сессии.
 
 Воспользуйтесь [альтернативным](https://social.technet.microsoft.com/wiki/ru-ru/contents/articles/22770.windows-server-2012-r2-ip.aspx) вариантом установки, если описанный выше вариант не подходит.
-
-</details>
