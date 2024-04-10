@@ -96,6 +96,7 @@
   * [ФСТЭК Ideco UTM 14.Х](changelog/fstek/fstek-ideco-utm-14.x.md)
   * [ФСТЭК Ideco UTM 11.Х](changelog/fstek/fstek-ideco-utm-11.x.md)
 * [Ideco Center](changelog/cc/README.md)
+  * [Версия Ideco Center 16.Х](changelog/cc/version-16.x.md)
   * [Версия Ideco Center 15.Х](changelog/cc/version-15.x.md)
   * [Версия Ideco Center 14.Х](changelog/cc/version-14.x.md)
   * [Версия Ideco Center 13.Х](changelog/cc/version-13.x.md)
