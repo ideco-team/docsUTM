@@ -1,5 +1,9 @@
 # Ideco UTM
 
+{% content-ref url="ideco-ngfw-17.x.md" %}
+[ideco-ngfw-17.x.md](ideco-ngfw-17.x.md)
+{% endcontent-ref %}
+
 {% content-ref url="ideco-ngfw-16.x.md" %}
 [ideco-ngfw-16.x.md](ideco-ngfw-16.x.md)
 {% endcontent-ref %}
