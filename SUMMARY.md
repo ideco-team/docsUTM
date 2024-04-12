@@ -208,8 +208,11 @@
   * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
 
 ## changelog
-
-* [Ideco NGFW](changelog/ideco-utm/README.md)
+* [Ideco NGFW VPP](changelog/vpp/README.md)
+  * [Версия Ideco NGFW VPP 16.X](changelog/vpp/versiya-vpp-ngfw-16.x.md)
+  * [Версия Ideco UTM VPP 15.X](changelog/vpp/versiya-vpp-ngfw-15.x.md)
+* [Ideco UTM](changelog/ideco-utm/README.md)
+  * [Версия Ideco NGFW 17.X](changelog/ideco-utm/ideco-ngfw-17.x.md)
   * [Версия Ideco NGFW 16.X](changelog/ideco-utm/ideco-ngfw-16.x.md)
   * [Версия Ideco UTM 15.X](changelog/ideco-utm/ideco-utm-15.x.md)
   * [Версия Ideco UTM 14.X](changelog/ideco-utm/ideco-utm-14.x.md)
