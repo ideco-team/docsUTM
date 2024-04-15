@@ -7,7 +7,7 @@
 {% hint style="info" %}
 Для работы скрипта выполните все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](active-directory-user-authorization.md).
 
-Для авторизации по SSO используйте [Ideco Client](../ideco-client.md).
+Для авторизации по SSO используйте [Ideco Client](/settings/users/ideco-client/README.md).
 {% endhint %}
 
 ## Разавторизация пользователя

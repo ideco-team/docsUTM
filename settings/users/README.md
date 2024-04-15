@@ -16,8 +16,8 @@
 [authorization/vpn-connection/README.md](authorization/vpn-connection/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="ideco-client.md" %}
-[ideco-client.md](ideco-client.md)
+{% content-ref url="ideco-client/README.md" %}
+[ideco-client/README.md](ideco-client/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="active-directory/README.md" %}
