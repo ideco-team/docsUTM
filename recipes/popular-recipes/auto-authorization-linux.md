@@ -9,7 +9,7 @@ description: >-
 
 1. Перейдите в домашнюю директорию пользователя и включите показ скрытых файлов.
 2. Перейдите в папку `.config` и создайте там каталог `ideco-utm`.
-3. Скачайте корневой сертификат NGFW (подробнее в [статье](../../settings/services/certificates/README.md)) и поместите его в каталог, созданный на предыдущем шаге.
+3. Скачайте корневой сертификат NGFW (подробнее в [статье](/settings/services/certificates/README.md)) и поместите его в каталог, созданный на предыдущем шаге.
 4. Cоздайте в папке `ideco-utm` файл `auth.conf` с логином и паролем пользователя:
 
 ```
@@ -19,7 +19,7 @@ password=пароль_пользователя
 
 5. Cкопируйте скрипт в систему и настройте автозагрузку:
 
-{% file src="../../scripts/auto-web-auth-linux.py";base64,Cg==" name="auto-web-auth-linux.py" %}
+{% file src="/scripts/auto-web-auth-linux.py";base64,Cg==" name="auto-web-auth-linux.py" %}
 
 {% hint style="warning" %}
 Для корректной работы скрипта имя корневого сертификата должно быть `root_ca.crt`.

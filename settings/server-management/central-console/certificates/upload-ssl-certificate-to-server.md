@@ -61,7 +61,7 @@ New-SelfSignedCertificate -DnsName test.ideco.com -TextExtension @("2.5.29.19={t
 
 * `test.ideco.com` - домен.
 
-![](../../../../.gitbook/assets/upload-ssl-certificate-to-server.png)
+![](/.gitbook/assets/upload-ssl-certificate-to-server.png)
 
 Для просмотра сгенерированного сертификата выполните команду `certlm.msc`.
 

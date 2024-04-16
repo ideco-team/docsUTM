@@ -47,13 +47,13 @@
 
 ![](/.gitbook/assets/user-personal-account5.png)
 
-Для публикации личного кабинета пользователя воспользуйтесь [статьей](/settings/users/user-personal-acсount.md).
+Для публикации личного кабинета пользователя воспользуйтесь [статьей](/settings/users/user-personal-acсount.md). 
 
 </details>
 
 После первого входа в веб-интерфейс появится несколько уведомлений, которые подскажут, что для корректной работы Ideco NGFW необходимо настроить подключение к провайдеру и зарегистрировать сервер.
 
-![](../.gitbook/assets/notifications.png)
+![](/.gitbook/assets/notifications.png)
 
 ## Настройка **Ethernet-подключения**
 
@@ -69,9 +69,9 @@
 
 1\. Перейдите в раздел **Сервисы -> Сетевые интерфейс**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
 
-![](../.gitbook/assets/create-interface.png)
+![](/.gitbook/assets/create-interface.png)
 
 {% hint style="danger" %}
 **Будьте внимательны!**
@@ -87,7 +87,7 @@
 * IP-адрес/маска;
 * Шлюз (или установите флаг в строке _Автоматическая конфигурация через DHCP_);
 
-![](../.gitbook/assets/create-int.png)
+![](/.gitbook/assets/create-int.png)
 
 5\. Проверьте правильность введенных данных и нажмите кнопку **Сохранить**.
 
@@ -95,11 +95,11 @@
 
 Если провайдер использует другой тип подключения, ознакомиться с остальными инструкциями по настройке можно по следующим ссылкам:
 
-* [Подключение по протоколу PPPoE](../settings/services/connection-to-provider/pppoe-connection.md);
-* [Подключение по технологии VPN (с использованием протокола PPTP)](../settings/services/connection-to-provider/pptp-connection.md);
-* [Подключение по L2TP](../settings/services/connection-to-provider/l2tp-connection.md);
-* [Подключение Локального Ethernet](../settings/services/connection-to-provider/local-ethernet.md);
-* [Подключение по 3G и 4G](../settings/services/connection-to-provider/3g-4g-connection.md);
-* [Одновременное подключение к нескольким провайдерам](../settings/services/multiple-simultaneous-connections.md).
+* [Подключение по протоколу PPPoE](/settings/services/connection-to-provider/pppoe-connection.md);
+* [Подключение по технологии VPN (с использованием протокола PPTP)](/settings/services/connection-to-provider/pptp-connection.md);
+* [Подключение по L2TP](/settings/services/connection-to-provider/l2tp-connection.md);
+* [Подключение Локального Ethernet](/settings/services/connection-to-provider/local-ethernet.md);
+* [Подключение по 3G и 4G](/settings/services/connection-to-provider/3g-4g-connection.md);
+* [Одновременное подключение к нескольким провайдерам](/settings/services/multiple-simultaneous-connections.md).
 
-После подключения к интернету зарегистрируйте сервер и получите лицензию. Подробнее в статье [Регистрация сервера](../recipes/server-maintenance/server-registration.md).
+После подключения к интернету зарегистрируйте сервер и получите лицензию. Подробнее в статье [Регистрация сервера](/recipes/server-maintenance/server-registration.md).

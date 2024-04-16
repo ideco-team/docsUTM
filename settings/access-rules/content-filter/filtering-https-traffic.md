@@ -23,7 +23,7 @@ description: >-
 
 Пример правила для расшифровки:
 
-![](../../../.gitbook/assets/filtering-https-traffic1.png)
+![](/.gitbook/assets/filtering-https-traffic1.png)
 
 ## Настройка рабочей станции пользователя
 
@@ -31,37 +31,37 @@ description: >-
 
 1\. Скачайте корневой SSL-сертификат, открыв раздел веб-интерфейса Ideco NGFW **Сервисы -> Сертификаты -> Загруженные сертификаты**:
 
-![](../../../.gitbook/assets/filtering-https-traffic2.png)
+![](/.gitbook/assets/filtering-https-traffic2.png)
 
 2\. Откройте на рабочей станции центр управления сертификатами: **Пуск -> Выполнить**, выполнив в диалоге команду **mmc**:
 
-![](../../../.gitbook/assets/filtering-https-traffic3.png)
+![](/.gitbook/assets/filtering-https-traffic3.png)
 
 3\. В меню **Файл** выберите **Добавить или удалить оснастку**:
 
-![](../../../.gitbook/assets/filtering-https-traffic.gif)
+![](/.gitbook/assets/filtering-https-traffic.gif)
 
 4\. В списке **Доступные оснастки** выберите **Сертификаты**, а затем нажмите кнопку **Добавить**:
 
-![](../../../.gitbook/assets/filtering-https-traffic4.png)
+![](/.gitbook/assets/filtering-https-traffic4.png)
 
 5\. В открывшемся окне выберите пункт **Учетная запись компьютера** и нажмите кнопку **Далее**:
 
-![](../../../.gitbook/assets/filtering-https-traffic5.png)
+![](/.gitbook/assets/filtering-https-traffic5.png)
 
 6\. В окне **Выбор компьютера** оставьте флаг **Локальный компьютер** и нажмите кнопку **Готово**.
 
 7\. В левой части окна нажмите на стрелку рядом с директорией **Сертификаты (локальный компьютер) -> Доверенные корневые сертификаты -> Сертификаты**:
 
-![](../../../.gitbook/assets/filtering-https-traffic6.png)
+![](/.gitbook/assets/filtering-https-traffic6.png)
 
 8\. В меню **Действие** выберите **Все задачи -> Импорт**:
 
-![](../../../.gitbook/assets/filtering-https-traffic1.gif)
+![](/.gitbook/assets/filtering-https-traffic1.gif)
 
 9\. Следуя инструкциям Мастера импорта сертификатов, импортируйте корневой сертификат сервера Ideco NGFW. Импортированный сертификат появится в списке в правой части окна:
 
-![](../../../.gitbook/assets/filtering-https-traffic7.png)
+![](/.gitbook/assets/filtering-https-traffic7.png)
 
 ## Добавление сертификата через политики домена Microsoft Active Directory
 
@@ -69,7 +69,7 @@ description: >-
 
 1\. Скачать корневой SSL-сертификат, открыв раздел веб-интерфейса Ideco NGFW **Сервисы -> Сертификаты -> Загруженные сертификаты**:
 
-![](../../../.gitbook/assets/filtering-https-traffic2.png)
+![](/.gitbook/assets/filtering-https-traffic2.png)
 
 2\. Зайдите на контроллер домена с правами администратора.
 
@@ -81,7 +81,7 @@ description: >-
 
 6\. Нажмите правой кнопкой мыши по открывшемуся списку, выберите **Импорт** и импортируйте ключ Ideco NGFW.
 
-![](../../../.gitbook/assets/filtering-https-traffic8.png)
+![](/.gitbook/assets/filtering-https-traffic8.png)
 
 7\.  После перезагрузки рабочих станций или выполнения на них команды `gpupdate /force` сертификат появится в локальных хранилищах сертификатов и будет установлен нужный уровень доверия к нему.
 

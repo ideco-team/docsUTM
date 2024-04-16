@@ -31,12 +31,12 @@
 
 **Новые возможности версии 13**
 
-* Добавлен новый [Ideco Client](../settings/users/ideco-client.md) авторизации и VPN (Wireguard);
-* Добавлена [Двухфакторная аутентификация](../settings/users/two-factor-authentication.md) пользователей по VPN;
-* Добавлена динамическая маршрутизация [BGP](../settings/services/bgp.md);
+* Добавлен новый [Ideco Client](/settings/users/ideco-client.md) авторизации и VPN (Wireguard);
+* Добавлена [Двухфакторная аутентификация](/settings/users/two-factor-authentication.md) пользователей по VPN;
+* Добавлена динамическая маршрутизация [BGP](/settings/services/bgp.md);
 * Новая таблица в настройках модулей фильтрации трафика;
 * Новая отчетность по веб-трафику и трафику приложений (включая конструктор отчетов и полный URL в отчетах);
-* Новые отчеты по [событиям безопасности](../settings/reports/security-events.md) IDS/IPS (дашборды).
+* Новые отчеты по [событиям безопасности](/settings/reports/security-events.md) IDS/IPS (дашборды).
 
 **Исправления и изменения**
 
@@ -137,8 +137,8 @@
 #### Исправления и изменения
 
 * Улучшена стабильность контент-фильтра при большой нагрузке;
-* Добавлена сортировка и фильтры в [Объектах](../settings/access-rules/aliases.md);
-* Исправлено отображение графиков загруженности сервера при подключении из [Центральной Консоли](../settings/server-management/central-console.md);
+* Добавлена сортировка и фильтры в [Объектах](/settings/access-rules/aliases.md);
+* Исправлено отображение графиков загруженности сервера при подключении из [Центральной Консоли](/settings/server-management/central-console.md);
 * Исправлена работа App Store и iTunes при расшифровке HTTPS-трафика.
 
 ## IDECO UTM 13.2 сборка 7 (8.09.2022)

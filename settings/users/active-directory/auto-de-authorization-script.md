@@ -14,13 +14,13 @@
 
 Удобно применять скрипт, когда один компьютер используют разные пользователи. Скрипт можно скачать из веб-интерфейса, нажав кнопку **Скачать скрипт для разавторизации**. В разделе **Пользователи -> Авторизация** установите галку **Веб-аутентификация**:
 
-![](../../../.gitbook/assets/auto-de-authorization-script.gif)
+![](/.gitbook/assets/auto-de-authorization-script.gif)
 
-Для работы скрипта разавторизации пользователя установите сертификат сервера в качестве доверенного корневого центра сертификации на компьютеры пользователей. Можно сделать это локально или через групповые политики домена, как описано в [инструкции](../../access-rules/content-filter/filtering-https-traffic.md#dobavlenie-sertifikata-cherez-politiki-domena-microsoft-active-directory).
+Для работы скрипта разавторизации пользователя установите сертификат сервера в качестве доверенного корневого центра сертификации на компьютеры пользователей. Можно сделать это локально или через групповые политики домена, как описано в [инструкции](/settings/access-rules/content-filter/filtering-https-traffic.md#dobavlenie-sertifikata-cherez-politiki-domena-microsoft-active-directory).
 
 Также необходимо отключить предупреждение о несоответствии адреса сертификата в свойствах Internet Explorer:
 
-![](../../../.gitbook/assets/auto-de-authorization-script1.png)
+![](/.gitbook/assets/auto-de-authorization-script1.png)
 
 {% hint style="info" %}
 Этот параметр также можно установить через GPO, изменив параметр реестра:
@@ -36,17 +36,17 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 2\. Перейдите в **Конфигурации пользователя**, далее в **Конфигурации Windows**:
 
-![](../../../.gitbook/assets/auto-de-authorization-script2.png)
+![](/.gitbook/assets/auto-de-authorization-script2.png)
 
 4\. Нажмите **Сценарии (вход/выход из системы)**;
 
 5\. Откройте **Выход из системы** и перейдите на вкладку **Сценарии PowerShell**:
 
-![](../../../.gitbook/assets/auto-de-authorization-script3.png)
+![](/.gitbook/assets/auto-de-authorization-script3.png)
 
 6\. Нажмите **Добавить** и выберите скачанный файл **UTM_logout.ps1**, нажав на кнопку **Обзор**:
 
-![](../../../.gitbook/assets/auto-de-authorization-script4.png)
+![](/.gitbook/assets/auto-de-authorization-script4.png)
 
 7\. Обновите групповые политики, выполнив команду `gpupdate /force` в консоли.
 
@@ -54,7 +54,7 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация** и авторизация происходит только при ручном переходе по ссылке, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
 
-![](../../../.gitbook/assets/auto-de-authorization-script5.jpg)
+![](/.gitbook/assets/auto-de-authorization-script5.jpg)
 
 Автоматически групповая политика обновляется не сразу после внесения изменений. Чтобы скрипты начали работать, обновите политику вручную командой `gpupdate /force` на рабочей станции.
 {% endhint %}

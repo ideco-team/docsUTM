@@ -7,11 +7,11 @@
 
 * В личном кабинете, введя логин/пароль пользователя:
 
-  <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+  <img align="left" src="/.gitbook/assets/ubuntu16.png" alt="" data-size="original">
     
 * В разделе **Сервисы -> Сертификаты**:
 
-  <img align="left" src="../../../.gitbook/assets/certificates2.png" alt="" data-size="original">
+  <img align="left" src="/.gitbook/assets/certificates2.png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="warning" %}
@@ -22,11 +22,11 @@
 
 1\. Кликните на иконке сетевого подключения в системном трее и в появившемся окне выберите **Параметры сети и интернет**:
 
-<img src="../../../../.gitbook/assets/vpn-windows.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows.png" alt="" data-size="original">
 
 2\. Перейдите в раздел **VPN** и нажмите **Добавить VPN-подключение**:
 
-<img src="../../../../.gitbook/assets/vpn-windows1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows1.png" alt="" data-size="original">
 
 3\. Заполните соответствующие поля и нажмите **Сохранить**:
 
@@ -41,7 +41,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="../../../../.gitbook/assets/vpn-windows2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows2.png" alt="" data-size="original">
 
 При настройке подключения по VPN из сети интернет в свойствах VPN-подключения нужно указать следующие параметры:
 
@@ -67,7 +67,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="../../../../.gitbook/assets/vpn-windows3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows3.png" alt="" data-size="original">
 
 При настройке подключения по VPN из сети интернет в свойствах VPN-подключения нужно указать следующие параметры:
 
@@ -105,7 +105,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="../../../../.gitbook/assets/vpn-windows4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows4.png" alt="" data-size="original">
 
 </details>
 
@@ -120,7 +120,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="../../../../.gitbook/assets/vpn-windows5.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows5.png" alt="" data-size="original">
 
 При настройке подключения по VPN из сети интернет в свойствах VPN-подключения нужно указать следующие параметры:
 
@@ -134,11 +134,11 @@
 
 4\. Активируйте подключение, нажав правой кнопкой мыши по созданному подключению и выбрав **Подключиться**:
 
-<img src="../../../../.gitbook/assets/vpn-windows6.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows6.png" alt="" data-size="original">
 
 5\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -> Изменить**:
 
-<img src="../../../../.gitbook/assets/vpn-windows7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/vpn-windows7.png" alt="" data-size="original">
 
 
 
@@ -159,7 +159,7 @@
 * Нажмите правой кнопкой мыши по параметру с именем **NegotiateDH2048\_AES256** и нажмите **Изменить**;
 * В строке **Значение** укажите значение `1`:
 
-<img src="../../../../.gitbook/assets/windows-vpn.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn.png" alt="" data-size="original">
 
 * Нажмите **OK**;
 * Перезагрузите Windows.
@@ -167,16 +167,16 @@
     Если параметра с именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
-<img src="../../../../.gitbook/assets/windows-vpn2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn2.png" alt="" data-size="original">
 
 * Задайте имя **NegotiateDH2048\_AES256**;
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
-<img src="../../../../.gitbook/assets/windows-vpn3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn3.png" alt="" data-size="original">
 
 * В строке **Значение** укажите значение `1`:
 
-<img src="../../../../.gitbook/assets/windows-vpn4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn4.png" alt="" data-size="original">
 
 * Нажмите **OK**.
 
