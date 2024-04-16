@@ -22,7 +22,7 @@ description: >-
 
 2\. Заполните поля _Имя подсети_, _Логин_ и нажмите **Сохранить**:
 
-![](../../../.gitbook/assets/authorization-by-subnet.png)
+![](/.gitbook/assets/authorization-by-subnet.png)
 
 3\. Перейдите в раздел **Пользователи –> Авторизация –> Авторизация по подсети** и нажмите **Добавить** в левом верхнем углу.
 
@@ -32,7 +32,7 @@ description: >-
 * **Подсеть** - введите IP и маску подсети;
 * **Комментарий** - (необязательное).
 
-![](../../../.gitbook/assets/authorization-by-subnet1.png)
+![](/.gitbook/assets/authorization-by-subnet1.png)
 
 {% hint style="info" %}
 При включении или отключении опции авторизации по подсетям может наблюдаться задержка в работе Ideco NGFW.

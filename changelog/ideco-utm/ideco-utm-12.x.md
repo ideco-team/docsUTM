@@ -33,23 +33,23 @@
 **Новые возможности версии 12**
 
 * Новая платформа на базе ядра Linux 5.15;
-* Добавлена возможность создать правило авторизации только по [MAC-адресу](../../settings/users/authorization/ip-and-mac-authorization/mac-authorization.md);
-* Добавлена [фильтрация баннерной рекламы](../settings/services/nextdns.md) на уровне DNS;
-* Добавлена динамическая маршрутизация на базе [OSPF](../settings/services/ospf.md);
+* Добавлена возможность создать правило авторизации только по [MAC-адресу](/settings/users/authorization/ip-and-mac-authorization/mac-authorization.md);
+* Добавлена [фильтрация баннерной рекламы](/settings/services/nextdns.md) на уровне DNS;
+* Добавлена динамическая маршрутизация на базе [OSPF](/settings/services/ospf.md);
 * Добавлена возможность возврата на прошлую версию после обновления;
-* Добавлено резервирование [IP к MAC](../settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP;
-* Добавлена возможность запускать веб-интерфейс для [Антиспама](../settings/access-rules/antivirus.md);
-* Добавлена возможность отключать созданные правила в [Исключениях прокси](../settings/services/proxy/exclusions.md).
+* Добавлено резервирование [IP к MAC](/settings/services/dhcp.md#nastroika-dhcp-servera-s-privyazkoi-ip-k-mac) в разделе DHCP;
+* Добавлена возможность запускать веб-интерфейс для [Антиспама](/settings/access-rules/antivirus.md);
+* Добавлена возможность отключать созданные правила в [Исключениях прокси](/settings/services/proxy/exclusions.md).
   
 **Исправления и изменения**
 
 * Для клиентов, подключенных к Ideco UTM по IKEv2/IPsec, маршруты передаются автоматически;
-* Правила [Предотвращения вторжений](../settings/access-rules/ips/README.md), [Контроля приложений](../settings/access-rules/application-control.md) и [Ограничение скорости](../settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети;
+* Правила [Предотвращения вторжений](/settings/access-rules/ips/README.md), [Контроля приложений](/settings/access-rules/application-control.md) и [Ограничение скорости](/settings/access-rules/shaper.md) обрабатывают поступающий по VPN трафик из внешней сети;
 * Исходящее подключение IPsec к Mikrotik версии ниже 6.46 по сертификатам работать не будет. При этом подключения, созданные в версии 11.х, продолжат работу;
-* Правила [Предотвращения вторжений](../settings/access-rules/ips/README.md) и [Ограничение скорости](../settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов;
-* Переработан [раздел с сертификатами](../settings/services/certificates/README.md);
-* Переработан и улучшен раздел авторизации пользователей по [IP-адресу/MAC-адресу](../settings/users/authorization/IP-and-MAC-authorization/README.md);
-* Новая версия модуля [Контроль приложений](../settings/access-rules/application-control.md).
+* Правила [Предотвращения вторжений](/settings/access-rules/ips/README.md) и [Ограничение скорости](/settings/access-rules/shaper.md) перестали обрабатывать трафик между локальными сетями и сетями филиалов;
+* Переработан [раздел с сертификатами](/settings/services/certificates/README.md);
+* Переработан и улучшен раздел авторизации пользователей по [IP-адресу/MAC-адресу](/settings/users/authorization/IP-and-MAC-authorization/README.md);
+* Новая версия модуля [Контроль приложений](/settings/access-rules/application-control.md).
 
 
 ## **IDECO UTM 12.11 СБОРКА 1 (20.12.2022)**
@@ -123,7 +123,7 @@
 #### **Исправления и изменения**
  
 
-* [Обнаружение устройств](../settings/users/device-discovery.md) теперь создает авторизацию по MAC для локальных адресов в одном ethernet-сегменте (ранее создавалась авторизация по IP);
+* [Обнаружение устройств](/settings/users/device-discovery.md) теперь создает авторизацию по MAC для локальных адресов в одном ethernet-сегменте (ранее создавалась авторизация по IP);
 * Исправлена раздача адресов по DHCP, если создан пользователь с авторизацией по IP;
 * Исправлено открытие веб-интерфейса в браузере Safari.
 

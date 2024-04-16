@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-Подробнее об установке Ideco NGFW после создания загрузочного диска можно прочитать в статье [Установка](./installation-process.md).
+Подробнее об установке Ideco NGFW после создания загрузочного диска можно прочитать в статье [Установка](/installation-process.md).
 {% endhint %}
 
 Для установки на отдельный сервер нужно подготовить загрузочный USB-диск.
@@ -16,7 +16,7 @@
 
 2. Выберите нужный USB-диск в пункте **Устройство**:
 
-![](../.gitbook/assets/preparation-boot-disk1.png)
+![](/.gitbook/assets/preparation-boot-disk1.png)
 
 3. Выберите метод загрузки **Диск или ISO-образ**.
 
@@ -34,7 +34,7 @@
 
 ### С помощью программы gnome-disks:
 
-![](../.gitbook/assets/gnome-disks3.png)
+![](/.gitbook/assets/gnome-disks3.png)
 
 ### Вручную в терминале:
 

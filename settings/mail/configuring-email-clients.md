@@ -38,15 +38,15 @@ description: Настройка и примеры настроек популя�
 
 Пример настроек клиента Microsoft Outlook 2013 по протоколу IMAP:
 
-<img src="../../.gitbook/assets/outlook2016-1.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/outlook2016-1.jpg" alt="" data-size="original">
 
 Пример настроек клиента Microsoft Outlook 2016 по протоколу IMAP:
 
-<img src="../../.gitbook/assets/outlook2016-2.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/outlook2016-2.jpg" alt="" data-size="original">
 
 Для отображения IMAP-папок снимите галочку **При просмотре дерева в Outlook показывать только подписанные папки** в свойствах IMAP-папок:
 
-<img src="../../.gitbook/assets/imap_outlook1.png" alt="" data-size="original"><img src="../../.gitbook/assets/imap_outlook2 (2) (2) (2) (1).png" alt="" data-size="original">
+<img src="/.gitbook/assets/imap_outlook1.png" alt="" data-size="original"><img src="/.gitbook/assets/imap_outlook2 (2) (2) (2) (1).png" alt="" data-size="original">
 
 </details>
 
@@ -60,25 +60,25 @@ description: Настройка и примеры настроек популя�
 
 2\. После этого зайдите в раздел **Настройки -> Основные**.
 
-<img src="../../.gitbook/assets/iphone004.png" alt="" data-size="original">
+<img src="/.gitbook/assets/iphone004.png" alt="" data-size="original">
 
 3\. Выберите **Об этом устройстве -> Доверие сертификатов**:
 
-<img src="../../.gitbook/assets/iphone005.png" alt="" data-size="original">
+<img src="/.gitbook/assets/iphone005.png" alt="" data-size="original">
 
 4\. Включите настройку **Доверять корневым сертификатам полностью**
 
-<img src="../../.gitbook/assets/iphone006.png" alt="" data-size="original">
+<img src="/.gitbook/assets/iphone006.png" alt="" data-size="original">
 
 После установки сертификата настройте доступ в почтовый ящик:
 
 1\. Перейдите в Учетную запись почты и нажмите **Дополнительно**:
 
-<img src="../../.gitbook/assets/iphone003.png" alt="" data-size="original">
+<img src="/.gitbook/assets/iphone003.png" alt="" data-size="original">
 
 2\. Скорректируйте настройки:
 
-<img src="../../.gitbook/assets/iphone002.png" alt="" data-size="original"><img src="../../.gitbook/assets/iphone001.png" alt="" data-size="original">
+<img src="/.gitbook/assets/iphone002.png" alt="" data-size="original"><img src="/.gitbook/assets/iphone001.png" alt="" data-size="original">
 
 </details>
 
@@ -98,6 +98,6 @@ description: Настройка и примеры настроек популя�
 
 При необходимости заполните _Параметры сервера_ и _Хранилище сообщений_.
 
-<img src="../../.gitbook/assets/thunderbird.png" alt="" data-size="original">
+<img src="/.gitbook/assets/thunderbird.png" alt="" data-size="original">
 
 </details>

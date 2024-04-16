@@ -9,11 +9,11 @@
   
 Если при переходе в раздел IPsec и выполнении команды возникли ошибки, то перейдите к пункту 3.
 
-3\) Пересоздайте соединение из веб-интерфейса по инструкции [Настройка подключения между Филиалом и Главным офисом](../../settings/services/ipsec/branch-office-and-main-office.md#nastroika-podklyucheniya-mezhdu-filialom-i-glavnym-ofisom).  
+3\) Пересоздайте соединение из веб-интерфейса по инструкции [Настройка подключения между Филиалом и Главным офисом](/settings/services/ipsec/branch-office-and-main-office.md#nastroika-podklyucheniya-mezhdu-filialom-i-glavnym-ofisom).  
 
 Если пересоздание соединения не помогло, перейдите к пункту 4.
 
 4\) Проверьте, ходит ли трафик по портам 500 и 4500, выполнив команды `tcpdump -i any port 4500 -ttttnnn` и `tcpdump -i any port 500 -ttttnnn` в головном офисе и филиале.
 
-Если трафик уходит с одного NGFW и приходит на второй NGFW, то обратитесь в [техническую поддержку](../../general/technical-support.md). \
+Если трафик уходит с одного NGFW и приходит на второй NGFW, то обратитесь в [техническую поддержку](/general/technical-support.md). \
 Если трафик уходит с одного NGFW и не приходит на второй NGFW, обратитесь к провайдеру.

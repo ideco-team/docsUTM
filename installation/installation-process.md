@@ -38,7 +38,7 @@
 
 Для входа в веб-интерфейс Ideco NGFW нужно создать учетную запись администратора с соблюдением требований к паролю:
 
-![](../.gitbook/assets/installation-process4.png)
+![](/.gitbook/assets/installation-process4.png)
 
 <details>
 <summary>Требования к паролю</summary>
