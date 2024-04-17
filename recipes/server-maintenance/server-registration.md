@@ -14,11 +14,11 @@
 
 1\. Перейдите в веб-интерфейс Ideco NGFW в раздел **Управление сервером -> Лицензия** и нажмите **Зарегистрировать**:
 
-![](../../.gitbook/assets/initial-setup10.png)
+![](/.gitbook/assets/initial-setup10.png)
 
 2\. В открывшемся окне перейдите по ссылке **Зарегистрировать новый сервер**, выберите компанию и нажмите **Добавить**. После добавления нажмите **Обновить информацию о лицензии** для проверки состояния лицензии:
 
-![](../../.gitbook/assets/initial-setup11.gif)
+![](/.gitbook/assets/initial-setup11.gif)
 
 ## Оффлайн регистрация
 
@@ -37,11 +37,11 @@
 
 Если была выбрана лицензия, не подходящая для оффлайн регистрации сервера, то появится ошибка:
 
-![](../../.gitbook/assets/initial-setup13.png)
+![](/.gitbook/assets/initial-setup13.png)
 
 5\. Перейдите в раздел **NGFW -> Оффлайн** и введите в соответствующие поля цифрами мажорный номер версии и номер лицензии:
 
-![](../../.gitbook/assets/initial-setup12.png)
+![](/.gitbook/assets/initial-setup12.png)
 
 6\. Нажмите **Получить ссылки** и сохраните файлы конфигураций, нажав на появившиеся ссылки:
 * `license.json` - информация о лицензии;
@@ -58,10 +58,10 @@
 
 8\. Сохраните скрипты запуска обновления баз модулей безопасности в папку с файлами, скачанными на шаге 6:
 
-{% file src="../../scripts/content_filter.py";base64,Cg==" name="content_filter.py" %}
-{% file src="../../scripts/geoip.py";base64,Cg==" name="geoip.py" %}
-{% file src="../../scripts/iplist.py";base64,Cg==" name="iplist.py" %}
-{% file src="../../scripts/suricata.py";base64,Cg==" name="suricata.py" %}
+{% file src="/scripts/content_filter.py";base64,Cg==" name="content_filter.py" %}
+{% file src="/scripts/geoip.py";base64,Cg==" name="geoip.py" %}
+{% file src="/scripts/iplist.py";base64,Cg==" name="iplist.py" %}
+{% file src="/scripts/suricata.py";base64,Cg==" name="suricata.py" %}
 
 9\. Обновите базы модулей безопасности:
 

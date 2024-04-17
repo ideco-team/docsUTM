@@ -1,6 +1,6 @@
 # Управление сервером
 
-В центральной консоли (далее Ideco Center) разделы [Автоматическое обновление](../server-update.md), [Резервное копирование](../backup.md) и [Терминал](../terminal.md) аналогичны этим разделам в Ideco NGFW. 
+В центральной консоли (далее Ideco Center) разделы [Автоматическое обновление](/settings/server-management/server-update.md), [Резервное копирование](/settings/server-management/backup.md) и [Терминал](/settings/server-management/terminal.md) аналогичны этим разделам в Ideco NGFW. 
 
 ## Администраторы
 
@@ -13,13 +13,13 @@
 {% endhint %}
  
 Есть два способа подключения к веб-интерфейсу Ideco NGFW из Ideco Center, которые находятся в Ideco Center:
-* Из раздела [Серверы](README.md) (по нажатию на ![](../../../.gitbook/assets/icon-eye.png) ):
+* Из раздела [Серверы](README.md) (по нажатию на ![](/.gitbook/assets/icon-eye.png) ):
   
-    ![](../../../.gitbook/assets/central-console2.gif)
+    ![](/.gitbook/assets/central-console2.gif)
 
 * При нажатии на стрелку в левом верхнем углу и выборе нужного NGFW:
     
-    ![](../../../.gitbook/assets/server-management.gif)
+    ![](/.gitbook/assets/server-management.gif)
  
 Войти в подключенный Ideco NGFW с логином и паролем администратора Ideco Center не возможно.
   

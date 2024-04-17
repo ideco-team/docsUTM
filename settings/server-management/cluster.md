@@ -72,29 +72,29 @@ description: >-
 
 1\. При входе в локальное меню резервной ноды увидите следующее сообщение:
 
-<img src="../../.gitbook/assets/cluster8.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster8.png" alt="" data-size="original">
 
 2\. Введите **y** и нажмите **Enter**;
 
 3\. Выберите сетевую карту:
 
-<img src="../../.gitbook/assets/cluster9.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster9.png" alt="" data-size="original">
 
 4\. Подтвердите создание кластера, введя **y** и нажав **Enter**:
 
-<img src="../../.gitbook/assets/cluster10.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster10.png" alt="" data-size="original">
 
 5\. NGFW предложит изменить название сервера. При положительном  ответите на вопрос _Изменить название сервера?_, появится надпись с предложением ввести новое название сервера.\
 Минимальное количество символов в названии - 2.\
 Максимальное количество символов в названии - 62.
 
-<img src="../../.gitbook/assets/cluster11.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster11.png" alt="" data-size="original">
 
 После ввода нового названия нажмите **Enter** для продолжения диалога.
 
 6\. Появится сообщение, что процесс создания кластера запущен:
 
-<img src="../../.gitbook/assets/cluster12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster12.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -108,26 +108,26 @@ description: >-
 
 2\. Выберите пункт **Управление кластером**. Подтвердите создание кластера, введя **y** и нажав **Enter**:
 
-![](../../.gitbook/assets/cluster4.png)
+![](/.gitbook/assets/cluster4.png)
 
 Если на ноде нет свободных сетевых карт, создание кластера будет недоступно.\
 Если кластер на ноде уже настроен, при выборе пункта *Управление кластером* будет доступно только его разрушение.
 
 3\. Выберите свободную физическую сетевую карту для создания кластерной сети и подтвердите выбор:
 
-<img src="../../.gitbook/assets/cluster5.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster5.png" alt="" data-size="original">
 
 4\. NGFW предложит изменить название сервера. При положительном ответите на вопрос _"Изменить название сервера?"_ появится надпись с предложением ввести новое название сервера.\
 Минимальное количество символов в названии - 2.\
 Максимальное количество символов в названии - 42.
 
-<img src="../../.gitbook/assets/cluster7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster7.png" alt="" data-size="original">
 
 После ввода нового названия нажмите **Enter** для продолжения диалога.
 
 5\. Появится сообщение, что процесс создания кластера запущен.
 
-<img src="../../.gitbook/assets/cluster12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster12.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -141,19 +141,19 @@ description: >-
 
 2\. Подтвердите, что топология сети соответствует схеме ниже:
 
-![](../../.gitbook/assets/cluster-topology.png)
+![](/.gitbook/assets/cluster-topology.png)
 
 3\. Выберите сетевую карту для соединения между нодами:
 
-![](../../.gitbook/assets/cluster1.png)
+![](/.gitbook/assets/cluster1.png)
 
 4\. Сопоставьте сетевые карты. Для этого выберите в каждом столбце по одной сетевой карте и нажмите **Сопоставить**:
 
-![](../../.gitbook/assets/cluster3.png)
+![](/.gitbook/assets/cluster3.png)
 
 5\. После применения настроек резервная нода перезагрузится, и в веб-интерфейсе активной ноды отобразится информация о том, что связь с сервером установлена.
 
-![](../../.gitbook/assets/cluster-done.png)
+![](/.gitbook/assets/cluster-done.png)
 
 {% hint style="warning" %}
 Локальное меню резервной ноды недоступно в NGFW, начиная с версии 16.0.
@@ -164,10 +164,10 @@ description: >-
 Изменить название сервера можно у той ноды, которая в данный момент является активной. Сделать это можно из локального меню или из веб-интерфейса. 
 
 * В локальном меню выберите соответствующий пункт и введите новое название:\
-  ![](../../.gitbook/assets/cluster14.png)
+  ![](/.gitbook/assets/cluster14.png)
 
 * В веб-интерфейсе поменять название можно, нажав кнопку **Редактировать** рядом с названием сервера в левом верхнем углу экрана:\
-  ![](../../.gitbook/assets/cluster15.png)
+  ![](/.gitbook/assets/cluster15.png)
 
 ## Разрушение кластера
 
@@ -179,7 +179,7 @@ description: >-
 
 1\. Выберите пункт локального меню **Управление кластером**, введите **y** и нажмите **Enter**;
 
-![](../../.gitbook/assets/cluster13.png)
+![](/.gitbook/assets/cluster13.png)
 
 2\. Подтвердите выбор.
 
@@ -193,11 +193,11 @@ description: >-
 
 2\. Появится окно с предупреждением:
 
-<img src="../../.gitbook/assets/cluster-warning.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster-warning.png" alt="" data-size="original">
 
 3\. Нажмите **ОК**:
 
-<img src="../../.gitbook/assets/cluster-kill.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster-kill.png" alt="" data-size="original">
 
 </details>
 

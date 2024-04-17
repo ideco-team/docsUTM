@@ -26,11 +26,11 @@
 
 2\. В трее (в настройках сети) выберите **Соединение VPN -> Добавить VPN-соединение**:
 
-![](../../../.gitbook/assets/tray.png)
+![](/.gitbook/assets/tray.png)
 
 3\. Выберите тип соединения **Layer 2 Tunneling Protocol (L2TP)** и нажмите **Создать**:
 
-![](../../../.gitbook/assets/tray2.png)
+![](/.gitbook/assets/tray2.png)
 
 4\. В разделе **VPN** заполните поля:
 
@@ -38,7 +38,7 @@
 * **Имя пользователя** - например, *test*;
 * **Пароль** .
   
-![](../../../.gitbook/assets/tray3.png)
+![](/.gitbook/assets/tray3.png)
 
 5\. Нажмите **Настройки IPsec**.
 
@@ -56,7 +56,7 @@
 
 Далее в трее (в настройках сети) **Соединение VPN** появится VPN-подключение. Для активации установите галку **VPN-соединение**:
 
-![](../../../.gitbook/assets/tray6.png)
+![](/.gitbook/assets/tray6.png)
 
 </details>
 
@@ -68,11 +68,11 @@
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+    <img align="left" src="/.gitbook/assets/ubuntu16.png" alt="" data-size="original">
     
 *   В разделе **Сервисы -> Сертификаты**:
 
-    <img align="left" src="../../../.gitbook/assets/certificates3.png" alt="" data-size="original">
+    <img align="left" src="/.gitbook/assets/certificates3.png" alt="" data-size="original">
 
 **Создание подключения в Astra Linux**
 
@@ -87,11 +87,11 @@
 
 3\. В трее (в настройках сети) выберите **Соединение VPN -> Добавить VPN-соединение**:
 
-![](../../../.gitbook/assets/tray.png)
+![](/.gitbook/assets/tray.png)
 
 4\. Выберите тип соединения **IPsec/IKEv2(strongswan)** и нажмите **Создать**:
 
-![](../../../.gitbook/assets/tray7.png)
+![](/.gitbook/assets/tray7.png)
 
 5\. В разделе **VPN** и заполните следующие поля:
 
@@ -104,7 +104,7 @@
 
 Установите флаг **Request an inner IP address** и нажмите **Добавить:**
 
-![](../../../.gitbook/assets/tray8.png)
+![](/.gitbook/assets/tray8.png)
 
 6\. В трее (в настройках сети) выберите **Соединение VPN** и установите флаг в строке с созданным соединением.
 

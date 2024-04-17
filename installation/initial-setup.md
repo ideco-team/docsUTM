@@ -15,7 +15,7 @@
    **Пример:** `192.168.100.2:8443`
 3. Браузер выдаст предупреждение о том, что сертификат безопасности не был выпущен доверенным центром сертификации. Продолжите соединение, нажав на соответствующую кнопку в нижней части окна:
 
-![](../.gitbook/assets/browser-chrome.gif)
+![](/.gitbook/assets/browser-chrome.gif)
 
 4. Введите логин и пароль от учетной записи, созданной при установке NGFW.
 
@@ -23,21 +23,21 @@
 
 Для устранения предупреждения в браузере при входе в веб-интерфейс нужно импортировать корневой сертификат NGFW или добавить сертификат в **доверенные корневые центры сертификации** устройства.
 
-* В разделе **Сервисы->Сертификаты -> Загруженные сертификаты** нажмите на кнопку ![](../.gitbook/assets/icon-download.png):
+* В разделе **Сервисы->Сертификаты -> Загруженные сертификаты** нажмите на кнопку ![](/.gitbook/assets/icon-download.png):
 
-![](../.gitbook/assets/initial-setup1.png)
+![](/.gitbook/assets/initial-setup1.png)
 
 * В разделе **Правила трафика -> Контент-фильтр -> Настройки**:
 
-![](../.gitbook/assets/initial-setup2.png)
+![](/.gitbook/assets/initial-setup2.png)
 
 * Зайдите в личный кабинет Ideco NGFW под учетной записью одного из имеющихся пользователей:
 
-![](../.gitbook/assets/initial-setup3.png)
+![](/.gitbook/assets/initial-setup3.png)
 
 После первого входа в веб-интерфейс появится несколько уведомлений, которые подскажут, что для корректной работы Ideco NGFW необходимо настроить подключение к провайдеру и зарегистрировать сервер.
 
-![](../.gitbook/assets/notifications.png)
+![](/.gitbook/assets/notifications.png)
 
 ## Настройка **Ethernet-подключения**
 
@@ -53,9 +53,9 @@
 
 1. Перейдите в раздел **Сервисы -> Сетевые интерфейс**.
 
-2. Нажмите на иконку ![ok\_with\_icon.png](../.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+2. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
 
-![](../.gitbook/assets/create-interface.png)
+![](/.gitbook/assets/create-interface.png)
 
 {% hint style="danger" %}
 **Будьте внимательны!**
@@ -71,7 +71,7 @@
 * IP-адрес/маска;
 * Шлюз (или установите флаг в строке _Автоматическая конфигурация через DHCP_);
 
-![](../.gitbook/assets/create-int.png)
+![](/.gitbook/assets/create-int.png)
 
 3. Проверьте правильность введенных данных и нажмите кнопку **Сохранить**.
 
@@ -79,11 +79,11 @@
 
 Если провайдер использует другой тип подключения, ознакомиться с остальными инструкциями по настройке можно по следующим ссылкам:
 
-* [Подключение по протоколу PPPoE](../settings/services/connection-to-provider/pppoe-connection.md);
-* [Подключение по технологии VPN (с использованием протокола PPTP)](../settings/services/connection-to-provider/pptp-connection.md);
-* [Подключение по L2TP](../settings/services/connection-to-provider/l2tp-connection.md);
-* [Подключение Локального Ethernet](../settings/services/connection-to-provider/local-ethernet.md);
-* [Подключение по 3G и 4G](../settings/services/connection-to-provider/3g-4g-connection.md);
-* [Одновременное подключение к нескольким провайдерам](../settings/services/multiple-simultaneous-connections.md).
+* [Подключение по протоколу PPPoE](/settings/services/connection-to-provider/pppoe-connection.md);
+* [Подключение по технологии VPN (с использованием протокола PPTP)](/settings/services/connection-to-provider/pptp-connection.md);
+* [Подключение по L2TP](/settings/services/connection-to-provider/l2tp-connection.md);
+* [Подключение Локального Ethernet](/settings/services/connection-to-provider/local-ethernet.md);
+* [Подключение по 3G и 4G](/settings/services/connection-to-provider/3g-4g-connection.md);
+* [Одновременное подключение к нескольким провайдерам](/settings/services/multiple-simultaneous-connections.md).
 
-После подключения к интернету зарегистрируйте сервер и получите лицензию. Подробнее в статье [Регистрация сервера](../recipes/server-maintenance/server-registration.md).
+После подключения к интернету зарегистрируйте сервер и получите лицензию. Подробнее в статье [Регистрация сервера](/recipes/server-maintenance/server-registration.md).

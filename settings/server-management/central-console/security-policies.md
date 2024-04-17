@@ -9,7 +9,7 @@
 Пример добавления правил через Ideco Center.\
 _Слева интерфейс Ideco NGFW, справа интерфейс Ideco Сenter_:
 
-![](../../../.gitbook/assets/policies-and-objects.gif)
+![](/.gitbook/assets/policies-and-objects.gif)
 
 {% tabs %}
 {% tab title="В Ideco Center" %}
@@ -17,15 +17,15 @@ _Слева интерфейс Ideco NGFW, справа интерфейс Ideco
 
 **Пример незаполненной таблицы:**
 
-![](../../../.gitbook/assets/policies-and-objects2.png)
+![](/.gitbook/assets/policies-and-objects2.png)
 
 **Пример заполненной таблицы:**
 
-![](../../../.gitbook/assets/policies-and-objects1.png)
+![](/.gitbook/assets/policies-and-objects1.png)
 
 {% hint style="success" %}
 **Локальные правила на серверах Ideco NGFW** не видны в интерфейсе Ideco Center. \
-Для просмотра перейдите в раздел **Серверы**, нажмите на ![](../../../.gitbook/assets/icon-eye.png) в строке с нужным Ideco NGFW и перейдите в раздел **Файрвол**.
+Для просмотра перейдите в раздел **Серверы**, нажмите на ![](/.gitbook/assets/icon-eye.png) в строке с нужным Ideco NGFW и перейдите в раздел **Файрвол**.
 {% endhint %}
 
 Чтобы созданное правило попало в таблицу **Начальные правила**, укажите в строке **Вид правила** значение **Начальный**. Если правило требуется разместить в таблице **Конечные правила**, выберите значение **Конечный**.
@@ -38,7 +38,7 @@ _Слева интерфейс Ideco NGFW, справа интерфейс Ideco
 {% tab title="В Ideco NGFW" %}
 Таблица в Ideco NGFW визуально делится на три части: верхняя, средняя и нижняя.
 
-![](../../../.gitbook/assets/policies-and-objects.png)
+![](/.gitbook/assets/policies-and-objects.png)
 
 В верхнюю и нижнюю часть переносятся правила из подключенного Ideco Center. Управление этими правилами в Ideco NGFW невозможно. _Верхняя_ часть соответствует таблице **Начальные правила** в Ideco Center. _Нижняя_ часть - таблице **Конечные правила**.
 

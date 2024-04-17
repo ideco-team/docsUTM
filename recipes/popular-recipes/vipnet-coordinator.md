@@ -4,7 +4,7 @@ ViPNet-координатор используется для шифровани
 
 Схема совместной работы Ideco NGFW с ViPNet-координатором:
 
-![](../../.gitbook/assets/vipnet-coordinator1.png)
+![](/.gitbook/assets/vipnet-coordinator1.png)
 
 ## Настройка Ideco NGFW и ViPNet-координатора
 

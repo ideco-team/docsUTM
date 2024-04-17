@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Active Directory/Samba DC**: `ideco-ad-backend`; `ideco-ad-log-collector@<имя домена>`. \
-Список служб для других разделов доступен по [ссылке](../../server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 При интеграции импортируются учетные записи и номера телефонов пользователей, исключая пароли. При аутентификации пользователей проверка осуществляется средствами Active Directory или Samba DC соответственно.
@@ -40,19 +40,19 @@ description: >-
 
 Импортированные из AD/Samba группы безопасности и учетные записи можно использовать в качестве объектов правил фильтрации в следующий разделах:
 
-* [X] [Файрвол](../../access-rules/firewall.md);
-* [X] [Контроль приложений](../../access-rules/application-control.md);
-* [X] [Ограничение скорости](../../access-rules/shaper.md);
-* [X] [Контент-фильтр](../../access-rules/content-filter/).
+* [X] [Файрвол](/settings/access-rules/firewall.md);
+* [X] [Контроль приложений](/settings/access-rules/application-control.md);
+* [X] [Ограничение скорости](/settings/access-rules/shaper.md);
+* [X] [Контент-фильтр](/settings/access-rules/content-filter/).
 
 Пример настройки фильтрации при импорте из AD:
 
 1\. Импортируйте из AD учетные записи или группы безопасности в разделе **Пользователи -> Учетные записи** (подробнее в статье [Импорт пользователей](user-import.md)). В этом примере импортируется группа безопасности AD **Пользователи домена**:
 
-![](../../../.gitbook/assets/add-users-ad1.png)
+![](/.gitbook/assets/add-users-ad1.png)
 
 2\. Перейдите в раздел, в котором требуется использовать импортированную из AD группу или учетную запись. Например, в _Контроль приложений_:
 
-![](../../../.gitbook/assets/add-users-ad2.png)
+![](/.gitbook/assets/add-users-ad2.png)
 
 3\. Заполните требуемые поля и нажмите **Сохранить**.

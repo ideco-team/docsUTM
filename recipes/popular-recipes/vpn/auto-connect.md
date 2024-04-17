@@ -140,11 +140,11 @@ Add-VpnConnection `
 
 *   В личном кабинете, введя логин/пароль пользователя:
 
-    <img align="left" src="../../../.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+    <img align="left" src="/.gitbook/assets/ubuntu16.png" alt="" data-size="original">
     
 *   В разделе **Сервисы -> Сертификаты**:
 
-    <img align="left" src="../../../.gitbook/assets/certificates3.png" alt="" data-size="original">
+    <img align="left" src="/.gitbook/assets/certificates3.png" alt="" data-size="original">
 
 Корневой сертификат потребуется для настройки подключения рабочей станции пользователя, если не был получен корневой сертификат через Let\`s Encrypt. \
 Если для VPN-подключения используется сертификат, выданный Let\`s Encrypt, установка корневого сертификата на устройство не требуется.
@@ -217,7 +217,7 @@ Add-VpnConnection `
 * Нажмите правой кнопкой мыши по параметру с именем **NegotiateDH2048\_AES256** и нажмите **Изменить**;
 * В строке **Значение** укажите значение `1`:
 
-<img src="../../../.gitbook/assets/windows-vpn.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn.png" alt="" data-size="original">
 
 * Нажмите **OK**;
 * Перезагрузите Windows;
@@ -225,16 +225,16 @@ Add-VpnConnection `
     Если параметра с именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
-<img src="../../../.gitbook/assets/windows-vpn2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn2.png" alt="" data-size="original">
 
 * Задайте имя **NegotiateDH2048\_AES256**;
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
-<img src="../../../.gitbook/assets/windows-vpn3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn3.png" alt="" data-size="original">
 
 * В строке **Значение** укажите значение `1`:
 
-<img src="../../../.gitbook/assets/windows-vpn4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/windows-vpn4.png" alt="" data-size="original">
 
 * Нажмите **OK**.
 

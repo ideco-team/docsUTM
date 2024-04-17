@@ -8,7 +8,7 @@ description: >-
 
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
-![](../../../../.gitbook/assets/connect-utm-to-cisco-via-ipsec1.png)
+![](/.gitbook/assets/connect-utm-to-cisco-via-ipsec1.png)
 
 Для настройки подключения Cisco IOS к Ideco NGFW нужно следовать инструкции в каждом из пунктов.
 
@@ -18,7 +18,7 @@ description: >-
 
 ### Настройка Ideco NGFW
 
-Настройте на Ideco NGFW локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](../../../../installation/initial-setup.md).
+Настройте на Ideco NGFW локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](/installation/initial-setup.md).
 
 ### Настройка Cisco IOS EX
 

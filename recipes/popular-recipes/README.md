@@ -2,20 +2,20 @@
 
 ## Как заблокировать чат-боты?
 
-Заблокировать чат-боты можно, создав правило в Контент-фильтре. О том, как это сделать, написано в статье [Блокировка чат-ботов](./../popular-recipes/block-chat-bot.md).
+Заблокировать чат-боты можно, создав правило в Контент-фильтре. О том, как это сделать, написано в статье [Блокировка чат-ботов](/recipes/popular-recipes/block-chat-bot.md).
 
 ## Как настроить совместную работу ViPNet-Координатора c Ideco NGFW ?
 
-Процесс настройки подробно описан в [статье](./vipnet-coordinator.md).
+Процесс настройки подробно описан в [статье](/recipes/popular-recipes/vipnet-coordinator.md).
 
 ## Как настроить автоматическую аутентификацию на Linux через веб-интерфейс ?
 
-Процесс настройки подробно описан в статье [Настройка автоматической аутентификации на NGFW на Linux](./auto-authorization-linux.md). Данный скрипт подходит для всех Linux-систем c Python 3.5 и выше.
+Процесс настройки подробно описан в статье [Настройка автоматической аутентификации на NGFW на Linux](/recipes/popular-recipes/auto-authorization-linux.md). Данный скрипт подходит для всех Linux-систем c Python 3.5 и выше.
 
 ## Есть ли возможность добавлять сигнатуры IPS?
 
 Да, добавьте сигнатуру вручную в файл `/var/opt/ideco/suricata-backend/custom.rules`. Важно: sid правила не должен совпадать с существующими. \
-Подробнее о добавлении в статье [Как исключить узел из обработки системой IDS/IPS через терминал](../../settings/access-rules/ips/README.md#kak-isklyuchit-uzel-iz-obrabotki-sistemoi-ids-ips-cherez-terminal).
+Подробнее о добавлении в статье [Как исключить узел из обработки системой IDS/IPS через терминал](/settings/access-rules/ips/README.md#kak-isklyuchit-uzel-iz-obrabotki-sistemoi-ids-ips-cherez-terminal).
 
 ## Как настроить кластеризацию Active/Active?
 

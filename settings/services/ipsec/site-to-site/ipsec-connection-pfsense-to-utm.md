@@ -25,7 +25,7 @@ description: >-
 * **Домашние локальные сети** - укажите локальную сеть Ideco NGFW, которая будет видна из подсети pfSense;
 * **Удаленные локальные сети** - укажите локальную сеть pfSense, которая будет видна из подсети Ideco NGFW.
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm4.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm4.png)
 
 3\. Сохраните созданное подключение, нажмите на кнопку **Включить**.
 4\. Скопируйте значение идентификатора удаленной стороны одним из способов:
@@ -36,7 +36,7 @@ description: >-
 
 Во вкладке **Сервисы -> IPsec -> Входящие подключения** в строке **Идентификатор удаленной стороны**.
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm5.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm5.png)
 
 </details>
 
@@ -46,7 +46,7 @@ description: >-
 
 На Ideco NGFW в папке `/run/ideco-ipsec-backend/strongswan/swanctl/conf.d/` будет сгенерирован конфигурационный файл. Необходимо перейти в консоль и открыть на редактирование файл вида `device_<номер>.conf`. Из этого файла необходимо скопировать значение строки `id`(идентификатор удаленной стороны).
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm1.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm1.png)
 
 </details>
 

@@ -1,6 +1,6 @@
 # Подключение Keenetic по SSTP
 
-Если доступ из центрального офиса в сеть за Keenetic не нужен, то воспользуйтесь статьей [Подключение по SSTP Wi-Fi роутеров Keenetic](../../../../recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md) по client-to-site подключению.
+Если доступ из центрального офиса в сеть за Keenetic не нужен, то воспользуйтесь статьей [Подключение по SSTP Wi-Fi роутеров Keenetic](/recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md) по client-to-site подключению.
 
 <details>
 
@@ -12,11 +12,11 @@
 
 3. Перейдите в раздел **VPN-подключения -> Доступ по VPN** и создайте правило доступа по VPN для этого пользователя.
 
-![](../../../../.gitbook/assets/keenetic-connection1.png)
+![](/.gitbook/assets/keenetic-connection1.png)
 
 4. Пропишите маршруты в удаленную сеть. Например, если сеть за роутером `192.168.10.0/24`, необходимо добавить следующий маршрут в раздел **Сервисы -> Маршрутизация -> Локальные сети**:
 
-![](../../../../.gitbook/assets/keenetic-connection2.png)
+![](/.gitbook/assets/keenetic-connection2.png)
 
 </details>
 
@@ -50,8 +50,8 @@
 
 На стороне устройства Keenetic используйте следующие настройки протоколов шифрования:
 
-![](../../../../.gitbook/assets/keenetic-connection3.jpg)
+![](/.gitbook/assets/keenetic-connection3.jpg)
 
-![](../../../../.gitbook/assets/keenetic-connection4.jpg)
+![](/.gitbook/assets/keenetic-connection4.jpg)
 
-![](../../../../.gitbook/assets/keenetic-connection5.jpg)
+![](/.gitbook/assets/keenetic-connection5.jpg)
