@@ -39,7 +39,7 @@ description: >-
 
 Список необходимых для заполнения полей зависит от выбранного типа объекта.
 
-![](../../.gitbook/assets/aliases.png)
+![](/.gitbook/assets/aliases.png)
 
 ### Создание групп объектов
 
@@ -58,8 +58,8 @@ description: >-
 
 ### Редактирование объекта
 
-![](../../.gitbook/assets/aliases1.gif)
+![](/.gitbook/assets/aliases1.gif)
 
 ### Удаление объекта
 
-![](../../.gitbook/assets/aliases.gif)
+![](/.gitbook/assets/aliases.gif)

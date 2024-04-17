@@ -14,7 +14,7 @@
 
 2\. Заполните поля **Имя подсети**, **Логин** и нажмите **Сохранить**:
 
-![](../../../.gitbook/assets/authorization-by-subnet.png)
+![](/.gitbook/assets/authorization-by-subnet.png)
 
 3\. Перейдите в раздел **Пользователи –> Авторизация –> Авторизация по подсети** и нажмите **Добавить**.
 
@@ -24,7 +24,7 @@
 * Подсеть - введите IP и маску подсети;
 * Комментарий - (необязательное).
 
-![](../../../.gitbook/assets/authorization-by-subnet1.png)
+![](/.gitbook/assets/authorization-by-subnet1.png)
 
 {% hint style="warning" %}
 **Будьте внимательны при создании правил Авторизации по подсетям**.

@@ -28,7 +28,7 @@
 
 Пример настройки интеграции с AD:
 
-![](../../.gitbook/assets/active-directory1.png)
+![](/.gitbook/assets/active-directory1.png)
 
 {% hint style="info" %}
 Данные учетной записи не сохраняются на сервере Ideco NGFW VPP и используются один раз для присоединения к домену.

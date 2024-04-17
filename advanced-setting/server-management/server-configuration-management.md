@@ -6,11 +6,11 @@ Ideco NGFW VPP использует в работе два типа сетевы
 * Control Plane - интерфейсы администрирования, используемые для настройки NGFW VPP через браузер. Имеет свой выход в Интернет;
 * Data Plane - интерфейсы, используемые для подключения пользователей к NGFW VPP и для подключения NGFW VPP к провайдеру.
 
-![](../../.gitbook/assets/setup.png)
+![](/.gitbook/assets/setup.png)
 
 Для просмотра списка доступных сетевых карт нажмите на кнопку **Сетевые карты**:
 
-![](../../.gitbook/assets/server-configuration-management.gif)
+![](/.gitbook/assets/server-configuration-management.gif)
 
 ## Создание интерфейса
 
@@ -21,7 +21,7 @@ Ideco NGFW VPP использует в работе два типа сетевы
 2\. Укажите сетевую карту: \
 Важно: сетевая карта, подходящая для Data Plane интерфейса имеет название **VPP interface**, а для Control Plane интерфейса название самой сетевой карты, например **VMXNET3 Ethernet Controller**.
 
-![](../../.gitbook/assets/server-configuration-management.png)
+![](/.gitbook/assets/server-configuration-management.png)
 
 3\. Заполните нужные поля:
 * **Название интерфейса** - имя для идентификации интерфейса;
@@ -32,7 +32,7 @@ Ideco NGFW VPP использует в работе два типа сетевы
 * **Шлюз** - IP-адрес шлюза. Шлюз не будет использоваться, если в разделе **Сервисы -> DNS** \
 **-> Внешние DNS-серверы** не создано правило **Использования DNS, выданного подключению**;
   
-![](../../.gitbook/assets/server-configuration-management1.png)
+![](/.gitbook/assets/server-configuration-management1.png)
 
 {% hint style="warning" %}
 Для корректной работы NGFW VPP **не указывайте** шлюз при настройке пользовательских DataPlane интерфейсов. 

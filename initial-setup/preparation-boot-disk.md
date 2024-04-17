@@ -15,7 +15,7 @@
 1. Скачайте программу [Rufus](https://rufus.ie/ru/) и запустите скачанный файл.
 2. Выберите нужный USB диск в пункте **Устройство**:
    
-![](../.gitbook/assets/preparation-boot-disk1.png)
+![](/.gitbook/assets/preparation-boot-disk1.png)
 
 3. Выберите метод загрузки **Диск или ISO-образ**.
 4. Нажмите на кнопку **Выбрать** и откройте скачанный образ Ideco NGFW VPP.
@@ -29,7 +29,7 @@
 
 ### С помощью программы gnome-disks:
   
-![](../.gitbook/assets/preparation-boot-disk2.png)
+![](/.gitbook/assets/preparation-boot-disk2.png)
 
 ### Вручную в терминале:
 

@@ -10,32 +10,32 @@ description: Статья описывает возможности дерева
 
 Пример дерева пользователей:
 
-![](../../.gitbook/assets/user-tree.png)
+![](/.gitbook/assets/user-tree.png)
 
 Цвет пиктограммы пользователя зависит от состояния учетной записи пользователя:
 
-<table><thead><tr><th width="75" align="center">Состояние учетной записи пользователя</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="../../.gitbook/assets/icon-green.svg" alt="icon-green.svg"></td><td>В данный момент времени пользователь прошел процедуру авторизации, и ему был предоставлен доступ в Интернет</td></tr><tr><td align="center"><img src="../../.gitbook/assets/icon-yellow.svg" alt="icon-yellow.svg"></td><td>В <a href="customization-of-users.md">настройках пользователей</a> выбран запрет на авторизацию</td></tr><tr><td align="center"><img src="../../.gitbook/assets/icon-account.svg" alt="icon-account.svg"></td><td>В данный момент времени пользователь не прошел процедуру авторизации, и ему не был предоставлен доступ в Интернет</td></tr></tbody></table>
+<table><thead><tr><th width="75" align="center">Состояние учетной записи пользователя</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="/.gitbook/assets/icon-green.svg" alt="icon-green.svg"></td><td>В данный момент времени пользователь прошел процедуру авторизации, и ему был предоставлен доступ в Интернет</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-yellow.svg" alt="icon-yellow.svg"></td><td>В <a href="customization-of-users.md">настройках пользователей</a> выбран запрет на авторизацию</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-account.svg" alt="icon-account.svg"></td><td>В данный момент времени пользователь не прошел процедуру авторизации, и ему не был предоставлен доступ в Интернет</td></tr></tbody></table>
 
 В дереве пользователей есть соответствующие кнопки, чтобы управлять группами и учетными записями:
 
-<table><thead><tr><th width="204" align="center">Обозначение</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="../../.gitbook/assets/icon-add-user.svg" alt=""></td><td>Создать учетную запись пользователя</td></tr><tr><td align="center"><img src="../../.gitbook/assets/icon-folder.svg" alt=""></td><td>Создать группу</td></tr><tr><td align="center"><img src="../../.gitbook/assets/icon-delete.svg" alt=""></td><td>Удалить учетную запись пользователя или группу</td></tr></tbody></table>
+<table><thead><tr><th width="204" align="center">Обозначение</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="/.gitbook/assets/icon-add-user.svg" alt=""></td><td>Создать учетную запись пользователя</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-folder.svg" alt=""></td><td>Создать группу</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-delete.svg" alt=""></td><td>Удалить учетную запись пользователя или группу</td></tr></tbody></table>
 
 ## Как создать учетную запись пользователя
 
 Создать учетную запись пользователя можно в определенной группе или вне групп:
 
-*   **В определенной группе** - Выберите группу, нажмите кнопку **Создать пользователя** во вкладке **Основное** или ![](../../.gitbook/assets/icon-add-user.svg) рядом с названием группы в дереве:&#x20;
+*   **В определенной группе** - Выберите группу, нажмите кнопку **Создать пользователя** во вкладке **Основное** или ![](/.gitbook/assets/icon-add-user.svg) рядом с названием группы в дереве:&#x20;
 
     <div align="left">
 
-    <figure><img src="../../.gitbook/assets/user-tree.gif" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="/.gitbook/assets/user-tree.gif" alt="" width="375"><figcaption></figcaption></figure>
 
     </div>
-*   **Вне групп** - Выберите группу **Все** в дереве пользователей и нажмите ![](../../.gitbook/assets/icon-add-user.svg):&#x20;
+*   **Вне групп** - Выберите группу **Все** в дереве пользователей и нажмите ![](/.gitbook/assets/icon-add-user.svg):&#x20;
 
     <div align="left">
 
-    <figure><img src="../../.gitbook/assets/user-tree1.gif" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="/.gitbook/assets/user-tree1.gif" alt="" width="375"><figcaption></figcaption></figure>
 
     </div>
 
@@ -69,7 +69,7 @@ description: Статья описывает возможности дерева
 
 Для удаления учетной записи пользователя необходимо навести курсор на пользователя и нажать на соответствующий элемент управления. Также можно выбрать нужного вам пользователя и нажать на кнопку **Удалить** на вкладке **Основное**.
 
-<img src="../../.gitbook/assets/user-tree3.gif" alt="" data-size="original">
+<img src="/.gitbook/assets/user-tree3.gif" alt="" data-size="original">
 
 Удаление группы осуществляется аналогичным образом.
 
@@ -81,7 +81,7 @@ description: Статья описывает возможности дерева
 
 Чтобы переместить учетную запись пользователя в другую группу, выделите этого пользователя и на вкладке **Основное** найдите поле **Находится в группе**. Из выпадающего списка выберите группу, в которую надо переместить пользователя, и нажмите на кнопку **Сохранить**.
 
-<img src="../../.gitbook/assets/user-tree4.gif" alt="" data-size="original">
+<img src="/.gitbook/assets/user-tree4.gif" alt="" data-size="original">
 
 </details>
 
@@ -120,7 +120,7 @@ description: Статья описывает возможности дерева
   * Пользователи -> Авторизации -> IP и MAC авторизация.
 *   **Сессии** - вкладка содержит таблицу с информацией о всех активных сессиях пользователях:
 
-    ![](../../.gitbook/assets/user-tree1.png)
+    ![](/.gitbook/assets/user-tree1.png)
 
     При нажатии на в столбце **Управление**, NGFW разорвет сессию пользователя.\
     Аналогичная таблица расположена в разделе **Мониторинг -> Авторизованные пользователи**.
@@ -139,7 +139,7 @@ description: Статья описывает возможности дерева
 5. При нажатии на поле **LDAP группа** откроется дерево пользователей Active Directory. Выберите из него необходимую группу для импорта (также можно выбрать корневую группу для импорта всего дерева).
 6. Нажмите **Сохранить** (будет произведен импорт пользователей).
 
-![](../../.gitbook/assets/user-tree2.png)
+![](/.gitbook/assets/user-tree2.png)
 
 {% hint style="info" %}
 Пользователи автоматически синхронизируются с Active Directory каждые 15 минут.
@@ -169,7 +169,7 @@ description: Статья описывает возможности дерева
 
 Пример настройки импорта пользователей из групп безопасности:
 
-![](../../.gitbook/assets/user-tree3.png)
+![](/.gitbook/assets/user-tree3.png)
 
 <details>
 
@@ -215,7 +215,7 @@ POST https://адрес_сервера/web/auth/login
 }
 ```
 
-<img src="../../.gitbook/assets/user-tree4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/user-tree4.png" alt="" data-size="original">
 
 5\. Отправьте запрос на включение режима:
 
@@ -231,7 +231,7 @@ PUT /ad_backend/security_group_import_settings
 }
 ```
 
-<img src="../../.gitbook/assets/user-tree5.png" alt="" data-size="original">
+<img src="/.gitbook/assets/user-tree5.png" alt="" data-size="original">
 
 Для выключения режима совместимости в теле запроса вместо `true` укажите `false`.
 

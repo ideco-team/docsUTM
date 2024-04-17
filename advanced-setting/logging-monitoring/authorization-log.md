@@ -10,11 +10,11 @@ description: Для просмотра истории авторизации в 
 
 Раздел **Журнал авторизации** позволяет посмотреть историю авторизации пользователей на NGFW VPP. 
 
-![](../../.gitbook/assets/authorization-log.png)
+![](/.gitbook/assets/authorization-log.png)
 
-Для поиска истории конкретной информации воспользуйтесь фильтром, нажав на ![](../../.gitbook/assets/authorization-log1.png):
+Для поиска истории конкретной информации воспользуйтесь фильтром, нажав на ![](/.gitbook/assets/authorization-log1.png):
 
-![](../../.gitbook/assets/authorization-log2.png)
+![](/.gitbook/assets/authorization-log2.png)
 
 {% hint style="info" %}
 Для открытой сессии каждые 5 минут происходит запись этой сессии в базу и в поле «конец сессии» записывается текущее время.

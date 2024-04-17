@@ -20,12 +20,12 @@
 
 ## Настройка сети на Windows
 
-![](../../.gitbook/assets/setup-client.gif)
+![](/.gitbook/assets/setup-client.gif)
 
 ## Настройка сети на Ubuntu
 
-![](../../.gitbook/assets/setup-client2.gif)
+![](/.gitbook/assets/setup-client2.gif)
 
 ## Настройка сети на Astra Linux
 
-![](../../.gitbook/assets/setup-client1.gif)
+![](/.gitbook/assets/setup-client1.gif)
