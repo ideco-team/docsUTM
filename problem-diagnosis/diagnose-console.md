@@ -5,4 +5,4 @@
 Для проверки скорости сети Control plane интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. \
 Пример вывода команды:
 
-![](../.gitbook/assets/diagnose-console.png)
+![](/.gitbook/assets/diagnose-console.png)

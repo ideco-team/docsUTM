@@ -14,7 +14,7 @@
 Для привязки бота выполните действия:
 
 1. Настройте **Control Plane** интерфейс c выходом в Интернет на Ideco NGFW VPP.
-2. [Привяжите лицензию](../../initial-setup/initial-setup-web.md#registraciya-servera) к серверу.
+2. [Привяжите лицензию](/initial-setup/initial-setup-web.md#registraciya-servera) к серверу.
 3. Выберите удобный способ коммуникации с ботом:
    * Привязка бота к одному пользователю - перейдите к диалогу с ботом [@ideco\_monitor\_bot](https://telegram.im/@ideco_monitor_bot).
    * Привязка бота к группе с пользователями - перейдите в группу и добавьте пользователя Ideco monitoring bot.
@@ -24,7 +24,7 @@
 7. Нажмите на кнопку **Привязать аккаунт**.
 8. Введите код в соответствующее поле и нажмите на кнопку **Привязать**.
 
-![](../../.gitbook/assets/connection-external-services1.png)
+![](/.gitbook/assets/connection-external-services1.png)
 
 
 {% hint style="info" %}
@@ -39,10 +39,10 @@
 <summary>Управления оповещениями</summary>
 
 После привязки бота есть возможность настроить оповещения Ideco Monitoring Bot для каждой беседы:
-1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](../../.gitbook/assets/bot-notification-settings.svg).
+1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](/.gitbook/assets/bot-notification-settings.svg).
 2. Проставьте галочки напротив тех уведомлений, которые хотели бы получать в выбранной беседе.
 
-Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot-notification-shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
+Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](/.gitbook/assets/bot-notification-shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
 </details>
 
 ## Интеграция с Zabbix агент
@@ -58,7 +58,7 @@
    * **Порт для подключения** - выберите 10050 или 10051 порт;
    * **Адрес сервера** - IP-адрес или доменное имя Zabbix-серверов. Для добавления еще одного адреса нажмите на кнопку **Добавить адрес**.
 
-![](../../.gitbook/assets/connection-external-services2.png)
+![](/.gitbook/assets/connection-external-services2.png)
 
 В обоих случаях интеграции Zabbix-сервер должен находиться внутри **Control Plane** сети Ideco NGFW VPP. Подключение мониторинга возможно только к **Control Plane** интерфейсам.
 
@@ -72,7 +72,7 @@
 Для перевода раздела в рабочий режим, переключите ползунок в положение Включен.
 {% endhint %}
 
-![](../../.gitbook/assets/connection-external-services3.gif)
+![](/.gitbook/assets/connection-external-services3.gif)
 
 Данный модуль позволяет осуществлять мониторинг работы Ideco NGFW VPP по протоколу SNMP версий 1/2c и 3. Для этого необходимо настроить имя пользователя, пароль (минимальное количество символов - 8) и ключ шифрования.
 
@@ -84,4 +84,4 @@
 
 Также можно внести IP-адреса и сети в доверенные, чтобы они получили доступ к данным с Ideco NGFW VPP. Поля **Расположение**, **Контактная информация** и **Имя узла** носят информационный характер и являются необязательными.
 
-![](../../.gitbook/assets/connection-external-services4.png)
+![](/.gitbook/assets/connection-external-services4.png)

@@ -8,11 +8,11 @@ description: Профили контент-фильтра используютс
 
 1. Нажмите **Добавить**:
 
-![](../../../.gitbook/assets/content-filter-profiles1.png)
+![](/.gitbook/assets/content-filter-profiles1.png)
 
 2. Укажите название профиля и выберите категории сайтов и действие для соответствующей категории:
 
-![](../../../.gitbook/assets/content-filter-profiles2.png)
+![](/.gitbook/assets/content-filter-profiles2.png)
 
 3. Для добавления профиля нажмите **Сохранить**.
 
@@ -23,6 +23,6 @@ description: Профили контент-фильтра используютс
 {% hint style="info" %}
 Для назначения действия на все категории нажмите на верхнюю опцию в левой колонке и выберите действие, которое будет применяться к этим категориям:
 
-![](../../../.gitbook/assets/content-filter-profiles3.png)
+![](/.gitbook/assets/content-filter-profiles3.png)
 
 {% endhint %}

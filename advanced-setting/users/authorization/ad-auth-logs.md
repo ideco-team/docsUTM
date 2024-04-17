@@ -15,7 +15,7 @@ description: Авторизация – необходимое условие д
 
 Для авторизации через журнал безопасности AD сеть должна соответствовать топологии:
 
-![](../../../.gitbook/assets/ad-auth-logs6.png)
+![](/.gitbook/assets/ad-auth-logs6.png)
 
 ## Настройка клиентских машин
 
@@ -38,7 +38,7 @@ route -p add 192.168.100.0 mask 255.255.255.0 192.168.200.1
 
 Для включения **Авторизации через журнал безопасности Active Directory** перейдите на вкладку **Пользователи -> Авторизация -> Основное** и включите опцию **Авторизация через журнал безопасности Active Directory**. Нажмите кнопку **Сохранить**.
 
-![](../../../.gitbook/assets/ad-auth-logs1.png)
+![](/.gitbook/assets/ad-auth-logs1.png)
 
 
 ## Настройка сервера Microsoft Active Directory
@@ -53,11 +53,11 @@ route -p add 192.168.100.0 mask 255.255.255.0 192.168.200.1
 
 1\. В настройках брандмауэра Windows на всех контроллерах домена (или доменов) разрешите **удаленное управление журналом событий (Remote Event Log Management)**:
 
-![](../../../.gitbook/assets/ad-auth-logs2.png)
+![](/.gitbook/assets/ad-auth-logs2.png)
 
 2\. Добавьте Ideco NGFW VPP в группу безопасности **Читатели журнала событий (Event Log Readers)**:
 
-![](../../../.gitbook/assets/ad-auth-logs3.png)
+![](/.gitbook/assets/ad-auth-logs3.png)
 
 3\. Перезапустите службу **Авторизация через журнал безопасности Active Directory** на Ideco NGFW VPP. Отключите эту настройку и заново включите;
 
@@ -65,11 +65,11 @@ route -p add 192.168.100.0 mask 255.255.255.0 192.168.200.1
 
 **Англоязычная версия:**
 
-![](../../../.gitbook/assets/ad-auth-logs4.gif)
+![](/.gitbook/assets/ad-auth-logs4.gif)
 
 **Русскоязычная версия:**
 
-![](../../../.gitbook/assets/ad-auth-logs5.gif)
+![](/.gitbook/assets/ad-auth-logs5.gif)
 
 4\. Откройте командную строку и пропишите статический маршрут на контроллере домена AD до **пользовательского интерфейса**:
 ```

@@ -1,7 +1,7 @@
 # Настройка клиентских машин для фильтрации трафика
 
 {% hint style="info" %}
-Специфика расшифровки и фильтрации трафика с подменой сертификата требует не только [создания профилей TLS/SSL-инспекций](./advanced-setting/control-blocking/security-profiles/tls-inspection-security-profiles.md) и правил на Ideco NGFW VPP, но и настройки рабочей станции каждого пользователя в локальной сети.
+Специфика расшифровки и фильтрации трафика с подменой сертификата требует не только [создания профилей TLS/SSL-инспекций](/advanced-setting/control-blocking/security-profiles/tls-inspection-security-profiles.md) и правил на Ideco NGFW VPP, но и настройки рабочей станции каждого пользователя в локальной сети.
 {% endhint %}
 
 ## Установка корневого сертификата NGFW VPP на локальный компьютер
@@ -10,37 +10,37 @@
 
 1\. Скачайте корневой SSL-сертификат, открыв раздел веб-интерфейса Ideco NGFW VPP **Сервисы -> Сертификаты -> Загруженные сертификаты**:
 
-![](../../../.gitbook/assets/sertificate-setup.png)
+![](/.gitbook/assets/sertificate-setup.png)
 
 2\. Откройте на рабочей станции центр управления сертификатами: **Пуск -> Выполнить**, выполнив в диалоге команду **mmc**:
 
-![](../../../.gitbook/assets/sertificate-setup1.png)
+![](/.gitbook/assets/sertificate-setup1.png)
 
 3\. В меню **Файл** выберите **Добавить или удалить оснастку**:
 
-![](../../../.gitbook/assets/sertificate-setup.gif)
+![](/.gitbook/assets/sertificate-setup.gif)
 
 4\. В списке **Доступные оснастки** выберите **Сертификаты**, а затем нажмите кнопку **Добавить**:
 
-![](../../../.gitbook/assets/sertificate-setup2.png)
+![](/.gitbook/assets/sertificate-setup2.png)
 
 5\. В открывшемся окне выберите пункт **Учетная запись компьютера** и нажмите кнопку **Далее**:
 
-![](../../../.gitbook/assets/sertificate-setup3.png)
+![](/.gitbook/assets/sertificate-setup3.png)
 
 6\. В окне **Выбор компьютера** оставьте флаг **Локальный компьютер** и нажмите кнопку **Готово**.
 
 7\. В левой части окна нажмите на стрелку рядом с директорией **Сертификаты (локальный компьютер) -> Доверенные корневые сертификаты -> Сертификаты**:
 
-![](../../../.gitbook/assets/sertificate-setup4.png)
+![](/.gitbook/assets/sertificate-setup4.png)
 
 8\. В меню **Действие** выберите **Все задачи -> Импорт**:
 
-![](../../../.gitbook/assets/sertificate-setup1.gif)
+![](/.gitbook/assets/sertificate-setup1.gif)
 
 9\. Следуя инструкциям Мастера импорта сертификатов, импортируйте корневой сертификат сервера Ideco NGFW VPP. Импортированный сертификат появится в списке в правой части окна:
 
-![](../../../.gitbook/assets/sertificate-setup5.png)
+![](/.gitbook/assets/sertificate-setup5.png)
 
 ## Добавление сертификата через политики домена Microsoft Active Directory
 
@@ -48,7 +48,7 @@
 
 1\. Скачать корневой SSL-сертификат, открыв раздел веб-интерфейса Ideco NGFW VPP **Сервисы -> Сертификаты -> Загруженные сертификаты**:
 
-![](../../../.gitbook/assets/sertificate-setup.png)
+![](/.gitbook/assets/sertificate-setup.png)
 
 2\. Зайдите на контроллер домена с правами администратора.
 
@@ -60,6 +60,6 @@
 
 6\. Нажмите правой кнопкой мыши по открывшемуся списку, выберите **Импорт** и импортируйте ключ Ideco NGFW VPP.
 
-![](../../../.gitbook/assets/sertificate-setup6.png)
+![](/.gitbook/assets/sertificate-setup6.png)
 
 7\.  После перезагрузки рабочих станций или выполнения на них команды `gpupdate /force` сертификат появится в локальных хранилищах сертификатов и будет установлен нужный уровень доверия к нему.

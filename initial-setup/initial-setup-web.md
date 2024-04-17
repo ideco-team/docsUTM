@@ -14,21 +14,21 @@ description: Описание настройки в веб-интерфейсе
 **Пример:** `192.168.100.25:8443`
 3. Браузер выдаст предупреждение о том, что сертификат безопасности не был выпущен доверенным центром сертификации. Продолжите соединение, нажав на соответствующую кнопку в нижней части окна:
 
-![](../.gitbook/assets/initial-setup-web1.gif)
+![](/.gitbook/assets/initial-setup-web1.gif)
 
 4. Введите логин и пароль от учетной записи, созданной при установке NGFW VPP.
 
 ## Импорт корневого сертификата NGFW VPP в браузер
 
 Для устранения предупреждения в браузере при входе в веб-интерфейс нужно импортировать корневой сертификат NGFW VPP или добавить сертификат в **доверенные корневые центры сертификации** устройства.\
-В разделе **Сервисы->Сертификаты** нажмите на кнопку ![](../.gitbook/assets/icon-download.png) Скачать:
+В разделе **Сервисы->Сертификаты** нажмите на кнопку ![](/.gitbook/assets/icon-download.png) Скачать:
 
-![](../.gitbook/assets/initial-setup-web2.png)
+![](/.gitbook/assets/initial-setup-web2.png)
 
 ## Настройка подключения к провайдеру
 
 {% hint style="info" %}
-Перед настройкой Data Plane интерфейсов проверьте соответствие сетевых карт [системным требованиям](../general/data-update-source-utm-vpp.md).
+Перед настройкой Data Plane интерфейсов проверьте соответствие сетевых карт [системным требованиям](/general/data-update-source-utm-vpp.md).
 {% endhint %}
 
 Для выхода NGFW VPP в Интернет нужно настроить Data Plane интерфейс, выполнив действия:
@@ -36,18 +36,18 @@ description: Описание настройки в веб-интерфейсе
 1. Перейдите в раздел **Сервисы-> Cетевые интерфейсы**.
 2. Нажмите **Добавить** и выберите **Внешний Ethernet**:
 
-![](../.gitbook/assets/initial-setup-web4.png)
+![](/.gitbook/assets/initial-setup-web4.png)
 
 3. Выберите сетевую карту для Data Plane интерфейса и укажите название интерфейса:
 
 * VPP interface - сетевая карта, подходящая для Data Plane интерфейса.
 * Производитель сетевой карты -  сетевая карта, подходящая для Control Plane интерфейса.
 
-![](../.gitbook/assets/initial-setup-web5.png)
+![](/.gitbook/assets/initial-setup-web5.png)
 
 4. Воспользуйтесь опцией **Автоматическая конфигурация через DHCP**, если провайдер поддерживает автоматическое конфигурирование, или укажите IP-адрес сервера и шлюз.
    
-![](../.gitbook/assets/initial-setup-web6.png)
+![](/.gitbook/assets/initial-setup-web6.png)
 
 5. Проверьте правильность введенных данных и нажмите **Сохранить**.
 
@@ -62,18 +62,18 @@ description: Описание настройки в веб-интерфейсе
 1. Перейдите в раздел **Сервисы-> Сетевые интерфейсы**.
 2. Нажмите **Добавить** и выберите **Локальный Ethernet**:
 
-![](../.gitbook/assets/initial-setup-web7.png)
+![](/.gitbook/assets/initial-setup-web7.png)
 
 3. Выберите сетевую карту для Data Plane интерфейса и укажите название интерфейса:
 
 * VPP interface - сетевая карта, подходящая для Data Plane интерфейса.
 * Производитель сетевой карты -  сетевая карта, подходящая для Control Plane интерфейса.
 
-![](../.gitbook/assets/initial-setup-web5.png)
+![](/.gitbook/assets/initial-setup-web5.png)
 
 4. Воспользуйтесь опцией **Автоматическая конфигурация через DHCP**, если используется сторонний DHCP-cервер в пользовательской сети, или укажите IP-адрес сервера.
    
-![](../.gitbook/assets/initial-setup-web8.png)
+![](/.gitbook/assets/initial-setup-web8.png)
 
 5. Проверьте правильность введенных данных и нажмите **Сохранить**.
 
@@ -93,11 +93,11 @@ description: Описание настройки в веб-интерфейсе
 
 1\. Перейдите в веб-интерфейс Ideco NGFW VPP в раздел **Управление сервером -> Лицензия** и нажмите **Зарегистрировать**:
 
-![](../.gitbook/assets/initial-setup-web10.png)
+![](/.gitbook/assets/initial-setup-web10.png)
 
 2\. В открывшемся окне перейдите по ссылке **Зарегистрировать новый сервер**, выберите компанию и нажмите **Добавить**. После добавления нажмите **Обновить информацию о лицензии** для проверки состояния лицензии:
 
-![](../.gitbook/assets/initial-setup-web11.gif)
+![](/.gitbook/assets/initial-setup-web11.gif)
 
 ### Оффлайн регистрация
 
@@ -116,11 +116,11 @@ description: Описание настройки в веб-интерфейсе
 
 Если была выбрана лицензия не подходящая для оффлайн регистрации сервера, то появится ошибка:
 
-![](../.gitbook/assets/initial-setup-web13.png)
+![](/.gitbook/assets/initial-setup-web13.png)
 
 5\. Перейдите в раздел **NGFW -> Оффлайн** и введите в соответствующие поля цифрами мажорный номер версии и номер лицензии:
 
-![](../.gitbook/assets/initial-setup-web12.png)
+![](/.gitbook/assets/initial-setup-web12.png)
 
 6\. Нажмите **Получить ссылки** и сохраните файлы конфигураций, нажав на появившиеся ссылки:
 * `license.json` - информация о лицензии;
@@ -137,10 +137,10 @@ description: Описание настройки в веб-интерфейсе
 
 8\. Сохраните скрипты запуска обновления баз модулей безопасности в папку с файлами, скачанными на шаге 6:
 
-{% file src="../scripts/content_filter.py";base64,Cg==" name="content_filter.py" %}
-{% file src="../scripts/geoip.py";base64,Cg==" name="geoip.py" %}
-{% file src="../scripts/iplist.py";base64,Cg==" name="iplist.py" %}
-{% file src="../scripts/suricata.py";base64,Cg==" name="suricata.py" %}
+{% file src="/scripts/content_filter.py";base64,Cg==" name="content_filter.py" %}
+{% file src="/scripts/geoip.py";base64,Cg==" name="geoip.py" %}
+{% file src="/scripts/iplist.py";base64,Cg==" name="iplist.py" %}
+{% file src="/scripts/suricata.py";base64,Cg==" name="suricata.py" %}
 
 9\. Обновите базы модулей безопасности: 
 * Перейдите в директорию `scp -r <путь до папки со скачанными файлами> administrator@<IP-адрес NGFW>:~/`;

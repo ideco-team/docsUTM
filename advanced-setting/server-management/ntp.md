@@ -22,4 +22,4 @@ Ideco NGFW может выступать в роли сервера времен
 
 Для добавления NTP-сервера, с которым NGFW будет синхронизировать время, нажмите **Добавить** в левом верхнем углу. Заполните поле **NTP-сервер**, указав IP-адрес или доменное имя:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
