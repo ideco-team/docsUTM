@@ -1,17 +1,25 @@
-# Ideco UTM
+# Ideco UTM Center 15.Х
 
-{% content-ref url="version-16.x.md" %}
-[version-16.x.md](version-16.x.md)
-{% endcontent-ref %} 
+{% hint style="info" %}
+Техническая поддержка и обратная связь (поможет нам улучшить продукт):
+* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
+* Электронная почта: help@ideco.ru
+* Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-{% content-ref url="version-15.x.md" %}
-[version-15.x.md](version-15.x.md)
-{% endcontent-ref %} 
+[Скачать Ideco Center 14](https://my.ideco.ru/). 
+{% endhint %}
 
-{% content-ref url="version-14.x.md" %}
-[version-14.x.md](version-14.x.md)
-{% endcontent-ref %}
+## IDECO CENTER 15.4 СБОРКА 42 (25.10.2023)
 
-{% content-ref url="version-13.x.md" %}
-[version-13.x.md](version-13.x.md)
-{% endcontent-ref %}
+#### Исправления и изменения
+
+* Добавлена возможность использовать пользовательские категории в Контент-фильтре;
+* Добавлен журнал событий и логи действий администраторов;
+* Улучшен процесс переноса правил Контроля приложений при обновлении на новую версию;
+* Добавлена возможность интеграции с сервисом DDNS от nic.ru;
+* Добавлен свич активации сбора анонимной статистики;
+* Улучшена стабильность работы Журнала событий;
+* Добавлена синхронизация списка стран с Ideco Center в Ideco UTM;
+* Улучшен процесс синхронизации правил Контроля приложений с Ideco Center в Ideco UTM версий 14;
+* Добавлен процесс пересинхронизации Ideco Center и Ideco UTM после восстановления потерянной связи.
