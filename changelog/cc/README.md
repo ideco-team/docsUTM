@@ -1,17 +1,28 @@
-# Ideco UTM
+# Ideco  Center 14.Х
 
-{% content-ref url="version-16.x.md" %}
-[version-16.x.md](version-16.x.md)
-{% endcontent-ref %} 
+{% hint style="info" %}
+Техническая поддержка и обратная связь (поможет нам улучшить продукт):
+* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
+* Электронная почта: help@ideco.ru
+* Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-{% content-ref url="version-15.x.md" %}
-[version-15.x.md](version-15.x.md)
-{% endcontent-ref %}
+[Скачать Ideco Center 14](https://my.ideco.ru/). 
+{% endhint %}
 
-{% content-ref url="version-14.x.md" %}
-[version-14.x.md](version-14.x.md)
-{% endcontent-ref %}
+## IDECO CENTER 14.2 СБОРКА 126 (21.02.2023)
 
-{% content-ref url="version-13.x.md" %}
-[version-13.x.md](version-13.x.md)
-{% endcontent-ref %}
+#### Исправления и изменения
+
+* Управление политиками правил фильтрации в модулях контроля приложений, контентной фильтрации, управления полосой пропускания;
+* Управление политиками правил файрвола в таблице INPUT;
+* Возможность настройки DNS-серверов.
+
+## IDECO CENTER 14.1 СБОРКА (19.01.2023)
+
+#### Новые возможности
+
+* Добавлена таблица INPUT в разделе Файрвол;
+* Добавлена возможность создания правил Контент-фильтра, Контроля приложений и Ограничения скорости;
+* Добавлена возможность переключения между серверами в одной вкладке с Ideco Center;
+* Добавлена возможность скачивать отчеты из подключенной к Ideco UTM
