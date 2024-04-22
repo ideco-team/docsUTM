@@ -167,13 +167,3 @@
 
 * [Версия ФСТЭК Ideco UTM 11.Х](changelog/fstek-ideco-utm-11.x.md)
 * [Версия Ideco UTM 11.X](changelog/versiya-ideco-utm-11.x.md)
-* [Версия Ideco UTM 10.X](changelog/version-10.x.md)
-* [Версия Ideco UTM 9.X](changelog/version-9.x.md)
-* [Версия Ideco UTM 8.X](changelog/version-8.x.md)
-* [Версия Ideco UTM 7.Х.Х](changelog/version-7.x.x/README.md)
-  * [Версия Ideco UTM 7.9.X](changelog/version-7.x.x/version-7.9.x.md)
-  * [Версия Ideco UTM 7.8.X](changelog/version-7.x.x/version-7.8.x.md)
-  * [Версия Ideco UTM 7.7.X](changelog/version-7.x.x/version-7.7.x.md)
-  * [Версия Ideco UTM 7.6.Х](changelog/version-7.x.x/version-7.6.x.md)
-  * [Версия Ideco UTM 7.5.Х](changelog/version-7.x.x/version-7.5.x.md)
-  * [Версия Ideco UTM 7.4.X](changelog/version-7.x.x/version-7.4.x.md)
