@@ -1,9 +1,26 @@
-# Ideco NGFW VPP
+# Ideco NGFW VPP 17.X
 
-{% content-ref url="versiya-vpp-ngfw-16.x.md" %}
-[versiya-vpp-ngfw-16.x.md](versiya-vpp-ngfw-16.x.md)
-{% endcontent-ref %}
+## Версия Ideco NGFW VPP 17.X
 
-{% content-ref url="versiya-vpp-ngfw-15.x.md" %}
-[versiya-vpp-ngfw-15.x.md](versiya-vpp-ngfw-15.x.md)
-{% endcontent-ref %}
+{% hint style="info" %}
+Техническая поддержка и обратная связь (поможет нам улучшить продукт):
+
+* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
+* Электронная почта: help@ideco.ru
+* Telegram: [ideco.bot](https://telegram.im/@ideco\_support\_bot)
+
+[Скачать Ideco VPP 16](https://my.ideco.ru/).\
+Автоматическая регистрация тестовой лицензии: my.ideco.ru (полная функциональность на 40 дней и 10 000 пользователей).
+
+**Особенности обновления с версии NGFW VPP 15.X на 16.Х:**
+
+* При обновлении с версии 15.Х не переносятся правила файрвола.
+* При обновлении удаляется автоматический SNAT. Если необходим SNAT, после обновления добавьте правила вручную.
+{% endhint %}
+
+### IDECO NGFW VPP 17.0 сборка ХХ (ХХ.ХХ.ХХХХ)
+
+**Новые возможности**
+
+*
