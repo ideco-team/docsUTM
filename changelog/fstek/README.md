@@ -1,17 +1,23 @@
-# ФСТЭК Ideco UTM
+# ФСТЭК Ideco UTM 18.X
 
-{% content-ref url="fstek-ideco-utm-16.x.md" %}
-[fstek-ideco-utm-16.x.md](fstek-ideco-utm-16.x.md)
-{% endcontent-ref %}
+**[Описание сертифицированной версии](https://static.ideco.ru/static/Ideco_UTM_2022.pdf?roistat_visit=462368)**.
 
-{% content-ref url="fstek-ideco-utm-15.x.md" %}
-[fstek-ideco-utm-15.x.md](fstek-ideco-utm-15.x.md)
-{% endcontent-ref %}
+<details>
 
-{% content-ref url="fstek-ideco-utm-14.x.md" %}
-[fstek-ideco-utm-14.x.md](fstek-ideco-utm-14.x.md)
-{% endcontent-ref %}
+<summary>Примечания к релизу ФСТЭК Ideco UTM 18.ХХ build Х</summary>
 
-{% content-ref url="fstek-ideco-utm-11.x.md" %}
-[fstek-ideco-utm-11.x.md](fstek-ideco-utm-11.x.md)
-{% endcontent-ref %}
+**Дата выхода версии**: ХХ.ХХ.ХХХХ.
+
+**Техническая поддержка и обратная связь** (поможет нам улучшить продукт):
+* Обсудить версию в телеграм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm);
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/);
+* Электронная почта: help@ideco.ru;
+* Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot).
+
+Для ФСТЭК-версии включено автоматическое обновление с версии 11.13 путем нескольких обновлений: 11.13->12.11->13.11->14.3->15.7->16.4.
+
+Обязательно нужно последовательно обновиться и использовать версию 16.4 (не останавливаясь на промежуточных версиях, нужных только для обновления).
+
+</details>
+
+## ФСТЭК IDECO UTM 18.X СБОРКА Х (ХХ.ХХ.ХХХХ)

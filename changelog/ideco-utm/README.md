@@ -1,45 +1,38 @@
-# Ideco NGFW
+# Ideco NGFW 18.X
 
-{% content-ref url="ideco-ngfw-17.x.md" %}
-[ideco-ngfw-17.x.md](ideco-ngfw-17.x.md)
-{% endcontent-ref %}
+<details>
 
-{% content-ref url="ideco-ngfw-16.x.md" %}
-[ideco-ngfw-16.x.md](ideco-ngfw-16.x.md)
-{% endcontent-ref %}
+<summary>Примечания к релизу бета-версии Ideco NGFW 18.0 бета</summary>
 
-{% content-ref url="ideco-utm-15.x.md" %}
-[ideco-utm-15.x.md](ideco-utm-15.x.md)
-{% endcontent-ref %}
+**Дата выхода версии**: ХХ.ХХ.ХХХХ.
 
-{% content-ref url="ideco-utm-14.x.md" %}
-[ideco-utm-14.x.md](ideco-utm-14.x.md)
-{% endcontent-ref %}
+Техническая поддержка и обратная связь (поможет нам улучшить продукт):
 
-{% content-ref url="ideco-utm-13.x.md" %}
-[ideco-utm-13.x.md](ideco-utm-13.x.md)
-{% endcontent-ref %}
+* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
+* Электронная почта: help@ideco.ru
+* Telegram: [ideco.bot](https://telegram.im/@ideco\_support\_bot)
 
-{% content-ref url="ideco-utm-12.x.md" %}
-[ideco-utm-12.x.md](ideco-utm-12.x.md)
-{% endcontent-ref %}
+[Скачать Ideco NGFW 18.](https://my.ideco.ru/)\
+Автоматическая регистрация тестовой лицензии: my.ideco.ru (полная функциональность на 40 дней и 10 000 пользователей).
 
-{% content-ref url="ideco-utm-11.x.md" %}
-[ideco-utm-11.x.md](ideco-utm-11.x.md)
-{% endcontent-ref %}
+**Обновление с релизов Ideco UTM 8.12 и старше**
 
-{% content-ref url="version-10.x.md" %}
-[version-10.x.md](version-10.x.md)
-{% endcontent-ref %}
+Обновление с релиза Ideco UTM 13 возможно через автоматические обновления (тестовый канал, будет доступна в ближайшее время).\
+Обновление с релизов 8.х, 9.х, 10.х, 11.х, 12.х возможно через автоматические обновления с промежуточным обновлением до версий 9.11, 10.7, 11.10, 12.8.\
+После обновлении на Ideco UTM 15 приостанавливается синхронизация с Active Directory, если локальные пользователи Ideco UTM находятся в группах Active Directory.
 
-{% content-ref url="version-9.x.md" %}
-[version-9.x.md](version-9.x.md)
-{% endcontent-ref %}
+**Обновление с версии Ideco UTM 7.9.9**
 
-{% content-ref url="version-8.x.md" %}
-[version-8.x.md](version-8.x.md)
-{% endcontent-ref %}
+Прямое обновление до версии 15 напрямую невозможно.\
+Возможна миграция настроек (загрузка бэкапа настроек) на предварительно установленную версию [9.11](https://storage.yandexcloud.net/ideco-utm-iso/Ideco-UTM-9-11-2.iso) и дальнейшее обновление до версии 14.0 с помощью автоматического обновления.
 
-{% content-ref url="version-7.x.x/README.md" %}
-[version-7.x.x/README.md](version-7.x.x/README.md)
-{% endcontent-ref %}
+</details>
+
+## IDECO NGFW 18.0 бета (ХХ.ХХ.ХХХХ)
+
+#### Исправления и изменения
+
+| Номер задачи | Описание изменения |
+|--|--|
+| | |

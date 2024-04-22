@@ -1,17 +1,21 @@
-# Ideco UTM
+# Ideco Center 18.Х
 
-{% content-ref url="version-16.x.md" %}
-[version-16.x.md](version-16.x.md)
-{% endcontent-ref %} 
+{% hint style="info" %}
+Техническая поддержка и обратная связь (поможет нам улучшить продукт):
+* Обсудить версию в телеграмм-канале с разработчиками: [https://t.me/idecoutm](https://t.me/idecoutm)
+* Портал технической поддержки: [https://help.ideco.ru/](https://help.ideco.ru/)
+* Электронная почта: help@ideco.ru
+* Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-{% content-ref url="version-15.x.md" %}
-[version-15.x.md](version-15.x.md)
-{% endcontent-ref %} 
+[Скачать Ideco Center 14](https://my.ideco.ru/). 
+{% endhint %}
 
-{% content-ref url="version-14.x.md" %}
-[version-14.x.md](version-14.x.md)
-{% endcontent-ref %}
+{% hint style="warning" %}
+**Примечание к релизу:** \
+Данная версия Центральной консоли позволяет управлять только Ideco NGFW версий 16.х. Обновите NGFW до 16-ой версии, если вы используете централизованное управление, перед обновлением центральной консоли (управление версиями 15.х и более старыми не поддерживается).
+{% endhint %}
 
-{% content-ref url="version-13.x.md" %}
-[version-13.x.md](version-13.x.md)
-{% endcontent-ref %}
+## IDECO CENTER 18.Х СБОРКА Х (ХХ.ХХ.ХХХХ)
+
+#### Новые возможности
+
