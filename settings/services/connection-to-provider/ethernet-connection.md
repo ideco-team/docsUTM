@@ -14,7 +14,7 @@ description: Настройка вручную и автоматически с 
 
 2\. Нажмите **Добавить** в левом верхнем углу окна и выберите пункт **Внешний Ethernet**. 
 
-![](/.gitbook/assets/ethernet-connection.png)
+![](/.gitbook/assets/local-ethernet2.png)
 
 3\. Выберите сетевую карту.
 
