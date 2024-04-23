@@ -99,4 +99,4 @@ redirects:
   cc_snmp: ./settings/server-management/central-console/snmp.md
   device-profiles: ./settings/users/hip-profiles.md
   dhcp_wpad: ./settings/services/dhcp.md
-  user_personal_account: ./settings/users/user-personal-aсcount.md
+  user_personal_account: ./settings/users/user-personal-account.md
