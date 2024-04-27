@@ -32,6 +32,7 @@ redirects:
   reverse_proxy: ./settings/services/reverse-proxy.md
   routing: ./settings/services/routing.md
   server_registration: ./recipes/server-maintenance/server-registration.md
+  reg: ./recipes/server-maintenance/server-registration.md
   server_update: ./settings/server-management/server-update.md
   snmp: ./settings/monitor/snmp.md
   shaper: ./settings/access-rules/shaper.md
