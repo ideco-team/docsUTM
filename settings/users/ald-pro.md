@@ -111,5 +111,5 @@ ALD Pro поддерживает два типа входа в систему:
 * Авторизация по VPN - подходит для аутентификации пользователей удаленных сетей.
 
 {% hint style="info" %}
-Для настройки авторизации по VPN воспользуйтесь статьей [VPN-подключение](/settings/users/authorization/vpn-connection/README.md).
+Для настройки авторизации по VPN воспользуйтесь статьей [VPN-подключения](/settings/users/authorization/vpn-connection/README.md).
 {% endhint %}

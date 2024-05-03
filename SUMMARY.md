@@ -34,7 +34,7 @@
     * [Авторизация по подсетям](settings/users/authorization/authorization-by-subnet.md)
     * [Авторизация пользователей терминальных серверов](settings/users/authorization/terminal-server.md)
   * [Личный кабинет пользователя](settings/users/user-personal-acсount.md)
-  * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
+  * [VPN-подключения](settings/users/authorization/vpn-connection/README.md)
     * [Двухфакторная аутентификация](settings/users/two-factor-authentication.md)
     * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
     * [Подключение по PPPoE](settings/users/authorization/vpn-connection/pppoe.md)
