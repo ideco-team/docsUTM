@@ -1,26 +1,46 @@
-# Table of contents
+# Table of contentsgeneral/README.md
 
-* [Об Ideco Center](README.md)
+* [Ideco Center](README.md)
 
 ## ОБЩАЯ ИНФОРМАЦИЯ <a href="#general" id="general"></a>
 
-* [Системные требования](general/sistemnye-trebovaniya.md)
-* [Техническая поддержка](general/tekhnicheskaya-podderzhka/README.md)
-  * [Режим удаленного помощника](general/tekhnicheskaya-podderzhka/rezhim-udalennogo-pomoshnika.md)
-* [CHANGELOG Ideco UTM Center 16.Х](general/changelog.md)
+* [Системные требования](general/data-update-source-utm.md)
+* [Техническая поддержка](general/technical-support/README.md)
+  * [Режим удаленного помощника](general/technical-support/remote-assistant.md)
+* [CHANGELOG Ideco Center 15.Х](general/changelog.md)
 
-## УСТАНОВКА <a href="#installation" id="installation"></a>
+## Быстрый старт <a href="#installation" id="installation"></a>
 
-* [Рекомендации при первоначальной настройке](installation/rekomendacii-pri-pervonachalnoi-nastroike.md)
-* [Личный кабинет my.ideco](installation/lichnyi-kabinet-my.ideco.md)
-* [Подготовка к установке на устройство](installation/podgotovka-k-ustanovke-na-ustroistvo.md)
-* [Установка](installation/ustanovka.md)
-* [Первоначальная настройка](installation/pervonachalnaya-nastroika.md)
+* [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
+* [Личный кабинет my.ideco](installation/initial-action-my-ideco.md)
+* [Подготовка к установке на устройство](installation/preparation-install.md)
+  * [Настройка гипервизора](installation/specifics-of-hypervisor-settings.md)
+  * [Подготовка загрузочного диска](installation/usb.md)
+* [Установка](installation/installation-process.md)
+* [Первоначальная настройка](installation/initial-setup.md)
 
-## НАСТРОЙКА <a href="#setting" id="setting"></a>
+## НАСТРОЙКА <a href="#settings" id="settings"></a>
 
-* [Page 1](setting/page-1.md)
+* [Серверы](settings/README.md)
+* [Политики и объекты](settings/object-policies/README.md)
+  * [Политики безопасности](settings/object-policies/firewall.md)
+  * [Объекты](settings/object-policies/aliases.md)
+* [Сервисы](settings/services/README.md)
+  * [Сетевые интерфейсы](settings/services/interfaces.md)
+  * [Маршрутизация](settings/services/routing.md)
+  * [DNS](settings/services/dns.md)
+  * [Сертификаты](settings/services/certs.md)
+* [Отчеты и журналы](settings/reports/README.md)
+  * [Журнал событий](settings/reports/logs.md)
+  * [Действия администраторов](settings/reports/administrator-actions.md)
+* [Управление сервером](settings/server-management/README.md)
+  * [Администраторы](settings/server-management/admins.md)
+  * [Автоматическое обновление](settings/server-management/server-update.md)
+  * [Резервное копирование](settings/server-management/backup.md)
+  * [Терминал](settings/server-management/terminal.md)
+  * [Характеристики сервера](settings/server-management/server-specs.md)
+  * [Дополнительно](settings/server-management/additionally.md)
 
-## Group 1
+## API
 
-* [Page 2](group-1/page-2.md)
+* [Page 2](api/page-2.md)
