@@ -130,7 +130,7 @@
 * Формат написания IP-адреса: 1.2.3.4;
 * Формат написания сети: 1.2.3.0/24.
 
-<img src="/.gitbook/assets/manual-blocklist.png" alt="" data-size="original">
+![](/.gitbook/assets/firewall-tables.png)
 
 2\. Переместить файл `manual\_blocklist.txt в каталог /var/opt/ideco/firewall-backend/`
 
