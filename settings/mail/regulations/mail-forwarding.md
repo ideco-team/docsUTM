@@ -12,19 +12,19 @@ description: Настройка почтовых правил переадрес
 
 * Создать алиас `manager@yourdomain.ru` для ящика менеджера компании для связи с клиентами и партнерами, у которого реальный почтовый ящик имеет имя `p.petrov@yourmaildomain.ru`:
 
-![](/.gitbook/assets/mail-forwarding.png)
+![](/.gitbook/assets/mail-rules.png)
 
 * Создать корпоративный алиас для отдела продаж `sales@yourmaildomail.ru`, чтобы почта пересылалась на всех сотрудников этого отдела:
 
-![](/.gitbook/assets/mail-forwarding1.png)
+![](/.gitbook/assets/mail-rules1.png)
 
 * Создать временный алиас для переадресации почты сотрудника, который находится в отпуске `i.ivanov@yourmaildomail.ru`, на ящик его коллеги `a.alexeev@yourmaildomain.ru` с сохранением почты на ящике `i.ivanov@yourmaildomail.ru`:
 
-![](/.gitbook/assets/mail-forwarding2.png)
+![](/.gitbook/assets/mail-rules2.png)
 
 * Создать алиас `director@yourmaildomain.ru`, который будет перенаправлять почту на реальный ящик `director@yandex.ru`:
 
-![](/.gitbook/assets/mail-forwarding3.png)
+![](/.gitbook/assets/mail-rules3.png)
 
 ### Опишем, как будет работать почта при таких правилах переадресации:
 

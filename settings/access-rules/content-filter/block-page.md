@@ -111,7 +111,7 @@ border-radius: 4px;
 
 Пример страницы:
 
-![](/.gitbook/assets/block_page1.png)
+![](/.gitbook/assets/block-page.png)
 
 </details>
 

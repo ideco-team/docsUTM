@@ -57,4 +57,4 @@ description: Логирование срабатывания правил Фай
 
 3\. Выберите действие **Логировать**:
 
-![](/.gitbook/assets/logging.png)
+![](/.gitbook/assets/firewall1.png)
