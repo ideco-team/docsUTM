@@ -31,8 +31,8 @@ redirects:
   report: ./settings/reports/README.md
   reverse_proxy: ./settings/services/reverse-proxy.md
   routing: ./settings/services/routing.md
-  server_registration: ./recipes/server-maintenance/server-registration.md
-  reg: ./recipes/server-maintenance/server-registration.md
+  server_registration: ./installation/server-registration.md
+  reg: ./installation/server-registration.md
   server_update: ./settings/server-management/server-update.md
   snmp: ./settings/monitor/snmp.md
   shaper: ./settings/access-rules/shaper.md
