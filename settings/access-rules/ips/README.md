@@ -66,8 +66,9 @@ description: Служба обнаружения и предотвращения
 
 **Решение:**
 
-1. В файл `/var/opt/ideco/suricata-backend/custom.rules` добавьте следующую строку: `pass ip 192.168.154.7 any <> any any (sid:1;)`.
-2. Затем в разделе **Терминал** выполните команду `systemctl restart ideco-suricata-backend.service`.
+1\. В файл `/var/opt/ideco/suricata-backend/custom.rules` добавьте следующую строку: `pass ip 192.168.154.7 any <> any any (sid:1;)`.
+
+2\. Затем в разделе **Терминал** выполните команду `systemctl restart ideco-suricata-backend.service`.
 
 {% hint style="warning" %}
 При создании нескольких ручных правил **обязательно** изменяйте ID-правила (sid:2;), иначе служба предотвращения вторжений прекратит работу из-за наличия нескольких правил с одним sid.

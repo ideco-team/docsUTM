@@ -72,11 +72,11 @@ description: >-
 * **Authentication Method** - Mutual PSK;
 * **My identifier и Peer identifier** - сюда вставьте значение строки `id` на Ideco NGFW (см. шаг 4 в настройке Ideco NGFW);
 * **Pre-Shared Key** - вставьте PSK-ключ, который ранее прописывали на Ideco NGFW;
-* **Encryption Algorithm** - используйте следующие параметры:
-  1. **Algorithm** - AES256-GCM;
-  2. **Key length** - 128 bit;
-  3. **Hash** - SHA256;
-  4. **DH Group** - Elliptic Curve 25519-256.
+* **Encryption Algorithm** - используйте следующие параметры: \
+  1\. **Algorithm** - AES256-GCM; \
+  2\. **Key length** - 128 bit; \
+  3\. **Hash** - SHA256; \
+  4\. **DH Group** - Elliptic Curve 25519-256.
 
 Все остальные значения можно оставить по умолчанию.
 
@@ -84,11 +84,11 @@ description: >-
 
 4\. Нажмите на кнопку **Show Phase 2 Entries** и добавьте новую Phase 2. Здесь укажите:
 
-* **Encryption Algorithm** - используйте следующие параметры:
-  1. **Algorithm** - AES256-GCM;
-  2. **Key length** - 128 bit;
-  3. **Hash** - SHA256;
-  4. **DH Group** - Elliptic Curve 25519-256;
+* **Encryption Algorithm** - используйте следующие параметры: \
+  1\. **Algorithm** - AES256-GCM; \
+  2\. **Key length** - 128 bit; \
+  3\. **Hash** - SHA256; \
+  4\. **DH Group** - Elliptic Curve 25519-256.
 
 * **Local Network** - локальную сеть pfSense, которая будет доступна из подсети Ideco NGFW;
 * **Remote Network** - локальную сеть Ideco NGFW, которая будет доступна из подсети pfSense.
@@ -145,22 +145,22 @@ description: >-
 * **Peer identifier** - KeyID tag. Введите идентификатор удаленной стороны, т. е. Ideco NGFW;
 * **Pre-Shared Key** - введите PSK-ключ;
 * **Encryption Algorithm**:
-  * Для **Ideco UTM версии 10.0 и Ideco NGFW версии 16.0 и новее** используйте следующие параметры:
-    1. **Algorithm** - AES256-GCM;
-    2. **Key length** - 128 bit;
-    3. **Hash** - SHA256;
-    4. **DH Group** - Elliptic Curve 25519-256.
+  * Для **Ideco UTM версии 10.0 и Ideco NGFW версии 16.0 и новее** используйте следующие параметры: \
+    1\. **Algorithm** - AES256-GCM; \
+    2\. **Key length** - 128 bit; \
+    3\. **Hash** - SHA256; \
+    4\. **DH Group** - Elliptic Curve 25519-256.
 
 3\. Сохраните подключение.
 
 4\. Нажмите на кнопку **Show Phase 2 Entries** и добавьте новую Phase 2 и укажите следующие значения:
 
 * **Encryption Algorithm**:
-  * **Для Ideco UTM версии 10.0 и Ideco NGFW версии 16.0 и новее** используйте следующие параметры:
-    1. **Algorithm** - AES256-GCM;
-    2. **Key length** - 128 bit;
-    3. **Hash** - SHA256;
-    4. **DH Group** - Elliptic Curve 25519-256;
+  * **Для Ideco UTM версии 10.0 и Ideco NGFW версии 16.0 и новее** используйте следующие параметры: \
+    1\. **Algorithm** - AES256-GCM; \
+    2\. **Key length** - 128 bit; \
+    3\. **Hash** - SHA256; \
+    4\. **DH Group** - Elliptic Curve 25519-256.
 
 * **Local Network** - локальную сеть pfSense, которая будет доступна из подсети Ideco NGFW;
 * **Remote Network** - локальную сеть Ideco NGFW, которая будет доступна из подсети pfSense.
