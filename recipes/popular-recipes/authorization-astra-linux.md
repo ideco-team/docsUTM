@@ -65,6 +65,8 @@
 
 ## Для браузера **Firefox**
 
-1. Запустите браузер и в адресной строке введите **about:config**, чтобы попасть в режим редактирования расширенных настроек;
-2. Введите параметр **security.enterprise\_roots.enabled** и нажмите по блоку со строчкой два раза левой кнопкой мыши, чтобы значение изменилось на **True**;
-3. В двух следующих параметрах впишите доменное имя NGFW через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** (например, [http://utm.domain.com](http://utm.domain.com), [https://utm.domain.com\\](https://utm.domain.com)).
+1\. Запустите браузер и в адресной строке введите **about:config**, чтобы попасть в режим редактирования расширенных настроек;
+
+2\. Введите параметр **security.enterprise\_roots.enabled** и нажмите по блоку со строчкой два раза левой кнопкой мыши, чтобы значение изменилось на **True**;
+
+3\. В двух следующих параметрах впишите доменное имя NGFW через HTTP и HTTPS через запятую: **network.automatic-ntlm-auth.trusted-uris** и **network.negotiate-auth.trusted-uris** (например, [http://utm.domain.com](http://utm.domain.com), [https://utm.domain.com\\](https://utm.domain.com)).
