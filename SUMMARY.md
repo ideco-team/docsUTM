@@ -7,7 +7,6 @@
 * [Лицензирование](general/license.md)
 * [Cистемные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
-  * [Режим удаленного помощника](general/remote-assistant.md)
 
 ## Быстрый старт <a href="#installation" id="installation"></a>
 
@@ -18,6 +17,7 @@
   * [Подготовка загрузочного диска](installation/usb.md)
 * [Установка](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
+* [Регистрация сервера](installation/server-registration.md)
 
 ## Настройка <a href="#settings" id="settings"></a>
 
@@ -175,12 +175,11 @@
 
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
-* [Обслуживание сервера](recipes/server-maintenance/README.md)
-  * [Тестирование оперативной памяти сервера](recipes/server-maintenance/memory-testing.md)
-  * [Разрешить интернет всем: диагностика неполадок](recipes/server-maintenance/allow-internet-all.md)
-  * [Удаленный доступ к серверу](recipes/server-maintenance/remote-access-for-server-management.md)
-  * [Регистрация сервера](recipes/server-maintenance/server-registration.md)
 * [FAQ](recipes/popular-recipes/README.md)
+  * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
+  * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
+  * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
+  * [Тестирование оперативной памяти сервера](recipes/popular-recipes/memory-testing.md)
   * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
     * [Создание подключения в Astra Linux](recipes/popular-recipes/vpn/connection-for-astra-linux.md)
