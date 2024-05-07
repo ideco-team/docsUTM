@@ -8,7 +8,7 @@
 * [Cистемные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
 
-## Быстрый старт <a href="#installation" id="installation"></a>
+## Быстрый старт Ideco NGFW <a href="#installation" id="installation"></a>
 
 * [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
 * [MY.IDECO.RU](installation/initial-action-my-ideco.md)
@@ -19,7 +19,7 @@
 * [Первоначальная настройка](installation/initial-setup.md)
 * [Регистрация сервера](installation/server-registration.md)
 
-## Настройка <a href="#settings" id="settings"></a>
+## Настройка Ideco NGFW <a href="#settings" id="settings"></a>
 
 * [Панель мониторинга](settings/monitor-panel.md)
 * [Пользователи](settings/users/README.md)
@@ -170,6 +170,13 @@
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
   * [Портмаппинг (проброс портов, DNAT)](settings/publishing-resources/portmapping.md)
 * [Интеграция NGFW и SkyDNS](settings/skydns.md)
+
+## Настройка MY.IDECO <a href="#settings-my" id="settings-my"></a>
+
+* [О личном кабинете MY.IDECO](settings-my/README.md)
+* [NGFW](settings-my/ngfw.md)
+* [Monitoring Bot и Security](settings-my/bot-security.md)
+* [Личные данные и Компании](settings-my/personal-details-and-companies.md)
 
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
