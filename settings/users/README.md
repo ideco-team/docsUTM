@@ -24,6 +24,10 @@
 [active-directory/README.md](active-directory/README.md)
 {% endcontent-ref %}
 
+{% content-ref url="ald-pro.md" %}
+[ald-pro.md](ald-pro.md)
+{% endcontent-ref %}
+
 {% content-ref url="device-discovery.md" %}
 [device-discovery.md](device-discovery.md)
 {% endcontent-ref %}
