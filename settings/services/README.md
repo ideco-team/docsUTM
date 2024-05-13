@@ -43,3 +43,7 @@
 {% content-ref url="ipsec/README.md" %}
 [ipsec/README.md](ipsec/README.md)
 {% endcontent-ref %}
+
+{% content-ref url="certificates/README.md" %}
+[certificates/README.md](certificates/README.md)
+{% endcontent-ref %}

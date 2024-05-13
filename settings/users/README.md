@@ -12,6 +12,10 @@
 [authorization/README.md](authorization/README.md)
 {% endcontent-ref %}
 
+{% content-ref url="user-personal-account.md" %}
+[user-personal-account.md](user-personal-account.md)
+{% endcontent-ref %}
+
 {% content-ref url="authorization/vpn-connection/README.md" %}
 [authorization/vpn-connection/README.md](authorization/vpn-connection/README.md)
 {% endcontent-ref %}
@@ -20,8 +24,16 @@
 [ideco-client/README.md](ideco-client/README.md)
 {% endcontent-ref %}
 
+{% content-ref url="hip-profiles.md" %}
+[hip-profiles.md](hip-profiles.md)
+{% endcontent-ref %}
+
 {% content-ref url="active-directory/README.md" %}
 [active-directory/README.md](active-directory/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="ald-pro.md" %}
+[ald-pro.md](ald-pro.md)
 {% endcontent-ref %}
 
 {% content-ref url="device-discovery.md" %}
