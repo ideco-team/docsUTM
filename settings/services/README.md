@@ -24,6 +24,10 @@
 [ospf.md](ospf.md)
 {% endcontent-ref %}
 
+{% content-ref url="igmp.md" %}
+[igmp.md](igmp.md)
+{% endcontent-ref %}
+
 {% content-ref url="proxy/README.md" %}
 [proxy/README.md](proxy/README.md)
 {% endcontent-ref %}
@@ -40,6 +44,14 @@
 [dhcp.md](dhcp.md)
 {% endcontent-ref %}
 
+{% content-ref url="ntp.md" %}
+[ntp.md](ntp.md)
+{% endcontent-ref %}
+
 {% content-ref url="ipsec/README.md" %}
 [ipsec/README.md](ipsec/README.md)
+{% endcontent-ref %}
+
+{% content-ref url="certificates/README.md" %}
+[certificates/README.md](certificates/README.md)
 {% endcontent-ref %}
