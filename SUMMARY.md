@@ -142,7 +142,6 @@
       * [Объекты](settings/server-management/central-console/objects.md)
     * [Сервисы](settings/server-management/central-console/services.md)
       * [Сертификаты](settings/server-management/central-console/certificates/certificates.md)
-      * [Загрузка своего SSL-сертификата на сервер](settings/server-management/central-console/certificates/upload-ssl-certificate-to-server.md)
     * [Отчеты и журналы](settings/server-management/central-console/reports.md)
     * [Управление сервером](settings/server-management/central-console/server-management.md)
   * [VCE](settings/server-management/vce.md)
