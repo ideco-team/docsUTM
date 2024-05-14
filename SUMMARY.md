@@ -227,4 +227,3 @@
 ## changelog
 
 * [Ideco NGFW 17.x](changelog/ideco-utm/README.md)
-  * [Версия Ideco NGFW 17.X](changelog/ideco-utm/ideco-ngfw-17.x.md)

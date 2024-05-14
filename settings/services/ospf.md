@@ -134,3 +134,7 @@
 * **Redistribute connected** - будут анонсироваться маршруты напрямую подключенных подсетей.
 
 Подробнее о значении поля **Метрика** - в [статье](https://docs.frrouting.org/en/latest/ospfd.html#ospf-redistribute).
+
+{% hint style="info" %}
+Для передачи маршрутов до VPN-сети через OSPF необходимо в разделе **OSPF -> Дополнительные** включить чек-бокс **Redistribute Static (передача статических маршрутов)**.
+{% endhint %}
