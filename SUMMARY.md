@@ -17,6 +17,7 @@
   * [Подготовка загрузочного диска](initial-setup/preparation-boot-disk.md)
 * [Установка](initial-setup/setup.md)
 * [Первоначальная настройка](initial-setup/initial-setup-web.md)
+* [Регистрация сервера](initial-setup/server-registration.md)
 
 ## Расширенная настройка <a href="#advanced-setting" id="advanced-setting"></a>
 
