@@ -29,7 +29,7 @@
 * **DNS** - ideco-dns-backend, unbound;
 * **DDNS** - ideco-dns-backend;
 * **Автоматическое обновление** - ideco-sysupdate-backend;
-* **Бекапы** - ideco-backup-backend, ideco-backup-create, ideco-backup-rotate;
+* **Бэкапы** - ideco-backup-backend, ideco-backup-create, ideco-backup-rotate;
 * **Лицензия** - ideco-license-backend;
 * **Syslog** - ideco-monitor-backend.
 

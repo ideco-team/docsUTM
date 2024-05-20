@@ -1,7 +1,7 @@
-# Бекапы
+# Бэкапы
 
 <details>
-<summary>Получение настроек бекапов</summary>
+<summary>Получение настроек бэкапов</summary>
 
 ```
 GET /backup/settings
@@ -32,18 +32,18 @@ GET /backup/settings
 }
 ```
 
-* `common` - общие настройки бекапов;
-  * `hour` - час, в который делается автоматический бекап, число от 0 до
+* `common` - общие настройки бэкапов;
+  * `hour` - час, в который делается автоматический бэкап, число от 0 до
     23;
-  * `rotate` - удалять бекапы старше недели (`weekly`) или месяца
+  * `rotate` - удалять бэкапы старше недели (`weekly`) или месяца
     (`monthly`);
-* `ftp` - настройки выгрузки бекапов на FTP:
+* `ftp` - настройки выгрузки бэкапов на FTP:
   * `enabled` - выгрузка включена/выключена;
   * `server` - адрес сервера, валидный домен или IP-адрес;
   * `login` - логин, не пустая строка;
   * `password` - пароль, не пустая строка, до 42 символов;
   * `remote_dir` - удаленный каталог, не пустая строка;
-* `cifs` - настройки выгрузки бекапов в общую папку CIFS:
+* `cifs` - настройки выгрузки бэкапов в общую папку CIFS:
   * `enabled` - выгрузка включена/выключена;
   * `server` - адрес сервера, валидный домен или IP-адрес;
   * `login` - логин, не пустая строка;
@@ -53,7 +53,7 @@ GET /backup/settings
 </details>
 
 <details>
-<summary>Изменение настроек бекапов и настройка выгрузки на FTP-сервер или в общую папку CIFS</summary>
+<summary>Изменение настроек бэкапов и настройка выгрузки на FTP-сервер или в общую папку CIFS</summary>
 
 ```
 PUT /backup/settings
@@ -88,10 +88,10 @@ PUT /backup/settings
 
 </details>
 
-## Управление бекапами
+## Управление бэкапами
 
 <details>
-<summary>Создание бекапа</summary>
+<summary>Создание бэкапа</summary>
 
 ```
 POST /backup/backups
@@ -116,7 +116,7 @@ POST /backup/backups
 </details>
 
 <details>
-<summary>Получение списка бекапов</summary>
+<summary>Получение списка бэкапов</summary>
 
 ```
 GET /backup/backups
@@ -145,7 +145,7 @@ GET /backup/backups
 }
 ```
 
-* `id` - идентификатор бекапа;
+* `id` - идентификатор бэкапа;
 * `version` - версия системы:
   * `major` -мажорный номер версии;
   * `minor` - минорный номер версии;
@@ -155,27 +155,27 @@ GET /backup/backups
   * `product` - код продукта;
   * `kind` - вид продукта;
   * `release_type` - тип релиза;
-* `timestamp` - дата/время создания бекапа в формате UNIX timestamp;
+* `timestamp` - дата/время создания бэкапа в формате UNIX timestamp;
 * `comment` - комментарий, произвольный текст;
-* `md5` - контрольная сумма файла бекапа (`data.tar`);
-* `size` - размер бекапа, байт;
-* `fast_restore_allowed` - можно ли выполнить быстрое восстановление из данного бекапа (версия идентична системной).
+* `md5` - контрольная сумма файла бэкапа (`data.tar`);
+* `size` - размер бэкапа, байт;
+* `fast_restore_allowed` - можно ли выполнить быстрое восстановление из данного бэкапа (версия идентична системной).
 
 </details>
 
 <details>
-<summary>Скачивание бекапа</summary>
+<summary>Скачивание бэкапа</summary>
 
 ```
-GET /backup/download/<id бекапа>
+GET /backup/download/<id бэкапа>
 ```
 
-Ответ: тело бекапа.
+Ответ: тело бэкапа.
 
 </details>
 
 <details>
-<summary>Загрузка бекапа на Ideco NGFW из файла</summary>
+<summary>Загрузка бэкапа на Ideco NGFW из файла</summary>
 
 ```
 POST /backup/upload
@@ -195,21 +195,10 @@ POST /backup/upload
 </details>
 
 <details>
-<summary>Восстановление из бекапа</summary>
+<summary>Восстановление из бэкапа</summary>
 
 ```
-POST /backup/backups/<id бекапа>/apply
-```
-
-Ответ: 200 ОК
-
-</details>
-
-<details>
-<summary>Быстрое восстановление из бекапа</summary>
-
-```
-POST /backup/backups/<id бекапа>/apply/fast
+POST /backup/backups/<id бэкапа>/apply
 ```
 
 Ответ: 200 ОК
@@ -217,10 +206,21 @@ POST /backup/backups/<id бекапа>/apply/fast
 </details>
 
 <details>
-<summary>Удаление бекапа</summary>
+<summary>Быстрое восстановление из бэкапа</summary>
 
 ```
-DELETE /backup/backups/<id бекапа>
+POST /backup/backups/<id бэкапа>/apply/fast
+```
+
+Ответ: 200 ОК
+
+</details>
+
+<details>
+<summary>Удаление бэкапа</summary>
+
+```
+DELETE /backup/backups/<id бэкапа>
 ```
 
 Ответ: 200 ОК

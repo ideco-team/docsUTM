@@ -19,7 +19,7 @@
 
 * При нажатии на стрелку в левом верхнем углу и выборе нужного NGFW:
     
-    ![](/.gitbook/assets/server-management.gif)
+    ![](/.gitbook/assets/cc.gif)
  
 Войти в подключенный Ideco NGFW с логином и паролем администратора Ideco Center не возможно.
   

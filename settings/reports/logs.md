@@ -43,7 +43,7 @@ description: В разделе представлена информация о 
 * **Центральная консоль** - ideco-central-console-backend;
 * **Кластеризация** - ideco-cluster-backend, ideco-cluster-backup-pusher;
 * **Автоматическое обновление** - ideco-sysupdate-backend;
-* **Бекапы** - ideco-backup-backend, ideco-backup-create, ideco-backup-restore, ideco-backup-rotate;
+* **Бэкапы** - ideco-backup-backend, ideco-backup-create, ideco-backup-restore, ideco-backup-rotate;
 * **Лицензия** - ideco-license-backend;
 * **VPN-подключения** - ideco-accel-l2tp, ideco-accel-pptp, ideco-accel-sstp, ideco-vpn-servers-backend, ideco-vpn-authd;
 * **Авторизация** - ideco-auth-backend;
