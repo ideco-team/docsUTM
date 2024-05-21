@@ -1,9 +1,5 @@
 # Установка
 
-{% hint style="success" %}
-Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
-{% endhint %}
-
 ## Процесс установки
 
 {% hint style="info" %}

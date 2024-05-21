@@ -4,7 +4,3 @@
 
 * [Установка на гипервизор](specifics-of-hypervisor-settings.md);
 * [Установка на сервер](usb.md).
-
-{% hint style="success" %}
-Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
-{% endhint %}
