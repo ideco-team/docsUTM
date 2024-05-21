@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела *Файрвол*: `ideco-firewall-backend`. \
-Список имен служб для других разделов, доступен по [ссылке](../server-management/terminal.md).
+Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
 
 
