@@ -1,9 +1,5 @@
 # Отчеты и журналы
 
-{% hint style="success" %}
-Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
-{% endhint %}
-
 {% content-ref url="traffic.md" %}
 [traffic.md](traffic.md)
 {% endcontent-ref %}

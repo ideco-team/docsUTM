@@ -7,10 +7,6 @@ description: >-
 
 # Мониторинг
 
-{% hint style="success" %}
-Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
-{% endhint %}
-
 {% content-ref url="authorized-users.md" %}
 [authorized-users.md](authorized-users.md)
 {% endcontent-ref %}

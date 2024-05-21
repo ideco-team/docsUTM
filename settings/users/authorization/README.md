@@ -9,8 +9,6 @@ description: >-
 {% hint style="success" %}
 Название службы раздела **Авторизация**: `ideco-auth-backend`. \
 Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
-
-Нужна помощь при настройке Ideco NGFW? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
 {% endhint %}
 
 ## Общая информация
