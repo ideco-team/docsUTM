@@ -1,9 +1,5 @@
 # Управление сервером
 
-{% hint style="success" %}
-Нужна помощь при настройке Ideco UTM? Получите быстрый ответ от [чат-бота](https://gpt-docs.ideco.ru/) нашей документации!
-{% endhint %}
-
 {% content-ref url="admins.md" %}
 [admins.md](admins.md)
 {% endcontent-ref %}
