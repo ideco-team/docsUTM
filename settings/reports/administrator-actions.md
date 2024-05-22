@@ -2,7 +2,7 @@
 
 Ideco NGFW логирует действия администраторов, которые вносят изменения в конфигурацию NGFW из веб-интерфейса, локального интерфейса и терминала.
 
-![](/.gitbook/assets/administrator-actions.png)
+![](/.gitbook/assets/admin-logs.png)
 
 При работе Ideco NGFW в режиме [кластера](settings/server-management/cluster.md) логи действия администраторов не передаются резервной ноде.
 

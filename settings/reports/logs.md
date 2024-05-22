@@ -72,4 +72,4 @@ description: В разделе представлена информация о 
 
 Сбросить блокировки можно из локального меню шлюза: **Сбросить блокировки по IP**.
 
-![](/.gitbook/assets/bruteforce.png)
+![](/.gitbook/assets/local-menu2.png)
