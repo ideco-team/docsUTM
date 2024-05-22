@@ -8,7 +8,7 @@
 * ![](/.gitbook/assets/icon-red-cross.png) - **Запрещено**
 * ![](/.gitbook/assets/icon-translate.png) - **Перенаправлено на**
 
-![](/.gitbook/assets/web-logs1.png)
+![](/.gitbook/assets/web-access-log.png)
 
 {% hint style="info" %}
 Если нет доступа к какому-либо интернет-ресурсу, воспользуйтесь разделом **Журнал веб-доступа** для поиска правила, блокирующего этот ресурс.

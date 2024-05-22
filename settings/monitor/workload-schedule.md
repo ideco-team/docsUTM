@@ -35,7 +35,8 @@ description: >-
 
 Пример вывода команды:
 
-<img src="/.gitbook/assets/ethernet-connection3.png" alt="" data-size="original">
+![](/.gitbook/assets/monitor-prometheus.png)
+
 {% endhint %}
 
 ### Диски
