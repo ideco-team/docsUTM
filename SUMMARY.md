@@ -221,6 +221,7 @@
 
 * [Описание основных хендлеров](api/description-of-handlers.md)
 * [Управление интеграцией с Active Directory](api/active-directory-api.md)
+* [Управление пользователями](api/user-management-api.md)
 * [Управление правилами трафика](api/access-rules-api.md)
 * [DHCP-сервер](api/dhcp-api.md)
 * [DNS-сервер](api/dns-api.md)
