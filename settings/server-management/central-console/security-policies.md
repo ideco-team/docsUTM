@@ -10,12 +10,12 @@
 
 Файрвол Ideco Center содержит только таблицы FORWARD и INPUT. Правила в них объединены в соответствии с группами серверов:
 
-![](/.gitbook/assets/policies-and-objects3.png)
+![](/.gitbook/assets/cc-firewall1.png)
 
 Пример добавления правил через Ideco Center.\
 *Слева - интерфейс Ideco Сenter, справа - интерфейс Ideco NGFW*:
 
-![](/.gitbook/assets/policies-and-objects.gif)
+![](/.gitbook/assets/cc-firewall.gif)
 
 ### В Ideco Center
 
@@ -31,7 +31,7 @@
 
 Чтобы увидеть все правила, распространяющиеся на группу серверов, выберите название группы в правом верхнем углу интерфейса:
 
-![](/.gitbook/assets/policies-and-objects1.gif)
+![](/.gitbook/assets/cc-firewall1.gif)
 
 Чтобы изменить группу серверов, на которую распространяется правило, нажмите на ![](/.gitbook/assets/icon-edit.png) и измените группу в соответствующей строке.
 
@@ -39,7 +39,7 @@
 
 Таблица в Ideco NGFW визуально делится на три части: верхняя, средняя и нижняя.
 
-![](/.gitbook/assets/policies-and-objects.png)
+![](/.gitbook/assets/cc-firewall2.png)
 
 В верхнюю и нижнюю часть переносятся правила из подключенного Ideco Center. Управление этими правилами в Ideco NGFW невозможно. *Верхняя* часть соответствует таблице **Начальные правила** в Ideco Center. *Нижняя* часть - таблице **Конечные правила**.
 

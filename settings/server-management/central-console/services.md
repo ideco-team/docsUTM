@@ -12,7 +12,7 @@
 * **Шлюз** - IP-адрес шлюза;
 * **DNS** - доступно два поля для указания DNS сервера (необязательно).
 
-![](/.gitbook/assets/services.png)
+![](/.gitbook/assets/cc-interfaces.png)
 
 ## Маршрутизация
 

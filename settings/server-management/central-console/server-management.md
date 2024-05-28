@@ -15,11 +15,11 @@
 Есть два способа подключения к веб-интерфейсу Ideco NGFW из Ideco Center, которые находятся в Ideco Center:
 * Из раздела [Серверы](/settings/server-management/central-console/README.md) (по нажатию на ![](/.gitbook/assets/icon-eye.png) ):
   
-    ![](/.gitbook/assets/central-console2.gif)
+    ![](/.gitbook/assets/servers9.gif)
 
 * При нажатии на стрелку в левом верхнем углу и выборе нужного NGFW:
     
-    ![](/.gitbook/assets/server-management.gif)
+    ![](/.gitbook/assets/servers10.gif)
  
 Войти в подключенный Ideco NGFW с логином и паролем администратора Ideco Center не возможно.
   
