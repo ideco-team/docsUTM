@@ -45,7 +45,7 @@ Ideco Center - это центральная консоль, которая по
 При синхронизации Ideco Center и Ideco NGFW с разными мажорными версиями передача правил с Ideco Center происходить не будет.
 При этом в разделе **Серверы** будет информация о том, что Ideco Center и Ideco NGFW несовместимы:
 
-![](/.gitbook/assets/central_console4.png)
+![](/.gitbook/assets/servers1.png)
 
 {% endhint %}
 
@@ -61,17 +61,17 @@ Ideco Center - это центральная консоль, которая по
 
 2\. Введите IP-адрес или доменное имя в строке **Сервер центральной консоли** и нажмите **Подключить**:
 
-  ![](/.gitbook/assets/central-console1.png)
+  ![](/.gitbook/assets/servers2.png)
 
   Если вместо доменного имени указан IP-адрес Ideco Center, загрузите корневой сертификат Ideco Center в Ideco NGFW:
 
-  ![](/.gitbook/assets/central-console3.png)
+  ![](/.gitbook/assets/servers3.png)
   
   Скачать корневой сертификат можно в Ideco Center, раздел **Сервисы -> Сертификаты**.
 
 3\. В интерфейсе Ideco Center перейдите в раздел **Серверы** и подтвердите подключение кнопкой ![](/.gitbook/assets/icon-yes.png).
 
-  ![](/.gitbook/assets/central-console.png)
+  ![](/.gitbook/assets/servers4.png)
 
 {% hint style="info" %}
 Если сервер Ideco Center находится за NAT, укажите IP-адрес NAT-устройства или доменное имя в разделе **Управление сервером -> Дополнительно -> Адрес центральной консоли**.
@@ -79,7 +79,7 @@ Ideco Center - это центральная консоль, которая по
 
 Удаление сервера Ideco NGFW из Ideco Center разорвет привязку в интерфейсе Ideco NGFW:
 
-![](/.gitbook/assets/central-console.gif)
+![](/.gitbook/assets/servers.gif)
 
 ## Группировка серверов Ideco NGFW
 
@@ -101,7 +101,7 @@ Ideco Center - это центральная консоль, которая по
 
 2\. В открывшемся окне заполните **Название группы** и выберите родительскую группу из раскрывающегося списка (если это первая создаваемая группа, в нем будет только Корневая группа):
 
-![](/.gitbook/assets/server-group3.gif)
+![](/.gitbook/assets/servers5.gif)
 
 3\. Нажмите **Сохранить**.
 
@@ -111,11 +111,11 @@ Ideco Center - это центральная консоль, которая по
 
 2\. В открывшемся окне можно изменить название и родительскую группу:
 
-![](/.gitbook/assets/server-group.png)
+![](/.gitbook/assets/servers6.png)
 
 Чтобы удалить группу серверов, нажмите на ![](/.gitbook/assets/delete_icon.png). Если в удаленной группе были серверы, то они переместятся в Корневую группу:
 
-![](/.gitbook/assets/server-group2.gif)
+![](/.gitbook/assets/servers7.gif)
 
 {% hint style="danger" %}
 Удалить или отредактировать Корневую группу нельзя. 
@@ -129,7 +129,7 @@ Ideco Center - это центральная консоль, которая по
 
 2\. В открывшемся окне из раскрывающегося списка выберите группу, в которую хотите переместить сервер:
 
-![](/.gitbook/assets/server-group.gif)
+![](/.gitbook/assets/servers8.gif)
 
 {% hint style="warning" %}
 При подключении к Ideco Center сервера, настройки которого [восстановлены](/recipes/popular-recipes/transferring-data-to-another-server.md) из бэкапа другого сервера, такой клон не появится в таблице серверов ЦК. Возникает конфликт с донором бэкапа из-за одинакового claster_id.
@@ -143,13 +143,13 @@ Ideco Center - это центральная консоль, которая по
 
 1\. Перейдите в раздел **Серверы** и нажмите на ![](/.gitbook/assets/icon-eye.png):
 
-![](/.gitbook/assets/central-console2.gif)
+![](/.gitbook/assets/servers9.gif)
 
 В новой вкладке откроется веб-интерфейс Ideco NGFW.
 
 2\. Нажмите на ![](/.gitbook/assets/icon-cc.png)  в левом верхнем углу и выберите нужный NGFW:
 
-![](/.gitbook/assets/cc.gif)
+![](/.gitbook/assets/servers10.gif)
 
 {% hint style="info" %}
 Для обновления серверов, подключенных к центральной консоли, перейдите в интерфейс NGFW одним из указанных выше способов и воспользуйтесь статьей [Автоматическое обновление сервера](/settings/server-management/server-update.md).
