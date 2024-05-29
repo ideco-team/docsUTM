@@ -25,7 +25,7 @@ Ideco UTM не поддерживает устаревшие и небезопа
     * для **AES256-GCM** - не требуется, поскольку проверка целостности встроена в AEAD-алгоритмы;
     * для **AES256**, по приоритету: **SHA512, SHA256**.
   * prf (функция генерации случайных значений):
-    * как правило, настраивается автоматически, в зависимости от выбора алгоритмов integrity (поэтому в примере [ниже](connecting-devices.md#primer-nastroiki-podklyucheniya-pfsense-k-ideco-utm-po-ipsec-predstavlen-na-skrinshotakh-nizhe) значение prf: PRF-HMAC-SHA512);
+    * как правило, настраивается автоматически, в зависимости от выбора алгоритмов integrity (поэтому в примере [ниже](README.md#primer-nastroiki-podklyucheniya-pfsense-k-ideco-utm-po-ipsec-predstavlen-na-skrinshotakh-nizhe) значение prf: PRF-HMAC-SHA512);
     * для AES-GCM может потребоваться указать явно. В этом случае по приоритету: **AESXCBC, SHA512, SHA384, SHA256**.
   * DH (Группа Diffie-Hellman):
     * **Curve25519 (group 31)**;

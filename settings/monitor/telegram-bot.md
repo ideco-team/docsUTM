@@ -26,7 +26,7 @@ description: >-
 7. Нажать на кнопку **Привязать аккаунт**.
 8. Ввести код в соответствующее поле и нажать на кнопку **Привязать**.
 
-![](../../.gitbook/assets/monitoring\_bot\_link.png)
+![](../../.gitbook/assets/monitoring_bot_link.png)
 
 </details>
 
@@ -35,7 +35,7 @@ description: >-
 <summary>Настройка привязки Ideco Monitoring Bot к беседе</summary>
 
 1. Настроить Интернет на Ideco NGFW.
-2. [Привязать лицензию](broken-reference) к серверу.
+2. [Привязать лицензию](../../service/license-management.md) к серверу.
 3. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
 4. Написать `/start` в группе.
 5. Скопировать код привязки к аккаунту.
@@ -43,7 +43,7 @@ description: >-
 7. Нажать на кнопку **Привязать аккаунт**.
 8. Ввести код в соответствующее поле и нажать на кнопку **Привязать**.
 
-![](../../.gitbook/assets/monitoring\_bot\_link.png)
+![](../../.gitbook/assets/monitoring_bot_link.png)
 
 </details>
 
@@ -60,9 +60,9 @@ description: >-
 Настройте оповещения, которые приходят от Ideco Monitoring Bot, для каждой отдельной беседы.
 
 Для настройки оповещений:
-1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](../../.gitbook/assets/bot\_notification\_settings.svg).
+1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](../../.gitbook/assets/bot_notification_settings.svg).
 2. Проставьте галочки напротив тех уведомлений, которые хотели бы получать в выбранной беседе.
 
 {% hint style="info" %}
-Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot\_notification\_shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
+Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](../../.gitbook/assets/bot_notification_shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
 {% endhint %}

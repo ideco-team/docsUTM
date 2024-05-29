@@ -41,7 +41,7 @@ description: >-
 
 ### Аутентификация пользователя
 
-Для аутентификации потребуется приложение: [Яндекс.Ключ](https://mobile.yandex.ru/apps/android/key) или [Google Authenticator](https://googleauthenticator.org/). 
+Для аутентификации потребуется приложение: [Яндекс.Ключ](https://mobile.yandex.ru/apps/android/key) или Google Authenticator. 
 
 1\. Войдите в личный кабинет UTM, указав логин и пароль пользователя;
 

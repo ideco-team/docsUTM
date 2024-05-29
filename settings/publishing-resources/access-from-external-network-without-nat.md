@@ -7,11 +7,11 @@
 
 Для примера разберем настройку Ideco UTM для доступа без NAT в следующей конфигурации сети:
 
-![](../../.gitbook/assets/firewall\_snat\_3.png)
+![](../../.gitbook/assets/firewall_snat_3.png)
 
 1\. Настройте сетевые интерфейсы в разделе **Сервисы -> Сетевые интерфейсы** на Ideco UTM:
 
-![](../../.gitbook/assets/firewall\_snat\_2.png)
+![](../../.gitbook/assets/firewall_snat_2.png)
 
 **Итоговые правила файрвола выглядят так:**
 

@@ -1,6 +1,6 @@
 # Управление сервером
 
-В центральной консоли (далее Ideco Center) разделы [Автоматическое обновление](server-update.md), [Резервное копирование](backup.md) и [Терминал](terminal.md) аналогичны этим разделам в Ideco UTM. 
+В центральной консоли (далее Ideco Center) разделы [Автоматическое обновление](../server-update.md), [Резервное копирование](../backup.md) и [Терминал](../terminal.md) аналогичны этим разделам в Ideco UTM. 
 
 ## Администраторы
 
@@ -13,7 +13,7 @@
 {% endhint %}
  
 Есть два способа подключения к веб-интерфейсу Ideco UTM из Ideco Center, которые находятся в Ideco Center:
-* Из раздела [Серверы](central-console.md) (по нажатию на ![](../../../.gitbook/assets/icon-eye.png) ):
+* Из раздела [Серверы](README.md) (по нажатию на ![](../../../.gitbook/assets/icon-eye.png) ):
 
     ![](../../../.gitbook/assets/central-console14-2.gif)
     
