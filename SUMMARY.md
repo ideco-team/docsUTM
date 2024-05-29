@@ -235,3 +235,4 @@
 ## changelog
 
 * [Ideco NGFW 17.x](changelog/ideco-utm/README.md)
+* [Ideco Center 17.Х](changelog/cc/README.md)
