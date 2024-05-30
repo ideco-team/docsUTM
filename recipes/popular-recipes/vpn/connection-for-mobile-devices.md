@@ -7,11 +7,11 @@
 
 * В личном кабинете, введя логин/пароль пользователя:
 
-    <img align="left" src="/.gitbook/assets/ubuntu16.png" alt="" data-size="original">
+    <img align="left" src="/.gitbook/assets/user-personal-account6.png" alt="" data-size="original">
     
 * В разделе **Сервисы -> Сертификаты**:
 
-    <img align="left" src="/.gitbook/assets/certificates2.png" alt="" data-size="original">
+    <img align="left" src="/.gitbook/assets/certs1.png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="warning" %}
@@ -24,7 +24,7 @@
 
 1\. Нажмите **Добавить VPN профиль**:
 
-<img src="/.gitbook/assets/strongswan2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices1.png" alt="" data-size="original">
 
 2\. Заполните поля:
 
@@ -33,11 +33,11 @@
 * Логин - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/strongswan1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices2.png" alt="" data-size="original">
 
 3\. Нажмите **Сохранить** и кликните по созданному подключению:
 
-<img src="/.gitbook/assets/strongswan.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices3.png" alt="" data-size="original">
 
 </details>
 
@@ -56,7 +56,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/android.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices4.png" alt="" data-size="original">
 
 **Для IKEv2/IPsec MSCHAPv2:**
 
@@ -68,7 +68,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/android2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices5.png" alt="" data-size="original">
 
 **Для L2TP/IPsec PSK:**
 
@@ -76,7 +76,7 @@
 * Адрес сервера - адрес VPN-сервера;
 * Общий ключ IPsec - значение строки **PSK** в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по L2TP/IPsec**.
 
-<img src="/.gitbook/assets/android1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices6.png" alt="" data-size="original">
 
 4\. Нажмите **Сохранить** и активируйте подключение.
 
@@ -88,11 +88,11 @@
 
 1\. Перейдите в раздел **Настройки -> Основные -> VPN**:
 
-<img src="/.gitbook/assets/vpn-iphone.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices7.png" alt="" data-size="original">
 
 2\. Нажмите **Добавить конфигурацию VPN**:
 
-<img src="/.gitbook/assets/vpn-iphone1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices8.png" alt="" data-size="original">
 
 3\. Выберите **Тип** подключения и заполните соответствующие поля:
 
@@ -105,7 +105,7 @@
 * Учетная запись - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/vpn-iphone4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices9.png" alt="" data-size="original">
 
 **Для L2TP:**
 
@@ -115,7 +115,7 @@
 * Пароль - пароль пользователя;
 * Общий ключ - значение строки **PSK** в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по L2TP/IPsec**.
 
-<img src="/.gitbook/assets/vpn-iphone2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices10.png" alt="" data-size="original">
 
 **Для IKEv2:**
 
@@ -125,12 +125,12 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/vpn-iphone3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices11.png" alt="" data-size="original">
 
 4\. Нажмите **Готово**;
 
 5\. Переведите опцию **Статус** вправо:
 
-<img src="/.gitbook/assets/vpn-iphone5.png" alt="" data-size="original">
+<img src="/.gitbook/assets/connection-for-mobile-devices12.png" alt="" data-size="original">
 
 </details>

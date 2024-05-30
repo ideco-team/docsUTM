@@ -25,7 +25,7 @@ NGFW не поддерживает подключение MikroTik по SSTP, т
 
 3\. **Порт** - выберите предлагаемый порт (из вариантов: 1443, 2443, 3443, 4443):
 
-![](/.gitbook/assets/sstp.png)
+![](/.gitbook/assets/vpn-authorization5.png)
 
 {% hint style="info" %}
 Инструкции по настройке VPN-подключений на разных ОС, доступны по [ссылке](/recipes/popular-recipes/vpn/README.md).

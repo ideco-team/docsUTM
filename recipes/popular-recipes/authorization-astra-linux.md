@@ -41,7 +41,7 @@
 
 Пример проблемы:
 
-![](/.gitbook/assets/authorization-astra-linux.png)
+![](/.gitbook/assets/authorization-astra-linux2.png)
 
 ## Для браузера **Chromium**
 
@@ -61,7 +61,7 @@
 
 Пример проблемы:
 
-![](/.gitbook/assets/authorization-astra-linux.png)
+![](/.gitbook/assets/authorization-astra-linux2.png)
 
 ## Для браузера **Firefox**
 
