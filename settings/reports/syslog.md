@@ -223,3 +223,67 @@ description: >-
 * **Subnet 10.128.187.17/32** - факт успешной авторизации с локальным ip-адресом.
 
 </details>
+
+<details>
+<summary>Веб-авторизация</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-web-authd 1665 - - Subnet 192.168.100.10/32 is authorized as user 'user'. Connection made from None, type 'web'
+```
+{% endcode %}
+
+* `1665` - идентификатор процесса;
+* `192.168.100.10/32` - ip-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'web'` - тип авторизации веб.
+
+</details>
+
+<details>
+<summary>Авторизация по IP</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-web-authd 1665 - - Subnet 192.168.100.49/32 is authorized as user 'user-1717140295.828113'. Connection made from None, type 'ip_permanent'.
+```
+{% endcode %}
+
+* `1665` - идентификатор процесса;
+* `192.168.100.49/32` - ip-адрес пользователя;
+* `'user-1717140295.828113'` - логин пользователя;
+* `type 'ip_permanent'` - тип авторизации IP с постоянной авторизацией.
+
+</details>
+
+<details>
+<summary>Авторизация по MAC</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-auth-backend 3660 - - Subnet 192.168.100.10/32 is authorized as user 'user'. Connection made from None, type 'mac'.
+```
+{% endcode %}
+
+* `3660` - идентификатор процесса;
+* `192.168.100.10/32` - ip-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'mac'` - тип авторизации MAC.
+
+</details>
+
+<details>
+<summary>Авторизация по подсетям</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-auth-backend 3660 - - Subnet 192.168.100.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
+```
+{% endcode %}
+
+* `3660` - идентификатор процесса;
+* `192.168.100.0/24` - подсеть пользователя;
+* `user` - логин пользователя;
+* `type 'net'` - тип авторизации подсеть.
+
+</details>
