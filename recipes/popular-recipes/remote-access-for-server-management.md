@@ -16,7 +16,7 @@
 
 Пример подключения при помощи OpenSSH через консоль:
 
-![](/.gitbook/assets/ssh-access1.png)
+![](/.gitbook/assets/remote-access-for-server-management.png)
 
 ## Доступ к веб-интерфейсу сервера из сети интернет
 
@@ -34,7 +34,7 @@
 
 2\.  Добавьте новое правило, заполнив поля:
 
-![](/.gitbook/assets/reverse-proxy-rule.png)
+![](/.gitbook/assets/reverse-proxy2.png)
 
 3\. Укажите в качестве запрашиваемого адреса IP-адрес или доменное имя внешнего интерфейса Ideco NGFW.
 

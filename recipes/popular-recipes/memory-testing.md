@@ -21,8 +21,8 @@
 
 * Если появится запись **PASS**, тесты памяти пройдены успешно:
 
-    ![](/.gitbook/assets/memory-testing4.png)
+    ![](/.gitbook/assets/memory-testing3.png)
 
 * При ошибке памяти появится запись вида:
     
-    ![](/.gitbook/assets/memory-testing5.png)
+    ![](/.gitbook/assets/memory-testing4.png)

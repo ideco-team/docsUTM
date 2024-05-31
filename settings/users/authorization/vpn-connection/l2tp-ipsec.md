@@ -14,7 +14,7 @@
 
 4\. Нажмите на кнопку **Сохранить**.
 
-![](/.gitbook/assets/l2tp-on.png)
+![](/.gitbook/assets/vpn-authorization3.png)
 
 ## Настройка пользователей в Ideco NGFW
 
