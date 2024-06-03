@@ -5,7 +5,7 @@
 {% endcontent-ref %}
 
 {% content-ref url="logs.md" %}
-[logs.md](logs.mdd)
+[logs.md](logs.md)
 {% endcontent-ref %}
 
 {% content-ref url="security-events.md" %}

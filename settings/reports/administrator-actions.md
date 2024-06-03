@@ -4,4 +4,4 @@ Ideco UTM логирует действия администраторов, ко
 
 ![](/.gitbook/assets/administrator-actions.png)
 
-При работе Ideco UTM в режиме [кластера](settings/server-management/cluster.md) логи действия администраторов не передаются резервной ноде.
+При работе Ideco UTM в режиме [кластера](/settings/server-management/cluster.md) логи действия администраторов не передаются резервной ноде.

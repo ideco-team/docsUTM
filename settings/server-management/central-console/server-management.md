@@ -13,7 +13,7 @@
 {% endhint %}
  
 Есть два способа подключения к веб-интерфейсу Ideco UTM из Ideco Center, которые находятся в Ideco Center:
-* Из раздела [Серверы](central-console.md) (по нажатию на ![](/.gitbook/assets/icon-eye.png) ):
+* Из раздела [Серверы](README.md) (по нажатию на ![](/.gitbook/assets/icon-eye.png) ):
 
     ![](/.gitbook/assets/central-console15-2.gif)
 * При нажатии на стрелку в левом верхнем углу и выборе нужного UTM:
