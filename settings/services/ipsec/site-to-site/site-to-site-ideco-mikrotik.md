@@ -8,6 +8,8 @@
 Исходящие IPsec-подключения по сертификатам к MikroTik ниже версии 6.45 не работают из-за невозможности использования современных криптоалгоритмов.
 {% endhint %}
 
+## Подключение в Туннельном режиме
+
 **При использовании** [**нашего конфигуратора скриптов настроек MikroTik**](https://mikrotik.ideco.ru) **есть несколько особенностей:**
 
 * При подключении нескольких устройств MikroTik к одному Ideco NGFW по PSK нужно указывать разные **Идентификаторы ключа (Key id)** для каждого устройства;
@@ -15,9 +17,9 @@
 
 ![](/.gitbook/assets/site-to-site-ideco-mikrotik.png)
 
-## Исходящее подключение
+### Подключение от Ideco NGFW к MikroTik
 
-### Тип аутентификации PSK
+#### Тип аутентификации PSK
 
 <details>
 
@@ -29,7 +31,7 @@
 * **Зона** - укажите зону для добавления IPSec-подключения;
 * **Адрес удаленного устройства** - укажите внешний IP-адрес устройства MikroTik;
 * **PSK** - будет сгенерирован случайный PSK-ключ. Он потребуется для настройки подключения в MikroTik;
-* **Идентификатор UTM** - введенный ключ будет использоваться для идентификации исходящего подключения;
+* **NGFW идентификатор** - введенный ключ будет использоваться для идентификации исходящего подключения;
 * **Домашние локальные сети** - перечислите все **локальные сети NGFW**, которые будут видны противоположной стороне;
 * **Удаленные локальные сети** - перечислите все **локальные сети MikroTik**, которые будут видны противоположной стороне;
 * **IP-адрес интерфейса туннеля** - укажите IP-адрес интерфейса туннеля при динамической маршрутизации BGP:
@@ -56,7 +58,7 @@
 
 </details>
 
-### Тип аутентификации Сертификат
+#### Тип аутентификации Сертификат
 
 Подключение по сертификатам является более безопасным по сравнению с PSK.
 
@@ -130,9 +132,9 @@
 
 </details>
 
-## Входящее подключение
+### Подключение от MikroTik к Ideco NGFW
 
-### Тип аутентификации PSK
+#### Тип аутентификации PSK
 
 <details>
 
@@ -168,7 +170,7 @@
 
 </details>
 
-### Тип аутентификации Сертификат
+#### Тип аутентификации Сертификат
 
 Подключение по сертификатам является более безопасным, чем подключение по PSK.
 
@@ -221,133 +223,325 @@
 
 </details>
 
+## Подключение в Транспортном режиме (GRE over IPsec)
+
+{% hint style="success" %}
+GRE over IPsec поддерживает мультикаст-трафик, что позволяет использовать более сложные механизмы маршрутизации, включая динамическую маршрутизацию через OSPF.
+
+Также в GRE over IPsec не требуется задавать **Домашние локальные сети** и **Удаленные локальные сети**. Транспортный режим IPsec шифрует только то, что выше уровня IP, а заголовок IP оставляет без изменений.
+{% endhint %}
+
+Рассмотрим настройку подключения по схеме:
+
+![](/.gitbook/assets/site-to-site-ideco-mikrotik16.png)
+
+* `172.16.50.3/24` - внешний IP-адрес NGFW;
+* `192.168.100.2/24` - локальный IP-адрес NGFW;
+* `10.100.0.1/16` - IP-адрес GRE-тунеля NGFW;
+* `172.16.50.4/24` - внешний IP-адрес MikroTik;
+* `192.168.50.2/24` - локальный IP-адрес MikroTik;
+* `10.100.0.2/16` - IP-адрес GRE-тунеля MikroTik.
+
+Для настройки подключения MikroTik и Ideco NGFW нужно следовать инструкции в каждом из пунктов.
+
+### Подключение от Ideco NGFW к MikroTik
+
+<details>
+
+<summary>Предварительная настройка MikroTik</summary>
+
+1\. Настройте на MikroTik IP-адреса:
+
+```
+/ip address add address=172.16.50.4/24 interface=ether1 network=172.16.50.0
+/ip address add address=192.168.50.2/24 interface=ether2 network=192.168.50.0
+```
+
+2\. Создайте GRE-интерфейс и назначьте ему IP-адрес:
+
+```
+/interface gre add allow-fast-path=no local-address=172.16.50.4 name=gre-tunnel1 remote-address=172.16.50.3
+/ip address add address=10.100.0.2/16 interface=gre-tunnel1 network=10.100.0.0
+```
+
+</details>
+
+#### Тип аутентификации PSK
+
+<details>
+
+<summary>Настройка исходящего подключения на Ideco NGFW</summary>
+
+Заполните поля:
+
+![](/.gitbook/assets/ipsec.png)
+
+* **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
+* **Зона** - укажите зону для добавления IPSec-подключения;
+* **Режим работы** - выберите **Транспортный** режим;
+* **Адрес удаленного устройства** - укажите внешний IP-адрес устройства MikroTik;
+* **IP-адрес интерфейса туннеля** - укажите IP-адрес GRE-тунеля NGFW;
+* **Удаленный IP-адрес туннеля** - укажите IP-адрес GRE-тунеля MikroTik;
+* **Интерфейс** - выберите внешний интерфейс NGFW;
+* **Тип аутентификации** - выберите **PSK**;
+* **PSK-ключ** - будет сгенерирован случайный PSK-ключ. Он потребуется для настройки подключения в MikroTik;
+* **Тип идентификатора** - выберите **keyid**;
+* **NGFW идентификатор** - введенный ключ будет использоваться для идентификации исходящего подключения.
+
+</details>
+
+<details>
+
+<summary>Настройка входящего подключения на MikroTik</summary>
+
+Настройте IPsec-подключение со стороны MikroTik:
+
+```
+/ip ipsec profile add dh-group=modp4096 enc-algorithm=aes-256 hash-algorithm=sha256 name=from_192.168.100.0/24
+
+/ip ipsec proposal add auth-algorithms=sha256 comment=from_192.168.100.0/24 enc-algorithms=aes-256-cbc name=172.16.50.3 pfs-group=modp4096
+
+/ip ipsec peer add address=172.16.50.3/32 comment=from_192.168.100.0/24 exchange-mode=ike2 name=from_192.168.100.0/24 passive=yes profile=from_192.168.100.0/24
+
+/ip ipsec identity add comment=from_192.168.100.0/24 peer=from_192.168.100.0/24 secret="<Сгенерированный NGFW PSK-ключ>"
+
+/ip ipsec policy add dst-address=172.16.50.3/32 peer=from_192.168.100.0/24 proposal=172.16.50.3 protocol=gre src-address=172.16.50.4/32
+```
+
+</details>
+
+#### Тип аутентификации Сертификат
+
+<details>
+
+<summary>Настройка исходящего IPsec-подключения на Ideco NGFW</summary>
+
+1\. Перейдите в раздел **IPsec -> Исходящие подключения** и нажмите **Добавить**.
+
+2\. Заполните поля:
+
+![](/.gitbook/assets/ipsec3.png)
+
+  * **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
+  * **Зона** - укажите зону для добавления IPSec-подключения;
+  * **Режим работы** - выберите **Транспортный** режим;
+  * **Адрес удаленного устройства** - укажите внешний IP-адрес устройства MikroTik;
+  * **IP-адрес интерфейса туннеля** - укажите IP-адрес GRE-тунеля NGFW;
+  * **Удаленный IP-адрес туннеля** - укажите IP-адрес GRE-тунеля MikroTik;
+  * **Интерфейс** - выберите интерфейс NGFW;
+  * **Режим работы** - выберите **Транспортный** режим;
+  * **Тип аутентификации** - выберите **Сертификат**.
+
+3\. Загрузите **Запрос на подпись сертификата**.
+
+4\. Не закрывая форму создания исходящего подключения NGFW, перейдите к настройке Mikrotik.
+
+</details>
+
+<details>
+
+<summary>Настройка входящего подключения на MikroTik</summary>
+
+1\. Загрузите скачанный ранее файл с **Запросом на подпись сертификата** (`NGFW.crt`) на MikroTik через WinBox или по ssh.
+
+2\. Создайте корневой сертификат MikroTik:
+
+```
+/certificate add common-name=mk_ca name=mk_ca_template key-usage=key-cert-sign,crl-sign,digital-signature,content-commitment
+/certificate sign mk_ca_template ca-crl-host=172.16.50.4 name=mk_ca
+```
+
+3\. Подпишите сертификат Ideco NGFW и сделайте его доверенным:
+
+```
+/certificate sign-certificate-request file-name=UTM.csr ca=mk_ca
+/certificate set [find name~"^device_.+\\.ipsec\$"] trusted=yes
+```
+
+4\. Экспортируйте корневой сертификат MikroTik и подписанный сертификат NGFW в формат `.pem`:
+
+```
+/certificate export-certificate mk_ca type=pem
+/certificate export-certificate [find name~"^device_.+\\.ipsec\$"] type=pem
+```
+
+5\. Загрузите с MikroTik корневой сертификат MikroTik и подписанный сертификат NGFW через WinBox или по ssh. Названия файлов содержат `cert_export`.
+
+6\. Настройте входящее IPsec-соединение на MikroTik:
+
+```
+/ip ipsec profile add name=from_192.168.100.0/24 hash-algorithm=sha256 enc-algorithm=aes-256 dh-group=modp4096 dpd-interval=120s dpd-maximum-failures=5
+
+/ip ipsec peer add name=from_192.168.100.0/24 address=172.16.50.3/32 profile=from_192.168.100.0/24 exchange-mode=ike2 passive=yes comment=from_192.168.100.0/24
+
+/ip ipsec identity add peer=from_192.168.100.0/24 auth-method=digital-signature certificate=mk_ca remote-certificate=[: put [/certificate get [/certificate find name~"^device_.+\\.ipsec\$"] name]] comment=from_192.168.100.0/24
+
+/ip ipsec proposal add name=172.16.50.3 enc-algorithms=aes-256-cbc auth-algorithms=sha256 pfs-group=modp4096 comment=from_192.168.100.0/24
+
+/ip ipsec policy add dst-address=172.16.50.3/32 peer=from_192.168.100.0/24 proposal=172.16.50.3 protocol=gre src-address=172.16.50.4/32
+```
+
+</details>
+
+<details>
+
+<summary>Донастройка исходящего IPsec-подключение на Ideco NGFW</summary>
+
+Вернитесь к форме создания исходящего IPsec-соединения на Ideco NGFW.
+
+1\. Загрузите скачанные ранее файлы **Корневого сертификата MikroTik** (`cert_export_mk_ca.crt`) и **Подписанный сертификат NGFW** (`cert_export_device_53c34ddc6d584d938f2098eae838e6ff.ipsec.crt`) в поля **Корневой сертификат удаленного устройства** и **Подписанный сертификат NGFW** соответственно.
+
+2\. Нажмите **Сохранить**.
+
+</details>
+
+### Подключение от MikroTik к Ideco NGFW  
+
+#### Тип аутентификации PSK
+
+<details>
+
+<summary>Настройка исходящего подключения на MikroTik</summary>
+
+1\. Настройте на MikroTik IP-адреса:
+
+```
+/ip address add address=172.16.50.4/24 interface=ether1 network=172.16.50.0
+/ip address add address=192.168.50.2/24 interface=ether2 network=192.168.50.0
+```
+
+2\. Создайте GRE-интерфейс и назначьте ему IP-адрес:
+
+```
+/interface gre add allow-fast-path=no local-address=172.16.50.4 name=gre-tunnel1 remote-address=172.16.50.3
+/ip address add address=10.100.0.2/16 interface=gre-tunnel1 network=10.100.0.0
+```
+
+3\. Настройте IPsec-подключение со стороны MikroTik:
+
+```
+/ip ipsec profile add dh-group=modp4096 enc-algorithm=aes-256 hash-algorithm=sha256 name=to_192.168.100.0/24
+
+/ip ipsec proposal add auth-algorithms=sha256 comment=to_192.168.100.0/24 enc-algorithms=aes-256-cbc name=172.16.50.3 pfs-group=modp4096
+
+/ip ipsec peer add address=172.16.50.3/32 comment=to_192.168.100.0/24 exchange-mode=ike2 name=to_192.168.100.0/24 profile=to_192.168.100.0/24
+
+/ip ipsec identity add comment=to_192.168.100.0/24 peer=to_192.168.100.0/24 my-id=key-id:"test_psk" secret="<PSK-ключ>"
+
+/ip ipsec policy add dst-address=172.16.50.3/32 peer=to_192.168.100.0/24 proposal=172.16.50.3 protocol=gre src-address=172.16.50.4/32
+```
+
+</details>
+
+<details>
+
+<summary>Настройка входящего подключения на Ideco NGFW</summary>
+
+Заполните поля:
+
+![](/.gitbook/assets/ipsec1.png)
+
+* **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
+* **Зона** - укажите зону для добавления IPSec-подключения;
+* **Режим работы** - выберите **Транспортный** режим;
+* **IP-адрес интерфейса туннеля** - укажите IP-адрес GRE-тунеля NGFW;
+* **Удаленный IP-адрес туннеля** - укажите IP-адрес GRE-тунеля MikroTik;
+* **Тип аутентификации** - выберите **PSK**;
+* **PSK-ключ** - введите PSK-ключ, указанный при настройке исходящего подключения в MikroTik;
+* **Тип идентификатора** - выберите **keyid**;
+* **NGFW идентификатор** - введите **key-id**, использованный при настройке исходящего подключения в MikroTik.
+
+</details>
+
+#### Тип аутентификации Сертификат
+
+<details>
+
+<summary>Предварительная настройка MikroTik</summary>
+
+1\. Настройте на MikroTik IP-адреса:
+
+```
+/ip address add address=172.16.50.4/24 interface=ether1 network=172.16.50.0
+/ip address add address=192.168.50.2/24 interface=ether2 network=192.168.50.0
+```
+
+2\. Создайте GRE-интерфейс и назначьте ему IP-адрес:
+
+```
+/interface gre add allow-fast-path=no local-address=172.16.50.4 name=gre-tunnel1 remote-address=172.16.50.3
+/ip address add address=10.100.0.2/16 interface=gre-tunnel1 network=10.100.0.0
+```
+
+3\. Сгенерируйте запрос на подпись сертификата:
+
+```
+/certificate add name=mk_ca common-name=mk_ca key-usage=digital-signature,content-commitment
+/certificate create-certificate-request key-passphrase="" template=mk_ca
+```
+
+4\. Загрузите файл `certificate-request.pem` c MikroTik через WinBox или по ssh.
+
+</details>
+
+<details>
+
+<summary>Настройка входящего IPsec-подключения на Ideco NGFW</summary>
+
+1\. Перейдите в раздел **IPsec -> Входящие подключения** и нажмите **Добавить**.
+
+2\. Заполните поля:
+
+![](/.gitbook/assets/ipsec2.png)
+
+  * **Название подключения** - укажите произвольное имя для подключения. Значение не должно быть длиннее 42 символов;
+  * **Зона** - укажите зону для добавления IPSec-подключения;
+  * **Режим работы** - выберите **Транспортный** режим;
+  * **IP-адрес интерфейса туннеля** - укажите IP-адрес GRE-тунеля NGFW;
+  * **Удаленный IP-адрес туннеля** - укажите IP-адрес GRE-тунеля MikroTik;
+  * **Тип аутентификации** - выберите **Сертификат**.
+
+3\. Загрузите скачанный ранее с MikroTik файл `certificate-request.pem` в поле **Запрос на подпись сертификата**.
+
+4\. Нажмите **Сохранить**.
+
+5\. Откройте созданное IPsec-соединение, нажав на ![](/.gitbook/assets/icon-edit.png) и загрузите файлы **Корневого сертификата NGFW** (`NGFW.crt`) и **Подписанный сертификат устройства** (`device.crt`).
+
+</details>
+
+<details>
+
+<summary>Настройка исходящего IPsec-подключение на MikroTik</summary>
+
+1\. Загрузите на MikroTik скачанные ранее файлы **Корневого сертификата NGFW** (`NGFW.crt`) и **Подписанный сертификат устройства** (`device.crt`) через WinBox или по ssh.
+
+2\. Импортируйте сертификаты:
+
+```
+/certificate import file-name=NGFW.crt passphrase=""
+/certificate import file-name=device.crt passphrase=""
+/certificate import file-name=certificate-request_key.pem passphrase=""
+```
+
+3\. Настройте IPsec-соединение:
+
+```
+/ip ipsec profile add dh-group=modp4096 enc-algorithm=aes-256 hash-algorithm=sha256 name=to_192.168.100.0/24 dpd-interval=120s dpd-maximum-failures=5
+
+/ip ipsec peer add address=172.16.50.3/32 comment=to_192.168.100.0/24 exchange-mode=ike2 name=to_192.168.100.0/24 profile=to_192.168.100.0/24
+
+/ip ipsec identity add comment=to_192.168.100.0/24 peer=to_192.168.100.0/24 auth-method=digital-signature certificate=device.crt_0 remote-certificate=NGFW.crt_0
+
+/ip ipsec proposal add auth-algorithms=sha256 comment=to_192.168.100.0/24 enc-algorithms=aes-256-cbc name=172.16.50.3 pfs-group=modp4096
+
+/ip ipsec policy add dst-address=172.16.50.3/32 peer=to_192.168.100.0/24 proposal=172.16.50.3 protocol=gre src-address=172.16.50.4/32
+```
+
+</details>
+
+
 ### Проблемы при повторной активации входящего подключения к Ideco NGFW
 
 Если подключение было отключено и при попытке включения соединение не установилось, удаленное устройство попало в fail2ban. Для установки соединения сбросьте блокировки по IP на Ideco NGFW. О сбросе блокировки читайте в статье [Защита от brute-force атак](/settings/reports/logs.md#защита-от-brute-force-атак).
 
 Fail2ban отслеживает в log-файлах попытки обратиться к сервисам, и, если находит повторяющиеся неудачные попытки авторизации с одного и того же IP-адреса или хоста, блокирует IP-адрес.
-
-## Подключение MikroTik к Ideco NGFW по L2TP/IPsec
-
-Настройте подключение, выполнив команды:
-
-1\. Отредактируйте IPsec profile:
-
-```
-ip ipsec profile set default hash-algorithm=sha1 enc-algorithm=aes-256 dh-group=modp2048
-```
-
-2\. Отредактируйте IPsec proposals:
-
-```
-ip ipsec proposal set default auth-algorithms=sha1 enc-algorithms=aes-256-cbc,aes-192-cbc,aes-128-cbc pfs-group=modp2048
-```
-
-3\. Создайте подключение к Ideco NGFW:
-
-```
-interface l2tp-client add connect-to=<server> profile=default disabled=no name=<interface_name> password="<password>" user="<login>" use-ipsec="yes" ipsec-secret="<psk>"
-```
-
-4\. Добавьте маршрут до первого адреса VPN-cети NGFW (remote VPN subnet):
-
-```
-ip route add dst-address=<remote VPN subnet> gateway=l2tp-out1
-```
-
-{% hint style="info" %}
-Для работы удаленных сетей на NGFW и на MikroTik нужно создавать маршруты на обоих устройствах.
-{% endhint %}
-
-{% hint style="info" %}
-Если у вас в разделе **Правила трафика -> Файрвол -> SNAT** отключен **Автоматический SNAT локальных сетей**, то может понадобиться прописать маршрут до сети VPN, где шлюзом является NGFW.
-
-Пример:
-
-* Aдрес NGFW = `169.254.1.5`
-* Первый адрес VPN = `10.128.0.1`
-
-`ip route add dst-address=169.254.1.5 gateway==10.128.0.1`
-{% endhint %}
-
-## Подключение Mikrotik к Ideco UTM по IKev2/IPsec
-
-1\. Откройте WinBox.
-
-2\. Перейдите в терминал, нажав `new terminal`:
-
-![](/.gitbook/assets/site-to-site-ideco-mikrotik14.png)
-
-3\. Загрузите сертификат выполнив команды:
-
-```
-/tool fetch url="https://letsencrypt.org/certs/letsencryptauthorityx1.pem" dst-path=letsencryptauthorityx1.pem
-/tool fetch url="https://letsencrypt.org/certs/lets-encrypt-r3.pem" dst-path=lets-encrypt-r3.pem
-```
-
-4\. Импортируйте сертификат выполнив команды:
-
-```
-/certificate import file-name=isrgrootx1.pem passphrase="" name=lisrgrootx1.pem
-/certificate import file-name=lets-encrypt-r3.pem passphrase="" name=lets-encrypt-r3
-```
-
-5\. Настройте алгоритмы шифрования для IPsec step 1 (IKE):
-
-```
-/ip ipsec profile add dh-group=modp4096,modp2048,modp1024 dpd-interval=2m dpd-maximum-failures=5 enc-algorithm=aes-256,aes-192,aes-128 hash-algorithm=sha256 lifetime=1d name=IKEv2_TO_UTM nat-traversal=yes proposal-check=obey
-```
-
-6\. Настройте алгоритмы шифрования для IPsec step 2 (ESP):
-
-```
-/ip ipsec proposal add auth-algorithms=sha512,sha256,sha1 disabled=no enc-algorithms="aes-256-cbc,aes-256-ctr,aes-256-gcm,aes-192-cbc,aes-192-gcm,aes-128-cbc,aes-128-ctr,aes-128-gcm" lifetime=30m name=IKev2_to_UTM pfs-group=modp1024
-```
-
-7\. Настройте одноранговый узел. В качестве `address` укажите доменное имя, которое используется для IKev2 подключения:
-
-```
-/ip ipsec peer add address={ideco.test.ru} disabled=no exchange-mode=ike2 name=IKEV2_TO_UTM profile=IKEv2_TO_UTM send-initial-contact=yes
-```
-
-8\. Создайте группу, которая будет использоваться для автоматического NAT:
-
-```
-/ip ipsec policy group add name=IKEv2_TO_UTM
-```
-
-9\. Создайте address-list в котором находятся Удаленные сети УТМ. Если за UTM несколько подсетей, то нужно создавать несколько элементов в списке: 
-
-```
-/ip firewall address-list add address={1.2.3.0/24} disabled=no list=Behind_UTM_Gateway
-```
-
-10\. Создайте новую запись конфигурации режима с ответчиком `= no`, которая будет запрашивать параметры конфигурации с сервера:
-
-```
-/ip ipsec mode-config add connection-mark=no-mark name=IKEv2_TO_UTM responder=no src-address-list=Behind_UTM_Gateway use-responder-dns=yes
-```
-
-11\. Создайте политику, которая придет с NGFW (в виде шаблона):
-
-```
-/ip ipsec policy add disabled=no dst-address=0.0.0.0/0 group=IKEv2_TO_UTM proposal=IKEv2_TO_UTM protocol=all src-address=0.0.0.0/0 template=yes
-```
-
-12\. Создайте профиль идентификации пользователя:
-
-```
-/ip ipsec identity add auth-method=eap certificate="" disabled=no eap-methods=eap-mschapv2 generate-policy=port-strict mode-config=IKEv2_TO_UTM peer=IKEV2_TO_UTM policy-template-group=IKEv2_TO_UTM username=<'login'> password=<'password'> 
-```
-
-13\. Перейдите в веб-интерфейс NGFW в раздел **Пользователи —> VPN подключения** и в строке **Сеть для VPN-подключений** добавьте первый адрес сети VPN:
-
-![](/.gitbook/assets/site-to-site-ideco-mikrotik15.png)
-
-14\. Создайте маршрут до удаленных сетей NGFW через интерфейс, который смотрит в интернет.
-
-```
-/ip route add disabled=no dst-address={10.128.0.0/16} gateway=ether1 routing-table=main
-```
-
-* где в качестве gateway={ether1} - интерфейс, который выходит в интернет.
