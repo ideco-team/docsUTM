@@ -17,9 +17,9 @@ Ideco Monitoring Bot присылает уведомления о события
 
 1\. Настроить интернет на Ideco NGFW.
 
-2\. [Привязать лицензию](broken-reference) к серверу.
+2\. [Привязать лицензию](/settings/server-management/license-management.md) к серверу.
 
-3\. Перейти к диалогу с ботом: [@ideco\_monitor\_bot](https://telegram.im/@ideco\_monitor\_bot).
+3\. Перейти к диалогу с ботом: [@ideco_monitor_bot](https://telegram.im/@ideco_monitor_bot).
 
 4\. Написать боту `/start`.
 
@@ -41,7 +41,7 @@ Ideco Monitoring Bot присылает уведомления о события
 
 1\. Настроить интернет на Ideco NGFW.
 
-2\. [Привязать лицензию](broken-reference) к серверу.
+2\. [Привязать лицензию](/settings/server-management/license-management.md) к серверу.
 
 3\. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
 
