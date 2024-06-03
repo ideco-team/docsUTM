@@ -1,6 +1,6 @@
 # Если соединение по IPsec не устанавливается
 
-1\) Перезагрузите сервисы на стороне головного офиса и филиала, выполнив команду `systemctl restart ideco-ipsec-backend.service && systemctl restart strongswan.service`.
+1\) Перезагрузите сервисы двух NGFW, выполнив команду `systemctl restart ideco-ipsec-backend.service && systemctl restart strongswan.service`.
 
 2\) Проверьте работоспособность перезагруженных сервисов:
 
@@ -9,7 +9,7 @@
   
 Если при переходе в раздел IPsec и выполнении команды возникли ошибки, то перейдите к пункту 3.
 
-3\) Пересоздайте соединение из веб-интерфейса по инструкции [Настройка подключения между Филиалом и Главным офисом](/settings/services/ipsec/branch-office-and-main-office.md#nastroika-podklyucheniya-mezhdu-filialom-i-glavnym-ofisom).  
+3\) Пересоздайте соединение из веб-интерфейса по инструкции [Настройка подключения между Филиалом и Главным офисом](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-tunnel.md).  
 
 Если пересоздание соединения не помогло, перейдите к пункту 4.
 

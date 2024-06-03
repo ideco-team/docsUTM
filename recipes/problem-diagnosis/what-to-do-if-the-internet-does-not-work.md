@@ -45,4 +45,4 @@
 
 1\. Сделайте скриншоты вкладки **Основное** у пользователя в развернутом виде и создайте обращение на [портале поддержки](https://help.ideco.ru/) или напишите письмо на support@ideco.ru.
 
-2\. Включите [режим удаленного помощника](/general/remote-assistant.md) и обратитесь в службу технической поддержки: [https://ideco.ru/support/remote-help](https://ideco.ru/support/remote-help).
+2\. Включите [режим удаленного помощника](/recipes/popular-recipes/remote-assistant.md) и обратитесь в службу технической поддержки: [https://ideco.ru/tekhnicheskaya-podderzhka](https://ideco.ru/tekhnicheskaya-podderzhka).

@@ -2,7 +2,7 @@
 
 Разавторизация пользователей возможна в полностью автоматическом режиме.
 
-Для этого нужно настроить скрипт, исполняемый при выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN). Это можно сделать с помощью групповых политик домена (GPO).
+Для этого нужно настроить скрипт, исполняемый при выходе пользователей из системы [logout](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583(v=ws.11)?redirectedfrom=MSDN). Это можно сделать с помощью групповых политик домена (GPO).
 
 {% hint style="info" %}
 Для работы скрипта выполните все настройки политик безопасности домена и браузера, описанные в статье [Авторизация пользователей](active-directory-user-authorization.md).
@@ -30,7 +30,7 @@ HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings 
 
 ### Добавления скрипта для разавторизации
 
-Добавьте скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583\(v=ws.11\)?redirectedfrom=MSDN):
+Добавьте скрипт, выполняемый [при выходе пользователя из системы](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753583(v=ws.11)?redirectedfrom=MSDN):
 
 1\. Откройте групповые политики (gpedit.msc) от имени администратора на устройстве пользователя;
 

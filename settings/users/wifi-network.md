@@ -17,15 +17,15 @@ Wi-Fi-маршрутизаторы.
 
 Для этого индивидуально авторизуйте всех беспроводных клиентов на Ideco NGFW с помощью IP-авторизации. Воспользуйтесь следующими рекомендациями по настройке:
 
-* Используйте отдельную логическую сеть для клиентов Wi-Fi с настроенным [DHCP-сервером](settings/services/dhcp.md). При этом на локальный интерфейс Ideco NGFW добавьте IP-адрес, служащий шлюзом для этой сети;
-* [Создайте группу](settings/users/user-tree/user-management.md#sozdanie-gruppy) в разделе **Пользователи -> Учетные записи** и настройте добавление в эту группу пользователей помощью [обнаружения устройств](settings/users/device-discovery.md);
-* С помощью [контент-фильтра](settings/access-rules/content-filter/README.md) и [файрвола](settings/access-rules/firewall.md) настройте необходимые ограничения\
+* Используйте отдельную логическую сеть для клиентов Wi-Fi с настроенным [DHCP-сервером](/settings/services/dhcp.md). При этом на локальный интерфейс Ideco NGFW добавьте IP-адрес, служащий шлюзом для этой сети;
+* [Создайте группу](/settings/users/user-tree/user-management.md#sozdanie-gruppy) в разделе **Пользователи -> Учетные записи** и настройте добавление в эту группу пользователей помощью [обнаружения устройств](/settings/users/device-discovery.md);
+* С помощью [контент-фильтра](/settings/access-rules/content-filter/README.md) и [файрвола](/settings/access-rules/firewall.md) настройте необходимые ограничения\
   для пользователей Wi-Fi;
 * Если Wi-Fi-роутер подключен к отдельному физическому интерфейсу NGFW, то в файрволе запретите доступ из беспроводной сети в локальную сеть.
 
 Пример настройки интерфейса для клиентов, подключающихся по Wi-Fi:
 
-![](.gitbook/assets/wifi-network.png)
+![](/.gitbook/assets/wifi-network.png)
 
 * **10.0.1.146/24** - шлюз для беспроводной Wi-Fi-сети;
 * **10.0.0.193/24** - шлюз для локальной Ethernet-сети.
@@ -62,7 +62,7 @@ Wi-Fi-маршрутизаторы.
 
 ![](/.gitbook/assets/wifi-network2.png)
 
-К пользователю необходимо применить общие ограничения [контент-фильтра](settings/access-rules/content-filter/README.md) и [файрвола](settings/access-rules/firewall.md) для Wi-Fi-сети.
+К пользователю необходимо применить общие ограничения [контент-фильтра](/settings/access-rules/content-filter/README.md) и [файрвола](/settings/access-rules/firewall.md) для Wi-Fi-сети.
 
 #### Настройка DHCP:
 
