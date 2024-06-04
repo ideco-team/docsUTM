@@ -47,6 +47,45 @@ set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Ma
 </details>
 
 <details>
+<summary>Сбор анонимной статистики о работе сервера</summary>
+
+### Получение текущих настроек:
+
+```
+GET /gather_stat/settings
+```
+
+**Ответ на успешный запрос:**
+
+```
+{
+      "enabled": boolean
+   }
+```
+
+Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
+
+### Изменение настроек
+
+```
+PUT /gather_stat/settings
+```
+
+**Json-тело запроса**
+
+```
+{
+      "enabled": boolean
+   }
+```
+
+Ответ на такой запрос будет пустым.
+
+</details>
+
+## Лицензирование
+
+<details>
 <summary>Регистрация сервера</summary>
 
 ```
@@ -184,39 +223,77 @@ GET /license/info
 </details>
 
 <details>
-<summary>Сбор анонимной статистики о работе сервера</summary>
-
-### Получение текущих настроек:
+<summary>Получение информации о механизме обновления лицензии</summary>
 
 ```
-GET /gather_stat/settings
+GET /license/update-type
 ```
 
 **Ответ на успешный запрос:**
 
 ```
 {
-      "enabled": boolean
-   }
+  "update_type": "auto" | "manual"
+}
 ```
 
-Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
+* `auto` - при автоматическом получении лицензии;
+* `manual` - при ручной загрузке лицензии.
 
-### Изменение настроек
+</details>
+
+<details>
+<summary>Изменение механизма обновления лицензии</summary>
 
 ```
-PUT /gather_stat/settings
+PUT /license/update-type
 ```
 
-**Json-тело запроса**
+**Json-тело запроса:**
 
 ```
 {
-      "enabled": boolean
-   }
+  "update_type": "auto" | "manual"
+}
 ```
 
-Ответ на такой запрос будет пустым.
+**Ответ на успешный запрос**: 200 ОК
+
+</details>
+
+<details>
+<summary>Получение ссылки для оффлайн-регистрации</summary>
+
+```
+GET /license/license-get-offline-registration-url
+```
+
+**Ответ на успешный запрос**
+
+```
+{
+    "registration_url": "https://my.ideco.ru/offline_register?server_name=ZGF0YSB0byBiZSBlbmNvZGVk&hwid=u-CVv6SSNMXI_Mukgnf3SCIxJz9kcl0i50ARFk4FRz1O&version=17.1"
+}
+```
+
+* `server_name` - имя сервера Ideco NGFW;
+* `hwid` - HWID сервера;
+* `version` - версия сервера.
+
+Получение ссылки для оффлайн-регистрации сервера возможно только при ручном механизме обновления лицензии.
+
+</details>
+
+<details>
+<summary>Загрузка файла с лицензией на NGFW</summary>
+
+```
+POST /license/license-upload
+```
+
+Тело запроса: форма загрузки файла. Имя поля в форме загрузки файла - `license_file`
+
+**Ответ на успешный запрос**: 200 ОК
 
 </details>
 
@@ -649,7 +726,7 @@ PUT /netscan_backend/settings
 }
 ```
 
-Возвращает HTTP-код **200** OK.
+**Ответ на успешный запрос**: 200 OK.
 
 </details>
 
