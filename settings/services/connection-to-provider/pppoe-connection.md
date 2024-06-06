@@ -29,12 +29,12 @@ description: >-
 
 **Пример настройки:**
 
-![](/.gitbook/assets/pppoe-connection.png)
+![](/.gitbook/assets/interfaces16.png)
 
 {% hint style="info" %}
 Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
 
 Пример вывода команды:
 
-![](/.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/web-terminal4.png)
 {% endhint %}

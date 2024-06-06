@@ -18,4 +18,4 @@
 ## IDECO CENTER 18.Х СБОРКА Х (ХХ.ХХ.ХХХХ)
 
 #### Новые возможности
-
+jkhsfkbhdkfjsd;lgn ksdhgfkshjgl

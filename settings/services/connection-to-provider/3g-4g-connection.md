@@ -13,5 +13,5 @@ description: >-
 
 Пример вывода команды:
 
-![](/.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/web-terminal4.png)
 {% endhint %}

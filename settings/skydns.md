@@ -1,7 +1,7 @@
 ---
 description: Настройка Ideco NGFW для фильтрации трафика с помощью облачного сервиса SkyDNS.
 ---
-
+dfkgdhgklj
 # Интеграция NGFW и SkyDNS
 
 {% hint style="success" %}
