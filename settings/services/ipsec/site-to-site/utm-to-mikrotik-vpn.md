@@ -49,7 +49,7 @@ ip route add dst-address=<remote VPN subnet> gateway=l2tp-out1
 
 2\. Перейдите в терминал, нажав `new terminal`:
 
-![](/.gitbook/assets/site-to-site-ideco-mikrotik14.png)
+![](/.gitbook/assets/utm-to-mikrotik-vpn.png)
 
 3\. Загрузите сертификат выполнив команды:
 
@@ -115,7 +115,7 @@ ip route add dst-address=<remote VPN subnet> gateway=l2tp-out1
 
 13\. Перейдите в веб-интерфейс NGFW в раздел **Пользователи —> VPN подключения** и в строке **Сеть для VPN-подключений** добавьте первый адрес сети VPN:
 
-![](/.gitbook/assets/site-to-site-ideco-mikrotik15.png)
+![](/.gitbook/assets/utm-to-mikrotik-vpn1.png)
 
 14\. Создайте маршрут до удаленных сетей NGFW через интерфейс, который смотрит в интернет.
 

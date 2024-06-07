@@ -15,7 +15,7 @@
 
 Пример топологии с использованием OSPF представлен на схеме ниже:
 
-![](/.gitbook/assets/ospf-6.png)
+![](/.gitbook/assets/ospf6.png)
 
 <details>
 
@@ -25,25 +25,25 @@
 
 Маршрутизатор, использующий OSPF, отправляет Hello-пакеты на мультикастовый адрес 224.0.0.5 со всех интерфейсов, где запущен OSPF. При наличии соседнего устройства маршрутизатор пытается установить с ним отношения смежности.
 
-<img src="/.gitbook/assets/ospf-1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf1.png" alt="" data-size="original">
 
 **2. Обмен объявлениями о состоянии каналов**
 
 После установления смежности устройства выполняют обмен LSA. LSA содержат информацию о состоянии и стоимости каждого канала с прямым подключением.
 
-<img src="/.gitbook/assets/ospf-2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf2.png" alt="" data-size="original">
 
 **3. Создание базы данных состояния связи**
 
 На основе объявления LSA маршрутизаторы собирают базу данных, в которой содержатся данные о топологии сети в области.
 
-<img src="/.gitbook/assets/ospf-3.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf3.jpg" alt="" data-size="original">
 
 **4. Исполнение алгоритма SPF**
 
 На устройствах выполняется алгоритм SPF, результатом которого является создание дерева кратчайших путей.
 
-<img src="/.gitbook/assets/ospf-4.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf4.jpg" alt="" data-size="original">
 
 **5. Выбор лучшего маршрута**
 
@@ -51,7 +51,7 @@
 Маршрут добавляется в таблицу маршрутизации, если отсутствует источник маршрута к той же сети с меньшим административным расстоянием, например, статический маршрут. \
 Решения по маршрутизации пакетов принимаются на основе записей в таблице маршрутизации.
 
-<img src="/.gitbook/assets/ospf-5.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf5.jpg" alt="" data-size="original">
 
 </details>
 
@@ -76,11 +76,11 @@
 
 Пример настройки:
 
-<img src="/.gitbook/assets/ospf-7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf7.png" alt="" data-size="original">
 
 Пример готовой таблицы:
 
-<img src="/.gitbook/assets/ospf-8.png" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf8.png" alt="" data-size="original">
 
 </details>
 
@@ -93,16 +93,16 @@
 * Поставьте крестик на модуле **Routing**;
 * Укажите необходимые интерфейсы, но БЕЗ статических маршрутов:
 
-    ![](/.gitbook/assets/ospf-mikrotik3.png)
+    ![](/.gitbook/assets/ospf9.png)
 
 * Для начала установки введите **i** и нажмите **Enter**;
 * Появится сообщение "All data on the disk will be erased. Continue?", ведите **y** и нажмите **Enter**:
     
-    ![](/.gitbook/assets/ospf-mikrotik1.png)
+    ![](/.gitbook/assets/ospf10.png)
 
 2\. После установки RouterOS требуется его перезагрузить, нажав **Enter**:
 
-![](/.gitbook/assets/ospf-mikrotik2.png)
+![](/.gitbook/assets/ospf11.png)
 
 3\. По умолчанию *логин* - `admin`, а *пароль* - пустое значение;
 

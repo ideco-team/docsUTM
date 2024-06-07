@@ -23,14 +23,14 @@ NextDNS является облачным поставщиком услуг DNS 
 
 1\. Зайти на сайт https://my.nextdns.io/`nextDNS-id`/setup
 
-![Первичное окно настройки NextDNS](/.gitbook/assets/nextdns_first_configuration.png)
+![Первичное окно настройки NextDNS](/.gitbook/assets/nextdns.png)
 
 2\. Перейти в раздел **Сервисы -> DNS**.
 
 3\. Нажать на флаг с **NextDNS** и вставить в поле ID из личного кабинета, как показано\
 на скриншоте:
 
-![](/.gitbook/assets/nextdns_paste_id_in_dns.png)
+![](/.gitbook/assets/dns6.png)
 
 4\. Нажать на кнопку **Сохранить**.
 
