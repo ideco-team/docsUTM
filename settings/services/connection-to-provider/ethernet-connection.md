@@ -14,7 +14,7 @@ description: Настройка вручную и автоматически с 
 
 2\. Нажмите **Добавить** в левом верхнем углу окна и выберите пункт **Внешний Ethernet**. 
 
-![](/.gitbook/assets/local-ethernet2.png)
+![](/.gitbook/assets/interfaces13.png)
 
 3\. Выберите сетевую карту.
 
@@ -34,13 +34,13 @@ description: Настройка вручную и автоматически с 
 
 Пример вывода команды:
 
-![](/.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/web-terminal4.png)
 {% endhint %}
 
 
 **Пример настройки:**
 
-![](/.gitbook/assets/ethernet-connection1.png)
+![](/.gitbook/assets/interfaces10.png)
 
 ## Автоматическая настройка
 
@@ -62,4 +62,4 @@ description: Настройка вручную и автоматически с 
 
 **Пример настройки:**
 
-![](/.gitbook/assets/ethernet-connection2.png)
+![](/.gitbook/assets/interfaces11.png)

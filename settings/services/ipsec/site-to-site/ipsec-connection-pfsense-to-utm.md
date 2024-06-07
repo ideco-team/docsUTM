@@ -26,7 +26,7 @@ description: >-
 * **Домашние локальные сети** - укажите локальную сеть Ideco NGFW, которая будет видна из подсети pfSense;
 * **Удаленные локальные сети** - укажите локальную сеть pfSense, которая будет видна из подсети Ideco NGFW:
 
-![](/.gitbook/assets/ipsec-connection-pfsense-to-utm4.png)
+![](/.gitbook/assets/ipsec4.png)
 
 3\. Сохраните созданное подключение, нажмите на кнопку **Включить**.
 
@@ -38,7 +38,7 @@ description: >-
 
 Во вкладке **Сервисы -> IPsec -> Входящие подключения** в строке **Идентификатор удаленной стороны**:
 
-![](/.gitbook/assets/ipsec-connection-pfsense-to-utm5.png)
+![](/.gitbook/assets/ipsec5.png)
 
 </details>
 

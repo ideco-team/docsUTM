@@ -32,12 +32,12 @@ description: >-
 
 **Пример настройки подключения по PPTP:**
 
-![](/.gitbook/assets/pptp-connection.png)
+![](/.gitbook/assets/interfaces17.png)
 
 {% hint style="info" %}
 Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
 
 Пример вывода команды:
 
-![](/.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/web-terminal4.png)
 {% endhint %}
