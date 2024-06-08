@@ -10,4 +10,4 @@
 * **Шлюз** - IP-адрес шлюза;
 * **DNS** - Доступно два поля для указания DNS сервера (необязательно).
 
-![](https://docs.ideco.dev/\~gitbook/image?url=https%3A%2F%2F4217941192-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FzELp0pTlLMmCAnvEjR2o%252Fuploads%252Fgit-blob-f5123972a2cd932b18968699bc92af6890603417%252Fservices.png%3Falt%3Dmedia\&width=768\&dpr=4\&quality=100\&sign=b6e2053424f5ee1942e330ec1e6adae6b406803c8e70036f5f6a49feea46e077)
+![](/.gitbook/assets/services.png)
