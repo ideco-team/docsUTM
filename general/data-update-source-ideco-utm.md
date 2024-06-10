@@ -31,13 +31,18 @@
 
 Ideco NGFW получает обновления из следующих источников:
 
-* Получение лицензии: my.ideco.ru;
-* Предотвращение вторжений: suricata.ideco.ru;
-* Расширенный контент-фильтр: mcs-vm.ideco.ru;
-* Обновления: update.ideco.ru;
-* ClamAV: clamav.update.ideco.ru;
-* NTP:ntp.ideco.ru;
-* Антивирус Касперского для обновления баз использует список серверов, указанный на официальном сайте "Лаборатории Касперского": [https://support.kaspersky.ru/common/start/6105](https://support.kaspersky.ru/common/start/6105).
+* Отсылка уведомлений в личный кабинет/телеграм-бот: alerts.v17.ideco.dev; 
+* Обновление баз **Контент-фильтра**: content-filter.v17.ideco.dev;
+* Отсылка анонимной статистики: gatherstat.v17.ideco.dev;
+* Обновления баз GeoIP: ip-list.v17.ideco.dev;
+* Обмен информации о лицензии: license.v17.ideco.dev;
+* Отправка отчетов по почте: send-reports.v17.ideco.dev;
+* Обновления suricata: suricata.v17.ideco.dev;
+* Обновления системы: sysupdate.v17.ideco.dev;
+* Синхронизация времени: ntp.ideco.ru;
+* Антивирус Касперского для обновления баз использует список серверов, указанный на [официальном сайте](https://support.kaspersky.ru/common/start/6105) "Лаборатории Касперского".
+
+Кроме того, часть запросов к указанным выше серверам может быть перенаправлена на mcs-vm.ideco.ru, update.ideco.ru, storage.yandexcloud.net.
 
 {% hint style="info" %}
 Для корректной работы всех модулей фильтрации Ideco NGFW, необходимо чтобы доступ к вышеуказанным ресурсам, был разрешен настройками фильтрации.
