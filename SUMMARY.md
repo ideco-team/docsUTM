@@ -105,7 +105,6 @@
     * [Master-зоны](settings/services/dns/master-zon.md)
     * [Forward-зоны](settings/services/dns/forward-zon.md)
     * [DDNS](settings/services/dns/ddns.md)
-    * [NextDNS](settings/services/dns/nextdns.md)
   * [DHCP-сервер](settings/services/dhcp.md)
   * [NTP-сервер](settings/services/ntp.md)
   * [IPsec](settings/services/ipsec/README.md)
