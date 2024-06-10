@@ -27,6 +27,24 @@ Ideco Center - это центральная консоль, которая по
 
 Файл для установки центральной консоли доступен для скачивания в [личном кабинете](https://my.ideco.ru/#/utm/download). Процесс установки Ideco Center аналогичен [процессу установки Ideco NGFW](/installation/installation-process.md).
 
+**Источники обновления данных для Ideco Center:**
+
+Ideco Center получает обновления из следующих источников:
+
+* Отсылка уведомлений в личный кабинет/телеграм-бот: alerts.v16.ideco.dev; 
+* Обновление баз **Контент-фильтра**: content-filter.v16.ideco.dev;
+* Отсылка анонимной статистики: gatherstat.v16.ideco.dev;
+* Обновления баз GeoIP: ip-list.v16.ideco.dev;
+* Отправка отчетов по почте: send-reports.v16.ideco.dev;
+* Обновления системы: sysupdate.v16.ideco.dev;
+* Синхронизация времени: ntp.ideco.ru.
+
+Кроме того, часть запросов к указанным выше серверам может быть перенаправлена на mcs-vm.ideco.ru, update.ideco.ru, storage.yandexcloud.net.
+
+{% hint style="info" %}
+Для корректной работы всех модулей фильтрации Ideco Center необходимо, чтобы доступ к вышеуказанным ресурсам, был разрешен настройками фильтрации.
+{% endhint %}
+
 ## Подключение Ideco NGFW к Ideco Center
 
 {% hint style="info" %}
