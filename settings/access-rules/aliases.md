@@ -11,6 +11,7 @@ description: >-
 Название службы раздела *Объекты*: `ideco-alias-backend`. \
 Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 {% endhint %}
+][;lougtrfyui]jihyigyi
 
 <details>
 
