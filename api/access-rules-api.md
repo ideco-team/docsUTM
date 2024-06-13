@@ -1,12 +1,13 @@
 # Управление правилами трафика
 
 {% hint style="info" %}
-API правил трафика Ideco Center описано в статье [Центральная консоль](/api/cc-api.md).
+API правил трафика Ideco Center описано в статье [Центральная консоль](cc-api.md).
 {% endhint %}
 
 ## Файрвол
 
 <details>
+
 <summary>Получение статуса службы</summary>
 
 ```
@@ -33,9 +34,10 @@ GET /firewall/status
 </details>
 
 <details>
+
 <summary>Получение настроек Файрвола</summary>
 
-## Включенность пользовательских правил
+### Включенность пользовательских правил
 
 ```
 GET /firewall/state
@@ -49,10 +51,9 @@ GET /firewall/state
 } 
 ```
 
-* `enabled` - Опция раздела Файрвол включен (true) или
-отключен (false).
+* `enabled` - Опция раздела Файрвол включен (true) или отключен (false).
 
-### Логирование правил
+#### Логирование правил
 
 ```
 GET /firewall/settings
@@ -71,6 +72,7 @@ GET /firewall/settings
 </details>
 
 <details>
+
 <summary>Изменение настроек</summary>
 
 ```
@@ -94,6 +96,7 @@ PUT /firewall/settings
 ### Управление правилами
 
 <details>
+
 <summary>Получение списка правил</summary>
 
 * `GET /firewall/rules/forward` - раздел FORWARD;
@@ -128,11 +131,11 @@ PUT /firewall/settings
 ```
 
 * `"action"` - действие:
-  * `"accept"` - разрешить; 
+  * `"accept"` - разрешить;
   * `"drop"` - запретить;
   * `"dnat"` - производить DNAT;
   * `"snat"` - производить SNAT;
-  * `"mark_log"` - логировать; 
+  * `"mark_log"` - логировать;
   * `"mark_not_log"` - не логировать;
 * `"comment"` - комментарий (может быть пустым);
 * `"destination_addresses"` - адрес назначения;
@@ -152,6 +155,7 @@ PUT /firewall/settings
 </details>
 
 <details>
+
 <summary>Добавление правила</summary>
 
 * `POST /firewall/rules/forward?anchor_item_id=123&insert_after={true|false}` - раздел FORWARD;
@@ -159,7 +163,6 @@ PUT /firewall/settings
 * `POST /firewall/rules/dnat?anchor_item_id=123&insert_after={true|false}` - раздел DNAT;
 * `POST /firewall/rules/snat?anchor_item_id=123&insert_after={true|false}` - раздел SNAT;
 * `POST /firewall/rules/log?anchor_item_id=123&insert_after={true|false}` - раздел Логирование.
-
   * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое. Если отсутствует, то новое правило будет добавлено в конец таблицы.
   * `insert_after` - вставка до или после. Если значение `true` или отсутствует, то новое правило будет добавлено сразу после указанного в `anchor_item_id`. Если `false` - на месте указанного в `anchor_item_id`.
 
@@ -195,10 +198,11 @@ PUT /firewall/settings
 </details>
 
 <details>
+
 <summary>Редактирование правила</summary>
 
 * `PUT /firewall/rules/forward/<id правила>` - раздел FORWARD;
-* `PUT /firewall/rules/input/<id правила>` - раздел INPUT;`
+* `PUT /firewall/rules/input/<id правила>` - раздел INPUT;\`
 * `PUT /firewall/rules/dnat/<id правила>` - раздел DNAT;
 * `PUT /firewall/rules/snat/<id правила>` - раздел SNAT;
 * `PUT /firewall/rules/log/<id правила>` - раздел Логирование.
@@ -229,6 +233,7 @@ PUT /firewall/settings
 </details>
 
 <details>
+
 <summary>Перемещение правила</summary>
 
 * `PATCH /firewall/rules/forward/move` - раздел FORWARD;
@@ -256,6 +261,7 @@ PUT /firewall/settings
 </details>
 
 <details>
+
 <summary>Удаление правила</summary>
 
 * `DELETE /firewall/rules/forward/<id правила>` - раздел FORWARD;
@@ -271,6 +277,7 @@ PUT /firewall/settings
 ### Счетчик срабатывания правил
 
 <details>
+
 <summary>Узнать, включен ли счетчик срабатываний правил</summary>
 
 ```
@@ -288,6 +295,7 @@ GET /firewall/watch
 </details>
 
 <details>
+
 <summary>Включение/выключение счетчика срабатывания правил</summary>
 
 ```
@@ -307,6 +315,7 @@ PUT /firewall/watch
 </details>
 
 <details>
+
 <summary>Получение счетчиков по правилам</summary>
 
 * `GET /firewall/counters/forward` - раздел FORWARD;
@@ -332,6 +341,7 @@ PUT /firewall/watch
 ## Контроль приложений
 
 <details>
+
 <summary>Получение списка всех правил</summary>
 
 ```
@@ -367,6 +377,7 @@ GET /application_control_backend/rules
 </details>
 
 <details>
+
 <summary>Создание нового правила</summary>
 
 ```
@@ -408,6 +419,7 @@ POST /application_control_backend/rules
 </details>
 
 <details>
+
 <summary>Изменение правила</summary>
 
 ```
@@ -443,6 +455,7 @@ PUT /application_control_backend/rules/{id}
 </details>
 
 <details>
+
 <summary>Изменение приоритета правила</summary>
 
 ```
@@ -463,11 +476,12 @@ PATCH /application_control_backend/rules/move
 
 * `id` - уникальный идентификатор правила;
 * `anchor_item_id` - уникальный идентификатор правила, ниже или выше которого нужно создать новое;
-* `insert_after` - вставка до или после. Если True, то вставить правило сразу после указанного в anchor_item_id, если False, то на месте указанного в anchor_item_id.
+* `insert_after` - вставка до или после. Если True, то вставить правило сразу после указанного в anchor\_item\_id, если False, то на месте указанного в anchor\_item\_id.
 
 </details>
 
 <details>
+
 <summary>Удаление правила</summary>
 
 ```
@@ -483,6 +497,7 @@ DELETE /application_control_backend/rules/{id}
 ## Предотвращение вторжений
 
 <details>
+
 <summary>Получение статуса модуля</summary>
 
 ```
@@ -508,6 +523,7 @@ DELETE /application_control_backend/rules/{id}
 </details>
 
 <details>
+
 <summary>Статус обновления баз правил сурикаты и GeoIP</summary>
 
 ```
@@ -525,18 +541,18 @@ GET /ips/update
 ```
 
 * `status` - текущий статус обновления баз:
-  - `up_to_date` - базы успешно обновлены;
-  - `updating` - скачиваем новые базы;
-  - `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
-  - `disabled` - обновление баз выключено.
-
+  * `up_to_date` - базы успешно обновлены;
+  * `updating` - скачиваем новые базы;
+  * `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
+  * `disabled` - обновление баз выключено.
 * `msg` - текстовое описание статуса обновления баз, переведённое на бэкенде;
 * `last_update` - время (таймстамп) последнего успешного обновления баз.
 
 </details>
 
 <details>
-<summary>Статус обновления расширенных баз  правил сурикаты и GeoIP</summary>
+
+<summary>Статус обновления расширенных баз правил сурикаты и GeoIP</summary>
 
 ```
 GET /ips/update_advanced
@@ -553,17 +569,17 @@ GET /ips/update_advanced
 ```
 
 * `status` - текущий статус обновления баз:
-  - `up_to_date` - базы успешно обновлены;
-  - `updating` - скачиваем новые базы;
-  - `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
-  - `disabled` - обновление баз выключено.
-
+  * `up_to_date` - базы успешно обновлены;
+  * `updating` - скачиваем новые базы;
+  * `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
+  * `disabled` - обновление баз выключено.
 * `msg` - текстовое описание статуса обновления баз, переведённое на бэкенде;
 * `last_update` - время (таймстамп) последнего успешного обновления баз.
 
 </details>
 
 <details>
+
 <summary>Запуск принудительного обновления баз</summary>
 
 ```
@@ -577,6 +593,7 @@ POST /ips/update
 </details>
 
 <details>
+
 <summary>Получение текущей настройки включенности модуля</summary>
 
 ```
@@ -595,8 +612,8 @@ GET /ips/state
 
 </details>
 
-
 <details>
+
 <summary>Изменение настройки включенности модуля</summary>
 
 ```
@@ -618,6 +635,7 @@ PUT /ips/state
 </details>
 
 <details>
+
 <summary>Получение списка локальных подсетей</summary>
 
 ```
@@ -641,6 +659,7 @@ GET /ips/nets
 </details>
 
 <details>
+
 <summary>Добавление новой локальной подсети</summary>
 
 ```
@@ -672,6 +691,7 @@ POST /ips/nets
 </details>
 
 <details>
+
 <summary>Удаление локальной подсети</summary>
 
 ```
@@ -685,6 +705,7 @@ DELETE /ips/nets/{id}
 </details>
 
 <details>
+
 <summary>Получение списка наборов правил</summary>
 
 ```
@@ -708,6 +729,7 @@ GET /ips/rules
 </details>
 
 <details>
+
 <summary>Включение/выключение набора правил</summary>
 
 ```
@@ -728,8 +750,8 @@ PATCH /ips/rules/{id}
 
 </details>
 
-
 <details>
+
 <summary>Получение содержимого правила по sid</summary>
 
 ```
@@ -751,6 +773,7 @@ GET /ips/rules/sid/{id}
 </details>
 
 <details>
+
 <summary>Получение списка всех исключений</summary>
 
 ```
@@ -776,6 +799,7 @@ GET /ips/disabled_rules
 </details>
 
 <details>
+
 <summary>Добавление исключения</summary>
 
 ```
@@ -805,6 +829,7 @@ POST /ips/disabled_rules
 </details>
 
 <details>
+
 <summary>Редактирование описания существующего исключения</summary>
 
 ```
@@ -830,6 +855,7 @@ PATCH /ips/disabled_rules/{id}
 </details>
 
 <details>
+
 <summary>Удаление существующего исключения</summary>
 
 ```
@@ -843,6 +869,7 @@ DELETE /ips/disabled_rules/{id}
 </details>
 
 <details>
+
 <summary>Получение списка исключений алиасов</summary>
 
 ```
@@ -870,6 +897,7 @@ GET /ips/bypass
 </details>
 
 <details>
+
 <summary>Добавление исключения алиасов</summary>
 
 ```
@@ -926,12 +954,12 @@ PATCH /ips/bypass/{id}
 * `comment` - описание, может быть пустым, максимальная длина 256;
 * `enabled` - состояние исключения: включено/выключено.
 
-
 **Ответ на успешный запрос:** 200 OK
 
 </details>
 
 <details>
+
 <summary>Удаление существующего исключения алиасов</summary>
 
 ```
@@ -947,9 +975,10 @@ DELETE /ips/bypass/{id}
 ## Контент-фильтр
 
 <details>
+
 <summary>Включение/выключение Контент-фильтра</summary>
 
-### Проверить включенность
+#### Проверить включенность
 
 ```
 GET /content-filter/state
@@ -963,7 +992,7 @@ GET /content-filter/state
 }
 ```
 
-### Включить/выключить Контент-фильтр
+#### Включить/выключить Контент-фильтр
 
 ```
 PUT /content-filter/state
@@ -984,6 +1013,7 @@ PUT /content-filter/state
 ### Настройки
 
 <details>
+
 <summary>Получение настроек</summary>
 
 ```
@@ -1005,6 +1035,7 @@ GET /content-filter/settings
 </details>
 
 <details>
+
 <summary>Изменение настроек</summary>
 
 ```
@@ -1025,6 +1056,7 @@ PATCH /content-filter/settings
 </details>
 
 <details>
+
 <summary>Получение настройки безопасного поиска</summary>
 
 ```
@@ -1042,6 +1074,7 @@ GET /proxy_backend/safe_search
 </details>
 
 <details>
+
 <summary>Изменение настройки безопасного поиска</summary>
 
 ```
@@ -1063,6 +1096,7 @@ PUT /proxy_backend/safe_search
 ### Категории Контент-фильтра
 
 <details>
+
 <summary>Получение списка категорий (предустановленных и пользовательских)</summary>
 
 ```
@@ -1089,10 +1123,10 @@ GET /content-filter/categories
   * `"extended"` - расширенные категории (SkyDNS);
   * `"files"` - категории для файлов;
   * `"special"` - специальные предопределенные категории:
-    - Прямое обращение по IP;
-    - Все категоризированные запросы;
-    - Все некатегоризированные запросы;
-    - Все запросы (категоризированные и некатегоризированные).
+    * Прямое обращение по IP;
+    * Все категоризированные запросы;
+    * Все некатегоризированные запросы;
+    * Все запросы (категоризированные и некатегоризированные).
   * `"other"` - остальные категории.
 * `name` - имя категории (для отображения пользователю).
 * `comment` - описание категории (для отображения пользователю).
@@ -1100,6 +1134,7 @@ GET /content-filter/categories
 </details>
 
 <details>
+
 <summary>Получение списка пользовательских категорий</summary>
 
 ```
@@ -1142,7 +1177,7 @@ POST /content-filter/users_categories
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -1186,6 +1221,7 @@ PUT /content-filter/users_categories/{category_id}
 ### Правила Контент-фильтра
 
 <details>
+
 <summary>Получение списка правил</summary>
 
 ```
@@ -1230,6 +1266,7 @@ GET /content-filter/rules
 </details>
 
 <details>
+
 <summary>Создание правила</summary>
 
 ```
@@ -1258,6 +1295,7 @@ POST /content-filter/rules?anchor_item_id=123&insert_after={true|false}
 </details>
 
 <details>
+
 <summary>Редактирование правила</summary>
 
 ```
@@ -1285,6 +1323,7 @@ PUT /content-filter/rules/<id правила>
 </details>
 
 <details>
+
 <summary>Перемещение правила</summary>
 
 ```
@@ -1312,6 +1351,7 @@ PATCH /content-filter/rules/move
 </details>
 
 <details>
+
 <summary>Удаление правила</summary>
 
 ```
@@ -1325,6 +1365,7 @@ DELETE /content-filter/rules/<id правила>
 ## Квоты
 
 <details>
+
 <summary>Проверить, включен ли подсчет квот</summary>
 
 ```
@@ -1342,6 +1383,7 @@ GET /quotas/state
 </details>
 
 <details>
+
 <summary>Включить/выключить подсчет квот</summary>
 
 ```
@@ -1361,6 +1403,7 @@ PUT /quotas/state
 </details>
 
 <details>
+
 <summary>Получение списка квот</summary>
 
 ```
@@ -1393,6 +1436,7 @@ GET /quotas/quotas
 </details>
 
 <details>
+
 <summary>Создание квоты</summary>
 
 ```
@@ -1422,6 +1466,7 @@ POST /quotas/quotas
 </details>
 
 <details>
+
 <summary>Редактирование квоты</summary>
 
 ```
@@ -1445,6 +1490,7 @@ PATCH /quotas/quotas/<id квоты>
 </details>
 
 <details>
+
 <summary>Удаление квоты</summary>
 
 ```

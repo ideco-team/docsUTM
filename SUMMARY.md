@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Об Ideco NGFW](README.md)
+* [Стажировка в Айдеко](README.md)
 
 ## Общая информация <a href="#general" id="general"></a>
 
@@ -44,8 +44,8 @@
     * [Особенности маршрутизации и организации доступа](settings/users/authorization/vpn-connection/features.md)
     * [Инструкция по запуску PowerShell скриптов](settings/users/authorization/vpn-connection/running-powershell-scripts.md)
   * [Ideco Client](settings/users/ideco-client/README.md)
-    * [Установка и настройка Ideco Client на Windows](/settings/users/ideco-client/ideco-client-windows.md)
-    * [Установка и настройка Ideco Client на MacOS](/settings/users/ideco-client/ideco-client-macos.md)  
+    * [Установка и настройка Ideco Client на Windows](settings/users/ideco-client/ideco-client-windows.md)
+    * [Установка и настройка Ideco Client на MacOS](settings/users/ideco-client/ideco-client-macos.md)
   * [Профили устройств](settings/users/hip-profiles.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
@@ -111,7 +111,7 @@
     * [Подключение между двумя Ideco NGFW в туннельном режиме работы](settings/services/ipsec/site-to-site/ipsec-utm-to-utm-tunnel.md)
     * [Подключение между двумя Ideco NGFW в транспортном режиме работы](settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md)
     * [Подключение Ideco NGFW и Mikrotik](settings/services/ipsec/site-to-site/site-to-site-ideco-mikrotik.md)
-    * [Подключение MikroTik и Ideco NGFW по L2TP/IPsec и IKev2/IPsec](/settings/services/ipsec/site-to-site/utm-to-mikrotik-vpn.md)
+    * [Подключение MikroTik и Ideco NGFW по L2TP/IPsec и IKev2/IPsec](settings/services/ipsec/site-to-site/utm-to-mikrotik-vpn.md)
     * [Подключение Cisco IOS и Ideco NGFW](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
     * [Подключение pfSense к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-pfsense-to-utm.md)
     * [Подключение Kerio Control к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
@@ -209,9 +209,9 @@
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
   * [Порядок обработки веб-трафика в Ideco NGFW](recipes/popular-recipes/processing-order.md)
   * [Интеграция Ideco NGFW и брокера сетевых пакетов DS Integrity NG](recipes/popular-recipes/integrity.md)
-  * [Настройка cовместной работы ViPNet Координатор с Ideco NGFW](/recipes/popular-recipes/vipnet-coordinator.md)
+  * [Настройка cовместной работы ViPNet Координатор с Ideco NGFW](recipes/popular-recipes/vipnet-coordinator.md)
   * [Блокировка чат-ботов](recipes/popular-recipes/block-chat-bot.md)
-  * [Таблица портов Ideco NGFW, доступных из локальной и внешних сетей](/recipes/popular-recipes/open-ports.md)
+  * [Таблица портов Ideco NGFW, доступных из локальной и внешних сетей](recipes/popular-recipes/open-ports.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)

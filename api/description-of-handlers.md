@@ -37,6 +37,7 @@ set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4c
 ```
 DELETE /web/auth/login
 ```
+
 После успешной разавторизации сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
 ```
@@ -47,9 +48,10 @@ set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Ma
 </details>
 
 <details>
+
 <summary>Сбор анонимной статистики о работе сервера</summary>
 
-### Получение текущих настроек:
+#### Получение текущих настроек:
 
 ```
 GET /gather_stat/settings
@@ -65,7 +67,7 @@ GET /gather_stat/settings
 
 Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
 
-### Изменение настроек
+#### Изменение настроек
 
 ```
 PUT /gather_stat/settings
@@ -86,6 +88,7 @@ PUT /gather_stat/settings
 ## Лицензирование
 
 <details>
+
 <summary>Регистрация сервера</summary>
 
 ```
@@ -126,7 +129,7 @@ POST /api/v3/login
 PUT /api/v3/{company_id}/go_to_product
 ```
 
-*  `company_id` - id компании пользователя. Его можно получить по запросу `GET /api/v3/companies`.
+* `company_id` - id компании пользователя. Его можно получить по запросу `GET /api/v3/companies`.
 
 **Тело ответа на успешный запрос:**
 
@@ -141,6 +144,7 @@ PUT /api/v3/{company_id}/go_to_product
 </details>
 
 <details>
+
 <summary>Получение информации о лицензии</summary>
 
 ```
@@ -223,6 +227,7 @@ GET /license/info
 </details>
 
 <details>
+
 <summary>Получение информации о механизме обновления лицензии</summary>
 
 ```
@@ -243,6 +248,7 @@ GET /license/update-type
 </details>
 
 <details>
+
 <summary>Изменение механизма обновления лицензии</summary>
 
 ```
@@ -262,6 +268,7 @@ PUT /license/update-type
 </details>
 
 <details>
+
 <summary>Получение ссылки для оффлайн-регистрации</summary>
 
 ```
@@ -285,6 +292,7 @@ GET /license/license-get-offline-registration-url
 </details>
 
 <details>
+
 <summary>Загрузка файла с лицензией на NGFW</summary>
 
 ```
@@ -317,7 +325,7 @@ POST /aliases/ip_addresses
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -430,7 +438,7 @@ POST /aliases/ports
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -459,7 +467,7 @@ POST /aliases/port_ranges
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -523,7 +531,7 @@ POST /aliases/lists/addresses
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -551,7 +559,7 @@ POST /aliases/ip_address_lists
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -579,7 +587,7 @@ POST /aliases/lists/ports
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -607,7 +615,7 @@ POST /aliases/lists/times
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```
 {
@@ -660,37 +668,38 @@ GET /aliases/all
 * "protocol.udp" - протокол UDP;
 * "quota.exceeded"- IP-адреса пользователей, которые превысили квоту;
 * "any" - допускается любое значение в этом поле;
-* "interface.external_any" - все внешние интерфейсы (равно таблице *Подключение к провайдеру* в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
-* "interface.external_eth" - внешние Ethernet-интерфейсы;
-* "interface.external_vpn" - внешние VPN-интерфейсы;
-* "interface.ipsec_any" - IPsec-интерфейсы;
-* "interface.local_any" - все локальные интерфейсы;
-* "interface.tunnel_any" - все туннельные интерфейсы;
+* "interface.external\_any" - все внешние интерфейсы (равно таблице _Подключение к провайдеру_ в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
+* "interface.external\_eth" - внешние Ethernet-интерфейсы;
+* "interface.external\_vpn" - внешние VPN-интерфейсы;
+* "interface.ipsec\_any" - IPsec-интерфейсы;
+* "interface.local\_any" - все локальные интерфейсы;
+* "interface.tunnel\_any" - все туннельные интерфейсы;
 * "group.id." - идентификатор группы пользователей;
 * "interface.id." - идентификатор конкретного интерфейса;
-* "interface.utm_outgoing" - исходящий трафик устройства;
-* "interface.vpn_traffic" - клиентский VPN-трафик;
-* "interface.wccp_gre_any" - все WCCP GRE интерфейсы;
-* "hip_profile.id." - устройства без профиля;
-* "security_group.guid." - идентификатор группы безопасности AD;
+* "interface.utm\_outgoing" - исходящий трафик устройства;
+* "interface.vpn\_traffic" - клиентский VPN-трафик;
+* "interface.wccp\_gre\_any" - все WCCP GRE интерфейсы;
+* "hip\_profile.id." - устройства без профиля;
+* "security\_group.guid." - идентификатор группы безопасности AD;
 * "user.id." - идентификатор пользователя;
 * "domain.id." - идентификатор домена;
 * "ip.id." - идентификатор IP-адреса;
-* "ip_range.id." - идентификатор объекта *Диапазон адресов*;
-* "address_list.id." - идентификатор объекта *Список IP-объектов*;
-* "list_of_iplists.id." - идентификатор объекта *Список стран*;
-* "port_list.id." - идентификатор объекта *Порты*;
-* "time_list.id." - идентификатор объекта *Расписание*;
-* "subnet.id." - идентификатор объекта *Подсеть*;
-* "port_range.id." - идентификатор объекта *Диапазон портов*;
-* "port.id." - идентификатор объекта *Порт*;
-* "time_range.id." - идентификатор объекта *Время*.
+* "ip\_range.id." - идентификатор объекта _Диапазон адресов_;
+* "address\_list.id." - идентификатор объекта _Список IP-объектов_;
+* "list\_of\_iplists.id." - идентификатор объекта _Список стран_;
+* "port\_list.id." - идентификатор объекта _Порты_;
+* "time\_list.id." - идентификатор объекта _Расписание_;
+* "subnet.id." - идентификатор объекта _Подсеть_;
+* "port\_range.id." - идентификатор объекта _Диапазон портов_;
+* "port.id." - идентификатор объекта _Порт_;
+* "time\_range.id." - идентификатор объекта _Время_.
 
 </details>
 
 ## Обнаружение устройств
 
 <details>
+
 <summary>Получение настроек</summary>
 
 ```
@@ -710,6 +719,7 @@ GET /netscan_backend/settings
 </details>
 
 <details>
+
 <summary>Изменение настроек</summary>
 
 ```

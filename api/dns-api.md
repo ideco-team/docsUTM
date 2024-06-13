@@ -1,6 +1,7 @@
 # DNS-сервер
 
 <details>
+
 <summary>Получение статуса службы DNS</summary>
 
 ```
@@ -29,6 +30,7 @@ GET /dns/status
 ## Настройки
 
 <details>
+
 <summary>Получение настроек DNS-сервера</summary>
 
 ```
@@ -46,6 +48,7 @@ GET /dns/settings
 </details>
 
 <details>
+
 <summary>Включение/выключение DNS-сервера</summary>
 
 ```
@@ -65,9 +68,10 @@ PUT /dns/settings
 </details>
 
 <details>
+
 <summary>Включение/выключение переадресации DNS для безопасного поиска</summary>
 
-### Получение настроек:
+#### Получение настроек:
 
 ```
 GET /dns/safesearch
@@ -81,7 +85,7 @@ GET /dns/safesearch
 }
 ```
 
-### Изменение настроек:
+#### Изменение настроек:
 
 ```
 PUT /dns/safesearch
@@ -102,6 +106,7 @@ PUT /dns/safesearch
 ## Управление внешними DNS-серверами
 
 <details>
+
 <summary>Получение списка</summary>
 
 ```
@@ -134,13 +139,14 @@ GET /dns/zones/root
 </details>
 
 <details>
+
 <summary>Добавление корневого DNS-сервера</summary>
 
 ```
 POST /dns/zones/root
 ```
 
-**Json-тело запроса:** 
+**Json-тело запроса:**
 
 ```
 {
@@ -162,13 +168,14 @@ POST /dns/zones/root
 </details>
 
 <details>
+
 <summary>Редактирование корневого DNS-сервера</summary>
 
 ```
 PATCH /dns/zones/root/<id записи>
 ```
 
-**Json-тело запроса (все или некоторые поля):** 
+**Json-тело запроса (все или некоторые поля):**
 
 ```
 {
@@ -184,6 +191,7 @@ PATCH /dns/zones/root/<id записи>
 </details>
 
 <details>
+
 <summary>Удаление корневого DNS-сервера</summary>
 
 ```
@@ -197,6 +205,7 @@ DELETE /dns/zones/root/<id записи>
 ## Управление forward-зонами
 
 <details>
+
 <summary>Получение списка</summary>
 
 ```
@@ -227,6 +236,7 @@ GET /dns/zones/forward
 </details>
 
 <details>
+
 <summary>Добавление forward-зоны</summary>
 
 ```
@@ -255,13 +265,14 @@ POST /dns/zones/forward
 </details>
 
 <details>
+
 <summary>Редактирование forward-зоны</summary>
 
 ```
 PATCH /dns/zones/forward/<id forward-зоны>
 ```
 
-**Json-тело запроса (все или некоторые поля):** 
+**Json-тело запроса (все или некоторые поля):**
 
 ```
 {
@@ -277,6 +288,7 @@ PATCH /dns/zones/forward/<id forward-зоны>
 </details>
 
 <details>
+
 <summary>Удаление forward-зоны</summary>
 
 ```
@@ -290,6 +302,7 @@ DELETE /dns/zones/forward/<id forward-зоны>
 ## Управление master-зонами
 
 <details>
+
 <summary>Получение списка</summary>
 
 ```
@@ -317,18 +330,19 @@ GET /dns/zones/master
 * `config` - текст с параметрами зоны, не может быть пустым. Максимум 10000 символов;
 * `comment` - комментарий, может быть пустым, максимум 256 символов.
 
-Подробнее о формате записей для настройки master-зоны - в статье [Master-зоны](/settings/services/dns/master-zon.md).
+Подробнее о формате записей для настройки master-зоны - в статье [Master-зоны](../settings/services/dns/master-zon.md).
 
 </details>
 
 <details>
+
 <summary>Добавление master-зоны</summary>
 
 ```
 POST /dns/zones/master
 ```
 
-**Json-тело запроса:** 
+**Json-тело запроса:**
 
 ```
 {
@@ -350,13 +364,14 @@ POST /dns/zones/master
 </details>
 
 <details>
+
 <summary>Редактирование master-зоны</summary>
 
 ```
 PATCH /dns/zones/master/<id master-зоны>
 ```
 
-**Json-тело запроса (все или некоторые поля):** 
+**Json-тело запроса (все или некоторые поля):**
 
 ```
 {
@@ -372,6 +387,7 @@ PATCH /dns/zones/master/<id master-зоны>
 </details>
 
 <details>
+
 <summary>Удаление master-зоны</summary>
 
 ```
@@ -387,10 +403,11 @@ DELETE /dns/zones/master/<id master-зоны>
 {% hint style="info" %}
 DDNS в Ideco NGFW реализован через интеграцию с хостингом RU-CENTER. Перед настройкой DDNS зарегистрируйтесь на сайте [RU-CENTER](https://www.nic.ru/) и приобретите [DNS-хостинг](https://www.nic.ru/catalog/for-domain-use/dns-hosting/).
 
-Подробнее о DDNS - в [статье](/settings/services/dns/ddns.md).
+Подробнее о DDNS - в [статье](../settings/services/dns/ddns.md).
 {% endhint %}
 
 <details>
+
 <summary>Получение состояния</summary>
 
 ```
@@ -408,6 +425,7 @@ GET /dns/ddns/state
 </details>
 
 <details>
+
 <summary>Включение/выключение DDNS</summary>
 
 ```
@@ -427,6 +445,7 @@ PUT /dns/ddns/state
 </details>
 
 <details>
+
 <summary>Получение настроек</summary>
 
 ```
@@ -450,6 +469,7 @@ GET /dns/ddns
 </details>
 
 <details>
+
 <summary>Изменение настроек</summary>
 
 ```
