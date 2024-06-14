@@ -16,7 +16,7 @@
 
 2\. Выберите нужный USB-диск в пункте **Устройство**:
 
-![](../.gitbook/assets/usb1.png)
+![](/.gitbook/assets/usb1.png)
 
 3\. Выберите метод загрузки **Диск или ISO-образ**.
 
@@ -34,7 +34,7 @@
 
 ### С помощью программы gnome-disks:
 
-![](../.gitbook/assets/usb2.png)
+![](/.gitbook/assets/usb2.png)
 
 ### Вручную в терминале:
 

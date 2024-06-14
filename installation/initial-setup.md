@@ -11,7 +11,7 @@
 2\. Введите в адресной строке IP-адрес, указанный при настройке локального интерфейса, и порт 8443.\
    **Пример:** `192.168.100.2:8443`
 
-![](../.gitbook/assets/initial-setup1.gif)
+![](/.gitbook/assets/initial-setup1.gif)
 
 3\. Введите логин и пароль от учетной записи, созданной при установке NGFW.
 
@@ -21,11 +21,11 @@
 
 <details>
 
-![](../.gitbook/assets/initial-setup2.png)
+![](/.gitbook/assets/initial-setup2.png)
 
 * В разделе **Правила трафика -> Контент-фильтр -> Настройки**:
 
-![](../.gitbook/assets/initial-setup3.png)
+![](/.gitbook/assets/initial-setup3.png)
 
 </details>
 
@@ -43,7 +43,7 @@
 
 После первого входа в веб-интерфейс появится несколько уведомлений, которые подскажут, что для корректной работы Ideco NGFW необходимо настроить подключение к провайдеру и зарегистрировать сервер.
 
-![](../.gitbook/assets/initial-setup5.png)
+![](/.gitbook/assets/initial-setup5.png)
 
 ## Настройка **Ethernet-подключения**
 
@@ -59,9 +59,9 @@
 
 1\. Перейдите в раздел **Сервисы -> Сетевые интерфейс**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../.gitbook/assets/icon-ok-with.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/icon-ok-with.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
 
-![](../.gitbook/assets/initial-setup6.png)
+![](/.gitbook/assets/initial-setup6.png)
 
 {% hint style="danger" %}
 **Будьте внимательны!**
@@ -77,7 +77,7 @@
 * IP-адрес/маска;
 * Шлюз (или установите флаг в строке _Автоматическая конфигурация через DHCP_);
 
-![](../.gitbook/assets/initial-setup7.png)
+![](/.gitbook/assets/initial-setup7.png)
 
 5\. Проверьте правильность введенных данных и нажмите кнопку **Сохранить**.
 
