@@ -81,24 +81,24 @@ redirects:
   auto-logout-script: ./settings/users/active-directory/auto-de-authorization-script.md
   auto_logout_script: ./settings/users/active-directory/auto-de-authorization-script.md
   session_sync: ./settings/server-management/cluster.md
-  cc: ./settings/server-management/central-console/README.md
-  cc_firewall: ./settings/server-management/central-console/policies-and-objects.md
-  cc_application_control: ./settings/server-management/central-console/policies-and-objects.md
-  cc_content_filter: ./settings/server-management/central-console/policies-and-objects.md
-  cc_aliases: ./settings/server-management/central-console/policies-and-objects.md
-  cc_shaper: ./settings/server-management/central-console/policies-and-objects.md
-  cc_interfaces: ./settings/server-management/central-console/services.md
-  cc_routing: ./settings/server-management/central-console/services.md
-  cc_certs: ./settings/server-management/central-console/certificates/certificates.md
-  cc_ddns: ./settings/server-management/central-console/services.md
-  cc_admins: ./settings/server-management/central-console/server-management.md
-  cc_selfupdate: ./settings/server-management/central-console/server-management.md
-  cc_backup: ./settings/server-management/central-console/server-management.md
-  cc_web_terminal: ./settings/server-management/central-console/server-management.md
-  cc_characteristics: ./settings/server-management/central-console/server-management.md
-  cc_additionally: ./settings/server-management/central-console/server-management.md
-  cc_zabbix: ./settings/server-management/central-console/zabbix.md
-  cc_snmp: ./settings/server-management/central-console/snmp.md
+  cc: ./settings-cc/README.md
+  cc_firewall: ./settings-cc/policies-and-objects.md
+  cc_application_control: /settings-cc/policies-and-objects.md
+  cc_content_filter: ./settings-cc/policies-and-objects.md
+  cc_aliases: ./settings-cc/policies-and-objects.md
+  cc_shaper: /settings-cc/policies-and-objects.md
+  cc_interfaces: ./settings-cc/services.md
+  cc_routing: ./settings-cc/services.md
+  cc_certs: ./settings-cc/services.md
+  cc_ddns: ./settings-cc/services.md
+  cc_admins: ./settings-cc/server-management.md
+  cc_selfupdate: ./settings-cc/server-management.md
+  cc_backup: ./settings-cc/server-management.md
+  cc_web_terminal: ./settings-cc/server-management.md
+  cc_characteristics: ./settings-cc/server-management.md
+  cc_additionally: ./settings-cc/server-management.md
+  cc_zabbix: ./settings-cc/monitor.md
+  cc_snmp: ./settings-cc/monitor.md
   device-profiles: ./settings/users/hip-profiles.md
   dhcp_wpad: ./settings/services/dhcp.md
   user_personal_account: ./settings/users/user-personal-account.md
