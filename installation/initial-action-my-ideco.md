@@ -13,11 +13,11 @@
 
 1\. Зайдите на [my.ideco.ru](https://my.ideco.ru/) и нажмите **Зарегистрироваться**:
 
-![](../.gitbook/assets/initial-action-my-ideco1.png)
+![](/.gitbook/assets/initial-action-my-ideco1.png)
 
 2\. Укажите свои личные данные и данные компании:
 
-![](../.gitbook/assets/initial-action-my-ideco2.png)
+![](/.gitbook/assets/initial-action-my-ideco2.png)
 
 3\. Подтвердите электронную почту, следуя инструкциям в письме.
 

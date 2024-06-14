@@ -57,27 +57,27 @@ Ideco NGFW поддерживает работу на следующих гип�
 
 1\. Создайте виртуальную машину:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings4.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings4.png)
 
 2\. Укажите **Имя** виртуальной машине и установите остальные настройки как на скриншоте:
 
- ![](../.gitbook/assets/specifics-of-hypervisor-settings5.png)
+ ![](/.gitbook/assets/specifics-of-hypervisor-settings5.png)
 
 3\. Выберите хранилище для виртуальной машины:
 
-    ![](../.gitbook/assets/specifics-of-hypervisor-settings6.png)
+    ![](/.gitbook/assets/specifics-of-hypervisor-settings6.png)
 
 4\. Установите размер оперативной памяти **16ГБ** и размер диска **150ГБ**. После выберите в поле **CD/DVD Drive** Datastore ISO file и укажите путь к загрузочному образу:
    
-    ![](../.gitbook/assets/specifics-of-hypervisor-settings7.png)
+    ![](/.gitbook/assets/specifics-of-hypervisor-settings7.png)
 
 5\. Включите **UEFI** на вкладке **VM Options**, выбрав в поле **Firmware** EFI:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings8.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings8.png)
 
 6\. Нажмите **Finish**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings9.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings9.png)
 
 </details>
 
@@ -96,51 +96,51 @@ Ideco NGFW поддерживает работу на следующих гип�
 
 1\. Создайте виртуальную машину, нажав **Create a New Virtual Machine**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings12.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings12.png)
 
 2\. Укажите загрузочный ISO-образ:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings13.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings13.png)
 
 3\. Выберите гостевую операционную систему **Linux** и в раскрывающемся списке укажите тип **Fedora 64-bit**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings14.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings14.png)
 
 4\. Укажите имя виртуальной машины и директорию для создания виртуального диска:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings15.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings15.png)
 
 5\. Укажите размер вирутального жесткого диска **150ГБ**:
    
-![](../.gitbook/assets/specifics-of-hypervisor-settings16.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings16.png)
 
 6\. Выберите **Customize Hardware** для изменения настроек виртуальной машины:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings17.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings17.png)
 
 7\. Укажите размер виртуальной оперативной памяти **16384МБ**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings18.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings18.png)
 
 8\. Укажите количество ядер процесса равное 4:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings19.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings19.png)
 
 9\. Выйдите из меню и нажмите **Finish** для окончания настройки:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings20.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings20.png)
 
 10\. Перейдите в окно виртуальной машины и нажмите **Edit virtual machine settings**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings21.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings21.png)
 
 11\. Перейдите во вкладку **Options**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings22.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings22.png)
 
 12\. Выберите опцию **Advanced** и установите для параметра Firmware Type значение **UEFI**:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings23.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings23.png)
 
 13\. Нажмите **OK** для завершения настройки виртуальной машины.
 
@@ -174,15 +174,15 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 1\. Укажите **Имя** виртуальной машины (ВМ), выберите директорию для ВМ и установите путь до загрузочного образа NGFW. Остальные параметры установите как на скриншоте:
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings24.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings24.png)
 
 2\. Установите размер оперативной памяти ВМ (**16 ГБ**) и нажмите **Включить EFI**:
     
-![](../.gitbook/assets/specifics-of-hypervisor-settings25.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings25.png)
 
 3\. Cоздайте виртуальный жесткий диск под ВМ (Объем не меньше **150ГБ**):
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings26.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings26.png)
 
 4\. Нажмите **Готово**
 
@@ -197,7 +197,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 2\. На пятом шаге (virtm-manager) установки обязательно поставьте галочку **Проверить конфигурацию перед установкой** и нажмите кнопку **Готово**.
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings27.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings27.png)
 
 3\. Для дисков и сетевых карт измените интерфейс на **virtio.**
 
@@ -206,7 +206,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 5\. В появившемся окне на вкладке **Обзор** в поле Firmware выберите пункт **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd**. Выбор этого пункта включит **UEFI** и выключит опцию **Secure Boot**.
 
-![](../.gitbook/assets/specifics-of-hypervisor-settings28.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings28.png)
 
 Если пункта **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd** нет в списке, доустановите пакет ovmf. В Ubuntu этот пакет устанавливается командой `sudo apt install ovmf`.
 </details>
