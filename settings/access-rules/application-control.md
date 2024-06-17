@@ -893,12 +893,6 @@ Apple TVPlus
 
 Онлайн-игра, разработанная Blizzard Entertainment для Microsoft Windows и macOS
 
-
-
-
-
-
-
 </details>
 
 ##
