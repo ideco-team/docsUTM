@@ -67,7 +67,7 @@ description: Настройка параметров учетной записи
 
 Для пользователей, экспортированных из [Active Directory](/settings/users/active-directory/) и [ALD Pro](/settings/users/ald-pro.md), во вкладке **Основное** нельзя редактировать имя, логин, телефон, перемещать в другую группу и менять пароль. Пример импортированного из AD пользователя представлен на скриншоте:
 
-![](/.gitbook/assets/customization-of-users1.png)
+![](/.gitbook/assets/tree3.rng)
 
 ### IP и MAC авторизация
 

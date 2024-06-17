@@ -41,11 +41,11 @@ description: Настройка и примеры настроек популя�
 
 Пример настроек клиента Microsoft Outlook 2013 по протоколу IMAP:
 
-<img src="/.gitbook/assets/mail-settings.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/configuring-email-clients.png" alt="" data-size="original">
 
 Пример настроек клиента Microsoft Outlook 2016 по протоколу IMAP:
 
-<img src="/.gitbook/assets/mail-settings1.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/configuring-email-clients1.png" alt="" data-size="original">
 
 Для отображения IMAP-папок снимите галочку **При просмотре дерева в Outlook показывать только подписанные папки** в свойствах IMAP-папок:
 

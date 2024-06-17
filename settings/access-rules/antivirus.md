@@ -29,7 +29,7 @@
 
 В случае правильной настройки браузер выведет ошибку доступа:
 
-![](/.gitbook/assets/antivirus.jpeg)
+![](/.gitbook/assets/antivirus1.png)
 
 </details>
 

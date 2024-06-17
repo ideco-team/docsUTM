@@ -62,12 +62,12 @@ description: >-
 
 ![](/.gitbook/assets/routing7.png)
 
-Кнопки ![](/.gitbook/assets/mdiarrowdown.svg) и ![](/.gitbook/assets/mdiarrowup.svg) повышают или понижают приоритет правила.
+Кнопки ![](/.gitbook/assets/icon-arrow-down.png) и ![](/.gitbook/assets/icon-arrow-up.png) повышают или понижают приоритет правила.
 
 Статусы в столбце **Используется**:
 
-* ![mdicheckboxmarkedcircle.svg](/.gitbook/assets/mdicheckboxmarkedcircle.svg) - маршрут активен и трафик, попадающий под условия маршрута, будет перенаправлен в указанный Шлюз;
-* ![frame.svg](/.gitbook/assets/frame.svg) - маршрут не активен и трафик, попадающий под условия маршрута, не будет обработан правилом.
+* ![icon-marked-circle.png](/.gitbook/assets/icon-marked-circle.png) - маршрут активен и трафик, попадающий под условия маршрута, будет перенаправлен в указанный Шлюз;
+* ![icon-minus.png](/.gitbook/assets/icon-minus.png) - маршрут не активен и трафик, попадающий под условия маршрута, не будет обработан правилом.
 
 {% hint style="info" %}
 Трафик, не попавший под условия правил маршрутизации, или с объектом **Любой** в качестве шлюза, будет отправлен в [Балансировку и резервирование](multiple-simultaneous-connections.md).
