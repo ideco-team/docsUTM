@@ -92,4 +92,4 @@
 
 После создания локального интерфейса откроется локальное меню управления: 
 
-![](/.gitbook/assets/installation-process12.png)
+![](/.gitbook/assets/local-menu1.png)
