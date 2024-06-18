@@ -29,7 +29,7 @@ description: >-
 
 <figure><img src=".gitbook/assets/Анимация.gif" alt=""><figcaption></figcaption></figure>
 
-Наиболее сложным показался блок задач по работе с продуктами. Ранее я не сталкивалась с подобными задачами, а предложенная инструкция, на мой взгляд, не исчерпывает все возможные трудности. Так, в разделе [**Практика по работе с продуктами**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami) не хватает более подробного описания работы с продуктами и ожидаемого результата в ходе выполнения заданий.
+Наиболее сложным показался блок задач по работе с продуктами. Ранее я не сталкивалась с подобными задачами, а предложенная инструкция, на мой взгляд, не исчерпывает все возможные трудности. Так, в разделе [**Практика по работе с продуктами**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami) не хватает более подробного описания продуктов и принципов работы с ними, а также ожидаемого результата в ходе выполнения заданий.
 
 <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -40,7 +40,7 @@ description: >-
 * [x] перечислить необходимые для работы с ПО требования. В ходе прохождения стажировки я столкнулась с тем, что технические возможности моего устройства не позволяют выполнить блок заданий по работе с продуктами: необходимый объем оперативной памяти составляет как минимум 16 Гб, а на моем ноутбуке - 8 Гб;
 * [x] описать результаты, которые должны получиться в ходе прохождения блока.
 
-В описании задачи по работе с [**Ideco CENTER**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami/ideco-senter) не хватает ссылок на ресурсы, которые могут помочь в выполнении задачи, а также определений необходимых для понимания терминов. Например, для выполнения задачи, представленной на скриншоте ниже, нужно понимать, что такое виртуалка, локальное меню, начальное и конечное правило файрвола.&#x20;
+В описании задачи по работе с [**Ideco CENTER**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami/ideco-senter) не хватает ссылок на ресурсы, которые могут помочь в выполнении задачи, а также определений необходимых для понимания терминов. Например, для работы над задачей, представленной на скриншоте ниже, нужно понимать, что такое виртуалка, локальное меню, начальное и конечное правило файрвола.&#x20;
 
 <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,7 +52,7 @@ description: >-
 
 В задании №1 [**Ideco NGFW (UTM)**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami/ideco-ngfw-utm), во время выполнения которого необходимо создать простейший тестовый стенд, не хватает определения терминов стенд и виртуальная машина. Важно описать, для чего создается виртуальная машина, а также алгоритм ее создания на одной из возможных программ.
 
-В задании №3 [**Ideco NGFW (UTM)**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami/ideco-ngfw-utm) не хватило информации о системе логирования **journald**, о связи **journald** и **journalctl**, а также о назначении и использовании функции **| grep**. Также ввело в заблуждение расположение информации о выведении возможных служб контроля приложений в самом конце задания, т.к. в пункте 2 задание службы уже были упомянуты.
+В задании №3 [**Ideco NGFW (UTM)**](https://ideco.gitbook.io/tekhnicheskaya-dokumentaciya/new-employee/novomu-sotrudniku/praktika-po-rabote-s-produktami/ideco-ngfw-utm) не хватило информации о системе логирования journald, о связи journald и journalctl, а также о назначении и использовании функции | grep. Также ввело в заблуждение расположение информации о выведении возможных служб контроля приложений в самом конце задания, т.к. в пункте 2 задание службы уже были упомянуты.
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
