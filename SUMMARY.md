@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Стажировка в Айдеко](README.md)
+* [Предложения по итогам стажировки](predlozheniya-po-itogam-stazhirovki.md)
 
 ## Общая информация <a href="#general" id="general"></a>
 
