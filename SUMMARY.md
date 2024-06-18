@@ -114,7 +114,7 @@
     * [Подключение MikroTik и Ideco NGFW по L2TP/IPsec и IKev2/IPsec](settings/services/ipsec/site-to-site/utm-to-mikrotik-vpn.md)
     * [Подключение Cisco IOS и Ideco NGFW](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
     * [Подключение pfSense к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-pfsense-to-utm.md)
-    * [Подключение Kerio Control к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
+    * [Подключение Kerio Control и Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
     * [Подключение Keenetic по SSTP или IPsec](settings/services/ipsec/site-to-site/keenetic-connection.md)
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
