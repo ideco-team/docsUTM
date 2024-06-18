@@ -3,7 +3,7 @@
 ## Настройки Центральной консоли в Ideco NGFW
 
 <details>
-<summary>Получение настроек ЦК</summary>
+<summary>Получение настроек Ideco Center</summary>
 
 ```
 GET /central_console/settings
@@ -28,7 +28,7 @@ GET /central_console/settings
 </details>
 
 <details>
-<summary>Изменение настроек ЦК</summary>
+<summary>Изменение настроек Ideco Center</summary>
 
 ```
 PATCH /central_console/settings
@@ -44,7 +44,7 @@ PATCH /central_console/settings
 </details>
 
 <details>
-<summary>Загрузка корневого сертификата ЦК на NGFW</summary>
+<summary>Загрузка корневого сертификата Ideco Center на NGFW</summary>
 
 ```
 POST /central_console/root_ca
@@ -55,7 +55,7 @@ POST /central_console/root_ca
 </details>
 
 <details>
-<summary>Удаление корневого сертификата ЦК</summary>
+<summary>Удаление корневого сертификата Ideco Center</summary>
 
 ```
 DELETE /central_console/root_ca
@@ -66,7 +66,7 @@ DELETE /central_console/root_ca
 </details>
 
 <details>
-<summary>Отключение NGFW от ЦК</summary>
+<summary>Отключение NGFW от Ideco Center</summary>
 
 ```
 DELETE /central_console/settings
@@ -118,7 +118,7 @@ GET /servers/setting
 }
 ```
 
-* `"domain"` - внешний адрес ЦК (IP-адрес или доменное имя).
+* `"domain"` - внешний адрес Ideco Center (IP-адрес или доменное имя).
 
 </details>
 
@@ -179,7 +179,7 @@ PUT /servers/state
 ### Группировка серверов
 
 <details>
-<summary>Получение списка групп серверов в ЦК</summary>
+<summary>Получение списка групп серверов в Ideco Center</summary>
 
 ```
 GET /servers/groups
@@ -326,17 +326,17 @@ GET /servers/servers
   * `release_type` - тип релиза;
 * `"cl_tunnel_addr"` - IPv6-адрес сервера внутри wireguard-туннеля;
 * `"title"` - название сервера;
-* `"approved"` - флаг, означающий, подтверждено ли подключение сервера в ЦК;
+* `"approved"` - флаг, означающий, подтверждено ли подключение сервера в Ideco Center;
 * `"last_sync"` - timestamp последней успешной синхронизации данных;
 * `"last_connect"` - timestamp последнего успешного подключения;
 * `"utm_login_secret"` - секретное значение для отправки в URL авторизации Ideco Center в Ideco NGFW;
-* `"version_diff"` - разница мажорных версий ЦК и NGFW. Если значение равно нулю - мажор одинаковый, больше нуля - версия ЦК выше, меньше нуля - версия NGFW выше.
+* `"version_diff"` - разница мажорных версий Ideco Center и NGFW. Если значение равно нулю - мажор одинаковый, больше нуля - версия Ideco Center выше, меньше нуля - версия NGFW выше.
 * `"comment"` - комментарий, максимум 256 символов, может быть пустым.
 
 </details>
 
 <details>
-<summary>Перемещение подключенных серверов между группами/подтверждение подключения сервера к ЦК</summary>
+<summary>Перемещение подключенных серверов между группами/подтверждение подключения сервера к Ideco Center</summary>
 
 ```
 PATCH /servers/servers/<id сервера>
@@ -360,7 +360,7 @@ PATCH /servers/servers/<id сервера>
 </details>
 
 <details>
-<summary>Удаление сервера из ЦК</summary>
+<summary>Удаление сервера из Ideco Center</summary>
 
 ```
 DELETE /servers/servers/<id сервера>
