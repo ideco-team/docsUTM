@@ -25,7 +25,7 @@ Wi-Fi-маршрутизаторы.
 
 Пример настройки интерфейса для клиентов, подключающихся по Wi-Fi:
 
-![](/.gitbook/assets/wifi-network.png)
+![](/.gitbook/assets/interfaces25.png)
 
 * **10.0.1.146/24** - шлюз для беспроводной Wi-Fi-сети;
 * **10.0.0.193/24** - шлюз для локальной Ethernet-сети.
@@ -56,11 +56,11 @@ Wi-Fi-маршрутизаторы.
 
 Пароль у пользователя может быть любой.
 
-![](/.gitbook/assets/wifi-network1.png)
+![](/.gitbook/assets/tree4.png)
 
 2\. В разделе **Пользователи -> Авторизация -> IP и MAC авторизация** создайте правило следующего вида:
 
-![](/.gitbook/assets/wifi-network2.png)
+![](/.gitbook/assets/authorization.png)
 
 К пользователю необходимо применить общие ограничения [контент-фильтра](/settings/access-rules/content-filter/README.md) и [файрвола](/settings/access-rules/firewall.md) для Wi-Fi-сети.
 
