@@ -33,7 +33,7 @@ description: Настройка параметров учетной записи
 * **Обнаружение устройств**. При нажатии на одноименную кнопку откроется раздел [Обнаружение устройств](/settings/users/device-discovery.md);
 * **Удаление группы**. Вместе с группой удаляются УЗ пользователей группы и привязки по IP- и MAC-адресам:
 
-![](/.gitbook/assets/customization-of-users6.png)
+![](/.gitbook/assets/tree5.png)
 
 ### Active Directory/Samba DC
 
@@ -63,20 +63,20 @@ description: Настройка параметров учетной записи
 * **Находится в группе** - используйте это поле для перемещения пользователя в другую группу;
 * **Запретить доступ** - при установке этого флага пользователь не сможет авторизоваться, соответственно - пользоваться ресурсами сети интернет, почтой и личным кабинетом:
 
-![](/.gitbook/assets/customization-of-users.png)
+![](/.gitbook/assets/tree6.png)
 
 Для пользователей, экспортированных из [Active Directory](/settings/users/active-directory/) и [ALD Pro](/settings/users/ald-pro.md), во вкладке **Основное** нельзя редактировать имя, логин, телефон, перемещать в другую группу и менять пароль. Пример импортированного из AD пользователя представлен на скриншоте:
 
-![](/.gitbook/assets/tree3.rng)
+![](/.gitbook/assets/tree3.png)
 
 ### IP и MAC авторизация
 
 Категория содержит правила авторизации по IP и MAC, созданные для определенного пользователя в двух разделах:
 
 * Пользователи -> Учетные записи -> IP и MAC авторизация:\
-  ![](/.gitbook/assets/customization-of-users3.png)
+  ![](/.gitbook/assets/tree7.png)
 * Пользователи -> [Авторизации](/settings/users/authorization/) -> [IP и MAC авторизация](/settings/users/authorization/ip-and-mac-authorization/):\
-  ![](/.gitbook/assets/customization-of-users4.png)
+  ![](/.gitbook/assets/tree8.png)
 
 {% hint style="info" %}
 Правила **IP и MAC авторизации** также создают аналогичную привязку в [DHCP-сервере](/settings/services/dhcp.md) Ideco NGFW. Но если одни и те же IP- и MAC-адреса будут использоваться во включенных правилах DHCP-сервера, то правила DHCP-сервера будут выполняться в первую очередь.
@@ -86,7 +86,7 @@ description: Настройка параметров учетной записи
 
 Содержит таблицу с информацией обо всех активных сессиях пользователях:
 
-![](/.gitbook/assets/customization-of-users5.png)
+![](/.gitbook/assets/tree9.png)
 
 При нажатии на ![](/.gitbook/assets/icon-cross.png) в столбце **Управление** NGFW разорвет сессию пользователя.\
 Аналогичная таблица расположена в разделе **Мониторинг ->** [**Авторизованные пользователи**](/settings/monitor/authorized-users.md).
@@ -95,12 +95,12 @@ description: Настройка параметров учетной записи
 
 Категория позволяет просматривать правила доступа VPN, которые настраиваются в разделе **VPN-подключения -> Доступ по VPN**.
 
-![](/.gitbook/assets/customization-of-users7.png)
+![](/.gitbook/assets/vpn-authorization7.png)
 
 {% hint style="info" %}
 Для перехода к общей таблице доступа VPN из дерева пользователей нажмите на нужное название:
 
-![](/.gitbook/assets/customization-of-users8.gif)
+![](/.gitbook/assets/tree7.gif)
 
 {% endhint %}
 
@@ -108,7 +108,7 @@ description: Настройка параметров учетной записи
 
 Категория позволяет просматривать и увеличивать квоту пользователя в случае использования лимитов трафика:
 
-![](/.gitbook/assets/customization-of-users2.png)
+![](/.gitbook/assets/tree10.png)
 
 Для увеличения квоты воспользуйтесь полем **Увеличить трафик на текущий период**.
 
