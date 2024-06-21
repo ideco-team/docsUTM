@@ -33,7 +33,7 @@
 
 Для включения **SSO-аутентификации** и **Авторизации через журнал безопасности Active Directory** перейдите на вкладку **Пользователи -> Авторизация -> Основное** и включите эти типы авторизации. Нажмите кнопку **Сохранить**.
 
-![](/.gitbook/assets/active-directory5.png)
+![](/.gitbook/assets/authorization6.png)
 
 {% hint style="info" %}
 После заполнения поля **Доменное имя Ideco NGFW** и сохранения настроек будет выдан Let’s Encrypt сертификат, пользователь будет перенаправляться на окно авторизации, минуя страницу исключения безопасности:
@@ -55,11 +55,11 @@
 
 1\. В настройках брандмауэра Windows на всех контроллерах домена (или доменов) разрешите **удаленное управление журналом событий (Remote Event Log Management)**:
 
-![](/.gitbook/assets/active-directory6.png)
+![](/.gitbook/assets/active-directory-user-authorization.png)
 
 2\. Добавьте Ideco NGFW в группу безопасности **Читатели журнала событий (Event Log Readers)**:
 
-![](/.gitbook/assets/active-directory7.png)
+![](/.gitbook/assets/active-directory-user-authorization1.png)
 
 3\. Перезапустите службу **Авторизация через журнал безопасности Active Directory** на Ideco NGFW. Отключите эту настройку и заново включите;
 
@@ -69,25 +69,25 @@
 
 <summary>Англоязычная версия</summary>
 
-![](/.gitbook/assets/active-directory9.gif)
+![](/.gitbook/assets/active-directory-user-authorization1.gif)
 
 1\. Откройте **Group policy management**.
 
-2\. Выберите **Forest: test.org -> Domains -> test.org**. 
+2\. Выберите **Forest: test.org -> Domains -> test.org**.
 
 3\. Нажмите правой кнопкой мыши по **Default Domain policy** и выберите **Edit**.
 
-4\. В открывшемся окне перейдите по пути **Computer configuration -> Policies -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Logon/Logoff**. 
+4\. В открывшемся окне перейдите по пути **Computer configuration -> Policies -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Logon/Logoff**.
 
-5\. Дважды кликните по **Audit Logon**. 
+5\. Дважды кликните по **Audit Logon**.
 
-6\. В открывшемся окне на вкладке **Policy** включите **Configure the following audit event** и выберите **Success**. 
+6\. В открывшемся окне на вкладке **Policy** включите **Configure the following audit event** и выберите **Success**.
 
-7\. Нажмите **Apply** и **Ok**. 
+7\. Нажмите **Apply** и **Ok**.
 
 8\. В папке **Audit Policies** перейдите в **Account Logon**.
 
-9\. Дважды кликните по **Audit Kerberos Authentication Service** и повторите действия из пункта 6. 
+9\. Дважды кликните по **Audit Kerberos Authentication Service** и повторите действия из пункта 6.
 
 10\. Повторите пункты 8 и 9 для **Audit Kerberos Service Ticket Operations**.
 
@@ -97,25 +97,25 @@
 
 <summary>Русскоязычная версия</summary>
 
-![](/.gitbook/assets/active-directory8.gif)
+![](/.gitbook/assets/active-directory-user-authorization.gif)
 
 1\. Откройте **Управление групповой политикой**.
 
-2\. Выберите **Лес: test.org -> Домены -> test.org**. 
+2\. Выберите **Лес: test.org -> Домены -> test.org**.
 
 3\. Нажмите правой кнопкой мыши по **Default Domain policy** и выберите **Изменить**.
 
-4\. В открывшемся окне перейдите по пути **Конфигурация компьютера -> Политики -> Конфигурация Windows -> Параметры безопасности -> Конфигурация расширенной политики аудита -> Политики аудита -> Вход/Выход**. 
+4\. В открывшемся окне перейдите по пути **Конфигурация компьютера -> Политики -> Конфигурация Windows -> Параметры безопасности -> Конфигурация расширенной политики аудита -> Политики аудита -> Вход/Выход**.
 
-5\. Дважды кликните по **Аудит входа в систему**. 
+5\. Дважды кликните по **Аудит входа в систему**.
 
-6\. В открывшемся окне на вкладке **Политика** включите **Настроить следующие события аудита** и выберите **Успех**. 
+6\. В открывшемся окне на вкладке **Политика** включите **Настроить следующие события аудита** и выберите **Успех**.
 
-7\. Нажмите **Применить** и **Ok**. 
+7\. Нажмите **Применить** и **Ok**.
 
 8\. В папке **Политики аудита** перейдите в **Вход учетной записи**.
 
-9\. Дважды кликните по **Аудит службы проверки подлинности Kerberos** и повторите действия из пункта 6. 
+9\. Дважды кликните по **Аудит службы проверки подлинности Kerberos** и повторите действия из пункта 6.
 
 10\. Повторите пункты 8 и 9 для **Аудита операций с билетами службы Kerberos**.
 
@@ -153,7 +153,7 @@
 
 Пример введения Ideco NGFW в домен `example.ru` под именем `idecoics`.
 
-![](/.gitbook/assets/active-directory.png)
+![](/.gitbook/assets/active-directory-user-authorization2.png)
 
 Для применения настройки ко всем пользователям на клиентской машине выполните действия:
 
@@ -177,7 +177,7 @@
 
 2\. Введите назначение зоны для DNS-имени Ideco NGFW (в примере idecoics.example.ru) со значением, равным 1 (интрасеть). Укажите два назначения для схем работы по http и https:
 
-![](/.gitbook/assets/active-directory1.png)
+![](/.gitbook/assets/active-directory-user-authorization3.png)
 
 {% hint style="info" %}
 При входе на HTTPS-сайт необходимо разрешить браузеру доверять сертификату Ideco NGFW. Чтобы не делать это каждый раз, можно добавить корневой сертификат Ideco NGFW в доверенные корневые сертификаты устройства.
@@ -203,7 +203,7 @@
 При прямых подключениях к прокси **не указывайте** в качестве шлюза IP-адрес Ideco NGFW.
 {% endhint %}
 
-![](/.gitbook/assets/active-directory2.png)
+![](/.gitbook/assets/active-directory-user-authorization4.png)
 
 <details>
 
@@ -224,12 +224,12 @@
 
 Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация** и аутентификация происходит только при ручном переходе по ссылке, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
 
-<img src="/.gitbook/assets/active-directory3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/active-directory-user-authorization5.png" alt="" data-size="original">
 
 Доменному пользователю должно быть разрешено аутентифицироваться на Ideco NGFW. На контроллере домена зайдите в свойства выбранных пользователей во вкладку **Учетная запись** -> **Вход на...**, выберите пункт **только на указанные компьютеры** и пропишите имя рабочей станции для входа в систему.
 
 Пример такой настройки представлен на скриншоте ниже:
 
-<img src="/.gitbook/assets/active-directory4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/active-directory-user-authorization6.png" alt="" data-size="original">
 
 </details>

@@ -26,12 +26,12 @@ description: >-
 
 * Перейдите в раздел **Пользователи -> VPN-подключения -> Основное**;
 * Установите флаг у требуемого протокола подключения, если требуется, заполните поля и нажмите **Сохранить**;
-* Кликните по ссылке **PowerShell - скрипт для настройки подключений**: ![](/.gitbook/assets/powershell5.png)
+* Кликните по ссылке **PowerShell - скрипт для настройки подключений**: ![](/.gitbook/assets/vpn-authorization14.png)
 * Перенесите скачанный файл на устройство, на котором требуется создать VPN-подключение.
 
 **В личном кабинете пользователя:**
 
-* Скачайте скрипт, кликнув по ссылке **Скачать скрипт для создания подключения**: ![](/.gitbook/assets/powershell8.png)
+* Скачайте скрипт, кликнув по ссылке **Скачать скрипт для создания подключения**: ![](/.gitbook/assets/user-personal-account7.png)
 * Перейдите к выполнению пункта 2.
 
 {% hint style="warning" %}
@@ -40,15 +40,15 @@ description: >-
 
 2\. Щелкните правой кнопкой мыши по скачанному файлу и в контекстном меню выберите **Свойства**.
 
-![](/.gitbook/assets/powershell1.png)
+![](/.gitbook/assets/running-powershell-scripts.png)
 
 3\. Поставьте галочку **Разблокировать** справа в нижнем углу свойств файла (по умолчанию ОС блокирует выполнение скачанных из интернета файлов):
 
-![](/.gitbook/assets/powershell2.png)
+![](/.gitbook/assets/running-powershell-scripts1.png)
 
 4\. Нажмите правой кнопкой мыши на файл и выберите **Выполнить в PowerShell** в контекстном меню:
 
-![](/.gitbook/assets/powershell3.png)
+![](/.gitbook/assets/running-powershell-scripts2.png)
 
 {% hint style="info" %}
 При появлении ошибки "Выполнение сценариев отключено в этой системе" нужно включить выполнение сценариев, выполнив команду в PowerShell (вызовите его через меню "Пуск"): `Set-ExecutionPolicy Unrestricted`.
@@ -58,7 +58,7 @@ description: >-
 
 6\. Подключение создано. Нажмите **Подключиться** в списке сетей.
 
-![](/.gitbook/assets/powershell4.png)
+![](/.gitbook/assets/running-powershell-scripts3.png)
 
 ## DNS-суффиксы для VPN-подключений
 
@@ -72,27 +72,27 @@ Powershell-скрипты прописывают основной DNS-суффи
 
 1\. Перейдите в **Сетевые подключения**, нажмите правой кнопкой мыши по нужному VPN-подключению и выберите **Свойства**:
 
-![](/.gitbook/assets/powershell9.png)
+![](/.gitbook/assets/running-powershell-scripts4.png)
 
 2\. В открывшемся окне перейдите на вкладку **Сеть**, выберите компонент **IP версии 4 (TCP/IPv4)** и нажмите кнопку **Свойства**:
 
-![](/.gitbook/assets/powershell10.png)
+![](/.gitbook/assets/running-powershell-scripts5.png)
 
 3\. В открывшемся окне нажмите на кнопку **Дополнительно**:
 
-![](/.gitbook/assets/powershell11.png)
+![](/.gitbook/assets/running-powershell-scripts6.png)
 
 4\. Перейдите на вкладку **DNS** и включите опцию **Дописывать следующие DNS-суффиксы (по порядку)**:
 
-![](/.gitbook/assets/powershell12.png)
+![](/.gitbook/assets/running-powershell-scripts7.png)
 
 5\. Нажмите **Добавить** и введите необходимые DNS-суффиксы:
 
-![](/.gitbook/assets/powershell13.png)
+![](/.gitbook/assets/running-powershell-scripts8.png)
 
 {% hint style="info" %}
 При обращении к компьютеру по короткому имени DNS-суффиксы будут перебираться в порядке расположения. Этот порядок можно менять стрелками.
-{% endhint %} 
+{% endhint %}
 
 ## Подключение по VPN к Ideco NGFW с доступом в интернет через маршрутизатор
 
@@ -104,7 +104,7 @@ Powershell-скрипты прописывают основной DNS-суффи
 
 3\. Поменяйте в загруженном скрипте IP-адрес Ideco NGFW на внешний IP-адрес маршрутизатора:
 
-![](/.gitbook/assets/powershell7.gif)
+![](/.gitbook/assets/running-powershell-scripts.gif)
 
 **46.36.23.99** - IP-адрес Ideco NGFW в локальной сети маршрутизатора.\
 **5.189.21.1** - внешний IP-адрес маршрутизатора.
