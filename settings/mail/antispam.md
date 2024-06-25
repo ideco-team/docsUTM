@@ -50,7 +50,7 @@
 
 ![](/.gitbook/assets/antispam2.png)
 
-3\. Для доступа к веб-интерфейсу перейдите в адресной строке по пути `utm_ip_address:8443/klms/`:
+3\. Для доступа к веб-интерфейсу перейдите в адресной строке по пути `ngfw_ip_address:8443/klms/`:
 
 ![](/.gitbook/assets/antispam3.png)
 
