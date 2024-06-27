@@ -6,22 +6,30 @@
 
 <details>
 
-<summary>Авторизация</summary>
+<summary>Авторизация администратора</summary>
 
 ```
-POST /web/auth/login
+POST /web/admin/auth/login
 ```
 
 **Json-тело запроса:**
 
 ```json5
 {
-    "login": "string",    
-    "password": "string",    
-    "rest_path": "string" //(по умолчанию строка со слэшем "/")
+    "login": "string",
+    "password": "string",
+    "rest_path": "string",
 }
-
 ```
+
+* `login` - логин. Каталог администратора указывается после `@`. Примеры:
+  * `admin` локальный админ, без собаки;
+  * `admin@ad_domain.ru` AD/ALD администратор;
+  * `admin@radius` для RADIUS администраторов `@radius`;
+* `password` - пароль;
+* `rest_path` - префикс URL на который выставлять cookie. Например, `/` или `/rest`.
+
+**Ответ на успешный запрос:** 200 ОК
 
 После успешной авторизации, сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
@@ -36,10 +44,10 @@ set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4c
 
 <details>
 
-<summary>Разавторизация</summary>
+<summary>Разавторизация администратора</summary>
 
 ```
-DELETE /web/auth/login
+DELETE /web/admin/auth/login
 ```
 После успешной разавторизации сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
@@ -104,7 +112,7 @@ POST /license/register
 }
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 Чтобы добавить enterprise-demo лицензию, необходимо сначала получить токен лицензии в личном кабинете. Для этого выполните действия:
 
