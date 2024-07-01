@@ -19,10 +19,15 @@
 <summary>Протокол L2TP/IPsec</summary>
 
 1\. Откройте терминал сочетанием клавиш Ctrl+Alt+F1 и выполните три команды:
-
+```
     sudo apt update
     sudo apt install network-manager-l2tp-gnome
     sudo reboot
+```
+
+{% hint style="warning" %}
+Если команда **sudo apt install network-manager-l2tp-gnome** не работает, подключите репозитории Debian в соответствии с [инструкцией](https://wiki.astralinux.ru/pages/viewpage.action?pageId=3276859).
+{% endhint %}
 
 2\. В трее (в настройках сети) выберите **Соединение VPN -> Добавить VPN-соединение**:
 
