@@ -9,19 +9,19 @@ GET /user_backend/users
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-        "id": int,
-        "name": str,
-        "login": str,
-        "parent_id": int,
-        "enabled": bool,
-        "domain_type": str,  # domain_type ['local'|'ad'|'ald'|'radius']
-        "domain_name": str,
-        "ldap_guid": str,
-        "phone_number": str,
-        "comment": str
+        "id": "integer",
+        "name": "string",
+        "login": "string",
+        "parent_id": "integer",
+        "enabled": "boolean",
+        "domain_type": "string",  // domain_type ['local'|'ad'|'ald'|'radius']
+        "domain_name": "string",
+        "ldap_guid": "string",
+        "phone_number": "string",
+        "comment": "string"
     }
 ]
 ```
@@ -48,17 +48,17 @@ PUT /user_backend/users/<id>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "name": str,
-    "login": str,
-    "parent_id": int,
-    "enabled": bool,
-    "domain_type": str,
-    "domain_name": str,
-    "ldap_guid": str,
-    "phone_number": str,
-    "comment": str
+    "name": "string",
+    "login": "string",
+    "parent_id": "integer",
+    "enabled": "boolean",
+    "domain_type": "string",
+    "domain_name": "string",
+    "ldap_guid": "string",
+    "phone_number": "string",
+    "comment": "string"
 }
 ```
 
@@ -112,14 +112,15 @@ POST /user_backend/users
 ```
 
 **Json-тело запроса:**
-```
+
+```json5
 {
-    "name": str,
-    "login": str,
-    "psw": str,
-    "parent_id": int,
-    "phone_number": Optional[str],
-    "comment": str
+    "name": "string",
+    "login": "string",
+    "psw": "string",
+    "parent_id": "integer",
+    "phone_number": ["string"], // не обязательно
+    "comment": "string"
 }
 ```
 
@@ -132,9 +133,9 @@ POST /user_backend/users
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    'id': int
+    "id": "integer"
 }
 ```
 
@@ -151,10 +152,11 @@ POST /user_backend/groups
 ```
 
 **Json-тело запроса:**
-```
+
+```json5
 {
-    "name": str,
-    "parent_id": int
+    "name": "string",
+    "parent_id": "integer"
 }
 ```
 
@@ -164,9 +166,9 @@ POST /user_backend/groups
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    'id': int
+    "id": "integer"
 }
 ```
 
@@ -187,15 +189,15 @@ GET /user_backend/groups
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-        "id": int,
-        "name": str,
-        "parent_id": int,
-        "domain_type": str,
-        "domain_name": str,
-        "ldap_guid": str
+        "id": "integer",
+        "name": "string",
+        "parent_id": "integer",
+        "domain_type": "string",
+        "domain_name": "string",
+        "ldap_guid": "string"
     }
 ]
 ```
@@ -217,13 +219,14 @@ PUT /user_backend/groups/<id>
 ```
 
 **Json-тело запроса:**
-```
+
+```json5
 {
-    "name": str,
-    "parent_id": int,
-    "domain_type": str,
-    "domain_name": str,
-    "ldap_guid": str
+    "name": "string",
+    "parent_id": "integer",
+    "domain_type": "string",
+    "domain_name": "string",
+    "ldap_guid": "string"
 }
 ```
 
@@ -258,9 +261,9 @@ PUT /user_backend/change_password/<id>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "password": str
+    "password": "string"
 }
 ```
 

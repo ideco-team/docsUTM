@@ -9,7 +9,7 @@ GET /dns/status
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
   {
     "name": "string",
@@ -37,9 +37,9 @@ GET /dns/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-	"intercept_enabled": boolean (перехватывать DNS запросы на серверы в интернет)
+	"intercept_enabled": "boolean" //(перехватывать DNS запросы на серверы в интернет)
 }
 ```
 
@@ -54,9 +54,9 @@ PUT /dns/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "intercept_enabled": boolean
+    "intercept_enabled": "boolean"
 }
 ```
 
@@ -75,9 +75,9 @@ GET /dns/safesearch
 
 Ответ на успешный запрос:
 
-```
+```json5
 {
-	"enabled": boolean (переадресовывать DNS-запросы на безопасные домены поиска Google, Yandex, YouTube, Bing, DuckDuckGo, Qwant и Pixabay)
+	"enabled": "boolean" //(переадресовывать DNS-запросы на безопасные домены поиска Google, Yandex, YouTube, Bing, DuckDuckGo, Qwant и Pixabay)
 }
 ```
 
@@ -89,9 +89,9 @@ PUT /dns/safesearch
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 }
 ```
 
@@ -110,11 +110,11 @@ GET /dns/zones/root
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
     "id": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "type": "ip" | "interface",
     "object": "string",
     "comment": "string"
@@ -142,9 +142,9 @@ POST /dns/zones/root
 
 **Json-тело запроса:** 
 
-```
+```json5
 {
-    "enabled": boolean,
+    "enabled": "boolean",
     "type": "ip" | "interface",
     "object": "string",
     "comment": "string"
@@ -153,7 +153,7 @@ POST /dns/zones/root
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -170,9 +170,9 @@ PATCH /dns/zones/root/<id записи>
 
 **Json-тело запроса (все или некоторые поля):** 
 
-```
+```json5
 {
-    "enabled": boolean,
+    "enabled": "boolean",
     "type": "ip" | "interface",
     "object": "string",
     "comment": "string"
@@ -205,12 +205,12 @@ GET /dns/zones/forward
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
     "id": "string",
     "name": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "servers": ["string"],
     "comment": "string",
 },
@@ -235,10 +235,10 @@ POST /dns/zones/forward
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "servers": ["string"],
     "comment": "string"
 }
@@ -246,7 +246,7 @@ POST /dns/zones/forward
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -263,10 +263,10 @@ PATCH /dns/zones/forward/<id forward-зоны>
 
 **Json-тело запроса (все или некоторые поля):** 
 
-```
+```json5
 {
     "name": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "servers": ["string"],
     "comment": "string"
 }
@@ -298,12 +298,12 @@ GET /dns/zones/master
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
     "id": "string",
     "name": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "config": "string",
     "comment": "string",
 },
@@ -330,10 +330,10 @@ POST /dns/zones/master
 
 **Json-тело запроса:** 
 
-```
+```json5
 {
     "name": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "config": "string",
     "comment": "string",
 }
@@ -341,7 +341,7 @@ POST /dns/zones/master
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -358,10 +358,10 @@ PATCH /dns/zones/master/<id master-зоны>
 
 **Json-тело запроса (все или некоторые поля):** 
 
-```
+```json5
 {
     "name": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "config": "string",
     "comment": "string",
 }
@@ -399,7 +399,7 @@ GET /dns/ddns/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "enabled": false
 }
@@ -416,7 +416,7 @@ PUT /dns/ddns/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "enabled": false
 }
@@ -435,7 +435,7 @@ GET /dns/ddns
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "domain": "string",
     "service_login": "string",
@@ -458,7 +458,7 @@ PUT /dns/ddns
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "domain": "string",
     "service_login": "string",

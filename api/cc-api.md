@@ -11,12 +11,12 @@ GET /central_console/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    cc_server: "string" | null,
-    last_connect: int | null,
-    last_sync: int | null,
-    root_ca: "string" | null
+    "cc_server": "string" | "null",
+    "last_connect": "integer" | "null",
+    "last_sync": "integer" | "null",
+    "root_ca": "string" | "null"
 }
 ```
 
@@ -36,9 +36,9 @@ PATCH /central_console/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-  cc_server: "string" | null
+  "cc_server": "string" | "null"
 }
 ```
 </details>
@@ -87,7 +87,7 @@ GET /servers/status
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "name": "string",
     "status": "active|activating|deactivating|failed|inactive|reloading",
@@ -112,9 +112,9 @@ GET /servers/setting
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
-    "domain": "string" | null,
+    "domain": "string" | "null",
 }
 ```
 
@@ -131,9 +131,9 @@ PUT /servers/setting
 
 **Json-тело запроса:** 
 
-```
+```json5
 {
-    "domain": "string" | null,
+    "domain": "string" | "null",
 }
 ```
 
@@ -150,9 +150,9 @@ GET /servers/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "enabled": boolean,
+    "enabled": "boolean",
 }
 ```
 
@@ -167,9 +167,9 @@ PUT /servers/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": boolean,
+    "enabled": "boolean",
 }
 ```
 
@@ -187,7 +187,7 @@ GET /servers/groups
 
 **Пример ответа на успешный запрос:**
 
-```
+```json5
 [
     {
         "comment": "",
@@ -221,7 +221,7 @@ POST /servers/groups
 
 **Json-тело запроса:**
 
-```
+```json5
 {
         "comment": "string",
         "name": "string",
@@ -235,9 +235,9 @@ POST /servers/groups
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "id": "string" (идентификатор созданной группы)
+    "id": "string" //(идентификатор созданной группы)
 }
 ```
 
@@ -252,7 +252,7 @@ PATCH /servers/groups/<id группы серверов>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
         "comment": "string",
         "name": "string",
@@ -286,16 +286,16 @@ GET /servers/servers
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
     "id": "string",
     "parent_id": "string",
     "version": {
-      "major": int,
-      "minor": int,
-      "build": int,
-      "timestamp": int,
+      "major": "integer",
+      "minor": "integer",
+      "build": "integer",
+      "timestamp": "integer",
       "vendor": "Ideco",
       "product": "UTM",
       "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
@@ -344,10 +344,10 @@ PATCH /servers/servers/<id сервера>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "parent_id": "string",
-    "approved": boolean
+    "approved": "boolean"
 }
 ```
 
@@ -383,7 +383,7 @@ GET /content-filter/categories
 
 **Json-тело ответа:**
 
-```
+```json5
 [
     {
         "id": "string",
@@ -420,11 +420,11 @@ GET /content-filter/users_categories
 
 **Json-ответ на запрос:**
 
-```
+```json5
 [
     {
-        "id": "string" (номер категории, вида - users.id.1),
-        "name": "string" (название категории, не пустая строка),
+        "id": "string", //(номер категории, вида - users.id.1)
+        "name": "string", //(название категории, не пустая строка)
         "comment": "string",
         "urls": ["string"]
     },
@@ -446,7 +446,7 @@ POST /content-filter/users_categories
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -456,7 +456,7 @@ POST /content-filter/users_categories
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -474,7 +474,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -484,7 +484,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string",
     "name": "string",
@@ -503,18 +503,18 @@ PUT /content-filter/users_categories/{category_id}
 
   * `UUID1` - идентификатор группы серверов в Центральной консоли (`id`). 
 
-```
+```json5
 [
     {
-        "id": int,
+        "id": "integer",
         "parent_id": "string",
         "name": "string",
         "comment": "string",
         "aliases": [ "string" ],
         "categories": [ "string" ],
         "access": "allow" | "deny" | "bump" | "redirect",
-        "redirect_url": "string" | null,
-        "enabled": boolean,
+        "redirect_url": "string" | "null",
+        "enabled": "boolean",
         "timetable": [ "string" ]
     },
     ...
@@ -546,7 +546,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "parent_id": "string", (id группы серверов, к которой будет применяться правило)
     "name": "string",
@@ -554,17 +554,17 @@ PUT /content-filter/users_categories/{category_id}
     "aliases": [ "string" ],
     "categories": [ "string" ],
     "access": "allow" | "deny" | "bump" | "redirect",
-    "redirect_url": "string" | null,
-    "enabled": boolean,
+    "redirect_url": "string" | "null",
+    "enabled": "boolean",
     "timetable": [ "string" ]
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "id": int
+    "id": "integer"
 }
 ```
 
@@ -578,7 +578,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -586,8 +586,8 @@ PUT /content-filter/users_categories/{category_id}
     "aliases": [ "string" ],
     "categories": [ "string" ],
     "access": "allow" | "deny" | "bump" | "redirect",
-    "redirect_url": "string" | null,
-    "enabled": boolean,
+    "redirect_url": "string" | "null",
+    "enabled": "boolean",
     "timetable": [ "string" ]
 }
 ```
@@ -606,12 +606,12 @@ PUT /content-filter/users_categories/{category_id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "params": {
-    "id": int,
-    "anchor_item_id": int,
-    "insert_after": boolean
+    "id": "integer",
+    "anchor_item_id": "integer",
+    "insert_after": "boolean"
   }
 }
 ```
@@ -645,9 +645,9 @@ GET /firewall/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 } 
 ```
 
@@ -664,9 +664,9 @@ PUT /firewall/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 }  
 ```
 
@@ -684,24 +684,24 @@ PUT /firewall/state
 
 **Json-тело ответа:**
 
-```
+```json5
 [
    {
       "action": "accept" | "drop",
       "comment": "",
       "destination_addresses": [ "string" ],
-      "destination_addresses_negate": boolean,
+      "destination_addresses_negate": "boolean",
       "destination_ports": [ "string" ],
-      "enabled": boolean,
+      "enabled": "boolean",
       "hip_profiles": ["string"],
       "incoming_interface": "string",
       "outgoing_interface": "string",
       "parent_id": "string",
       "protocol": "string",
       "source_addresses": [ "string" ],
-      "source_addresses_negate": boolean,
+      "source_addresses_negate": "boolean",
       "timetable": [ "string" ],
-      "id": int
+      "id": "integer"
     },
     ...
 ]
@@ -742,28 +742,28 @@ PUT /firewall/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "action": "accept" | "drop",
   "comment": "",
   "destination_addresses": [ "string" ],
-  "destination_addresses_negate": boolean,
+  "destination_addresses_negate": "boolean",
   "destination_ports": [ "string" ],
-  "enabled": boolean,
+  "enabled": "boolean",
   "hip_profiles": ["string"],
   "incoming_interface": "string",
   "outgoing_interface": "string",
   "parent_id": "string",
   "protocol": "string",
   "source_addresses": [ "string" ],
-  "source_addresses_negate": boolean,
+  "source_addresses_negate": "boolean",
   "timetable": [ "string" ]
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": int
 }
@@ -781,21 +781,21 @@ PUT /firewall/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "action": "accept" | "drop",
   "comment": "",
   "destination_addresses": [ "string" ],
-  "destination_addresses_negate": boolean,
+  "destination_addresses_negate": "boolean",
   "destination_ports": [ "string" ],
-  "enabled": boolean,
+  "enabled": "boolean",
   "hip_profiles": ["string"],
   "incoming_interface": "string",
   "outgoing_interface": "string",
   "parent_id": "string",
   "protocol": "string",
   "source_addresses": [ "string" ],
-  "source_addresses_negate": boolean,
+  "source_addresses_negate": "boolean",
   "timetable": [ "string" ]
 }
 ```
@@ -816,12 +816,12 @@ PUT /firewall/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "params": {
-    "id": int,
-    "anchor_item_id": int,
-    "insert_after": boolean
+    "id": "integer",
+    "anchor_item_id": "integer",
+    "insert_after": "boolean"
   }
 }
 ```

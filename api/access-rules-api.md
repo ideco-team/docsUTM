@@ -15,12 +15,12 @@ GET /firewall/status
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
   {
       "name": "rules-in-kernel",
       "status": "active|activating|deactivating|failed|inactive|reloading",
-      "msg": [ "string" ]  (Список строк, поясняющих текущее состояние)
+      "msg": [ "string" ]  //(Список строк, поясняющих текущее состояние)
   },
   {
         "msg": [ "string" ],
@@ -43,7 +43,7 @@ GET /firewall/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "enabled": "boolean"
 } 
@@ -60,9 +60,9 @@ GET /firewall/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "automatic_snat_enabled": boolean,
+    "automatic_snat_enabled": "boolean",
     "log_actions": ["accept" | "drop" | "dnat" | "snat"],
     "log_mode": "string"
 } 
@@ -79,9 +79,9 @@ PUT /firewall/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "automatic_snat_enabled": boolean,
+    "automatic_snat_enabled": "boolean",
     "log_actions": ["accept" | "drop" | "dnat" | "snat"],
     "log_mode": "string"
 } 
@@ -104,24 +104,24 @@ PUT /firewall/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
         "comment": "string",
         "destination_addresses": [ "string" ], 
-        "destination_addresses_negate": boolean,
+        "destination_addresses_negate": "boolean",
         "destination_ports": [ "string" ],
-        "enabled": boolean,
+        "enabled": "boolean",
         "hip_profiles": [ "string" ],
         "incoming_interface": "string",
         "outgoing_interface": "string",
         "parent_id": "string",
         "protocol": "string",
         "source_addresses": [ "string" ],
-        "source_addresses_negate": boolean,
+        "source_addresses_negate": "boolean",
         "timetable": [ "string" ],
-        "id": int
+        "id": "integer"
     },
     ...
 ]
@@ -165,30 +165,30 @@ PUT /firewall/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
     "comment": "",
     "destination_addresses": [ "string" ],
-    "destination_addresses_negate": boolean,
+    "destination_addresses_negate": "boolean",
     "destination_ports": [ "string" ],
-    "enabled": boolean,
+    "enabled": "boolean",
     "hip_profiles": [ "string" ],
     "incoming_interface": "string",
     "outgoing_interface": "string",
     "parent_id": "string",
     "protocol": "string",
     "source_addresses": [ "string" ],
-    "source_addresses_negate": boolean,
+    "source_addresses_negate": "boolean",
     "timetable": [ "string" ]
     }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "id": int
+    "id": "integer"
 }
 ```
 
@@ -205,21 +205,21 @@ PUT /firewall/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
     "comment": "",
     "destination_addresses": [ "string" ],
-    "destination_addresses_negate": boolean,
+    "destination_addresses_negate": "boolean",
     "destination_ports": [ "string" ],
-    "enabled": boolean,
+    "enabled": "boolean",
     "hip_profiles": [ "string" ],
     "incoming_interface": "string",
     "outgoing_interface": "string",
     "parent_id": "string",
     "protocol": "string",
     "source_addresses": [ "string" ],
-    "source_addresses_negate": boolean,
+    "source_addresses_negate": "boolean",
     "timetable": [ "string" ]
     }
 ```
@@ -239,12 +239,12 @@ PUT /firewall/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "params": {
-    "id": int,
-    "anchor_item_id": int,
-    "insert_after": boolean
+    "id": "integer",
+    "anchor_item_id": "integer",
+    "insert_after": "boolean"
   }
 }
 ```
@@ -279,9 +279,9 @@ GET /firewall/watch
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-   "enabled": boolean (true - если счетчик включен, false - если выключен)
+   "enabled": "boolean" //(true - если счетчик включен, false - если выключен)
 }
 ```
 
@@ -296,9 +296,9 @@ PUT /firewall/watch
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-   "enabled": boolean (true - чтобы включить, false - чтобы выключить)
+   "enabled": "boolean" //(true - чтобы включить, false - чтобы выключить)
 }
 ```
 
@@ -317,11 +317,11 @@ PUT /firewall/watch
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
    {
-      "id": int,
-      "packets": int (количество сработок правила)
+      "id": "integer",
+      "packets": "integer" //(количество сработок правила)
    },
    ...
 ]
@@ -340,17 +340,17 @@ GET /application_control_backend/rules
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
 {
-        "action": str # ["drop"|"accept"]
-        "aliases": [str],
-        "comment": str,
-        "enabled": bool,
-        "name": str,
-        "parent_id": str,
-        "protocols": [str],
-        "id": int
+        "action": "string", // ["drop"|"accept"]
+        "aliases": ["string"],
+        "comment": "string",
+        "enabled": "boolean",
+        "name": "string",
+        "parent_id": "string",
+        "protocols": ["string"],
+        "id": "integer"
 }
 ]
 ```
@@ -375,15 +375,15 @@ POST /application_control_backend/rules
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-"parent_id": str,
-"name": str,
-"action": str # ["drop"|"accept"],
-"comment": str,
-"aliases":[str],
-"protocols":[str],
-"enabled":bool
+"parent_id": "string",
+"name": "string",
+"action": "string", // ["drop"|"accept"],
+"comment": "string",
+"aliases":["string"],
+"protocols":["string"],
+"enabled": "boolean"
 }
 ```
 
@@ -397,9 +397,9 @@ POST /application_control_backend/rules
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "id": int
+    "id": "integer"
 }
 ```
 
@@ -418,15 +418,15 @@ PUT /application_control_backend/rules/{id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "parent_id": "str",
     "name": "str",
     "comment": "str",
     "aliases": ["str"],
     "protocols": ["str"],
-    "action": str # ["drop"|"accept"],
-    "enabled": bool,
+    "action": "string", // ["drop"|"accept"],
+    "enabled": "boolean",
 }
 ```
 
@@ -451,12 +451,12 @@ PATCH /application_control_backend/rules/move
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "params": {
-    "id": int,
-    "anchor_item_id": int,
-    "insert_after": bool,
+    "id": "integer",
+    "anchor_item_id": "integer",
+    "insert_after": "boolean",
   },
 }
 ```
@@ -491,11 +491,11 @@ DELETE /application_control_backend/rules/{id}
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-        "name": str,
-        "status": str, # ["active"|"activating"|"deactivating"|"failed"|"inactive"|"reloading"],
+        "name": "string",
+        "status": "string", // ["active"|"activating"|"deactivating"|"failed"|"inactive"|"reloading"],
         "msg": ["str"]
     }
 ]
@@ -516,9 +516,9 @@ GET /ips/update
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "status": str, ["up_to_date"|updating|failed_to_update|disabled"]
+    "status": "string", // ["up_to_date|updating|failed_to_update|disabled"]
     "msg": "i18n_str",
     "last_update": "float|null"
 }
@@ -544,9 +544,9 @@ GET /ips/update_advanced
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "status": str, ["up_to_date"|"updating"|"failed_to_update"|"disabled"],
+    "status": "string", //["up_to_date"|"updating"|"failed_to_update"|"disabled"],
     "msg": "i18n_str",
     "last_update": "float|null"
 }
@@ -585,9 +585,9 @@ GET /ips/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "enabled": bool
+    "enabled": "boolean"
 }
 ```
 
@@ -605,9 +605,9 @@ PUT /ips/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": bool
+    "enabled": "boolean"
 }
 ```
 
@@ -626,7 +626,7 @@ GET /ips/nets
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
   {
     "id": "string",
@@ -649,9 +649,9 @@ POST /ips/nets
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "address": str
+    "address": "string"
 }
 ```
 
@@ -659,10 +659,10 @@ POST /ips/nets
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "id": str,
-    "address": str
+    "id": "string",
+    "address": "string"
 }
 ```
 
@@ -691,13 +691,14 @@ DELETE /ips/nets/{id}
 GET /ips/rules
 ```
 
-```
+```json5
 [
-{
+  {
     "id": "string",
     "name": "string",
     "enabled": "bool"
-}
+  },
+  ...
 ]
 ```
 
@@ -718,9 +719,9 @@ PATCH /ips/rules/{id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": bool
+    "enabled": "boolean"
 }
 ```
 
@@ -740,9 +741,9 @@ GET /ips/rules/sid/{id}
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "rule": str
+    "rule": "string"
 }
 ```
 
@@ -759,12 +760,12 @@ GET /ips/disabled_rules
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-    "sid": int,
-    "comment": str,
-    "id": str
+    "sid": "integer",
+    "comment": "string",
+    "id": "string"
     }
 ]
 ```
@@ -784,7 +785,7 @@ POST /ips/disabled_rules
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "sid": "int",
     "comment": "string"
@@ -796,9 +797,9 @@ POST /ips/disabled_rules
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-  "id": str 
+  "id": "string" 
 }
 ```
 
@@ -815,7 +816,7 @@ PATCH /ips/disabled_rules/{id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "sid": "int",
     "comment": "string"
@@ -851,13 +852,13 @@ GET /ips/bypass
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-        "id": str,
-        "aliases": [ str ],
-        "comment": str,
-        "enabled": bool,
+        "id": "string",
+        "aliases": [ "string" ],
+        "comment": "string",
+        "enabled": "boolean",
     }
 ]
 ```
@@ -878,7 +879,7 @@ POST /ips/bypass
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "aliases": [ "string" ],
     "comment": "string",
@@ -894,7 +895,7 @@ POST /ips/bypass
 
 ```
 {
-    "id": str
+    "id": "string"
 }
 ```
 
@@ -914,7 +915,7 @@ PATCH /ips/bypass/{id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "aliases": [ "string" ],
     "comment": "string",
@@ -957,9 +958,9 @@ GET /content-filter/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 }
 ```
 
@@ -971,9 +972,9 @@ PUT /content-filter/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 }
 ```
 
@@ -992,10 +993,10 @@ GET /content-filter/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "enabled_extended_categorizer": boolean,
-    "quic_reject_enabled": boolean
+    "enabled_extended_categorizer": "boolean",
+    "quic_reject_enabled": "boolean"
 }
 ```
 
@@ -1013,10 +1014,10 @@ PATCH /content-filter/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled_extended_categorizer": boolean,
-    "quic_reject_enabled": boolean (Любое из полей может отсутствовать)
+    "enabled_extended_categorizer": "boolean",
+    "quic_reject_enabled": "boolean" //(Любое из полей может отсутствовать)
 }
 ```
 
@@ -1033,9 +1034,9 @@ GET /proxy_backend/safe_search
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 }
 ```
 
@@ -1050,9 +1051,9 @@ PUT /proxy_backend/safe_search
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "enabled": boolean
+    "enabled": "boolean"
 }
 ```
 
@@ -1071,7 +1072,7 @@ GET /content-filter/categories
 
 **Json-тело ответа:**
 
-```
+```json5
 [
     {
         "id": "string",
@@ -1108,7 +1109,7 @@ GET /content-filter/users_categories
 
 **Json-ответ на запрос:**
 
-```
+```json5
 [
     {
         "id": "string" (номер категории, вида - users.id.1),
@@ -1134,7 +1135,7 @@ POST /content-filter/users_categories
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -1144,7 +1145,7 @@ POST /content-filter/users_categories
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -1162,7 +1163,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -1172,7 +1173,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string",
     "name": "string",
@@ -1194,19 +1195,19 @@ GET /content-filter/rules
 
 **Json-тело ответа:**
 
-```
+```json5
 [
     {
         "access": "allow" | "deny" | "bump" | "redirect",
         "aliases": ["string"],
         "categories": ["string"],
         "comment": "string",
-        "enabled": boolean,
+        "enabled": "boolean",
         "name": "string",
         "parent_id": "string",
-        "redirect_url": "string" | null,
+        "redirect_url": "string" | "null",
         "timetable": ["string"],
-        "id": int
+        "id": "integer"
     },
     ...
 ]
@@ -1241,7 +1242,7 @@ POST /content-filter/rules?anchor_item_id=123&insert_after={true|false}
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -1266,7 +1267,7 @@ PUT /content-filter/rules/<id правила>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -1293,12 +1294,12 @@ PATCH /content-filter/rules/move
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "params": {
-    "id": int,
-    "anchor_item_id": int,
-    "insert_after": boolean
+    "id": "integer",
+    "anchor_item_id": "integer",
+    "insert_after": "boolean"
   }
 }
 ```
@@ -1333,9 +1334,9 @@ GET /quotas/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-  "enabled": boolean
+  "enabled": "boolean"
 }
 ```
 
@@ -1350,9 +1351,9 @@ PUT /quotas/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-  "enabled": boolean
+  "enabled": "boolean"
 }
 ```
 
@@ -1369,7 +1370,7 @@ GET /quotas/quotas
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
   {
     "id": "string",
@@ -1401,19 +1402,19 @@ POST /quotas/quotas
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "title": "string",
   "comment": "string",
-  "quota": int,
-  "enabled": boolean,
+  "quota": "integer",
+  "enabled": "boolean",
   "interval": "string"
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -1430,12 +1431,12 @@ PATCH /quotas/quotas/<id квоты>
 
 **Json-тело запроса (все или некоторые поля):**
 
-```
+```json5
 {
   "title": "string",
   "comment": "string",
   "quota": "integer",
-  "enabled": boolean,
+  "enabled": "boolean",
   "interval": "string"
 }
 ```
