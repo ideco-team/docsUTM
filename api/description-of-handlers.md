@@ -10,11 +10,11 @@ POST /web/auth/login
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "login": "string",    
     "password": "string",    
-    "rest_path": "string" (по умолчанию строка со слэшем "/")
+    "rest_path": "string" //(по умолчанию строка со слэшем "/")
 }
 
 ```
@@ -57,9 +57,9 @@ GET /gather_stat/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-      "enabled": boolean
+      "enabled": "boolean"
    }
 ```
 
@@ -73,9 +73,9 @@ PUT /gather_stat/settings
 
 **Json-тело запроса**
 
-```
+```json5
 {
-      "enabled": boolean
+      "enabled": "boolean"
    }
 ```
 
@@ -94,9 +94,9 @@ POST /license/register
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "token": "str" (Получить токен лицензии можно в отделе продаж. Он высылается в активационном письме)
+    "token": "str" //(Получить токен лицензии можно в отделе продаж. Он высылается в активационном письме)
 }
 ```
 
@@ -112,7 +112,7 @@ POST /api/v3/login
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "login": "string",
     "password": "string",
@@ -130,7 +130,7 @@ PUT /api/v3/{company_id}/go_to_product
 
 **Тело ответа на успешный запрос:**
 
-```
+```json5
 {
   "token": "string"
 }
@@ -149,7 +149,7 @@ GET /license/info
 
 **Пример ответа на успешный запрос:**
 
-```
+```json5
 {
     "modules": {
         "active_directory": {
@@ -212,7 +212,7 @@ GET /license/info
 
 **Если лицензия для данного сервера отсутствует:**
 
-```
+```json5
 {
     "registered": false,
     "has_connection": true,
@@ -231,7 +231,7 @@ GET /license/update-type
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
   "update_type": "auto" | "manual"
 }
@@ -251,7 +251,7 @@ PUT /license/update-type
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "update_type": "auto" | "manual"
 }
@@ -270,7 +270,7 @@ GET /license/license-get-offline-registration-url
 
 **Ответ на успешный запрос**
 
-```
+```json5
 {
     "registration_url": "https://my.ideco.ru/offline_register?server_name=ZGF0YSB0byBiZSBlbmNvZGVk&hwid=u-CVv6SSNMXI_Mukgnf3SCIxJz9kcl0i50ARFk4FRz1O&version=17.1"
 }
@@ -309,7 +309,7 @@ POST /aliases/ip_addresses
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "comment": "string",    
     "title": "string",    
@@ -319,7 +319,7 @@ POST /aliases/ip_addresses
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -337,7 +337,7 @@ POST /aliases/ip_ranges
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -348,7 +348,7 @@ POST /aliases/ip_ranges
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -366,17 +366,17 @@ POST /aliases/networks
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "title": "string" (максимальная длина 42 символа),
-    "comment": "string" (может быть пустым, максимальная длина 256 символов),
-    "value": "string" (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
+    "title": "string", //(максимальная длина 42 символа)
+    "comment": "string", //(может быть пустым, максимальная длина 256 символов)
+    "value": "string" //(адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -394,17 +394,17 @@ POST /aliases/domains
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "title": "string" (максимальная длина 42 символа),
-    "comment": "string" (может быть пустым, максимальная длина 256 символов),
-    "value": "string" (домен)
+    "title": "string", //(максимальная длина 42 символа)
+    "comment": "string", //(может быть пустым, максимальная длина 256 символов)
+    "value": "string" //(домен)
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -422,17 +422,17 @@ POST /aliases/ports
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "value": integer (номер порта)
+    "value": "integer" //(номер порта)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -450,18 +450,18 @@ POST /aliases/port_ranges
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "start": integer (первый порт диапазона),
-    "end": integer (последний порт диапазона)
+    "start": "integer", //(первый порт диапазона)
+    "end": "integer" //(последний порт диапазона)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -479,16 +479,16 @@ POST /aliases/time_ranges
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title":"string",
     "comment":"string",
-    "weekdays":[integer] (список дней недели, где 1-пн, 2-вт ... 7-вс),
-    "start":"string" (начало временного отрезка в формате: ЧЧ:ММ),
-    "end":"string"(конец временного отрезка в формате: ЧЧ:ММ),
+    "weekdays":["integer"], //(список дней недели, где 1-пн, 2-вт ... 7-вс)
+    "start":"string", //(начало временного отрезка в формате: ЧЧ:ММ)
+    "end":"string" //(конец временного отрезка в формате: ЧЧ:ММ)
     "period": {
-            "first": integer (момент начала срока действия в формате ГГГГММДДЧЧММСС, например, 20240215000000),
-            "last": integer (момент окончания срока действия в формате ГГГГММДДЧЧММСС, например, 20240229235959)
+            "first": "integer", //(момент начала срока действия в формате ГГГГММДДЧЧММСС, например, 20240215000000)
+            "last": "integer" //(момент окончания срока действия в формате ГГГГММДДЧЧММСС, например, 20240229235959)
         }
 }
 ```
@@ -497,7 +497,7 @@ POST /aliases/time_ranges
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -515,17 +515,17 @@ POST /aliases/lists/addresses
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": ["string"] (идентификаторы IP-объектов, через запятую)
+    "values": ["string"] //(идентификаторы IP-объектов, через запятую)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -543,17 +543,17 @@ POST /aliases/ip_address_lists
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] (Список IP-адресов без указания маски, либо с указанием маски подсети в виде десятичного числа 0...32 или четырех десятичных чисел от 0 до 255. Например: `192.168.0.0/24` или `192.168.0.1`)
+    "values": [ "string" ] //(Список IP-адресов без указания маски, либо с указанием маски подсети в виде десятичного числа 0...32 или четырех десятичных чисел от 0 до 255. Например: `192.168.0.0/24` или `192.168.0.1`)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -571,17 +571,17 @@ POST /aliases/lists/ports
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] (список портов)
+    "values": [ "string" ] //(список портов)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -599,17 +599,17 @@ POST /aliases/lists/times
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] (список id объектов Время)
+    "values": [ "string" ] //(список id объектов Время)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -627,24 +627,24 @@ GET /aliases/all
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-        comment: "string",
-        title: "string",
-        type: "string",
-        values: [
-            "string" | integer,
-            "string" | integer
+        "comment": "string",
+        "title": "string",
+        "type": "string",
+        "values": [
+            "string" | "integer",
+            "string" | "integer"
         ],
-        id: "type.id.1"
+        "id": "type.id.1"
     }, 
 {
-        comment: "string",
-        title: "string",
-        type: "string",
-        value: "string" | integer,
-        id: "type.id.1"
+        "comment": "string",
+        "title": "string",
+        "type": "string",
+        "value": "string" | "integer",
+        "id": "type.id.1"
     },
     ...
 ] 
@@ -699,11 +699,11 @@ GET /netscan_backend/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-   "enabled": boolean,
-   "group_id": integer (идентификатор группы, в которую будут добавлены обнаруженные устройства),
-   "networks": ["string"] (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
+   "enabled": "boolean",
+   "group_id": "integer", //(идентификатор группы, в которую будут добавлены обнаруженные устройства)
+   "networks": ["string"] //(список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
 }
 ```
 
@@ -718,10 +718,10 @@ PUT /netscan_backend/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-   "enabled": boolean,
-   "group_id": integer,
+   "enabled": "boolean",
+   "group_id": "integer",
    "networks": ["string"]
 }
 ```

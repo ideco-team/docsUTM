@@ -9,7 +9,7 @@ GET /logs_backend/remote_syslog/status
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "name": "string",
@@ -39,9 +39,9 @@ GET /logs_backend/remote_syslog/state
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-  "enabled": boolean (true - включен, false - выключен)
+  "enabled": "boolean" //(true - включен, false - выключен)
 }
 ```
 
@@ -53,9 +53,9 @@ PUT /logs_backend/remote_syslog/state
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-  "enabled": boolean
+  "enabled": "boolean"
 }
 ```
 
@@ -72,7 +72,7 @@ GET /logs_backend/remote_syslog
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
   "host": "string",
   "port": "int",
@@ -97,7 +97,7 @@ PATCH /logs_backend/remote_syslog
 
 **Json-тело запроса:**
 
-```
+```json5
 {
   "host": "string" | null,
   "port": "int" | null,

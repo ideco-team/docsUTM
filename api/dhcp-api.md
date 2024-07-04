@@ -9,7 +9,7 @@ GET /dhcp_server/status
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
   {
     "name": "string",
@@ -36,10 +36,10 @@ GET /dhcp_server/settings
 
 **Пример ответа на успешный запрос:**
 
-```
+```json5
 [
   {
-        "enabled": boolean,
+        "enabled": "boolean",
         "interface": "string",
         "relay": {
             "external_servers": [
@@ -50,19 +50,19 @@ GET /dhcp_server/settings
         "id": "string"
     },
   {
-        "enabled": boolean,
+        "enabled": "boolean",
         "interface": "string",
         "relay": null,
         "server": {
             "dns": ["string"],
             "domain": "string",
             "gateway": "string",
-            "lease_time": int,
+            "lease_time": "integer",
             "options": [
                 {
                     "comment": "string",
-                    "enabled": boolean,
-                    "forced": boolean,
+                    "enabled": "boolean",
+                    "forced": "boolean",
                     "option": "string"
                 }
             ],
@@ -74,7 +74,7 @@ GET /dhcp_server/settings
             "tftp_filename": "string",
             "tftp_server": "string",
             "wins": [ "string" ],
-            "wpad_enabled": boolean
+            "wpad_enabled": "boolean"
         },
         "id": "string"
     },
@@ -117,21 +117,21 @@ POST /dhcp_server/settings
 
 **Json-тело запроса для режима сервера:**
 
-```
+```json5
 {
-      "enabled": boolean,
+      "enabled": "boolean",
       "interface": "string",
       "relay": null,
       "server": {
           "dns": ["string"],
           "domain": "string",
           "gateway": "string",
-          "lease_time": int,
+          "lease_time": "integer",
           "options": [
               {
                   "comment": "string",
-                  "enabled": boolean,
-                  "forced": boolean,
+                  "enabled": "boolean",
+                  "forced": "boolean",
                   "option": "string"
               }
           ],
@@ -143,16 +143,16 @@ POST /dhcp_server/settings
           "tftp_filename": "string",
           "tftp_server": "string",
           "wins": [ "string" ],
-          "wpad_enabled": boolean
+          "wpad_enabled": "boolean"
       }
   }
 ```
 
 **Json-тело запроса для режима релея:**
 
-```
+```json5
 {
-      "enabled": boolean,
+      "enabled": "boolean",
       "interface": "string",
       "relay": {
           "external_servers": [
@@ -165,7 +165,7 @@ POST /dhcp_server/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
   "id": "string",
 }
@@ -182,7 +182,7 @@ PATCH /dhcp_server/settings/<id настройки>
 
 **Json-тело запроса - все или некоторые поля для создания настроек, например:**
 
-```
+```json5
 {
       "relay": {
           "external_servers": [
@@ -218,7 +218,7 @@ GET /dhcp_server/static_leases
 
 **Пример ответа на успешный запрос:**
 
-```
+```json5
 [
     {
         "comment": "",
@@ -242,10 +242,10 @@ POST /dhcp_server/static_leases
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "comment": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "ip_address": "string",
     "mac": "string"
   }
@@ -254,7 +254,8 @@ POST /dhcp_server/static_leases
 Будьте внимательны при согласовании настроек клиентских устройств и DHCP-сервера на Ideco NGFW. Некоторые устройства предоставляют MAC-адрес с разделенными с помощью дефиса октетами (01-02-03-04-05-06). В настройках Ideco NGFW октеты MAC-адреса разделяются только двоеточиями (01:02:03:04:05:06).
 
 **Ответ на успешный запрос:**
-```
+
+```json5
 {
   "id": "string"
 }
@@ -271,10 +272,10 @@ PATCH /dhcp_server/static_leases/<id статической привязки>
 
 **Json-тело запроса (все или некоторые поля):**
 
-```
+```json5
 {
     "comment": "string",
-    "enabled": boolean,
+    "enabled": "boolean",
     "ip_address": "string",
     "mac": "string"
   }

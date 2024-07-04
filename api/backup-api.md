@@ -9,21 +9,21 @@ GET /backup/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
    "common": {
-      "hour": int,
+      "hour": "integer",
       "rotate": "weekly | monthly"
    },
    "ftp": {
-      "enabled": boolean,
+      "enabled": "boolean",
       "server": "string",
       "login": "string",
       "password": "string",
       "remote_dir": "string"
    },
    "cifs": {
-      "enabled": boolean,
+      "enabled": "boolean",
       "server": "string",
       "login": "string",
       "password": "string",
@@ -61,21 +61,21 @@ PUT /backup/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
    "common": {
-      "hour": int,
+      "hour": "integer",
       "rotate": "weekly | monthly"
    },
    "ftp": {
-      "enabled": boolean,
+      "enabled": "boolean",
       "server": "string",
       "login": "string",
       "password": "string",
       "remote_dir": "string"
    },
    "cifs": {
-      "enabled": boolean,
+      "enabled": "boolean",
       "server": "string",
       "login": "string",
       "password": "string",
@@ -99,15 +99,15 @@ POST /backup/backups
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-   "comment": "string" (комментарий, произвольный текст)
+   "comment": "string" //(комментарий, произвольный текст)
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -124,14 +124,14 @@ GET /backup/backups
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
    "id": "string",
    "version": {
-      "major": int,
-      "minor": int,
-      "build": int,
-      "timestamp": int,
+      "major": "integer",
+      "minor": "integer",
+      "build": "integer",
+      "timestamp": "integer",
       "vendor": "Ideco",
       "product": "UTM" | "CC",
       "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
@@ -186,7 +186,7 @@ POST /backup/upload
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
    "id": "string"
 }

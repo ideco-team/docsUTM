@@ -9,9 +9,9 @@ GET /ad_backend/status
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "msg": ["string"] (Список ошибок)
+    "msg": ["string"] //(Список ошибок)
 }
 ```
 
@@ -30,7 +30,7 @@ POST /ad_backend/domains
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string", 
     "computer_name": "string",
@@ -61,7 +61,7 @@ GET /ad_backend/domains
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "name": "string",  
@@ -84,7 +84,7 @@ PUT /ad_backend/domains/<domain_name>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "computer_name": "string",
     "user": "string",
@@ -125,9 +125,9 @@ GET /ad_backend/settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-    "authorization_by_logs": boolean (Включена/выключена авторизация по логам AD)
+    "authorization_by_logs": "boolean" //(Включена/выключена авторизация по логам AD)
 }
 ```
 
@@ -142,9 +142,9 @@ PUT /ad_backend/settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "authorization_by_logs": boolean
+    "authorization_by_logs": "boolean"
 }
 ```
 
@@ -163,7 +163,7 @@ GET /ad_backend/domains/<domain_name>/security_groups
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "name": "string",
@@ -186,12 +186,12 @@ GET /ad_backend/domains/<domain_name>/tree
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "name": "string",
         "guid": "string",
-        "parent_guid": "string" | null
+        "parent_guid": "string" | "null"
     }
 ]
 ```
@@ -214,13 +214,13 @@ GET /ad_backend/forward_zones
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "id":  "string",
         "name": "string",
         "servers": ["string"],
-        "enabled": true,
+        "enabled": "boolean",
         "comment": "string"
     },
     ...
@@ -246,7 +246,7 @@ GET /ad_backend/group_settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
   {
     "id": "int",
@@ -286,11 +286,11 @@ POST /ad_backend/group_settings
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "search_filter": "string",
     "object_guid": "string",
-    "group_id": int,
+    "group_id": "integer",
     "domain_name": "string",
     "sync_type": "ldap" | "security"
   }
@@ -318,12 +318,12 @@ PUT /ad_backend/group_settings/<id записи синхронизации>
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "search_filter": "string",
     "object_guid": "string",
     "domain_name": "string",
-    "group_id": int,
+    "group_id": "integer",
     "sync_type": "ldap" | "security"
   }
 ```
