@@ -1,5 +1,9 @@
 # DNS-сервер
 
+{% hint style="info" %}
+Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
+{% endhint %}
+
 <details>
 <summary>Получение статуса службы DNS</summary>
 

@@ -4,6 +4,10 @@
 API правил трафика Ideco Center описано в статье [Центральная консоль](/api/cc-api.md).
 {% endhint %}
 
+{% hint style="info" %}
+Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
+{% endhint %}
+
 ## Файрвол
 
 <details>
@@ -15,7 +19,7 @@ GET /firewall/status
 
 **Ответ на успешный запрос:**
 
-```json5
+```json
 [
   {
       "name": "rules-in-kernel",
@@ -43,7 +47,7 @@ GET /firewall/state
 
 **Ответ на успешный запрос:**
 
-```json5
+```json
 {
     "enabled": "boolean"
 } 
@@ -60,11 +64,11 @@ GET /firewall/settings
 
 **Ответ на успешный запрос:**
 
-```json5
+```json
 {
     "automatic_snat_enabled": "boolean",
-    "log_actions": ["accept" | "drop" | "dnat" | "snat"],
-    "log_mode": "string"
+    "log_mode": "nothing" | "all" | "selected",
+    "log_actions": ["accept" | "drop" | "dnat" | "snat" | "mark_log" | "mark_not_log"],
 } 
 ```
 
@@ -79,13 +83,17 @@ PUT /firewall/settings
 
 **Json-тело запроса:**
 
-```json5
+```json
 {
     "automatic_snat_enabled": "boolean",
-    "log_actions": ["accept" | "drop" | "dnat" | "snat"],
-    "log_mode": "string"
+    "log_mode": "nothing" | "all" | "selected",
+    "log_actions": ["accept" | "drop" | "dnat" | "snat" | "mark_log" | "mark_not_log"],
 } 
 ```
+
+* `automatic_snat_enabled` - включение автоматического SNAT;
+* `log_mode` - режим логирования;
+* `log_actions` - события, которые будут логироваться. 
 
 **Ответ на успешный запрос**: 200 ОК
 
