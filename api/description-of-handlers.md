@@ -292,7 +292,7 @@ GET /license/license-get-offline-registration-url
 <summary>Загрузка файла с лицензией на NGFW</summary>
 
 ```
-POST /license/license-upload
+PUT /license/license-upload
 ```
 
 Тело запроса: форма загрузки файла. Имя поля в форме загрузки файла - `license_file`
