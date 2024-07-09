@@ -81,6 +81,8 @@
   * [Исключения](settings/access-rules/ips/user-ip-exceptions.md)
   * [Объекты](settings/access-rules/aliases.md)
   * [Квоты](settings/access-rules/quotas.md)
+* [Профили безопасности](settings/security-profiles/README.md)
+  * [Web Application Firewall](settings/security-profiles/waf-profiles.md)
 * [Сервисы](settings/services/README.md)
   * [Сетевые интерфейсы](settings/services/connection-to-provider/README.md)
     * [Настройка Локального Ethernet](settings/services/connection-to-provider/local-ethernet.md)
