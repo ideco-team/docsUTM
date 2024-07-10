@@ -15,6 +15,9 @@
    * **DNS-сервер AD**: введите адрес сервера, обладающий ролью DNS-сервера в контроллере домена, доступный с локального интерфейса Ideco NGFW;
    * **Название сервера Ideco NGFW**: введите имя компьютера, под которым Ideco NGFW будет введен в контроллер домена;
    * **Учетная запись с правом присоединения к домену**: введите учетную запись AD с правами присоединения к домену;
+   {% hint style="warning" %}
+   Ideco NGFW также поддерживает интеграцию с AD-администраторами. Подробные инструкции по настройке описаны в статье [Администраторы](/settings/server-management/admins.md).
+   {% endhint %}
    * **LDAP-пути**: укажите LDAP-пути для импорта пользователей и групп из выбранной [организационной единицы(OU).](https://serverspace.ru/support/help/kak-upravlyat-ou-v-active-directory/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com)
   
 {% hint style="info" %}

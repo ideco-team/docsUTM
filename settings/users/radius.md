@@ -10,6 +10,11 @@ description: Интеграция с RADIUS-сервером позволяет 
 
 ## Настройка интеграции
 
+{% hint style="warning" %}
+Ideco NGFW также поддерживает интеграцию с RADIUS-администраторами. Подробные инструкции по настройке описаны в статье [Администраторы](/settings/server-management/admins.md).
+
+{% endhint %}
+
 {% hint style="info" %}
 Доступна аутентификация только VPN-пользователей NGFW через RADIUS-сервер. 
 
