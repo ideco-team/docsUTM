@@ -32,28 +32,11 @@ description: Служба обнаружения и предотвращения
 
 Раздел состоит из четырех вкладок:
 
-* [Журнал](log.md) - фиксирует логи срабатывания правил службы;
 * [Правила](rules.md) - содержит список предустановленных правил;
 * [Исключения из правил](exceptions-rules.md) - фиксирует в таблицу список отключенных правил службы предотвращения вторжений;
 * [Настройки](settings.md) - во вкладке создаются правила для службы предотвращения вторжений.
 
 ## Примеры использования
-
-<details>
-
-<summary>Пример анализа логов</summary>
-
-Предупреждение службы предотвращения вторжений:
-
-![](/.gitbook/assets/ips2.png)
-
-На вкладке **Правила** можно открыть найденную группу по **Событию безопасности**, нажать на ![](/.gitbook/assets/icon-eye.png) и в ней найти сработавшее правило по его ID:
-
-`alert http $EXTERNAL_NET any -> any any (msg:"ET SCAN Zmap User-Agent (Inbound)"; flow:established,to_server; http.user_agent; content:"Mozilla/5.0 zgrab/0.x"; depth:21; endswith; classtype:network-scan; sid:2029054; rev:2; metadata:created_at 2019_11_26, former_category SCAN, updated_at 2020_10_23;)`
-
-Можно проанализировать IP-адрес, с которым была попытка подозрительного соединения, через [whois](https://www.nic.ru/whois/).
-
-</details>
 
 <details>
 

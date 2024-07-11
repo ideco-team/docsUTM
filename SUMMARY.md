@@ -75,7 +75,6 @@
   * [Ограничение скорости](settings/access-rules/shaper.md)
   * [Антивирусы веб-трафика](settings/access-rules/antivirus.md)
   * [Предотвращение вторжений](settings/access-rules/ips/README.md)
-    * [Журнал](settings/access-rules/ips/log.md)
     * [Правила](settings/access-rules/ips/rules.md)
     * [Исключения из правил](settings/access-rules/ips/exceptions-rules.md)
     * [Настройки](settings/access-rules/ips/settings.md)
