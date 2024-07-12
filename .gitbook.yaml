@@ -104,4 +104,5 @@ redirects:
   waf_security_profiles: ./settings/security-profiles/waf-profiles.md
   source_port: ./settings/access-rules/firewall-tables.md
   administrator_sessions: ./settings/monitor/administrator-sessions.md
+  dpi: ./settings/security-profiles/application-control.md
   
