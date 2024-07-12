@@ -207,7 +207,7 @@
   * [Поддержка устаревших алгоритмов шифрования](recipes/popular-recipes/legacy-encryption-support.md)
   * [Настройка программы Proxifier для прямых подключений к прокси серверу](recipes/popular-recipes/configuring-proxifier.md)
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
-  * [Настройка прозрачной авторизации на Astra linux](recipes/popular-recipes/authorization-astra-linux.md)
+  * [Настройка прозрачной авторизации на Astra Linux](recipes/popular-recipes/authorization-astra-linux.md)
   * [Настройка автоматической веб-аутентификации на Ideco NGFW на Linux](recipes/popular-recipes/auto-authorization-linux.md)
   * [Перенос данных и настроек на другой сервер](recipes/popular-recipes/transferring-data-to-another-server.md)
   * [Порядок обработки веб-трафика в Ideco NGFW](recipes/popular-recipes/processing-order.md)
