@@ -15,7 +15,7 @@
 Ideco UTM поддерживает работу на следующих гипервизорах:
 
 * VMware (Workstation и ESXi) версии не ниже 6.5.0;
-* Microsoft Hyper-V (2-го поколения);
+* Microsoft Hyper-V (виртуальные машины 2-го поколения);
 * VirtualBox;
 * KVM;
 * Citrix XenServer.
