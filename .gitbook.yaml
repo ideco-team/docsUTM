@@ -102,4 +102,5 @@ redirects:
   dhcp_wpad: ./settings/services/dhcp.md
   user_personal_account: ./settings/users/user-personal-account.md
   waf_security_profiles: ./settings/security-profiles/waf-profiles.md
+  source_port: ./settings/access-rules/firewall-tables.md
   
