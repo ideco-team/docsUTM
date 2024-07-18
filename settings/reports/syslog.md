@@ -206,6 +206,115 @@ description: >-
 
 <details>
 
+<summary>SSO-аутентификация</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T17:11:40+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721304700 Severity=Notice DeviceProcessName=ideco-web-authd msg=Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'web'.
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW (unit);
+* `192.168.205.254/32` - IP-адрес пользователя;
+* `Sanek` - логин пользователя;
+* `type 'web'` - тип авторизации веб.
+
+</details>
+
+<details>
+<summary>Авторизация через журнал безопасности AD</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T17:20:22+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305222 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'log'.
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW (unit);
+* `192.168.205.254/32` - IP-адрес пользователя;
+* `Sanek` - логин пользователя;
+* `type 'log'` - тип авторизации через журнал безопасности AD.
+
+</details>
+
+<details>
+<summary>Веб-авторизация</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T17:26:34+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305594 Severity=Notice DeviceProcessName=ideco-web-authd msg=User 'Sanek' has been successfully authorized in web interface from IP '192.168.205.254'.
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW (unit);
+* `Sanek` - логин пользователя;
+* `192.168.205.254` - IP-адрес пользователя;
+
+</details>
+
+<details>
+<summary>Авторизация по IP</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T17:29:18+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305758 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'ip'.
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW (unit);
+* `192.168.205.254/32` - IP-адрес пользователя;
+* `Sanek` - логин пользователя;
+* `type 'ip'` - тип авторизации по IP.
+
+</details>
+
+<details>
+<summary>Авторизация по MAC</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T17:32:26+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305946 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'mac'.
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW (unit);
+* `192.168.205.254/32` - IP-адрес пользователя;
+* `Sanek` - логин пользователя;
+* `type 'mac'` - тип авторизации по MAC.
+
+</details>
+
+<details>
+<summary>Авторизация по подсети</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T20:52:27+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721317947 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.0/24 is authorized as user 'Sanek'. Connection made from None, type 'net'.
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW (unit);
+* `192.168.205.0/24` - подсеть, по которой происходит авторизация;
+* `Sanek` - логин пользователя;
+* `type 'net'` - тип авторизации по подсети.
+
+
+</details>
+
+<details>
+
 <summary>Подключение по VPN</summary>
 
 {% code overflow="wrap" %}
@@ -234,9 +343,41 @@ description: >-
 {% endcode %}
 
 * `1665` - идентификатор процесса;
-* `192.168.100.10/32` - ip-адрес пользователя;
+* `192.168.100.10/32` - IP-адрес пользователя;
 * `user` - логин пользователя;
 * `type 'web'` - тип авторизации веб.
+
+</details>
+
+<details>
+<summary>SSO-аутентификация</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T16:59:55+05:00 Ideco-NGFW ideco-web-authd - - - Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'web'.
+```
+{% endcode %}
+
+* `Ideco-NGFW` - название сервера;
+* `192.168.205.254/32` - IP-адрес пользователя;
+* `Sanek` - логин пользователя;
+* `type 'web'` - тип авторизации веб.
+
+</details>
+
+<details>
+<summary>Авторизация через журнал безопасности AD</summary>
+
+{% code overflow="wrap" %}
+```
+2024-07-18T16:19:39+05:00 Ideco-NGFW ideco-auth-backend - - - Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'log'.
+```
+{% endcode %}
+
+* `Ideco-NGFW` - название сервера;
+* `192.168.205.254/32` - IP-адрес пользователя;
+* `Sanek` - логин пользователя;
+* `type 'log'` - тип авторизации через журнал безопасности AD.
 
 </details>
 
@@ -250,7 +391,7 @@ description: >-
 {% endcode %}
 
 * `1665` - идентификатор процесса;
-* `192.168.100.49/32` - ip-адрес пользователя;
+* `192.168.100.49/32` - IP-адрес пользователя;
 * `'user-1717140295.828113'` - логин пользователя;
 * `type 'ip_permanent'` - тип авторизации IP с постоянной авторизацией.
 
@@ -266,7 +407,7 @@ description: >-
 {% endcode %}
 
 * `3660` - идентификатор процесса;
-* `192.168.100.10/32` - ip-адрес пользователя;
+* `192.168.100.10/32` - IP-адрес пользователя;
 * `user` - логин пользователя;
 * `type 'mac'` - тип авторизации MAC.
 
