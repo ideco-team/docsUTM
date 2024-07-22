@@ -45,7 +45,7 @@ description: >-
 
   ![](/.gitbook/assets/aliases.png)
 
-3\. Нажмите кнопку **Сохранить**.
+3\. Нажмите кнопку **Добавить**.
 
 
 {% hint style="info" %}
