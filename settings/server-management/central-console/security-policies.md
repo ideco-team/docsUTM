@@ -11,6 +11,8 @@ _Слева интерфейс Ideco NGFW, справа интерфейс Ideco
 
 ![](/.gitbook/assets/policies-and-objects.gif)
 
+<!-- ![](/.gitbook/assets/policies-and-objects-gif.png) -->
+
 {% tabs %}
 {% tab title="В Ideco Center" %}
 Созданные в Ideco Center правила Forward отображаются в виде двух таблиц: **Начальные правила** и **Конечные правила**. Эти таблицы разделяют **Локальные правила на серверах Ideco NGFW**.

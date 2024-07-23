@@ -97,7 +97,7 @@ description: Настройка параметров учетной записи
 ![](/.gitbook/assets/customization-of-users7.png)
 
 {% hint style="info" %}
-Для перехода к общей таблице доступа VPN из дерева пользователей выполните действия:
+Для перехода к общей таблице доступа VPN из дерева пользователей нажмите на нужное название правила:
 
 ![](/.gitbook/assets/customization-of-users8.gif)
 
