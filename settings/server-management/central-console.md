@@ -44,8 +44,12 @@ Ideco Center - это центральная консоль, которая по
 
 ![](/.gitbook/assets/servers4.png)
 
+![](/.gitbook/assets/icon-delete1.png)
+
 </details>
 
-**Для удаления сервера Ideco NGFW из Ideco Center разорвите привязку в интерфейсе Ideco NGFW:**
+**Для удаления сервера Ideco NGFW из Ideco Center разорвите привязку в интерфейсе Ideco Center:**
 
 ![](/.gitbook/assets/servers.gif)
+
+<!-- Для этого в таблице **Серверы** в столбце **Управление** напротив нужного сервера выберите ![](/.gitbook/assets/icon-delete1.png) и подтвердите выбор. -->
