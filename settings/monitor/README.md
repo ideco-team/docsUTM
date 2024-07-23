@@ -7,6 +7,10 @@ description: >-
 
 # Мониторинг
 
+{% content-ref url="administrator-sessions.md" %}
+[administrator-sessions.md](administrator-sessions.md)
+{% endcontent-ref %}
+
 {% content-ref url="authorized-users.md" %}
 [authorized-users.md](authorized-users.md)
 {% endcontent-ref %}

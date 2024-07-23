@@ -57,6 +57,7 @@
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
+  * [Сессии администраторов](settings/monitor/administrator-sessions.md)
   * [Авторизованные пользователи](settings/monitor/authorized-users.md)
   * [График загруженности](settings/monitor/workload-schedule.md)
   * [Монитор трафика](settings/monitor/traffic.md)
