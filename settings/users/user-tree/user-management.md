@@ -46,7 +46,7 @@ description: Создание, удаление и перемещение уче
 {% endhint %}
 
 {% hint style="success" %}
-**Телефон** указывается для [Двухфакторной аутентификации](broken-reference).
+**Телефон** указывается для [Двухфакторной аутентификации](/settings/users/two-factor-authentication.md).
 
 Кнопка **Получить MAC по IP** будет активна, если IP пользователя и IP Ideco NGFW в одной подсети.
 {% endhint %}
