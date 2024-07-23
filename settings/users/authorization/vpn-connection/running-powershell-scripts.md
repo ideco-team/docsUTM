@@ -106,6 +106,10 @@ Powershell-скрипты прописывают основной DNS-суффи
 
 ![](/.gitbook/assets/running-powershell-scripts.gif)
 
+<!-- В строках:
+* `Name "Ideco NGFW L2TP VPN to 46.36.23.99"` замените на `Name "Ideco NGFW L2TP VPN to 5.189.21.1"`;
+* `ServerAddress 46.36.23.99` замените на `ServerAddress 5.189.21.1`.-->
+
 **46.36.23.99** - IP-адрес Ideco NGFW в локальной сети маршрутизатора.\
 **5.189.21.1** - внешний IP-адрес маршрутизатора.
 
