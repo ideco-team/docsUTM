@@ -1,12 +1,12 @@
 # Управление сервером
 
-В Ideco Center разделы [Автоматическое обновление](../settings/server-management/server-update.md), [Резервное копирование](../settings/server-management/backup.md) и [Терминал](../settings/server-management/terminal.md) аналогичны этим разделам в Ideco NGFW.
+В Ideco Center разделы [Автоматическое обновление](/settings/server-management/server-update.md), [Резервное копирование](/settings/server-management/backup.md) и [Терминал](/settings/server-management/terminal.md) аналогичны этим разделам в Ideco NGFW.
 
 ## Администраторы
 
 В Ideco Center можно создать несколько администраторов с разными ролями:
 
-* _Администратор_ - администратор с этой ролью имеет доступ ко всем функциональностям Ideco Center ([подробнее о возможностях](./));
+* _Администратор_ - администратор с этой ролью имеет доступ ко всем функциональностям Ideco Center;
 * _Только просмотр_ - администратор с этой ролью не имеет возможности управлять правилами в Ideco Center (создавать, менять приоритет и др.). Но может переходить в подключенные Ideco NGFW и управлять ими.
 
 {% hint style="info" %}

@@ -12,15 +12,15 @@
 * **Шлюз** - IP-адрес шлюза;
 * **DNS** - доступно два поля для указания DNS сервера (необязательно).
 
-![](../.gitbook/assets/cc-interfaces.png)
+![](/.gitbook/assets/cc-interfaces.png)
 
 ## Маршрутизация
 
-Маршрутизация работает аналогично маршрутизации Ideco NGFW. Подробное описание по [ссылке](../settings/services/routing.md).
+Маршрутизация работает аналогично маршрутизации Ideco NGFW. Подробное описание по [ссылке](/settings/services/routing.md).
 
 ## DNS
 
-Принцип работы DNS в Ideco Center аналогичнен принципу работы [Внешних DNS-серверов](../settings/services/dns/dns-external.md) в Ideco NGFW. Если вышестоящий роутер перехватывает DNS-запросы Ideco Center, то добавьте внешние DNS-серверы.
+Принцип работы DNS в Ideco Center аналогичнен принципу работы [Внешних DNS-серверов](/settings/services/dns/dns-external.md) в Ideco NGFW. Если вышестоящий роутер перехватывает DNS-запросы Ideco Center, то добавьте внешние DNS-серверы.
 
 ## Сертификаты
 
@@ -28,7 +28,7 @@
 
 Для просмотра основной информации о сертификате нажмите кнопку ![](/.gitbook/assets/icon-eye.png).
 
-Процесс выпуска и перевыпуска сертификата одинаков с Ideco NGFW и описан в [статье](../settings/services/certificates/README.md)
+Процесс выпуска и перевыпуска сертификата одинаков с Ideco NGFW и описан в [статье](/settings/services/certificates/README.md)
 
 ### Действующие сертификаты
 
