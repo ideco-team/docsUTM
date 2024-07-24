@@ -40,7 +40,7 @@
   * [Zabbix-агент](/settings/monitor/zabbix.md)
 * [Правила трафика](/settings/access-rules/README.md)
   * [Файрвол](/settings/access-rules/firewall.md)
-  * [Ограничение скорости]()
+  * [Ограничение скорости](/settings/access-rules/shaper.md)
   * [Предотвращение вторжений](/settings/access-rules/ips.md)
   * [Объекты](/settings/access-rules/aliases.md)
 * [Профили безопасности](settings/security-profiles/README.md)

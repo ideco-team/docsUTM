@@ -39,6 +39,7 @@
 | :-------------------------------------------- | :------------------------- |
 | Файрвол                                       | ideco-firewall-backend; ideco-nflog |
 | Предотвращение вторжений                      | ideco-suricata-backend; ideco-suricata; ideco-suricata-event-syncer; ideco-suricata-event-to-syslog |
+| Ограничение скорости                                | ideco-shaper-backend|
 | Контент-Фильтр                                | ideco-content-filter-backend|
 | Объекты                                       | ideco-alias-backend |
 | Сетевые интерфейсы                            | ideco-network-backend; ideco-network-nic |

@@ -38,3 +38,4 @@ redirects:
   content_filter_security_profiles: ./settings/security-profiles/content-filter-profiles.md
   bgp: ./settings/services/bgp.md
   source_port: ./settings/access-rules/firewall.md
+  shaper: ./settings/access-rules/shaper.md
