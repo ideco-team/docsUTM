@@ -20,40 +20,6 @@
 
 <details>
 
-<summary>Протокол PPPoE</summary>
-
-Для настройки Ideco NGFW перейдите в раздел **Пользователи -> VPN-подключения -> Основное** и установите флаг **Подключение по PPPoE**:
-
-![](/.gitbook/assets/vpn-authorization1.png)
-
-**Создание подключения в MacOS**
-
-1\. Перейдите в раздел **Системные настройки -> Сеть**;
-
-2\. Нажмите **Добавить** в левом нижнем углу (иконка ![](/.gitbook/assets/connection-for-high-sierra-macos1.png));
-
-3\. В появившемся окне заполните:
-
-* **Интерфейс** - PPPoE;
-* **Ethernet** - например, Wi-Fi;
-* **Имя службы** - имя подключения.
-
-<img src="/.gitbook/assets/connection-for-high-sierra-macos2.png" alt="" data-size="original">
-
-4\. Нажмите **Создать** и заполните:
-
-* **Имя службы PPPoE** - имя службы;
-* **Имя учетной записи** - логин;
-* **Пароль** - пароль.
-
-<img src="/.gitbook/assets/connection-for-high-sierra-macos3.png" alt="" data-size="original">
-
-5\. Нажмите **Подключить**.
-
-</details>
-
-<details>
-
 <summary>Протокол IKEv2/IPsec</summary>
 
 Настройте Ideco NGFW:

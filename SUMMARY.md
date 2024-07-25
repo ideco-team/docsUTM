@@ -37,7 +37,6 @@
   * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
     * [Двухфакторная аутентификация](settings/users/two-factor-authentication.md)
     * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
-    * [Подключение по PPPoE](settings/users/authorization/vpn-connection/pppoe.md)
     * [Подключение по IKEv2/IPsec](settings/users/authorization/vpn-connection/ipsec-ikev2.md)
     * [Подключение по SSTP](settings/users/authorization/vpn-connection/sstp.md)
     * [Подключение по L2TP/IPsec](settings/users/authorization/vpn-connection/l2tp-ipsec.md)
