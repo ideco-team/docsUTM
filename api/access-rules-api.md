@@ -1069,6 +1069,20 @@ PUT /proxy_backend/safe_search
 
 </details>
 
+<details>
+<summary>Офлайн-обновление Контент-фильтра</summary>
+
+```
+PUT /content-filter/update_archive_upload
+```
+**Тело запроса:**
+
+Архивный файл с офлайн-обновлением для контент-фильтра, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii).
+
+**Ответ на успешный запрос:** 200 ОК и пустое тело
+
+</details>
+
 ### Категории Контент-фильтра
 
 <details>
