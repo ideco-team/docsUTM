@@ -116,7 +116,7 @@ POST /license/register
 
 Чтобы добавить enterprise-demo лицензию, необходимо сначала получить токен лицензии в личном кабинете. Для этого выполните действия:
 
-1\. Авторизуйтесь в личном кабинете myideco.ru:
+1\. Авторизуйтесь в личном кабинете MY.IDECO:
 
 ```
 POST /api/v3/login
@@ -193,6 +193,10 @@ GET /license/info
             "expiration_date": 0
         },
         "ips_advanced_rules": {
+            "available": true,
+            "expiration_date": 1712400382.0
+        },
+        "cluster": {
             "available": true,
             "expiration_date": 1712400382.0
         },
@@ -274,7 +278,7 @@ PUT /license/update-type
 </details>
 
 <details>
-<summary>Получение ссылки для оффлайн-регистрации</summary>
+<summary>Получение ссылки для офлайн-регистрации</summary>
 
 ```
 GET /license/license-get-offline-registration-url
@@ -284,15 +288,14 @@ GET /license/license-get-offline-registration-url
 
 ```json5
 {
-    "registration_url": "https://my.ideco.ru/offline_register?server_name=ZGF0YSB0byBiZSBlbmNvZGVk&hwid=u-CVv6SSNMXI_Mukgnf3SCIxJz9kcl0i50ARFk4FRz1O&version=17.1"
+    "registration_url": "https://my.ideco.ru/ngfw?server_name=...hwid=...version=..."
 }
 ```
-
 * `server_name` - имя сервера Ideco NGFW;
 * `hwid` - HWID сервера;
 * `version` - версия сервера.
 
-Получение ссылки для оффлайн-регистрации сервера возможно только при ручном механизме обновления лицензии.
+Получение ссылки для офлайн-регистрации сервера возможно только при ручном механизме обновления лицензии.
 
 </details>
 
@@ -303,7 +306,7 @@ GET /license/license-get-offline-registration-url
 PUT /license/license-upload
 ```
 
-Тело запроса: форма загрузки файла. Имя поля в форме загрузки файла - `license_file`
+Тело запроса: файл с лицензией в формате jwt, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii).
 
 **Ответ на успешный запрос**: 200 ОК
 
