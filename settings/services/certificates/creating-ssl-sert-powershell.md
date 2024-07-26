@@ -10,7 +10,7 @@
 New-SelfSignedCertificate -DnsName test.ideco.com -TextExtension @("2.5.29.19={text}CA=true") -CertStoreLocation cert:\LocalMachine\My
 ```
 
-* `test.ideco.com` - домен.
+Где `test.ideco.com` - домен.
 
 ![](/.gitbook/assets/creating-ssl-sert-powershell.png)
 
@@ -22,7 +22,7 @@ New-SelfSignedCertificate -DnsName test.ideco.com -TextExtension @("2.5.29.19={t
 $CertPassword = ConvertTo-SecureString -String “12345” -Force -AsPlainText
 ```
 
-* `12345` - пароль.
+Где  `12345` - пароль.
 
 4\. Экспортируйте сертификат выполнив команду:
 
@@ -35,4 +35,6 @@ Export-PfxCertificate -Cert cert:\LocalMachine\My\2284919151C5C624341D7B75FE034B
 
 5\. Конвертируйте сертификат в расширение .pem ([пример конвертора](https://www.leaderssl.ru/tools/ssl_converter)).
 
-6\. Воспользуйтесь [инструкцией по загрузке сертификата на NGFW](upload-ssl-certificate-to-server.md).
+{% hint style="info" %}
+Для загрузки сертификата на сервер воспользуйтесь статьей [Загрузка SSL-сертификата на сервер](/settings/services/certificates/upload-ssl-certificate-to-server.md)
+{% endhint %}
