@@ -180,7 +180,6 @@
 * [Отчеты и журналы](settings-cc/reports.md)
 * [Управление сервером](settings-cc/server-management.md)
 
-
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
 * [FAQ](recipes/popular-recipes/README.md)
@@ -230,6 +229,7 @@
 * [Управление Ideco Client](api/ideco-client-api.md)
 * [Управление правилами трафика](api/access-rules-api.md)
 * [Управление сетевыми интерфейсами](api/interfaces-api.md)
+* [Управление VPN](api/vpn-servers-api.md)
 * [DHCP-сервер](api/dhcp-api.md)
 * [DNS-сервер](api/dns-api.md)
 * [Настройка удаленной передачи системных логов](api/logs-api.md)
