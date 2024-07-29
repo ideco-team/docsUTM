@@ -8,7 +8,7 @@ description: >-
 # Монитор трафика
 
 {% hint style="info" %}
-Для включения мониторинга трафика необходимо запустить модуль [Контроля приложений](/settings/access-rules/application-control.md).
+Для включения мониторинга трафика необходимо запустить модуль [Контроля приложений](/settings/security-profiles/application-control.md).
 {% endhint %}
 
 ## По узлам локальной сети

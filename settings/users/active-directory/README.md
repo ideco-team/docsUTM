@@ -41,7 +41,7 @@ description: >-
 Импортированные из AD/Samba группы безопасности и учетные записи можно использовать в качестве объектов правил фильтрации в следующий разделах:
 
 * [X] [Файрвол](/settings/access-rules/firewall.md);
-* [X] [Контроль приложений](/settings/access-rules/application-control.md);
+* [X] [Контроль приложений](/settings/security-profiles/application-control.md);
 * [X] [Ограничение скорости](/settings/access-rules/shaper.md);
 * [X] [Контент-фильтр](/settings/access-rules/content-filter/).
 
@@ -51,8 +51,8 @@ description: >-
 
 ![](/.gitbook/assets/tree18.png)
 
-2\. Перейдите в раздел, в котором требуется использовать импортированную из AD группу или учетную запись. Например, в **Контроль приложений**:
+2\. Перейдите в раздел, в котором требуется использовать импортированную из AD группу или учетную запись. Например, в **Ограничение скорости**:
 
-![](/.gitbook/assets/application-control5.png)
+![](/.gitbook/assets/ad_shaper.png)
 
 3\. Заполните требуемые поля и нажмите **Добавить**.
