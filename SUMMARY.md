@@ -123,7 +123,7 @@
     * [Создание сертификата c помощью openssl](settings/services/certificates/creating-openssl-cert.md)
 * [Отчеты и журналы](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
-  * [Журнал событий](settings/reports/logs.md)
+  * [Системный журнал](settings/reports/logs.md)
   * [Журнал веб-доступа](settings/reports/web-logs.md)
   * [Журнал антивируса](settings/reports/antivirus-logs.md)
   * [События безопасности](settings/reports/security-events.md)
