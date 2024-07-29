@@ -7,6 +7,7 @@
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?ab_channel=%D0%90%D0%B9%D0%B4%D0%B5%D0%BA%D0%BE&index=25&list=PLQJTQf4Vb3wD2bhYMhsdbgMXk4PnSfY10&v=sy_ANcdgrxk" %}
+<!-- [Ссылка на видеоинструкцию по установке Ideco NGFW](https://youtu.be/sy_ANcdgrxk?si=i4aOTqv957uur7e8) -->
 
 Для установки Ideco NGFW выполните действия:
 
