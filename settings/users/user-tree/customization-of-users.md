@@ -94,7 +94,7 @@ description: Настройка параметров учетной записи
 * Пользователи -> Учетные записи -> IP и MAC авторизация:\
   ![](/.gitbook/assets/tree7.png)
 * Пользователи -> [Авторизации](/settings/users/authorization/) -> [IP и MAC авторизация](/settings/users/authorization/ip-and-mac-authorization/):\
-  ![](/.gitbook/assets/tree8.png)
+  ![](/.gitbook/assets/authorization7.png)
 
 {% hint style="info" %}
 Правила **IP и MAC авторизации** также создают аналогичную привязку в [DHCP-сервере](/settings/services/dhcp.md) Ideco NGFW. Но если одни и те же IP- и MAC-адреса будут использоваться во включенных правилах DHCP-сервера, то правила DHCP-сервера будут выполняться в первую очередь.

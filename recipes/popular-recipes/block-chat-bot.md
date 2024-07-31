@@ -124,10 +124,10 @@ zhpt.tech
 
 </details>
 
-![](/.gitbook/assets/block-chat-bot.png)
+![](/.gitbook/assets/content-filter18.png)
 
 4\. Сохраните категорию.
 
 3\. Перейдите на вкладку **Правила** и добавьте правило с действием **Запретить**:
 
-![](/.gitbook/assets/block-chat-bot1.png)
+![](/.gitbook/assets/content-filter19.png)

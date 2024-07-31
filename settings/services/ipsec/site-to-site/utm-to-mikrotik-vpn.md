@@ -115,7 +115,7 @@ ip route add dst-address=<remote VPN subnet> gateway=l2tp-out1
 
 13\. Перейдите в веб-интерфейс NGFW в раздел **Пользователи —> VPN подключения** и в строке **Сеть для VPN-подключений** добавьте первый адрес сети VPN:
 
-![](/.gitbook/assets/utm-to-mikrotik-vpn1.png)
+![](/.gitbook/assets/vpn-authorization15.png)
 
 14\. Создайте маршрут до удаленных сетей NGFW через интерфейс, который смотрит в интернет.
 

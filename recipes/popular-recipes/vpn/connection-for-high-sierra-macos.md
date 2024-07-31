@@ -3,15 +3,7 @@
 {% hint style="info" %}
 Перед настройкой VPN-подключения, перейдите в раздел **Пользователи -> VPN-подключения -> Доступ по VPN** и создайте разрешающее VPN-подключение правило.
 
-Также установите корневой сертификат NGFW на устройство пользователя. Скачать сертификат можно одним из способов:
-
-*   В личном кабинете, введя логин/пароль пользователя:
-
-    <img align="left" src="/.gitbook/assets/user-personal-account6.png" alt="" data-size="original">
-    
-*   В разделе **Сервисы -> Сертификаты**:
-
-    <img align="left" src="/.gitbook/assets/certs2.png" alt="" data-size="original">
+Также установите корневой сертификат NGFW на устройство пользователя. Скачать сертификат можно в разделе **Сервисы -> Сертификаты -> Загруженные сертификаты** в веб-интерфейсе NGFW или в личном кабинете пользователя по кнопке **Скачать корневой сертификат**.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -26,9 +18,9 @@
 
 1\. Перейдите в раздел **Пользователи -> VPN-подключения -> Основное**.
 
-2\. Установите флаг **Подключение по IKEv2/IPsec** и заполните поля **Домен**:
+2\. Установите флаг **Подключение по IKEv2/IPsec** и заполните поле **Домен или IP-адрес**:
 
-<img src="/.gitbook/assets/vpn-authorization2.png" alt="" data-size="original">
+![](/.gitbook/assets/vpn-authorization8.png)
 
 **Создание подключения в MacOS**
 
@@ -42,7 +34,7 @@
 * **Тип VPN** - IKEv2;
 * **Имя службы** - имя подключения.
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos4.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos4.png)
 
 4\. Нажмите **Создать**;
 
@@ -51,7 +43,7 @@
 * **Адрес сервера** - адрес VPN-сервера;
 * **Удаленный ID** - продублируйте адрес VPN-сервера.
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos5.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos5.png)
 
 6\. Выберите **Настройки аутентификации**;
 
@@ -60,7 +52,7 @@
 * **Имя пользователя** - имя пользователя, которому разрешено подключение по VPN;
 * **Пароль** - пароль пользователя.
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos6.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos6.png)
 
 8\. Нажмите **ОК**;
 
@@ -80,13 +72,13 @@
 
 2\. Установите флаг **Подключение по L2TP/IPsec** и скопируйте **PSK**-ключ:
 
-<img src="/.gitbook/assets/vpn-authorization3.png" alt="" data-size="original">
+![](/.gitbook/assets/vpn-authorization3.png)
 
 **Создание подключения в MacOS**
 
 1\. Перейдите в раздел **Системные настройки -> Сеть**:
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos7.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos7.png)
 
 2\. Нажмите **Добавить** в левом нижнем углу (иконка ![](/.gitbook/assets/connection-for-high-sierra-macos1.png));
 
@@ -96,19 +88,19 @@
 * **Тип VPN** - L2TP через IPsec;
 * **Имя службы** - имя подключения.
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos8.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos8.png)
 
 4\. Нажмите **Создать**;
 
 5\. Заполните **Адрес сервера** и **Имя учетной записи**:
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos9.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos9.png)
 
 6\. Поставьте флаг на пункте **Показывать статус VPN в строке меню** и выберите **Настройки аутентификации**.
 
 7\. В **Аутентификации пользователя** заполните **Пароль**, в **Аутентификации компьютера** - **Общий ключ (Shared Secret)**
 
-<img src="/.gitbook/assets/connection-for-high-sierra-macos10.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-high-sierra-macos10.png)
 
 8\. Нажмите **ОК -> Применить**.
 
@@ -117,6 +109,6 @@
 * В левой верхней части экрана нажмите значок VPN-соединения (![](/.gitbook/assets/connection-for-high-sierra-macos12.png))
 * Выберите _Подключить (имя службы, заданное в пункте 3)_:
 
-    <img src="/.gitbook/assets/connection-for-high-sierra-macos11.png" alt="" data-size="original">
+    ![](/.gitbook/assets/connection-for-high-sierra-macos11.png)
 
 </details>

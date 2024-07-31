@@ -14,17 +14,17 @@
 
 Перед созданием подключения в Ubuntu перейдите в Ideco NGFW, в раздел **Пользователи -> VPN-подключения -> Основное** и установите флаг **Подключение по PPTP**:
 
-<img src="/.gitbook/assets/vpn-authorization4.png" alt="" data-size="original">
+![](/.gitbook/assets/vpn-authorization4.png)
 
 **Создание подключения в Ubuntu**
 
 1\. Перейдите **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
-<img src="/.gitbook/assets/connection-for-ubuntu1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu1.png)
 
 2\. В окне создания подключений выберите пункт **Туннельный протокол типа точка-точка (PPTP)**:
 
-<img src="/.gitbook/assets/connection-for-ubuntu2.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu2.png)
 
 3\. В разделе **Идентификация** заполните следующие поля:
 
@@ -34,7 +34,7 @@
 * **Пароль** - пароль пользователя. В правой части поля необходимо выбрать вариант хранения для пароля от VPN-соединения;
 * **NT-домен** - оставьте поле пустым.
 
-<img src="/.gitbook/assets/connection-for-ubuntu3.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu3.png)
 
 Рекомендуем нажать **Дополнительно** и установить флаги на пунктах:
 
@@ -44,13 +44,13 @@
 * **Использовать для данных сжатие Deflate** - использование алгоритма Deflate;
 * **Использовать сжатие заголовков TCP** - использование метода сжатия заголовков TCP/IP Вана Якобсона.
 
-<img src="/.gitbook/assets/connection-for-ubuntu4.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu4.png)
 
 4\. Нажмите **ОК** и **Добавить**.
 
 5\. Перевести опцию созданного VPN-подключения в положение включен:
 
-<img src="/.gitbook/assets/connection-for-ubuntu5.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu5.png)
 
 </details>
 
@@ -64,16 +64,9 @@
 
 2\. Установите флаг **Подключение по IKEv2/IPsec** и заполните поле **Домен и IP-адрес**:
 
-<img src="/.gitbook/assets/vpn-authorization2.png" alt="" data-size="original">
+![](/.gitbook/assets/vpn-authorization8.png)
 
-3\. Скачайте корневой сертификат одним из способов:
-
-* В личном кабинете, введя логин/пароль пользователя:
-
-    <img src="/.gitbook/assets/user-personal-account6.png" alt="" data-size="original">
-* В разделе **Сервисы -> Сертификаты -> Загруженные сертификаты**:
-
-    <img src="/.gitbook/assets/certs3.png" alt="" data-size="original">
+3\. Скачайте корневой сертификат Ideco NGFW в разделе **Сервисы -> Сертификаты -> Загруженные сертификаты** в веб-интерфейсе NGFW или в личном кабинете пользователя по кнопке **Скачать корневой сертификат**.
 
 Корневой сертификат потребуется для настройки подключения рабочей станции пользователя, если не был получен корневой сертификат через Let\`s Encrypt. При необходимости перенесите файл сертификата на рабочую станцию.\
 Если для VPN-подключения используется сертификат, выданный Let\`s Encrypt, то установка корневого сертификата на устройство не требуется.
@@ -94,11 +87,11 @@ sudo reboot
 
 3\. Перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
-<img src="/.gitbook/assets/connection-for-ubuntu1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu1.png)
 
 4\. В появившемся окне выберите **IPsec\IKEv2 (strongswan)**:
 
-<img src="/.gitbook/assets/connection-for-ubuntu6.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu6.png)
 
 5\. В разделе **Идентификация** и заполните следующие поля:
 
@@ -111,7 +104,7 @@ sudo reboot
 
 Установите флаг **Request an inner IP address** и нажмите **Добавить:**
 
-<img src="/.gitbook/assets/connection-for-ubuntu7.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu7.png)
 
 6\. Переведите созданное VPN-подключение в положение включен.
 
@@ -127,7 +120,7 @@ sudo reboot
 
 2\. Установите флаг **Подключение по SSTP** и заполните поля **Домен** и **Порт**:
 
-<img src="/.gitbook/assets/vpn-authorization5.png" alt="" data-size="original">
+![](/.gitbook/assets/vpn-authorization5.png)
 
 **Создание подключения в Ubuntu**
 
@@ -146,11 +139,11 @@ sudo reboot
 
 3\. После окончания установки пакетов, перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
-<img src="/.gitbook/assets/connection-for-ubuntu1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu1.png)
 
 4\. В появившемся окне выберите **Туннельный протокол типа точка-точка (SSTP)**:
 
-<img src="/.gitbook/assets/connection-for-ubuntu8.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu8.png)
 
 5\. В разделе **Идентификация** и заполните следующие поля:
 
@@ -160,7 +153,7 @@ sudo reboot
 * **Пароль** - пароль пользователя. В правой части поля необходимо выбрать вариант хранения для пароля от VPN-соединения;
 * **NT-домен** - оставьте поле пустым.
 
-<img src="/.gitbook/assets/connection-for-ubuntu9.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu9.png)
 
 Рекомендуем нажать **Advanced** и установить флаги на пунктах:
 
@@ -171,7 +164,7 @@ sudo reboot
 
 6\. Нажмите **Добавить** и переведите опцию созданного VPN-подключения в положение включен:
 
-<img src="/.gitbook/assets/connection-for-ubuntu10.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu10.png)
 
 </details>
 
@@ -187,7 +180,7 @@ sudo reboot
 
 2\. Установите флаг **Подключение по L2TP/IPsec** и скопируйте **PSK**-ключ:
 
-<img src="/.gitbook/assets/vpn-authorization3.png" alt="" data-size="original">
+![](/.gitbook/assets/vpn-authorization3.png)
 
 **Создание подключения в Ubuntu**
 
@@ -212,11 +205,11 @@ sudo reboot
 
 4\. После окончания установки пакетов перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
-<img src="/.gitbook/assets/connection-for-ubuntu1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu1.png)
 
 5\. В окне создания подключений по VPN выберите пункт **Layer 2 Tunneling Protocol (L2TP)**:
 
-<img src="/.gitbook/assets/connection-for-ubuntu11.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu11.png)
 
 6\. Во вкладке **Идентификация** заполните следующие поля:
 
@@ -227,7 +220,7 @@ sudo reboot
 * **Пароль** - пароль пользователя. В правой части поля необходимо выбрать вариант хранения для пароля от VPN-соединения;
 * **NT-домен** - оставьте поле пустым.
 
-<img src="/.gitbook/assets/connection-for-ubuntu12.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu12.png)
 
 7\. Перейдите в **Настройки IPsec** и включите опцию **Enable IPsec tunnel to L2TP host**, чтобы активировалась возможность настраивать остальные параметры:
 
@@ -236,18 +229,18 @@ sudo reboot
 
 Раздел **Advanced** необязательный для заполнения.
 
-<img src="/.gitbook/assets/connection-for-ubuntu13.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu13.png)
 
 После окончания настройки **L2TP IPsec Options** нажмите **ОК**.
 
 8\. При необходимости перейдите в **Настройки РРР** и настройте раздел **Аутентификация**, **Шифрование и сжатие** и **Прочие**:
 
-<img src="/.gitbook/assets/connection-for-ubuntu14.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu14.png)
 
 После настройки **Параметры РРР** нажмите **ОК** и **Применить**.
 
 9\. Переведите опцию созданного VPN-подключения в положение включен:
 
-<img src="/.gitbook/assets/connection-for-ubuntu15.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-ubuntu15.png)
 
 </details>
