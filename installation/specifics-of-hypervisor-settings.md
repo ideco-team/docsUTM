@@ -65,11 +65,11 @@ Ideco NGFW поддерживает работу на следующих гип�
 
 3\. Выберите хранилище для виртуальной машины:
 
-    ![](/.gitbook/assets/specifics-of-hypervisor-settings6.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings6.png)
 
 4\. Установите размер оперативной памяти **16ГБ** и размер диска **150ГБ**. После выберите в поле **CD/DVD Drive** Datastore ISO file и укажите путь к загрузочному образу:
    
-    ![](/.gitbook/assets/specifics-of-hypervisor-settings7.png)
+![](/.gitbook/assets/specifics-of-hypervisor-settings7.png)
 
 5\. Включите **UEFI** на вкладке **VM Options**, выбрав в поле **Firmware** EFI:
 

@@ -60,7 +60,7 @@ sudo umount /run/media/ideco/D661-82E2
 ```
 sudo dd if=<путь_к_загрузочному_образу> of=<имя_устройства> bs=1M oflag=direct status=progress
 sudo dd if=/home/ideco/IdecoUTM.iso of=/dev/sdx bs=1M oflag=direct status=progress
-    ```
+```
 5\.  Подготовьте носитель к извлечению:
 ```
 sudo eject <имя_устройства>
