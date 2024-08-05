@@ -6,8 +6,6 @@ description: >-
 
 # Инструкция по запуску PowerShell скриптов
 
-Если используете Windows 7, необходимо создать подключение вручную (см. статью [Создание VPN-подключений на стороне пользователя вручную](/recipes/popular-recipes/vpn/connection-for-windows7.md)).
-
 ## Какой протокол VPN выбрать?
 
 При нескольких вариантах подключений по VPN выбирайте протоколы по следующим критериям:
@@ -124,4 +122,4 @@ Powershell-скрипты прописывают основной DNS-суффи
 
 Возможно не хватает прав на запуск скриптов или PowerShell не установлен в системе.
 
-Воспользуйтесь инструкцией для создания подключения в [Windows 10](/recipes/popular-recipes/vpn/connection-for-windows10.md) и [Windows 7](/recipes/popular-recipes/vpn/connection-for-windows7.md) вручную.
+Воспользуйтесь инструкцией для создания подключения в [Windows 10](/recipes/popular-recipes/vpn/connection-for-windows10.md) вручную.
