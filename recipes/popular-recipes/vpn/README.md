@@ -16,10 +16,6 @@
 [connection-for-windows10.md](connection-for-windows10.md)
 {% endcontent-ref %}
 
-{% content-ref url="connection-for-windows7.md" %}
-[connection-for-windows7.md](connection-for-windows7.md)
-{% endcontent-ref %}
-
 {% content-ref url="connection-for-mobile-devices.md" %}
 [connection-for-mobile-devices.md](connection-for-mobile-devices.md)
 {% endcontent-ref %}

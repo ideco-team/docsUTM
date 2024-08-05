@@ -34,7 +34,7 @@
 
 ## Поддержка IPsec IKEv2 в клиентских ОС
 
-* Microsoft **Windows 7** (2009 г.). Требует установки корневого сертификата Let's Encrypt;
+* Microsoft **Windows 10**. Требует установки корневого сертификата Let's Encrypt;
 * Apple **MacOS X 10.11** "El Capitan" (2015 г.);
 * Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.);
 * Google **Android 11** (2020 г.). На более старых версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android);
