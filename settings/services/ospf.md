@@ -33,13 +33,13 @@
 
 На основе объявления LSA маршрутизаторы собирают базу данных, в которой содержатся данные о топологии сети в области.
 
-<img src="/.gitbook/assets/ospf-3.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-3.png" alt="" data-size="original">
 
 **4. Исполнение алгоритма SPF**
 
 На устройствах выполняется алгоритм SPF, результатом которого является создание дерева кратчайших путей.
 
-<img src="/.gitbook/assets/ospf-4.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-4.png" alt="" data-size="original">
 
 **5. Выбор лучшего маршрута**
 
@@ -47,7 +47,7 @@
 Маршрут добавляется в таблицу маршрутизации, если отсутствует источник маршрута к той же сети с меньшим административным расстоянием, например, статический маршрут. \
 Решения по маршрутизации пакетов принимаются на основе записей в таблице маршрутизации.
 
-<img src="/.gitbook/assets/ospf-5.jpg" alt="" data-size="original">
+<img src="/.gitbook/assets/ospf-5.png" alt="" data-size="original">
 
 </details>
 

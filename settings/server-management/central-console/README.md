@@ -50,7 +50,7 @@ Ideco Center получает обновления из следующих ис�
 {% hint style="info" %}
 При синхронизации Ideco Center и Ideco NGFW с разными мажорными версиями передача правил с Ideco Center происходить не будет. При этом в разделе **Серверы** будет информация о том, что Ideco Center и Ideco NGFW несовместимы:
 
-<img src="/.gitbook/assets/central_console4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/central-console4.png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="info" %}

@@ -50,8 +50,8 @@
 
 На стороне устройства Keenetic используйте следующие настройки протоколов шифрования:
 
-![](/.gitbook/assets/keenetic-connection3.jpg)
+![](/.gitbook/assets/keenetic-connection3.png)
 
-![](/.gitbook/assets/keenetic-connection4.jpg)
+![](/.gitbook/assets/keenetic-connection4.png)
 
-![](/.gitbook/assets/keenetic-connection5.jpg)
+![](/.gitbook/assets/keenetic-connection5.png)

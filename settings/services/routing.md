@@ -55,12 +55,12 @@ description: >-
 
 ![](/.gitbook/assets/routing-outside.png)
 
-Кнопки ![](/.gitbook/assets/mdiarrowdown.svg) и ![](/.gitbook/assets/mdiarrowup.svg) повышают или понижают приоритет правила.
+Кнопки ![](/.gitbook/assets/mdiarrowdown.png) и ![](/.gitbook/assets/mdiarrowup.png) повышают или понижают приоритет правила.
 
 Статусы в столбце **Используется**:
 
-* ![mdicheckboxmarkedcircle.svg](/.gitbook/assets/mdicheckboxmarkedcircle.svg) - маршрут активен и трафик, попадающий под условия маршрута, будет перенаправлен в указанный Шлюз;
-* ![frame.svg](/.gitbook/assets/frame.svg) - маршрут не активен и трафик, попадающий под условия маршрута, не будет обработан правилом.
+* ![mdicheckboxmarkedcircle.png](/.gitbook/assets/mdicheckboxmarkedcircle.png) - маршрут активен и трафик, попадающий под условия маршрута, будет перенаправлен в указанный Шлюз;
+* ![frame.png](/.gitbook/assets/frame.png) - маршрут не активен и трафик, попадающий под условия маршрута, не будет обработан правилом.
 
 {% hint style="info" %}
 Трафик, не попавший под условия правил маршрутизации, или с объектом **Любой** в качестве шлюза, будет отправлен в [Балансировку и резервирование](multiple-simultaneous-connections.md).
@@ -74,7 +74,7 @@ description: >-
 
 <summary>Задача: любой трафик в подсеть `150.1.0.0/16` направлять на шлюз `67.12.8.9`</summary>
 
-<img src="/.gitbook/assets/route_123.png" alt="" data-size="original">
+<img src="/.gitbook/assets/routing2.png" alt="" data-size="original">
 
 </details>
 
@@ -82,7 +82,7 @@ description: >-
 
 <summary>Задача: весь трафик пользователей из группы Бухгалтерия направить через шлюз выбранного сетевого интерфейса</summary>
 
-<img src="/.gitbook/assets/route_12345.png" alt="" data-size="original">
+<img src="/.gitbook/assets/routing.png" alt="" data-size="original">
 
 Если настраивается маршрут в удаленную сеть через дополнительный роутер, расположенный в одной локальной сети с клиентами, то убедитесь, что нет "асимметричной маршрутизации" и роутер вынесен в DMZ. Подробнее в статье [Доступ в удаленные сети через роутер в локальной сети](/recipes/popular-recipes/access-to-remote-networks.md)
 

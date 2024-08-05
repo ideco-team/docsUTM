@@ -44,5 +44,5 @@
 
 Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация** и авторизация происходит только при ручном переходе по ссылке, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**.
 
-![](/.gitbook/assets/auto-de-authorization-script5.jpg)
+![](/.gitbook/assets/auto-de-authorization-script5.png)
 {% endhint %}
