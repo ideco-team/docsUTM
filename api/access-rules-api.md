@@ -114,48 +114,115 @@ PUT /firewall/settings
 
 ```json5
 [
-    {
-        "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
-        "comment": "string",
-        "destination_addresses": [ "string" ], 
-        "destination_addresses_negate": "boolean",
-        "destination_ports": [ "string" ],
-        "enabled": "boolean",
-        "hip_profiles": [ "string" ],
-        "incoming_interface": "string",
-        "outgoing_interface": "string",
-        "parent_id": "string",
-        "protocol": "string",
-        "source_addresses": [ "string" ],
-        "source_addresses_negate": "boolean",
-        "timetable": [ "string" ],
-        "id": "integer"
-    },
-    ...
+   "FilterRuleObject|DnatRuleObject|SnatRuleObject",
 ]
 ```
 
-* `"action"` - действие:
-  * `"accept"` - разрешить; 
-  * `"drop"` - запретить;
-  * `"dnat"` - производить DNAT;
-  * `"snat"` - производить SNAT;
-  * `"mark_log"` - логировать; 
-  * `"mark_not_log"` - не логировать.
-* `"comment"` - комментарий (может быть пустым);
-* `"destination_addresses"` - адрес назначения;
-* `"destination_addresses_negate"` - инвертировать адрес назначения;
-* `"destination_ports"` - порты назначения;
-* `"enabled"` - включено (true) или выключено (false) правило;
-* `"hip_profiles"` - HIP-профили;
-* `"incoming_interface"` - зона источника;
-* `"outgoing_interface"` - зона назначения;
-* `"parent_id"` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
-* `"protocol"` - протокол;
-* `"source_addresses"` - адрес источника;
-* `"source_addresses_negate"` - инвертировать адрес источника;
-* `"timetable"` - время действия;
-* `"id"` - идентификатор правила.
+**Обьект FilterRuleObject**
+
+```json5
+{
+  "id": "integer",
+  "parent_id": "string",
+  "enabled": "boolean",
+  "protocol": "string",
+  "source_addresses": [ "string" ],
+  "source_addresses_negate": "boolean",
+  "source_ports": [ "string" ],
+  "incoming_interface": "string",
+  "destination_addresses": [ "string" ],
+  "destination_addresses_negate": "boolean",
+  "destination_ports": [ "string" ],
+  "outgoing_interface": "string",
+  "hip_profiles": [ "string" ],
+  "dpi_profile": "string",
+  "dpi_enabled": "boolean",
+  "ips_profile": "string",
+  "ips_enabled": "boolean",
+  "timetable": [ "string" ],
+  "comment": "string",
+  "action": "accept|drop",
+}
+```
+
+* `id` - идентификатор правила.
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `enabled` - включено (true) или выключено (false) правило;
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `source_ports` - порты источников, список ID алиасов;
+* `incoming_interface` - зона источника;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `outgoing_interface` - зона назначения;
+* `hip_profiles` - HIP-профили;
+* `dpi_profile` - строка в формате UUID, ID профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_enabled` - включена/выключена обработка с помощью модуля **Контроль приложений**;
+* `ips_profile` - строка в формате UUID, ID профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_enabled` - включена/выключена обработка с помощью модуля **Предотвращение вторжений**;
+* `timetable` - время действия;
+* `comment` - комментарий (может быть пустым);
+* `action` - действие:
+  * `accept` - разрешить;
+  * `drop` - запретить.
+
+**Обьект DnatRuleObject**
+
+```json5
+{
+   "id": "integer",
+   "parent_id": "string",
+   "enabled": "boolean",
+   "protocol": "string",
+   "source_addresses": [ "string" ],
+   "source_addresses_negate": "boolean",
+   "source_ports": [ "string" ],
+   "incoming_interface": "string",
+   "destination_addresses": [ "string" ],
+   "destination_addresses_negate": "boolean",
+   "destination_ports": [ "string" ],
+   "timetable": [ "string" ],
+   "comment": "string",
+   "action": "accept|dnat",
+   "change_destination_address": "null|string",
+   "change_destination_port": "null|string",
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `dnat` - производить DNAT.
+* `change_destination_address` - IP-адрес или диапазон IP-адресов для замены назначения, или `null`, если `action` = `accept`;
+* `change_destination_port` - порт или диапазон портов для замены значения, или `null`, если `action` = `accept`.
+
+**Обьект SnatRuleObject**
+
+```json5
+{
+   "id": "integer",
+   "parent_id": "string",
+   "enabled": "boolean",
+   "protocol": "string",
+   "source_addresses": [ "string" ],
+   "source_addresses_negate": "boolean",
+   "source_ports": [ "string" ],
+   "destination_addresses": [ "string" ],
+   "destination_addresses_negate": "boolean",
+   "destination_ports": [ "string" ],
+   "outgoing_interface": "string",
+   "timetable": [ "string" ],
+   "comment": "string",
+   "action": "accept|snat",
+   "change_source_address": "null|string",
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `snat` - производить SNAT.
+* `change_destination_address` - IP-адрес для замены источника, или `null`, если `action` = `accept`.
 
 </details>
 
@@ -174,23 +241,12 @@ PUT /firewall/settings
 **Json-тело запроса:**
 
 ```json5
-{
-    "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
-    "comment": "",
-    "destination_addresses": [ "string" ],
-    "destination_addresses_negate": "boolean",
-    "destination_ports": [ "string" ],
-    "enabled": "boolean",
-    "hip_profiles": [ "string" ],
-    "incoming_interface": "string",
-    "outgoing_interface": "string",
-    "parent_id": "string",
-    "protocol": "string",
-    "source_addresses": [ "string" ],
-    "source_addresses_negate": "boolean",
-    "timetable": [ "string" ]
-    }
+[
+   "FilterRuleObject|DnatRuleObject|SnatRuleObject",
+]
 ```
+
+* В запросе не должно быть `id`, так как правило ещё не создано и не имеет уникального идентификатора.
 
 **Ответ на успешный запрос:**
 
@@ -214,22 +270,9 @@ PUT /firewall/settings
 **Json-тело запроса:**
 
 ```json5
-{
-    "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
-    "comment": "",
-    "destination_addresses": [ "string" ],
-    "destination_addresses_negate": "boolean",
-    "destination_ports": [ "string" ],
-    "enabled": "boolean",
-    "hip_profiles": [ "string" ],
-    "incoming_interface": "string",
-    "outgoing_interface": "string",
-    "parent_id": "string",
-    "protocol": "string",
-    "source_addresses": [ "string" ],
-    "source_addresses_negate": "boolean",
-    "timetable": [ "string" ]
-    }
+[
+   "FilterRuleObject|DnatRuleObject|SnatRuleObject",
+]
 ```
 
 **Ответ на успешный запрос:** 200 ОК
@@ -370,7 +413,7 @@ GET /application_control_backend/rules
 * `name` - имя правила;
 * `parent_id` - идентификатор родительской группы серверов;
 * `protocols` - список протоколов;
-* `id` - уникальный номер правила.
+* `id` - уникальный идентификатор правила.
 
 </details>
 
@@ -411,7 +454,7 @@ POST /application_control_backend/rules
 }
 ```
 
-* `id` - уникальный номер созданного правила.
+* `id` - уникальный идентификатор созданного правила.
 
 </details>
 
@@ -422,7 +465,7 @@ POST /application_control_backend/rules
 PUT /application_control_backend/rules/{id}
 ```
 
-* `id` - уникальный номер правила.
+* `id` - уникальный идентификатор правила.
 
 **Json-тело запроса:**
 
@@ -482,7 +525,7 @@ PATCH /application_control_backend/rules/move
 DELETE /application_control_backend/rules/{id}
 ```
 
-* `id` - уникальный номер правила, которое нужно удалить.
+* `id` - уникальный идентификатор правила, которое нужно удалить.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -537,7 +580,6 @@ GET /ips/update
   * `updating` - скачиваем новые базы;
   * `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
   * `disabled` - обновление баз выключено.
-
 * `msg` - текстовое описание статуса обновления баз;
 * `last_update` - время (таймстамп) последнего успешного обновления баз.
 
@@ -940,7 +982,6 @@ PATCH /ips/bypass/{id}
 * `comment` - описание, может быть пустым, максимальная длина 256;
 * `enabled` - состояние исключения: включено/выключено.
 
-
 **Ответ на успешный запрос:** 200 OK
 
 </details>
@@ -1122,7 +1163,7 @@ GET /content-filter/users_categories
 ```json5
 [
     {
-        "id": "string" (номер категории, вида - users.id.1),
+        "id": "string" (идентификатор категории, вида - users.id.1),
         "name": "string" (название категории, не пустая строка),
         "comment": "string",
         "urls": ["string"]
@@ -1131,7 +1172,7 @@ GET /content-filter/users_categories
 ]
 ```
 
-* `"urls"` - список url. Либо полный путь до страницы, либо только доменное имя. В пути может присутствовать любое количество любых символов.
+* `urls` - список url. Либо полный путь до страницы, либо только доменное имя. В пути может присутствовать любое количество любых символов.
 
 </details>
 
@@ -1153,7 +1194,7 @@ POST /content-filter/users_categories
 }
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```json5
 {
