@@ -422,6 +422,7 @@ description to_NGFW
 ip address <IP GRE-over-IPsec-интерфейса Cisco> <маска подсети>
 tunnel source <внешний IP Cisco> 
 tunnel destination <внешний IP NGFW>
+tunnel mode ipsec ipv4
 tunnel protection ipsec profile SECURE-P
 ```
 
