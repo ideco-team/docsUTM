@@ -23,7 +23,7 @@ description: >-
 
 Пример правила для расшифровки:
 
-![](/.gitbook/assets/content-filter6.png)
+![](/.gitbook/assets/content-filter17.png)
 
 ## Настройка рабочей станции пользователя
 
