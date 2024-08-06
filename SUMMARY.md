@@ -66,6 +66,7 @@
 * [Правила трафика](settings/access-rules/README.md)
   * [Файрвол](settings/access-rules/firewall.md)
     * [Таблицы файрвола (FORWARD, DNAT, INPUT и SNAT)](settings/access-rules/firewall-tables.md)
+    * [Примеры создания правил файрвола](settings/access-rules/firewall-examples.md)
     * [Логирование](settings/access-rules/logging.md)
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
     * [Описание категорий контент-фильтра](settings/access-rules/content-filter/custom-categories.md)
