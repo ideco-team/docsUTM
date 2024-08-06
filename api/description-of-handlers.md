@@ -25,7 +25,7 @@ POST /web/admin/auth/login
 * `login` - логин. Каталог администратора указывается после `@`. Примеры:
   * `admin` локальный админ, без собаки;
   * `admin@ad_domain.ru` AD/ALD администратор;
-  * `admin@radius` для RADIUS администраторов `@radius`;
+  * `admin@radius` для RADIUS администраторов `@radius`.
 * `password` - пароль;
 * `rest_path` - префикс URL на который выставлять cookie. Например, `/` или `/rest`.
 
@@ -91,7 +91,7 @@ PUT /gather_stat/settings
    }
 ```
 
-Ответ на такой запрос будет пустым.
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -140,7 +140,7 @@ PUT /api/v3/{company_id}/go_to_product
 
 *  `company_id` - id компании пользователя. Его можно получить по запросу `GET /api/v3/companies`.
 
-**Тело ответа на успешный запрос:**
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -235,7 +235,6 @@ GET /license/info
     "license_server": "https://my.ideco.ru"
 }
 ```
-
 </details>
 
 <details>
@@ -306,9 +305,91 @@ GET /license/license-get-offline-registration-url
 PUT /license/license-upload
 ```
 
-Тело запроса: файл с лицензией в формате jwt, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii).
+**Тело запроса:** файл с лицензией в формате jwt, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii).
 
 **Ответ на успешный запрос**: 200 ОК
+
+</details>
+
+## Офлайн-обновления
+
+<details>
+<summary>Загрузить ISO-файл с офлайн-обновлением системы</summary>
+
+```
+PUT /sysupdate/iso-upload
+```
+
+**Тело запроса:** ISO-файл с обновлением, который можно скачать в личном кабинете MY.IDECO по [ссылке](https://my.ideco.ru/ngfw/download).
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Получить версию загруженного офлайн-обновления системы</summary>
+
+```
+GET /sysupdate/iso-upload
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "uploaded_iso_version": SystemVersion | null
+}
+```
+* `null` - если ISO-файл не был загружен;
+* `SystemVersion` - объект с описанием версии для загруженного ISO-файла.
+
+</details>
+
+<details>
+<summary>Запустить обновление из загруженного ISO-файла для офлайн-обновления системы</summary>
+
+```
+PUT /sysupdate/iso-install
+```
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Офлайн-обновление баз GeoIP, Iplist, Suricata</summary>
+
+```
+PUT /api/offline-update
+```
+**Тело запроса:** архивный файл с обновлением, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii). Архивный файл содержит:
+
+* `ideco-header.json` - json-файл, словарь, содержащий ключи:
+  * `hwid` - должно совпадать с hwid NGFW, на который загружается обновление;
+  * `pack-type` - значение должно быть равно `suricata-iplist-geoip` для архива с обновлением базы данных GeoIP, Iplist, Suricata;
+  * `geoip-timestamp` - timestamp создания базы GeoIP;
+  * `iplist-timestamp` - timestamp создания базы Iplist;
+  * `version` - значения аттрибутов версии (SystemVersion).
+* `license.jwt` - файл с лицензией для этого NGFW, содержит подписанную лицензию в формате jwt;
+* `ideco-geoip.mmdb` - файл обновления базы GeoIP;
+* `iplist.tar.gz` - файл обновления списка IP-адресов;
+* `suricata-rules.tar.gz` - файл обновления правил suricata.
+
+Файлы должны быть представлены именно в такой последовательности, других файлов в архиве быть не должно.
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Офлайн-обновление Контент-фильтра</summary>
+
+```
+PUT /content-filter/update_archive_upload
+```
+**Тело запроса:** архивный файл с офлайн-обновлением для **Контент-фильтра**, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii).
+
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -741,7 +822,7 @@ PUT /netscan_backend/settings
 }
 ```
 
-**Ответ на успешный запрос**: 200 OK.
+**Ответ на успешный запрос**: 200 OK
 
 </details>
 
