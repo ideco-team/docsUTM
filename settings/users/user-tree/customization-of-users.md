@@ -12,11 +12,7 @@ description: Настройка параметров учетной записи
 
 <details>
 
-<summary>
-
-Категории для **УЗ пользователя**
-
-</summary>
+<summary>Категории для УЗ пользователя</summary>
 
   * Основное;
   * IP и MAC авторизация;
@@ -27,11 +23,7 @@ description: Настройка параметров учетной записи
 </details>
 <details>
 
-<summary>
-
-Категории для **Группы пользователей**
-
-</summary>
+<summary>Категории для Группы пользователей</summary>
 
   * Основное;
   * Active Directory/Samba DC;
@@ -145,3 +137,4 @@ description: Настройка параметров учетной записи
 {% hint style="info" %}
 Настройка квот трафика описана в разделе [Квоты](/settings/access-rules/quotas.md#nastroika-polzovatelya-i-gruppy).
 {% endhint %}
+
