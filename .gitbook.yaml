@@ -103,4 +103,4 @@ redirects:
   dhcp_wpad: ./settings/services/dhcp.md
   user_personal_account: ./settings/users/user-personal-account.md
   dpi: ./settings/security-profiles/application-control.md
-  
+  version_support: ./general/support-period.md
