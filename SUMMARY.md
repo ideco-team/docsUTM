@@ -8,6 +8,7 @@
 * [Cистемные требования и источники обновления данных Ideco UTM](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
   * [Режим удаленного помощника](general/remote-assistant.md)
+  * [Информация о поддержке версий Ideco NGFW](general/support-period.md)
 
 ## Установка <a href="#installation" id="installation"></a>
 
