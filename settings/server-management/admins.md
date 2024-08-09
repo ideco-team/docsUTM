@@ -35,7 +35,7 @@
 ## Управление AD\ALD администраторами
 
 {% hint style="info" %}
-Чтобы добавить администраторов, необходимо интегрировать [Active Directory](/settings/users/active-directory/README.md) или [ALD Pro](/settings/users/ald-pro.md) в Ideco NGFW. При удалении домена AD/ALD из Ideco NGFW, будут удалены и сессии администраторов.
+Чтобы добавить администраторов, необходимо интегрировать [Active Directory](/settings/users/active-directory/README.md) или [ALD Pro](/settings/users/ald-pro.md) в Ideco NGFW. При удалении домена AD/ALD из Ideco NGFW будут удалены сессии администраторов.
 {% endhint %}
 
 Чтобы интегрировать администраторов Active Directory или ALD Pro с Ideco NGFW, перейдите в раздел **Управление сервером -> Администраторы**, и выберите нужную вкладку. Затем заполните следующие поля:
