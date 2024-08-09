@@ -7,6 +7,7 @@
 * [Лицензирование](general/license.md)
 * [Cистемные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
+  * [Информация о поддержке версий Ideco NGFW](general/support-period.md)
 
 ## Быстрый старт Ideco NGFW <a href="#installation" id="installation"></a>
 

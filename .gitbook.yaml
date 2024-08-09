@@ -104,4 +104,4 @@ redirects:
   source_port: ./settings/access-rules/firewall-tables.md
   administrator_sessions: ./settings/monitor/administrator-sessions.md
   dpi: ./settings/security-profiles/application-control.md
-  
+  version_support: ./general/support-period.md
