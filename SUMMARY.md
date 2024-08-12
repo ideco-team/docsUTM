@@ -45,6 +45,7 @@
   * [Ideco Client](settings/users/ideco-client/README.md)
     * [Установка и настройка Ideco Client на Windows](settings/users/ideco-client/ideco-client-windows.md)
     * [Установка и настройка Ideco Client на MacOS](settings/users/ideco-client/ideco-client-macos.md)
+    * [Установка и настройка Ideco Client на Linux](settings/users/ideco-client/ideco-client-linux.md)
   * [Профили устройств](settings/users/hip-profiles.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)

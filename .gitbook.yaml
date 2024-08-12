@@ -62,7 +62,6 @@ redirects:
   bgp: ./settings/services/bgp.md
   traffic: ./settings/reports/traffic.md
   ideco_client: ./settings/users/ideco-client/README.md
-  client_macos: ./settings/users/ideco-client/ideco-client-macos.md
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   web_access_log: ./settings/reports/web-logs.md
