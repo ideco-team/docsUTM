@@ -10,11 +10,11 @@
 | VPN L2TP |  1701 UDP |
 | VPN PPTP |  1723 TCP |
 | VPN SSTP |  1443 TCP (порт настраивается пользователем) |
-| Ideco Client | 14765 TCP |
+| Ideco Client | 14765 TCP, 3051 UDP |
 | SMTP(S) | 25, 587 TCP |
 | Веб-почта | 443 TCP |
 | Обратный прокси | 443, 80 TCP |
-| POP(3) | 110, 995 TCP |
+| POP3(S) | 110, 995 TCP |
 | IMAP(S) | 143, 993 TCP |
 | BGP | 179 TCP |
 | OSPF | 89 TCP |
