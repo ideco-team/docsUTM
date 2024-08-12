@@ -196,7 +196,7 @@ PATCH /dhcp_server/settings/<id настройки>
   }
 ```
 
-Ответ: Статус 200
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -207,7 +207,7 @@ PATCH /dhcp_server/settings/<id настройки>
 DELETE /dhcp_server/settings/<id настройки>
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -285,7 +285,7 @@ PATCH /dhcp_server/static_leases/<id статической привязки>
   }
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -296,6 +296,6 @@ PATCH /dhcp_server/static_leases/<id статической привязки>
 DELETE /dhcp_server/static_leases/<id статической привязки>
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>

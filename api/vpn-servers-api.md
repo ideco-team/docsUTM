@@ -140,13 +140,13 @@ GET /vpn_servers/access_rules
   "sources": [ "string" ],
   "objects": [ "string" ],
   "vpns": [ "string" ],
-  "action": "allow|deny",
+  "action": "allow | deny",
   "two_factor": "smsaero|totp|multifactor|not_required",
   "comment": "string"
 }
 ```
 
-* `id` - уникальный идентификатор правила;
+* `id` - идентификатор правила;
 * `enabled` - статус правила: включено/выключено;
 * `title` - название правила, может быть пустым, но не должно превышать 42 символов;
 * `sources` - список источников подключения (не может быть пустым), допустимые типы:
@@ -177,7 +177,7 @@ GET /vpn_servers/access_rules
   * `totp` - аутентификация сканированием QR-кода или использованием токена;
   * `multifactor` - аутентификация подтверждением личности в стороннем приложении;
   * `not_required` - означает, что двухфакторная авторизация не требуется.
-* `comment` - комментарий, может быть пустым, но не должен превышать 256 символов.
+* `comment` - комментарий, может быть пустым, но не должен превышать 255 символов.
 
 </details>
 
@@ -189,7 +189,7 @@ POST /vpn_servers/access_rules?anchor_item_id={int}&insert_after={true|false}
 ```
 
 Параметры запроса:
-* `anchor_item_id` - уникальный идентификатор правила, ниже или выше которого необходимо создать новое правило. Если параметр не указан, то правило будет создано в конце списка;
+* `anchor_item_id` - идентификатор правила, ниже или выше которого необходимо создать новое правило. Если параметр не указан, то правило будет создано в конце списка;
 * `insert_after` - указывает, куда необходимо вставить новое правило. Если параметр не указан или равен `true`, то новое правило будет добавлено сразу после правила с указанным идентификатором. Если параметр равен `false`, то новое правило заменит правило с указанным идентификатором.
 
 **Json-тело запроса:**
@@ -201,7 +201,7 @@ POST /vpn_servers/access_rules?anchor_item_id={int}&insert_after={true|false}
   "sources": [ "string" ],
   "objects": [ "string" ],
   "vpns": [ "string" ],
-  "action": "allow|deny",
+  "action": "allow | deny",
   "two_factor": "smsaero|totp|multifactor|not_required",
   "comment": "string"
 }
@@ -215,7 +215,7 @@ POST /vpn_servers/access_rules?anchor_item_id={int}&insert_after={true|false}
 }
 ```
 
-* `id` - уникальный идентификатор добавленного правила.
+* `id` - идентификатор добавленного правила.
 
 </details>
 
@@ -223,10 +223,8 @@ POST /vpn_servers/access_rules?anchor_item_id={int}&insert_after={true|false}
 <summary>Редактирование правил</summary>
 
 ```
-PATCH /vpn_servers/access_rules/{id}
+PATCH /vpn_servers/access_rules/<id правила>
 ```
-
-* `id` - уникальный идентификатор изменяемого правила.
 
 **Json-тело запроса:**
 
@@ -237,7 +235,7 @@ PATCH /vpn_servers/access_rules/{id}
   "sources": [ "string" ],
   "objects": [ "string" ],
   "vpns": [ "string" ],
-  "action": "allow|deny",
+  "action": "allow | deny",
   "two_factor": "smsaero|totp|multifactor|not_required",
   "comment": "string"
 }
@@ -251,10 +249,8 @@ PATCH /vpn_servers/access_rules/{id}
 <summary>Удаление правил</summary>
 
 ```
-DELETE /vpn_servers/access_rules/{id}
+DELETE /vpn_servers/access_rules/<id правила>
 ```
-
-* `id` - уникальный идентификатор удаляемого правила.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -264,10 +260,8 @@ DELETE /vpn_servers/access_rules/{id}
 <summary>Изменение порядка правил</summary>
 
 ```
-PATCH /vpn_servers/access_rules/{id}/position
+PATCH /vpn_servers/access_rules/<id правила>/position
 ```
-
-* `id` - уникальный идентификатор перемещаемого правила.
 
 **Json-тело запроса:**
 
@@ -315,7 +309,7 @@ GET /vpn_servers/lease_rules
   * `group.id` - для групп;
   * `security_group.guid` - для групп безопасности AD.
 * `address` - IP-адрес, который будет назначен пользователю, или адрес сети, в которой ему будет выделен IP-адрес, если пользователь соответствует списку объектов. В строке может быть указан IP-адрес без маски или подсеть (значение не может быть пустым и не должно повторяться);
-* `comment` - комментарий, может быть пустым, но не должен превышать 256 символов;
+* `comment` - комментарий, может быть пустым, но не должен превышать 255 символов;
 * `enabled` - статус правила: включено/выключено.
 
 </details>
@@ -328,7 +322,7 @@ POST /vpn_servers/lease_rules?anchor_item_id={int}&insert_after={true|false}
 ```
 
 Параметры запроса:
-* `anchor_item_id` - уникальный идентификатор правила, ниже или выше которого необходимо создать новое правило. Если параметр не указан, то правило будет создано в конце списка;
+* `anchor_item_id` - идентификатор правила, ниже или выше которого необходимо создать новое правило. Если параметр не указан, то правило будет создано в конце списка;
 * `insert_after` - указывает, куда необходимо вставить новое правило. Если параметр не указан или равен `true`, то новое правило будет добавлено сразу после правила с указанным идентификатором. Если параметр равен `false`, то новое правило заменит правило с указанным идентификатором.
 
 **Json-тело запроса:**
@@ -351,7 +345,7 @@ POST /vpn_servers/lease_rules?anchor_item_id={int}&insert_after={true|false}
 }
 ```
 
-* `id` - уникальный идентификатор добавленного правила.
+* `id` - идентификатор добавленного правила.
 
 </details>
 
@@ -359,10 +353,8 @@ POST /vpn_servers/lease_rules?anchor_item_id={int}&insert_after={true|false}
 <summary>Редактирование правил</summary>
 
 ```
-PATCH /vpn_servers/lease_rules/{id}
+PATCH /vpn_servers/lease_rules/<id правила>
 ```
-
-* `id` - уникальный идентификатор изменяемого правила.
 
 **Json-тело запроса:**
 
@@ -384,10 +376,8 @@ PATCH /vpn_servers/lease_rules/{id}
 <summary>Удаление правил</summary>
 
 ```
-DELETE /vpn_servers/lease_rules/{id}
+DELETE /vpn_servers/lease_rules/<id правила>
 ```
-
-* `id` - уникальный идентификатор удаляемого правила.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -397,10 +387,8 @@ DELETE /vpn_servers/lease_rules/{id}
 <summary>Изменение порядка правил</summary>
 
 ```
-PATCH /vpn_servers/lease_rules/{id}/position
+PATCH /vpn_servers/lease_rules/<id правила>/position
 ```
-
-* `id` - уникальный идентификатор перемещаемого правила.
 
 **Json-тело запроса:**
 
@@ -468,10 +456,8 @@ GET /vpn_servers/two_factor_in_access_rules
 <summary>Получение списка правил доступа к VPN для конкретного пользователя</summary>
 
 ```
-GET /vpn_servers/user_access_rules/{id}
+GET /vpn_servers/user_access_rules/<id пользователя>
 ```
-
-* `id` - уникальный идентификатор пользователя.
 
 **Ответ на успешный запрос:**
 
@@ -483,7 +469,7 @@ GET /vpn_servers/user_access_rules/{id}
   "sources": [ "string" ],
   "objects": [ "string" ],
   "vpns": [ "string" ],
-  "action": "allow|deny",
+  "action": "allow | deny",
   "two_factor": "smsaero|totp|multifactor|not_required",
   "comment": "string"
 }

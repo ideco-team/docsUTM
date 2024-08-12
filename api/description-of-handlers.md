@@ -210,7 +210,7 @@ POST /api/v3/login
 PUT /api/v3/{company_id}/go_to_product
 ```
 
-*  `company_id` - id компании пользователя. Его можно получить по запросу `GET /api/v3/companies`.
+*  `company_id` - идентификатор компании пользователя. Его можно получить по запросу `GET /api/v3/companies`.
 
 **Ответ на успешный запрос:**
 
@@ -437,7 +437,7 @@ PUT /api/offline-update
 **Тело запроса:** архивный файл с обновлением, который можно скачать в личном кабинете MY.IDECO. Более подробная информация представлена в [статье](/settings/server-management/server-update.md#bazy-filtracii). Архивный файл содержит:
 
 * `ideco-header.json` - json-файл, словарь, содержащий ключи:
-  * `hwid` - должно совпадать с hwid NGFW, на который загружается обновление;
+  * `hwid` - должно совпадать с HWID NGFW, на который загружается обновление;
   * `pack-type` - значение должно быть равно `suricata-iplist-geoip` для архива с обновлением базы данных GeoIP, Iplist, Suricata;
   * `geoip-timestamp` - timestamp создания базы GeoIP;
   * `iplist-timestamp` - timestamp создания базы Iplist;
@@ -536,8 +536,8 @@ POST /aliases/networks
 
 ```json5
 {
-    "title": "string", //(максимальная длина 42 символа)
-    "comment": "string", //(может быть пустым, максимальная длина 255 символов)
+    "title": "string", //(максимальная длина - 42 символа)
+    "comment": "string", //(может быть пустым, максимальная длина - 255 символов)
     "value": "string" //(адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
 }
 ```
@@ -564,8 +564,8 @@ POST /aliases/domains
 
 ```json5
 {
-    "title": "string", //(максимальная длина 42 символа)
-    "comment": "string", //(может быть пустым, максимальная длина 255 символов)
+    "title": "string", //(максимальная длина - 42 символа)
+    "comment": "string", //(может быть пустым, максимальная длина - 255 символов)
     "value": "string" //(домен)
 }
 ```
@@ -771,7 +771,7 @@ POST /aliases/lists/times
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] //(список id объектов Время)
+    "values": [ "string" ] //(список идентификаторов объектов Время)
 }
 ```
 
@@ -787,7 +787,7 @@ POST /aliases/lists/times
 
 <details>
 
-<summary>Получение ID объектов</summary>
+<summary>Получение идентификаторов объектов</summary>
 
 ```
 GET /aliases/all

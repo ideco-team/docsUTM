@@ -88,7 +88,7 @@ PUT /backup/settings
 }
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -174,7 +174,7 @@ GET /backup/backups
 GET /backup/download/<id бэкапа>
 ```
 
-Ответ: тело бэкапа.
+**Ответ на успешный запрос:** тело бэкапа.
 
 </details>
 
@@ -205,7 +205,7 @@ POST /backup/upload
 POST /backup/backups/<id бэкапа>/apply
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -216,7 +216,7 @@ POST /backup/backups/<id бэкапа>/apply
 POST /backup/backups/<id бэкапа>/apply/fast
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -227,6 +227,6 @@ POST /backup/backups/<id бэкапа>/apply/fast
 DELETE /backup/backups/<id бэкапа>
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>

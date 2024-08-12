@@ -42,7 +42,7 @@ PATCH /central_console/settings
 
 ```json5
 {
-  "cc_server": "string" | "null"
+    "cc_server": "string" | "null"
 }
 ```
 </details>
@@ -65,7 +65,7 @@ POST /central_console/root_ca
 DELETE /central_console/root_ca
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -76,7 +76,7 @@ DELETE /central_console/root_ca
 DELETE /central_console/settings
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -94,7 +94,7 @@ GET /servers/status
 ```json5
 {
     "name": "string",
-    "status": "active|activating|deactivating|failed|inactive|reloading",
+    "status": "active | activating | deactivating | failed | inactive | reloading",
     "msg": ["string"]
 }
 ```
@@ -118,7 +118,7 @@ GET /servers/setting
 
 ```json5
 {
-    "domain": "string" | "null",
+    "domain": "string" | "null"
 }
 ```
 
@@ -137,11 +137,11 @@ PUT /servers/setting
 
 ```json5
 {
-    "domain": "string" | "null",
+    "domain": "string" | "null"
 }
 ```
 
-Ответ: 200 OK
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -156,7 +156,7 @@ GET /servers/state
 
 ```json5
 {
-    "enabled": "boolean",
+    "enabled": "boolean"
 }
 ```
 
@@ -173,11 +173,12 @@ PUT /servers/state
 
 ```json5
 {
-    "enabled": "boolean",
+    "enabled": "boolean"
 }
 ```
 
-Ответ: 200 OK
+**Ответ на успешный запрос:** 200 OK
+
 </details>
 
 ### Группировка серверов
@@ -199,7 +200,7 @@ GET /servers/groups
         "parent_id": "f3ffde22-a562-4f43-ac04-c40fcec6a88c",
         "id": "e37ec0bb-fc27-406f-bd24-d0e89200561d"
     },
-    ...
+  ...
     {
         "comment": "",
         "name": "Корневая группа",
@@ -227,14 +228,14 @@ POST /servers/groups
 
 ```json5
 {
-        "comment": "string",
-        "name": "string",
-        "parent_id": "string"
-    }
+    "comment": "string",
+    "name": "string",
+    "parent_id": "string"
+}
 ```
 
 * `name` - название группы;
-* `parent_id` - ID родительской группы (если группа входит в Корневую группу, ID Корневой группы);
+* `parent_id` - идентификатор родительской группы (если группа входит в Корневую группу, ID Корневой группы);
 * `comment` - комментарий, может быть пустым.
 
 **Ответ на успешный запрос:**
@@ -258,13 +259,13 @@ PATCH /servers/groups/<id группы серверов>
 
 ```json5
 {
-        "comment": "string",
-        "name": "string",
-        "parent_id": "string"
-    }
+    "comment": "string",
+    "name": "string",
+    "parent_id": "string"
+}
 ```
 
-Ответ: 200 OK
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -275,7 +276,7 @@ PATCH /servers/groups/<id группы серверов>
 DELETE /servers/groups/<id группы серверов>
 ```
 
-Ответ: 200 OK
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -293,27 +294,27 @@ GET /servers/servers
 ```json5
 [
     {
-    "id": "string",
-    "parent_id": "string",
-    "version": {
-      "major": "integer",
-      "minor": "integer",
-      "build": "integer",
-      "timestamp": "integer",
-      "vendor": "Ideco",
-      "product": "UTM",
-      "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
-      "release_type": "release" | "beta" | "devel"
-   },
-    "cl_tunnel_addr": "string",
-    "title": "string",
-    "approved": "bool",
-    "last_sync": "int | null",
-    "last_connect": "int",
-    "utm_login_secret": "string",
-    "comment": "string",
-  },
-  ...
+        "id": "string",
+        "parent_id": "string",
+        "version": {
+          "major": "integer",
+          "minor": "integer",
+          "build": "integer",
+          "timestamp": "integer",
+          "vendor": "Ideco",
+          "product": "UTM",
+          "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
+          "release_type": "release" | "beta" | "devel"
+    },
+        "cl_tunnel_addr": "string",
+        "title": "string",
+        "approved": "bool",
+        "last_sync": "int | null",
+        "last_connect": "int",
+        "utm_login_secret": "string",
+        "comment": "string"
+    },
+    ...
 ]
 ```
 
@@ -335,7 +336,7 @@ GET /servers/servers
 * `last_connect` - timestamp последнего успешного подключения;
 * `utm_login_secret` - секретное значение для отправки в URL авторизации Ideco Center в Ideco NGFW;
 * `version_diff` - разница мажорных версий Ideco Center и NGFW. Если значение равно нулю - мажор одинаковый, больше нуля - версия Ideco Center выше, меньше нуля - версия NGFW выше;
-* `comment` - комментарий, максимум 256 символов, может быть пустым.
+* `comment` - комментарий, максимум 255 символов, может быть пустым.
 
 </details>
 
@@ -355,7 +356,7 @@ PATCH /servers/servers/<id сервера>
 }
 ```
 
-Ответ: 200 OK
+**Ответ на успешный запрос:** 200 OK
 
 При добавлении нового сервера ему автоматически присваивается parent_id Корневой группы.
 
@@ -370,7 +371,7 @@ PATCH /servers/servers/<id сервера>
 DELETE /servers/servers/<id сервера>
 ```
 
-Ответ: 200 OK
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -385,7 +386,7 @@ DELETE /servers/servers/<id сервера>
 GET /content-filter/categories
 ```
 
-**Json-тело ответа:**
+**Ответ на успешный запрос:**
 
 ```json5
 [
@@ -422,7 +423,7 @@ GET /content-filter/categories
 GET /content-filter/users_categories
 ```
 
-**Json-ответ на запрос:**
+**Ответ на успешный запрос:**
 
 ```json5
 [
@@ -504,8 +505,9 @@ PUT /content-filter/users_categories/{category_id}
 
 * `GET /content-filter/rules/before?groups=[UUID1,UUID2]` - начальные правила;
 * `GET /content-filter/rules/after?groups=[UUID1,UUID2]` - конечные правила.
-
   * `UUID1` - идентификатор группы серверов в Центральной консоли (`id`).
+
+**Ответ на успешный запрос:**
 
 ```json5
 [
@@ -516,6 +518,8 @@ PUT /content-filter/users_categories/{category_id}
         "comment": "string",
         "aliases": [ "string" ],
         "categories": [ "string" ],
+        "http_methods": ["string"],
+        "content_types": ["string"],
         "access": "allow" | "deny" | "bump" | "redirect",
         "redirect_url": "string" | "null",
         "enabled": "boolean",
@@ -526,19 +530,21 @@ PUT /content-filter/users_categories/{category_id}
 ```
 
 * `id` - идентификатор правила;
-* `parent_id` - id группы серверов, к которой применяется правило;
+* `parent_id` - идентификатор группы серверов, к которой применяется правило;
 * `name` - название правила, не пустая строка;
-* `comment` - комментарий (макс. 256 символов), может быть пустым;
-* `aliases` - список id алиасов (поле Применяется для);
-* `categories` - список id категорий сайтов;
+* `comment` - комментарий (максимальная длина - 255 символов), может быть пустым;
+* `aliases` - список идентификаторов алиасов (поле Применяется для);
+* `categories` - список идентификаторов категорий сайтов;
+* `http_methods` - список методов HTTP. Доступен выбор из списка: GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH, TRACE, CONNECT;
+* `content_types` -  список mime types;
 * `access` - действие, которое необходимо выполнить в правиле, строка, может принимать три значения:
   * `allow` - разрешить данный запрос;
   * `deny` - запретить запрос и показать страницу блокировки;
-  * `bump`: расшифровать запрос;
+  * `bump`- расшифровать запрос;
   * `redirect`: перенаправить запрос на `redirect_url`.
-* `redirect_url` - URL, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
+* `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
 * `enabled`: правило включено (true) или выключено (false);
-* `timetable` - время действия, список ID алиасов.
+* `timetable` - время действия.
 
 </details>
 
@@ -552,17 +558,37 @@ PUT /content-filter/users_categories/{category_id}
 
 ```json5
 {
-    "parent_id": "string", (id группы серверов, к которой будет применяться правило)
+    "parent_id": "string", (идентификатор группы серверов, к которой будет применяться правило)
     "name": "string",
     "comment": "string",
     "aliases": [ "string" ],
     "categories": [ "string" ],
+    "http_methods": ["string"],
+    "content_types": ["string"],
     "access": "allow" | "deny" | "bump" | "redirect",
     "redirect_url": "string" | "null",
     "enabled": "boolean",
     "timetable": [ "string" ]
 }
 ```
+
+* `id` - идентификатор правила;
+* `parent_id` - идентификатор родительской группы;
+* `name` - название правила, не может быть пустым;
+* `comment` - комментарий, может быть пустым (максимальная длина - 255 символов);
+* `aliases` - список идентификаторов алиасов (поле Применяется для);
+* `categories` - список идентификаторов категорий;
+* `http_methods` - список методов HTTP. Доступен выбор из списка: GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH, TRACE, CONNECT;
+* `content_types` -  список mime types;
+* `access` - действие, которое необходимо выполнить в правиле:
+  * `allow` - разрешить запрос;
+  * `deny` - запретить запрос и показать страницу блокировки;
+  * `bump` - расшифровать запрос;
+  * `redirect` - перенаправить запрос на `redirect_url`;
+* `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
+* `enabled` - правило включено (true) или выключено (false);
+* `timetable` - время действия.
+
 
 **Ответ на успешный запрос:**
 
@@ -572,13 +598,15 @@ PUT /content-filter/users_categories/{category_id}
 }
 ```
 
+* `id` - идентификатор созданного правила.
+
 </details>
 
 <details>
 <summary>Редактирование правил</summary>
 
-* `PUT /content-filter/rules/before/<id правила>` - изменение начального правила;
-* `PUT /content-filter/rules/after/<id правила>` - изменение конечного правила.
+* `PATCH /content-filter/rules/before/<id правила>` - изменение начального правила;
+* `PATCH /content-filter/rules/after/<id правила>` - изменение конечного правила.
 
 **Json-тело запроса:**
 
@@ -589,6 +617,8 @@ PUT /content-filter/users_categories/{category_id}
     "parent_id": "string",
     "aliases": [ "string" ],
     "categories": [ "string" ],
+    "http_methods": ["string"],
+    "content_types": ["string"],
     "access": "allow" | "deny" | "bump" | "redirect",
     "redirect_url": "string" | "null",
     "enabled": "boolean",
@@ -596,7 +626,24 @@ PUT /content-filter/users_categories/{category_id}
 }
 ```
 
-Ответ: 200 ОК
+* `id` - идентификатор правила;
+* `parent_id` - идентификатор родительской группы;
+* `name` - название правила, не может быть пустым;
+* `comment` - комментарий, может быть пустым (максимальная длина - 255 символов);
+* `aliases` - список идентификаторов алиасов (поле Применяется для);
+* `categories` - список идентификаторов категорий;
+* `http_methods` - список методов HTTP. Доступен выбор из списка: GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH, TRACE, CONNECT;
+* `content_types` -  список mime types;
+* `access` - действие, которое необходимо выполнить в правиле:
+  * `allow` - разрешить запрос;
+  * `deny` - запретить запрос и показать страницу блокировки;
+  * `bump` - расшифровать запрос;
+  * `redirect` - перенаправить запрос на `redirect_url`;
+* `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
+* `enabled` - правило включено (true) или выключено (false);
+* `timetable` - время действия, список идентификаторов алиасов.
+
+**Ответ на успешный запрос:** 200 ОК
 
 **Важно!** Чтобы переместить правило между группами серверов, измените его `parent_id`.
 
@@ -612,10 +659,10 @@ PUT /content-filter/users_categories/{category_id}
 
 ```json5
 {
-  "params": {
-    "id": "integer",
-    "anchor_item_id": "integer",
-    "insert_after": "boolean"
+    "params": {
+      "id": "integer",
+      "anchor_item_id": "integer",
+      "insert_after": "boolean"
   }
 }
 ```
@@ -624,7 +671,7 @@ PUT /content-filter/users_categories/{category_id}
 * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно поместить перемещаемое правило;
 * `insert_after` - вставка до или после. Если `true`, то вставить правило сразу после указанного в `anchor_item_id`, если `false` - на месте указанного в `anchor_item_id`.
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -634,7 +681,7 @@ PUT /content-filter/users_categories/{category_id}
 * `DELETE /content-filter/rules/before/move` - перемещение начального правила;
 * `DELETE /content-filter/rules/after/move` - перемещение конечного правила.
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -674,7 +721,7 @@ PUT /firewall/state
 }  
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -717,7 +764,7 @@ PUT /firewall/state
   "ips_enabled": "boolean",
   "timetable": [ "string" ],
   "comment": "string",
-  "action": "accept|drop",
+  "action": "accept|drop"
 }
 ```
 
@@ -727,16 +774,16 @@ PUT /firewall/state
 * `protocol` - протокол;
 * `source_addresses` - адрес источника;
 * `source_addresses_negate` - инвертировать адрес источника;
-* `source_ports` - порты источников, список ID алиасов;
+* `source_ports` - порты источников, список идентификаторов алиасов;
 * `incoming_interface` - зона источника;
 * `destination_addresses` - адрес назначения;
 * `destination_addresses_negate` - инвертировать адрес назначения;
 * `destination_ports` - порты назначения;
 * `outgoing_interface` - зона назначения;
 * `hip_profiles` - HIP-профили;
-* `dpi_profile` - строка в формате UUID, ID профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
 * `dpi_enabled` - включена/выключена обработка с помощью модуля **Контроль приложений**;
-* `ips_profile` - строка в формате UUID, ID профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
 * `ips_enabled` - включена/выключена обработка с помощью модуля **Предотвращение вторжений**;
 * `timetable` - время действия;
 * `comment` - комментарий (может быть пустым);
@@ -761,9 +808,9 @@ PUT /firewall/state
    "destination_ports": [ "string" ],
    "timetable": [ "string" ],
    "comment": "string",
-   "action": "accept|dnat",
-   "change_destination_address": "null|string",
-   "change_destination_port": "null|string",
+   "action": "accept | dnat",
+   "change_destination_address": "null | string",
+   "change_destination_port": "null | string"
 }
 ```
 
@@ -790,8 +837,8 @@ PUT /firewall/state
    "outgoing_interface": "string",
    "timetable": [ "string" ],
    "comment": "string",
-   "action": "accept|snat",
-   "change_source_address": "null|string",
+   "action": "accept | snat",
+   "change_source_address": "null | string"
 }
 ```
 
@@ -821,7 +868,7 @@ PUT /firewall/state
 ]
 ```
 
-* В запросе не должно быть `id`, так как правило ещё не создано и не имеет уникального идентификатора.
+* В запросе не должно быть `id`, так как правило ещё не создано и не имеет идентификатора.
 
 **Ответ на успешный запрос:**
 
@@ -849,7 +896,7 @@ PUT /firewall/state
 ]
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 **Важно!** Чтобы переместить правило между группами серверов, измените его `parent_id`.
 
@@ -867,10 +914,10 @@ PUT /firewall/state
 
 ```json5
 {
-  "params": {
-    "id": "integer",
-    "anchor_item_id": "integer",
-    "insert_after": "boolean"
+    "params": {
+      "id": "integer",
+      "anchor_item_id": "integer",
+      "insert_after": "boolean"
   }
 }
 ```
@@ -879,7 +926,7 @@ PUT /firewall/state
 * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно поместить перемещаемое правило;
 * `insert_after` - вставка до или после. Если `true`, то вставить правило сразу после указанного в `anchor_item_id`, если `false` - на месте указанного в `anchor_item_id`.
 
-Ответ: 200 ОК
+**Ответ на успешный запрос**: 200 ОК
 
 </details>
 
@@ -891,6 +938,6 @@ PUT /firewall/state
 * `DELETE /firewall/rules/input/before/<id правила>` - раздел INPUT, начальное правило;
 * `DELETE /firewall/rules/input/after/<id правила>` - раздел INPUT, конечное правило.
 
-Ответ: 200 ОК
+**Ответ на успешный запрос**: 200 ОК
 
 </details>

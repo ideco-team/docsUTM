@@ -1,6 +1,6 @@
 # Управление профилями безопасности
 
-## Профили Предотвращения вторжений
+## Предотвращение вторжений
 
 <details>
 <summary>Получение списка профилей</summary>
@@ -15,12 +15,12 @@ GET /ips/profiles
 {
     "id": "string",
     "name": "string",
-    "comment": "string",
+    "comment": "string"
 }
 ```
-* `id` - уникальный идентификатор профиля;
+* `id` - идентификатор профиля;
 * `name` - название профиля, максимальная длина - 42 символа;
-* `comment` - комментарий, максимальная длина - 256 символов.
+* `comment` - комментарий, максимальная длина - 255 символов.
 
 </details>
 
@@ -30,27 +30,27 @@ GET /ips/profiles
 ```
 POST /ips/profiles
 ```
-**Тело запроса**: объект `IPSProfile` без поля `id`
+**Json-тело запроса:**: объект `IPSProfile` без поля `id`
 
 ```json5
 {
     "name": "string",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
 * `name` - название профиля, максимальная длина - 42 символа;
-* `comment` - комментарий, максимальная длина - 256 символов.
+* `comment` - комментарий, максимальная длина - 255 символов.
 
 **Ответ на успешный запрос:**
 
 ```json5
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
-* `id` - уникальный идентификатор профиля.
+* `id` - идентификатор профиля.
 
 </details>
 
@@ -58,22 +58,20 @@ POST /ips/profiles
 <summary>Изменение профиля</summary>
 
 ```
-PATCH /ips/profiles/{id}
+PATCH /ips/profiles/<id профиля>
 ```
 
-* `id` - уникальный идентификатор профиля.
-
-**Тело запроса:** некоторые или все поля объекта `IPSProfile` без поля `id`
+**Json-тело запроса:** некоторые или все поля объекта `IPSProfile` без поля `id`
 
 ```json5
 {
     "name": "string",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
 * `name` - название профиля, максимальная длина - 42 символа;
-* `comment` - комментарий, максимальная длина - 256 символов.
+* `comment` - комментарий, максимальная длина - 255 символов.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -85,10 +83,8 @@ PATCH /ips/profiles/{id}
 <summary>Удаление профиля</summary>
 
 ```
-DELETE /ips/profiles/{id}
+DELETE /ips/profiles/<id профиля>
 ```
-
-* `id` - уникальный идентификатор профиля.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -114,7 +110,7 @@ GET /ips/profile_rules?profile_id={string}
         "values": ["string" | "integer"],
     },
     "action": "default" | "alert" | "drop" | "skip",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
@@ -124,7 +120,7 @@ GET /ips/profile_rules?profile_id={string}
     * `operator` - оператор, только `equals`;
     * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
 * `action` - строка с действием при срабатывании правила;
-* `comment` - комментарий, макимальная длина 256 символов.
+* `comment` - комментарий, макимальная длина 255 символов.
 
 </details>
 
@@ -139,7 +135,7 @@ POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={t
 * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое;
 * `insert_after` - вставка до или после. Если `true` или отсутствует, то вставить правило сразу после указанного в `anchor_item_id`. Если `false`, то на месте указанного в `anchor_item_id`.
 
-**Тело запроса:** список объектов `IPSProfileRule` без поля `id`
+**Json-тело запроса:** список объектов `IPSProfileRule` без поля `id`
 
 ```json5
 {
@@ -149,7 +145,7 @@ POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={t
         "values": ["string" | "integer"],
     ],
     "action": "default" | "alert" | "drop" | "skip",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
@@ -158,13 +154,13 @@ POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={t
     * `operator` - оператор, только `equals`;
     * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
 * `action` - строка с действием при срабатывании правила;
-* `comment` - комментарий, максимальная длина - 256 символов.
+* `comment` - комментарий, максимальная длина - 255 символов.
 
 **Ответ на успешный запрос:** 
 
 ```json5
 {
-  "id": "integer",
+  "id": "integer"
 }
 ```
 
@@ -182,7 +178,7 @@ PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
 * `profile_id` - идентификатор профиля, в котором изменяется правило;
 * `rule_id` - идентификатор правила в профиле.
 
-**Тело запроса:** некоторые или все поля объекта `IPSProfileRule` без поля `id`
+**Json-тело запроса:** некоторые или все поля объекта `IPSProfileRule` без поля `id`
 
 ```json5
 {
@@ -192,7 +188,7 @@ PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
         "values": ["string" | "integer"],
     ],
     "action": "default" | "alert" | "drop" | "skip",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
@@ -201,7 +197,7 @@ PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
     * `operator` - оператор, только `equals`;
     * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
 * `action` - строка с действием при срабатывании правила;
-* `comment` - комментарий, максимальная длина - 256 символов.
+* `comment` - комментарий, максимальная длина - 255 символов.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -219,5 +215,239 @@ DELETE /ips/profile_rules?profile_id={string}&rule_id={int}
 * `rule_id` - идентификатор правила в профиле.
 
 **Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+
+<summary>Создание профиля с правилами</summary>
+
+```
+POST /ips/profiles-create-with-rules
+```
+
+**Json-тело запроса:**: объект `IPSProfileWithRule`
+
+```json5
+{
+    "name": "string",
+    "comment": "string",
+    "rules": [
+      "id": "integer",
+      "filter": {
+          "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
+          "operator": "equals",
+          "values": ["string" | "integer"],
+    },
+      "action": "default" | "alert" | "drop" | "skip",
+      "comment": "string"
+    ],
+}
+```
+
+* `name` - название профиля, максимальная длина - 42 символа;
+* `comment` - комментарий, максимальная длина - 255 символов;
+* `id` - номер правила выбора сигнатур;
+* `filters` - список фильтров правила:
+    * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
+    * `operator` - оператор, только `equals`;
+    * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
+* `action` - строка с действием при срабатывании правила;
+* `comment` - комментарий, макимальная длина 255 символов.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string"
+}
+```
+
+* `id` - идентификатор созданного профиля с правилами.
+
+</details>
+
+<details>
+
+<summary>Копирование профиля с правилами</summary>
+
+```
+POST /ips/profiles/<id профиля>/copy
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string"
+}
+```
+
+* `id` - идентификатор созданного профиля с правилами.
+
+</details>
+
+## Контроль приложений
+
+<details>
+
+<summary>Получение списка профилей</summary>
+
+```
+GET /api/application_control/profiles
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+  {
+  "id": "string",
+  "name": "string",
+  "comment": "string",
+  "protocols": [
+    {
+      "id": "string",
+      "action": "deny | allow"
+    },
+    ...
+    ],
+  }
+]
+```
+
+* `id` - идентификатор профиля;
+* `name` - название профиля;
+* `comment` - комментарий к профилю;
+* `protocols` - список протоколов, выбранных для профиля:
+    * `id` - строковый идентификатор алиаса протокола с префиксом `id.l7`. Например, `id.l7.ftp_protocol`;
+    * `action` - действие, применяемое к протоколу (`deny` - запретить, `allow` - разрешить).      
+
+</details>
+
+<details>
+
+<summary>Создание профиля</summary>
+
+```
+POST /api/application_control/profiles
+```
+
+**Json-тело запроса:**
+
+```json5
+
+{
+  "name": "string",
+  "comment": "string",
+  "protocols": [
+    {
+      "id": "string",
+      "action": "deny | allow"
+    },
+    ...
+    ],
+}
+```
+
+* `name` - название профиля;
+* `comment` - комментарий к профилю;
+* `protocols` - список протоколов, выбранных для профиля:
+    * `id` - строковый идентификатор алиаса протокола с префиксом `id.l7`. Например, `id.l7.ftp_protocol`;
+    * `action` - действие, применяемое к протоколу (`deny` - запретить, `allow` - разрешить).
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+  {
+  "id": "string",
+  "name": "string",
+  "comment": "string",
+  "protocols": [
+    {
+      "id": "string",
+      "action": "deny | allow"
+    },
+    ...
+    ],
+  }
+]
+```
+
+* `id` - идентификатор профиля;
+* `name` - название профиля;
+* `comment` - комментарий к профилю;
+* `protocols` - список протоколов, выбранных для профиля:
+    * `id` - строковый идентификатор алиаса протокола с префиксом `id.l7`. Например, `id.l7.ftp_protocol`;
+    * `action` - действие, применяемое к протоколу (`deny` - запретить, `allow` - разрешить).
+
+</details>
+
+<details>
+
+<summary>Копирование профиля</summary>
+
+```
+POST /api/application_control/profiles/<id профиля>/copy
+```
+
+**Ответ на успешный запрос:** 
+
+```json5
+{
+  "id": "integer"
+}
+```
+
+* `id` - идентификатор копии профиля.
+
+</details>
+
+<details>
+
+<summary>Редактирование профиля</summary>
+
+```
+PATCH /api/application_control/profiles/<id профиля>
+```
+
+**Json-тело запроса:**
+
+```json5
+[
+  {
+  "name": "string",
+  "comment": "string",
+  "protocols": [
+    {
+      "id": "string",
+      "action": "deny | allow"
+    },
+    ...
+    ],
+  }
+]
+```
+
+* `name` - название профиля;
+* `comment` - комментарий к профилю;
+* `protocols` - список протоколов, выбранных для профиля:
+    * `id` - строковый идентификатор алиаса протокола с префиксом `id.l7`. Например, `id.l7.ftp_protocol`;
+    * `action` - действие, применяемое к протоколу (`deny` - запретить, `allow` - разрешить).
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+
+<summary>Удаление профиля</summary>
+
+```
+DELETE /api/application_control/profiles/<id профиля>
+```
+
+**Ответ на успешный запрос:** 200 OK
 
 </details>

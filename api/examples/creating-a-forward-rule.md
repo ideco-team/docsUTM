@@ -23,7 +23,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/logi
 
 * `x.x.x.x` - IP-адрес веб-интерфейса Ideco NGFW.
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 OK
 
 2\. Создайте объект **Диапазон IP-адресов** c `192.168.0.1` по `192.168.0.20`:
 
@@ -31,7 +31,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/logi
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_ranges --data '{"title": "test ip range", "comment": "test ip range", "start": "192.168.0.1", "end": "192.168.0.20"}'
 ```
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 ОК
 
 Тело ответа:
 
@@ -49,7 +49,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_ra
     curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_addresses --data '{"comment": "комментарий", "title": "название", "value": "9.9.9.9"}'
     ```
 
-    Ответ: статус 200.
+   **Ответ на успешный запрос:** 200 ОК
 
     Тело ответа:
 
@@ -65,7 +65,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_ra
     curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.2", "ip.id.3"]}'
     ```
 
-    Ответ: статус 200
+  **Ответ на успешный запрос:** 200 ОК
 
     Тело ответа:
 
@@ -81,7 +81,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_ra
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/time_ranges --data '{"title":"Рабочее время","comment":"пн-пт 09:00-18:00","weekdays":[1,2,3,4,5],"start":"09:00","end":"18:00", "period": null}'
 ```
 
-Ответ: статус 200
+**Ответ на успешный запрос:** 200 ОК
 
 Тело ответа:
 
@@ -102,7 +102,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rule
   * `accept` - принять пакет; 
   * `drop` - отклонить пакет.
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 ОК
 
 Тело ответа:
 
@@ -118,4 +118,4 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rule
 curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://x.x.x.x:8443/firewall/rules/forward/<id созданного в пункте 5 правила> --data '{"action": "drop", "comment": "", "destination_addresses": ["ip_range.id.2"], "destination_addresses_negate": false, "destination_ports": ["any"], "enabled": true, "hip_profiles": [], "incoming_interface": "any", "outgoing_interface": "any", "protocol": "protocol.tcp", "source_addresses": ["address_list.id.2"], "source_addresses_negate": false, "timetable": ["time_range.id.1"], "parent_id": "f3ffde22-a562-4f43-ac04-c40fcec6a88c"}'
 ```
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 ОК

@@ -24,7 +24,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/logi
 
   * `x.x.x.x` - IP-адрес веб-интерфейса Ideco NGFW.
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 ОК
 
 2\. Получите текущий список URL из пользовательских категории:
 
@@ -32,7 +32,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/logi
 curl -k -c /tmp/cookie -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_categories/users.id.3
 ```
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 ОК
 
 Ответ будет содержать описание всех пользовательских категорий. Среди них требуется найти `users.id.3`:
 
@@ -46,7 +46,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_
 curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://x.x.x.x:8443/content-filter/users_categories/users.id.3 --data '{"name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
 ```
 
-Ответ: статус 200.
+**Ответ на успешный запрос:** 200 ОК
 
 {% hint style="warning" %}
 Запрос перезапишет ранее созданную пользовательскую категорию. Поэтому при выполнении запроса следует указать все URL (старые и новые - указанные при создании категории и те, которые хотите добавить).

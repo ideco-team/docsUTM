@@ -59,7 +59,7 @@ PUT /logs_backend/remote_syslog/state
 }
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -108,6 +108,6 @@ PATCH /logs_backend/remote_syslog
 
 Пустые значения "" не допускаются.
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
