@@ -266,7 +266,7 @@ PUT /license/update-type
 </details>
 
 <details>
-<summary>Получение ссылки для оффлайн-регистрации</summary>
+<summary>Получение ссылки для офлайн-регистрации</summary>
 
 ```
 GET /license/license-get-offline-registration-url
@@ -284,7 +284,7 @@ GET /license/license-get-offline-registration-url
 * `hwid` - HWID сервера;
 * `version` - версия сервера.
 
-Получение ссылки для оффлайн-регистрации сервера возможно только при ручном механизме обновления лицензии.
+Получение ссылки для офлайн-регистрации сервера возможно только при ручном механизме обновления лицензии.
 
 </details>
 
