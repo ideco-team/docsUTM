@@ -59,6 +59,78 @@ set-cookie: __Secure-ideco-b7e3fb6f-7189-4f87-a4aa-1bdc02e18b34=""; HttpOnly; Ma
 </details>
 
 <details>
+<summary>Добавление правила авторизации</summary>
+
+```
+POST /auth/rules
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "enabled": "bool",
+    "ip": "string|null",
+    "mac": "string|null",   
+    "user_id":  "int",
+    "always_logged": "bool",
+    "comment": "string"
+}
+```
+
+* `enabled` - правило будет включено/выключено;
+* `ip` - IP-адрес, который нужно авторизовать;
+* `mac` - MAC-адрес, который нужно авторизовать;
+* `always_logged` - авторизован всегда. Может быть включено только при указанном ip;
+* `user_id` - идентификатор пользователя, к которому будет применено правило;
+* `comment` - комментарий к правилу, может быть пустым, максимальная длина 255 символов.
+
+**Ответ на успещный запрос:**
+
+```json5
+{
+  "id": "string"
+}
+```
+
+* `id` - идентификатор созданного правила.
+
+</details>
+
+<details>
+<summary>Измененение части правила авторизации</summary>
+
+``` 
+PATCH /auth/rules/<id правила>
+```
+
+```json5
+{
+    "enabled": "bool",
+    "ip": "string|null",
+    "mac": "string|null",   
+    "user_id":  "int",
+    "always_logged": "bool",
+    "comment": "string"
+}
+```
+
+**Ответ на успещный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Удаление правила авторизации</summary>
+
+```
+DELETE /auth/rules/<id правила>
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
 <summary>Сбор анонимной статистики о работе сервера</summary>
 
 ### Получение текущих настроек:
@@ -72,7 +144,7 @@ GET /gather_stat/settings
 ```json5
 {
       "enabled": "boolean"
-   }
+}
 ```
 
 Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
@@ -88,7 +160,7 @@ PUT /gather_stat/settings
 ```json5
 {
       "enabled": "boolean"
-   }
+}
 ```
 
 **Ответ на успешный запрос:** 200 ОК
@@ -465,7 +537,7 @@ POST /aliases/networks
 ```json5
 {
     "title": "string", //(максимальная длина 42 символа)
-    "comment": "string", //(может быть пустым, максимальная длина 256 символов)
+    "comment": "string", //(может быть пустым, максимальная длина 255 символов)
     "value": "string" //(адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
 }
 ```
@@ -493,7 +565,7 @@ POST /aliases/domains
 ```json5
 {
     "title": "string", //(максимальная длина 42 символа)
-    "comment": "string", //(может быть пустым, максимальная длина 256 символов)
+    "comment": "string", //(может быть пустым, максимальная длина 255 символов)
     "value": "string" //(домен)
 }
 ```
