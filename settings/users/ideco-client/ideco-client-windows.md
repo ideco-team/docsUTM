@@ -6,7 +6,7 @@
 
 * Перейдите в раздел **Пользователи –> Ideco-Client**, переведите опцию **Ideco Client** в положение включен, введите доменное имя в соответствующей строке и нажмите **Сохранить**. Появится кнопка **Скачать Ideco Client под Windows**:
 
-![](/.gitbook/assets/ideco-client6.png)
+![](/.gitbook/assets/ideco-client5.png)
 
 ## Установка
 
