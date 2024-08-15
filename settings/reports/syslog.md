@@ -119,10 +119,10 @@ description: >-
 * `DeviceCustomString15= DeviceCustomString15Label=tcp.tcp_flags_ts` -  [timestamp флаги](https://www.atraining.ru/windows-network-tuning/#:~:text=TCP%20Timestamps%20–%20базовая%20низкоуровневая,не%20может%20высчитать%20данные%20значения);
 * `DeviceCustomString16= DeviceCustomString16Label=tcp.tcp_flags_tc` - [флаг Truncated response](https://www.rfc-editor.org/rfc/rfc5966);
 * `FlexNumber5=0 FlexNumber5Label=tcp.cwr 0` - флаг TCP-пакета, информирующий отправителя, что получен пакет с установленным флагом ECE (Подробнее в [RFC-3186](https://datatracker.ietf.org/doc/html/rfc3168));
-* `FlexNumber6=0 FlexNumber6Label=tcp.ecn 0` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление  о перегрузке сети;
+* `FlexNumber6=0 FlexNumber6Label=tcp.ecn 0` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление о перегрузке сети;
 * `FlexNumber7=0 FlexNumber7Label=tcp.urg 0` - флаг TCP-пакета, указывающий важность пакета;
 * `FlexNumber8=0 FlexNumber8Label=tcp.ack 0` - флаг TCP-пакета, указывающий, что пакет получен;
-* `FlexNumber9=0 FlexNumber9Label=tcp.psh 0` - флаг TCP-пакета, информирующий получателя о том, что все данные переданы и можно передать их приложению;
+* `FlexNumber9=0 FlexNumber9Label=tcp.psh 0` - флаг TCP-пакета, информирующий получателя, что все данные переданы и можно передать их приложению;
 * `FlexNumber10=0 FlexNumber10Label=tcp.rst 0` - флаг TCP-пакета, указывающий, что соединение завершено в аварийном режиме;
 * `FlexNumber11=0 FlexNumber11Label=tcp.syn 0` - флаг TCP-пакета, отвечающий за установку соединения;
 * `FlexNumber12=0 FlexNumber12Label=tcp.fin 0` - флаг TCP-пакета, указывающий на завершение соединения в штатном порядке;
@@ -437,14 +437,14 @@ description: >-
 * `tcp.tcp_flags:` - значение поля flags в заголовке TCP;
 * `tcp.tcp_flags_ts:` -  [timestamp флаги](https://www.atraining.ru/windows-network-tuning/#:~:text=TCP%20Timestamps%20–%20базовая%20низкоуровневая,не%20может%20высчитать%20данные%20значения);
 * `tcp.tcp_flags_tc:` - [флаг Truncated response](https://www.rfc-editor.org/rfc/rfc5966);
-* `tcp.cwr: 0`;
-* `tcp.ecn: 0`;
-* `tcp.urg: 0`;
-* `tcp.ack: 0`;
-* `tcp.psh: 0`;
-* `tcp.rst: 0`;
-* `tcp.syn: 0`;
-* `tcp.fin: 0`;
+* `tcp.cwr: 0` - флаг TCP-пакета, информирующий отправителя, что получен пакет с установленным флагом ECE (Подробнее в [RFC-3186](https://datatracker.ietf.org/doc/html/rfc3168));
+* `tcp.ecn: 0` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление  о перегрузке сети;
+* `tcp.urg: 0` - флаг TCP-пакета, указывающий важность пакета;
+* `tcp.ack: 0` - флаг TCP-пакета, указывающий, что пакет получен;
+* `tcp.psh: 0` - флаг TCP-пакета, информирующий получателя, что все данные переданы и можно передать их приложению;
+* `tcp.rst: 0` - флаг TCP-пакета, указывающий, что соединение завершено в аварийном режиме;
+* `tcp.syn: 0` - флаг TCP-пакета, отвечающий за установку соединения;
+* `tcp.fin: 0` - флаг TCP-пакета, указывающий на завершение соединения в штатном порядке;
 * `tcp.state:` - [состояния сеанса TCP](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#Состояния_сеанса_TCP).
 
 </details>
