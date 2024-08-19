@@ -6,13 +6,23 @@
 <summary>Получение списка локальных администраторов</summary>
 
 ```
-GET /web/admins/local?format_type=JSON|CSV&columns=['id','name',...]
+GET /web/admins/local?format_type=JSON|CSV&columns=["id","name", ...]
 ```
 
 * `format_type` - поддерживается `CSV` и `JSON`, по умолчанию `JSON`;
 * `columns` - список столбцов, которые попадут в `CSV` отчет, по умолчанию пустой список.
 
-**Ответ на успешный запрос:**
+Список `columns` состоит из столбцов (значения столбцов описаны ниже):
+
+* `id`
+* `name`
+* `enabled`
+* `login`
+* `role`
+* `comment`
+* `password_timestamp`
+
+**Ответ на успешный запрос в формате JSON:**
 
 ```json5
 [
@@ -27,6 +37,14 @@ GET /web/admins/local?format_type=JSON|CSV&columns=['id','name',...]
     },
     ...
 ]
+```
+
+**Ответ на успешный запрос в формате CSV:**
+
+```
+id,name,enabled,login,role,comment,password_timestamp
+8aa49b1f-5711-4e5e-ab66-4828c6785b84,Administrator,True,administrator,predefined_admin_write,Создано через cloud-init.,1724047828
+8aa49b1f-5711-4e5e-ab66-4828c6785b92,Admin,True,administrator,predefined_admin_write,Главный администратор,1724047850
 ```
 
 * `id` - идентификатор администратора;
