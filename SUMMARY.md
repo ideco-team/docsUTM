@@ -224,7 +224,7 @@
 ## API
 
 * [Описание основных хендлеров](api/description-of-handlers.md)
-* [Управление интеграцией с Active Directory](api/active-directory-api.md)
+* [Управление интеграцией с Active Directory/ALD Pro](api/active-directory-api.md)
 * [Управление администраторами](api/admin-management-api.md)
 * [Управление пользователями](api/user-management-api.md)
 * [Управление Ideco Client](api/ideco-client-api.md)
