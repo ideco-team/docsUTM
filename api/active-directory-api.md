@@ -4,8 +4,10 @@
 Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
 {% endhint %}
 
+## Управление интеграцией с доменами AD
+
 <details>
-<summary>Получение статуса работы службы</summary>
+<summary>Получение статуса работы службы ad_backend</summary>
 
 ```
 GET /ad_backend/status
@@ -52,12 +54,20 @@ POST /ad_backend/domains
 * `password` - пароль пользователя `user`;
 * `ldap_paths` - список LDAP-путей, по которым будет происходит поиск групп безопасности. Максимум 10 путей, максимальная длина строки - 1024 символа. Если при интеграции передать пустой список, то поиск групп безопасности будет производиться по всему лесу доменов. Если указаны конкретные LDAP-пути, импорт прочих пользователей и групп безопасности будет невозможен.
 
-**Ответ на успешный запрос:** 200 OK
+**Ответ на успешный запрос:** 
+
+```json5
+{
+    "id": "string"
+}
+```
+
+* `id` - идентификатор домена.
 
 </details>
 
 <details>
-<summary>Получение списка присоединенных контроллеров домена</summary>
+<summary>Получение списка присоединенных доменов</summary>
 
 ```
 GET /ad_backend/domains
@@ -68,9 +78,11 @@ GET /ad_backend/domains
 ```json5
 [
     {
+        "id": "string",
         "name": "string",  
         "computer_name": "string",
         "dns_ips": ["string"], 
+        "user": "string",
         "ldap_paths": ["string"],
     },
     ...
@@ -83,7 +95,7 @@ GET /ad_backend/domains
 <summary>Выполнение "переинтеграции" с AD</summary>
 
 ```
-PUT /ad_backend/domains/<domain_name>
+PUT /ad_backend/domains/<id домена>
 ```
 
 **Json-тело запроса:**
@@ -105,18 +117,97 @@ PUT /ad_backend/domains/<domain_name>
 <summary>Удаление интеграции с доменом</summary>
 
 ```
-DELETE /ad_backend/domains/<domain_name>
+DELETE /ad_backend/domains/<id домена>
 ```
 
 **Ответ на успешный запрос:** 200 OK
 
-При выводе NGFW из домена удаляются все настройки интеграции с контроллером доменом, а
+При выводе NGFW из домена удаляются все настройки интеграции с контроллером домена, а
 также все настройки синхронизируемых групп. При этом сами
 группы и пользователи в них становятся локальными.
 
-Удаление созданного для NGFW компьютера в AD не производится.
+В AD созданный для NGFW компьютер не удаляется.
 
 </details>
+
+## Управление интеграцией с доменами ALD
+
+<details>
+<summary>Получение списка присоединенных доменов</summary>
+
+```
+GET /ald_backend/domains
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+    {
+        "id": "string",
+        "name": "string",
+        "computer_name": "string",
+        "dns_ips": ["string"],  
+        "status": "string",
+        "error": "string",
+    }
+    ...
+]
+```
+
+* `id` - идентификатор домена;
+* `name` - имя домена, должно быть уникальным;
+* `computer_name` - имя компьютера (NGFW) в домене;
+* `dns_ips` - список IP-адресов контроллеров домена;
+* `status` - статус присоединения. Статус может быть 'init', 'error', 'completed';
+* `error` - ошибка, возникшая при присоединении к домену.
+
+</details>
+
+<details>
+<summary>Ввод NGFW в домен</summary>
+
+```
+POST /ald_backend/domains
+```
+
+**JSON-тело запроса:**
+
+```json5
+{
+    "name": "string",
+    "computer_name": "string",
+    "dns_ips": ["string"],
+    "user": "string",
+    "password": "string"
+}
+```
+
+* `name` - имя домена;
+* `computer_name` - имя компьютера (NGFW) в домене;
+* `dns_ips` - список IP-адресов контроллеров домена;
+* `user` - имя пользователя, имеющего права на ввод компьютера в домен;
+* `password` - пароль пользователя.
+
+**Ответ на успешный запрос:** 200 OK
+
+
+</details>
+
+<details>
+
+<summary>Удалении интеграции с доменом</summary>
+
+```
+DELETE /ald_backend/domains/<domain name>
+```
+
+Удалить можно только домены в состоянии error или complete.
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
 
 ## Управление AD/ALD правилами авторизации
 
@@ -132,9 +223,17 @@ GET /web/admins/ad?format_type=JSON|CSV&columns=['id','enabled',...]
 * `format_type` - поддерживается `CSV` и `JSON`, по умолчанию `JSON`;
 * `columns` - список столбцов, которые попадут в `CSV` отчет, по умолчанию пустой список.
 
-**Ответ на успешный запрос:**
+Список `columns` состоит из столбцов (значения столбцов описаны ниже):
 
-```
+* `id`;
+* `enabled`;
+* `role`;
+* `group_alias`;
+* `comment`.
+
+**Ответ на успешный запрос в формате JSON:**
+
+```json5
 [
     {
         "id": "string",
@@ -164,7 +263,7 @@ POST /web/admins/ad
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "enabled": "boolean",
     "role": "integer",
@@ -192,14 +291,12 @@ POST /web/admins/ad
 <summary>Изменение AD правил авторизации</summary>
 
 ```
-PATCH /web/admins/ad/$ID
+PATCH /web/admins/ad/<id правила>
 ```
-
-`$ID` - идентификатор правила.
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "enabled": "boolean",
     "role": "integer",
@@ -223,10 +320,8 @@ PATCH /web/admins/ad/$ID
 <summary>Удаление AD правил авторизации</summary>
 
 ```
-DELETE /web/admins/ad/$ID
+DELETE /web/admins/ad/<id правила>
 ```
-
-`$ID` - идентификатор правила.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -246,7 +341,7 @@ GET /web/admins/ald?format_type=JSON|CSV&columns=['id','enabled',...]
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
         "id": "string",
@@ -277,7 +372,7 @@ POST /web/admins/ald
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "enabled": "boolean",
     "role": "integer",
@@ -305,14 +400,12 @@ POST /web/admins/ald
 <summary>Изменение ALD правил авторизации</summary>
 
 ```
-PATCH /web/admins/ald/$ID
- ```
-
-`$ID` - идентификатор правила.
+PATCH /web/admins/ald/<id правила>
+```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "enabled": "boolean",
     "role": "integer",
@@ -334,10 +427,8 @@ PATCH /web/admins/ald/$ID
 <summary>Удаление ALD правил авторизации</summary>
 
 ```
-DELETE /web/admins/ald/$ID
+DELETE /web/admins/ald/<id правила>
 ```
-
-`$ID` - идентификатор правила.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -356,7 +447,7 @@ GET /ad_backend/settings
 
 ```json5
 {
-    "authorization_by_logs": "boolean" //(Включена/выключена авторизация по логам AD)
+    "authorization_by_logs": "boolean"
 }
 ```
 
