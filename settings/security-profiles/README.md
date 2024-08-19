@@ -17,3 +17,7 @@
 {% content-ref url="application-control.md" %}
 [application-control.md](application-control.md)
 {% endcontent-ref %}
+
+{% content-ref url="ips-profiles.md" %}
+[ips-profiles.md](ips-profiles.md)
+{% endcontent-ref %}
