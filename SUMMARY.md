@@ -70,6 +70,7 @@
     * [Таблицы файрвола (FORWARD, DNAT, INPUT и SNAT)](settings/access-rules/firewall-tables.md)
     * [Примеры создания правил файрвола](settings/access-rules/firewall-examples.md)
     * [Логирование](settings/access-rules/logging.md)
+    * [Проверка работы правил](settings/access-rules/rule-check.md)
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
     * [Описание категорий контент-фильтра](settings/access-rules/content-filter/custom-categories.md)
     * [Настройка фильтрации HTTPS](settings/access-rules/content-filter/filtering-https-traffic.md)
