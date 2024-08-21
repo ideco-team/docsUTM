@@ -39,7 +39,7 @@ redirects:
   support: ./general/remote-assistant.md
   syslog: ./settings/reports/syslog.md
   telegram_bot: ./settings/monitor/telegram-bot.md 
-  terminal: ./settings/server-management/terminal.md
+  terminal: ./settings/server-management/terminal/README.md
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
   user_quota: ./settings/access-rules/quotas.md
