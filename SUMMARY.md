@@ -186,6 +186,7 @@
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
 * [FAQ](recipes/popular-recipes/README.md)
+  * [Анализ трафика](recipes/popular-recipes/traffic-analysis.md)
   * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
   * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
   * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
