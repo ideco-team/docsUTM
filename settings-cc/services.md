@@ -14,6 +14,10 @@
 
 ![](/.gitbook/assets/cc-interfaces.png)
 
+{% hint style="danger" %}
+При создании, редактировании или удалении сетевого интерфейса перевыпускается [SSL-сертификат](/settings/services/certificates/README.md), поэтому вероятно снижение скорости работы веб-интерфейса Ideco Center. В этом случае рекомендуем нажать F5.
+{% endhint %}
+
 ## Маршрутизация
 
 Маршрутизация работает аналогично маршрутизации Ideco NGFW. Подробное описание по [ссылке](/settings/services/routing.md).
