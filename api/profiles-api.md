@@ -9,14 +9,17 @@
 GET /ips/profiles
 ```
 
-**Ответ на успешный запрос:** список объектов `IPSProfile`
+**Ответ на успешный запрос:**
 
 ```json5
-{
+[
+  {
     "id": "string",
     "name": "string",
     "comment": "string"
-}
+  },
+  ...
+]
 ```
 * `id` - идентификатор профиля;
 * `name` - название профиля, максимальная длина - 42 символа;
@@ -30,7 +33,7 @@ GET /ips/profiles
 ```
 POST /ips/profiles
 ```
-**Json-тело запроса:**: объект `IPSProfile` без поля `id`
+**Json-тело запроса:**:
 
 ```json5
 {
@@ -61,7 +64,7 @@ POST /ips/profiles
 PATCH /ips/profiles/<id профиля>
 ```
 
-**Json-тело запроса:** некоторые или все поля объекта `IPSProfile` без поля `id`
+**Json-тело запроса:** (некоторые или все поля)
 
 ```json5
 {
@@ -94,31 +97,37 @@ DELETE /ips/profiles/<id профиля>
 <summary>Получение списка правил профиля</summary>
 
 ```
-GET /ips/profile_rules?profile_id={string}
+GET /ips/profile_rules?profile_id=<string>
 ```
 
-* `profile_id` - идентификатор профиля, список правил которого запрашивается.
+* `profile_id` - идентификатор профиля, список правил которого запрашивается (без скобок и кавывчек).
 
-**Ответ на успешный запрос:** список объектов `IPSProfileRule`
+**Ответ на успешный запрос:**
 
 ```json5
-{
+[
+  {
     "id": "integer",
-    "filter": {
+    "filters": [
+      {
         "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
         "operator": "equals",
         "values": ["string" | "integer"],
-    },
+     },
+    ...
+    ]
     "action": "default" | "alert" | "drop" | "skip",
     "comment": "string"
-}
+  },
+  ...
+]
 ```
 
 * `id` - номер правила выбора сигнатур;
 * `filters` - список фильтров правила:
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
-    * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
+    * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
 * `action` - строка с действием при срабатывании правила;
 * `comment` - комментарий, макимальная длина 255 символов.
 
@@ -131,18 +140,21 @@ GET /ips/profile_rules?profile_id={string}
 POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={true|false}
 ```
 
-* `profile_id` - идентификатор профиля, в котором создается правило;
+* `profile_id` - идентификатор профиля, в котором создается правило (без скобок и кавывчек);
 * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое;
 * `insert_after` - вставка до или после. Если `true` или отсутствует, то вставить правило сразу после указанного в `anchor_item_id`. Если `false`, то на месте указанного в `anchor_item_id`.
 
-**Json-тело запроса:** список объектов `IPSProfileRule` без поля `id`
+**Json-тело запроса:**
 
 ```json5
 {
     "filters": [
+       {
         "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
         "operator": "equals",
-        "values": ["string" | "integer"],
+        "values": ["string" | "integer"]
+      },
+      ...
     ],
     "action": "default" | "alert" | "drop" | "skip",
     "comment": "string"
@@ -152,7 +164,7 @@ POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={t
 * `filters` - список фильтров правила:
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
-    * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
+    * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
 * `action` - строка с действием при срабатывании правила;
 * `comment` - комментарий, максимальная длина - 255 символов.
 
@@ -178,14 +190,17 @@ PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
 * `profile_id` - идентификатор профиля, в котором изменяется правило;
 * `rule_id` - идентификатор правила в профиле.
 
-**Json-тело запроса:** некоторые или все поля объекта `IPSProfileRule` без поля `id`
+**Json-тело запроса:** (некоторые или все поля объекта)
 
 ```json5
 {
     "filters": [
+      {
         "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
         "operator": "equals",
-        "values": ["string" | "integer"],
+        "values": ["string" | "integer"]
+       },
+      ...
     ],
     "action": "default" | "alert" | "drop" | "skip",
     "comment": "string"
@@ -195,7 +210,7 @@ PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
 * `filters` - список фильтров правила:
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
-    * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
+    * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
 * `action` - строка с действием при срабатывании правила;
 * `comment` - комментарий, максимальная длина - 255 символов.
 
@@ -226,34 +241,39 @@ DELETE /ips/profile_rules?profile_id={string}&rule_id={int}
 POST /ips/profiles-create-with-rules
 ```
 
-**Json-тело запроса:**: объект `IPSProfileWithRule`
+**Json-тело запроса:**: 
 
 ```json5
 {
     "name": "string",
     "comment": "string",
     "rules": [
-      "id": "integer",
-      "filter": {
-          "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
-          "operator": "equals",
-          "values": ["string" | "integer"],
-    },
-      "action": "default" | "alert" | "drop" | "skip",
-      "comment": "string"
-    ],
-}
+              {
+              "filters": [
+                          {
+                      "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
+                      "operator": "equals",
+                      "values": ["string" | "integer"]
+                        },
+                        ...
+                      ],
+              "action": "default" | "alert" | "drop" | "skip",
+              "comment": "string"
+              },
+              ...
+            ]
+    }
 ```
 
 * `name` - название профиля, максимальная длина - 42 символа;
 * `comment` - комментарий, максимальная длина - 255 символов;
-* `id` - номер правила выбора сигнатур;
-* `filters` - список фильтров правила:
+* `rules` - список правил профиля:
+  * `filters` - список фильтров правила:
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
-    * `values` - список значений, который используется для всех типов `key`, кроме `sid`(число).
-* `action` - строка с действием при срабатывании правила;
-* `comment` - комментарий, макимальная длина 255 символов.
+    * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
+  * `action` - строка с действием при срабатывании правила;
+  * `comment` - комментарий, макимальная длина 255 символов.
 
 **Ответ на успешный запрос:**
 
@@ -283,7 +303,7 @@ POST /ips/profiles/<id профиля>/copy
 }
 ```
 
-* `id` - идентификатор созданного профиля с правилами.
+* `id` - идентификатор созданного профиля.
 
 </details>
 

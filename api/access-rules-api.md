@@ -382,156 +382,6 @@ PUT /firewall/watch
 
 </details>
 
-## Контроль приложений
-
-<details>
-<summary>Получение списка правил</summary>
-
-```
-GET /application_control_backend/rules
-```
-
-**Ответ на успешный запрос:**
-
-```json5
-[ 
-    {
-        "action": "string", // ["drop"|"accept"]
-        "aliases": ["string"],
-        "comment": "string",
-        "enabled": "boolean",
-        "name": "string",
-        "parent_id": "string",
-        "protocols": ["string"],
-        "id": "integer"
-    },
-    ...
- ]
-```
-
-* `action` - действие, применяемое к правилу;
-* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md));
-* `comment` - комментарий правила;
-* `enabled` - статус правила (true - включено, false - отключено);
-* `name` - имя правила;
-* `parent_id` - идентификатор родительской группы серверов;
-* `protocols` - список протоколов;
-* `id` - идентификатор правила.
-
-</details>
-
-<details>
-<summary>Создание нового правила</summary>
-
-```
-POST /application_control_backend/rules
-```
-
-**Json-тело запроса:**
-
-```json5
-{
-    "parent_id": "string",
-    "name": "string",
-    "action": "string", // ["drop"|"accept"],
-    "comment": "string",
-    "aliases":["string"],
-    "protocols":["string"],
-    "enabled": "boolean"
-}
-```
-
-* `action` - действие, применяемое к правилу;
-* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md));
-* `comment` - комментарий правила;
-* `enabled` - статус правила (true - включено, false - отключено);
-* `name` - имя правила;
-* `parent_id` - идентификатор родительской группы серверов;
-* `protocols` - список протоколов.
-
-**Ответ на успешный запрос:**
-
-```json5
-{
-    "id": "integer"
-}
-```
-
-* `id` - идентификатор созданного правила.
-
-</details>
-
-<details>
-<summary>Изменение правила</summary>
-
-```
-PUT /application_control_backend/rules/<id правила>
-```
-
-**Json-тело запроса:**
-
-```json5
-{
-    "parent_id": "string",
-    "name": "string",
-    "comment": "string",
-    "aliases": ["string"],
-    "protocols": ["string"],
-    "action": "string", // ["drop"|"accept"],
-    "enabled": "boolean"
-}
-```
-
-* `action` - действие, применяемое к правилу;
-* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md));
-* `comment` - комментарий правила;
-* `enabled` - статус правила (true - включено, false - отключено);
-* `name` - имя правила;
-* `parent_id` - идентификатор родительской группы серверов;
-* `protocols` - список протоколов;
-
-**Ответ на успешный запрос:** 200 ОК
-
-</details>
-
-<details>
-<summary>Изменение приоритета правила</summary>
-
-```
-PATCH /application_control_backend/rules/move
-```
-
-**Json-тело запроса:**
-
-```json5
-{
-    "params": {
-      "id": "integer",
-      "anchor_item_id": "integer",
-      "insert_after": "boolean"
-    }
-}
-```
-
-* `id` - идентификатор правила;
-* `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое;
-* `insert_after` - вставка до или после. Если True, то вставить правило сразу после указанного в anchor_item_id, если False, то на месте указанного в anchor_item_id.
-
-**Ответ на успешный запрос:** 200 OK
-
-</details>
-
-<details>
-<summary>Удаление правила</summary>
-
-```
-DELETE /application_control_backend/rules/<id правила>
-```
-
-**Ответ на успешный запрос:** 200 OK
-
-</details>
-
 ## Контент-фильтр
 
 <details>
@@ -943,6 +793,444 @@ DELETE /content-filter/rules/<id правила>
 ```
 
 **Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+## Предотвращение вторжений
+
+<details>
+<summary>Получение статуса работы службы</summary>
+
+```
+GET /ips/status
+```
+
+**Ответ на успешный запрос:** 
+
+```json5
+[
+    {
+        "name": "string",
+        "status": "active|activating|deactivating|failed|inactive|reloading",
+        "msg": [ "string" ]
+    }
+]
+```
+
+* `name` - название демона;
+* `status` - статус;
+* `msg` - список сообщений, объясняющий текущее состояние.
+
+</details>
+
+<details>
+<summary>Управление статусом работы службы</summary>
+
+**Получение текущей настройки включенности модуля**
+
+```
+GET /ips/state
+```
+
+**Ответ на успешный запрос:** 
+
+```json5
+{
+    "enabled": "boolean"
+}
+```
+
+* `enabled` - `true` если модуль включен, `false` - если выключен.
+
+**Изменение настройки включенности модуля**
+
+```
+PUT /ips/state
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "enabled": "boolean"
+}
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+### Группы сигнатур
+
+<details>
+<summary>Получение представления групп сигнатур в табличном виде</summary>
+
+```
+GET /ips/signature_groups/table
+```
+
+**Ответ на успешный запрос:** 
+
+```json5
+{
+    "signature_groups": [
+        {
+            "classtype": "string",
+            "classtype_name": "string",  
+            "mitre_tactics": [
+                {
+                    "mitre_tactic_id": "string",
+                    "mitre_tactic_name": "string"  
+                },
+                ...
+            ],
+            "count": "integer"
+        },
+        ...
+    ]
+}
+```
+
+* `classtype` - группа сигнатур;
+* `classtype_name` - название группы сигнатур (отображается в интерфейсе Ideco NGFW);
+* `mitre_tactics` - тактика согласно матрице MITRE ATT&CK, которой соответствует группа сигнатур:
+    * `mitre_tactic_id` - идентификатор тактики;
+    * `mitre_tactic_name` - название тактики.
+* `count` - количество сигнатур в группе.
+
+</details>
+
+<details>
+<summary>Получение представления групп сигнатур в матричном виде MITRE ATT&CK</summary>
+
+```
+GET /ips/signature_groups/mitre
+```
+
+**Ответ на успешный запрос:** 
+
+```json5
+{
+    "signature_groups": [
+        {
+            "mitre_tactic_id": "string",
+            "mitre_tactic_name": "string",  
+            "classtypes": [
+                {
+                    "classtype": "string-admin",
+                    "classtype_name": "string",  
+                    "count": "integer"
+                },
+                ...
+            ]
+        },
+        ...
+    ]
+}
+```
+
+* `mitre_tactic_id` - идентификатор тактики согласно матрице MITRE ATT&CK;
+* `mitre_tactic_name` - название тактики;
+* `classtypes` - группы сигнатур, соответствующие тактике:
+    * `classtype` - группа сигнатур;
+    * `classtype_name` - название группы сигнатур (отображается в интерфейсе Ideco NGFW);
+    * `count` - количество сигнатур в группе.
+
+</details>
+
+<details>
+<summary>Получение списка сигнатур определенной группы</summary>
+
+```
+GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":"equals","value":[<classtype нужной группы сигнатур (может быть несколько значений через запятую)>]} ], "link_operator":"or" } ]
+```
+
+* `"column_name":"classtype","operator":"equals","value":[<classtype нужной группы сигнатур (может быть несколько значений через запятую)>]` - фильтр: отбирает из таблицы групп сигнатур только те группы, у которых значение `classtype` соответствует указанным в `value`.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "signatures": [
+            {
+                "action": "drop",
+                "protocol": "tcp",
+                "flow": "to_server",
+                "classtype": "attempted-admin",
+                "sid": 2050604,
+                "signature_severity": "Major",
+                "mitre_tactic_id": "TA0001",
+            },
+            ...
+        ]
+}
+```
+
+* `action` - действие для трафика, соответствующего сигнатуре;
+* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`);
+* `flow` - направление трафика (`to_server`, `from_server`);
+* `classtype` - группа, к которой относится сигнатура;
+* `sid` - идентификатор сигнатуры;
+* `signature_severity` - уровень угрозы;
+* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK.
+
+</details>
+
+<details>
+<summary>Получение оригинального содержания сигнатуры</summary>
+
+```
+GET /ips/signatures/<sid>
+```
+
+**Ответ на успешный запрос:**
+
+```json
+{
+    "signature": "string"
+}
+```
+
+</details>
+
+### Пользовательские сигнатуры
+
+<details>
+<summary>Получение списка пользовательских сигнатур</summary>
+
+```
+GET /ips/custom
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+    {
+    "id": "string",
+    "comment": "string",
+    "rule": "string",
+    "sid": "integer",
+    "classtype": "string"
+  },
+  ...
+]
+```
+
+* `id` - идентификатор правила;
+* `comment` - описание, может быть пустым, максимальная длина - 255 символов;
+* `rule` - cтрока с правилом, не более 8196 символов;
+* `sid` - идентификатор сигнатуры. Указывается в строке с правилом, извлекается из нее;
+* `classtype` - тип правила (может быть пустой строкой).
+
+</details>
+
+<details>
+<summary>Создание пользовательской сигнатуры вручную</summary>
+
+```
+POST /ips/custom
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "comment": "string",
+    "rule": "string"
+}
+```
+
+* `comment` - описание, может быть пустым, максимальная длина - 255 символов;
+* `rule` - строка с правилом, не более 8196 символов, переводы строк в ней запрещены.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "id": "string"
+}
+```
+
+* `id` - идентификатор созданной сигнатуры.
+
+</details>
+
+<details>
+<summary>Загрузка пользовательских сигнатур из файла</summary>
+
+```
+POST /ips/custom_rules_file
+```
+
+Файл загружается как тело запроса, он должен иметь текстовый формат text/plain, максимальный размер файла - 32 MB.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "count": "integer"
+}
+```
+
+* `count` - количество загруженных правил.
+
+</details>
+
+<details>
+<summary>Редактирование пользовательской сигнатуры</summary>
+
+```
+PATCH /ips/custom/<id сигнатуры>
+```
+
+**Json-тело запроса (все или некоторые поля):**
+
+```json5
+{
+    "comment": "string",
+    "rule": "string"
+}
+```
+
+* `comment` - описание, может быть пустым, максимальная длина - 255 символов;
+* `rule` - cтрока с правилом, не более 8196 символов, переводы строк в ней запрещены.
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Удаление пользовательской сигнатуры</summary>
+
+```
+DELETE /ips/custom/<id сигнатуры>
+```
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+### Обновление баз
+
+<details>
+<summary>Получение статуса обновления баз правил Suricata и GeoIP</summary>
+
+```
+GET /ips/update
+```
+
+**Ответ на успешный запрос:**
+
+```json
+{
+    "status": "up_to_date|updating|failed_to_update|disabled",
+    "msg": "i18n_string",
+    "last_update": "float|null"
+}
+```
+
+* `status` - текущий статус обновления баз:
+  * `up_to_date` - базы успешно обновлены;
+  * `updating` - скачиваются новые базы;
+  * `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
+  * `disabled` - обновление баз выключено.
+* `msg` - текстовое описание статуса обновления баз;
+* `last_update` - время последнего успешного обновления баз.
+
+</details>
+
+<details>
+<summary>Получение статуса обновления расширенных баз правил Suricata и GeoIP</summary>
+
+```
+GET /ips/update_advanced
+```
+
+**Ответ на успешный запрос:**
+
+```json
+{
+    "status": "up_to_date|updating|failed_to_update|disabled",
+    "msg": "i18n_string",
+    "last_update": "float|null"
+}
+```
+
+* `status` - текущий статус обновления баз:
+  * `up_to_date` - базы успешно обновлены;
+  * `updating` - скачиваются новые базы;
+  * `failed_to_update` - последняя попытка обновления баз завершилась неудачно;
+  * `disabled` - обновление баз выключено.
+* `msg` - текстовое описание статуса обновления баз;
+* `last_update` - время последнего успешного обновления баз.
+
+</details>
+
+<details>
+<summary>Запуск принудительного обновления баз</summary>
+
+```
+POST /ips/update
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+### Сети, защищенные от вторжений
+
+<details>
+<summary>Получение списка локальных подсетей</summary>
+
+```
+GET /ips/nets
+```
+
+**Ответ на успешный запрос:**
+
+```json
+[
+    {
+    "id": "string",
+    "address": "string"
+  },
+  ...
+]
+```
+
+* `id` - идентификатор подсети;
+* `address` - адрес подсети (например: `192.168.0.0/16`).
+
+</details>
+
+<details>
+<summary>Добавление новой локальной подсети</summary>
+
+```
+POST /ips/nets
+```
+
+**Json-тело запроса:**
+
+```json
+{
+    "address": "string"
+  }
+```
+
+* `address` - адрес подсети (например: `192.168.0.0/16`).
+
+</details>
+
+<details>
+<summary>Удаление локальной подсети</summary>
+
+```
+DELETE /ips/nets/<id локальной подсети>
+```
+
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
