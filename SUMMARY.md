@@ -178,6 +178,7 @@
 * [Серверы](settings-cc/servers.md)
 * [Мониторинг](settings-cc/monitor.md)
 * [Политики и объекты](settings-cc/policies-and-objects.md)
+* [Профили безопасности](settings-cc/security-profiles.md)
 * [Сервисы](settings-cc/services.md)
 * [Отчеты и журналы](settings-cc/reports.md)
 * [Управление сервером](settings-cc/server-management.md)

@@ -97,6 +97,7 @@ redirects:
   cc_additionally: ./settings-cc/server-management.md
   cc_zabbix: ./settings-cc/monitor.md
   cc_snmp: ./settings-cc/monitor.md
+  сс_dpi: ./settings-cc/dpi.md
   device-profiles: ./settings/users/hip-profiles.md
   dhcp_wpad: ./settings/services/dhcp.md
   user_personal_account: ./settings/users/user-personal-account.md
