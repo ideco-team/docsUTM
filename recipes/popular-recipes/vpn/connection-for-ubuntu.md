@@ -8,6 +8,10 @@
 Не рекомендуем использовать для VPN-подключений кириллические логины.
 {% endhint %}
 
+{% hint style="warning" %}
+Инструкция актуальна для версии Ubuntu 24.04 LTS.
+{% endhint %}
+
 <details>
 
 <summary>Протокол PPTP</summary>
@@ -82,29 +86,44 @@
 
 1\. Откройте терминал сочетанием клавиш Ctrl+Alt+F1 и выполните команду:
 
-```
+```bash
 sudo apt install -y network-manager-strongswan libcharon-extra-plugins libstrongswan-extra-plugins
 ```
 
 2\. После окончания установки перезагрузите компьютер:
 
-```
+```bash
 sudo reboot
 ```
 
-3\. Перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
+3\. Перейдите в терминале в директорию с загруженным корневым сертификатом (если на доменное имя NGFW выпущен Let`s Encrypt сертификат, сразу перейдите к пункту 6).
+
+4\. Установите корневой сертификат NGFW в доверенные сертификаты Ubuntu:
+
+```bash
+sudo cp ca.crt /usr/local/share/ca-certificates/ca.crt
+```
+
+* `ca.crt` - имя скачанного сертификата.
+
+5\. Для обновления сертификатов устройства выполните команду:
+
+```bash
+sudo update-ca-certificates
+```
+
+6\. Перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
 <img src="/.gitbook/assets/connection-for-ubuntu1.png" alt="" data-size="original">
 
-4\. В появившемся окне выберите **IPsec\IKEv2 (strongswan)**:
+7\. В появившемся окне выберите **IPsec\IKEv2 (strongswan)**:
 
 <img src="/.gitbook/assets/connection-for-ubuntu6.png" alt="" data-size="original">
 
-5\. В разделе **Идентификация** и заполните следующие поля:
+8\. В разделе **Идентификация** и заполните следующие поля:
 
 * **Название** - имя подключения;
 * **Address** - введите домен, который указан в настройках **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
-* **Certificate** - выберите ранее сохраненный корневой сертификат (если он не был выдан Let\`s Encrypt);
 * **Authentication** - рекомендуем выбрать EAP;
 * **Username** - имя пользователя, которому разрешено подключение по VPN;
 * **Password** - пароль пользователя. В правой части поля необходимо выбрать вариант хранения для пароля от VPN-соединения.
@@ -113,7 +132,7 @@ sudo reboot
 
 <img src="/.gitbook/assets/connection-for-ubuntu7.png" alt="" data-size="original">
 
-6\. Переведите созданное VPN-подключение в положение включен.
+9\. Включите созданное VPN-подключение.
 
 </details>
 
