@@ -9,7 +9,7 @@
 <summary>Авторизация администратора</summary>
 
 ```
-POST /web/admin/auth/login
+POST /web/auth/login
 ```
 
 **Json-тело запроса:**
