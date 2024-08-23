@@ -229,11 +229,11 @@ PUT /firewall/settings
 <details>
 <summary>Добавление правила</summary>
 
-* `POST /firewall/rules/forward?anchor_item_id=123&insert_after={true|false}` - раздел FORWARD;
-* `POST /firewall/rules/input?anchor_item_id=123&insert_after={true|false}` - раздел INPUT;
-* `POST /firewall/rules/dnat?anchor_item_id=123&insert_after={true|false}` - раздел DNAT;
-* `POST /firewall/rules/snat?anchor_item_id=123&insert_after={true|false}` - раздел SNAT;
-* `POST /firewall/rules/log?anchor_item_id=123&insert_after={true|false}` - раздел Логирование.
+* `POST /firewall/rules/forward?anchor_item_id=<id правила>&insert_after={true|false}` - раздел FORWARD;
+* `POST /firewall/rules/input?anchor_item_id=<id правила>&insert_after={true|false}` - раздел INPUT;
+* `POST /firewall/rules/dnat?anchor_item_id=<id правила>&insert_after={true|false}` - раздел DNAT;
+* `POST /firewall/rules/snat?anchor_item_id=<id правила>&insert_after={true|false}` - раздел SNAT;
+* `POST /firewall/rules/log?anchor_item_id=<id правила>&insert_after={true|false}` - раздел Логирование.
 
   * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое. Если отсутствует, то новое правило будет добавлено в конец таблицы;
   * `insert_after` - вставка до или после. Если значение `true` или отсутствует, то новое правило будет добавлено сразу после указанного в `anchor_item_id`. Если `false` - на месте указанного в `anchor_item_id`.
@@ -379,6 +379,359 @@ PUT /firewall/watch
    ...
 ]
 ```
+
+</details>
+
+### Проверка прохождения трафика
+
+</details>
+
+<details>
+<summary>Получение списка проверок</summary>
+
+```
+GET /firewall/checks_packets
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string",
+  "enabled": "boolean",
+  "protocol": "tcp|udp",
+  "src_ip": "string",
+  "src_port": "integer",
+  "dst_ip": "string",
+  "dst_port": "integer",
+  "incoming_interface": "string",
+  "expected_result": "drop|accept",
+  "comment": "string"
+}
+```
+
+* `id` - уникальный идентификатор проверки;
+* `enabled` - включена ли данная проверка;
+* `protocol` - протокол, используемый в данной проверке. Может быть `tcp` или `udp`;
+* `src_ip` - адрес источника тестовых пакетов;
+* `src_port` - порт источника тестовых пакетов;
+* `dst_ip` - адрес назначения тестовых пакетов;
+* `dst_port` - порт назначения тестовых пакетов;
+* `incoming_interface` - id алиаса сетевого интерфейса, на который приходят тестовые пакеты;
+* `expected_result` - ожидаемый результат выполнения проверки. Может быть `drop` или `accept`;
+* `comment` - комментарий. Может быть пустым.
+
+</details>
+
+<details>
+<summary>Добавление новых проверок</summary>
+
+```
+POST /firewall/checks_packets
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+  "enabled": "boolean",
+  "protocol": "tcp|udp",
+  "src_ip": "string",
+  "src_port": "integer",
+  "dst_ip": "string",
+  "dst_port": "integer",
+  "incoming_interface": "string",
+  "expected_result": "drop|accept",
+  "comment": "string"
+}
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "id": "integer"
+}
+```
+
+* `id` - идентификатор созданной проверки.
+
+</details>
+
+<details>
+<summary>Редактирование проверок</summary>
+
+```
+PATCH /firewall/checks_packets/<id проверки>
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+  "enabled": "boolean",
+  "protocol": "tcp|udp",
+  "src_ip": "string",
+  "src_port": "integer",
+  "dst_ip": "string",
+  "dst_port": "integer",
+  "incoming_interface": "string",
+  "expected_result": "drop|accept",
+  "comment": "string",
+},
+```
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Удаление проверок</summary>
+
+```
+PATCH /firewall/checks_packets/<id проверки>
+```
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Запуск проверок</summary>
+
+```
+POST /firewall/checks_start
+```
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Получение результатов проверок</summary>
+
+```
+GET /firewall/checks_result
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "block_status": "boolean",
+  "in_progress": "boolean",
+  "check_datetime": "integer",
+  "data": {
+    "check_id": "CheckResult",  // объект CheckResult
+  }
+}
+```
+
+**CheckResult:**
+
+```json5
+{
+  "result": "drop|accept",
+  "rule_id": "string",
+  "verdict": "boolean"
+}
+```
+
+* `block_status` - текущий статус блокировки трафика, вызванный провалом проверок;
+* `in_progress` - выполняются ли проверки в данный момент;
+* `check_datetime` - время выполнения последних проверок в формате `YYYYMMDDHMS`;
+* `data` - словарь результатов проверок, ключ - uuid проверки, значение - объект `CheckResult`;
+* `result` - результат выполнения проверки. Может быть `drop` или `accept`;
+* `rule_id` - номер отработавшего правила. Например, `fwd.ngfw.2`;
+* `verdict` - совпал ли фактический результат с ожидаемым.
+
+</details>
+
+<details>
+<summary>Получение настроек блокировки трафика в случае неудачных проверок</summary>
+
+```
+GET /firewall/checks_settings
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "block_traffic": "boolean"
+}
+```
+
+* `block_traffic` - настройка блокировки прохождения трафика при провале какой-либо проверки.
+
+</details>
+
+<details>
+<summary>Изменение настроек блокировки трафика в случае неудачных проверок</summary>
+
+```
+PUT /firewall/checks_settings
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+  "block_traffic": "boolean"
+}
+```
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+## Контроль приложений
+
+<details>
+<summary>Получение списка правил</summary>
+
+```
+GET /application_control_backend/rules
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[ 
+    {
+        "action": "string", // ["drop"|"accept"]
+        "aliases": ["string"],
+        "comment": "string",
+        "enabled": "boolean",
+        "name": "string",
+        "parent_id": "string",
+        "protocols": ["string"],
+        "id": "integer"
+    },
+    ...
+ ]
+```
+
+* `action` - действие, применяемое к правилу;
+* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md));
+* `comment` - комментарий правила;
+* `enabled` - статус правила (true - включено, false - отключено);
+* `name` - имя правила;
+* `parent_id` - идентификатор родительской группы серверов;
+* `protocols` - список протоколов;
+* `id` - идентификатор правила.
+
+</details>
+
+<details>
+<summary>Создание нового правила</summary>
+
+```
+POST /application_control_backend/rules
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "parent_id": "string",
+    "name": "string",
+    "action": "string", // ["drop"|"accept"],
+    "comment": "string",
+    "aliases":["string"],
+    "protocols":["string"],
+    "enabled": "boolean"
+}
+```
+
+* `action` - действие, применяемое к правилу;
+* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md));
+* `comment` - комментарий правила;
+* `enabled` - статус правила (true - включено, false - отключено);
+* `name` - имя правила;
+* `parent_id` - идентификатор родительской группы серверов;
+* `protocols` - список протоколов.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "id": "integer"
+}
+```
+
+* `id` - идентификатор созданного правила.
+
+</details>
+
+<details>
+<summary>Изменение правила</summary>
+
+```
+PUT /application_control_backend/rules/<id правила>
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "parent_id": "string",
+    "name": "string",
+    "comment": "string",
+    "aliases": ["string"],
+    "protocols": ["string"],
+    "action": "string", // ["drop"|"accept"],
+    "enabled": "boolean"
+}
+```
+
+* `action` - действие, применяемое к правилу;
+* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md));
+* `comment` - комментарий правила;
+* `enabled` - статус правила (true - включено, false - отключено);
+* `name` - имя правила;
+* `parent_id` - идентификатор родительской группы серверов;
+* `protocols` - список протоколов;
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
+<summary>Изменение приоритета правила</summary>
+
+```
+PATCH /application_control_backend/rules/move
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "params": {
+      "id": "integer",
+      "anchor_item_id": "integer",
+      "insert_after": "boolean"
+    }
+}
+```
+
+* `id` - идентификатор правила;
+* `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое;
+* `insert_after` - вставка до или после. Если True, то вставить правило сразу после указанного в anchor_item_id, если False, то на месте указанного в anchor_item_id.
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Удаление правила</summary>
+
+```
+DELETE /application_control_backend/rules/<id правила>
+```
+
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -672,7 +1025,7 @@ GET /content-filter/rules
 <summary>Создание правила</summary>
 
 ```
-POST /content-filter/rules?anchor_item_id=123&insert_after={true|false}
+POST /content-filter/rules?anchor_item_id=<id правила>&insert_after={true|false}
 ```
 
 * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое. Если отсутствует, то новое правило будет добавлено в конец таблицы;
