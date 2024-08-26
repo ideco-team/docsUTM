@@ -60,14 +60,14 @@ sudo dnf -y install plasma-nm-strongswan
 
 3\. Заполните поля:
 
+![](/.gitbook/assets/connection-for-fedora1.png)
+
 * **Название** - название VPN-подключения;
 * **Address** - доменное имя шлюза для VPN-подключения;
 * **Certificate** - сертификат, загруженный на шаге 1;
 * **Authentication** - EAP;
 * **Username** - имя пользователя на Ideco NGFW;
 * **Password** - пароль пользователя на Ideco NGFW.
-
-![](/.gitbook/assets/connection-for-fedora1.png)
 
 4\. Нажмите **Применить** и подключитесь к Ideco NGFW.
 

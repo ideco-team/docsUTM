@@ -30,29 +30,29 @@
 
 3\. В появившемся окне заполните поля:
 
+![](/.gitbook/assets/connection-for-high-sierra-macos4.png)
+
 * **Интерфейс** - VPN;
 * **Тип VPN** - IKEv2;
 * **Имя службы** - имя подключения.
-
-![](/.gitbook/assets/connection-for-high-sierra-macos4.png)
 
 4\. Нажмите **Создать**;
 
 5\. Установите параметры подключения:
 
+![](/.gitbook/assets/connection-for-high-sierra-macos5.png)
+
 * **Адрес сервера** - адрес VPN-сервера;
 * **Удаленный ID** - продублируйте адрес VPN-сервера.
-
-![](/.gitbook/assets/connection-for-high-sierra-macos5.png)
 
 6\. Выберите **Настройки аутентификации**;
 
 7\. Укажите идентификационные данные и нажмите **OK**:
 
+![](/.gitbook/assets/connection-for-high-sierra-macos6.png)
+
 * **Имя пользователя** - имя пользователя, которому разрешено подключение по VPN;
 * **Пароль** - пароль пользователя.
-
-![](/.gitbook/assets/connection-for-high-sierra-macos6.png)
 
 8\. Нажмите **ОК**;
 
@@ -82,13 +82,13 @@
 
 2\. Нажмите **Добавить** в левом нижнем углу (иконка ![](/.gitbook/assets/connection-for-high-sierra-macos1.png));
 
-3\. В появившемся окне заполните:
+3\. В появившемся окне заполните поля:
+
+![](/.gitbook/assets/connection-for-high-sierra-macos8.png)
 
 * **Интерфейс** - VPN;
 * **Тип VPN** - L2TP через IPsec;
 * **Имя службы** - имя подключения.
-
-![](/.gitbook/assets/connection-for-high-sierra-macos8.png)
 
 4\. Нажмите **Создать**;
 
