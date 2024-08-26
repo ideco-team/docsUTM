@@ -79,7 +79,7 @@
 
 1\. Перейдите в раздел **Сервисы -> Сетевые интерфейсы**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/icon-ok-with.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/icon-ok-with.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**:
 
 ![](/.gitbook/assets/initial-setup6.png)
 

@@ -121,7 +121,7 @@ description: >-
 
 <details>
 
-<summary>Через редактирование объекта WMI-инфраструктуры (глобальную политику реестра) в Powershell (рекомендуется)</summary>
+<summary>Через редактирование объекта WMI-инфраструктуры (глобальную политику реестра) в PowerShell (рекомендуется)</summary>
 
 Значение для метода SelectNetworkAdapter - MAC-адрес сетевого интерфейса, который будет использоваться для IP-виртуализации. Выполните команду:
 ```
@@ -230,7 +230,7 @@ SeImpersonatePrivilege
 
 ![](/.gitbook/assets/RDP3.png)
 
-В объекте WMI-инфраструктуры (независимо от вида настройки самой IP-виртуализации) в Powershell выполните:
+В объекте WMI-инфраструктуры (независимо от вида настройки самой IP-виртуализации) в PowerShell выполните:
 ```
 $obj = gwmi -namespace "Root/CIMV2/TerminalServices" Win32_TSVirtualIP
 $obj

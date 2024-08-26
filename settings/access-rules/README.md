@@ -30,7 +30,7 @@ description: >-
 [ips/README.md](ips/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="user-ip-exceptions.md" %}
+{% content-ref url="ips/user-ip-exceptions.md" %}
 [ips/user-ip-exceptions.md](ips/user-ip-exceptions.md)
 {% endcontent-ref %}
 

@@ -16,8 +16,8 @@
 [backup.md](backup.md)
 {% endcontent-ref %}
 
-{% content-ref url="terminal.md" %}
-[terminal.md](terminal.md)
+{% content-ref url="terminal/README.md" %}
+[terminal/README.md](terminal/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="license-management.md" %}
