@@ -123,7 +123,7 @@
     * [Подключение Keenetic по SSTP или IPsec](settings/services/ipsec/site-to-site/keenetic-connection.md)
   * [Сертификаты](settings/services/certificates/README.md)
     * [Загрузка SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
-    * [Создание самоподписанного сертификата c помощью Powershell](settings/services/certificates/creating-ssl-sert-powershell.md)
+    * [Создание самоподписанного сертификата c помощью PowerShell](settings/services/certificates/creating-ssl-sert-powershell.md)
     * [Создание сертификата c помощью openssl](settings/services/certificates/creating-openssl-cert.md)
 * [Отчеты и журналы](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
