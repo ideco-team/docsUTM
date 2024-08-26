@@ -38,14 +38,14 @@
 
 <summary>Для PPTP</summary>
 
+<img src="/.gitbook/assets/connection-for-windows10-3.png" alt="" data-size="original">
+
 * Имя подключения - название создаваемого подключения;
 * Имя или адрес сервера - адрес VPN-сервера;
 * Тип VPN - протокол PPTP;
 * Тип данных для входа - имя пользователя и пароль;
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
-
-<img src="/.gitbook/assets/connection-for-windows10-3.png" alt="" data-size="original">
 
 После создания VPN-подключения выполните действия:
 
@@ -63,6 +63,8 @@
 
 **Важно:** L2TP IPsec клиенты, находящиеся за одним NAT, могут испытывать проблемы подключения, если их более одного. В решении проблемы поможет [инструкция](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device). Рекомендуем вместо L2TP IPsec использовать IKEv2 IPsec.
 
+<img src="/.gitbook/assets/connection-for-windows10-4.png" alt="" data-size="original">
+
 * Имя подключения - название создаваемого подключения;
 * Имя или адрес сервера - адрес VPN-сервера;
 * Тип VPN - протокол L2TP/IPsec с общим ключом;
@@ -70,8 +72,6 @@
 * Тип данных для входа - имя пользователя и пароль;
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
-
-<img src="/.gitbook/assets/connection-for-windows10-4.png" alt="" data-size="original">
 
 После создания VPN-подключения выполните действия:
 
@@ -105,14 +105,14 @@
 
 <summary>Для SSTP</summary>
 
+<img src="/.gitbook/assets/connection-for-windows10-5.png" alt="" data-size="original">
+
 * Имя подключения - название создаваемого подключения;
 * Имя или адрес сервера - адрес VPN-сервера в формате _адрес\_VPN\_сервера:порт_;
 * Тип VPN - протокол SSTP;
 * Тип данных для входа - имя пользователя и пароль;
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
-
-<img src="/.gitbook/assets/connection-for-windows10-5.png" alt="" data-size="original">
 
 После создания VPN-подключения выполните действия:
 
@@ -128,14 +128,14 @@
 
 <summary>Для IKEv2</summary>
 
+<img src="/.gitbook/assets/connection-for-windows10-6.png" alt="" data-size="original">
+
 * Имя подключения - название создаваемого подключения;
 * Имя или адрес сервера - адрес VPN-сервера;
 * Тип VPN - протокол IKEv2;
 * Тип данных для входа - имя пользователя и пароль;
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
-
-<img src="/.gitbook/assets/connection-for-windows10-6.png" alt="" data-size="original">
 
 После создания VPN-подключения укажите следующие параметры:
 
@@ -154,8 +154,6 @@
 5\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -> Изменить**:
 
 <img src="/.gitbook/assets/connection-for-windows10-8.png" alt="" data-size="original">
-
-
 
 ## Ошибки работы VPN-подключений
 
