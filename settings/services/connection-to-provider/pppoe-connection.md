@@ -32,6 +32,11 @@ description: >-
 ![](/.gitbook/assets/pppoe-connection.png)
 
 {% hint style="info" %}
+При подключении к провайдеру с использованием протокола PPPoE настройте DNS-сервер вручную, воспользовавшись [статьей](/settings/services/dns/dns-external.md).
+{% endhint %}
+
+
+{% hint style="info" %}
 Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
 
 Пример вывода команды:
