@@ -5,7 +5,7 @@
 {% endcontent-ref %}
 
 {% content-ref url="cluster.md" %}
-[cluster.md](cluster.md)
+[cluster.md](cluster/cluster.md)
 {% endcontent-ref %}
 
 {% content-ref url="server-update.md" %}
