@@ -27,6 +27,10 @@
 
 <table data-full-width="false"><thead><tr><th width="167">Количество пользователей</th><th width="161">Модель процессора</th><th width="114">Объем оперативной памяти</th><th width="124">Дисковая подсистема</th><th>Сетевые адаптеры</th></tr></thead><tbody><tr><td>до 100</td><td>Intel Core i3 или совместимый</td><td>16 ГБ</td><td>150 ГБ</td><td>2 шт.</td></tr><tr><td>до 350</td><td>Intel Core i5 или совместимый</td><td>16 ГБ</td><td>240 ГБ</td><td>2 шт.</td></tr><tr><td>до 1000</td><td>Intel Core i7, Xeon-E, Xeon Scalable от 8 ядер или совместимый</td><td>32 ГБ</td><td>480 ГБ</td><td>2 шт.</td></tr><tr><td>от 1000 до 3000</td><td>Intel Xeon Silver 4214R или совместимый</td><td>64 ГБ</td><td>480 ГБ</td><td>2 шт.</td></tr><tr><td>от 3000</td><td>Xeon Gold 6238R 28 Cores или совместимый</td><td>64 ГБ</td><td>480 ГБ</td><td>2 шт.</td></tr></tbody></table>
 
+{% hint style="info" %}
+Рекомендуемая дисковая подсистема - PLP, SSD с защитой данных при сбое в питании. Например, Kingston DC1000B (SEDC1000BM8/240G).
+{% endhint %}
+
 ## Источники обновлений данных
 
 Ideco NGFW получает обновления из следующих источников:
