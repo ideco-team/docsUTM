@@ -8,17 +8,26 @@
 POST /web/auth/login
 ```
 
-**Json тело запроса:**
+**Json-тело запроса:**
 
-```
+```json5
 {
-    "login": "string",    
-    "password": "string",    
-    "rest_path": "string" (по умолчанию строка со слэшем "/")
+    "login": "string",
+    "password": "string",
+    "rest_path": "string",
 }
 
 ```
-После успешной авторизации, сервер Ideco NGFW передает в заголовках куки. Пример значений:
+* `login` - логин. Каталог администратора указывается после @. Примеры:
+    * `admin` - локальный админ, без собаки;
+    * `admin@ad_domain.ru` - AD/ALD администратор;
+    * `admin@radius` - для RADIUS администраторов @radius.
+* `password` - пароль;
+* `rest_path` - префикс URL на который выставлять cookie. Например, / или /rest.
+
+**Ответ на успешный запрос:** 200 ОК
+
+После успешной авторизации сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
 ```
 set-cookie: insecure-ideco-session=02428c1c-fcd5-42ef-a533-5353da743806
@@ -31,11 +40,14 @@ set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4c
 
 <details>
 
-<summary>Разавторизация</summary>
+<summary>Разавторизация администратора</summary>
 
 ```
 DELETE /web/auth/login
 ```
+
+**Ответ на успешный запрос:** 200 ОК
+
 После успешной разавторизации сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
 ```
@@ -54,7 +66,7 @@ GET /license
 
 **Пример ответа на успешный запрос:**
 
-```
+```json5
 {
     "modules": {
         "active_directory": {
@@ -117,7 +129,7 @@ GET /license
 
 **Если лицензия для данного сервера отсутствует:**
 
-```
+```json5
 {
     "registered": false,
     "has_connection": true,
@@ -138,13 +150,13 @@ GET /gather_stat
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-      "enabled": boolean
+    "enabled": "boolean"
    }
 ```
 
-Значение `"enabled"` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
+Значение `enabled` равно `true`, если сбор анонимной статистики о работе сервера включен, и `false`, если выключен.
 
 ### Изменение настроек
 
@@ -154,13 +166,13 @@ PUT /gather_stat
 
 **Json-тело запроса**
 
-```
+```json5
 {
-      "enabled": boolean
+    "enabled": "boolean"
    }
 ```
 
-Возвращает HTTP-код **200** OK.
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -176,7 +188,7 @@ POST /aliases/ip_addresses
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "comment": "string",    
     "title": "string",
@@ -186,7 +198,7 @@ POST /aliases/ip_addresses
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -204,7 +216,7 @@ POST /aliases/ip_address_lists
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -214,7 +226,7 @@ POST /aliases/ip_address_lists
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -232,7 +244,7 @@ POST /aliases/ip_ranges
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -243,7 +255,7 @@ POST /aliases/ip_ranges
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -261,17 +273,17 @@ POST /aliases/lists/addresses
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": ["string"] (идентификаторы объектов IP-адреса, через запятую)
+    "values": ["string"] // (идентификаторы объектов IP-адреса, через запятую)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -288,17 +300,17 @@ POST /aliases/networks
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "title": "string", (максимальная длина 42 символа)
-    "comment": "string", (может быть пустым, максимальная длина 256 символов)
-    "value": "string" (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
+    "title": "string", // (максимальная длина - 42 символа)
+    "comment": "string", // (может быть пустым, максимальная длина - 255 символов)
+    "value": "string" // (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -315,17 +327,17 @@ POST /aliases/domains
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "title": "string", (максимальная длина 42 символа)
-    "comment": "string", (может быть пустым, максимальная длина 256 символов)
-    "value": "string" (домен)
+    "title": "string", // (максимальная длина - 42 символа)
+    "comment": "string", // (может быть пустым, максимальная длина - 255 символов)
+    "value": "string" // (домен)
 }
 ```
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string"
 }
@@ -343,17 +355,17 @@ POST /aliases/ports
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "value": integer (номер порта)
+    "value": "integer" // (номер порта)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -371,18 +383,18 @@ POST /aliases/port_ranges
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "start": integer, (первый порт диапазона)
-    "end": integer (последний порт диапазона)
+    "start": "integer", // (первый порт диапазона)
+    "end": "integer" // (последний порт диапазона)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -400,17 +412,17 @@ POST /aliases/lists/ports
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] (список портов)
+    "values": [ "string" ] // (список портов)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -428,19 +440,19 @@ POST /aliases/time_ranges
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-    "title":"string",
-    "comment":"string",
-    "weekdays":[int], (список дней недели, где 1-пн, 2-вт ... 7-вс)
-    "start":"string", (начало временного отрезка в формате: ЧЧ:ММ)
-    "end":"string"(конец временного отрезка в формате: ЧЧ:ММ)
+    "title": "string",
+    "comment": "string",
+    "weekdays": ["integer"], // (список дней недели, где 1-пн, 2-вт ... 7-вс)
+    "start": "string", // (начало временного отрезка в формате: ЧЧ:ММ)
+    "end": "string"// (конец временного отрезка в формате: ЧЧ:ММ)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -458,17 +470,17 @@ POST /aliases/lists/times
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] (список id объектов Время)
+    "values": [ "string" ] // (список идентификаторов объектов Время)
 }
 ```
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -478,7 +490,7 @@ POST /aliases/lists/times
 
 <details>
 
-<summary>Получение ID объектов</summary>
+<summary>Получение идентификаторов объектов</summary>
 
 ```
 GET /aliases
@@ -486,24 +498,24 @@ GET /aliases
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 [
     {
-        comment: "string"
-        title: "string"
-        type: "string"
-        values: [
-            "string" | integer
-            "string" | integer
+        "comment": "string"
+        "title": "string"
+        "type": "string"
+        "values": [
+            "string" | "integer"
+            "string" | "integer"
         ],
-        id: "type.id.1"
+        "id": "type.id.1"
     }, 
 {
-        comment: "string"
-        title: "string"
-        type: "string"
-        value: "string" | integer
-        id: "type.id.1"
+        "comment": "string"
+        "title": "string"
+        "type": "string"
+        "value": "string" | "integer"
+        "id": "type.id.1"
     },
     ...
 ] 
@@ -511,39 +523,39 @@ GET /aliases
 
 В качестве ответа будет возвращен список всех объектов, существующих в NGFW:
 
-* "protocol.ah" - протокол AH;
-* "protocol.esp" - протокол ESP;
-* "protocol.gre" - протокол GRE;
-* "protocol.icmp" - протокол ICMP;
-* "protocol.tcp" - протокол TCP;
-* "protocol.udp" - протокол UDP;
-* "quota.exceeded"- IP-адреса пользователей, которые превысили квоту;
-* "any" - допускается любое значение в этом поле;
-* "interface.external_any" - все внешние интерфейсы (равно таблице *Подключение к провайдеру* в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
-* "interface.external_eth" - внешние Ethernet-интерфейсы;
-* "interface.external_vpn" - внешние VPN-интерфейсы;
-* "interface.ipsec_any" - все IPsec-интерфейсы;
-* "interface.local_any" - все локальные интерфейсы;
-* "interface.utm_outgoing" - исходящий трафик устройства;
-* "interface.vpn_traffic" - клиентский VPN трафик;
-* "group.id." - идентификатор группы пользователей;
-* "interface.id." - идентификатор конкретного интерфейса;
-* "security_group.guid." - идентификатор группы безопасности AD;
-* "user.id." - идентификатор пользователя;
-* "domain.id." - идентификатор домена;
-* "ip.id." - идентификатор IP-адреса;
-* "iplist." - идентификатор объекта *GeoIP (Страна)*;
-* "list_of_iplists.id." - идентификатор объекта *Список стран*;
-* "ip_range.id." - идентификатор объекта *Диапазон IP-адресов*;
-* "ip_address_list.id." - идентификатор объекта *Список IP-адресов*;
-* "address_list.id." - идентификатор объекта *Список IP-объектов*;
-* "port_list.id." - идентификатор объекта *Список портов*;
-* "time_list.id." - идентификатор объекта *Расписание*;
-* "subnet.id." - идентификатор объекта *Подсеть*;
-* "port_range.id." - идентификатор объекта *Диапазон портов*;
-* "port.id." - идентификатор объекта *Порт*;
-* "time_range.id." - идентификатор объекта *Время*;
-* "zero_subnet" - сеть `0.0.0.0/0`.
+* `protocol.ah` - протокол AH;
+* `protocol.esp` - протокол ESP;
+* `protocol.gre` - протокол GRE;
+* `protocol.icmp` - протокол ICMP;
+* `protocol.tcp` - протокол TCP;
+* `protocol.udp` - протокол UDP;
+* `quota.exceeded`- IP-адреса пользователей, которые превысили квоту;
+* `any` - допускается любое значение в этом поле;
+* `interface.external_any` - все внешние интерфейсы (равно таблице *Подключение к провайдеру* в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
+* `interface.external_eth` - внешние Ethernet-интерфейсы;
+* `interface.external_vpn` - внешние VPN-интерфейсы;
+* `interface.ipsec_any` - все IPsec-интерфейсы;
+* `interface.local_any` - все локальные интерфейсы;
+* `interface.utm_outgoing` - исходящий трафик устройства;
+* `interface.vpn_traffic` - клиентский VPN трафик;
+* `group.id.` - идентификатор группы пользователей;
+* `interface.id.` - идентификатор конкретного интерфейса;
+* `security_group.guid.` - идентификатор группы безопасности AD;
+* `user.id.` - идентификатор пользователя;
+* `domain.id.` - идентификатор домена;
+* `ip.id.` - идентификатор IP-адреса;
+* `iplist.` - идентификатор объекта *GeoIP (Страна)*;
+* `list_of_iplists.id.` - идентификатор объекта *Список стран*;
+* `ip_range.id.` - идентификатор объекта *Диапазон IP-адресов*;
+* `ip_address_list.id.` - идентификатор объекта *Список IP-адресов*;
+* `address_list.id.` - идентификатор объекта *Список IP-объектов*;
+* `port_list.id.` - идентификатор объекта *Список портов*;
+* `time_list.id.` - идентификатор объекта *Расписание*;
+* `subnet.id.` - идентификатор объекта *Подсеть*;
+* `port_range.id.` - идентификатор объекта *Диапазон портов*;
+* `port.id.` - идентификатор объекта *Порт*;
+* `time_range.id.` - идентификатор объекта *Время*;
+* `zero_subnet` - сеть `0.0.0.0/0`.
 
 </details>
 
@@ -552,12 +564,12 @@ GET /aliases
 <summary>Редактирование объекта IP-адрес</summary>
 
 ```
-PUT /aliases/ip_addresses/id
+PUT /aliases/ip_addresses/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -565,7 +577,7 @@ PUT /aliases/ip_addresses/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -574,12 +586,12 @@ PUT /aliases/ip_addresses/id
 <summary>Редактирование объекта Список IP-адресов</summary>
 
 ```
-PUT /aliases/ip_address_lists/{id}
+PUT /aliases/ip_address_lists/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -587,7 +599,7 @@ PUT /aliases/ip_address_lists/{id}
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -596,12 +608,12 @@ PUT /aliases/ip_address_lists/{id}
 <summary>Редактирование объекта Диапазон IP-адресов</summary>
 
 ```
-PUT /aliases/ip_ranges/id
+PUT /aliases/ip_ranges/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -610,7 +622,7 @@ PUT /aliases/ip_ranges/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -619,12 +631,12 @@ PUT /aliases/ip_ranges/id
 <summary>Редактирование объекта Список IP-объектов</summary>
 
 ```
-PUT /aliases/lists/addresses/id
+PUT /aliases/lists/addresses/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -632,7 +644,7 @@ PUT /aliases/lists/addresses/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -642,12 +654,12 @@ PUT /aliases/lists/addresses/id
 <summary>Редактирование объекта Подсеть</summary>
 
 ```
-PUT /aliases/networks/id
+PUT /aliases/networks/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -655,7 +667,7 @@ PUT /aliases/networks/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -664,12 +676,12 @@ PUT /aliases/networks/id
 <summary>Редактирование объекта Домен</summary>
 
 ```
-PUT /aliases/domains/id
+PUT /aliases/domains/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -677,7 +689,7 @@ PUT /aliases/domains/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -686,12 +698,12 @@ PUT /aliases/domains/id
 <summary>Редактирование объекта Порт</summary>
 
 ```
-PUT /aliases/ports/id
+PUT /aliases/ports/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -699,7 +711,7 @@ PUT /aliases/ports/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -708,12 +720,12 @@ PUT /aliases/ports/id
 <summary>Редактирование объекта Диапазон портов</summary>
 
 ```
-PUT /aliases/port_ranges/id
+PUT /aliases/port_ranges/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -722,7 +734,7 @@ PUT /aliases/port_ranges/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -731,12 +743,12 @@ PUT /aliases/port_ranges/id
 <summary>Редактирование объекта Порты</summary>
 
 ```
-PUT /aliases/lists/ports/id
+PUT /aliases/lists/ports/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -744,7 +756,7 @@ PUT /aliases/lists/ports/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -753,23 +765,23 @@ PUT /aliases/lists/ports/id
 <summary>Редактирование объекта Время</summary>
 
 ```
-PUT /aliases/time_ranges/id
+PUT /aliases/time_ranges/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
-    "weekdays": [ int ],
+    "weekdays": [ "integer" ],
     "start": "string",
     "end": "string",
-    "period": {"first": int, "last": int} | null
+    "period": {"first": "integer", "last": "integer"} | null
 }
 ```
 
-**Ответ на запрос пустой**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -778,12 +790,12 @@ PUT /aliases/time_ranges/id
 <summary>Редактирование объекта Расписание</summary>
 
 ```
-PUT /aliases/lists/times/id
+PUT /aliases/lists/times/<id объекта>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "title": "string",
     "comment": "string",
@@ -791,7 +803,7 @@ PUT /aliases/lists/times/id
 }
 ```
 
-**Ответ на запрос пустой.**
+**Ответ на успешный запрос:** 200 ОК
 
 </details>
 
@@ -807,7 +819,7 @@ POST /content-filter/users_categories
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -815,11 +827,11 @@ POST /content-filter/users_categories
 }
 ```
 
-**urls** - список url. Полный путь до страницы или только доменное имя. В пути может присутствовать любое количество любых символов.
+* `urls` - список адресов. Полный путь до страницы или только доменное имя, любое количество любых символов.
 
 **Ответ на успешный запрос:** 
 
-```
+```json5
 {
     "id": "string"
 }
@@ -837,11 +849,11 @@ GET /content-filter/users_categories
 
 **Json-ответ на запрос:**
 
-```
+```json5
 [
     {
-        "id": "string", (номер категории, вида - users.id.1)
-        "name": "string", (название категории, не пустая строка)
+        "id": "string", // (номер категории, вида - users.id.1)
+        "name": "string", // (название категории, не пустая строка)
         "comment": "string",
         "urls": ["string"] 
     },
@@ -849,21 +861,21 @@ GET /content-filter/users_categories
 ]
 ```
 
-**urls** - список url. Либо полный путь до страницы, либо только доменное имя. В пути может присутствовать любое количество любых символов.
+* `urls` - список адресов. Полный путь до страницы или только доменное имя, любое количество любых символов.
 
 </details>
 
 <details>
 
-<summary>Редактирование</summary>
+<summary>Редактирование пользовательских категорий</summary>
 
 ```
-PUT /content-filter/users_categories/{category_id}
+PUT /content-filter/users_categories/<id категории>
 ```
 
 **Json-тело запроса:**
 
-```
+```json5
 {
     "name": "string",
     "comment": "string",
@@ -873,7 +885,7 @@ PUT /content-filter/users_categories/{category_id}
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "string",
     "name": "string",
@@ -895,11 +907,11 @@ GET /netscan_backend
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
-   "enabled": boolean
-   "group_id": integer (идентификатор группы, в которую будут добавлены обнаруженные устройства)
-   "networks": ["string"] (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
+   "enabled": "boolean"
+   "group_id": "integer" // (идентификатор группы, в которую будут добавлены обнаруженные устройства)
+   "networks": ["string"] // (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
 }
 ```
 
@@ -914,15 +926,15 @@ PUT /netscan_backend
 
 **Json-тело запроса:**
 
-```
+```json5
 {
-   "enabled": boolean,
-   "group_id": integer,
+   "enabled": "boolean",
+   "group_id": "integer",
    "networks": ["string"]
 }
 ```
 
-Возвращает HTTP-код **200** OK.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
