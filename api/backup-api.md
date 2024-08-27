@@ -88,7 +88,7 @@ PUT /backup/settings
 }
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -129,29 +129,32 @@ GET /backup/backups
 **Ответ на успешный запрос:**
 
 ```json5
-{
-   "id": "string",
-   "version": {
-      "major": "integer",
-      "minor": "integer",
-      "build": "integer",
-      "timestamp": "integer",
-      "vendor": "Ideco",
-      "product": "UTM" | "CC",
-      "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
-      "release_type": "release" | "beta" | "devel"
-   },
-   "timestamp": "float",
-   "comment": "string",
-   "md5": "string",
-   "size": "integer",
-   "fast_restore_allowed": "boolean"
-}
+[
+   {
+      "id": "string",
+      "version": {
+         "major": "integer",
+         "minor": "integer",
+         "build": "integer",
+         "timestamp": "integer",
+         "vendor": "Ideco",
+         "product": "UTM" | "CC",
+         "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
+         "release_type": "release" | "beta" | "devel"
+      },
+      "timestamp": "float",
+      "comment": "string",
+      "md5": "string",
+      "size": "integer",
+      "fast_restore_allowed": "boolean"
+   }
+...
+]
 ```
 
 * `id` - идентификатор бекапа;
 * `version` - версия системы:
-  * `major` -мажорный номер версии;
+  * `major` - мажорный номер версии;
   * `minor` - минорный номер версии;
   * `build` - номер сборки;
   * `timestamp` - время выхода версии; 
@@ -174,7 +177,7 @@ GET /backup/backups
 GET /backup/download/<id бекапа>
 ```
 
-Ответ: тело бекапа.
+**Ответ на успешный запрос:** тело бекапа.
 
 </details>
 
@@ -205,7 +208,7 @@ POST /backup/upload
 POST /backup/backups/<id бекапа>/apply
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -216,7 +219,7 @@ POST /backup/backups/<id бекапа>/apply
 POST /backup/backups/<id бекапа>/apply/fast
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -227,6 +230,6 @@ POST /backup/backups/<id бекапа>/apply/fast
 DELETE /backup/backups/<id бекапа>
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>

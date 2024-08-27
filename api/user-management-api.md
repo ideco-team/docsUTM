@@ -21,7 +21,7 @@ GET /user_backend/users
         "login": "string",
         "parent_id": "integer",
         "enabled": "boolean",
-        "domain_type": "string",  // domain_type ['local'|'ad'|'ald'|'radius']
+        "domain_type": "local" | "ad" | "ald" | "radius",
         "domain_name": "string",
         "ldap_guid": "string",
         "phone_number": "string",
@@ -30,14 +30,14 @@ GET /user_backend/users
 ]
 ```
 
-* `id` - уникальный идентификатор пользователя;
+* `id` - идентификатор пользователя;
 * `name` - имя пользователя;
 * `login` - логин пользователя;
-* `parent_id` - id-группы;
+* `parent_id` - идентификатор группы;
 * `enabled` - соответствует опции **Запретить доступ** (false -  опция **Запретить доступ** не включена, true - включена);
 * `domain_type` - тип домена;
 * `domain_name` - имя домена, из которого импортирован пользователь;
-* `ldap_guid` - уникальный идентификатор объекта AD;
+* `ldap_guid` - идентификатор объекта AD;
 * `phone_number` - номер телефона пользователя;
 * `comment` - комментарий.
 
@@ -47,7 +47,7 @@ GET /user_backend/users
 <summary>Изменение одного пользователя</summary>
 
 ```
-PUT /user_backend/users/<id>
+PUT /user_backend/users/<id пользователя>
 ```
 
 **Json-тело запроса:**
@@ -68,11 +68,11 @@ PUT /user_backend/users/<id>
 
 * `name` - имя пользователя;
 * `login` - логин пользователя;
-* `parent_id` - id-группы;
-* `enabled` - оответствует опции **Запретить доступ** (false -  опция **Запретить доступ** не включена, true - включена);
+* `parent_id` - идентификатор группы;
+* `enabled` - соответствует опции **Запретить доступ** (false -  опция **Запретить доступ** не включена, true - включена);
 * `domain_type` - тип домена;
 * `domain_name` - имя домена, из которого импортирован пользователь;
-* `ldap_guid` - уникальный идентификатор объекта AD;
+* `ldap_guid` - идентификатор объекта AD;
 * `phone_number` - номер телефона пользователя;
 * `comment` - комментарий.
 
@@ -84,10 +84,8 @@ PUT /user_backend/users/<id>
 <summary>Удаление пользователя</summary>
 
 ```
-DELETE /user_backend/users/<id>
+DELETE /user_backend/users/<id пользователя>
 ```
-
-* `id` - уникальный идентификатор пользователя.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -97,12 +95,8 @@ DELETE /user_backend/users/<id>
 <summary>Запрет удаленного подключения для пользователя</summary>
 
 ```
-PATCH /user_backend/users/<id>/disable-vpn
+PATCH /user_backend/users/<id пользователя>/disable-vpn
 ```
-
-* `id` - уникальный идентификатор пользователя.
-
-**Тело запроса пустое**
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -131,7 +125,7 @@ POST /user_backend/users
 * `name` - имя пользователя;
 * `login` - логин пользователя;
 * `psw` - пароль пользователя;
-* `parent_id` - id-группы;
+* `parent_id` - идентификатор группы;
 * `phone_number` - номер телефона пользователя;
 * `comment` - комментарий.
 
@@ -145,7 +139,8 @@ POST /user_backend/users
 
 * `id` - идентификатор добавленного пользователя.
 
-**Если пользователь с указанным логином или именем существует, то исключение с описанием ошибки**
+Если пользователь с указанным логином или именем существует, то исключение с описанием ошибки.
+
 </details>
 
 <details>
@@ -165,7 +160,7 @@ POST /user_backend/groups
 ```
 
 * `name` - имя группы;
-* `parent_id` - id-группы;
+* `parent_id` - идентификатор группы;
 
 
 **Ответ на успешный запрос:**
@@ -178,8 +173,7 @@ POST /user_backend/groups
 
 * `id` - идентификатор добавленной группы.
 
-
-Если группа с указанным именем у указанного предка существует, то код ответа 542 c описанием ошибки
+Если группа с указанным именем у указанного предка существует, то код ответа 542 c описанием ошибки.
 
 </details>
 
@@ -206,12 +200,12 @@ GET /user_backend/groups
 ]
 ```
 
-* `id` - id группы;
+* `id` - идентификатор группы;
 * `name` - имя группы;
-* `parent_id` - id родительской группы;
+* `parent_id` - идентификатор родительской группы;
 * `domain_type` - тип домена;
 * `domain_name` - имя домена, из которого импортирована группа;
-* `ldap_guid` - уникальный идентификатор объекта AD.
+* `ldap_guid` - идентификатор объекта AD.
 
 </details>
 
@@ -219,7 +213,7 @@ GET /user_backend/groups
 <summary>Изменение группы</summary>
 
 ```
-PUT /user_backend/groups/<id>
+PUT /user_backend/groups/<id группы>
 ```
 
 **Json-тело запроса:**
@@ -235,10 +229,10 @@ PUT /user_backend/groups/<id>
 ```
 
 * `name` - имя группы;
-* `parent_id` - id родительской группы;
+* `parent_id` - идентификатор родительской группы;
 * `domain_type` - тип домена;
 * `domain_name` - имя домена, из которого импортирована группа;
-* `ldap_guid` - уникальный идентификатор объекта AD.
+* `ldap_guid` - идентификатор объекта AD.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -248,7 +242,7 @@ PUT /user_backend/groups/<id>
 <summary>Удаление группы</summary>
 
 ```
-DELETE /user_backend/groups/<id>
+DELETE /user_backend/groups/<id группы>
 ```
 
 **Ответ на успешный запрос:** 200 ОК
@@ -259,7 +253,7 @@ DELETE /user_backend/groups/<id>
 <summary>Смена пароля пользователя</summary>
 
 ```
-PUT /user_backend/change_password/<id>
+PUT /user_backend/change_password/<id пользователя>
 ```
 
 

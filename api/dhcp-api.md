@@ -16,9 +16,9 @@ GET /dhcp_server/status
 ```json5
 [
   {
-    "name": "string",
-    "status": "active" | "activating" | "deactivating" | "failed" | "inactive" | "reloading",
-    "msg": ["string"]
+      "name": "string",
+      "status": "active" | "activating" | "deactivating" | "failed" | "inactive" | "reloading",
+      "msg": ["string"]
   }
 ]
 ```
@@ -43,44 +43,44 @@ GET /dhcp_server/settings
 ```json5
 [
   {
-        "enabled": "boolean",
-        "interface": "string",
-        "relay": {
-            "external_servers": [
-                "string"
-            ]
-        },
-        "server": null,
-        "id": "string"
+      "enabled": "boolean",
+      "interface": "string",
+      "relay": {
+          "external_servers": [
+              "string"
+          ]
+      },
+      "server": null,
+      "id": "string"
     },
   {
-        "enabled": "boolean",
-        "interface": "string",
-        "relay": null,
-        "server": {
-            "dns": ["string"],
-            "domain": "string",
-            "gateway": "string",
-            "lease_time": "integer",
-            "options": [
-                {
-                    "comment": "string",
-                    "enabled": "boolean",
-                    "forced": "boolean",
-                    "option": "string"
+      "enabled": "boolean",
+      "interface": "string",
+      "relay": null,
+      "server": {
+          "dns": ["string"],
+          "domain": "string",
+          "gateway": "string",
+          "lease_time": "integer",
+          "options": [
+              {
+                  "comment": "string",
+                  "enabled": "boolean",
+                  "forced": "boolean",
+                  "option": "string"
                 }
             ],
-            "ranges": [ "string" ],
-            "routes": [ {
-                    "destination": "string",
-                    "gateway": "string"
+          "ranges": [ "string" ],
+          "routes": [ {
+                  "destination": "string",
+                  "gateway": "string"
                 } ],
-            "tftp_filename": "string",
-            "tftp_server": "string",
-            "wins": [ "string" ],
-            "wpad_enabled": "boolean"
+          "tftp_filename": "string",
+          "tftp_server": "string",
+          "wins": [ "string" ],
+          "wpad_enabled": "boolean"
         },
-        "id": "string"
+      "id": "string"
     },
     ...
 ]
@@ -96,15 +96,9 @@ GET /dhcp_server/settings
   * `domain` - DNS-суффикс;
   * `gateway` - шлюз для направления трафика по умолчанию. Если поле не заполнено, шлюзом будет выступать IP-адрес выбранного интерфейса;
   * `lease_time` - время аренды (в минутах);
-  * `options` - опции dnsmasq:
-    - `comment` - комментарий (может быть пустым);
-    - `enabled` - включена или отключена опция;
-    - `forced` - принудительная отправка опции клиенту;
-    - `option` - значение опции;
+  * `options` - опции dnsmasq (`comment` - комментарий, может быть пустым; `enabled` - включена или отключена опция; `forced` - принудительная отправка опции клиенту; `option` - значение опции);
   * `ranges` - диапазон IP-адресов для выдачи;
-  * `routes` - статические маршруты:
-    - `destination` - хост;
-    - `gateway` - шлюз;
+  * `routes` - статические маршруты (`destination` - хост, `gateway` - шлюз);
   * `tftp_filename` - имя файла для загрузки по TFTP;
   * `tftp_server` - IP-адрес TFTP-сервера для настройки загрузки образа по сети;
   * `wins` - IP-адрес WINS-сервера;
@@ -156,14 +150,14 @@ POST /dhcp_server/settings
 
 ```json5
 {
-      "enabled": "boolean",
-      "interface": "string",
-      "relay": {
-          "external_servers": [
-              "string"
-          ]
-      },
-      "server": null
+    "enabled": "boolean",
+    "interface": "string",
+    "relay": {
+        "external_servers": [
+            "string"
+        ]
+    },
+    "server": null
   }
 ```
 
@@ -171,7 +165,7 @@ POST /dhcp_server/settings
 
 ```json5
 {
-  "id": "string",
+    "id": "string"
 }
 ```
 
@@ -188,15 +182,15 @@ PATCH /dhcp_server/settings/<id настройки>
 
 ```json5
 {
-      "relay": {
-          "external_servers": [
-              "string"
-          ]
-      }
+    "relay": {
+        "external_servers": [
+            "string"
+        ]
+    }
   }
 ```
 
-Ответ: Статус 200
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -207,7 +201,7 @@ PATCH /dhcp_server/settings/<id настройки>
 DELETE /dhcp_server/settings/<id настройки>
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -224,14 +218,14 @@ GET /dhcp_server/static_leases
 
 ```json5
 [
-    {
-        "comment": "",
-        "enabled": true,
-        "ip_address": "192.168.0.40",
-        "mac": "50:46:5d:6e:8c:20",
-        "id": "3e4827dd-5e0c-4932-98b1-fa2d9826b0ce"
-    },
-    ...
+  {
+      "comment": "",
+      "enabled": true,
+      "ip_address": "192.168.0.40",
+      "mac": "50:46:5d:6e:8c:20",
+      "id": "3e4827dd-5e0c-4932-98b1-fa2d9826b0ce"
+  },
+  ...
 ]
 ```
 
@@ -285,7 +279,7 @@ PATCH /dhcp_server/static_leases/<id статической привязки>
   }
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -296,6 +290,6 @@ PATCH /dhcp_server/static_leases/<id статической привязки>
 DELETE /dhcp_server/static_leases/<id статической привязки>
 ```
 
-Ответ: 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>

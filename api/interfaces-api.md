@@ -15,7 +15,7 @@ GET /network/connections
 
 ```json5
 [
-  "LAN|WAN|PPTP|L2TP|PPPoE"
+  "LAN" | "WAN" | "PPTP" | "L2TP" | "PPPoE"
 ]
 ```
 
@@ -23,25 +23,25 @@ GET /network/connections
 
 ```json5
 {
-    "id": "int",
+    "id": "integer",
     "type": "lan",
     "title": "string",
     "enabled": "boolean",
     "mac": "string",
     "enable_dhcp": "boolean",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "dns": ["string"],
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `title` - название интерфейса, не может быть пустым;
-* `enabled` - включен или выключен данный интерфейс;
-* `mac` - MAC-адрес сетевой карты или id агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
+* `enabled` - включен или выключен интерфейс;
+* `mac` - MAC-адрес сетевой карты или идентификатор агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
 * `addresses` - список адресов в формате "IP/prefix". Может быть пустым, если включено получение
   адресов по DHCP;
 * `gateway` - IP-адрес шлюза. Может быть равен `null`, если включено получение адресов по DHCP;
@@ -54,25 +54,25 @@ GET /network/connections
 
 ```json5
 {
-    "id": "int",
+    "id": "integer",
     "type": "wan",
     "title": "string",
     "enabled": "boolean",
     "mac": "string",
     "enable_dhcp": "boolean",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "dns": ["string"],
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `title` - название интерфейса, не может быть пустым;
 * `enabled` - включен или выключен данный интерфейс;
-* `mac` - MAC-адрес сетевой карты или id агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
+* `mac` - MAC-адрес сетевой карты или идентификатор агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
 * `enable_dhcp` - получать ли адрес интерфейса и адрес шлюза от провайдера по DHCP;
 * `addresses` - список адресов. Адреса в формате "IP/prefix". Может быть пустым, если включено получение
   адресов по DHCP;
@@ -86,7 +86,7 @@ GET /network/connections
 
 ```json5
 {
-    "id": "int",
+    "id": "integer",
     "type": "pptp",
     "title": "string",
     "enabled": "boolean",
@@ -96,35 +96,35 @@ GET /network/connections
     "mac": "string",
     "enable_dhcp": "boolean",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "dns": ["string"],
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `title` - название интерфейса, не может быть пустым;
-* `enabled` - включен или выключен данный интерфейс;
+* `enabled` - включен или выключен интерфейс;
 * `server` - IP-адрес или доменное имя PPTP-сервера, к которому осуществляется подключение;
 * `login` - логин на сервере PPTP, не может быть пустым;
 * `password` - пароль на сервере PPTP, не может быть пустым;
-* `mac` - MAC-адрес сетевой карты или id агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
+* `mac` - MAC-адрес сетевой карты или идентификатор агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
 * `enable_dhcp` - получать ли адрес интерфейса и адрес шлюза от провайдера по DHCP;
 * `addresses` - список адресов в формате "IP/prefix". Может быть пустым, если включено получение
   адресов по DHCP;
 * `gateway` - IP-адрес шлюза. Может быть равен `null`, если включено получение адресов по DHCP или PPTP-сервер находится в той же подсети, что назначена на интерфейс;
 * `dns` - список IP-адресов DNS, может быть пустым независимо от флага включения DHCP;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно). Может быть равен `null` если не назначен;
-* `zone` - алиас зоны. Может быть равен `null` если не назначен;
+* `zone` - алиас зоны. Может быть равен `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN-а.
 
 **Объект L2TP (Подключение к провайдеру по L2TP):**
 
 ```json5
 {
-    "id": "int",
+    "id": "integer",
     "type": "l2tp",
     "title": "string",
     "enabled": "boolean",
@@ -134,35 +134,35 @@ GET /network/connections
     "mac": "string",
     "enable_dhcp": "boolean",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "dns": ["string"],
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `title` - название интерфейса, не может быть пустым;
 * `enabled` - включен или выключен данный интерфейс;
 * `server` - IP-адрес или доменное имя L2TP-сервера, к которому осуществляется подключение;
 * `login` - логин на сервере L2TP, не может быть пустым;
 * `password` - пароль на сервере L2TP, не может быть пустым;
-* `mac` - MAC-адрес сетевой карты или id агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
+* `mac` - MAC-адрес сетевой карты или идентификатор агрегированного интерфейса. MAC-адрес в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
 * `enable_dhcp` - получать ли адрес интерфейса и адрес шлюза от провайдера по DHCP;
-* `addresses` - список адресов в формате "IP/prefix". Может быть пустым если включено получение
+* `addresses` - список адресов в формате "IP/prefix". Может быть пустым, если включено получение
   адресов по DHCP;
 * `gateway` - IP-адрес шлюза. Может быть равен `null`, если включено получение адресов по DHCP или L2TP-сервер находится в той же подсети, что назначена на интерфейс;
 * `dns` - список IP-адресов DNS, может быть пустым независимо от флага включения DHCP;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно), `null`, если не назначен;
-* `zone` - алиас зоны. Может быть равен `null` если не назначен;
+* `zone` - алиас зоны. Может быть равен `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN-а.
 
 **Объект PPPoE (Подключение к провайдеру по PPPoE):**
 
 ```json5
 {
-    "id": "int",
+    "id": "integer",
     "type": "pppoe",
     "title": "string",
     "enabled": "boolean",
@@ -171,13 +171,13 @@ GET /network/connections
     "service": "string",
     "concentrator": "string",
     "mac": "string",
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `title` - название интерфейса, не может быть пустым;
 * `enabled` - включен или выключен данный интерфейс;
 * `login` - логин на сервере PPPoE, не может быть пустым;
@@ -203,51 +203,51 @@ GET /network/states
 ```json5
 [
   {
-    "id": "int",
-    "type": "lan|wan|pptp|l2tp|pppoe",
+    "id": "integer",
+    "type": "lan" | "wan" | "pptp" | "l2tp" | "pppoe",
     "ether": {
-        "device": "null|string",
-        "vlan_tag": "null|int",
+        "device": "null" | "string",
+        "vlan_tag": "null" | "integer",
         "addresses": ["string"],
-        "gateway": "null|string",
+        "gateway": "null" | "string",
         "dns": ["string"],
-        "status": "down|going-up|up",
+        "status": "down" | "going-up" | "up",
         "errors": ["string"]
     },
     "ppp": {
-        "device": "null|string",
-        "remote_address": "null|string",
-        "local_address": "null|string",
+        "device": "null" | "string",
+        "remote_address": "null" | "string",
+        "local_address": "null" | "string",
         "dns": ["string"],
-        "status": "down|going-up|up",
+        "status": "down" | "going-up" | "up",
         "errors": ["string"]
     },
     "summary": {
-        "device": "null|string",
+        "device": "null" | "string",
         "addresses": ["string"],
         "dns": ["string"],
-        "gateway": "null|string",
-        "zone": "null|string",
-        "ifindex": "null|integer",
-        "scope": "kernel|vpp"
+        "gateway": "null" | "string",
+        "zone": "null" | "string",
+        "ifindex": "null" | "integer",
+        "scope": "kernel" | "vpp"
     }
   },
 ...
 ]
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `type` - тип подключения;
 * `ether` - состояние Ethernet или VLAN:
     * `device` - название устройства в системе, например, `Leth1`;
     * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно) или `null`, если не назначен;
     * `addresses` - список адресов, может быть пустым. Адреса в формате "IP/prefix";
-    * `gateway` - IP-адрес шлюза, может быть равен `null` если шлюза нет;
+    * `gateway` - IP-адрес шлюза, может быть равен `null`, если шлюза нет;
     * `dns` - адреса DNS, выданные по DHCP или назначенные пользователем;
     * `status` - текущее состояние интерфейса;
     * `errors` - список ошибок;
 * `ppp` - состояние РРР-подключения. Поле определено только для интерфейсов с полем
-  `type` равным `pptp|l2tp|pppoe`, для всех остальных типов `lan|wan` равно `null`:
+  `type` равным `pptp | l2tp | pppoe`, для всех остальных типов `lan | wan` равно `null`:
     * `device` - название устройства в системе, например `Eppp4`;
     * `remote_address` - туннельный IP-адрес сервера;
     * `local_address` - туннельный IP-адрес клиента (IP-адрес NGFW);
@@ -255,11 +255,11 @@ GET /network/states
     * `status` - текущее состояние интерфейса;
     * `errors` - список ошибок;
 * `summary` - общее состояние подключение: 
-    * `device` - итоговое активное устройство, например `Eppp4` или `Eeth3`;
+    * `device` - итоговое активное устройство, например, `Eppp4` или `Eeth3`;
     * `addresses` - список адресов интерфейса или подключения к провайдеру;
     * `dns` - адреса DNS, пригодные к использованию для сервера DNS и других целей;
     * `gateway` - IP-адрес шлюза, может быть равен `null`, если шлюза нет;
-    * `zone` - алиас зоны. Может быть равен `null` если не назначен;
+    * `zone` - алиас зоны. Может быть равен `null`, если не назначен;
     * `ifindex` - числовой индентификатор интерфейса;
     * `scope` - принадлежность интерфейса сетевому стеку: kernel - ядро.
 
@@ -274,7 +274,7 @@ POST /network/connections
 
 **Json-тело запроса:** 
 
-Объект LAN|WAN|PPTP|L2TP|PPPoE без поля id, например:
+Объект LAN | WAN | PPTP | L2TP | PPPoE без поля id, например:
 
 ```json5
 {
@@ -284,19 +284,21 @@ POST /network/connections
     "mac": "string",
     "enable_dhcp": "boolean",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "dns": ["string"],
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
 **Ответ на успешный запрос:**
 
+```json5
 {
-  "id": "number"  // уникальный идентификатор созданного интерфейса LAN
+    "id": "number"  // идентификатор созданного интерфейса LAN
 }
+```
 
 </details>
 
@@ -304,26 +306,26 @@ POST /network/connections
 <summary>Редактирование внешнего или локального интерфейса</summary>
 
 ```
-PATCH /network/connections/<ID интерфейса>
+PATCH /network/connections/<id интерфейса>
 ```
 
 **Json-тело запроса:**
 
-Поля из объекта LAN|WAN|PPTP|L2TP|PPPoE, например:
+Поля из объекта LAN | WAN | PPTP | L2TP | PPPoE, например:
 
 ```json5
 {
     "enabled": "boolean",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "dns": ["string"],
-    "vlan_tag": "null|int",
-    "zone": "null|string",
+    "vlan_tag": "null" | "integer",
+    "zone": "null" | "string",
     "is_vce_vlan": "boolean"
 }
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -331,10 +333,10 @@ PATCH /network/connections/<ID интерфейса>
 <summary>Удаление внешнего или локального интерфейса</summary>
 
 ```
-DELETE /network/connections/<ID интерфейса>
+DELETE /network/connections/<id интерфейса>
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -362,11 +364,11 @@ GET /network/aggregated
 ]
 ```
 
-* `id` - уникальный идентификатор агрегированного интерфейса;
+* `id` - идентификатор агрегированного интерфейса;
 * `enabled` - включен или выключен интерфейс;
-* `title` - название (не может быть пустым);
+* `title` - название, не может быть пустым;
 * `comment` - комментарий, может быть пустым;
-* `nics` - список MAC-адресов в формате "11:22:33:44:55:66", все буквы в нижнем регистре. Может быть пустым. 
+* `nics` - список MAC-адресов в формате "11:22:33:44:55:66", все буквы в нижнем регистре, может быть пустым. 
 
 </details>
 
@@ -383,13 +385,13 @@ GET /network/aggregated_states
 [
   {
   "id": "string",
-  "link": "up|down"
+  "link": "up" | "down"
   },
 ...
 ]
 ```
 
-* `id` - уникальный идентификатор агрегированного интерфейса;
+* `id` - идентификатор агрегированного интерфейса;
 * `link` - состояние соединения на агрегированном интерфейсе.
 
 </details>
@@ -414,9 +416,11 @@ POST /network/aggregated
 
 **Ответ на успешный запрос:**
 
+```json5
 {
-  "id": "string"  // уникальный идентификатор созданного агрегированного интерфейса
+  "id": "string"  // идентификатор созданного агрегированного интерфейса
 }
+```
 
 </details>
 
@@ -438,7 +442,7 @@ PUT /network/aggregated/<id агрегированного интерфейса>
   }
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -449,7 +453,7 @@ PUT /network/aggregated/<id агрегированного интерфейса>
 DELETE /network/aggregated/<id агрегированного интерфейса>
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -482,14 +486,14 @@ GET /network/tunnels
 ]
 ```
 
-* `id` - уникальный идентификатор интерфейса (строка в формате UUID);
-* `title` - название интерфейса, не может быть пустым, максимальная длина 42 символа;
+* `id` - идентификатор интерфейса (строка в формате UUID);
+* `title` - название интерфейса, не может быть пустым, максимальная длина - 42 символа;
 * `enabled` - включен или выключен интерфейс;
 * `comment` - комментарий, может быть пустым;
 * `addresses` - список адресов в формате "IP/prefix";
 * `gateway` - IP-адрес шлюза, может быть равен `null`;
-* `parent_interface` - алиас родительского интерфейса. Его IP-адрес будет источником туннеля;
-* `osdevname` - название существующего или планируемого сетевого интерфейса в ядре (например, `Gre00000001`). Значение создаётся автоматически, является уникальным и **доступно только для чтения**;
+* `parent_interface` - алиас родительского интерфейса, его IP-адрес будет источником туннеля;
+* `osdevname` - название существующего или планируемого сетевого интерфейса в ядре (например, `Gre00000001`). Значение создается автоматически, является уникальным и **доступно только для чтения**;
 * `server` - IP-адрес или доменное имя устройства, к которому осуществляется подключение;
 * `zone` - алиас зоны. Может быть равен `null`, если не назначен.
 
@@ -510,13 +514,13 @@ GET /network/tunnel_states
 ```json5
 {
   "id": "string",
-  "link": "up|down|inactive",
+  "link": "up" | "down" | "inactive",
   "local_ip": "string"
 }
 ```
 
-* `id` - уникальный идентификатор интерфейса;
-* `link` - состояние туннельного интерфейса. `inactive` при недоступности родительского интерфейса;
+* `id` - идентификатор интерфейса;
+* `link` - состояние туннельного интерфейса, `inactive` при недоступности родительского интерфейса;
 * `local_ip` - IP-адрес родительского интерфейса запущенного туннеля.
 
 </details>
@@ -536,11 +540,11 @@ POST /network/tunnels
     "enabled": "boolean",
     "comment": "string",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "parent_interface": "string",
     "osdevname": "string",
     "server": "string",
-    "zone": "null|string"
+    "zone": "null" | "string"
 }
 ```
 
@@ -548,7 +552,7 @@ POST /network/tunnels
 
 ```json5
 {
-  "id": "string"  // уникальный идентификатор созданного туннельного интерфейса
+  "id": "string"  // идентификатор созданного туннельного интерфейса
 }
 ```
 
@@ -569,15 +573,15 @@ PUT /network/tunnels/<id туннельного интерфейса>
     "enabled": "boolean",
     "comment": "string",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "parent_interface": "string",
     "osdevname": "string",
     "server": "string",
-    "zone": "null|string"
+    "zone": "null" | "string"
 }
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -588,7 +592,7 @@ PUT /network/tunnels/<id туннельного интерфейса>
 DELETE /network/tunnels/<id туннельного интерфейса>
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -610,19 +614,19 @@ GET /network/vce_conns
     "title": "string",
     "vce_id": "string",
     "mac": "string",
-    "vlan_tag": "null|int",
+    "vlan_tag": "null" | "integer",
     "comment": "string"
   },
   ...
 ]
 ```
 
-* `id` - уникальный идентификатор интерфейса;
+* `id` - идентификатор интерфейса;
 * `title` - название интерфейса, не может быть пустым;
-* `vce_id` - id VCE, для которого создан интерфейс;
+* `vce_id` - идентификатор VCE, для которого создан интерфейс;
 * `mac` - MAC-адрес сетевой карты в формате "11:22:33:44:55:66", все буквы в нижнем регистре;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно). Может быть `null`, если пробрасывается сетевой интерфейс целиком;
-* `comment` - комментарий. Может быть пустым.
+* `comment` - комментарий, может быть пустым.
 
 **Важно:** Изменяемыми являются только поля `title` и `comment`.
 
@@ -642,7 +646,7 @@ POST /network/vce_conns
     "title": "string",
     "vce_id": "string",
     "mac": "string",
-    "vlan_tag": "null|int",
+    "vlan_tag": "null" | "integer",
     "comment": "string"
 }
 ```
@@ -651,7 +655,7 @@ POST /network/vce_conns
 
 ```json5
 {
-  "id": "string"  // уникальный идентификатор созданного интерфейса
+  "id": "string"  // идентификатор созданного интерфейса
 }
 ```
 
@@ -675,7 +679,7 @@ PATCH /network/vce_conns/<id пробрасываемого интерфейса
 
 Поля опциональны, можно передавать любое из них отдельно или оба сразу.
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -686,6 +690,6 @@ PATCH /network/vce_conns/<id пробрасываемого интерфейса
 DELETE /network/vce_conns/<id пробрасываемого интерфейса>
 ```
 
-Ответ: 200 ОК и пустое тело.
+**Ответ на успешный запрос:** 200 OK
 
 </details>

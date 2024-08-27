@@ -51,7 +51,7 @@ description: >-
 * `Ideco` - вендор;
 * `NGFW` - название продукта (может меняться в зависимости от продукта);
 * `17.0` - версия продукта (может меняться в зависимости от версии);
-* `0|syslog|0` - три поля - уникальный идентификатор типа события, описание события, важность события. Идентификатор лога, постоянный для NGFW.
+* `0|syslog|0` - три поля - идентификатор типа события, описание события, важность события. Идентификатор лога, постоянный для NGFW.
 
 <details>
 
@@ -199,10 +199,10 @@ description: >-
   * `HTTP/1.1` - протокол.
 * `403` - код состояния HTTP;
 * `7519` - передано байт (в ответ, включая HTTP заголовок);
-* `"https://www.google.com/"` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
-* `"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"` - цифровой отпечаток браузера; 
+* `https://www.google.com/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
+* `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36` - цифровой отпечаток браузера; 
 * `TCP_DENIED:HIER_NONE` - техническое сообщение от [squid](http://wiki.squid-cache.org/SquidFaq/SquidLogs#Squid_result_codes);
-* `"Custom deny 8 znakomstva extended.id.23 user.id.3 "`:
+* `Custom deny 8 znakomstva extended.id.23 user.id.3`:
   * `Custom deny 8 znakomstva` - описание и номер правила блокировки;
   * `extended.id.23` - категория сайта;
   * `user.id.3` - значение поля **Применяется для** в сработавшем правиле.

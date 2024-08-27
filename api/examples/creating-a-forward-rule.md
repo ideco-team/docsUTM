@@ -47,11 +47,9 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_ra
     curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_addresses --data '{"comment": "комментарий", "title": "название", "value": "9.9.9.9"}'
     ```
 
-    Ответ: статус 200.
+    **Ответ на успешный запрос:**
 
-    Тело ответа:
-
-    ```
+    ```json5
     {
         "id": "ip.id.3"
     }
@@ -63,11 +61,9 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/ip_ra
     curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/aliases/lists/addresses --data '{"title": "название", "comment": "комментарий", "values": ["ip.id.2", "ip.id.3"]}'
     ```
 
-    Ответ: статус 200
+    **Ответ на успешный запрос:**
 
-    Тело ответа:
-
-    ```
+    ```json5
     {
         "id": "address_list.id.2"
     }
