@@ -88,7 +88,7 @@ PUT /backup/settings
 }
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -129,29 +129,32 @@ GET /backup/backups
 **Ответ на успешный запрос:**
 
 ```json5
-{
-   "id": "string",
-   "version": {
-      "major": "integer",
-      "minor": "integer",
-      "build": "integer",
-      "timestamp": "integer",
-      "vendor": "Ideco",
-      "product": "UTM" | "CC",
-      "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
-      "release_type": "release" | "beta" | "devel"
-   },
-   "timestamp": "float",
-   "comment": "string",
-   "md5": "string",
-   "size": "integer",
-   "fast_restore_allowed": "boolean"
-}
+[
+   {
+      "id": "string",
+      "version": {
+         "major": "integer",
+         "minor": "integer",
+         "build": "integer",
+         "timestamp": "integer",
+         "vendor": "Ideco",
+         "product": "UTM" | "CC",
+         "kind": "FSTEK" | "VPP" | "STANDARD" | "BPF",
+         "release_type": "release" | "beta" | "devel"
+      },
+      "timestamp": "float",
+      "comment": "string",
+      "md5": "string",
+      "size": "integer",
+      "fast_restore_allowed": "boolean"
+   }
+...
+]
 ```
 
 * `id` - идентификатор бэкапа;
 * `version` - версия системы:
-  * `major` -мажорный номер версии;
+  * `major` - мажорный номер версии;
   * `minor` - минорный номер версии;
   * `build` - номер сборки;
   * `timestamp` - время выхода версии; 
@@ -205,7 +208,7 @@ POST /backup/upload
 POST /backup/backups/<id бэкапа>/apply
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -216,7 +219,7 @@ POST /backup/backups/<id бэкапа>/apply
 POST /backup/backups/<id бэкапа>/apply/fast
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -227,6 +230,6 @@ POST /backup/backups/<id бэкапа>/apply/fast
 DELETE /backup/backups/<id бэкапа>
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>

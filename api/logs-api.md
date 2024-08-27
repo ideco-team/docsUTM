@@ -41,7 +41,7 @@ GET /logs_backend/remote_syslog/state
 
 ```json5
 {
-  "enabled": "boolean" //(true - включен, false - выключен)
+  "enabled": "boolean" // (true - включен, false - выключен)
 }
 ```
 
@@ -59,7 +59,7 @@ PUT /logs_backend/remote_syslog/state
 }
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -75,7 +75,7 @@ GET /logs_backend/remote_syslog
 ```json5
 {
   "host": "string",
-  "port": "int",
+  "port": "integer",
   "protocol": "tcp" | "udp",
   "format": "syslog" | "cef"
 }
@@ -99,8 +99,8 @@ PATCH /logs_backend/remote_syslog
 
 ```json5
 {
-  "host": "string" | null,
-  "port": "int" | null,
+  "host": "string" | "null",
+  "port": "integer" | "null",
   "protocol": "tcp" | "udp",
   "format": "syslog" | "cef",
 }
@@ -108,6 +108,6 @@ PATCH /logs_backend/remote_syslog
 
 Пустые значения "" не допускаются.
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>

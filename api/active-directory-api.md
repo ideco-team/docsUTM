@@ -17,7 +17,7 @@ GET /ad_backend/status
 
 ```json5
 {
-    "msg": ["string"] //(Список ошибок)
+    "msg": ["string"] // (Список ошибок)
 }
 ```
 
@@ -95,7 +95,7 @@ GET /ad_backend/domains
 <summary>Выполнение "переинтеграции" с AD</summary>
 
 ```
-PUT /ad_backend/domains/<id домена>
+PUT /ad_backend/domains/<имя домена>
 ```
 
 **Json-тело запроса:**
@@ -117,7 +117,7 @@ PUT /ad_backend/domains/<id домена>
 <summary>Удаление интеграции с доменом</summary>
 
 ```
-DELETE /ad_backend/domains/<id домена>
+DELETE /ad_backend/domains/<имя домена>
 ```
 
 **Ответ на успешный запрос:** 200 OK
@@ -488,7 +488,8 @@ GET /ad_backend/domains/<domain_name>/security_groups
     {
         "name": "string",
         "guid": "string"
-    }
+    },
+    ...
 ]
 ```
 
@@ -501,7 +502,7 @@ GET /ad_backend/domains/<domain_name>/security_groups
 <summary>Получение дерева OU в заданном домене</summary>
 
 ```
-GET /ad_backend/domains/<domain_name>/tree
+GET /ad_backend/domains/<имя домена>/tree
 ```
 
 **Ответ на успешный запрос:**
@@ -513,6 +514,7 @@ GET /ad_backend/domains/<domain_name>/tree
         "guid": "string",
         "parent_guid": "string" | "null"
     }
+    ...
 ]
 ```
 
@@ -521,7 +523,7 @@ GET /ad_backend/domains/<domain_name>/tree
 * `parent_guid` - objectGUID родительской группы.
 
 Дерево представлено в виде линейного списка со всеми узлами. У каждого узла
-есть его guid и guid родителя.
+есть его `guid` и `parent_guid`.
 
 </details>
 
@@ -547,18 +549,18 @@ GET /ad_backend/forward_zones
 ]
 ```
 
-* `id` - уникальное название зоны;
+* `id` - идентификатор зоны;
 * `name` - название зоны;
 * `servers` - список IP-адресов DNS-серверов;
 * `enabled` - включена/выключена зона;
-* `comment` - комментарий (может быть пустым).
+* `comment` - комментарий, может быть пустым.
 
 </details>
 
 ## Управление настройками синхронизации групп
 
 <details>
-<summary>Получение настройки синхронизации групп</summary> OK
+<summary>Получение настройки синхронизации групп</summary>
 
 ```
 GET /ad_backend/group_settings
@@ -569,8 +571,8 @@ GET /ad_backend/group_settings
 ```json5
 [
   {
-    "id": "int",
-    "group_id": "int",
+    "id": "integer",
+    "group_id": "integer",
     "search_filter": "string",
     "object_guid": "string",
     "domain_name": "string",
@@ -618,7 +620,7 @@ POST /ad_backend/group_settings
 
 **Ответ на успешный запрос:**
 
-```
+```json5
 {
     "id": "sync_record_id"
 }
@@ -648,7 +650,7 @@ PUT /ad_backend/group_settings/<id записи синхронизации>
   }
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
@@ -660,9 +662,9 @@ PUT /ad_backend/group_settings/<id записи синхронизации>
 авторизации "по IP", либо менять всем пароли.
 
 ```
-DELETE /ad_backend/group_settings/<id группы NGFW>
+DELETE /ad_backend/group_settings/<id группы>
 ```
 
-**Ответ на успешный запрос:** 200 ОК
+**Ответ на успешный запрос:** 200 OK
 
 </details>

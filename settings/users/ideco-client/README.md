@@ -9,7 +9,7 @@ description: >-
 Название службы раздела **Ideco Сlient**: `ideco-agent-backend`; `ideco-agent-websocket`. \
 Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
 
-Использует протокол Wireguard.
+Использует протокол WireGuard.
 {% endhint %}
 
 {% hint style="warning" %}

@@ -15,7 +15,7 @@ description: >-
 * [x] Контроль приложений
 * [x] Многоуровневая антивирусная и антиспам-проверка трафика
 * [x] Защита от ботнетов, фишинга и spyware
-* [x] VPN  (site-to-site и client-to-site (с 2FA), протоколы IKEv2/IPSec, L2TP/IPSec, SSTP, Wireguard)
+* [x] VPN  (site-to-site и client-to-site (с 2FA), протоколы IKEv2/IPSec, L2TP/IPSec, SSTP, WireGuard)
 * [x] Логирование действий администратора
 * [x] Управление через Центральную консоль 
 * [x] Отчетность по трафику пользователей и событиям безопасности
