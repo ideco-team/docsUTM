@@ -5,7 +5,7 @@
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
-* [Cистемные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
+* [Системные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
 * [Техническая поддержка](general/technical-support.md)
   * [Информация о поддержке версий Ideco NGFW](general/support-period.md)
 
