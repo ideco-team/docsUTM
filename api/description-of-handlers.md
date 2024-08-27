@@ -16,14 +16,22 @@ POST /web/auth/login
 
 ```json5
 {
-    "login": "string",    
-    "password": "string",    
-    "rest_path": "string" //(по умолчанию строка со слэшем "/")
+    "login": "string",
+    "password": "string",
+    "rest_path": "string",
 }
 
 ```
+* `login` - логин. Каталог администратора указывается после @. Примеры:
+    * `admin` - локальный админ, без собаки;
+    * `admin@ad_domain.ru` - AD/ALD администратор;
+    * `admin@radius` - для RADIUS администраторов @radius.
+* `password` - пароль;
+* `rest_path` - префикс URL на который выставлять cookie. Например, / или /rest.
 
-После успешной авторизации, сервер Ideco NGFW передает в заголовках куки. Пример значений:
+**Ответ на успешный запрос:** 200 ОК
+
+После успешной авторизации сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
 ```
 set-cookie: insecure-ideco-session=02428c1c-fcd5-42ef-a533-5353da743806
@@ -36,11 +44,14 @@ set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4c
 
 <details>
 
-<summary>Разавторизация</summary>
+<summary>Разавторизация администратора</summary>
 
 ```
 DELETE /web/auth/login
 ```
+
+**Ответ на успешный запрос:** 200 ОК
+
 После успешной разавторизации сервер Ideco NGFW передает в заголовках куки. Пример значений:
 
 ```
@@ -444,9 +455,9 @@ POST /aliases/networks
 
 ```json5
 {
-    "title": "string", //(максимальная длина 42 символа)
-    "comment": "string", //(может быть пустым, максимальная длина 255 символов)
-    "value": "string" //(адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
+    "title": "string", // (максимальная длина - 42 символа)
+    "comment": "string", // (может быть пустым, максимальная длина - 255 символов)
+    "value": "string" // (адрес подсети в формате `192.168.0.0/24` либо `192.168.0.0/255.255.255.0`)
 }
 ```
 
@@ -472,9 +483,9 @@ POST /aliases/domains
 
 ```json5
 {
-    "title": "string", //(максимальная длина 42 символа)
-    "comment": "string", //(может быть пустым, максимальная длина 255 символов)
-    "value": "string" //(домен)
+    "title": "string", // (максимальная длина - 42 символа)
+    "comment": "string", // (может быть пустым, максимальная длина - 255 символов)
+    "value": "string" // (домен)
 }
 ```
 
@@ -502,7 +513,7 @@ POST /aliases/ports
 {
     "title": "string",
     "comment": "string",
-    "value": "integer" //(номер порта)
+    "value": "integer" // (номер порта)
 }
 ```
 
@@ -530,8 +541,8 @@ POST /aliases/port_ranges
 {
     "title": "string",
     "comment": "string",
-    "start": "integer", //(первый порт диапазона)
-    "end": "integer" //(последний порт диапазона)
+    "start": "integer", // (первый порт диапазона)
+    "end": "integer" // (последний порт диапазона)
 }
 ```
 
@@ -679,7 +690,7 @@ POST /aliases/lists/times
 {
     "title": "string",
     "comment": "string",
-    "values": [ "string" ] //(список id объектов Время)
+    "values": [ "string" ] // (список идентификаторов объектов Время)
 }
 ```
 
@@ -695,7 +706,7 @@ POST /aliases/lists/times
 
 <details>
 
-<summary>Получение ID объектов</summary>
+<summary>Получение идентификаторов объектов</summary>
 
 ```
 GET /aliases/all
@@ -777,9 +788,9 @@ GET /netscan_backend/settings
 
 ```json5
 {
-   "enabled": "boolean",
-   "group_id": "integer", //(идентификатор группы, в которую будут добавлены обнаруженные устройства)
-   "networks": ["string"] //(список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
+   "enabled": "boolean"
+   "group_id": "integer" // (идентификатор группы, в которую будут добавлены обнаруженные устройства)
+   "networks": ["string"] // (список локальных сетей, устройства из которых будут автоматически добавлены и авторизованы на Ideco NGFW)
 }
 ```
 
@@ -802,7 +813,7 @@ PUT /netscan_backend/settings
 }
 ```
 
-**Ответ на успешный запрос**: 200 OK.
+**Ответ на успешный запрос:** 200 OK
 
 </details>
 
