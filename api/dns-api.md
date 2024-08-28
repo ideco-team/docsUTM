@@ -81,7 +81,7 @@ GET /dns/safesearch
 
 ```json5
 {
-	"enabled": "boolean" //(переадресовывать DNS-запросы на безопасные домены поиска Google, Yandex, YouTube, Bing, DuckDuckGo, Qwant и Pixabay)
+	"enabled": "boolean" // (переадресовывать DNS-запросы на безопасные домены поиска Google, Yandex, YouTube, Bing, DuckDuckGo, Qwant и Pixabay)
 }
 ```
 

@@ -15,7 +15,7 @@ GET /ad_backend/status
 
 ```json5
 {
-    "msg": ["string"] // (Список ошибок)
+    "msg": ["string"] // (список ошибок)
 }
 ```
 
@@ -83,7 +83,7 @@ GET /ad_backend/domains
 <summary>Выполнение "переинтеграции" с AD</summary>
 
 ```
-PUT /ad_backend/domains/<имя домена>
+PUT /ad_backend/domains/<id домена>
 ```
 
 **Json-тело запроса:**
@@ -105,7 +105,7 @@ PUT /ad_backend/domains/<имя домена>
 <summary>Удаление интеграции с доменом</summary>
 
 ```
-DELETE /ad_backend/domains/<имя домена>
+DELETE /ad_backend/domains/<id домена>
 ```
 
 **Ответ на успешный запрос:** 200 OK
@@ -162,7 +162,7 @@ PUT /ad_backend/settings
 <summary>Получение списка групп безопасности в заданном домене</summary>
 
 ```
-GET /ad_backend/domains/<domain_name>/security_groups
+GET /ad_backend/domains/<имя домена>/security_groups
 ```
 
 **Ответ на успешный запрос:**

@@ -128,7 +128,7 @@ PUT /agent_backend/wireguard/setting
 {
     "type": "update",
     "need_update": "boolean",
-    "download_url": "string"|null,
+    "download_url": "string"| "null",
     "version": {
         "major": "integer",
         "minor": "integer",
@@ -171,7 +171,7 @@ PUT /agent_backend/wireguard/setting
     "type": "auth_state",
     "authorized": "boolean",
     "need_tunnel": "boolean",
-    "timeout": "int",
+    "timeout": "integer",
     "message": "string"
 }
 ```
@@ -197,8 +197,8 @@ PUT /agent_backend/wireguard/setting
 ```json5
 {
     "type": "sso",
-    "token": null,
-    "session_token": null,
+    "token": "null",
+    "session_token": "null",
     "domain": "string"
 }
 ```
@@ -212,11 +212,11 @@ PUT /agent_backend/wireguard/setting
 ```json5
 {
     "type": "sso",
-    "status": "not_authorized|challenge",
-    "session_token": null,
-    "access_token": null,
+    "status": "not_authorized" | "challenge",
+    "session_token": "null",
+    "access_token": "null",
     "computer_name": "string",
-    "error": "string"|null
+    "error": "string"| "null"
 }
 ```
 
@@ -251,7 +251,7 @@ PUT /agent_backend/wireguard/setting
     "status": "in_progress",
     "session_token": "string",
     "access_token": "string",
-    "error": null
+    "error": "null"
 }
 ```
 
@@ -290,12 +290,12 @@ Ideco NGFW отправляет запрос на сбор информации 
     "type": "ztna",
     "period": "integer",
     "test_list": [
-      "os_type|os_version|domain|kb_list|av_active|av_name|av_version|av_update|av_scan|fw_active|fw_name|fw_version|processes|services|registry",
+      "os_type" | "os_version" | "domain" | "kb_list" | "av_active" | "av_name" | "av_version" |" av_update" | "av_scan" | "fw_active" | "fw_name" | "fw_version" | "processes" | "services" | "registry"
     ],
     "kb_list": ["string"],
     "proc_list": ["string"],
     "service_list": ["string"],
-    "reg_key_list": ["string"],
+    "reg_key_list": ["string"]
 } 
 ```
 

@@ -99,7 +99,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/firewall/rule
 ```json5
 {
     "id": 2
-    }
+}
 ```
 
 6\. Отредактируйте созданное правило, указав время действия:

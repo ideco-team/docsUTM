@@ -808,6 +808,108 @@ PUT /firewall/state
 * `source_addresses_negate` - инвертировать адрес источника;
 * `timetable` - время действия.
 
+**Обьект FilterRuleObject**
+
+```json5
+{
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "hip_profiles": [ "string" ],
+    "dpi_profile": "string",
+    "dpi_enabled": "boolean",
+    "ips_profile": "string",
+    "ips_enabled": "boolean",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "drop"
+}
+```
+
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `enabled` - включено (`true`) или выключено (`false`) правило;
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `source_ports` - порты источников, список идентификаторов алиасов;
+* `incoming_interface` - зона источника;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `outgoing_interface` - зона назначения;
+* `hip_profiles` - HIP-профили;
+* `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_enabled` - включена/выключена обработка с помощью модуля **Контроль приложений**;
+* `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_enabled` - включена/выключена обработка с помощью модуля **Предотвращение вторжений**;
+* `timetable` - время действия;
+* `comment` - комментарий, может быть пустым;
+* `action` - действие:
+  * `accept` - разрешить;
+  * `drop` - запретить.
+
+**Обьект DnatRuleObject**
+
+```json5
+{
+   "parent_id": "string",
+   "enabled": "boolean",
+   "protocol": "string",
+   "source_addresses": [ "string" ],
+   "source_addresses_negate": "boolean",
+   "source_ports": [ "string" ],
+   "incoming_interface": "string",
+   "destination_addresses": [ "string" ],
+   "destination_addresses_negate": "boolean",
+   "destination_ports": [ "string" ],
+   "timetable": [ "string" ],
+   "comment": "string",
+   "action": "accept" | "dnat",
+   "change_destination_address": "null" | "string",
+   "change_destination_port": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `dnat` - производить DNAT.
+* `change_destination_address` - IP-адрес или диапазон IP-адресов для замены назначения, или `null`, если `action` = `accept`;
+* `change_destination_port` - порт или диапазон портов для замены значения, или `null`, если `action` = `accept`.
+
+**Обьект SnatRuleObject**
+
+```json5
+{
+   "parent_id": "string",
+   "enabled": "boolean",
+   "protocol": "string",
+   "source_addresses": [ "string" ],
+   "source_addresses_negate": "boolean",
+   "source_ports": [ "string" ],
+   "destination_addresses": [ "string" ],
+   "destination_addresses_negate": "boolean",
+   "destination_ports": [ "string" ],
+   "outgoing_interface": "string",
+   "timetable": [ "string" ],
+   "comment": "string",
+   "action": "accept" | "snat",
+   "change_source_address": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `snat` - производить SNAT.
+* `change_destination_address` - IP-адрес для замены источника, или `null`, если `action` = `accept`.
+
 **Ответ на успешный запрос:**
 
 ```json5
@@ -846,6 +948,112 @@ PUT /firewall/state
   "timetable": [ "string" ]
 }
 ```
+
+**Обьект FilterRuleObject**
+
+```json5
+{
+    "id": "integer",
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "hip_profiles": [ "string" ],
+    "dpi_profile": "string",
+    "dpi_enabled": "boolean",
+    "ips_profile": "string",
+    "ips_enabled": "boolean",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "drop"
+}
+```
+
+* `id` - идентификатор правила.
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `enabled` - включено (`true`) или выключено (`false`) правило;
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `source_ports` - порты источников, список идентификаторов алиасов;
+* `incoming_interface` - зона источника;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `outgoing_interface` - зона назначения;
+* `hip_profiles` - HIP-профили;
+* `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_enabled` - включена/выключена обработка с помощью модуля **Контроль приложений**;
+* `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_enabled` - включена/выключена обработка с помощью модуля **Предотвращение вторжений**;
+* `timetable` - время действия;
+* `comment` - комментарий, может быть пустым;
+* `action` - действие:
+  * `accept` - разрешить;
+  * `drop` - запретить.
+
+**Обьект DnatRuleObject**
+
+```json5
+{
+   "id": "integer",
+   "parent_id": "string",
+   "enabled": "boolean",
+   "protocol": "string",
+   "source_addresses": [ "string" ],
+   "source_addresses_negate": "boolean",
+   "source_ports": [ "string" ],
+   "incoming_interface": "string",
+   "destination_addresses": [ "string" ],
+   "destination_addresses_negate": "boolean",
+   "destination_ports": [ "string" ],
+   "timetable": [ "string" ],
+   "comment": "string",
+   "action": "accept" | "dnat",
+   "change_destination_address": "null" | "string",
+   "change_destination_port": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `dnat` - производить DNAT.
+* `change_destination_address` - IP-адрес или диапазон IP-адресов для замены назначения, или `null`, если `action` = `accept`;
+* `change_destination_port` - порт или диапазон портов для замены значения, или `null`, если `action` = `accept`.
+
+**Обьект SnatRuleObject**
+
+```json5
+{
+   "id": "integer",
+   "parent_id": "string",
+   "enabled": "boolean",
+   "protocol": "string",
+   "source_addresses": [ "string" ],
+   "source_addresses_negate": "boolean",
+   "source_ports": [ "string" ],
+   "destination_addresses": [ "string" ],
+   "destination_addresses_negate": "boolean",
+   "destination_ports": [ "string" ],
+   "outgoing_interface": "string",
+   "timetable": [ "string" ],
+   "comment": "string",
+   "action": "accept" | "snat",
+   "change_source_address": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `snat` - производить SNAT.
+* `change_destination_address` - IP-адрес для замены источника, или `null`, если `action` = `accept`.
 
 **Ответ на успешный запрос:** 200 OK
 

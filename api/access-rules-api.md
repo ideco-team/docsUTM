@@ -348,18 +348,19 @@ GET /application_control_backend/rules
 **Ответ на успешный запрос:**
 
 ```json5
-[
-  {
-      "action": "drop" | "accept",
-      "aliases": ["string"],
-      "comment": "string",
-      "enabled": "boolean",
-      "name": "string",
-      "parent_id": "string",
-      "protocols": ["string"],
-      "id": "integer"
-  }
-]
+[ 
+    {
+        "action": "drop" | "accept"
+        "aliases": ["string"],
+        "comment": "string",
+        "enabled": "boolean",
+        "name": "string",
+        "parent_id": "string",
+        "protocols": ["string"],
+        "id": "integer"
+    },
+    ...
+ ]
 ```
 
 * `action` - действие, применяемое к правилу;
@@ -388,8 +389,8 @@ POST /application_control_backend/rules
     "name": "string",
     "action": "drop" | "accept",
     "comment": "string",
-    "aliases":["string"],
-    "protocols":["string"],
+    "aliases": ["string"],
+    "protocols": ["string"],
     "enabled": "boolean"
 }
 ```
@@ -1097,8 +1098,8 @@ GET /content-filter/users_categories
 ```json5
 [
     {
-        "id": "string" (идентификатор категории, вида - users.id.1),
-        "name": "string" (название категории, не пустая строка),
+        "id": "string", // (идентификатор категории, вида - users.id.1)
+        "name": "string", // (название категории, не пустая строка)
         "comment": "string",
         "urls": ["string"]
     },
@@ -1274,7 +1275,7 @@ PUT /content-filter/rules/<id правила>
     "aliases": [ "string" ],
     "categories": [ "string" ],
     "access": "allow" | "deny" | "bump" | "redirect",
-    "redirect_url": "string|null",
+    "redirect_url": "string" | "null",
     "enabled": "boolean",
     "timetable": [ "string" ]
 }
@@ -1291,7 +1292,7 @@ PUT /content-filter/rules/<id правила>
   * `bump` - расшифровать запрос;
   * `redirect` - перенаправить запрос на `redirect_url`;
 * `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
-* `enabled`: правило включено (true) или выключено (false);
+* `enabled` - правило включено (true) или выключено (false);
 * `timetable` - время действия, список идентификаторов алиасов.
 
 **Ответ на успешный запрос:** 200 ОК
@@ -1399,7 +1400,7 @@ GET /quotas/quotas
 
 * `id` - идентификатор квоты;
 * `title` - название квоты (максимальная длина - 42 символа);
-* `comment` - комментарий (максимальная длина - 255 символов)%
+* `comment` - комментарий (максимальная длина - 255 символов);
 * `quota` - ограничение трафика в байтах;
 * `enabled` - применяется ли квота;
 * `interval` - период действия квоты (час, день, неделя, месяц, квартал).

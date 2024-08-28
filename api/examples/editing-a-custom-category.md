@@ -22,7 +22,7 @@
 curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/login --data '{"login": "логин", "password": "пароль", "rest_path": "/"}'
 ```
 
-  * `x.x.x.x` - IP-адрес веб-интерфейса Ideco NGFW.
+* `x.x.x.x` - IP-адрес веб-интерфейса Ideco NGFW.
 
 **Ответ на успешный запрос:** 200 ОК
 

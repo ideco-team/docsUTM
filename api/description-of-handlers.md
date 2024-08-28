@@ -92,7 +92,7 @@ POST /auth/rules
 
 ```json5
 {
-  "id": "string"
+    "id": "string"
 }
 ```
 
@@ -146,7 +146,7 @@ GET /gather_stat/settings
 
 ```json5
 {
-      "enabled": "boolean"
+    "enabled": "boolean"
 }
 ```
 
@@ -162,7 +162,7 @@ PUT /gather_stat/settings
 
 ```json5
 {
-      "enabled": "boolean"
+    "enabled": "boolean"
 }
 ```
 
@@ -219,7 +219,7 @@ PUT /api/v3/{company_id}/go_to_product
 
 ```json5
 {
-  "token": "string"
+    "token": "string"
 }
 ```
 
@@ -320,7 +320,7 @@ GET /license/update-type
 
 ```json5
 {
-  "update_type": "auto" | "manual"
+    "update_type": "auto" | "manual"
 }
 ```
 
@@ -340,7 +340,7 @@ PUT /license/update-type
 
 ```json5
 {
-  "update_type": "auto" | "manual"
+    "update_type": "auto" | "manual"
 }
 ```
 
@@ -572,7 +572,7 @@ POST /aliases/time_ranges
     "comment": "string",
     "weekdays": ["integer"], // (список дней недели, где 1-пн, 2-вт ... 7-вс)
     "start": "string", // (начало временного отрезка в формате: ЧЧ:ММ)
-    "end": "string" // (конец временного отрезка в формате: ЧЧ:ММ)
+    "end": "string", // (конец временного отрезка в формате: ЧЧ:ММ)
     "period": {
             "first": "integer", // (момент начала срока действия в формате ГГГГММДДЧЧММСС, например, 20240215000000)
             "last": "integer" // (момент окончания срока действия в формате ГГГГММДДЧЧММСС, например, 20240229235959)

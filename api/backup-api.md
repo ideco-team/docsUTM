@@ -105,7 +105,7 @@ POST /backup/backups
 
 ```json5
 {
-   "comment": "string" //(комментарий, произвольный текст)
+   "comment": "string" // (комментарий, произвольный текст)
 }
 ```
 
