@@ -64,7 +64,7 @@ POST /ips/profiles
 PATCH /ips/profiles/<id профиля>
 ```
 
-**Json-тело запроса:** (некоторые или все поля)
+**Json-тело запроса:**
 
 ```json5
 {
@@ -137,7 +137,7 @@ GET /ips/profile_rules?profile_id=<string>
 <summary>Создание правила в профиле</summary>
 
 ```
-POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={true|false}
+POST /ips/profile_rules?profile_id=<string>&anchor_item_id=<integer>&insert_after=<true|false>
 ```
 
 * `profile_id` - идентификатор профиля, в котором создается правило (без скобок и кавывчек);
@@ -184,7 +184,7 @@ POST /ips/profile_rules?profile_id={string}&anchor_item_id={int}&insert_after={t
 <summary>Изменение правила в профиле</summary>
 
 ```
-PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
+PATCH /ips/profile_rules?profile_id=<string>&rule_id=<integer>
 ```
 
 * `profile_id` - идентификатор профиля, в котором изменяется правило;
@@ -223,7 +223,7 @@ PATCH /ips/profile_rules?profile_id={string}&rule_id={int}
 <summary>Удаление правила в профиле</summary>
 
 ```
-DELETE /ips/profile_rules?profile_id={string}&rule_id={int}
+DELETE /ips/profile_rules?profile_id=<string>&rule_id=<integer>
 ```
 
 * `profile_id` - идентификатор профиля, в котором удаляется правило;
@@ -248,20 +248,20 @@ POST /ips/profiles-create-with-rules
     "name": "string",
     "comment": "string",
     "rules": [
-              {
-              "filters": [
-                          {
-                      "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
-                      "operator": "equals",
-                      "values": ["string" | "integer"]
-                        },
-                        ...
-                      ],
-              "action": "default" | "alert" | "drop" | "skip",
-              "comment": "string"
-              },
-              ...
-            ]
+          {
+          "filters": [
+                {
+                "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
+                "operator": "equals",
+                "values": ["string" | "integer"]
+                  },
+                  ...
+                ],
+          "action": "default" | "alert" | "drop" | "skip",
+          "comment": "string"
+          },
+          ...
+        ]
     }
 ```
 
@@ -279,7 +279,7 @@ POST /ips/profiles-create-with-rules
 
 ```json5
 {
-  "id": "string"
+    "id": "string"
 }
 ```
 
@@ -299,7 +299,7 @@ POST /ips/profiles/<id профиля>/copy
 
 ```json5
 {
-  "id": "string"
+    "id": "string"
 }
 ```
 
@@ -322,15 +322,15 @@ GET /api/application_control/profiles
 ```json5
 [
   {
-  "id": "string",
-  "name": "string",
-  "comment": "string",
-  "protocols": [
-    {
-      "id": "string",
-      "action": "deny | allow"
-    },
-    ...
+    "id": "string",
+    "name": "string",
+    "comment": "string",
+    "protocols": [
+      {
+        "id": "string",
+        "action": "deny" | "allow"
+      },
+      ...
     ],
   }
 ]
@@ -363,7 +363,7 @@ POST /api/application_control/profiles
   "protocols": [
     {
       "id": "string",
-      "action": "deny | allow"
+      "action": "deny" | "allow"
     },
     ...
     ],
@@ -387,7 +387,7 @@ POST /api/application_control/profiles
   "protocols": [
     {
       "id": "string",
-      "action": "deny | allow"
+      "action": "deny" | "allow"
     },
     ...
     ],
@@ -442,7 +442,7 @@ PATCH /api/application_control/profiles/<id профиля>
   "protocols": [
     {
       "id": "string",
-      "action": "deny | allow"
+      "action": "deny" | "allow"
     },
     ...
     ],

@@ -33,7 +33,7 @@ GET /web/admins/local?format_type=JSON|CSV&columns=["id","name", ...]
         "login": "string",
         "role": "string",
         "comment": "string",
-        "password_timestamp": "integer",
+        "password_timestamp": "integer"
     },
     ...
 ]
@@ -73,7 +73,7 @@ POST /web/admins/local
     "login": "string",
     "password": "string",
     "role": "string",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
@@ -95,7 +95,7 @@ POST /web/admins/local
 
 ```json5
 {
-    "id": "string",
+    "id": "string"
 }
 ```
 </details>
@@ -118,7 +118,7 @@ PATCH /web/admins/local/<id администратора>
     "login": "string",
     "password": "string",
     "role": "string",
-    "comment": "string",
+    "comment": "string"
 }
 ```
 
@@ -129,7 +129,7 @@ PATCH /web/admins/local/<id администратора>
 * `login` - логин администратора;
 * `password` - пароль (если значение `null`, пароль останется прежним);
 * `role` - идентификатор уровня доступа аккаунта;
-* `comment` - комментарий, максимальная длина - 255 символов, **может** быть пустым.
+* `comment` - комментарий, максимальная длина - 255 символов, может быть пустым.
 
 **При смене пароля или отключении аккаунта веб-сессии удаляются.**
 
@@ -173,7 +173,7 @@ GET /monitor_backend/admin_sessions
     "auth_type": "string",
     "auth_rule_id": "string",
     "admin_id": "string",
-    "login_timestamp": "integer",
+    "login_timestamp": "integer"
     }
 ]
 ```
@@ -197,10 +197,10 @@ GET /monitor_backend/admin_sessions
 <summary>Удаление сессии</summary>
 
 ```
-DELETE /monitor_backend/admin_sessions/{admin_session_id}
+DELETE /monitor_backend/admin_sessions/<admin_session_id>
 ```
 
-* `admin_session_id` - идентификатор сессии авторизации администратора
+* `admin_session_id` - идентификатор сессии авторизации администратора.
 
 **Ответ на успешный запрос:** 200 ОК
 

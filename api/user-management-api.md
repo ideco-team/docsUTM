@@ -117,7 +117,7 @@ POST /user_backend/users
     "login": "string",
     "psw": "string",
     "parent_id": "integer",
-    "phone_number": "string", // не обязательно
+    "phone_number": "string", // (не обязательно)
     "comment": "string"
 }
 ```

@@ -91,7 +91,7 @@ POST /auth/rules
 
 ```json5
 {
-  "id": "string"
+    "id": "string"
 }
 ```
 
@@ -145,7 +145,7 @@ GET /gather_stat/settings
 
 ```json5
 {
-      "enabled": "boolean"
+    "enabled": "boolean"
 }
 ```
 
@@ -161,7 +161,7 @@ PUT /gather_stat/settings
 
 ```json5
 {
-      "enabled": "boolean"
+    "enabled": "boolean"
 }
 ```
 
@@ -218,7 +218,7 @@ PUT /api/v3/{company_id}/go_to_product
 
 ```json5
 {
-  "token": "string"
+    "token": "string"
 }
 ```
 
@@ -322,7 +322,7 @@ GET /license/update-type
 
 ```json5
 {
-  "update_type": "auto" | "manual"
+    "update_type": "auto" | "manual"
 }
 ```
 
@@ -342,7 +342,7 @@ PUT /license/update-type
 
 ```json5
 {
-  "update_type": "auto" | "manual"
+    "update_type": "auto" | "manual"
 }
 ```
 
@@ -411,7 +411,7 @@ GET /sysupdate/iso-upload
 
 ```json5
 {
-  "uploaded_iso_version": SystemVersion | null
+    "uploaded_iso_version": SystemVersion | null
 }
 ```
 * `null` - если ISO-файл не был загружен;
@@ -447,7 +447,7 @@ PUT /api/offline-update
 * `license.jwt` - файл с лицензией для этого NGFW, содержит подписанную лицензию в формате jwt;
 * `ideco-geoip.mmdb` - файл обновления базы GeoIP;
 * `iplist.tar.gz` - файл обновления списка IP-адресов;
-* `suricata-rules.tar.gz` - файл обновления правил suricata.
+* `suricata-rules.tar.gz` - файл обновления правил Suricata.
 
 Файлы должны быть представлены именно в такой последовательности, других файлов в архиве быть не должно.
 
@@ -655,7 +655,7 @@ POST /aliases/time_ranges
     "comment": "string",
     "weekdays": ["integer"], // (список дней недели, где 1-пн, 2-вт ... 7-вс)
     "start": "string", // (начало временного отрезка в формате: ЧЧ:ММ)
-    "end": "string" // (конец временного отрезка в формате: ЧЧ:ММ)
+    "end": "string", // (конец временного отрезка в формате: ЧЧ:ММ)
     "period": {
             "first": "integer", // (момент начала срока действия в формате ГГГГММДДЧЧММСС, например, 20240215000000)
             "last": "integer" // (момент окончания срока действия в формате ГГГГММДДЧЧММСС, например, 20240229235959)

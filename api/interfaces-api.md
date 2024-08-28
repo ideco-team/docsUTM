@@ -476,11 +476,11 @@ GET /network/tunnels
     "enabled": "boolean",
     "comment": "string",
     "addresses": ["string"],
-    "gateway": "null|string",
+    "gateway": "null" | "string",
     "parent_interface": "string",
     "osdevname": "string",
     "server": "string",
-    "zone": "null|string"
+    "zone": "null" | "string"
   },
 ...
 ]

@@ -113,7 +113,7 @@ PUT /firewall/settings
 
 ```json5
 [
-   "FilterRuleObject|DnatRuleObject|SnatRuleObject",
+   "FilterRuleObject" | "DnatRuleObject" | "SnatRuleObject"
 ]
 ```
 
@@ -140,7 +140,7 @@ PUT /firewall/settings
     "ips_enabled": "boolean",
     "timetable": [ "string" ],
     "comment": "string",
-    "action": "accept | drop"
+    "action": "accept" | "drop"
 }
 ```
 
@@ -184,9 +184,9 @@ PUT /firewall/settings
     "destination_ports": [ "string" ],
     "timetable": [ "string" ],
     "comment": "string",
-    "action": "accept | dnat",
-    "change_destination_address": "null | string",
-    "change_destination_port": "null | string"
+    "action": "accept" | "dnat",
+    "change_destination_address": "null" | "string",
+    "change_destination_port": "null" | "string"
 }
 ```
 
@@ -213,8 +213,8 @@ PUT /firewall/settings
     "outgoing_interface": "string",
     "timetable": [ "string" ],
     "comment": "string",
-    "action": "accept | snat",
-    "change_source_address": "null | string"
+    "action": "accept" | "snat",
+    "change_source_address": "null" | "string"
 }
 ```
 
@@ -241,11 +241,113 @@ PUT /firewall/settings
 
 ```json5
 [
-   "FilterRuleObject|DnatRuleObject|SnatRuleObject",
+   "FilterRuleObject" | "DnatRuleObject" | "SnatRuleObject"
 ]
 ```
 
 * В запросе не должно быть `id`, так как правило ещё не создано и не имеет идентификатора.
+
+**Обьект FilterRuleObject**
+
+```json5
+{
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "hip_profiles": [ "string" ],
+    "dpi_profile": "string",
+    "dpi_enabled": "boolean",
+    "ips_profile": "string",
+    "ips_enabled": "boolean",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "drop"
+}
+```
+
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `enabled` - включено (true) или выключено (false) правило;
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `source_ports` - порты источников, список идентификаторов алиасов;
+* `incoming_interface` - зона источника;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `outgoing_interface` - зона назначения;
+* `hip_profiles` - HIP-профили;
+* `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_enabled` - включена/выключена обработка с помощью модуля **Контроль приложений**;
+* `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_enabled` - включена/выключена обработка с помощью модуля **Предотвращение вторжений**;
+* `timetable` - время действия;
+* `comment` - комментарий (может быть пустым);
+* `action` - действие:
+  * `accept` - разрешить;
+  * `drop` - запретить.
+
+**Обьект DnatRuleObject**
+
+```json5
+{
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "dnat",
+    "change_destination_address": "null" | "string",
+    "change_destination_port": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `dnat` - производить DNAT.
+* `change_destination_address` - IP-адрес или диапазон IP-адресов для замены назначения, или `null`, если `action` = `accept`;
+* `change_destination_port` - порт или диапазон портов для замены значения, или `null`, если `action` = `accept`.
+
+**Обьект SnatRuleObject**
+
+```json5
+{
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "snat",
+    "change_source_address": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `snat` - производить SNAT.
+* `change_destination_address` - IP-адрес для замены источника, или `null`, если `action` = `accept`.
 
 **Ответ на успешный запрос:**
 
@@ -272,9 +374,115 @@ PUT /firewall/settings
 
 ```json5
 [
-   "FilterRuleObject|DnatRuleObject|SnatRuleObject",
+   "FilterRuleObject" | "DnatRuleObject" | "SnatRuleObject"
 ]
 ```
+
+**Обьект FilterRuleObject**
+
+```json5
+{
+    "id": "integer",
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "hip_profiles": [ "string" ],
+    "dpi_profile": "string",
+    "dpi_enabled": "boolean",
+    "ips_profile": "string",
+    "ips_enabled": "boolean",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "drop"
+}
+```
+
+* `id` - идентификатор правила.
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `enabled` - включено (true) или выключено (false) правило;
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `source_ports` - порты источников, список идентификаторов алиасов;
+* `incoming_interface` - зона источника;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `outgoing_interface` - зона назначения;
+* `hip_profiles` - HIP-профили;
+* `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_enabled` - включена/выключена обработка с помощью модуля **Контроль приложений**;
+* `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_enabled` - включена/выключена обработка с помощью модуля **Предотвращение вторжений**;
+* `timetable` - время действия;
+* `comment` - комментарий (может быть пустым);
+* `action` - действие:
+  * `accept` - разрешить;
+  * `drop` - запретить.
+
+**Обьект DnatRuleObject**
+
+```json5
+{
+    "id": "integer",
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "dnat",
+    "change_destination_address": "null" | "string",
+    "change_destination_port": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `dnat` - производить DNAT.
+* `change_destination_address` - IP-адрес или диапазон IP-адресов для замены назначения, или `null`, если `action` = `accept`;
+* `change_destination_port` - порт или диапазон портов для замены значения, или `null`, если `action` = `accept`.
+
+**Обьект SnatRuleObject**
+
+```json5
+{
+    "id": "integer",
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "accept" | "snat",
+    "change_source_address": "null" | "string"
+}
+```
+
+* `action` - действие:
+  * `accept` - разрешить;
+  * `snat` - производить SNAT.
+* `change_destination_address` - IP-адрес для замены источника, или `null`, если `action` = `accept`.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -396,29 +604,29 @@ GET /firewall/checks_packets
 
 ```json5
 {
-  "id": "string",
-  "enabled": "boolean",
-  "protocol": "tcp|udp",
-  "src_ip": "string",
-  "src_port": "integer",
-  "dst_ip": "string",
-  "dst_port": "integer",
-  "incoming_interface": "string",
-  "expected_result": "drop|accept",
-  "comment": "string"
+    "id": "string",
+    "enabled": "boolean",
+    "protocol": "tcp" | "udp",
+    "src_ip": "string",
+    "src_port": "integer",
+    "dst_ip": "string",
+    "dst_port": "integer",
+    "incoming_interface": "string",
+    "expected_result": "drop" | "accept",
+    "comment": "string"
 }
 ```
 
-* `id` - уникальный идентификатор проверки;
+* `id` - идентификатор проверки;
 * `enabled` - включена ли данная проверка;
 * `protocol` - протокол, используемый в данной проверке. Может быть `tcp` или `udp`;
 * `src_ip` - адрес источника тестовых пакетов;
 * `src_port` - порт источника тестовых пакетов;
 * `dst_ip` - адрес назначения тестовых пакетов;
 * `dst_port` - порт назначения тестовых пакетов;
-* `incoming_interface` - id алиаса сетевого интерфейса, на который приходят тестовые пакеты;
+* `incoming_interface` - идентификатор алиаса сетевого интерфейса, на который приходят тестовые пакеты;
 * `expected_result` - ожидаемый результат выполнения проверки. Может быть `drop` или `accept`;
-* `comment` - комментарий. Может быть пустым.
+* `comment` - комментарий, может быть пустым.
 
 </details>
 
@@ -433,15 +641,15 @@ POST /firewall/checks_packets
 
 ```json5
 {
-  "enabled": "boolean",
-  "protocol": "tcp|udp",
-  "src_ip": "string",
-  "src_port": "integer",
-  "dst_ip": "string",
-  "dst_port": "integer",
-  "incoming_interface": "string",
-  "expected_result": "drop|accept",
-  "comment": "string"
+    "enabled": "boolean",
+    "protocol": "tcp" | "udp",
+    "src_ip": "string",
+    "src_port": "integer",
+    "dst_ip": "string",
+    "dst_port": "integer",
+    "incoming_interface": "string",
+    "expected_result": "drop" | "accept",
+    "comment": "string"
 }
 ```
 
@@ -468,15 +676,15 @@ PATCH /firewall/checks_packets/<id проверки>
 
 ```json5
 {
-  "enabled": "boolean",
-  "protocol": "tcp|udp",
-  "src_ip": "string",
-  "src_port": "integer",
-  "dst_ip": "string",
-  "dst_port": "integer",
-  "incoming_interface": "string",
-  "expected_result": "drop|accept",
-  "comment": "string",
+    "enabled": "boolean",
+    "protocol": "tcp" | "udp",
+    "src_ip": "string",
+    "src_port": "integer",
+    "dst_ip": "string",
+    "dst_port": "integer",
+    "incoming_interface": "string",
+    "expected_result": "drop" | "accept",
+    "comment": "string",
 },
 ```
 
@@ -517,11 +725,11 @@ GET /firewall/checks_result
 
 ```json5
 {
-  "block_status": "boolean",
-  "in_progress": "boolean",
-  "check_datetime": "integer",
-  "data": {
-    "check_id": "CheckResult",  // объект CheckResult
+    "block_status": "boolean",
+    "in_progress": "boolean",
+    "check_datetime": "integer",
+    "data": {
+        "check_id": "CheckResult",  // объект CheckResult
   }
 }
 ```
@@ -530,9 +738,9 @@ GET /firewall/checks_result
 
 ```json5
 {
-  "result": "drop|accept",
-  "rule_id": "string",
-  "verdict": "boolean"
+    "result": "drop" | "accept",
+    "rule_id": "string",
+    "verdict": "boolean"
 }
 ```
 
@@ -540,7 +748,7 @@ GET /firewall/checks_result
 * `in_progress` - выполняются ли проверки в данный момент;
 * `check_datetime` - время выполнения последних проверок в формате `YYYYMMDDHMS`;
 * `data` - словарь результатов проверок, ключ - uuid проверки, значение - объект `CheckResult`;
-* `result` - результат выполнения проверки. Может быть `drop` или `accept`;
+* `result` - результат выполнения проверки, может быть `drop` или `accept`;
 * `rule_id` - номер отработавшего правила. Например, `fwd.ngfw.2`;
 * `verdict` - совпал ли фактический результат с ожидаемым.
 
@@ -557,7 +765,7 @@ GET /firewall/checks_settings
 
 ```json5
 {
-  "block_traffic": "boolean"
+    "block_traffic": "boolean"
 }
 ```
 
@@ -576,7 +784,7 @@ PUT /firewall/checks_settings
 
 ```json5
 {
-  "block_traffic": "boolean"
+    "block_traffic": "boolean"
 }
 ```
 
@@ -598,7 +806,7 @@ GET /application_control_backend/rules
 ```json5
 [ 
     {
-        "action": "string", // ["drop"|"accept"]
+        "action": "drop" | "accept"
         "aliases": ["string"],
         "comment": "string",
         "enabled": "boolean",
@@ -637,8 +845,8 @@ POST /application_control_backend/rules
     "name": "string",
     "action": "drop" | "accept",
     "comment": "string",
-    "aliases":["string"],
-    "protocols":["string"],
+    "aliases": ["string"],
+    "protocols": ["string"],
     "enabled": "boolean"
 }
 ```
@@ -898,8 +1106,8 @@ GET /content-filter/users_categories
 ```json5
 [
     {
-        "id": "string" (идентификатор категории, вида - users.id.1),
-        "name": "string" (название категории, не пустая строка),
+        "id": "string", // (идентификатор категории, вида - users.id.1)
+        "name": "string", // (название категории, не пустая строка)
         "comment": "string",
         "urls": ["string"]
     },
@@ -1042,7 +1250,7 @@ POST /content-filter/rules?anchor_item_id=<id правила>&insert_after={true
     "http_methods": ["string"],
     "content_types": ["string"],
     "access": "allow" | "deny" | "bump" | "redirect",
-    "redirect_url": "string|null",
+    "redirect_url": "string" | "null",
     "enabled": "boolean",
     "timetable": [ "string" ]
 }
@@ -1085,7 +1293,7 @@ PUT /content-filter/rules/<id правила>
     "http_methods": ["string"],
     "content_types": ["string"],
     "access": "allow | deny | bump | redirect",
-    "redirect_url": "string | null",
+    "redirect_url": "string" | "null",
     "enabled": "boolean",
     "timetable": [ "string" ]
 }
@@ -1117,7 +1325,7 @@ PUT /content-filter/rules/<id правила>
   * `bump` - расшифровать запрос;
   * `redirect` - перенаправить запрос на `redirect_url`;
 * `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
-* `enabled`: правило включено (true) или выключено (false);
+* `enabled` - правило включено (true) или выключено (false);
 * `timetable` - время действия, список идентификаторов алиасов.
 
 **Ответ на успешный запрос:** 200 ОК
@@ -1177,7 +1385,7 @@ GET /ips/status
 [
     {
         "name": "string",
-        "status": "active|activating|deactivating|failed|inactive|reloading",
+        "status": "active" | "activating" | "deactivating" | "failed" | "inactive" | "reloading",
         "msg": [ "string" ]
     }
 ]
@@ -1311,24 +1519,24 @@ GET /ips/signature_groups/mitre
 GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":"equals","value":[<classtype нужной группы сигнатур (может быть несколько значений через запятую)>]} ], "link_operator":"or" } ]
 ```
 
-* `"column_name":"classtype","operator":"equals","value":[<classtype нужной группы сигнатур (может быть несколько значений через запятую)>]` - фильтр: отбирает из таблицы групп сигнатур только те группы, у которых значение `classtype` соответствует указанным в `value`.
+* `"column_name":"classtype","operator":"equals","value":[<classtype нужной группы сигнатур (может быть несколько значений через запятую)>]` - фильтр. Отбирает из таблицы групп сигнатур только те группы, у которых значение `classtype` соответствует указанным в `value`.
 
 **Ответ на успешный запрос:**
 
 ```json5
 {
     "signatures": [
-            {
-                "action": "drop",
-                "protocol": "tcp",
-                "flow": "to_server",
-                "classtype": "attempted-admin",
-                "sid": 2050604,
-                "signature_severity": "Major",
-                "mitre_tactic_id": "TA0001",
-            },
-            ...
-        ]
+        {
+            "action": "drop",
+            "protocol": "tcp",
+            "flow": "to_server",
+            "classtype": "attempted-admin",
+            "sid": 2050604,
+            "signature_severity": "Major",
+            "mitre_tactic_id": "TA0001",
+        },
+        ...
+    ]
 }
 ```
 
@@ -1517,9 +1725,9 @@ GET /ips/update_advanced
 
 ```json
 {
-    "status": "up_to_date|updating|failed_to_update|disabled",
+    "status": "up_to_date" | "updating" | "failed_to_update|disabled",
     "msg": "i18n_string",
-    "last_update": "float|null"
+    "last_update": "float" | "null"
 }
 ```
 

@@ -43,7 +43,7 @@ GET /vpn_servers/settings
       "port": "integer"
   },
   "network": "string",
-  "zone": "string|null",
+  "zone": "string" | "null",
   "dns_suffix": "string"
 }
 ```
@@ -82,7 +82,7 @@ PUT /vpn_servers/settings
       "port": "integer"
   },
   "network": "string",
-  "zone": "string|null",
+  "zone": "string" | "null",
   "dns_suffix": "string"
 }
 ```
@@ -104,7 +104,7 @@ GET /vpn_servers/powershell/status
 
 ```json5
 {
-  "sstp_available": "bool",
+  "sstp_available": "boolean",
 }
 ```
 
@@ -137,11 +137,11 @@ GET /vpn_servers/access_rules
   "id": "integer",
   "enabled": "boolean",
   "title": "string",
-  "sources": [ "string" ],
-  "objects": [ "string" ],
-  "vpns": [ "string" ],
-  "action": "allow | deny",
-  "two_factor": "smsaero|totp|multifactor|not_required",
+  "sources": ["string"],
+  "objects": ["string"],
+  "vpns": ["string"],
+  "action": "allow" | "deny",
+  "two_factor": "smsaero" | "totp" | "multifactor" | "not_required",
   "comment": "string"
 }
 ```
@@ -198,11 +198,11 @@ POST /vpn_servers/access_rules?anchor_item_id={int}&insert_after={true|false}
 {
   "enabled": "boolean",
   "title": "string",
-  "sources": [ "string" ],
-  "objects": [ "string" ],
-  "vpns": [ "string" ],
-  "action": "allow | deny",
-  "two_factor": "smsaero|totp|multifactor|not_required",
+  "sources": ["string"],
+  "objects": ["string"],
+  "vpns": ["string"],
+  "action": "allow" | "deny",
+  "two_factor": "smsaero" | "totp" | "multifactor" | "not_required",
   "comment": "string"
 }
 ```
@@ -211,7 +211,7 @@ POST /vpn_servers/access_rules?anchor_item_id={int}&insert_after={true|false}
 
 ```json5
 {
-   "id": "integer",
+   "id": "integer"
 }
 ```
 
@@ -232,11 +232,11 @@ PATCH /vpn_servers/access_rules/<id правила>
 {
   "enabled": "boolean",
   "title": "string",
-  "sources": [ "string" ],
-  "objects": [ "string" ],
-  "vpns": [ "string" ],
-  "action": "allow | deny",
-  "two_factor": "smsaero|totp|multifactor|not_required",
+  "sources": ["string"],
+  "objects": ["string"],
+  "vpns": ["string"],
+  "action": "allow" | "deny",
+  "two_factor": "smsaero" | "totp" | "multifactor" | "not_required",
   "comment": "string"
 }
 ```
@@ -267,7 +267,7 @@ PATCH /vpn_servers/access_rules/<id правила>/position
 
 ```json5
 {
-   "direction": "up|down",
+   "direction": "up" | "down"
 }
 ```
 
@@ -318,7 +318,7 @@ GET /vpn_servers/lease_rules
 <summary>Добавление правил</summary>
 
 ```
-POST /vpn_servers/lease_rules?anchor_item_id={int}&insert_after={true|false}
+POST /vpn_servers/lease_rules?anchor_item_id=<integer>&insert_after=<true|false>
 ```
 
 Параметры запроса:
@@ -341,7 +341,7 @@ POST /vpn_servers/lease_rules?anchor_item_id={int}&insert_after={true|false}
 
 ```json5
 {
-   "id": "integer",
+   "id": "integer"
 }
 ```
 
@@ -394,7 +394,7 @@ PATCH /vpn_servers/lease_rules/<id правила>/position
 
 ```json5
 {
-   "direction": "up|down",
+   "direction": "up" | "down"
 }
 ```
 
@@ -423,7 +423,7 @@ GET /vpn_servers/vpns_in_access_rules
    "l2tp": "boolean",
    "sstp": "boolean",
    "ikev2": "boolean",
-   "agent-vpn-ng": "boolean",
+   "agent-vpn-ng": "boolean"
 }
 ```
 
@@ -469,8 +469,8 @@ GET /vpn_servers/user_access_rules/<id пользователя>
   "sources": [ "string" ],
   "objects": [ "string" ],
   "vpns": [ "string" ],
-  "action": "allow | deny",
-  "two_factor": "smsaero|totp|multifactor|not_required",
+  "action": "allow" | "deny",
+  "two_factor": "smsaero" | "totp" | "multifactor" | "not_required",
   "comment": "string"
 }
 ```
@@ -492,7 +492,7 @@ GET /vpn_servers/dhcp
 
 ```json5
 {
-  "mode": "all|utm|local|none|custom",
+  "mode": "all" | "utm" | "local" | "none" | "custom",
   "networks": ["string"],
   "excluded_networks": ["string"]
 }
@@ -520,7 +520,7 @@ PUT /vpn_servers/dhcp
 
 ```json5
 {
-  "mode": "all|utm|local|none|custom",
+  "mode": "all" | "utm" | "local" | "none" | "custom",
   "networks": ["string"],
   "excluded_networks": ["string"]
 }
