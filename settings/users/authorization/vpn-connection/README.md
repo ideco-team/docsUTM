@@ -51,6 +51,8 @@
 
 {% hint style="info" %}
 Используйте зоны для настройки конфигурации VPN-подключения сразу нескольких сетевых интерфейсов.
+
+Если требуется настроить VPN-подключение к [Loopback-интерфейсу](/settings/services/connection-to-provider/loopback.md), оставьте поле **Зона** пустым.
 {% endhint %}
 
 {% hint style="danger" %}
