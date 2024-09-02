@@ -10,10 +10,6 @@ description: >-
 [firewall.md](firewall.md)
 {% endcontent-ref %}
 
-{% content-ref url="application-control.md" %}
-[application-control.md](application-control.md)
-{% endcontent-ref %}
-
 {% content-ref url="content-filter/README.md" %}
 [content-filter/README.md](content-filter/README.md)
 {% endcontent-ref %}
