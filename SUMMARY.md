@@ -19,6 +19,7 @@
 * [Установка](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
 * [Регистрация сервера](installation/server-registration.md)
+* [Получение доступа в интернет](installation/get-internet.md)
 
 ## Настройка Ideco NGFW <a href="#settings" id="settings"></a>
 
