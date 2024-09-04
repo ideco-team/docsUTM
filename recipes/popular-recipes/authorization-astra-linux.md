@@ -78,7 +78,7 @@
 
 Для браузера **Yandex**</summary>
 
-1\. Скачайте корневой [сертификат](/installation/initial-setup#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)).
+1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)).
 
 2\. В браузере Yandex перейдите на вкладку **Настройки -> Системные -> Управление сертификатами -> Центры сертификации -> Импорт** и добавьте сертификат в список доверенных.
 
@@ -90,7 +90,7 @@
 
 Для браузера **Chromium**</summary>
 
-1\. Скачайте корневой [сертификат](/installation/initial-setup#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)).
+1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)).
 
 2\. В браузере Chromium перейдите на вкладку **Безопасность -> Управление сертификатами -> Центры сертификации -> Импортировать** и добавьте сертификат в список доверенных.
 
@@ -102,7 +102,7 @@
 
 Для браузера **Firefox**</summary>
 
-1\. Скачайте корневой [сертификат](/installation/initial-setup#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)). 
+1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)). 
 
 2\. В настройках браузера Firefox в пункте **Защита и приватность** в разделе **Защита** выберите **Просмотр сертификатов**:
 
