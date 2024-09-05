@@ -86,7 +86,7 @@
   * [Квоты](settings/access-rules/quotas.md)
 * [Профили безопасности](settings/security-profiles/README.md)
   * [Web Application Firewall](settings/security-profiles/waf-profiles.md)
-  * [Контроль приложений](settings/security-profiles/application-control.md)
+  * [Профили контроля приложений](settings/security-profiles/application-control.md)
   * [Предотвращение вторжений](settings/security-profiles/ips-profiles.md)
 * [Сервисы](settings/services/README.md)
   * [Сетевые интерфейсы](settings/services/connection-to-provider/README.md)
