@@ -244,4 +244,5 @@
 ## changelog
 
 * [Ideco NGFW 17.x](changelog/ideco-utm/README.md)
+* [ФСТЭК Ideco UTM 17.Х](changelog/fstek/README.md)
 * [Ideco Center 17.Х](changelog/cc/README.md)
