@@ -116,7 +116,7 @@ GET /ips/profile_rules?profile_id=<string>
      },
     ...
     ]
-    "action": "default" | "alert" | "drop" | "skip",
+    "action": "default" | "alert" | "drop" | "pass",
     "comment": "string"
   },
   ...
@@ -156,7 +156,7 @@ POST /ips/profile_rules?profile_id=<string>&anchor_item_id=<integer>&insert_afte
       },
       ...
     ],
-    "action": "default" | "alert" | "drop" | "skip",
+    "action": "default" | "alert" | "drop" | "pass",
     "comment": "string"
 }
 ```
@@ -202,7 +202,7 @@ PATCH /ips/profile_rules?profile_id=<string>&rule_id=<integer>
        },
       ...
     ],
-    "action": "default" | "alert" | "drop" | "skip",
+    "action": "default" | "alert" | "drop" | "pass",
     "comment": "string"
 }
 ```
@@ -257,7 +257,7 @@ POST /ips/profiles-create-with-rules
                   },
                   ...
                 ],
-          "action": "default" | "alert" | "drop" | "skip",
+          "action": "default" | "alert" | "drop" | "pass",
           "comment": "string"
           },
           ...
