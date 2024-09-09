@@ -139,7 +139,7 @@
   * [Центральная консоль](settings/server-management/central-console.md)
   * [VCE](settings/server-management/vce.md)
   * [Кластеризация](settings/server-management/cluster/cluster.md)
-    * [Настройка кластера](/settings/server-management/cluster/cluster-creation.md)
+    * [Настройка кластера](settings/server-management/cluster/cluster-creation.md)
   * [Обновления](settings/server-management/server-update.md)
   * [Бэкапы](settings/server-management/backup.md)
   * [Терминал](settings/server-management/terminal/README.md)
