@@ -28,7 +28,7 @@ description: В разделе представлена информация о 
 * **Контент-фильтр** - ideco-content-filter-backend;
 * **Ограничение скорости** - ideco-shaper-backend;
 * **Антивирусы веб-трафика** - ideco-av-backend, ideco-clamd;
-* **Предотвращение вторжений** - ideco-suricata-backend, ideco-suricata, ideco-suricata-event-syncer, ideco-suricata-event-to-syslog;
+* **Предотвращение вторжений** - ideco-suricata-backend, ideco-suricata, ideco-suricata-event-syncer, ideco-suricata-profiles-syncer;
 * **Объекты** - ideco-alias-backend;
 * **Квоты** - ideco-quotas-backend, systemd-quotacheck;
 * **Сетевые интерфейсы** - ideco-network-backend, ideco-network-nic;
