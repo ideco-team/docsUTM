@@ -574,7 +574,7 @@ PUT /content-filter/users_categories/<id категории>
 </details>
 
 <details>
-<summary>Создание правил</summary>
+<summary>Создание правила</summary>
 
 * `POST /content-filter/rules/before?anchor_item_id=123&insert_after={true|false}` - создание начального правила;
 * `POST /content-filter/rules/after?anchor_item_id=123&insert_after={true|false}` - создание конечного правила.
@@ -626,7 +626,7 @@ PUT /content-filter/users_categories/<id категории>
 </details>
 
 <details>
-<summary>Редактирование правил</summary>
+<summary>Редактирование правила</summary>
 
 * `PATCH /content-filter/rules/before/<id правила>` - изменение начального правила;
 * `PATCH /content-filter/rules/after/<id правила>` - изменение конечного правила.
@@ -672,7 +672,7 @@ PUT /content-filter/users_categories/<id категории>
 </details>
 
 <details>
-<summary>Перемещение правил</summary>
+<summary>Перемещение правила</summary>
 
 * `PATCH /content-filter/rules/before/move` - перемещение начального правила;
 * `PATCH /content-filter/rules/after/move` - перемещение конечного правила.
@@ -706,6 +706,8 @@ PUT /content-filter/users_categories/<id категории>
 **Ответ на успешный запрос:** 200 OK
 
 </details>
+
+API для управления морфологическим анализом представлен в [статье](/api/access-rules-api.md#morfologicheskii-analiz).
 
 #### Файрвол
 
