@@ -1,5 +1,10 @@
 # Веб-аутентификация
 
+{% hint style="success" %}
+Название службы раздела **Веб-аутентификация**: `ideco-web-authd`.\
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
+{% endhint %}
+
 {% hint style="info" %}
 Поддерживаемые браузеры:
 

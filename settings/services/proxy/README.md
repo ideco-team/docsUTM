@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Прокси**: `ideco-proxy-backend`; `squid`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 Прокси-сервер, помимо проксирования веб-трафика, используется для передачи трафика следующим сервисам:

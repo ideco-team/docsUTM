@@ -9,7 +9,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **DNS**: `ideco-unbound`; `ideco-dns-backend; nsd`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 Настройка производится в разделе **Сервер -> DNS** в следующих вкладках:

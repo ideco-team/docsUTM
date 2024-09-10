@@ -1,8 +1,8 @@
 # VPN-подключения
 
 {% hint style="success" %}
-Название службы раздела **VPN-подключения**: `ideco-accel-l2tp`; `ideco-accel-pptp`; `ideco-accel-sstp`; `ideco-vpn-servers-backend`; `ideco-vpn-authd`.\
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Название службы раздела **VPN-подключения**: `ideco-accel-l2tp`; `ideco-accel-pptp`; `ideco-accel-sstp`; `ideco-vpn-servers-backend`; `ideco-vpn-authd`; `ideco-vpn-dhcp-backend`.\
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 
 Инструкция по настройке VPN-подключения через [Ideco Client](/settings/users/ideco-client/README.md).
 {% endhint %}

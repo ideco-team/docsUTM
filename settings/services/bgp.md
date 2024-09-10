@@ -5,7 +5,7 @@ description: Настройка BGP для обмена информацией �
 # BGP
 
 {% hint style="success" %}
-Название службы раздела **BGP**: `frr.service`; `ideco-routing-backend`. \
+Название службы раздела **BGP**: `frr`; `ideco-routing-backend`. \
 Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 

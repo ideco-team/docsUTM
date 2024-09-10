@@ -1,8 +1,8 @@
 # OSPF 
 
 {% hint style="success" %}
-Название службы раздела **OSPF**: `frr.service; ideco-routing-backend`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Название службы раздела **OSPF**: `frr; ideco-routing-backend`. \
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 В Ideco NGFW реализована поддержка OSPF (Open Shortest Path First) - протокола маршрутизации по состоянию каналов. Канал - это интерфейс маршрутизатора или сегмент сети, который соединяет два маршрутизатора. 

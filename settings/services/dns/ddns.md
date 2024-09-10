@@ -5,6 +5,11 @@ description: >-
 
 # DDNS
 
+{% hint style="success" %}
+Название службы раздела **DDNS**: `ideco-dns-backend`. \
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
+{% endhint %}
+
 DDNS в Ideco NGFW реализован через интеграцию с хостингом RU-CENTER. Перед настройкой DDNS зарегистрируйтесь на сайте [RU-CENTER](https://www.nic.ru/) и приобретите [DNS-хостинг](https://www.nic.ru/catalog/for-domain-use/dns-hosting/). \
 Для решения вопросов по работе с хостингом воспользуйтесь страницей [помощи](https://www.nic.ru/help/).
 

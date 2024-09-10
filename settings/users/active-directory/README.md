@@ -8,7 +8,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Active Directory/Samba DC**: `ideco-ad-backend`; `ideco-ad-log-collector@<имя домена>`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 При интеграции импортируются учетные записи и номера телефонов пользователей, исключая пароли. При аутентификации пользователей проверка осуществляется средствами Active Directory или Samba DC соответственно.
