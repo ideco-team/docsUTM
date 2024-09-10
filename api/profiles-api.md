@@ -112,7 +112,7 @@ GET /ips/profile_rules?profile_id=<string>
       {
         "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
         "operator": "equals",
-        "values": ["string" | "integer"],
+        "values": [ "string" | "integer" ],
      },
     ...
     ]
@@ -152,7 +152,7 @@ POST /ips/profile_rules?profile_id=<string>&anchor_item_id=<integer>&insert_afte
        {
         "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
         "operator": "equals",
-        "values": ["string" | "integer"]
+        "values": [ "string" | "integer" ]
       },
       ...
     ],
@@ -198,7 +198,7 @@ PATCH /ips/profile_rules?profile_id=<string>&rule_id=<integer>
       {
         "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
         "operator": "equals",
-        "values": ["string" | "integer"]
+        "values": [ "string" | "integer" ]
        },
       ...
     ],
@@ -253,7 +253,7 @@ POST /ips/profiles-create-with-rules
                 {
                 "key": "sid" | "mitre_tactic_id" | "protocol" | "signature_severity" | "flow" | "classtype",
                 "operator": "equals",
-                "values": ["string" | "integer"]
+                "values": [ "string" | "integer" ]
                   },
                   ...
                 ],
@@ -381,16 +381,16 @@ POST /api/application_control/profiles
 ```json5
 [
   {
-  "id": "string",
-  "name": "string",
-  "comment": "string",
-  "protocols": [
-    {
-      "id": "string",
-      "action": "deny" | "allow"
-    },
-    ...
-    ],
+    "id": "string",
+    "name": "string",
+    "comment": "string",
+    "protocols": [
+      {
+        "id": "string",
+        "action": "deny" | "allow"
+      },
+      ...
+      ],
   }
 ]
 ```
@@ -437,15 +437,15 @@ PATCH /api/application_control/profiles/<id профиля>
 ```json5
 [
   {
-  "name": "string",
-  "comment": "string",
-  "protocols": [
-    {
-      "id": "string",
-      "action": "deny" | "allow"
-    },
-    ...
-    ],
+    "name": "string",
+    "comment": "string",
+    "protocols": [
+      {
+        "id": "string",
+        "action": "deny" | "allow"
+      },
+      ...
+      ],
   }
 ]
 ```

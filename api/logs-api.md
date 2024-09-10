@@ -41,9 +41,11 @@ GET /logs_backend/remote_syslog/state
 
 ```json5
 {
-  "enabled": "boolean" // (true - включен, false - выключен)
+    "enabled": "boolean"
 }
 ```
+
+* `msg` - `true` для включения, `false` для выключения.
 
 **Включение/выключение**
 
@@ -83,8 +85,8 @@ GET /logs_backend/remote_syslog
 
 * `host` - IP-адрес сервера;
 * `port` - порт;
-* `protocol` - протокол, допустимые значения `tcp` или `udp`;
-* `format` - формат, допустимые значения `syslog` или `cef`.
+* `protocol` - протокол, допустимые значения: `tcp` или `udp`;
+* `format` - формат, допустимые значения: `syslog` или `cef`.
 
 </details>
 
@@ -105,6 +107,11 @@ PATCH /logs_backend/remote_syslog
   "format": "syslog" | "cef",
 }
 ```
+
+* `host` - IP-адрес сервера;
+* `port` - порт;
+* `protocol` - протокол, допустимые значения: `tcp` или `udp`;
+* `format` - формат, допустимые значения: `syslog` или `cef`.
 
 Пустые значения "" не допускаются.
 

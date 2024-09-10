@@ -98,6 +98,9 @@ POST /web/admins/local
     "id": "string"
 }
 ```
+
+* `id` - идентификатор администратора.
+
 </details>
 
 <details>
@@ -157,7 +160,7 @@ DELETE /web/admins/local/<id администратора>
 GET /monitor_backend/admin_sessions
 ```
 
-**Ответ на успешный запрос:** список объектов `AdminSession`
+**Ответ на успешный запрос:**
 
 ```json5
 [
@@ -165,7 +168,7 @@ GET /monitor_backend/admin_sessions
     "id": "string",
     "login": "string",
     "name": "string",
-    "competence": ["string"],
+    "competence": [ "string" ],
     "role_id": "string",
     "role_name": "string",
     "domain_name": "string",
@@ -189,7 +192,7 @@ GET /monitor_backend/admin_sessions
 * `auth_type` - тип авторизации администратора (`ad`, `ald`, `local`, `radius`);
 * `auth_rule_id` - идентификатор правила, по которому авторизовался администратор;
 * `admin_id` - идентификатор администратора;
-* `login_timestamp` - время момента успешной авторизации администратора (число в формате YYYYMMDDhhmmss).
+* `login_timestamp` - время момента успешной авторизации администратора (число в формате `YYYYMMDDhhmmss`).
 
 </details>
 
@@ -197,10 +200,8 @@ GET /monitor_backend/admin_sessions
 <summary>Удаление сессии</summary>
 
 ```
-DELETE /monitor_backend/admin_sessions/<admin_session_id>
+DELETE /monitor_backend/admin_sessions/<id сессии авторизации администратора>
 ```
-
-* `admin_session_id` - идентификатор сессии авторизации администратора.
 
 **Ответ на успешный запрос:** 200 ОК
 
