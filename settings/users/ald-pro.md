@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **ALD Pro**: `ideco-ald-rest`; `ideco-ald-backend`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 
 Ideco NGFW поддерживает версии ALD Pro от 1.4 и выше.
 {% endhint %}

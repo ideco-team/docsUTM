@@ -1,6 +1,6 @@
 # Управление сервером
 
-В Ideco Center разделы [Автоматическое обновление](/settings/server-management/server-update.md), [Резервное копирование](/settings/server-management/backup.md) и [Терминал](/settings/server-management/terminal.md) аналогичны этим разделам в Ideco NGFW.
+В Ideco Center разделы [Автоматическое обновление](/settings/server-management/server-update.md), [Резервное копирование](/settings/server-management/backup.md) и [Терминал](/settings/server-management/terminal/README.md) аналогичны этим разделам в Ideco NGFW.
 
 ## Администраторы
 

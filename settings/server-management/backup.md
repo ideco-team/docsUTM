@@ -9,7 +9,7 @@ description: >-
 
 {% hint style="success" %}
 Название служб раздела **Бэкапы**: `ideco-backup-backend`; `ideco-backup-create`; `ideco-backup-restore`; `ideco-backup-rotate`.\
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 В NGFW создается только полный бэкап, который включают в себя все настройки, созданные администратором в веб-интерфейсе.
