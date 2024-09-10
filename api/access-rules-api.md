@@ -24,7 +24,7 @@ GET /firewall/status
   {
       "name": "rules-in-kernel",
       "status": "active" | "activating" | "deactivating" | "failed" | "inactive" | "reloading",
-      "msg": [ "string" ]  // (список строк, поясняющих текущее состояние)
+      "msg": [ "string" ]
   },
   {
         "msg": [ "string" ],
@@ -33,6 +33,8 @@ GET /firewall/status
     }
 ]
 ```
+
+* `msg` - список строк, поясняющих текущее состояние.
 
 </details>
 
@@ -53,7 +55,7 @@ GET /firewall/state
 } 
 ```
 
-* `enabled` - опция раздела Файрвол включен (true) или отключен (false).
+* `enabled` - опция раздела **Файрвол**: `true` - включена, `false` - выключена.
 
 ### Логирование правил
 
@@ -67,9 +69,13 @@ GET /firewall/settings
 {
     "automatic_snat_enabled": "boolean",
     "log_mode": "nothing" | "all" | "selected",
-    "log_actions": ["accept" | "drop" | "dnat" | "snat" | "mark_log" | "mark_not_log"]
+    "log_actions": [ "accept" | "drop" | "dnat" | "snat" | "mark_log" | "mark_not_log" ]
 } 
 ```
+
+* `automatic_snat_enabled` - включение автоматического SNAT: `true` - включен, `false`- выключен;
+* `log_mode` - режим логирования;
+* `log_actions` - события, которые будут логироваться.
 
 </details>
 
@@ -86,11 +92,11 @@ PUT /firewall/settings
 {
     "automatic_snat_enabled": "boolean",
     "log_mode": "nothing" | "all" | "selected",
-    "log_actions": ["accept" | "drop" | "dnat" | "snat" | "mark_log" | "mark_not_log"]
+    "log_actions": [ "accept" | "drop" | "dnat" | "snat" | "mark_log" | "mark_not_log" ]
 } 
 ```
 
-* `automatic_snat_enabled` - включение автоматического SNAT;
+* `automatic_snat_enabled` - включение автоматического SNAT: `true` - включен, `false`- выключен;
 * `log_mode` - режим логирования;
 * `log_actions` - события, которые будут логироваться. 
 
@@ -141,15 +147,15 @@ PUT /firewall/settings
   * `snat` - производить SNAT;
   * `mark_log` - логировать; 
   * `mark_not_log` - не логировать;
-* `comment` - комментарий (может быть пустым);
+* `comment` - комментарий, может быть пустым;
 * `destination_addresses` - адрес назначения;
 * `destination_addresses_negate` - инвертировать адрес назначения;
 * `destination_ports` - порты назначения;
-* `enabled` - включено (true) или выключено (false) правило;
+* `enabled` - статус правила: `true` - включено, `false` - выключено;
 * `hip_profiles` - HIP-профили;
 * `incoming_interface` - зона источника;
 * `outgoing_interface` - зона назначения;
-* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `protocol` - протокол;
 * `source_addresses` - адрес источника;
 * `source_addresses_negate` - инвертировать адрес источника;
@@ -175,7 +181,7 @@ PUT /firewall/settings
 ```json5
 {
     "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
-    "comment": "",
+    "comment": "string",
     "destination_addresses": [ "string" ],
     "destination_addresses_negate": "boolean",
     "destination_ports": [ "string" ],
@@ -188,8 +194,29 @@ PUT /firewall/settings
     "source_addresses": [ "string" ],
     "source_addresses_negate": "boolean",
     "timetable": [ "string" ]
-    }
+}
 ```
+
+* `action` - действие:
+  * `accept` - разрешить; 
+  * `drop` - запретить;
+  * `dnat` - производить DNAT;
+  * `snat` - производить SNAT;
+  * `mark_log` - логировать; 
+  * `mark_not_log` - не логировать;
+* `comment` - комментарий, может быть пустым;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `enabled` - статус правила: `true` - включено, `false` - выключено;
+* `hip_profiles` - HIP-профили;
+* `incoming_interface` - зона источника;
+* `outgoing_interface` - зона назначения;
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `timetable` - время действия.
 
 **Ответ на успешный запрос:**
 
@@ -198,6 +225,8 @@ PUT /firewall/settings
     "id": "integer"
 }
 ```
+
+* `id` - идентификатор правила.
 
 </details>
 
@@ -215,7 +244,7 @@ PUT /firewall/settings
 ```json5
 {
     "action": "accept" | "drop" | "dnat" | "snat" ("mark_log" | "mark_not_log" для раздела Логирование),
-    "comment": "",
+    "comment": "string",
     "destination_addresses": [ "string" ],
     "destination_addresses_negate": "boolean",
     "destination_ports": [ "string" ],
@@ -228,8 +257,29 @@ PUT /firewall/settings
     "source_addresses": [ "string" ],
     "source_addresses_negate": "boolean",
     "timetable": [ "string" ]
-    }
+}
 ```
+
+* `action` - действие:
+  * `accept` - разрешить; 
+  * `drop` - запретить;
+  * `dnat` - производить DNAT;
+  * `snat` - производить SNAT;
+  * `mark_log` - логировать; 
+  * `mark_not_log` - не логировать;
+* `comment` - комментарий, может быть пустым;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `enabled` - статус правила: `true` - включено, `false` - выключено;
+* `hip_profiles` - HIP-профили;
+* `incoming_interface` - зона источника;
+* `outgoing_interface` - зона назначения;
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `timetable` - время действия.
 
 **Ответ на успешный запрос**: 200 ОК
 
@@ -288,9 +338,11 @@ GET /firewall/watch
 
 ```json5
 {
-   "enabled": "boolean" // (true - если счетчик включен, false - если выключен)
+   "enabled": "boolean"
 }
 ```
+
+* `enabled` - если `true`, то счетчик включен, если `false` - выключен.
 
 </details>
 
@@ -305,9 +357,11 @@ PUT /firewall/watch
 
 ```json5
 {
-   "enabled": "boolean" // (true - чтобы включить, false - чтобы выключить)
+   "enabled": "boolean"
 }
 ```
+
+* `enabled` - `true` для включения, `false` для выключения.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -328,11 +382,14 @@ PUT /firewall/watch
 [
    {
       "id": "integer",
-      "packets": "integer" // (количество сработок правила)
+      "packets": "integer"
    },
    ...
 ]
 ```
+
+* `id` - идентификатор правила;
+* `packets` - количество сработок правила.
 
 </details>
 
@@ -350,13 +407,13 @@ GET /application_control_backend/rules
 ```json5
 [ 
     {
-        "action": "drop" | "accept"
-        "aliases": ["string"],
+        "action": "drop" | "accept",
+        "aliases": [ "string" ],
         "comment": "string",
         "enabled": "boolean",
         "name": "string",
         "parent_id": "string",
-        "protocols": ["string"],
+        "protocols": [ "string" ],
         "id": "integer"
     },
     ...
@@ -366,7 +423,7 @@ GET /application_control_backend/rules
 * `action` - действие, применяемое к правилу;
 * `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md#poluchenie-identifikatorov-obektov));
 * `comment` - комментарий правила;
-* `enabled` - статус правила (true - включено, false - отключено);
+* `enabled` - статус правила: `true` - включено, `false` - выключено;
 * `name` - имя правила;
 * `parent_id` - идентификатор родительской группы серверов;
 * `protocols` - список протоколов;
@@ -389,19 +446,19 @@ POST /application_control_backend/rules
     "name": "string",
     "action": "drop" | "accept",
     "comment": "string",
-    "aliases": ["string"],
-    "protocols": ["string"],
+    "aliases": [ "string" ],
+    "protocols": [ "string" ],
     "enabled": "boolean"
 }
 ```
 
-* `action` - действие, применяемое к правилу;
-* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md#poluchenie-identifikatorov-obektov));
-* `comment` - комментарий правила;
-* `enabled` - статус правила (true - включено, false - отключено);
-* `name` - имя правила;
 * `parent_id` - идентификатор родительской группы серверов;
-* `protocols` - список протоколов.
+* `name` - имя правила;
+* `action` - действие, применяемое к правилу;
+* `comment` - комментарий правила;
+* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md#poluchenie-identifikatorov-obektov));
+* `protocols` - список протоколов;
+* `enabled` - статус правила: `true` - включено, `false` - выключено.
 
 **Ответ на успешный запрос:**
 
@@ -429,20 +486,20 @@ PUT /application_control_backend/rules/<id правила>
     "parent_id": "string",
     "name": "string",
     "comment": "string",
-    "aliases": ["string"],
-    "protocols": ["string"],
+    "aliases": [ "string" ],
+    "protocols": [ "string" ],
     "action": "drop" | "accept",
     "enabled": "boolean"
 }
 ```
 
-* `action` - действие, применяемое к правилу;
-* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md#poluchenie-identifikatorov-obektov));
-* `comment` - комментарий правила;
-* `enabled` - статус правила (true - включено, false - отключено);
-* `name` - имя правила;
 * `parent_id` - идентификатор родительской группы серверов;
-* `protocols` - список протоколов.
+* `name` - имя правила;
+* `comment` - комментарий правила;
+* `aliases` - объекты, которые используются в правиле (например, any. Список объектов доступен по [ссылке](/api/description-of-handlers.md#poluchenie-identifikatorov-obektov));
+* `protocols` - список протоколов;
+* `action` - действие, применяемое к правилу;
+* `enabled` - статус правила: `true` - включено, `false` - выключено.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -500,7 +557,7 @@ GET /ips/status
     {
         "name": "string",
         "status": "active" | "activating" | "deactivating" | "failed" | "inactive" | "reloading",
-        "msg": ["string"]
+        "msg": [ "string" ]
     },
   ...
 ]
@@ -525,7 +582,7 @@ GET /ips/update
 {
     "status": "up_to_date" | "updating" | "failed_to_update" | "disabled"],
     "msg": "i18n_str",
-    "last_update": "float | null"
+    "last_update": "float" | "null"
 }
 ```
 
@@ -552,7 +609,7 @@ GET /ips/update_advanced
 {
     "status": "up_to_date" | "updating" | "failed_to_update" | "disabled",
     "msg": "i18n_str",
-    "last_update": "float|null"
+    "last_update": "float" | "null"
 }
 ```
 
@@ -592,7 +649,7 @@ GET /ips/state
 }
 ```
 
-* `enabled` - `true` если модуль включен, `false` - если выключен
+* `enabled` - `true`, если модуль включен, `false` - выключен.
 
 </details>
 
@@ -612,7 +669,7 @@ PUT /ips/state
 }
 ```
 
-* `enabled` - `true` если модуль включен, `false` - если выключен
+* `enabled` - `true` если модуль включен, `false` - выключен.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -704,7 +761,7 @@ GET /ips/rules
 
 * `id` - идентификатор набора правил;
 * `name` - название набора правил;
-* `enabled` - состояние набора правил (включен/выключен).
+* `enabled` - состояние набора правил: `true` - включен, `false` - выключен.
 
 </details>
 
@@ -722,6 +779,8 @@ PATCH /ips/rules/<id набора правил>
     "enabled": "boolean"
 }
 ```
+
+* `enabled` - `true` для включения набора правил, `false` для выключения.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -743,7 +802,7 @@ GET /ips/rules/sid/<sid правила>
 }
 ```
 
-* `rule` - текст правила. Если правило не найдено - пустая строка.
+* `rule` - текст правила. Если правило не найдено, то пустая строка.
 
 </details>
 
@@ -790,7 +849,7 @@ POST /ips/disabled_rules
 ```
 
 * `sid` - идентификатор правила;
-* `comment` - описание, может быть пустым, максимальная длина - 255 символов;
+* `comment` - описание, может быть пустым, максимальная длина - 255 символов.
 
 **Ответ на успешный запрос:**
 
@@ -799,6 +858,8 @@ POST /ips/disabled_rules
     "id": "string" 
 }
 ```
+
+* `id` - идентификатор исключения.
 
 </details>
 
@@ -860,7 +921,7 @@ GET /ips/bypass
 * `id` - идентификатор исключения;
 * `aliases` - список идентификаторов объектов. Допустимые типы: IP-адрес, Диапазон IP-адресов, Список IP-объектов, Список IP-адресов, Подсеть, Домен, Пользователь, Группа;
 * `comment` - описание, может быть пустым, максимальная длина - 255 символов;
-* `enabled` - состояние исключения: включено/выключено.
+* `enabled` - состояние исключения: `true` - включено, `false` - выключено.
 
 </details>
 
@@ -877,13 +938,13 @@ POST /ips/bypass
 {
     "aliases": [ "string" ],
     "comment": "string",
-    "enabled": "boolean",
+    "enabled": "boolean"
 }
 ```
 
 * `aliases` - список идентификаторов объектов. Допустимые типы: IP-адрес, Диапазон IP-адресов, Список IP-объектов, Список IP-адресов, Подсеть, Домен, Пользователь, Группа;
 * `comment` - описание, может быть пустым, максимальная длина - 255 символов;
-* `enabled` - состояние исключения: включено/выключено.
+* `enabled` - состояние исключения: `true` - включено, `false` - выключено.
 
 **Ответ на успешный запрос:**
 
@@ -911,13 +972,13 @@ PATCH /ips/bypass/<id исключения>
 {
     "aliases": [ "string" ],
     "comment": "string",
-    "enabled": "boolean",
+    "enabled": "boolean"
 }
 ```
 
 * `aliases` - список идентификаторов объектов. Допустимые типы: IP-адрес, Диапазон IP-адресов, Список IP-объектов, Список IP-адресов, Подсеть, Домен, Пользователь, Группа;
 * `comment` - описание, может быть пустым, максимальная длина - 255 символов;
-* `enabled` - состояние исключения: включено/выключено.
+* `enabled` - состояние исключения: `true` - включено, `false` - выключено.
 
 
 **Ответ на успешный запрос:** 200 OK
@@ -954,6 +1015,8 @@ GET /content-filter/state
 }
 ```
 
+* `enabled` - состояние **Контент-фильтра**: `true` - включен, `false` - выключен.
+
 ### Включить/выключить Контент-фильтр
 
 ```
@@ -967,6 +1030,8 @@ PUT /content-filter/state
     "enabled": "boolean"
 }
 ```
+
+* `enabled` - `true` для включения **Контент-фильтра**, `false` для выключения.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -990,8 +1055,8 @@ GET /content-filter/settings
 }
 ```
 
-* `enabled_extended_categorizer` - расширенная категоризация (SkyDNS) включена (true) или выключена (false);
-* `quic_reject_enabled` - запрет трафика по протоколу QUIC включен (true) или выключен (false).
+* `enabled_extended_categorizer` - расширенная категоризация (SkyDNS): `true` - включена, `false` - выключена;
+* `quic_reject_enabled` - запрет трафика по протоколу QUIC: `true` - включен, `false` - выключен.
 
 </details>
 
@@ -1007,9 +1072,12 @@ PATCH /content-filter/settings
 ```json5
 {
     "enabled_extended_categorizer": "boolean",
-    "quic_reject_enabled": "boolean" // (любое из полей может отсутствовать)
+    "quic_reject_enabled": "boolean"
 }
 ```
+
+* `enabled_extended_categorizer` - расширенная категоризация (SkyDNS): `true` - включена, `false` - выключена;
+* `quic_reject_enabled` - запрет трафика по протоколу QUIC: `true` - включен, `false` - выключен.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -1030,6 +1098,8 @@ GET /proxy_backend/safe_search
 }
 ```
 
+* `enabled` - состояние безопасного поиска: `true` - включен, `false` - выключен.
+
 </details>
 
 <details>
@@ -1046,6 +1116,8 @@ PUT /proxy_backend/safe_search
     "enabled": "boolean"
 }
 ```
+
+* `enabled` - `true` для включения, `false` для выключения.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -1074,15 +1146,15 @@ GET /content-filter/categories
 ]
 ```
 
-* `id` - номер категории в формате `users.id.1` или `extended.id.1`.
+* `id` - номер категории в формате `users.id.1` или `extended.id.1`;
 * `type` - тип категории:
   * `users` - пользовательские категории;
   * `extended` - расширенные категории (SkyDNS);
   * `files` - категории для файлов;
   * `special` - специальные предопределенные категории (Прямое обращение по IP, Все категоризированные запросы, Все некатегоризированные запросы, Все запросы);
   * `other` - остальные категории.
-* `name` - имя категории (для отображения пользователю).
-* `comment` - описание категории (для отображения пользователю).
+* `name` - имя категории;
+* `comment` - описание категории.
 
 </details>
 
@@ -1098,15 +1170,18 @@ GET /content-filter/users_categories
 ```json5
 [
     {
-        "id": "string", // (идентификатор категории, вида - users.id.1)
-        "name": "string", // (название категории, не пустая строка)
+        "id": "string",
+        "name": "string",
         "comment": "string",
-        "urls": ["string"]
+        "urls": [ "string" ]
     },
     ...
 ]
 ```
 
+* `id` - идентификатор категории в формате `users.id.1`;
+* `name` - название категории, не пустая строка;
+* `comment` - комментарий;
 * `urls` - список адресов. Полный путь до страницы или только доменное имя, любое количество любых символов.
 
 </details>
@@ -1129,6 +1204,10 @@ POST /content-filter/users_categories
 }
 ```
 
+* `name` - название категории, не пустая строка;
+* `comment` - комментарий;
+* `urls` - список адресов. Полный путь до страницы или только доменное имя, любое количество любых символов.
+
 **Ответ на успешный запрос:** 
 
 ```json5
@@ -1136,6 +1215,8 @@ POST /content-filter/users_categories
     "id": "string"
 }
 ```
+
+* `id` - идентификатор пользовательской категории.
 
 </details>
 
@@ -1153,9 +1234,13 @@ PUT /content-filter/users_categories/<id категории>
 {
     "name": "string",
     "comment": "string",
-    "urls": ["string"]
+    "urls": [ "string" ]
 }
 ```
+
+* `name` - название категории, не пустая строка;
+* `comment` - комментарий;
+* `urls` - список адресов. Полный путь до страницы или только доменное имя, любое количество любых символов.
 
 **Ответ на успешный запрос:**
 
@@ -1167,6 +1252,8 @@ PUT /content-filter/users_categories/<id категории>
     "urls": [ "string" ]
 }
 ```
+
+* `id` - идентификатор пользовательской категории.
 
 </details>
 
@@ -1185,34 +1272,34 @@ GET /content-filter/rules
 [
     {
         "access": "allow" | "deny" | "bump" | "redirect",
-        "aliases": ["string"],
-        "categories": ["string"],
+        "aliases": [ "string" ],
+        "categories": [ "string" ],
         "comment": "string",
         "enabled": "boolean",
         "name": "string",
         "parent_id": "string",
         "redirect_url": "string" | "null",
-        "timetable": ["string"],
+        "timetable": [ "string" ],
         "id": "integer"
     },
     ...
 ]
 ```
 
-* `id` - идентификатор правила;
-* `parent_id` - идентификатор группы в Ideco Center, в которую входит Ideco NGFW, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
-* `name` - название правила, не пустая строка;
-* `comment` - комментарий, может быть пустым (максимальная длина - 255 символов);
-* `aliases` - список идентификаторов алиасов (поле Применяется для);
-* `categories` - список идентификаторов категорий сайтов;
 * `access` - действие, которое необходимо выполнить в правиле:
   * `allow` - разрешить данный запрос;
   * `deny` - запретить запрос и показать страницу блокировки;
   * `bump` - расшифровать запрос;
-  * `redirect` - перенаправить запрос на `redirect_url`;
-* `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
-* `enabled`: правило включено (true) или выключено (false);
-* `timetable` - время действия, список идентификаторов алиасов.
+  * `redirect` - перенаправить запрос на `redirect_url`.
+* `aliases` - список идентификаторов алиасов (поле Применяется для);
+* `categories` - список идентификаторов категорий сайтов;
+* `comment` - комментарий, может быть пустым (максимальная длина - 255 символов);
+* `enabled` - статус правила: `true` - включено, `false` выключено;
+* `name` - название правила, не пустая строка;
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит Ideco NGFW, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
+* `redirect_url` - адрес, на который перенаправляются запросы: `string` при `access` = `redirect`, `null` при остальных вариантах `access`;
+* `timetable` - время действия, список идентификаторов алиасов;
+* `id` - идентификатор правила.
 
 </details>
 
@@ -1243,17 +1330,17 @@ POST /content-filter/rules?anchor_item_id=123&insert_after={true|false}
 ```
 
 * `name` - название правила, не пустая строка;
-* `comment` - комментарий, может быть пустым (максимальная длина - 255 символов);
-* `parent_id` - идентификатор группы в Ideco Center, в которую входит Ideco NGFW, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `comment` - комментарий, может быть пустым, максимальная длина - 255 символов;
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит Ideco NGFW, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `aliases` - список идентификаторов алиасов (поле Применяется для);
 * `categories` - список идентификаторов категорий сайтов;
 * `access` - действие, которое необходимо выполнить в правиле:
   * `allow` - разрешить данный запрос;
   * `deny` - запретить запрос и показать страницу блокировки;
   * `bump` - расшифровать запрос;
-  * `redirect` - перенаправить запрос на `redirect_url`;
-* `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
-* `enabled`: правило включено (true) или выключено (false);
+  * `redirect` - перенаправить запрос на `redirect_url`.
+* `redirect_url` - адрес, на который перенаправляются запросы: `string` при `access` = `redirect`, `null` при остальных вариантах `access`;
+* `enabled` - `true` для включения, `false` для выключения;
 * `timetable` - время действия, список идентификаторов алиасов.
 
 </details>
@@ -1282,17 +1369,17 @@ PUT /content-filter/rules/<id правила>
 ```
 
 * `name` - название правила, не пустая строка;
-* `comment` - комментарий, может быть пустым (максимальная длина - 255 символов);
-* `parent_id` - идентификатор группы в Ideco Center, в которую входит Ideco NGFW, или константа "f3ffde22-a562-4f43-ac04-c40fcec6a88c" (соответствует Корневой группе);
+* `comment` - комментарий, может быть пустым, максимальная длина - 255 символов;
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит Ideco NGFW, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `aliases` - список идентификаторов алиасов (поле Применяется для);
 * `categories` - список идентификаторов категорий сайтов;
 * `access` - действие, которое необходимо выполнить в правиле:
   * `allow` - разрешить данный запрос;
   * `deny` - запретить запрос и показать страницу блокировки;
   * `bump` - расшифровать запрос;
-  * `redirect` - перенаправить запрос на `redirect_url`;
-* `redirect_url` - адрес, на который перенаправляются запросы. `String` при `access` = `redirect` и `null` при остальных вариантах `access`;
-* `enabled` - правило включено (true) или выключено (false);
+  * `redirect` - перенаправить запрос на `redirect_url`.
+* `redirect_url` - адрес, на который перенаправляются запросы: `string` при `access` = `redirect`, `null` при остальных вариантах `access`;
+* `enabled` - `true` для включения, `false` для выключения;
 * `timetable` - время действия, список идентификаторов алиасов.
 
 **Ответ на успешный запрос:** 200 ОК
@@ -1340,7 +1427,7 @@ DELETE /content-filter/rules/<id правила>
 ## Квоты
 
 <details>
-<summary>Проверить включенности подсчета квот</summary>
+<summary>Проверить включенность подсчета квот</summary>
 
 ```
 GET /quotas/state
@@ -1353,6 +1440,8 @@ GET /quotas/state
   "enabled": "boolean"
 }
 ```
+
+* `enabled` - если `true`, то подсчет квот включен, если `false` - выключен.
 
 </details>
 
@@ -1370,6 +1459,8 @@ PUT /quotas/state
   "enabled": "boolean"
 }
 ```
+
+* `enabled` - `true` для включения, `false` для выключения.
 
 **Ответ на успешный запрос:** 200 ОК
 
@@ -1391,7 +1482,7 @@ GET /quotas/quotas
     "title": "string",
     "comment": "string",
     "quota": "integer",
-    "enabled": "bool",
+    "enabled": "boolean",
     "interval": "hour" | "day" | "week" | "month" | "quarter"
   },
   ...
@@ -1399,8 +1490,8 @@ GET /quotas/quotas
 ```
 
 * `id` - идентификатор квоты;
-* `title` - название квоты (максимальная длина - 42 символа);
-* `comment` - комментарий (максимальная длина - 255 символов);
+* `title` - название квоты, максимальная длина - 42 символа;
+* `comment` - комментарий, максимальная длина - 255 символов;
 * `quota` - ограничение трафика в байтах;
 * `enabled` - применяется ли квота;
 * `interval` - период действия квоты (час, день, неделя, месяц, квартал).
@@ -1418,13 +1509,19 @@ POST /quotas/quotas
 
 ```json5
 {
-  "title": "string",
-  "comment": "string",
-  "quota": "integer",
-  "enabled": "boolean",
-  "interval": "string"
+    "title": "string",
+    "comment": "string",
+    "quota": "integer",
+    "enabled": "boolean",
+    "interval": "string"
 }
 ```
+
+* `title` - название квоты, максимальная длина - 42 символа;
+* `comment` - комментарий, максимальная длина - 255 символов;
+* `quota` - ограничение трафика в байтах;
+* `enabled` - применяется ли квота;
+* `interval` - период действия квоты (час, день, неделя, месяц, квартал).
 
 **Ответ на успешный запрос:**
 
@@ -1433,6 +1530,8 @@ POST /quotas/quotas
     "id": "string"
 }
 ```
+
+* `id` - идентификатор квоты.
 
 </details>
 
@@ -1447,13 +1546,19 @@ PATCH /quotas/quotas/<id квоты>
 
 ```json5
 {
-  "title": "string",
-  "comment": "string",
-  "quota": "integer",
-  "enabled": "boolean",
-  "interval": "string"
+    "title": "string",
+    "comment": "string",
+    "quota": "integer",
+    "enabled": "boolean",
+    "interval": "string"
 }
 ```
+
+* `title` - название квоты, максимальная длина - 42 символа;
+* `comment` - комментарий, максимальная длина - 255 символов;
+* `quota` - ограничение трафика в байтах;
+* `enabled` - применяется ли квота;
+* `interval` - период действия квоты (час, день, неделя, месяц, квартал).
 
 **Ответ на успешный запрос:** 200 ОК
 
