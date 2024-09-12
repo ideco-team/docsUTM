@@ -6,8 +6,8 @@
 При установке Ideco NGFW с загрузочного USB-диска выберите загрузку с USB-диска в настройках UEFI компьютера.
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?ab_channel=%D0%90%D0%B9%D0%B4%D0%B5%D0%BA%D0%BE&index=25&list=PLQJTQf4Vb3wD2bhYMhsdbgMXk4PnSfY10&v=sy_ANcdgrxk" %}
-<!-- [Ссылка на видеоинструкцию по установке Ideco NGFW](https://youtu.be/sy_ANcdgrxk?si=i4aOTqv957uur7e8) -->
+{% embed url="https://rutube.ru/video/ae00c7f49a2969eccdfa31a777ab7282/" %}
+<!-- [Ссылка на видеоинструкцию по установке Ideco NGFW](https://rutube.ru/video/ae00c7f49a2969eccdfa31a777ab7282/) -->
 
 Для установки Ideco NGFW выполните действия:
 
