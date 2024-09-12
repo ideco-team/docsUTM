@@ -1557,6 +1557,8 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 GET /ips/signatures/<sid>
 ```
 
+* `sid` - идентификатор сигнатуры.
+  
 **Ответ на успешный запрос:**
 
 ```json
@@ -1565,6 +1567,31 @@ GET /ips/signatures/<sid>
 }
 ```
 
+* `signature` - содержание сигнатуры.
+
+</details>
+
+<details>
+<summary>Получение профилей Предотвращения вторжений, которые содержат определенную сигнатуру</summary>
+
+```
+GET /ips/signatures/<sid>/profiles
+```
+
+* `sid` - идентификатор сигнатуры.
+
+**Ответ на успешный запрос:**
+
+```json
+{
+    "id": "string",
+    "name": "string"
+}
+```
+
+* `id` - идентификатор профиля;
+* `name` - название профиля.
+  
 </details>
 
 ### Пользовательские сигнатуры
