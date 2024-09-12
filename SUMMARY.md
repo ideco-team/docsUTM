@@ -235,6 +235,7 @@
 ## API
 
 * [Описание основных хендлеров](api/description-of-handlers.md)
+* [Мониторинг](api/monitor-api.md)
 * [Управление интеграцией с Active Directory](api/active-directory-api.md)
 * [Управление интеграцией с ALD Pro](api/ald-pro-api.md)
 * [Управление администраторами](api/admin-management-api.md)
