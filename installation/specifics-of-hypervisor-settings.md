@@ -196,7 +196,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 1\. При установке Ideco NGFW выберите тип операционной системы - **Fedora**
 
-2\. На пятом шаге (virtm-manager) установки обязательно поставьте галочку **Проверить конфигурацию перед установкой** и нажмите кнопку **Готово**.
+2\. На пятом шаге (virtm-manager) установки обязательно включите опцию **Проверить конфигурацию перед установкой** и нажмите кнопку **Готово**.
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings27.png)
 

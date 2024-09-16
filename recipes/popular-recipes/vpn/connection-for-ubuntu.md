@@ -237,7 +237,7 @@ sudo reboot
 
 <img src="/.gitbook/assets/connection-for-ubuntu11.png" alt="" data-size="original">
 
-6\. Во вкладке **Идентификация** заполните следующие поля:
+6\. На вкладке **Идентификация** заполните следующие поля:
 
 <img src="/.gitbook/assets/connection-for-ubuntu12.png" alt="" data-size="original">
 

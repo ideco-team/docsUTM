@@ -224,7 +224,7 @@ GET /ad_backend/domains/<имя домена>/tree
 </details>
 
 <details>
-<summary>Получение списка forward-зон контроллера домена</summary>
+<summary>Получение списка Forward-зон контроллера домена</summary>
 
 ```
 GET /ad_backend/forward_zones
