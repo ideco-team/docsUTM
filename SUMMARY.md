@@ -252,7 +252,7 @@
 * [Бэкапы](api/backup-api.md)
 * [Примеры использования](api/examples/README.md)
   * [Редактирование пользовательской категории контент-фильтра](api/examples/editing-a-custom-category.md)
-  * [Создание правила Forward](api/examples/creating-a-forward-rule.md)
+  * [Создание правила FORWARD](api/examples/creating-a-forward-rule.md)
 
 ## changelog
 
