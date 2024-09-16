@@ -230,7 +230,7 @@ sudo reboot
 
 ![](/.gitbook/assets/connection-for-ubuntu11.png)
 
-6\. Во вкладке **Идентификация** заполните следующие поля:
+6\. На вкладке **Идентификация** заполните следующие поля:
 
 ![](/.gitbook/assets/connection-for-ubuntu12.png)
 

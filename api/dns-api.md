@@ -222,7 +222,7 @@ DELETE /dns/zones/root/<id DNS-сервера>
 
 </details>
 
-## Управление forward-зонами
+## Управление Forward-зонами
 
 <details>
 <summary>Получение списка</summary>
@@ -255,7 +255,7 @@ GET /dns/zones/forward
 </details>
 
 <details>
-<summary>Добавление forward-зоны</summary>
+<summary>Добавление Forward-зоны</summary>
 
 ```
 POST /dns/zones/forward
@@ -285,15 +285,15 @@ POST /dns/zones/forward
 }
 ```
 
-* `id` - идентификатор forward-зоны.
+* `id` - идентификатор Forward-зоны.
 
 </details>
 
 <details>
-<summary>Редактирование forward-зоны</summary>
+<summary>Редактирование Forward-зоны</summary>
 
 ```
-PATCH /dns/zones/forward/<id forward-зоны>
+PATCH /dns/zones/forward/<id Forward-зоны>
 ```
 
 **Json-тело запроса (все или некоторые поля):** 
@@ -317,17 +317,17 @@ PATCH /dns/zones/forward/<id forward-зоны>
 </details>
 
 <details>
-<summary>Удаление forward-зоны</summary>
+<summary>Удаление Forward-зоны</summary>
 
 ```
-DELETE /dns/zones/forward/<id forward-зоны>
+DELETE /dns/zones/forward/<id Forward-зоны>
 ```
 
 **Ответ на успешный запрос:** 200 OK
 
 </details>
 
-## Управление master-зонами
+## Управление Master-зонами
 
 <details>
 <summary>Получение списка</summary>
@@ -357,12 +357,12 @@ GET /dns/zones/master
 * `config` - текст с параметрами зоны, не может быть пустым. Максимальная длина - 10000 символов;
 * `comment` - комментарий, может быть пустым, максимальная длина - 255 символов.
 
-Подробнее о формате записей для настройки master-зоны - в статье [Master-зоны](/settings/services/dns/master-zon.md).
+Подробнее о формате записей для настройки Master-зоны - в статье [Master-зоны](/settings/services/dns/master-zon.md).
 
 </details>
 
 <details>
-<summary>Добавление master-зоны</summary>
+<summary>Добавление Master-зоны</summary>
 
 ```
 POST /dns/zones/master
@@ -392,15 +392,15 @@ POST /dns/zones/master
 }
 ```
 
-* `id` - идентификатор master-зоны.
+* `id` - идентификатор Master-зоны.
 
 </details>
 
 <details>
-<summary>Редактирование master-зоны</summary>
+<summary>Редактирование Master-зоны</summary>
 
 ```
-PATCH /dns/zones/master/<id master-зоны>
+PATCH /dns/zones/master/<id Master-зоны>
 ```
 
 **Json-тело запроса (все или некоторые поля):** 
@@ -424,10 +424,10 @@ PATCH /dns/zones/master/<id master-зоны>
 </details>
 
 <details>
-<summary>Удаление master-зоны</summary>
+<summary>Удаление Master-зоны</summary>
 
 ```
-DELETE /dns/zones/master/<id master-зоны>
+DELETE /dns/zones/master/<id Master-зоны>
 ```
 
 **Ответ на успешный запрос:** 200 OK
