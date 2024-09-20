@@ -442,6 +442,33 @@ DELETE /reverse_proxy_backend/waf/profiles/<id профиля>
 
 <details>
 
+<summary>Получение списка категорий правил</summary>
+
+```
+GET /reverse_proxy_backend/waf/categories
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+  {
+    "id": "string",
+    "title": "string",
+    "description": "string"
+  },
+  ...
+]
+```
+
+* `id` - идентификатор категории, максимальная длина - 42 символа;
+* `title` - название категории, максимальная длина - 42 символа;
+* `description` - описание категории, максимальная длина - 255 символов.
+
+</details>
+
+<details>
+
 <summary>Получение списка категорий профиля</summary>
 
 ```
@@ -449,6 +476,8 @@ GET /reverse_proxy_backend/waf/profiles/<id профиля>/categories
 ```
 
 **Ответ на успешный запрос:**
+
+* Список категорий правил, которых нет в списке `disabled_categories` профиля, с указанным `id`
 
 ```json5
 [

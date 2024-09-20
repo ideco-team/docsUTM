@@ -1572,6 +1572,13 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
             "sid": 2050604,
             "signature_severity": "Major",
             "mitre_tactic_id": "TA0001",
+            "signature_source": "string",
+            "msg": "string",
+            "source": "string",
+            "source_ports": "string",
+            "destination": "string",
+            "destination_ports": "string",
+            "updated_at": "string"
         },
         ...
     ]
@@ -1584,7 +1591,14 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 * `classtype` - группа, к которой относится сигнатура;
 * `sid` - идентификатор сигнатуры;
 * `signature_severity` - уровень угрозы;
-* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK.
+* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
+* `signature_source` - источник сигнатуры;
+* `msg` - название сигнатуры;
+* `source` - источник подключения;
+* `source_ports` - порты источника;
+* `destination` - назначение;
+* `destination_ports` - порты назначения;
+* `updated_at` - дата, в формате `YYYY-MM-DD` или строка со значением `-`.
 
 </details>
 
