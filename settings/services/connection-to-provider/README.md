@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Название службы раздела *Сетевые интерфейсы*: `ideco-network-backend`; `ideco-network-nic`. \
-Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 Все созданные интерфейсы представлены в виде таблицы:

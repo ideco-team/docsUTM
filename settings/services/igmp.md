@@ -6,7 +6,7 @@ description: IGMP Proxy позволяет принимать мультикас
 
 {% hint style="success" %}
 Название службы раздела **IGMP Proxy**: `igmpproxy`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 {% hint style="info" %}

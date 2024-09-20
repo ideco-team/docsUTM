@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Название службы раздела *Антивирусы веб-трафика*: `ideco-av-backend`. \
-Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 {% hint style="danger" %}

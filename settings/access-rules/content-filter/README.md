@@ -6,7 +6,7 @@ description: Контентная фильтрация реализована н
 
 {% hint style="success" %}
 Название службы раздела _Контент-фильтра_: `ideco-content-filter-backend.service`. \
-Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 
 Для записи логов поставьте флаг строке **Включить журналирование** в разделе **Сервисы -> Прокси -> Основное**.
 {% endhint %}

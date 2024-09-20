@@ -6,7 +6,7 @@ description: Служба обнаружения и предотвращения
 
 {% hint style="success" %}
 Название службы раздела *Предотвращение вторжений*: `ideco-suricata-backend`; `ideco-suricata`; `ideco-suricata-event-syncer`; `ideco-suricata-event-to-syslog`. \
-Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 {% hint style="info" %}

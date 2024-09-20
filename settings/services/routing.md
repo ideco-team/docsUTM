@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="success" %}
 Название службы раздела **Маршрутизация**: `ideco-routing-backend`. \
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 Преимущества маршрутизации Ideco NGFW:

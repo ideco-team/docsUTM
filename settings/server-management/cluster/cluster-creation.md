@@ -29,26 +29,26 @@
 
 1\. При входе в локальное меню резервной ноды, увидев следующее сообщение, введите **y** и нажмите **Enter**:
 
-<img src="/.gitbook/assets/local-menu8.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering8.png" alt="" data-size="original">
 
 2\. Выберите сетевую карту:
 
-<img src="/.gitbook/assets/local-menu9.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering9.png" alt="" data-size="original">
 
 3\. Подтвердите создание кластера, введя **y** и нажав **Enter**:
 
-<img src="/.gitbook/assets/local-menu10.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering10.png" alt="" data-size="original">
 
 4\. NGFW предложит изменить название сервера. При положительном  ответе на вопрос _Изменить название сервера?_, появится надпись с предложением ввести новое название.\
 Допустимое количество символов в названии - от 2 до 62:
 
-<img src="/.gitbook/assets/local-menu11.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering11.png" alt="" data-size="original">
 
 После ввода нового названия нажмите **Enter** для продолжения.
 
 5\. Появится сообщение, что процесс создания кластера запущен:
 
-<img src="/.gitbook/assets/local-menu12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering12.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -62,25 +62,25 @@
 
 2\. Выберите пункт **Управление кластером**. Подтвердите создание кластера, введя **y** и нажав **Enter**:
 
-![](/.gitbook/assets/local-menu5.png)
+![](/.gitbook/assets/clustering4.png)
 
 Если на ноде нет свободных сетевых карт, создание кластера будет недоступно.\
 Если кластер на ноде уже настроен, при выборе пункта *Управление кластером* будет доступно только его разрушение.
 
 3\. Выберите свободную физическую сетевую карту для создания кластерной сети и подтвердите выбор:
 
-<img src="/.gitbook/assets/local-menu6.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering5.png" alt="" data-size="original">
 
 4\. NGFW предложит изменить название сервера. При положительном ответе на вопрос _"Изменить название сервера?"_ появится надпись с предложением ввести новое название.\
 Допустимое количество символов в названии - от 2 до 42:
 
-<img src="/.gitbook/assets/local-menu7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering7.png" alt="" data-size="original">
 
 После ввода нового названия нажмите **Enter** для продолжения.
 
 5\. Появится сообщение, что процесс создания кластера запущен:
 
-<img src="/.gitbook/assets/local-menu12.png" alt="" data-size="original">
+<img src="/.gitbook/assets/clustering12.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт *Конфигурация активной ноды*). Для этого выделяется 3600 секунд.
 
@@ -142,7 +142,7 @@
 
 1\. Выберите пункт локального меню **Управление кластером**, введите **y** и нажмите **Enter**;
 
-![](/.gitbook/assets/local-menu13.png)
+![](/.gitbook/assets/clustering13.png)
 
 2\. Подтвердите выбор.
 

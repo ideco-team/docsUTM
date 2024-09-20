@@ -2,7 +2,7 @@
 
 {% hint style="success" %}
 Название службы раздела **Лицензия**: `ideco-license-backend`.\
-Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal.md).
+Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
 В разделе **NGFW** [личного кабинета MY.IDECO](https://my.ideco.ru/) находится информация о зарегистрированных серверах и имеющихся лицензиях.
