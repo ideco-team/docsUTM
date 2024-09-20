@@ -58,7 +58,7 @@
 
 ![](/.gitbook/assets/installation-process6.png)
 
-2\. Для продолжения настройки воспользуйтесь статьей [Кластеризация](/settings/server-management/cluster.md).
+2\. Для продолжения настройки воспользуйтесь статьей [Кластеризация](/settings/server-management/cluster/cluster.md).
 
 ## Настройка локального интерфейса
 
