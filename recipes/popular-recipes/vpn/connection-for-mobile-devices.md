@@ -86,7 +86,7 @@
 
 <summary>Подключение на iOS</summary>
 
-1\. Перейдите в раздел **Настройки -> Основные -> VPN**:
+1\. Перейдите в раздел **Настройки -> Основные -> VPN и управление устройством -> VPN**:
 
 <img src="/.gitbook/assets/vpn-iphone.png" alt="" data-size="original">
 
