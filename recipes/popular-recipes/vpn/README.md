@@ -4,6 +4,10 @@
 [connection-for-ubuntu.md](connection-for-ubuntu.md)
 {% endcontent-ref %}
 
+{% content-ref url="connection-for-fedora.md" %}
+[connection-for-fedora.md](connection-for-fedora.md)
+{% endcontent-ref %}
+
 {% content-ref url="connection-for-astra-linux.md" %}
 [connection-for-astra-linuxu.md](connection-for-astra-linux.md)
 {% endcontent-ref %}
