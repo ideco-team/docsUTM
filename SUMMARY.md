@@ -73,7 +73,6 @@
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
     * [Описание категорий контент-фильтра](settings/access-rules/content-filter/custom-categories.md)
     * [Настройка фильтрации HTTPS](settings/access-rules/content-filter/filtering-https-traffic.md)
-    * [Изменение страницы блокировки](settings/access-rules/content-filter/block-page.md)
   * [Ограничение скорости](settings/access-rules/shaper.md)
   * [Антивирусы веб-трафика](settings/access-rules/antivirus.md)
   * [Предотвращение вторжений](settings/access-rules/ips/README.md)
