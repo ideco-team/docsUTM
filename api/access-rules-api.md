@@ -1444,7 +1444,7 @@ GET /ips/status
 GET /ips/state
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -1519,7 +1519,7 @@ GET /ips/signature_groups/table
 GET /ips/signature_groups/mitre
 ```
 
-**Ответ на успешный запрос:** 
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -1565,13 +1565,13 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 {
     "signatures": [
         {
-            "action": "drop",
-            "protocol": "tcp",
-            "flow": "to_server",
-            "classtype": "attempted-admin",
-            "sid": 2050604,
-            "signature_severity": "Major",
-            "mitre_tactic_id": "TA0001",
+            "action": "string",
+            "protocol": "string",
+            "flow": "string",
+            "classtype": "string-admin",
+            "sid": "integer",
+            "signature_severity": "string",
+            "mitre_tactic_id": "string",
             "signature_source": "string",
             "msg": "string",
             "source": "string",
@@ -1585,7 +1585,13 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 }
 ```
 
-* `action` - действие для трафика, соответствующего сигнатуре;
+* `action` - действие для трафика, соответствующего сигнатуре:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
 * `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`);
 * `flow` - направление трафика (`to_server`, `from_server`);
 * `classtype` - группа, к которой относится сигнатура;
@@ -1598,8 +1604,101 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 * `source_ports` - порты источника;
 * `destination` - назначение;
 * `destination_ports` - порты назначения;
-* `updated_at` - дата, в формате `YYYY-MM-DD` или строка со значением `-`.
+* `updated_at` - дата в формате `YYYY-MM-DD` или строка со значением `-`.
 
+</details>
+
+<details>
+
+<summary>Получение списка сигнатур в определенном профиле</summary>
+
+```
+GET /ips/profiles/<id профиля>/signatures
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "signatures": [
+        {
+            "action": "string",
+            "protocol": "string",
+            "flow": "string",
+            "classtype": "string-admin",
+            "sid": "integer",
+            "signature_severity": "string",
+            "mitre_tactic_id": "string",
+            "signature_source": "string",
+            "msg": "string",
+            "source": "string",
+            "source_ports": "string",
+            "destination": "string",
+            "destination_ports": "string",
+            "updated_at": "string"
+        },
+        ...
+    ]
+}
+```
+
+* `action` - действие для трафика, соответствующего сигнатуре:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
+* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`);
+* `flow` - направление трафика (`to_server`, `from_server`);
+* `classtype` - группа, к которой относится сигнатура;
+* `sid` - идентификатор сигнатуры;
+* `signature_severity` - уровень угрозы;
+* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
+* `signature_source` - источник сигнатуры;
+* `msg` - название сигнатуры;
+* `source` - источник подключения;
+* `source_ports` - порты источника;
+* `destination` - назначение;
+* `destination_ports` - порты назначения;
+* `updated_at` - дата в формате `YYYY-MM-DD` или строка со значением `-`.
+
+</details>
+
+<details>
+
+<summary>Получение количества сигнатур профиля для каждого действия</summary>
+
+```
+GET /ips/profiles/actions-counts 
+```
+
+* Чтобы получить список для конкретного профиля - `/ips/profiles/<id профиля>/actions-counts`.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "profile_id": {
+      "pass": "integer",
+      "alert": "integer",
+      "drop": "integer",
+      "rejectsrc": "integer",
+      "rejectdst": "integer",
+      "rejectboth": "integer"
+    },
+    ...
+}
+```
+
+* `profile_id` - идентификатор профиля:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
+ 
 </details>
 
 <details>
