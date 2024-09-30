@@ -7,7 +7,6 @@ redirects:
   additionally: ./settings/server-management/additionally.md
   admins: ./settings/server-management/admins.md
   antivirus: ./settings/access-rules/antivirus.md
-  application_control: ./settings/access-rules/application-control.md
   backup: ./settings/server-management/backup.md
   balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
@@ -45,6 +44,7 @@ redirects:
   user_quota: ./settings/access-rules/quotas.md
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
   zabbix: ./settings/monitor/zabbix.md
+  application_control: ./settings/access-rules/application-control.md
   dashboard: ./settings/monitor-panel.md
   traffmon: ./settings/monitor/traffic.md
   logs: ./settings/reports/logs.md
@@ -81,7 +81,7 @@ redirects:
   session_sync: ./settings/server-management/cluster.md
   cc: ./settings-cc/README.md
   cc_firewall: ./settings-cc/policies-and-objects.md
-  cc_application_control: /settings-cc/policies-and-objects.md
+  cc_application_control: ./settings-cc/application-control.md
   cc_content_filter: ./settings-cc/policies-and-objects.md
   cc_aliases: ./settings-cc/policies-and-objects.md
   cc_shaper: /settings-cc/policies-and-objects.md
