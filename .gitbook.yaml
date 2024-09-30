@@ -11,7 +11,7 @@ redirects:
   balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
   custom_ssl: ./settings/services/certificates/upload-ssl-certificate-to-server.md
-  cluster: ./settings/server-management/cluster.md
+  cluster: ./settings/server-management/cluster/cluster.md
   content_filter: ./settings/access-rules/content-filter/README.md
   device_detection: ./settings/users/device-discovery.md
   dhcp: ./settings/services/dhcp.md
