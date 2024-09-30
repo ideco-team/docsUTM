@@ -15,3 +15,13 @@
 {% endhint %}
 
 ## Предотвращение вторжений
+
+## Web Application Firewall
+
+Использование WAF-профилей позволит настроить параметры защиты для опубликованных веб-ресурсов. Профиль создается в разделе **Профили безопасности -> Web Application Firewall**.
+
+![](/.gitbook/assets/cc-waf-profiles1.png)
+
+{% hint style="success" %}
+Для удобной настройки **Web Application Firewall** на Ideco NGFW, cоединенных с Ideco Center, создайте профиль WAF на Ideco Center и используйте его в Ideco NGFW. Подробное описание в статье [Web Application Firewall](/settings/security-profiles/waf-profiles.md).
+{% endhint %}
