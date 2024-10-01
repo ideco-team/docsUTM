@@ -78,6 +78,7 @@
     * [Морфологические словари](settings/access-rules/content-filter/morphological-dictionaries.md)
     * [Настройки](settings/access-rules/content-filter/settings.md)
     * [Настройка фильтрации HTTPS](settings/access-rules/content-filter/filtering-https-traffic.md)
+    * [Изменение страницы блокировки Контент-фильтра](settings/access-rules/content-filter/block-page.md)
   * [Ограничение скорости](settings/access-rules/shaper.md)
   * [Антивирусы веб-трафика](settings/access-rules/antivirus.md)
   * [Предотвращение вторжений](settings/access-rules/ips/README.md)
