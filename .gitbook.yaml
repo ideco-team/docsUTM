@@ -21,6 +21,7 @@ redirects:
   ntp: ./settings/services/ntp.md
   certificate: ./settings/services/certificates/README.md
   custom_ssl: ./settings/services/certificates/upload-own-ssl.md
+  cluster: ./settings/server-management/cluster/cluster.md
   logs: ./settings/reports/log.md
   security_events: ./settings/reports/security-events.md
   admin_logs: ./settings/reports/admins-actions.md
