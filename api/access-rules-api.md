@@ -1592,13 +1592,13 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
   * `rejectsrc` - **Отправлять RST узлу источника**;
   * `rejectdst` - **Отправлять RST узлу назначения**;
   * `rejectboth` - **Отправлять RST обоим**.
-* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`);
-* `flow` - направление трафика (`to_server`, `from_server`);
+* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`). Возможные значения представлены по [ссылке](https://docs.suricata.io/en/latest/rules/intro.html#protocol);
+* `flow` - направление трафика (`client2server`, `server2client`, `-`);
 * `classtype` - группа, к которой относится сигнатура;
 * `sid` - идентификатор сигнатуры;
 * `signature_severity` - уровень угрозы;
 * `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
-* `signature_source` - источник сигнатуры;
+* `signature_source` - источник сигнатуры (`standard`, `advanced`, `custom`);
 * `msg` - название сигнатуры;
 * `source` - источник подключения;
 * `source_ports` - порты источника;
@@ -1649,13 +1649,13 @@ GET /ips/profiles/<id профиля>/signatures
   * `rejectsrc` - **Отправлять RST узлу источника**;
   * `rejectdst` - **Отправлять RST узлу назначения**;
   * `rejectboth` - **Отправлять RST обоим**.
-* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`);
-* `flow` - направление трафика (`to_server`, `from_server`);
+* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`). Возможные значения представлены по [ссылке](https://docs.suricata.io/en/latest/rules/intro.html#protocol);
+* `flow` - направление трафика (`client2server`, `server2client`, `-`);
 * `classtype` - группа, к которой относится сигнатура;
 * `sid` - идентификатор сигнатуры;
 * `signature_severity` - уровень угрозы;
 * `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
-* `signature_source` - источник сигнатуры;
+* `signature_source` - источник сигнатуры (`standard`, `advanced`, `custom`);
 * `msg` - название сигнатуры;
 * `source` - источник подключения;
 * `source_ports` - порты источника;
@@ -1673,7 +1673,7 @@ GET /ips/profiles/<id профиля>/signatures
 GET /ips/profiles/actions-counts 
 ```
 
-* Чтобы получить список для конкретного профиля - `/ips/profiles/<id профиля>/actions-counts`.
+* Выше представлен запрос для всех профилей. Чтобы получить список для конкретного профиля - `/ips/profiles/<id профиля>/actions-counts`.
 
 **Ответ на успешный запрос:**
 
@@ -1691,7 +1691,7 @@ GET /ips/profiles/actions-counts
 }
 ```
 
-* `profile_id` - идентификатор профиля:
+* `profile_id` (для всех профилей) / `rule_id` (для конкретного профиля) - идентификатор профиля:
   * `pass` - **Пропускать**;
   * `alert` - **Предупреждать**;
   * `drop` - **Блокировать**;
@@ -1747,6 +1747,8 @@ GET /ips/signatures/<sid>/profiles
 
 ### Пользовательские сигнатуры
 
+Путь в веб-интерфейсе NGFW: **Правила трафика -> Предотвращение вторжений -> Пользовательские сигнатуры**
+
 <details>
 <summary>Получение списка пользовательских сигнатур</summary>
 
@@ -1757,23 +1759,49 @@ GET /ips/custom
 **Ответ на успешный запрос:**
 
 ```json5
-[
-    {
-    "id": "string",
-    "comment": "string",
-    "rule": "string",
-    "sid": "integer",
-    "classtype": "string"
-  },
-  ...
-]
+{
+    "signatures": [
+        {
+            "action": "string",
+            "protocol": "string",
+            "flow": "string",
+            "classtype": "string-admin",
+            "sid": "integer",
+            "signature_severity": "string",
+            "mitre_tactic_id": "string",
+            "signature_source": "string",
+            "msg": "string",
+            "source": "string",
+            "source_ports": "string",
+            "destination": "string",
+            "destination_ports": "string",
+            "updated_at": "string"
+        },
+        ...
+    ]
+}
 ```
 
-* `id` - идентификатор правила;
-* `comment` - описание, может быть пустым, максимальная длина - 255 символов;
-* `rule` - cтрока с правилом, не более 8196 символов;
-* `sid` - идентификатор сигнатуры. Указывается в строке с правилом, извлекается из нее;
-* `classtype` - тип правила (может быть пустой строкой).
+* `action` - действие для трафика, соответствующего сигнатуре:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
+* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`). Возможные значения представлены по [ссылке](https://docs.suricata.io/en/latest/rules/intro.html#protocol);
+* `flow` - направление трафика (`client2server`, `server2client`, `-`);
+* `classtype` - группа, к которой относится сигнатура;
+* `sid` - идентификатор сигнатуры;
+* `signature_severity` - уровень угрозы;
+* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
+* `signature_source` - источник сигнатуры (`standard`, `advanced`, `custom`);
+* `msg` - название сигнатуры;
+* `source` - источник подключения;
+* `source_ports` - порты источника;
+* `destination` - назначение;
+* `destination_ports` - порты назначения;
+* `updated_at` - дата в формате `YYYY-MM-DD` или строка со значением `-`.
 
 </details>
 
@@ -1833,8 +1861,10 @@ POST /ips/custom_rules_file
 <summary>Редактирование пользовательской сигнатуры</summary>
 
 ```
-PATCH /ips/custom/<id сигнатуры>
+PATCH /ips/custom/<sid>
 ```
+
+* `sid` - идентификатор сигнатуры
 
 **Json-тело запроса (все или некоторые поля):**
 
@@ -1856,8 +1886,10 @@ PATCH /ips/custom/<id сигнатуры>
 <summary>Удаление пользовательской сигнатуры</summary>
 
 ```
-DELETE /ips/custom/<id сигнатуры>
+DELETE /ips/custom/<sid>
 ```
+
+* `sid` - идентификатор сигнатуры
 
 **Ответ на успешный запрос:** 200 ОК
 
