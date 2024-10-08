@@ -72,7 +72,7 @@ POST /ald_backend/domains
 DELETE /ald_backend/domains/<имя домена>
 ```
 
-Удалить можно только домены в состоянии error или complete.
+Удалить можно только домены в состоянии *error* или *complete*.
 
 **Ответ на успешный запрос:** 200 OK
 

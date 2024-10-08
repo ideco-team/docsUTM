@@ -33,15 +33,15 @@ description: >-
 
 1\. Кликните на иконке сетевого подключения в системном трее и в появившемся окне выберите **Параметры сети и интернет**:
 
-<img src="/.gitbook/assets/connection-for-windows10-1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-1.png)
 
 2\. Перейдите в раздел **VPN** и нажмите **Добавить VPN-подключение**:
 
-<img src="/.gitbook/assets/connection-for-windows10-2.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-2.png)
 
 3\. Заполните соответствующие поля и нажмите **Сохранить**:
 
-<img src="/.gitbook/assets/connection-for-windows10-3.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-3.png)
 
 * **Имя подключения** - название создаваемого подключения;
 * **Имя или адрес сервера** - адрес VPN-сервера;
@@ -59,7 +59,7 @@ description: >-
 
 6\. Активируйте подключение, нажав правой кнопкой мыши по созданному подключению и выбрав **Подключиться**:
 
-<img src="/.gitbook/assets/connection-for-windows10-11.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-11.png)
 
 7\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -> Изменить**.
 
@@ -83,15 +83,15 @@ description: >-
 
 1\. Кликните на иконке сетевого подключения в системном трее и в появившемся окне выберите **Параметры сети и интернет**:
 
-<img src="/.gitbook/assets/connection-for-windows10-1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-1.png)
 
 2\. Перейдите в раздел **VPN** и нажмите **Добавить VPN-подключение**:
 
-<img src="/.gitbook/assets/connection-for-windows10-2.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-2.png)
 
 3\. Заполните соответствующие поля и нажмите **Сохранить**:
 
-<img src="/.gitbook/assets/connection-for-windows10-4.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-4.png)
 
 * **Имя подключения** - название создаваемого подключения;
 * **Имя или адрес сервера** - адрес VPN-сервера;
@@ -110,7 +110,7 @@ description: >-
 
 6\. Активируйте подключение, нажав правой кнопкой мыши по созданному подключению и выбрав **Подключиться**:
 
-<img src="/.gitbook/assets/connection-for-windows10-10.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-10.png)
 
 7\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -> Изменить**.
 
@@ -155,15 +155,15 @@ description: >-
 
 1\. Кликните на иконке сетевого подключения в системном трее и в появившемся окне выберите **Параметры сети и интернет**:
 
-<img src="/.gitbook/assets/connection-for-windows10-1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-1.png)
 
 2\. Перейдите в раздел **VPN** и нажмите **Добавить VPN-подключение**:
 
-<img src="/.gitbook/assets/connection-for-windows10-2.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-2.png)
 
 3\. Заполните соответствующие поля и нажмите **Сохранить**:
 
-<img src="/.gitbook/assets/connection-for-windows10-5.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-5.png)
 
 * **Имя подключения** - название создаваемого подключения;
 * **Имя или адрес сервера** - адрес VPN-сервера в формате _адрес\_VPN\_сервера:порт_;
@@ -181,7 +181,7 @@ description: >-
 
 6\. Активируйте подключение, нажав правой кнопкой мыши по созданному подключению и выбрав **Подключиться**:
 
-<img src="/.gitbook/assets/connection-for-windows10-9.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-9.png)
 
 7\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -> Изменить**.
 
@@ -208,15 +208,15 @@ description: >-
 
 1\. Кликните на иконке сетевого подключения в системном трее и в появившемся окне выберите **Параметры сети и интернет**:
 
-<img src="/.gitbook/assets/connection-for-windows10-1.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-1.png)
 
 2\. Перейдите в раздел **VPN** и нажмите **Добавить VPN-подключение**:
 
-<img src="/.gitbook/assets/connection-for-windows10-2.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-2.png)
 
 3\. Заполните соответствующие поля и нажмите **Сохранить**:
 
-<img src="/.gitbook/assets/connection-for-windows10-6.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-6.png)
 
 * **Имя подключения** - название создаваемого подключения;
 * **Имя или адрес сервера** - адрес VPN-сервера;
@@ -234,7 +234,7 @@ description: >-
 
 6\. Активируйте подключение, нажав правой кнопкой мыши по созданному подключению и выбрав **Подключиться**:
 
-<img src="/.gitbook/assets/connection-for-windows10-7.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-windows10-7.png)
 
 7\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -> Изменить**.
 
@@ -257,7 +257,7 @@ description: >-
 * Нажмите правой кнопкой мыши по параметру с именем **NegotiateDH2048\_AES256** и нажмите **Изменить**;
 * В строке **Значение** укажите значение `1`:
 
-<img src="/.gitbook/assets/auto-connect1.png" alt="" data-size="original">
+![](/.gitbook/assets/auto-connect1.png)
 
 * Нажмите **OK**;
 * Перезагрузите Windows.
@@ -265,16 +265,16 @@ description: >-
     Если параметра с именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
-<img src="/.gitbook/assets/auto-connect2.png" alt="" data-size="original">
+![](/.gitbook/assets/auto-connect2.png)
 
 * Задайте имя **NegotiateDH2048\_AES256**;
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
-<img src="/.gitbook/assets/auto-connect3.png" alt="" data-size="original">
+![](/.gitbook/assets/auto-connect3.png)
 
 * В строке **Значение** укажите значение `1`:
 
-<img src="/.gitbook/assets/auto-connect4.png" alt="" data-size="original">
+![](/.gitbook/assets/auto-connect4.png)
 
 * Нажмите **OK**.
 
@@ -285,4 +285,3 @@ description: >-
 {% hint style="info" %}
 В Ideco NGFW также есть возможность загрузить с сервера готовые скрипты для создания VPN-подключения в ОС Windows версий 8.1 и 10. Для загрузки и запуска скриптов воспользуйтесь [инструкцией](/settings/users/authorization/vpn-connection/running-powershell-scripts.md).
 {% endhint %}
-

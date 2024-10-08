@@ -12,10 +12,6 @@
 [connection-for-astra-linuxu.md](connection-for-astra-linux.md)
 {% endcontent-ref %}
 
-{% content-ref url="auto-connect.md" %}
-[auto-connect.md](auto-connect.md)
-{% endcontent-ref %}
-
 {% content-ref url="connection-for-windows10.md" %}
 [connection-for-windows10.md](connection-for-windows10.md)
 {% endcontent-ref %}
