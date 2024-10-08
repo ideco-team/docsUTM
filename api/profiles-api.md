@@ -2,6 +2,8 @@
 
 ## Предотвращение вторжений
 
+Путь в веб-интерфейсе NGFW: **Профили безопасности -> Предотвращение вторжений**
+
 <details>
 <summary>Получение списка профилей</summary>
 
@@ -306,6 +308,158 @@ POST /ips/profiles/<id профиля>/copy
 * `id` - идентификатор созданного профиля.
 
 </details>
+
+<details>
+
+<summary>Получение списка сигнатур в определенном профиле</summary>
+
+```
+GET /ips/profiles/<id профиля>/signatures
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "signatures": [
+        {
+            "action": "string",
+            "protocol": "string",
+            "flow": "string",
+            "classtype": "string-admin",
+            "sid": "integer",
+            "signature_severity": "string",
+            "mitre_tactic_id": "string",
+            "signature_source": "string",
+            "msg": "string",
+            "source": "string",
+            "source_ports": "string",
+            "destination": "string",
+            "destination_ports": "string",
+            "updated_at": "string"
+        },
+        ...
+    ]
+}
+```
+
+* `action` - действие для трафика, соответствующего сигнатуре:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
+* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`). Возможные значения представлены по [ссылке](https://docs.suricata.io/en/latest/rules/intro.html#protocol);
+* `flow` - направление трафика (`client2server`, `server2client`, `-`);
+* `classtype` - группа, к которой относится сигнатура;
+* `sid` - идентификатор сигнатуры;
+* `signature_severity` - уровень угрозы;
+* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
+* `signature_source` - источник сигнатуры: 
+    * `standard` - стандартные правила;
+    * `advanced` - правила IPS от Лаборатории Касперского;
+    * `custom` - пользовательские правила.
+* `msg` - название сигнатуры;
+* `source` - источник подключения;
+* `source_ports` - порты источника;
+* `destination` - назначение;
+* `destination_ports` - порты назначения;
+* `updated_at` - дата в формате `YYYY-MM-DD` или строка со значением `-`.
+
+</details>
+
+<details>
+
+<summary>Получение количества сигнатур профиля по действиям для всех профилей</summary>
+
+```
+GET /ips/profiles/actions-counts 
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "profile_id": {
+      "pass": "integer",
+      "alert": "integer",
+      "drop": "integer",
+      "rejectsrc": "integer",
+      "rejectdst": "integer",
+      "rejectboth": "integer"
+    },
+    ...
+}
+```
+
+* `profile_id` - идентификатор профиля:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
+ 
+</details>
+
+<details>
+
+<summary>Получение количества сигнатур профиля по действиям для конкретного профиля</summary>
+
+```
+GET /ips/profiles/<id профиля>/actions-counts
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "rule_id": {
+      "pass": "integer",
+      "alert": "integer",
+      "drop": "integer",
+      "rejectsrc": "integer",
+      "rejectdst": "integer",
+      "rejectboth": "integer"
+    },
+    ...
+}
+```
+
+* `rule_id` - идентификатор правила в профиле:
+  * `pass` - **Пропускать**;
+  * `alert` - **Предупреждать**;
+  * `drop` - **Блокировать**;
+  * `rejectsrc` - **Отправлять RST узлу источника**;
+  * `rejectdst` - **Отправлять RST узлу назначения**;
+  * `rejectboth` - **Отправлять RST обоим**.
+ 
+</details>
+
+<details>
+<summary>Получение профилей Предотвращения вторжений, которые содержат определенную сигнатуру</summary>
+
+```
+GET /ips/signatures/<sid>/profiles
+```
+
+* `sid` - идентификатор сигнатуры.
+
+**Ответ на успешный запрос:**
+
+```json
+{
+    "id": "string",
+    "name": "string"
+}
+```
+
+* `id` - идентификатор профиля;
+* `name` - название профиля.
+  
+</details>
+
 
 ## Профили Web Application Control (WAF)
 

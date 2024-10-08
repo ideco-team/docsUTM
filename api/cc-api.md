@@ -707,7 +707,7 @@ PUT /content-filter/users_categories/<id категории>
 
 </details>
 
-API для управления морфологическим анализом представлен в [статье](/api/access-rules-api.md#morfologicheskii-analiz).
+API для управления морфологическим анализом представлен в [статье](/api/access-rules-api/content-filter.md#morfologicheskii-analiz).
 
 #### Файрвол
 
