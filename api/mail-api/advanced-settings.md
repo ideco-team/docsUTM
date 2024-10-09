@@ -59,7 +59,7 @@
 ## Безопасность
 
 <details>
-<summary>Получние состояния переключателей</summary>
+<summary>Получение состояния переключателей</summary>
 
 `GET /mail/settings/advanced/security/state`
 
@@ -111,7 +111,7 @@
 </details>
 
 <details>
-<summary>Получние списка доверенных сетей</summary>
+<summary>Получение списка доверенных сетей</summary>
 
 `GET /mail/settings/advanced/security/network`
 
@@ -153,7 +153,7 @@
 ## DKIM-подпись
 
 <details>
-<summary>Получиение состояния DKIM</summary>
+<summary>Получение состояния DKIM</summary>
 
 `GET /mail/settings/advanced/dkim/state`
 

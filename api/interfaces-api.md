@@ -247,7 +247,7 @@ GET /network/states
     * `dns` - адреса DNS, пригодные к использованию для сервера DNS и других целей;
     * `gateway` - IP-адрес шлюза, может быть равен `null`, если шлюза нет;
     * `zone` - алиас зоны. Может быть равен `null`, если не назначен;
-    * `ifindex` - числовой индентификатор интерфейса;
+    * `ifindex` - числовой идентификатор интерфейса;
     * `scope` - принадлежность интерфейса сетевому стеку: kernel - ядро.
 
 </details>
@@ -259,7 +259,7 @@ GET /network/states
 POST /network/connections
 ```
 
-**Json-тело запроса:** один из объектов LAN | WAN | PPTP | L2TP | PPPoE, которые описаны в раскрываюшемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov), без поля "id"
+**Json-тело запроса:** один из объектов LAN | WAN | PPTP | L2TP | PPPoE, которые описаны в раскрывающемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov), без поля "id"
 
 **Ответ на успешный запрос:**
 
@@ -280,7 +280,7 @@ POST /network/connections
 PATCH /network/connections/<id интерфейса>
 ```
 
-**Json-тело запроса:** некоторые поля одного из объектов LAN | WAN | PPTP | L2TP | PPPoE, которые описаны в раскрываюшемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov)
+**Json-тело запроса:** некоторые поля одного из объектов LAN | WAN | PPTP | L2TP | PPPoE, которые описаны в раскрывающемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov)
 
 **Ответ на успешный запрос:** 200 OK
 

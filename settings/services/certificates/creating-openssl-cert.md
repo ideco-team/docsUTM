@@ -31,7 +31,7 @@ openssl req -key ca.key -new -out cert.csr
    * `ca.key` - файл с приватным ключом;
    * `cert.csr` - файл с запросом на подпись.
 
-3\. Cоздайте файл с именем test.txt:
+3\. Создайте файл с именем test.txt:
 
 ```
 cat >> ./test.txt << EOF
@@ -50,7 +50,7 @@ EOF
 openssl x509 -extfile ./test.txt -signkey ca.key -in cert.csr -req -days 365 -out ca.crt
 ```
 
-   * `test.txt` - файл, cозданный в 3 пункте;
+   * `test.txt` - файл, созданный в 3 пункте;
    * `ca.key` - файл с приватным ключом;
    * `cert.csr` - файл с запросом на подпись сертификата;
    * `ca.crt` - файл со сгенерированным сертификатом.
@@ -61,7 +61,7 @@ openssl x509 -extfile ./test.txt -signkey ca.key -in cert.csr -req -days 365 -ou
 cat ca.key ca.crt > server.pem
 ```
 
-   Где `server.pem` - cамоподписанный сертификат для загрузки на сервер.
+   Где `server.pem` - самоподписанный сертификат для загрузки на сервер.
 
 {% hint style="info" %}
 Для загрузки сертификата на сервер воспользуйтесь статьей [Загрузка SSL-сертификата на сервер](/settings/services/certificates/upload-ssl-certificate-to-server.md)

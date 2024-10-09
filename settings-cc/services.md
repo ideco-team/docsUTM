@@ -24,7 +24,7 @@
 
 ## DNS
 
-Принцип работы DNS в Ideco Center аналогичнен принципу работы [Внешних DNS-серверов](/settings/services/dns/dns-external.md) в Ideco NGFW. Если вышестоящий роутер перехватывает DNS-запросы Ideco Center, то добавьте внешние DNS-серверы.
+Принцип работы DNS в Ideco Center аналогичен принципу работы [Внешних DNS-серверов](/settings/services/dns/dns-external.md) в Ideco NGFW. Если вышестоящий роутер перехватывает DNS-запросы Ideco Center, то добавьте внешние DNS-серверы.
 
 ## Сертификаты
 

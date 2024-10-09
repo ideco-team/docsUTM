@@ -21,5 +21,5 @@
 ![](/.gitbook/assets/cc-waf-profiles1.png)
 
 {% hint style="success" %}
-Для удобной настройки **Web Application Firewall** на Ideco NGFW, cоединенных с Ideco Center, создайте профиль WAF на Ideco Center и используйте его в Ideco NGFW. Подробное описание в статье [Web Application Firewall](/settings/security-profiles/waf-profiles.md).
+Для удобной настройки **Web Application Firewall** на Ideco NGFW, соединенных с Ideco Center, создайте профиль WAF на Ideco Center и используйте его в Ideco NGFW. Подробное описание в статье [Web Application Firewall](/settings/security-profiles/waf-profiles.md).
 {% endhint %}
