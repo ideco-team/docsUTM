@@ -181,7 +181,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
     
 ![](/.gitbook/assets/specifics-of-hypervisor-settings25.png)
 
-3\. Cоздайте виртуальный жесткий диск под ВМ (Объем не меньше **150ГБ**):
+3\. Создайте виртуальный жесткий диск под ВМ (Объем не меньше **150ГБ**):
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings26.png)
 
