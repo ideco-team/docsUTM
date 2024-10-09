@@ -29,7 +29,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie -X POST https://x.x.x.x:8443/web/auth/logi
 2\. Получите текущий список URL из пользовательских категории:
 
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_categories/users.id.3
+curl -k -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_categories/users.id.3
 ```
 
 **Ответ на успешный запрос:** 200 ОК
@@ -43,7 +43,7 @@ curl -k -c /tmp/cookie -b /tmp/cookie https://x.x.x.x:8443/content-filter/users_
 3\. Отредактируйте список URL:
 
 ```
-curl -k -c /tmp/cookie -b /tmp/cookie -X PUT https://x.x.x.x:8443/content-filter/users_categories/users.id.3 --data '{"name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
+curl -k -b /tmp/cookie -X PUT https://x.x.x.x:8443/content-filter/users_categories/users.id.3 --data '{"name": "Запрещенные для бухгалтеров", "description": "комментарий", "urls": ["https://yandex.ru", "https://wrong-url.com"]}'
 ```
 
 **Ответ на успешный запрос:** 200 ОК
