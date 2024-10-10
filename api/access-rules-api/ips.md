@@ -190,7 +190,10 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 * `sid` - идентификатор сигнатуры;
 * `signature_severity` - уровень угрозы;
 * `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
-* `signature_source` - источник сигнатуры (`standard`, `advanced`, `custom`);
+* `signature_source` - источник сигнатуры: 
+    * `standard` - стандартные правила;
+    * `advanced` - правила IPS от Лаборатории Касперского;
+    * `custom` - пользовательские правила.
 * `msg` - название сигнатуры;
 * `source` - источник подключения;
 * `source_ports` - порты источника;
@@ -198,99 +201,6 @@ GET /ips/signatures?filter=[ { "items": [ {"column_name":"classtype","operator":
 * `destination_ports` - порты назначения;
 * `updated_at` - дата в формате `YYYY-MM-DD` или строка со значением `-`.
 
-</details>
-
-<details>
-
-<summary>Получение списка сигнатур в определенном профиле</summary>
-
-```
-GET /ips/profiles/<id профиля>/signatures
-```
-
-**Ответ на успешный запрос:**
-
-```json5
-{
-    "signatures": [
-        {
-            "action": "string",
-            "protocol": "string",
-            "flow": "string",
-            "classtype": "string-admin",
-            "sid": "integer",
-            "signature_severity": "string",
-            "mitre_tactic_id": "string",
-            "signature_source": "string",
-            "msg": "string",
-            "source": "string",
-            "source_ports": "string",
-            "destination": "string",
-            "destination_ports": "string",
-            "updated_at": "string"
-        },
-        ...
-    ]
-}
-```
-
-* `action` - действие для трафика, соответствующего сигнатуре:
-  * `pass` - **Пропускать**;
-  * `alert` - **Предупреждать**;
-  * `drop` - **Блокировать**;
-  * `rejectsrc` - **Отправлять RST узлу источника**;
-  * `rejectdst` - **Отправлять RST узлу назначения**;
-  * `rejectboth` - **Отправлять RST обоим**.
-* `protocol` - протокол (`tcp`, `udp`, `icmp`, `ip`). Возможные значения представлены по [ссылке](https://docs.suricata.io/en/latest/rules/intro.html#protocol);
-* `flow` - направление трафика (`client2server`, `server2client`, `-`);
-* `classtype` - группа, к которой относится сигнатура;
-* `sid` - идентификатор сигнатуры;
-* `signature_severity` - уровень угрозы;
-* `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
-* `signature_source` - источник сигнатуры (`standard`, `advanced`, `custom`);
-* `msg` - название сигнатуры;
-* `source` - источник подключения;
-* `source_ports` - порты источника;
-* `destination` - назначение;
-* `destination_ports` - порты назначения;
-* `updated_at` - дата в формате `YYYY-MM-DD` или строка со значением `-`.
-
-</details>
-
-<details>
-
-<summary>Получение количества сигнатур профиля для каждого действия</summary>
-
-```
-GET /ips/profiles/actions-counts 
-```
-
-* Выше представлен запрос для всех профилей. Чтобы получить список для конкретного профиля - `/ips/profiles/<id профиля>/actions-counts`.
-
-**Ответ на успешный запрос:**
-
-```json5
-{
-    "profile_id": {
-      "pass": "integer",
-      "alert": "integer",
-      "drop": "integer",
-      "rejectsrc": "integer",
-      "rejectdst": "integer",
-      "rejectboth": "integer"
-    },
-    ...
-}
-```
-
-* `profile_id` (для всех профилей) / `rule_id` (для конкретного профиля) - идентификатор профиля:
-  * `pass` - **Пропускать**;
-  * `alert` - **Предупреждать**;
-  * `drop` - **Блокировать**;
-  * `rejectsrc` - **Отправлять RST узлу источника**;
-  * `rejectdst` - **Отправлять RST узлу назначения**;
-  * `rejectboth` - **Отправлять RST обоим**.
- 
 </details>
 
 <details>
@@ -312,29 +222,6 @@ GET /ips/signatures/<sid>
 
 * `signature` - содержание сигнатуры.
 
-</details>
-
-<details>
-<summary>Получение профилей Предотвращения вторжений, которые содержат определенную сигнатуру</summary>
-
-```
-GET /ips/signatures/<sid>/profiles
-```
-
-* `sid` - идентификатор сигнатуры.
-
-**Ответ на успешный запрос:**
-
-```json
-{
-    "id": "string",
-    "name": "string"
-}
-```
-
-* `id` - идентификатор профиля;
-* `name` - название профиля.
-  
 </details>
 
 ## Пользовательские сигнатуры
@@ -385,7 +272,10 @@ GET /ips/custom
 * `sid` - идентификатор сигнатуры;
 * `signature_severity` - уровень угрозы;
 * `mitre_tactic_id` - тактика согласно матрице MITRE ATT&CK;
-* `signature_source` - источник сигнатуры (`standard`, `advanced`, `custom`);
+* `signature_source` - источник сигнатуры: 
+    * `standard` - стандартные правила;
+    * `advanced` - правила IPS от Лаборатории Касперского;
+    * `custom` - пользовательские правила.
 * `msg` - название сигнатуры;
 * `source` - источник подключения;
 * `source_ports` - порты источника;
