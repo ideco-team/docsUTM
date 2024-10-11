@@ -4,8 +4,16 @@
 [admins.md](admins.md)
 {% endcontent-ref %}
 
-{% content-ref url="cluster.md" %}
-[cluster.md](cluster/cluster.md)
+{% content-ref url="central-console.md" %}
+[central-console.md](central-console.md)
+{% endcontent-ref %}
+
+{% content-ref url="vce.md" %}
+[vce.md](vce.md)
+{% endcontent-ref %}
+
+{% content-ref url="cluster/cluster.md" %}
+[cluster/cluster.md](cluster/cluster.md)
 {% endcontent-ref %}
 
 {% content-ref url="server-update.md" %}
