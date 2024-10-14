@@ -108,11 +108,15 @@ Device VPN - режим работы Ideco Client, в котором клиен�
 
 8\. Запустите установленный Ideco Client от имени администратора:
 
+{% hint style="info" %}
+Файл сертификата имеет расширение .pem. Файл хранит в себе сертификат и приватный ключ.
+{% endhint %}
+
 * Для Windows - откройте командную строку от имени администратора и введите:
 
 {% code overflow="wrap" %}
 ```
-<путь до IdecoClient>\IdecoClient.exe --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-key-path=<путь до файла закрытого ключа сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
+<путь до IdecoClient>\IdecoClient.exe --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
 ```
 {% endcode %}
 
@@ -120,7 +124,7 @@ Device VPN - режим работы Ideco Client, в котором клиен�
 
 {% code overflow="wrap" %}
 ```
-sudo <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-key-path=<путь до файла закрытого ключа сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
+sudo <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
 ```
 {% endcode %}
 
@@ -129,11 +133,3 @@ sudo <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь
 ```
 (sudo) <путь до IdecoClient>/IdecoClient(.exe) --print-devicevpn-config=True
 ```
-
-Для сброса параметров Device VPN воспользуйтесь командой:
-
-{% code overflow="wrap" %}
-```
-(sudo) <путь до IdecoClient>/IdecoClient(.exe) --reset-devicevpn-cert-path=True --reset-devicevpn-key-path=True
-```
-{% endcode %}
