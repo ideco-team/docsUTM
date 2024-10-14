@@ -126,7 +126,7 @@ GET /ips/profile_rules?profile_id=<string>
 ```
 
 * `id` - номер правила выбора сигнатур;
-* `filters` - список фильтров правила:
+* `filters` - список фильтров правила (список не может быть пустым):
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
     * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
@@ -163,7 +163,7 @@ POST /ips/profile_rules?profile_id=<string>&anchor_item_id=<integer>&insert_afte
 }
 ```
 
-* `filters` - список фильтров правила:
+* `filters` - список фильтров правила (список не может быть пустым):
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
     * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
@@ -209,7 +209,7 @@ PATCH /ips/profile_rules?profile_id=<string>&rule_id=<integer>
 }
 ```
 
-* `filters` - список фильтров правила:
+* `filters` - список фильтров правила (список не может быть пустым):
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
     * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
@@ -270,7 +270,7 @@ POST /ips/profiles-create-with-rules
 * `name` - название профиля, максимальная длина - 42 символа;
 * `comment` - комментарий, максимальная длина - 255 символов;
 * `rules` - список правил профиля:
-  * `filters` - список фильтров правила:
+  * `filters` - список фильтров правила (список не может быть пустым):
     * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
     * `operator` - оператор, только `equals`;
     * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
