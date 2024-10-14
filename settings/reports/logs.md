@@ -23,44 +23,64 @@ description: В разделе представлена информация о 
 
 <summary>Список служб, доступных в разделе</summary>
 
-* **Файрвол** - ideco-firewall-backend, ideco-nflog;
-* **Контроль приложений** - ideco-app-backend, ideco-app-control@Leth<номер локального интерфейса>;
-* **Контент-фильтр** - ideco-content-filter-backend;
-* **Ограничение скорости** - ideco-shaper-backend;
-* **Антивирусы веб-трафика** - ideco-av-backend, ideco-clamd;
-* **Предотвращение вторжений** - ideco-suricata-backend, ideco-suricata, ideco-suricata-event-syncer, ideco-suricata-profiles-syncer;
-* **Объекты** - ideco-alias-backend;
-* **Квоты** - ideco-quotas-backend, systemd-quotacheck;
-* **Сетевые интерфейсы** - ideco-network-backend, ideco-network-nic;
-* **Балансировка и резервирование**, **Маршрутизация** - ideco-routing-backend;
-* **BGP**, **OSPF** - ideco-routing-backend;
-* **Прокси** - ideco-proxy-backend, squid;
-* **Обратный прокси** - ideco-reverse-backend;
-* **DNS** - ideco-dns-backend, unbound;
-* **DDNS** - ideco-dns-backend;
-* **DHCP** - ideco-dnsmasq;
-* **IPsec** - ideco-ipsec-backend, strongswan;
-* **Центральная консоль** - ideco-central-console-backend;
-* **Кластеризация** - ideco-cluster-backend, ideco-cluster-backup-pusher;
-* **Автоматическое обновление** - ideco-sysupdate-backend;
-* **Бэкапы** - ideco-backup-backend, ideco-backup-create, ideco-backup-restore, ideco-backup-rotate;
-* **Лицензия** - ideco-license-backend;
-* **VPN-подключения** - ideco-accel-l2tp, ideco-accel-pptp, ideco-accel-sstp, ideco-vpn-servers-backend, ideco-vpn-authd;
-* **Авторизация** - ideco-auth-backend;
-* **Двухфакторная аутентификация** - ideco-web-authd;
-* **Active Directory** - ideco-ad-backend, ideco-ad-log-collector@<имя домена>;
-* **ALD Pro** - ideco-ald-rest, ideco-ald-backend;
-* **Ideco Client** - ideco-agent-backend, ideco-agent-websocket;
-* **Syslog** - ideco-monitor-backend;
-* **Обнаружение устройств** - ideco-netscan-backend;
-* **Web Application Firewall** - ideco-waf-backend, ideco-waf-event-syncer;
-* **IGMP Proxy** - igmpproxy.
+* **Учетные записи** - `ideco-user-backend`;
+* **Личный кабинет пользователя** - `ideco-user-cabinet-backend`;
+* **Файрвол** - `ideco-firewall-backend`;
+* **Контроль приложений** - `ideco-app-backend`;
+* **Контент-фильтр** - `ideco-content-filter-backend`;
+* **Ограничение скорости** - `ideco-shaper-backend`;
+* **Антивирусы веб-трафика** - `ideco-av-backend`;
+* **Предотвращение вторжений** - `ideco-suricata-event-syncer`, `ideco-suricata-backend`;
+* **Объекты** - `ideco-alias-backend`;
+* **Квоты** - `ideco-quotas-backend`;
+* **Сетевые интерфейсы** - `ideco-network-backend`, `ideco-network-nic`;
+* **Маршрутизация** - `ideco-routing-backend`, `ideco-routing-rest`;
+* **Прокси** - `ideco-proxy-backend`, `squid`;
+* **Обратный прокси** - `ideco-reverse-backend`;
+* **DNS** - `ideco-dns-backend`, `unbound`, `nsd`, `unbound-anchor`, `unbound-keygen`;
+* **DDNS** - `ideco-dns-backend`;
+* **DHCP** - `ideco-dhclient`, `ideco-dhcp-server-backend`;
+* **NTP** - `chronyd`;
+* **IPsec** - `ideco-ipsec-backend`;
+* **Центральная консоль** - `ideco-central-console-backend`;
+* **VCE** - `ideco-vce-backend`;
+* **Кластеризация** - `ideco-cluster-backend`;
+* **Обновления** - `ideco-sysupdate-backend`;
+* **Бэкапы** - `ideco-backup-backend`;
+* **Лицензия** - `ideco-license-backend`;
+* **VPN-подключения** - `ideco-vpn-authd`, `ideco-vpn-dhcp-backend`, `ideco-vpn-dhcp-server`, `ideco-vpn-servers-backend`, `ideco-vpn-netns`, `ideco-vpn-sessions-sync`;
+* **Авторизация** - `ideco-auth-backend`;
+* **Веб-аутентификация, Двухфакторная аутентификация** - `ideco-web-authd`;
+* **Active Directory** - `ideco-ad-backend`;
+* **ALD Pro** - `ideco-ald-rest`, `ideco-ald-backend`;
+* **Ideco Client** - `ideco-agent-websocket`, `ideco-agent-backend`, `ideco-app-stats`;
+* **Syslog** - `ideco-monitor-backend`;
+* **Отчеты и журналы** - `ideco-logs-backend`, `ideco-reports-backend`, `ideco-logs-syncer`;
+* **Действия администраторов** - `ideco-audit-backend`;
+* **Обнаружение устройств** - `ideco-netscan-backend`;
+* **Web Application Firewall** - `ideco-waf-backend`, `ideco-waf-event-syncer`;
+* **IGMP Proxy** - `ideco-igmpproxy-backend`;
+* **Сертификаты** - `ideco-cert-backend`;
+* **Почтовый релей** - `ideco-mail-backend`;
+* **Сбор анонимной статистики о работе сервера** - `ideco-gatherstat-backend`;
+* **Локальное меню** - `ideco-local-menu`;
+* **Отправка оповещений через телеграм-бота** - `ideco-mir-alerts`; 
+* **Проверка скорости** - `ideco-speedtest`;
+* **Дополнительно (язык, часовой пояс, включение особых режимов работы)** - `ideco-system-backend`;
+* **Защита от повторяющихся зловредных или подозрительных действия, в т.ч. от брутфорс-атак (brute force - атака полным перебором)** - `fail2ban`;
+* **Доступ по SSH** - `sshd`.
+
+**Служебное:**
+
+* `clickhouse-server` - сервер базы данных;
+* `ideco-etcd-runtime`, `ideco-etcd-permanent` - локальная база данных;
+* `prometheus`, `prometheus-node-exporter` - сбор метрик и статистики.
 
 </details>
 
-## Защита от brute-force атак
+## Защита от брутфорс-атак
 {% hint style="info" %} 
-Защита от brute-force атак работает только для NGFW. 
+Защита от брутфорс-атак (brute force - атака полным перебором) работает только для NGFW. 
 {% endhint %}
 
 После 6 неудачных попыток ввода пароля в течение 15 минут IP-адрес подбирающего блокируется на 45 минут.

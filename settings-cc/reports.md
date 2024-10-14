@@ -19,19 +19,36 @@
 
 <summary>Список служб, доступных в разделе</summary>
 
-* **Файрвол** - ideco-firewall-backend, ideco-nflog;
-* **Контроль приложений** - ideco-app-backend, ideco-app-control@Leth<номер локального интерфейса>;
-* **Контент-фильтр** - ideco-content-filter-backend;
-* **Ограничение скорости** - ideco-shaper-backend;
-* **Объекты** - ideco-alias-backend;
-* **Сетевые интерфейсы** - ideco-network-backend, ideco-network-nic;
-* **Маршрутизация** - ideco-routing-backend;
-* **DNS** - ideco-dns-backend, unbound;
-* **DDNS** - ideco-dns-backend;
-* **Автоматическое обновление** - ideco-sysupdate-backend;
-* **Бэкапы** - ideco-backup-backend, ideco-backup-create, ideco-backup-rotate;
-* **Лицензия** - ideco-license-backend;
-* **Syslog** - ideco-monitor-backend.
+* **Серверы** - `ideco-servers-backend`, `ideco-servers-websocket`;
+* **Файрвол** - `ideco-firewall-backend`;
+* **Контроль приложений** - `ideco-app-backend`;
+* **Контент-фильтр** - `ideco-content-filter-backend`;
+* **Предотвращение вторжений** - `ideco-suricata-event-syncer`, `ideco-suricata-backend`;
+* **Объекты** - `ideco-alias-backend`;
+* **Сетевые интерфейсы** - `ideco-network-backend`, `ideco-network-nic`;
+* **Маршрутизация** - `ideco-routing-backend`, `ideco-routing-rest`;
+* **Обратный прокси** - `ideco-reverse-backend`;
+* **DNS** - `ideco-dns-backend`, `unbound`, `nsd`, `unbound-anchor`, `unbound-keygen`;
+* **NTP** - `chronyd`;
+* **Кластеризация** - `ideco-cluster-backend`;
+* **Обновления** - `ideco-sysupdate-backend`;
+* **Бэкапы** - `ideco-backup-backend`;
+* **Лицензия** - `ideco-license-backend`;
+* **Syslog** - `ideco-monitor-backend`;
+* **Отчеты и журналы** - `ideco-logs-backend`, `ideco-logs-syncer`;
+* **Действия администраторов** - `ideco-audit-backend`;
+* **Сертификаты** - `ideco-cert-backend`;
+* **Сбор анонимной статистики о работе сервера** - `ideco-gatherstat-backend`;
+* **Локальное меню** - `ideco-local-menu`;
+* **Дополнительно (язык, часовой пояс, включение особых режимов работы)** - `ideco-system-backend`;
+* **Защита от повторяющихся зловредных или подозрительных действия, в т.ч. от брутфорс-атак (brute force - атака полным перебором)** - `fail2ban`;
+* **Доступ по SSH** - `sshd`.
+
+**Служебное:**
+
+* `clickhouse-server` - сервер базы данных;
+* `ideco-etcd-runtime`, `ideco-etcd-permanent` - локальная база данных;
+* `prometheus`, `prometheus-node-exporter` - сбор метрик и статистики.
 
 </details>
 
