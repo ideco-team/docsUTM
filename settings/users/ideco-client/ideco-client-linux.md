@@ -81,6 +81,15 @@ systemctl enable IdecoService.service
 
 {% endhint %}
 
+{% hint style="warning" %}
+Для корректной работы Ideco Client на Astra Linux удалите настройку службы IdecoService:
+
+```bash
+sudo rm /etc/systemd/system/IdecoService.service
+```
+
+{% endhint %}
+
 ## Настройка профиля для первого запуска
 
 {% hint style="warning" %}
