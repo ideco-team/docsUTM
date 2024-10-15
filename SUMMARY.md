@@ -167,10 +167,6 @@
 ## Популярные инструкции и диагностика проблем <a href="#recipes" id="recipes"></a>
 
 * [FAQ](recipes/popular-recipes/README.md)
-  * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
-  * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
-  * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
-  * [Тестирование оперативной памяти сервера](recipes/popular-recipes/memory-testing.md)
   * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
     * [Cоздание VPN-подключения в Fedora](recipes/popular-recipes/vpn/connection-for-fedora.md)
@@ -179,6 +175,12 @@
     * [Создание VPN-подключения на мобильных устройствах](recipes/popular-recipes/vpn/connection-for-mobile-devices.md)
     * [Создание подключения в Mac OS](recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md)
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md)
+  * [Подключение к сертифицированным Ideco EX и настройка Ideco NGFW](recipes/popular-recipes/ideco-ex.md)
+  * [Анализ трафика](recipes/popular-recipes/traffic-analysis.md)
+  * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
+  * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
+  * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
+  * [Тестирование оперативной памяти сервера](recipes/popular-recipes/memory-testing.md)
   * [Как избавиться от асимметричной маршрутизации трафика](recipes/popular-recipes/access-to-remote-networks.md)
   * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Как восстановить доступ к Ideco NGFW](recipes/popular-recipes/restore-access-to-ideco-utm.md)
