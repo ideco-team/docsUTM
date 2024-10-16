@@ -6,6 +6,10 @@
 [content-filter-profiles.md](content-filter-profiles.md)
 {% endcontent-ref %}
 
+{% content-ref url="ips-profiles.md" %}
+[ips-profiles.md](ips-profiles.md)
+{% endcontent-ref %}
+
 {% content-ref url="tls-inspection-security-profiles.md" %}
 [tls-inspection-security-profiles.md](tls-inspection-security-profiles.md)
 {% endcontent-ref %}

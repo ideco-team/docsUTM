@@ -45,6 +45,7 @@
   * [Объекты](/settings/access-rules/aliases.md)
 * [Профили безопасности](settings/security-profiles/README.md)
   * [Контроль приложений](/settings/security-profiles/application-control-profiles.md)
+  * [Предотвращение вторжений](/settings/security-profiles/ips-profiles.md)
   * [Контент-фильтр](/settings/security-profiles/content-filter-profiles.md)
   * [TLS/SSL-инспекция](/settings/security-profiles/tls-inspection-security-profiles.md)
     * [Настройка фильтрации HTTPS](/settings/security-profiles/sertificate-setup.md)
