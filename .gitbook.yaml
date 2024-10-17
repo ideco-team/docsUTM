@@ -78,7 +78,7 @@ redirects:
   vce: ./settings/server-management/vce.md
   antivirus_log: ./settings/reports/antivirus-logs.md
   auto_logout_script: ./settings/users/active-directory/auto-de-authorization-script.md
-  session_sync: ./settings/server-management/cluster.md
+  session_sync: ./settings/server-management/cluster/cluster.md
   cc: ./settings-cc/README.md
   cc_firewall: ./settings-cc/policies-and-objects.md
   cc_application_control: ./settings-cc/application-control.md
