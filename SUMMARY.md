@@ -176,7 +176,6 @@
     * [Создание подключения в Mac OS](recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md)
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md)
   * [Подключение к сертифицированным Ideco EX и настройка Ideco NGFW](recipes/popular-recipes/ideco-ex.md)
-  * [Анализ трафика](recipes/popular-recipes/traffic-analysis.md)
   * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
   * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
   * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
