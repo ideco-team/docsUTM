@@ -29,7 +29,7 @@
 ![](/.gitbook/assets/security-profiles6.png)
 
 {% hint style="success" %}
-Принцип создания и настройки профилей в Ideco Center соответствуют принципам Ideco NGFW. Подробное описание в статье [Контроль приложений](/settings/security-profiles/application-control.md).
+Принцип создания и настройки профилей в Ideco Center соответствуют принципам Ideco NGFW. Подробное описание в статье [Контроль приложений](/settings/security-profiles/application-control/README.md).
 
 Миграция профилей **Контроля приложений** с версии 17 на версию 18 в Ideco Center осуществляется независимо от Ideco NGFW. Рекомендуем сначала обновить Ideco Center, а затем Ideco NGFW.
 {% endhint %}

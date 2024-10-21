@@ -1,6 +1,6 @@
 # Исключения 
 
-Правила в разделе **Исключения** отключают трафик из обработки системы [Предотвращения вторжений](README.md), [Контроля приложений](/settings/security-profiles/application-control.md) и [Ограничение скорости](/settings/access-rules/shaper.md), данные по ним не попадают в монитор трафика.
+Правила в разделе **Исключения** отключают трафик из обработки системы [Предотвращения вторжений](README.md), [Контроля приложений](/settings/security-profiles/application-control/README.md) и [Ограничение скорости](/settings/access-rules/shaper.md), данные по ним не попадают в монитор трафика.
 
 ![](/.gitbook/assets/exceptions.png) 
 

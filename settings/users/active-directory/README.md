@@ -41,7 +41,7 @@ description: >-
 Импортированные из AD/Samba группы безопасности и учетные записи можно использовать в качестве объектов правил фильтрации в разделах:
 
 * [X] [Файрвол](/settings/access-rules/firewall.md);
-* [X] [Контроль приложений](/settings/security-profiles/application-control.md);
+* [X] [Контроль приложений](/settings/security-profiles/application-control/README.md);
 * [X] [Ограничение скорости](/settings/access-rules/shaper.md);
 * [X] [Контент-фильтр](/settings/access-rules/content-filter/).
 
