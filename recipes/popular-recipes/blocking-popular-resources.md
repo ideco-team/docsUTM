@@ -20,7 +20,7 @@
 
 <summary>Блокировка TeamViewer</summary>
 
-**TeamViewer** - это программное обеспечение для удаленного доступа и управления компьютерами. Его можно заблокировать с помощью [Контроля приложений](/settings/security-profiles/application-control.md).
+**TeamViewer** - это программное обеспечение для удаленного доступа и управления компьютерами. Его можно заблокировать с помощью [Контроля приложений](/settings/security-profiles/application-control/README.md).
 
 1\. Перейдите в раздел **Профили безопасности -> Контроль приложений**. Создайте новый профиль для TeamViewer с действием **Запретить**:
 
@@ -82,7 +82,7 @@
 
 ![](/.gitbook/assets/ips-security-profiles7.png)
 
-3\. В разделе **Профили безопасности -> [Контроль приложений](/settings/security-profiles/application-control.md)** добавьте профиль, запрещающий приложение Tor:
+3\. В разделе **Профили безопасности -> [Контроль приложений](/settings/security-profiles/application-control/README.md)** добавьте профиль, запрещающий приложение Tor:
 
 ![](/.gitbook/assets/application-control2.png)
 
@@ -98,7 +98,7 @@
 
 Для ограничения возможности использования торрентов выполните следующие настройки:
 
-1\. Запретите протокол BitTorrent с помощью правила в разделе **Профили безопасности -> [Контроль приложений](/settings/security-profiles/application-control.md)**:
+1\. Запретите протокол BitTorrent с помощью правила в разделе **Профили безопасности -> [Контроль приложений](/settings/security-profiles/application-control/README.md)**:
 
 ![](/.gitbook/assets/application-control3.png)
 

@@ -101,7 +101,7 @@
 
 ![](/.gitbook/assets/ips3.png)
 
-#### Если блокирующее правило направляет трафик через [Контроль приложений](/settings/security-profiles/application-control.md):
+#### Если блокирующее правило направляет трафик через [Контроль приложений](/settings/security-profiles/application-control/README.md):
 
 1\. Перейдите в раздел **Отчеты и журналы -> Трафик**.
 

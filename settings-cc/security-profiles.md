@@ -29,7 +29,7 @@
 ![](/.gitbook/assets/security-profiles6.png)
 
 {% hint style="success" %}
-Принцип создания и настройки профилей в Ideco Center соответствуют принципам Ideco NGFW. Подробное описание в статье [Контроль приложений](/settings/security-profiles/application-control.md).
+Принцип создания и настройки профилей в Ideco Center соответствуют принципам Ideco NGFW. Подробное описание в статье [Контроль приложений](/settings/security-profiles/application-control/README.md).
 {% endhint %}
 
 В Ideco Center 17.6 были добавлены профили **Контроля приложений**. Но синхронизация профилей между Ideco NGFW и Ideco Center не осуществлялась. \
