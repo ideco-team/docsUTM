@@ -102,5 +102,5 @@ redirects:
   device-profiles: ./settings/users/hip-profiles.md
   dhcp_wpad: ./settings/services/dhcp.md
   user_personal_account: ./settings/users/user-personal-account.md
-  dpi: ./settings/security-profiles/application-control.md
+  dpi: ./settings/security-profiles/application-control/README.md
   version_support: ./general/support-period.md
