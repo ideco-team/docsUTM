@@ -4,6 +4,8 @@
 Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
 {% endhint %}
 
+## Управление пользователями
+
 <details>
 <summary>Получение списка пользователей</summary>
 
@@ -44,6 +46,47 @@ GET /user_backend/users
 </details>
 
 <details>
+<summary>Создание пользователя</summary>
+
+```
+POST /user_backend/users
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "name": "string",
+    "login": "string",
+    "psw": "string",
+    "parent_id": "integer",
+    "phone_number": "string" | null,
+    "comment": "string"
+}
+```
+
+* `name` - имя пользователя;
+* `login` - логин пользователя;
+* `psw` - пароль пользователя;
+* `parent_id` - идентификатор группы;
+* `phone_number` - номер телефона пользователя, не обязательно;
+* `comment` - комментарий, может быть пустым.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "id": "integer"
+}
+```
+
+* `id` - идентификатор добавленного пользователя.
+
+Если пользователь с указанным логином или именем существует, то исключение с описанием ошибки.
+
+</details>
+
+<details>
 <summary>Изменение одного пользователя</summary>
 
 ```
@@ -61,7 +104,7 @@ PUT /user_backend/users/<id пользователя>
     "domain_type": "string",
     "domain_name": "string",
     "ldap_guid": "string",
-    "phone_number": "string",
+    "phone_number": "string" | null,
     "comment": "string"
 }
 ```
@@ -73,8 +116,8 @@ PUT /user_backend/users/<id пользователя>
 * `domain_type` - тип домена;
 * `domain_name` - имя домена, из которого импортирован пользователь;
 * `ldap_guid` - идентификатор объекта AD;
-* `phone_number` - номер телефона пользователя;
-* `comment` - комментарий.
+* `phone_number` - номер телефона пользователя, не обязательно;
+* `comment` - комментарий, может быть пустым.
 
 **Ответ на успешный запрос:** 200 OK
 
@@ -103,47 +146,6 @@ PATCH /user_backend/users/<id пользователя>/disable-vpn
 </details>
 
 <details>
-<summary>Создание пользователя</summary>
-
-```
-POST /user_backend/users
-```
-
-**Json-тело запроса:**
-
-```json5
-{
-    "name": "string",
-    "login": "string",
-    "psw": "string",
-    "parent_id": "integer",
-    "phone_number": [ "string" ],
-    "comment": "string"
-}
-```
-
-* `name` - имя пользователя;
-* `login` - логин пользователя;
-* `psw` - пароль пользователя;
-* `parent_id` - идентификатор группы;
-* `phone_number` - номер телефона пользователя, не обязательно;
-* `comment` - комментарий.
-
-**Ответ на успешный запрос:**
-
-```json5
-{
-    "id": "integer"
-}
-```
-
-* `id` - идентификатор добавленного пользователя.
-
-Если пользователь с указанным логином или именем существует, то исключение с описанием ошибки.
-
-</details>
-
-<details>
 <summary>Создание группы</summary>
 
 ```
@@ -161,7 +163,6 @@ POST /user_backend/groups
 
 * `name` - имя группы;
 * `parent_id` - идентификатор группы.
-
 
 **Ответ на успешный запрос:**
 
@@ -270,6 +271,3 @@ PUT /user_backend/change_password/<id пользователя>
 **Ответ на успешный запрос:** 200 ОК
 
 </details>
-
-
-
