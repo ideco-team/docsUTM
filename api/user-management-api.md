@@ -4,7 +4,6 @@
 Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
 {% endhint %}
 
-
 ## Управление пользователями
 
 <details>
@@ -67,7 +66,7 @@ POST /user_backend/users
     "login": "string",
     "psw": "string",
     "parent_id": "integer",
-    "phone_number": [ "string" ],
+    "phone_number": "string" | null,
     "comment": "string"
 }
 ```
@@ -77,7 +76,7 @@ POST /user_backend/users
 * `psw` - пароль пользователя;
 * `parent_id` - идентификатор группы;
 * `phone_number` - номер телефона пользователя, не обязательно;
-* `comment` - комментарий.
+* `comment` - комментарий, может быть пустым.
 
 **Ответ на успешный запрос:**
 
@@ -111,7 +110,7 @@ PUT /user_backend/users/<id пользователя>
     "domain_type": "string",
     "domain_name": "string",
     "ldap_guid": "string",
-    "phone_number": "string",
+    "phone_number": "string" | null,
     "comment": "string"
 }
 ```
@@ -129,7 +128,7 @@ PUT /user_backend/users/<id пользователя>
 * `domain_name` - имя домена, из которого импортирован пользователь;
 * `ldap_guid` - идентификатор объекта AD;
 * `phone_number` - номер телефона пользователя;
-* `comment` - комментарий.
+* `comment` - комментарий, может быть пустым.
 
 **Важно!** Для пользователя со значением `domain_type`: `radius` можно изменить только значения полей `enabled`, `comment` и `name`. Для пользователя со значением `domain_type`: `device` нельзя изменить никакие значения.
 
@@ -226,7 +225,6 @@ POST /user_backend/groups
 * `name` - имя группы;
 * `parent_id` - идентификатор группы.
 
-
 **Ответ на успешный запрос:**
 
 ```json5
@@ -285,6 +283,3 @@ DELETE /user_backend/groups/<id группы>
 **Ответ на успешный запрос:** 200 ОК
 
 </details>
-
-
-
