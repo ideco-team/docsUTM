@@ -84,7 +84,7 @@ redirects:
   cc_application_control: ./settings-cc/application-control.md
   cc_content_filter: ./settings-cc/policies-and-objects.md
   cc_aliases: ./settings-cc/policies-and-objects.md
-  cc_shaper: /settings-cc/policies-and-objects.md
+  cc_shaper: ./settings-cc/policies-and-objects.md
   cc_interfaces: ./settings-cc/services.md
   cc_routing: ./settings-cc/services.md
   cc_certs: ./settings-cc/services.md
@@ -101,7 +101,7 @@ redirects:
   cc_ids_ips: ./settings-cc/security-profiles.md
   cc_waf_security_profiles: ./settings/security-profiles/waf-profiles.md
   cc_logs: ./settings-cc/reports.md
-  сс_admin_logs: ./settings-cc/reports.md
+  cc_admin_logs: ./settings-cc/reports.md
   device-profiles: ./settings/users/hip-profiles.md
   dhcp_wpad: ./settings/services/dhcp.md
   user_personal_account: ./settings/users/user-personal-account.md
