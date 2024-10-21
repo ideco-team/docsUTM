@@ -102,7 +102,7 @@ sudo rm /etc/systemd/system/IdecoService.service
 
 * [Установка корневого сертификата на Astra Linux](https://wiki.astralinux.ru/termidesk-help/4.3.1/dokumentatsiya/ekspluatatsionnaya-dokumentatsiya/termidesk-nastrojka-programmnogo-kompleksa/sistemnye-nastrojki/ustanovka-kornevogo-sertifikata-tsentra-sertifikatsii-v-termidesk);
 * [Установка корневого сертификата на Alt Linux](https://www.altlinux.org/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE_%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0);
-* [Установка корневого сертификата на Red OS](https://redos.red-soft.ru/base/szi/certs-cryptopro/);
+* [Установка корневого сертификата на Red OS](https://redos.red-soft.ru/base/redos-7_3/7_3-security/7_3-ext-szi/7_3-cpro/7_3-certs-cryptopro/?nocache=1729509457983);
 * [Установка корневого сертификата на Ubuntu/Debian](https://manuals.gfi.com/en/kerio/connect/content/server-configuration/ssl-certificates/adding-trusted-root-certificates-to-the-server-1605.html).
 
 После установки корневого сертификата запустите Ideco Client. Программа установит связь с сервером и предложит ввести данные.
