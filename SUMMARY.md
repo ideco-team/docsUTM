@@ -201,6 +201,7 @@
 
 * [FAQ](recipes/popular-recipes/README.md)
   * [Инструкции по созданию VPN-подключений](recipes/popular-recipes/vpn/README.md)
+    * [Создание VPN-подключения в Alt Linux](recipes/popular-recipes/vpn/connection-for-alt-linux.md)
     * [Создание VPN-подключения в Ubuntu](recipes/popular-recipes/vpn/connection-for-ubuntu.md)
     * [Создание VPN-подключения в Fedora](recipes/popular-recipes/vpn/connection-for-fedora.md)
     * [Создание подключения в Astra Linux](recipes/popular-recipes/vpn/connection-for-astra-linux.md)
