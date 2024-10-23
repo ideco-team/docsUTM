@@ -178,6 +178,7 @@
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md)
   * [Подключение к сертифицированным Ideco EX и настройка Ideco NGFW](recipes/popular-recipes/ideco-ex.md)
   * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
+  * [Настройка LACP на Hyper-V](recipes/popular-recipes/lacp-hyperpv.md)
   * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
   * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
   * [Тестирование оперативной памяти сервера](recipes/popular-recipes/memory-testing.md)
