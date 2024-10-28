@@ -61,7 +61,7 @@ description: >-
 
 ### Условия
 
-![](/.gitbook/assets/RDP1.png)
+![](/.gitbook/assets/terminal-server1.png)
 
 1\. Windows Server 2022 с ролью контроллера домена;
 
@@ -157,7 +157,7 @@ $obj.SetVirtualIPActive(1)
 
 4\. (опционально) Включите параметр политики **Не использовать IP-адрес сервера узла сеансов рабочих столов, если IP-адрес недоступен** (**Do not use Remote Desktop Session Host server IP address when virtual IP address is not available**).
 
-![](/.gitbook/assets/RDP7.png)
+![](/.gitbook/assets/terminal-server2.png)
 
 </details>
 
@@ -221,7 +221,7 @@ SeImpersonatePrivilege
 
 В случае успешной настройки на интерфейс, выбранный для IP-виртуализации, при подключении клиентов будут выдаваться виртуальные IP-адреса, которые исходящие запросы будут использовать в качестве источника.
 
-![](/.gitbook/assets/RDP2.png)
+![](/.gitbook/assets/terminal-server3.png)
 
 ### Диагностика
 
@@ -233,7 +233,7 @@ SeImpersonatePrivilege
 
 Успешно запущенная служба произведёт события 100 и 112 после запуска и 103, 104 при подключении/отключении клиента:
 
-![](/.gitbook/assets/RDP3.png)
+![](/.gitbook/assets/terminal-server4.png)
 
 В объекте WMI-инфраструктуры (независимо от вида настройки самой IP-виртуализации) в PowerShell выполните:
 ```
@@ -242,7 +242,7 @@ $obj
 ```
 Убедитесь, что параметр IP.VirtualIPActive = 1.
 
-![](/.gitbook/assets/RDP4.png)
+![](/.gitbook/assets/terminal-server5.png)
 
 Если что-то отличается, убедитесь, что все инструкции по настройке выполнены правильно, а DHCP-сервер работает исправно. При необходимости выполните настройку заново рекомендуемыми способами.
 
