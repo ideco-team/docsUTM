@@ -1,7 +1,7 @@
-# Антиспам Касперского
+# Антиспам и антивирус Касперского
 
 <details>
-<summary>Получение настроек Антиспама</summary>
+<summary>Получение настроек Антиспама и антивируса</summary>
 
 `GET /mail/klms/state`
 
@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<summary>Изменение настроек Антиспама</summary>
+<summary>Изменение настроек Антиспама и антивируса</summary>
 
 `PUT /mail/klms/state`
 
