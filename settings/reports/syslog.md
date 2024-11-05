@@ -24,7 +24,7 @@ description: >-
 
 4\. Выберите протокол передачи системных логов - TCP или UDP;
 
-5\. Нажмите **Сохранить** и переведите опцию в верхней части страницы в положение включен:
+5\. Нажмите **Сохранить** и включите опцию Syslog:
 
 ![](/.gitbook/assets/remote-syslog.png)
 
@@ -36,22 +36,25 @@ description: >-
 
 ### Формат CEF
 
-Логи в CEF-формате всегда начинаются со строки вида:
+Логи в CEF-формате начинаются со строки вида:
 
 {% code overflow="wrap" %}
 ``` 
-2024-04-02T14:20:01+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|
+192.168.1.100 Nov 05 14:57:10 daemon warning 2024-11-05T14:44:20+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|
 ```
 {% endcode %}
 где:
 
-* `2024-04-02T14:16:22+05:00` - время события в Ideco NGFW;
-* `ideco-ngfw` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `192.168.1.100` - IP-адрес NGFW отправителя;
+* `Nov 05 14:57:10` - время получения события по Syslog;
+* `warning` - приоритет сообщения в логах. Другие значения: `info` (информационное сообщение), `notice` (уведомление);
+* `2024-11-05T14:44:20+05:00` - время события в Ideco NGFW;
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `CEF:0` - версия формата CEF;
 * `Ideco` - вендор;
-* `NGFW` - название продукта (может меняться в зависимости от продукта);
-* `17.0` - версия продукта (может меняться в зависимости от версии);
-* `0|syslog|0` - три поля - идентификатор типа события, описание события, важность события. Идентификатор лога, постоянный для NGFW.
+* `NGFW` - название продукта;
+* `17.0` - версия продукта;
+* `0|syslog|0` - идентификатор лога, постоянный для NGFW. Состоит из трех полей: идентификатор типа события, описание события, важность события.
 
 <details>
 
@@ -59,58 +62,59 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-04-02T14:16:22+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712049382 Severity=Warning DeviceProcessName=web-proxy DeviceCustomString1=1831848834213181 DeviceInboundInterface=seq:Leth8{3 DeviceProcessName=suricata_debug DeviceCustomString5=alert SourceAddress=192.168.100.17 DeviceCustomString1=local DeviceCustomString1Label=Src IP Type SourcePort=49777 SourceCountry= DeviceCustomString2= DeviceCustomString2Label=Src Country Code DeviceCustomString3=70977265-245b-44f7-8281-b0e26cae1c46 DeviceCustomString3Label=Src session UUID SourceUserID=59 SourceUserName=192.168.100.17 DestinationAddress=52.185.211.133 DeviceCustomString4=external DeviceCustomString4Label=Dst IP Type DestinationPort=443 DestinationCountry=США DeviceCustomString5=US DeviceCustomString5Label=Dst Country Code DeviceCustomString6= DeviceCustomString6Label=Dst session UUID DestinationUserID=-1 DestinationUserName= TransportProtocol=TCP DeviceEventClassID=1006202 Message=Windows Telemetry DeviceEventCategory=Телеметрия Windows Severity=3 DeviceCustomString8=1 DeviceCustomString8Label=Alert GID DeviceCustomString9=blocked DeviceCustomString9Label=Alert action DestinationHostName= RequestUrl= RequestClientApplication= FlexNumber1=3 FlexNumber1Label=Flow packets to server FlexNumber2=1 FlexNumber2Label=Flow packets to client BytesIn=390 BytesOut=66 StartTime=2024-04-02 09:16:22.885262 EndTime=2024-04-02 09:16:22.887440 FlexNumber3=0 FlexNumber3Label=flow DeviceCustomString11= DeviceCustomString11Label=flow.state DeviceCustomString12= DeviceCustomString12Label=flow.reason FlexNumber4=0 FlexNumber4Label=flow.alerted DeviceCustomString14= DeviceCustomString14Label=tcp.tcp_flags DeviceCustomString15= DeviceCustomString15Label=tcp.tcp_flags_ts DeviceCustomString16= DeviceCustomString16Label=tcp.tcp_flags_tc FlexNumber5=0 FlexNumber5Label=tcp.cwr FlexNumber6=0 FlexNumber6Label=tcp.ecn FlexNumber7=0 FlexNumber7Label=tcp.urg FlexNumber8=0 FlexNumber8Label=tcp.ack FlexNumber9=0 FlexNumber9Label=tcp.psh FlexNumber10=0 FlexNumber10Label=tcp.rst FlexNumber11=0 FlexNumber11Label=tcp.syn FlexNumber12=0 FlexNumber12Label=tcp.fin DeviceCustomString17= DeviceCustomString17Label=tcp.state
+192.168.1.100 Nov 05 14:57:10 daemon warning 2024-11-05T14:44:20+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730799860 Severity=Warning DeviceProcessName=web-proxy DeviceCustomString1=1218332722865011 DeviceInboundInterface=seq:Leth1{3 DeviceProcessName=suricata_debug DeviceCustomString5=alert SourceAddress=192.168.101.25 DeviceCustomString1=local DeviceCustomString1Label=Src IP Type SourcePort=38003 SourceCountry= DeviceCustomString2= DeviceCustomString2Label=Src Country Code DeviceCustomString3=6103759e-5ad6-48b1-81b5-d15894b005ef DeviceCustomString3Label=Src session UUID SourceUserID=2 SourceUserName=user DestinationAddress=192.168.101.10 DeviceCustomString4=local DeviceCustomString4Label=Dst IP Type DestinationPort=53 DestinationCountry= DeviceCustomString5= DeviceCustomString5Label=Dst Country Code DeviceCustomString6= DeviceCustomString6Label=Dst session UUID DestinationUserID=-1 DestinationUserName= TransportProtocol=UDP DeviceEventClassID=1900005 Message=Mining pool DeviceEventCategory=Пулы криптомайнеров Severity=2 DeviceCustomString8=1 DeviceCustomString8Label=Alert GID DeviceCustomString9=blocked DeviceCustomString9Label=Alert action DestinationHostName= RequestUrl= RequestClientApplication= FlexNumber1=1 FlexNumber1Label=Flow packets to server FlexNumber2=0 FlexNumber2Label=Flow packets to client BytesIn=81 BytesOut=0 StartTime=2024-11-05 09:44:20.021521 EndTime=2024-11-05 09:44:20.021846 FlexNumber3=0 FlexNumber3Label=flow DeviceCustomString11= DeviceCustomString11Label=flow.state DeviceCustomString12= DeviceCustomString12Label=flow.reason FlexNumber4=0 FlexNumber4Label=flow.alerted DeviceCustomString14= DeviceCustomString14Label=tcp.tcp_flags DeviceCustomString15= DeviceCustomString15Label=tcp.tcp_flags_ts DeviceCustomString16= DeviceCustomString16Label=tcp.tcp_flags_tc FlexNumber5=0 FlexNumber5Label=tcp.cwr FlexNumber6=0 FlexNumber6Label=tcp.ecn FlexNumber7=0 FlexNumber7Label=tcp.urg FlexNumber8=0 FlexNumber8Label=tcp.ack FlexNumber9=0 FlexNumber9Label=tcp.psh FlexNumber10=0 FlexNumber10Label=tcp.rst FlexNumber11=0 FlexNumber11Label=tcp.syn FlexNumber12=0 FlexNumber12Label=tcp.fin DeviceCustomString17= DeviceCustomString17Label=tcp.state
 ```
 {% endcode %}
 где:
 
-* `DeviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
 * `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `DeviceCustomString1=1831848834213181` - внутренний идентификатор системы предотвращения вторжений flow (сессии);
-* `DeviceInboundInterface=seq:Leth8{3` - содержит идентификатор входящего интерфейса;
+* `DeviceProcessName` - название службы NGFW;
+* `DeviceCustomString1=1218332722865011` - внутренний идентификатор системы предотвращения вторжений flow (сессии);
+* `DeviceInboundInterface=seq:Leth1{3` - содержит идентификатор входящего интерфейса;
 * `DeviceProcessName=suricata_debug` - имя экземпляра системы предотвращения вторжений;
 * `DeviceCustomString5=alert` - тип события;
-* `SourceAddress=192.168.100.17` - IP-адрес источника;
-* `DeviceCustomString1=local DeviceCustomString1Label=Src IP Type` - тип IP-адреса источника (`local` - локальный, `external` - внешний); 
-* `SourcePort=49777` - порт источника;
-* `SourceCountry=` - название местоположения источника;
+* `SourceAddress=192.168.101.25` - IP-адрес источника;
+* `DeviceCustomString1=local DeviceCustomString1Label=Src IP Type` - тип IP-адреса источника (`local` - локальный, `external` - внешний);
+* `SourcePort=38003` - порт источника;
+* `SourceCountry` - название местоположения источника;
 * `DeviceCustomString2= DeviceCustomString2Label=Src Country Code` - ISO-код страны источника;
-* `DeviceCustomString3=70977265-245b-44f7-8281-b0e26cae1c46 DeviceCustomString3Label=Src session UUID` - внутренний идентификатор сессии Ideco NGFW источника; 
-* `SourceUserID=59` - идентификатор пользователя источника;
-* `SourceUserName=192.168.100.17` - имя пользователя источника;
-* `DestinationAddress=52.185.211.133` - IP-адрес назначения;
-* `DeviceCustomString4=external DeviceCustomString4Label=Dst IP Type` - тип IP-адреса назначения (local - локальный, external - внешний);
-* `DestinationPort=443` - порт назначения;
-* `DestinationCountry=США` - название местоположения назначения; 
-* `DeviceCustomString5=US DeviceCustomString5Label=Dst Country Code` - ISO-код страны назначения;
+* `DeviceCustomString3=6103759e-5ad6-48b1-81b5-d15894b005ef DeviceCustomString3Label=Src session UUID` - внутренний идентификатор сессии Ideco NGFW источника; 
+* `SourceUserID=2` - идентификатор пользователя источника;
+* `SourceUserName=user` - имя пользователя источника;
+* `DestinationAddress=192.168.101.10` - IP-адрес назначения;
+* `DeviceCustomString4=local DeviceCustomString4Label=Dst IP Type` - тип IP-адреса назначения (`local` - локальный, `external` - внешний);
+* `DestinationPort=53` - порт назначения;
+* `DestinationCountry` - название местоположения назначения;
+* `DeviceCustomString5= DeviceCustomString5Label=Dst Country Code` - ISO-код страны назначения;
 * `DeviceCustomString6= DeviceCustomString6Label=Dst session UUID` - внутренний идентификатор сессии Ideco NGFW назначения;
 * `DestinationUserID=-1` - идентификатор пользователя назначения;
-* `DestinationUserName=` - имя пользователя назначения;
-* `TransportProtocol=TCP` - протокол;
-* `DeviceEventClassID=1006202` - ID правила системы предотвращения вторжений;
-* `Message=Windows Telemetry` - сообщение из сработавшего правила;
-* `DeviceEventCategory=Телеметрия Windows` - описание колонки в веб-интерфейсе События безопасности;\
-  Соответствие *alert.category:* -> *alert.signature* описаны в [файле](https://static.ideco.ru/static/alert.category%20-%20alert.signature.pdf).
-* `Severity=3` - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы.
+* `DestinationUserName` - имя пользователя назначения;
+* `TransportProtocol=UDP` - протокол;
+* `DeviceEventClassID=1900005` - ID правила системы предотвращения вторжений;
+* `Message=Mining pool` - сообщение из сработавшего правила;
+* `DeviceEventCategory=Пулы криптомайнеров` - описание колонки в веб-интерфейсе События безопасности. Соответствие *alert.category:* -> *alert.signature* описаны в [файле](https://static.ideco.ru/static/alert.category%20-%20alert.signature.pdf);
+* `Severity=2` - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы;
+* `DeviceCustomString8=1 DeviceCustomString8Label=Alert GID` - GID угрозы;
+* `DeviceCustomString9=blocked DeviceCustomString9Label=Alert action` - действие по отношению к угрозе (блокировать).
 
 Служебные поля результата анализа HTTP-трафика. Заполняются, если в процессе анализа трафика был определен HTTP-протокол:
 
-* `DestinationHostName=` - идентификатор хоста;
-* `RequestUrl= - url`, на который велось обращение;
-* `RequestClientApplication=` - информация, идентифицирующая HTTP-клиента.
+* `DestinationHostName` - идентификатор хоста;
+* `RequestUrl` - URL, на который велось обращение;
+* `RequestClientApplication` - информация, идентифицирующая HTTP-клиента.
 
 Служебные поля flow (сессии):
 
-* `FlexNumber1=3 FlexNumber1Label=Flow packets to server` - количество пакетов, переданное от клиента к серверу;
-* `FlexNumber2=1 FlexNumber2Label=Flow packets to client` - количество пакетов, переданное от сервера к клиенту;
-* `BytesIn=390` - количество байт, переданное от клиента к серверу;
-* `BytesOut=66` - количество байт, переданное от сервера к клиенту;
-* `StartTime=2024-04-02 09:16:22.885262` - начало;
-* `EndTime=2024-04-02 09:16:22.887440` - окончание;
+* `FlexNumber1=1 FlexNumber1Label=Flow packets to server` - количество пакетов, переданное от клиента к серверу;
+* `FlexNumber2=0 FlexNumber2Label=Flow packets to client` - количество пакетов, переданное от сервера к клиенту;
+* `BytesIn=81` - количество байт, переданное от клиента к серверу;
+* `BytesOut=0` - количество байт, переданное от сервера к клиенту;
+* `StartTime=2024-11-05 09:44:20.021521` - начало;
+* `EndTime=2024-11-05 09:44:20.021846` - окончание;
 * `FlexNumber3=0 FlexNumber3Label=flow` - возраст;
 * `DeviceCustomString11= DeviceCustomString11Label=flow.state` - текущее состояние;
-* `DeviceCustomString12= DeviceCustomString12Label=flow.reason` - запущена ли IPsec в режиме отладки;
+* `DeviceCustomString12= DeviceCustomString12Label=flow.reason` - запущен ли IPsec в режиме отладки;
 * `FlexNumber4=0 FlexNumber4Label=flow.alerted` - сгенерировался ли поток alert.
 
 Состояние флага [TCP flow (сессии)](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#%D0%A4%D0%BB%D0%B0%D0%B3%D0%B8_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D0%B1%D0%B8%D1%82%D1%8B)):
@@ -118,14 +122,14 @@ description: >-
 * `DeviceCustomString14= DeviceCustomString14Label=tcp.tcp_flags` - значение поля flags в заголовке TCP;
 * `DeviceCustomString15= DeviceCustomString15Label=tcp.tcp_flags_ts` -  [timestamp флаги](https://www.atraining.ru/windows-network-tuning/#:~:text=TCP%20Timestamps%20–%20базовая%20низкоуровневая,не%20может%20высчитать%20данные%20значения);
 * `DeviceCustomString16= DeviceCustomString16Label=tcp.tcp_flags_tc` - [флаг Truncated response](https://www.rfc-editor.org/rfc/rfc5966);
-* `FlexNumber5=0 FlexNumber5Label=tcp.cwr 0` - флаг TCP-пакета, информирующий отправителя, что получен пакет с установленным флагом ECE (Подробнее в [RFC-3186](https://datatracker.ietf.org/doc/html/rfc3168));
-* `FlexNumber6=0 FlexNumber6Label=tcp.ecn 0` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление о перегрузке сети;
-* `FlexNumber7=0 FlexNumber7Label=tcp.urg 0` - флаг TCP-пакета, указывающий важность пакета;
-* `FlexNumber8=0 FlexNumber8Label=tcp.ack 0` - флаг TCP-пакета, указывающий, что пакет получен;
-* `FlexNumber9=0 FlexNumber9Label=tcp.psh 0` - флаг TCP-пакета, информирующий получателя, что все данные переданы и можно передать их приложению;
-* `FlexNumber10=0 FlexNumber10Label=tcp.rst 0` - флаг TCP-пакета, указывающий, что соединение завершено в аварийном режиме;
-* `FlexNumber11=0 FlexNumber11Label=tcp.syn 0` - флаг TCP-пакета, отвечающий за установку соединения;
-* `FlexNumber12=0 FlexNumber12Label=tcp.fin 0` - флаг TCP-пакета, указывающий на завершение соединения в штатном порядке;
+* `FlexNumber5=0 FlexNumber5Label=tcp.cwr` - флаг TCP-пакета, информирующий отправителя, что получен пакет с установленным флагом ECE (Подробнее в [RFC-3186](https://datatracker.ietf.org/doc/html/rfc3168));
+* `FlexNumber6=0 FlexNumber6Label=tcp.ecn` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление о перегрузке сети;
+* `FlexNumber7=0 FlexNumber7Label=tcp.urg` - флаг TCP-пакета, указывающий важность пакета;
+* `FlexNumber8=0 FlexNumber8Label=tcp.ack` - флаг TCP-пакета, указывающий, что пакет получен;
+* `FlexNumber9=0 FlexNumber9Label=tcp.psh` - флаг TCP-пакета, информирующий получателя, что все данные переданы и можно передать их приложению;
+* `FlexNumber10=0 FlexNumber10Label=tcp.rst` - флаг TCP-пакета, указывающий, что соединение завершено в аварийном режиме;
+* `FlexNumber11=0 FlexNumber11Label=tcp.syn` - флаг TCP-пакета, отвечающий за установку соединения;
+* `FlexNumber12=0 FlexNumber12Label=tcp.fin` - флаг TCP-пакета, указывающий на завершение соединения в штатном порядке;
 * `DeviceCustomString17= DeviceCustomString17Label=tcp.state` - [состояния сеанса TCP](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#Состояния_сеанса_TCP).
 
 </details>
@@ -134,20 +138,22 @@ description: >-
 
 <summary>Файрвол</summary>
 
+Логирование включается в разделе **Правила трафика -> Файрвол -> Логирование**.
+
 {% code overflow="wrap" %}
 ```
-2024-04-02T14:20:01+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712049601 Severity=Warning DeviceProcessName=ideco-nflog msg=TCP      src 192.168.100.17   sport 48300 dst 1.1.1.1          dport 443   table FWD  rule  2    action drop
+192.168.1.100 Nov 05 16:49:00 daemon notice 2024-11-05T16:48:49+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730807329 Severity=Warning DeviceProcessName=ideco-nflog msg=TCP src 192.168.101.25 sport 52416 dst 161.148.164.31 dport 443 table FWD rule 1 action drop
 ```
 {% endcode %}
 где:
 
-* `DeviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `TCP` - протокол. Это поле принимает значения UDP, TCP, ICMP, GRE, ESP и AH;
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `TCP` - протокол. Это поле принимает значения: UDP, TCP, ICMP, GRE, ESP и AH;
 * `src` - IP-адрес источника;
-* `dst` - IP-адрес назначения;
 * `sport` - порт источника для UDP и TCP;
+* `dst` - IP-адрес назначения;
 * `dport` - порт назначения для UDP и TCP;
 * `table` - таблица правил, в которой произошло логирование;
 * `rule` - ID правила из таблицы;
@@ -161,16 +167,16 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-04-02T14:27:57+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712050077 Severity=Notice DeviceProcessName=ideco-app-control msg=(flow_info_rules_was_checked) 192.168.100.17:49873 -> 162.159.138.232:443 [Discord] \= 'DROP'. 
+192.168.1.100 Nov 05 16:07:01 daemon info 2024-11-05T16:06:52+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730804812 Severity=Notice DeviceProcessName=ideco-app-control msg=(flow_info_rules_was_checked) 192.168.101.25:37936 -> 192.168.101.10:53 [Nintendo] \= 'DROP'.
 ```
 {% endcode %}
 
-* `DeviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
 * `flow_info_rules_was_checked` - идентификатор процесса;
-* `192.168.100.17:49873` - IP-адрес источника;
-* `162.159.138.232:443 [Discord] \= 'DROP'` - результат анализа трафика, где  `[Discord]` - название приложения, к которому был применен результат. [Список всех приложений](https://static.ideco.ru/static/app_control.pdf).
+* `192.168.101.25:37936` - IP-адрес источника;
+* `192.168.101.10:53 [Nintendo] \= 'DROP'` - результат анализа трафика, где  `[Nintendo]` - название приложения, к которому был применен результат. [Список всех приложений](https://static.ideco.ru/static/app_control.pdf).
 
 </details>
 
@@ -178,68 +184,33 @@ description: >-
 
 <summary>Контент-фильтр</summary>
 
-Просмотр логов доступен в веб-интерфейсе в разделе **Мониторинг -> Журналы**. Название служб для фильтрации: ideco-content-filter-backend и squid ().
+Логирование включается в разделе **Сервисы -> Прокси -> Основное**. Просмотр логов доступен в веб-интерфейсе в разделе **Отчеты и журналы -> Журнал веб-доступа**. Название служб для фильтрации: `ideco-content-filter-backend` и `squid`.
 
 Пример блокировки ресурса:
 
 {% code overflow="wrap" %}
 ```
-2024-04-03T13:00:38+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712131238 Severity=Notice DeviceProcessName=squid msg=192.168.100.17 - - [03/Apr/2024:13:00:38 +0500] "GET https://love.ru/znakomstva/ekaterinburg/ HTTP/1.1" 403 7519 "https://www.google.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" TCP_DENIED:HIER_NONE "Custom deny 8 znakomstva extended.id.23 user.id.3 " "av_name": "-", "av_object_infected": "-", "av_object_size": "-", "av_virus_name": "-" 
+192.168.1.100 Nov 06 16:39:20 daemon info 2024-11-06T18:39:18+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730900358 Severity=Notice DeviceProcessName=squid msg=192.168.101.25 - - [06/Nov/2024:18:39:18 +0500] "GET https://www.last.fm/ HTTP/1.1" 403 7479 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0" TCP_DENIED:HIER_NONE "Custom deny 2 Запрещенные сайты users.id.2 group.id.1 " "av_name": "-", "av_object_infected": "-", "av_object_size": "-", "av_virus_name": "-"
 ```
 {% endcode %}
 
-* `DeviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `192.168.100.17` - IP-адрес пользователя;
-* `[03/Apr/2024:13:00:38 +0500] "GET https://love.ru/znakomstva/ekaterinburg/ HTTP/1.1"`:
-  * `[03/Apr/2024:13:00:38 +0500]` - дата/время события блокировки;
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `192.168.101.25` - IP-адрес пользователя;
+* `[06/Nov/2024:18:39:18 +0500] "GET https://www.last.fm/ HTTP/1.1"`:
+  * `[06/Nov/2024:18:39:18 +0500]` - дата/время события блокировки;
   * `GET` - метод;
-  * `https://love.ru/znakomstva/ekaterinburg/` - URL заблокированного ресурса;
+  * `https://www.last.fm/` - URL заблокированного ресурса;
   * `HTTP/1.1` - протокол.
 * `403` - код состояния HTTP;
-* `7519` - передано байт (в ответ, включая HTTP заголовок);
-* `https://www.google.com/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
-* `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36` - цифровой отпечаток браузера; 
+* `7479` - передано байт (в ответ, включая HTTP-заголовок);
+* `Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0` - цифровой отпечаток браузера; 
 * `TCP_DENIED:HIER_NONE` - техническое сообщение от [squid](http://wiki.squid-cache.org/SquidFaq/SquidLogs#Squid_result_codes);
-* `Custom deny 8 znakomstva extended.id.23 user.id.3`:
-  * `Custom deny 8 znakomstva` - описание и номер правила блокировки;
-  * `extended.id.23` - категория сайта;
-  * `user.id.3` - значение поля **Применяется для** в сработавшем правиле.
-
-</details>
-
-<details>
-
-<summary>Аутентификация через веб-интерфейс</summary>
-
-{% code overflow="wrap" %}
-```
-2024-04-02T14:51:36+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712051496 Severity=Notice DeviceProcessName=fail2ban msg=INFO [utm-web-interface] Found 192.168.100.17 - 2024-04-02 14:51:36
-2024-04-02T14:51:36+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712051496 Severity=Warning DeviceProcessName=fail2ban msg=NOTICE [utm-web-interface] Ban 192.168.100.17
-```
-{% endcode %}
-
-* `DeviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `INFO` или `NOTICE` - приоритет сообщения в логах в виде информационного сообщения или уведомления;
-* `INFO [utm-web-interface] Found 192.168.100.17 - 2024-04-02 14:51:36` - факт обнаружения правил безопасности с указанием группы правил ([utm-web-interface]), IP-адреса и даты/времени. Список групп правил: 
-  * `utm-dovecot`;
-  * `utm-postfix-connrate.conf`;
-  * `utm-postscreen-prgrt.conf`;
-  * `utm-reverse-proxy.conf`;
-  * `utm-roundcube.conf`;
-  * `utm-smtp.conf`;
-  * `utm-ssh.conf`;
-  * `utm-two-factor-codes.conf`;
-  * `utm-vpn-authd.conf`;
-  * `utm-vpn-pppoe-authd.conf`;
-  * `utm-web-interface.conf`;
-  * `utm-wireguard-backend.conf`.
-* `NOTICE [utm-web-interface] Ban 192.168.100.17` - факт блокировки или разблокировки IP-адреса, где:
-  * `Ban` - факт блокировки;
-  * `Unban` - факт разблокировки.
+* `Custom deny 2 Запрещенные сайты users.id.2 group.id.1`:
+  * `2 Запрещенные сайты` - название и номер правила блокировки;
+  * `users.id.2` - категория сайта;
+  * `group.id.1` - значение поля **Применяется для** в сработавшем правиле.
 
 </details>
 
@@ -254,8 +225,8 @@ description: >-
 {% endcode %}
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
 * `192.168.205.254/32` - IP-адрес пользователя;
 * `Sanek` - логин пользователя;
 * `type 'web'` - тип авторизации веб.
@@ -272,8 +243,8 @@ description: >-
 {% endcode %}
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
 * `192.168.205.254/32` - IP-адрес пользователя;
 * `Sanek` - логин пользователя;
 * `type 'log'` - тип авторизации через журнал безопасности AD.
@@ -285,15 +256,16 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-07-18T17:26:34+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305594 Severity=Notice DeviceProcessName=ideco-web-authd msg=User 'Sanek' has been successfully authorized in web interface from IP '192.168.205.254'.
+192.168.1.100 Nov 05 18:18:58 daemon info 2024-11-05T18:18:51+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730812731 Severity=Notice DeviceProcessName=ideco-web-authd msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'web'.
 ```
 {% endcode %}
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `Sanek` - логин пользователя;
-* `192.168.205.254` - IP-адрес пользователя;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `192.168.101.25/32` - IP-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'web'` - тип авторизации (веб).
 
 </details>
 
@@ -302,16 +274,16 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-07-18T17:29:18+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305758 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'ip'.
+192.168.1.100 Nov 05 19:17:32 daemon info 2024-11-05T19:17:23+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730816243 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'ip'.
 ```
 {% endcode %}
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `192.168.205.254/32` - IP-адрес пользователя;
-* `Sanek` - логин пользователя;
-* `type 'ip'` - тип авторизации по IP.
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `192.168.101.25/32` - IP-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'ip'` - тип авторизации (IP).
 
 </details>
 
@@ -320,16 +292,16 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-07-18T17:32:26+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721305946 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.254/32 is authorized as user 'Sanek'. Connection made from None, type 'mac'.
+192.168.1.100 Nov 05 19:23:03 daemon info 2024-11-05T19:22:55+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730816575 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'mac'.
 ```
 {% endcode %}
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `192.168.205.254/32` - IP-адрес пользователя;
-* `Sanek` - логин пользователя;
-* `type 'mac'` - тип авторизации по MAC.
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `192.168.101.25/32` - IP-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'mac'` - тип авторизации (MAC).
 
 </details>
 
@@ -338,17 +310,16 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-07-18T20:52:27+05:00 Ideco-NGFW CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1721317947 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.205.0/24 is authorized as user 'Sanek'. Connection made from None, type 'net'.
+192.168.1.100 Nov 05 19:27:05 daemon info 2024-11-05T19:26:58+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730816818 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.0/24 is authorized as user 'user'. Connection made from None, type 'net'
 ```
 {% endcode %}
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `192.168.205.0/24` - подсеть, по которой происходит авторизация;
-* `Sanek` - логин пользователя;
-* `type 'net'` - тип авторизации по подсети.
-
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `192.168.101.0/24` - подсеть, по которой происходит авторизация;
+* `user` - логин пользователя;
+* `type 'net'` - тип авторизации (подсеть).
 
 </details>
 
@@ -358,93 +329,137 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-2024-04-02T14:49:34+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712051374 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Start vpn authorization ('user',  '192.168.100.17',  'pptp').
-2024-04-02T14:49:34+05:00 ideco-ngfw CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1712051374 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Subnet 10.128.240.8/32 is authorized as user 'user'. Connection made from '192.168.100.17',  type 'pptp'.
+192.168.1.100 Nov 06 12:15:46 daemon info 2024-11-06T14:15:35+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730884535 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Subnet 10.128.0.3/32 is authorized as user 'user'. Connection made from '192.168.1.25', type 'pptp'.
 ```
 {% endcode %}
 
-* `DeviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
-* `DeviceProcessName` - название службы NGFW (unit);
-* `Start vpn authorization ('user',  '192.168.100.17',  'pptp')` - факт запроса на авторизацию с информацией о запрашиваемом подключении, где:
-  *  `user` - логин пользователя;
-  *  `192.168.100.17` - IP-адрес, откуда установлено подключение;
-  *  `pptp` - протокол.
-* `Subnet 10.128.240.8/32 is authorized as user 'user'` - факт успешной авторизации с локальным IP-адресом.
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `10.128.0.3/32` - сеть для VPN-подключений;
+* `user` - логин пользователя;
+* `192.168.1.25` - IP-адрес, откуда установлено подключение;
+* `pptp` - протокол.
+
+</details>
+
+<details>
+
+<summary>Служба fail2ban</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.1.100 Nov 06 15:02:25 daemon info 2024-11-06T17:02:17+05:00 ngfw-17 CEF:0|Ideco|NGFW|17.0|0|syslog|0|deviceReceiptTime=1730894537 Severity=Notice DeviceProcessName=fail2ban msg=INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-06 17:02:16
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `INFO` или `NOTICE` - приоритет сообщения в логах в виде информационного сообщения или уведомления;
+* `INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-06 17:02:16` - факт обнаружения правил безопасности с указанием группы правил ([utm-vpn-authd]), IP-адреса и даты/времени. Список групп правил: 
+  * `utm-dovecot` - авторизация на почтовом сервере через почтовые клиенты;
+  * `utm-postfix-connrate` - превышение лимита подключения к почтовому серверу;
+  * `utm-postscreen-prgrt` - отслеживание нежелательных подключений (PREGREET) к почтовому серверу;
+  * `utm-reverse-proxy-conn` - защита от DoS (лимит подключений);
+  * `utm-reverse-proxy-req` - защита от DoS (лимит запросов в секунду);
+  * `utm-reverse-proxy` - Web Application Firewall (WAF);
+  * `utm-roundcube` - авторизация в веб-интерфейсы почтового сервера;
+  * `utm-smtp` - авторизация по smtp;
+  * `utm-ssh` - авторизация по ssh;
+  * `utm-two-factor-codes` - прохождение двухфакторной аутентификации;
+  * `utm-vpn-authd` - авторизация по VPN;
+  * `utm-vpn-pppoe-authd` - авторизация по VPN PPPoE;
+  * `utm-web-interface` - авторизация в административном веб-интерфейсе;
+  * `utm-user-cabinet` - авторизация в пользовательском веб-интерфейсе.
 
 </details>
 
 ### Формат Syslog
+
+Логи в Syslog-формате начинаются со строки вида:
+
+{% code overflow="wrap" %}
+``` 
+192.168.1.100 Nov 05 19:30:56 1 daemon warning 2024-11-05T19:30:51+05:00
+```
+{% endcode %}
+где:
+
+* `192.168.1.100` - IP-адрес NGFW отправителя;
+* `Nov 05 14:42:25` - время получения события по Syslog;
+* `warning` - приоритет сообщения в логах. Другие значения: `info` (информационное сообщение), `notice` (уведомление);
+* `2024-11-05T14:36:17+05:00` - время события в Ideco NGFW.
 
 <details>
 <summary>Предотвращение вторжений</summary>
 
 {% code overflow="wrap" %}
 ```
-192.168.100.2	Dec 14 15:48:38		daemon	warning		timestamp:2022-12-14 10:48:34.808465+00:00,flow_id:1189034483406353,in_iface:seq:Leth1:3:m,sensor_name:suricata_debug,event_type:alert,src_ip:192.168.100.11,src_port:61790,src_country:,src_country_code:,src_session_uuid:7100d1c8-017f-4cbf-8b78-482839300211,src_user_id:2,src_user_name:a.istomina,dest_ip:192.168.100.2,dest_port:53,dest_country:,dest_country_code:,dest_session_uuid:,dest_user_id:-1,dest_user_name:,proto:UDP,alert.signature_id:1003892,alert.signature:Windows Telemetry,alert.category:Telemetry Windows,alert.severity:3,alert.gid:1,alert.action:blocked,http.hostname:,http.url:,http.http_user_agent:,flow.pkts_toserver:1,flow.pkts_toclient:0,flow.bytes_toserver:73,flow.bytes_toclient:0,flow.start:2022-12-14 10:48:34.808465+00:00,flow.end:2022-12-14 10:48:35.580143+00:00,flow.age:0,flow.state:,flow.reason:,flow.alerted:0,tcp.tcp_flags:,tcp.tcp_flags_ts:,tcp.tcp_flags_tc:,tcp.cwr:0,tcp.ecn:0,tcp.urg:0,tcp.ack:0,tcp.psh:0,tcp.rst:0,tcp.syn:0,tcp.fin:0,tcp.state:
+192.168.1.100	Nov 05 14:42:25 1 daemon warning 2024-11-05T14:36:17+05:00 ngfw-17 suricata - - - flow_id:534238476293026, in_iface:seq:Leth1{3, sensor_name:suricata_debug, event_type:alert, src_ip:192.168.101.25, src_ip_type:local, src_port:36872, src_country:, src_country_code:, src_session_uuid:6103759e-5ad6-48b1-81b5-d15894b005ef, src_user_id:2, src_user_name:user, dest_ip:192.168.101.10, dest_ip_type:local, dest_port:53, dest_country:, dest_country_code:, dest_session_uuid:, dest_user_id:-1, dest_user_name:, proto:UDP, alert.signature_id:1900005, alert.signature:Mining pool, alert.category:Пулы криптомайнеров, alert.severity:2, alert.gid:1, alert.action:blocked, http.hostname:, http.url:, http.http_user_agent:, flow.pkts_toserver:1, flow.pkts_toclient:0, flow.bytes_toserver:81, flow.bytes_toclient:0, flow.start:2024-11-05 09:36:17.714211, flow.end:2024-11-05 09:36:17.714612, flow.age:0, flow.state:, flow.reason:, flow.alerted:0, tcp.tcp_flags:, tcp.tcp_flags_ts:, tcp.tcp_flags_tc:, tcp.cwr:0, tcp.ecn:0, tcp.urg:0, tcp.ack:0, tcp.psh:0, tcp.rst:0, tcp.syn:0, tcp.fin:0, tcp.state:
 ```
 {% endcode %}
 
-где:
-* `192.168.100.2` - IP-адрес NGFW отправителя;
-* `Dec 14 15:48:38` - время получения события по Syslog;	
-* `timestamp: 2022-12-14 10:48:34.808465+00:00` - время события в системе предотвращения вторжений, может не совпадать с временем получения события по Syslog;
-* `flow_id: 1189034483406353` - внутренний идентификатор системы предотвращения вторжений flow (сессии);
-* `in_iface: seq:Leth1:3:m` - содержит идентификатор входящего интерфейса;
-* `sensor_name: suricata_debug` - имя экземпляра системы предотвращения вторжений;
-* `event_type: alert` - тип события;
-* `src_ip: 192.168.100.11` - IP-адрес источника;
-* `src_port: 61790` - порт источника;
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `suricata` - название службы;
+* `flow_id:534238476293026` - внутренний идентификатор системы предотвращения вторжений flow (сессии);
+* `in_iface:seq:Leth1{3` - содержит идентификатор входящего интерфейса;
+* `sensor_name:suricata_debug` - имя экземпляра системы предотвращения вторжений;
+* `event_type:alert` - тип события;
+* `src_ip:192.168.101.25` - IP-адрес источника;
+* `src_port:36872` - порт источника;
 * `src_country:` - название местоположения источника;
 * `src_country_code:` - ISO-код страны источника;
-* `src_session_uuid: 7100d1c8-017f-4cbf-8b78-482839300211` - внутренний идентификатор сессии Ideco NGFW источника;
-* `src_user_id: 2` - идентификатор пользователя источника;
-* `src_user_name: a.istomina`- имя пользователя источника;
-* `dest_ip: 192.168.100.2` - IP-адрес назначения;
-* `dest_port: 53` - порт назначения;
+* `src_session_uuid:6103759e-5ad6-48b1-81b5-d15894b005ef` - внутренний идентификатор сессии Ideco NGFW источника;
+* `src_user_id:2` - идентификатор пользователя источника;
+* `src_user_name:user`- имя пользователя источника;
+* `dest_ip:192.168.101.10` - IP-адрес назначения;
+* `dest_port:53` - порт назначения;
 * `dest_country:` - название местоположения назначения;
 * `dest_country_code:` - ISO-код страны назначения;
 * `dest_session_uuid:` - внутренний идентификатор сессии Ideco NGFW назначения;
-* `dest_user_id: -1` - идентификатор пользователя назначения;
+* `dest_user_id:-1` - идентификатор пользователя назначения;
 * `dest_user_name:` - имя пользователя назначения;
-* `proto: UDP` - протокол;
-* `alert.signature_id: 1003892` - ID правила системы предотвращения вторжений;
-* `alert.signature: Windows Telemetry` - сообщение из сработавшего правила;
-* `alert.category: Telemetry Windows` - описание колонки в веб-интерфейсе События безопасности; \
-  Соответствие *alert.category:* -> *alert.signature* описаны в [файле](https://static.ideco.ru/static/alert.category%20-%20alert.signature.pdf).
-* `alert.severity: 3` - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы.
+* `proto:UDP` - протокол;
+* `alert.signature_id:1900005` - ID правила системы предотвращения вторжений;
+* `alert.signature:Mining pool` - сообщение из сработавшего правила;
+* `alert.category:Пулы криптомайнеров` - описание колонки в веб-интерфейсе **События безопасности**. Соответствие *alert.category:* -> *alert.signature* описаны в [файле](https://static.ideco.ru/static/alert.category%20-%20alert.signature.pdf);
+* `alert.severity:2` - уровень угрозы, может принимать значения 1, 2, 3 и 256, где 1 - самый высокий уровень угрозы;
+* `alert.gid:1` - GID угрозы;
+* `alert.action:blocked` - действие по отношению к угрозе (блокировать).
 
 Служебные поля результата анализа HTTP-трафика. Заполняются, если в процессе анализа трафика был определен HTTP-протокол:
+
 * `http.hostname:` - идентификатор хоста;
-* `http.url:` - url, на который велось обращение;
+* `http.url:` - URL, на который велось обращение;
 * `http.http_user_agent:` - информация, идентифицирующая HTTP-клиента.
   
 Служебные поля flow (сессии):
 
-* `flow.pkts_toserver :1` - количество пакетов, переданное от клиента к серверу;
-* `flow.pkts_toclient: 0` - количество пакетов, переданное от сервера к клиенту;
-* `flow.bytes_toserver: 73` - количество байт, переданное от клиента к серверу;
-* `flow.bytes_toclient: 0` - количество байт, переданное от сервера к клиенту;
-* `flow.start: 2022-12-14 10:48:34.808465+00:00` - начало;
-* `flow.end: 2022-12-14 10:48:35.580143+00:00` - окончание;
-* `flow.age: 0` - возраст;
+* `flow.pkts_toserver:1` - количество пакетов, переданное от клиента к серверу;
+* `flow.pkts_toclient:0` - количество пакетов, переданное от сервера к клиенту;
+* `flow.bytes_toserver:81` - количество байт, переданное от клиента к серверу;
+* `flow.bytes_toclient:0` - количество байт, переданное от сервера к клиенту;
+* `flow.start:2024-11-05 09:36:17.714211` - начало;
+* `flow.end:2024-11-05 09:36:17.714612` - окончание;
+* `flow.age:0` - возраст;
 * `flow.state:` - текущее состояние;
 * `flow.reason:` - запущена ли IPsec в режиме отладки;
-* `flow.alerted:` 0 - сгенерировался ли поток alert.
+* `flow.alerted:0` - сгенерировался ли поток alert.
 
-Состояние флага [TCP flow(сессии)](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#%D0%A4%D0%BB%D0%B0%D0%B3%D0%B8_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D0%B1%D0%B8%D1%82%D1%8B)): 
+Состояние флага [TCP flow(сессии)](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#%D0%A4%D0%BB%D0%B0%D0%B3%D0%B8_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D0%B1%D0%B8%D1%82%D1%8B)):
 
 * `tcp.tcp_flags:` - значение поля flags в заголовке TCP;
 * `tcp.tcp_flags_ts:` -  [timestamp флаги](https://www.atraining.ru/windows-network-tuning/#:~:text=TCP%20Timestamps%20–%20базовая%20низкоуровневая,не%20может%20высчитать%20данные%20значения);
 * `tcp.tcp_flags_tc:` - [флаг Truncated response](https://www.rfc-editor.org/rfc/rfc5966);
-* `tcp.cwr: 0` - флаг TCP-пакета, информирующий отправителя, что получен пакет с установленным флагом ECE (Подробнее в [RFC-3186](https://datatracker.ietf.org/doc/html/rfc3168));
-* `tcp.ecn: 0` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление  о перегрузке сети;
-* `tcp.urg: 0` - флаг TCP-пакета, указывающий важность пакета;
-* `tcp.ack: 0` - флаг TCP-пакета, указывающий, что пакет получен;
-* `tcp.psh: 0` - флаг TCP-пакета, информирующий получателя, что все данные переданы и можно передать их приложению;
-* `tcp.rst: 0` - флаг TCP-пакета, указывающий, что соединение завершено в аварийном режиме;
-* `tcp.syn: 0` - флаг TCP-пакета, отвечающий за установку соединения;
-* `tcp.fin: 0` - флаг TCP-пакета, указывающий на завершение соединения в штатном порядке;
+* `tcp.cwr:0` - флаг TCP-пакета, информирующий отправителя, что получен пакет с установленным флагом ECE (Подробнее в [RFC-3186](https://datatracker.ietf.org/doc/html/rfc3168));
+* `tcp.ecn:0` - флаг TCP-пакета, информирующий получателя, что узел способен на явное уведомление  о перегрузке сети;
+* `tcp.urg:0` - флаг TCP-пакета, указывающий важность пакета;
+* `tcp.ack:0` - флаг TCP-пакета, указывающий, что пакет получен;
+* `tcp.psh:0` - флаг TCP-пакета, информирующий получателя, что все данные переданы и можно передать их приложению;
+* `tcp.rst:0` - флаг TCP-пакета, указывающий, что соединение завершено в аварийном режиме;
+* `tcp.syn:0` - флаг TCP-пакета, отвечающий за установку соединения;
+* `tcp.fin:0` - флаг TCP-пакета, указывающий на завершение соединения в штатном порядке;
 * `tcp.state:` - [состояния сеанса TCP](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#Состояния_сеанса_TCP).
 
 </details>
@@ -455,17 +470,19 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-ноя 24 09:36:27 ideco-ngfw ideco-nflog[691]: UDP      src 192.168.100.12   sport 137   dst 40.125.122.151   dport 137   table FWD  rule  1    action accept
+192.168.1.100 Nov 05 16:50:52 1 daemon notice 2024-11-05T16:50:46+05:00 ngfw-17 ideco-nflog - - - TCP src 192.168.101.25 sport 35468 dst 161.148.164.31 dport 443 table FWD rule 1 action drop
 ```
 {% endcode %}
 
-* `UDP` - протокол, принимает значения UDP, TCP, ICMP, GRE, ESP и AH;
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-nflog` - название службы;
+* `TCP` - протокол, принимает значения: UDP, TCP, ICMP, GRE, ESP и AH;
 * `src` - IP-адрес источника;
-* `dst` - IP-адрес назначения;
 * `sport` - порт источника для UDP и TCP;
+* `dst` - IP-адрес назначения;
 * `dport` - порт назначения для UDP и TCP;
 * `table` - таблица правил, в которой произошло логирование;
-* `rule` - ID правила из таблицы *rule*;
+* `rule` - ID правила из таблицы;
 * `action` - действие, которое произошло.
 
 </details>
@@ -476,13 +493,14 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.100.2	Jan 12 11:00:15	1	user	err		2023-01-12T11:00:14+05:00 ideco-ngfw app-control 2027 - - (flow_info_rules_was_checked) 192.168.100.11:52514 -> 192.168.100.2:53 [Amazon] = 'DROP'. 
+192.168.1.100 Nov 05 16:04:58 1 daemon info 2024-11-05T16:04:51+05:00 ngfw-17 ideco-app-control - - - (flow_info_rules_was_checked) 192.168.101.25:43800 -> 192.168.101.10:53 [Nintendo] = 'DROP'.
 ```
 {% endcode %}
 
-* `2027` - идентификатор процесса;
-* `192.168.100.11:52514` - IP-адрес источника;
-* `192.168.100.2:53 [Amazon] = 'DROP'` - результат анализа трафика, где  `[Amazon]` - название приложения, к которому был применен результат. [Список всех приложений](https://static.ideco.ru/static/app_control.pdf).
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-app-control` - название службы;
+* `192.168.101.25:43800` - IP-адрес источника;
+* `192.168.101.10:53 [Nintendo] = 'DROP'` - результат анализа трафика, где  `[Nintendo]` - название приложения, к которому был применен результат. [Список всех приложений](https://static.ideco.ru/static/app_control.pdf).
 
 </details>
 
@@ -490,101 +508,32 @@ description: >-
 
 <summary>Контент-фильтр</summary>
 
-Просмотр логов доступен в веб-интерфейсе в разделе **Мониторинг -> Журналы**. Название служб для фильтрации: ideco-content-filter-backend и squid.
+Логирование включается в разделе **Сервисы -> Прокси -> Основное**. Просмотр логов доступен в веб-интерфейсе в разделе **Отчеты и журналы -> Журнал веб-доступа**. Название служб для фильтрации: `ideco-content-filter-backend` и `squid`.
 
 Пример блокировки ресурса:
 
 {% code overflow="wrap" %}
 ```
-192.168.101.130    Mar 31 14:56:57    1    daemon    info        2023-03-31T14:56:56+05:00 ideco-ngfw squid 5950 - - 192.168.101.131 - - [31/Mar/2023:14:56:56 +0500] "GET https://www.igromania.ru/? HTTP/1.1" 403 7455 "https://yandex.ru/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0" TCP_DENIED:HIER_NONE "Custom deny 8 Игры extended.id.21 group.id.1 " 
+192.168.1.100 Nov 06 16:40:56 1 daemon info 2024-11-06T18:40:50+05:00 ngfw-17 squid - - - 192.168.101.25 - - [06/Nov/2024:18:40:50 +0500] "GET https://www.last.fm/ HTTP/1.1" 403 7479 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0" TCP_DENIED:HIER_NONE "Custom deny 2 Запрещенные сайты users.id.2 group.id.1 " "av_name": "-", "av_object_infected": "-", "av_object_size": "-", "av_virus_name": "-"
 ```
 {% endcode %}
 
-* `5950` - идентификатор процесса;
-* `192.168.101.131` - IP-адрес пользователя;
-* `[31/Mar/2023:14:56:56 +0500] "GET https://www.igromania.ru/? HTTP/1.1`:
-  * `[31/Mar/2023:14:56:56 +0500]` - дата/время события блокировки;
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `squid` - название службы;
+* `192.168.101.25` - IP-адрес пользователя;
+* `[06/Nov/2024:18:40:50 +0500] "GET https://www.last.fm/ HTTP/1.1"`:
+  * `[06/Nov/2024:18:40:50 +0500]` - дата/время события блокировки;
   * `GET` - метод;
-  * `https://www.igromania.ru/?` - URL заблокированного ресурса;
+  * `https://www.last.fm/` - URL заблокированного ресурса;
   * `HTTP/1.1` - протокол.
 * `403` - код состояния HTTP;
-* `7455` - передано байт (в ответ, включая HTTP заголовок);
-* `https://yandex.ru/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
-* `Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0` - цифровой отпечаток браузера; 
+* `7479` - передано байт (в ответ, включая HTTP-заголовок);
+* `Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0` - цифровой отпечаток браузера; 
 * `TCP_DENIED:HIER_NONE` - техническое сообщение от [squid](http://wiki.squid-cache.org/SquidFaq/SquidLogs#Squid_result_codes);
-* `Custom deny 8 Игры extended.id.21 group.id.1`:
-  * `Custom deny 8 Игры` - описание и номер правила блокировки;
-  * `extended.id.21` - категория сайта;
+* `Custom deny 2 Запрещенные сайты users.id.2 group.id.1`:
+  * `2 Запрещенные сайты` - название и номер правила блокировки;
+  * `users.id.2` - категория сайта;
   * `group.id.1` - значение поля **Применяется для** в сработавшем правиле.
-
-</details>
-
-<details>
-
-<summary>Аутентификация через веб-интерфейс</summary>
-
-{% code overflow="wrap" %}
-```
-192.168.100.2	Jan 12 11:02:15	1	daemon	info		2023-01-12T11:02:14+05:00 ideco-ngfw fail2ban.filter 779 - - INFO [utm-web-interface] Found 192.168.100.1 - 2023-01-12 11:02:14 
-192.168.100.2	Jan 12 11:02:36	1	daemon	notice		2023-01-12T11:02:35+05:00 ideco-ngfw fail2ban.actions 779 - - NOTICE [utm-web-interface] Ban 192.168.100.1 
-
-```
-{% endcode %}
-
-* `info` или `notice` - приоритет сообщения в логах в виде информационного сообщения или уведомления;
-* `779` - идентификатор процесса;
-* `INFO [utm-web-interface] Found 192.168.100.1 - 2023-01-12 11:02:14` - факт обнаружения правил безопасности с указанием группы правил (`[utm-web-interface]`), IP-адреса и даты/времени. Список групп правил: 
-  * `utm-dovecot`;
-  * `utm-postfix-connrate.conf`;
-  * `utm-postscreen-prgrt.conf`; 
-  * `utm-reverse-proxy.conf`;
-  * `utm-roundcube.conf`;
-  * `utm-smtp.conf`;
-  * `utm-ssh.conf`;
-  * `utm-two-factor-codes.conf`;
-  * `utm-vpn-authd.conf`;
-  * `utm-vpn-pppoe-authd.conf`;
-  * `utm-web-interface.conf`;
-  * `utm-wireguard-backend.conf`.
-* `NOTICE [utm-web-interface] Ban 192.168.100.1` - факт блокировки или разблокировки IP-адреса, где:
-  * `Ban` - факт блокировки;
-  * `Unban` - факт разблокировки.
-
-</details>
-
-<details>
-
-<summary>Подключение по VPN</summary>
-
-{% code overflow="wrap" %}
-```
-192.168.100.2	Jan 12 11:10:06	1	local0	info		2023-01-12T11:10:05+05:00 ideco-ngfw ideco-vpn-authd 1356 - - Start vpn authorization ('user_1', '192.168.100.11', 'pptp'). 
-192.168.100.2	Jan 12 11:10:06	1	local0	info		2023-01-12T11:10:05+05:00 ideco-ngfw ideco-vpn-authd 1356 - - Subnet 10.128.187.17/32 is authorized as user 'user_1'. Connection made from '192.168.100.11', type 'pptp'.
-```
-{% endcode %}
-
-* `1356` - идентификатор процесса;
-* `Start vpn authorization('user_1', '192.168.100.11', 'pptp')` - факт запроса на авторизацию с информацией о запрашиваемом подключении, где:
-  *  `user_1` - логин пользователя; 
-  *  `192.168.100.11` - IP-адрес, откуда установлено подключение;
-  *  `pptp` - протокол.
-* `Subnet 10.128.187.17/32` - факт успешной авторизации с локальным IP-адресом.
-
-</details>
-
-<details>
-<summary>Веб-авторизация</summary>
-
-{% code overflow="wrap" %}
-```
-192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-web-authd 1665 - - Subnet 192.168.100.10/32 is authorized as user 'user'. Connection made from None, type 'web'
-```
-{% endcode %}
-
-* `1665` - идентификатор процесса;
-* `192.168.100.10/32` - IP-адрес пользователя;
-* `user` - логин пользователя;
-* `type 'web'` - тип авторизации веб.
 
 </details>
 
@@ -597,7 +546,8 @@ description: >-
 ```
 {% endcode %}
 
-* `Ideco-NGFW` - название сервера;
+* `Ideco-NGFW` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-web-authd` - название службы;
 * `192.168.205.254/32` - IP-адрес пользователя;
 * `Sanek` - логин пользователя;
 * `type 'web'` - тип авторизации веб.
@@ -613,10 +563,28 @@ description: >-
 ```
 {% endcode %}
 
-* `Ideco-NGFW` - название сервера;
+* `Ideco-NGFW` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-auth-backend` - название службы;
 * `192.168.205.254/32` - IP-адрес пользователя;
 * `Sanek` - логин пользователя;
 * `type 'log'` - тип авторизации через журнал безопасности AD.
+
+</details>
+
+<details>
+<summary>Веб-авторизация</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.1.100 Nov 05 18:12:01 1 daemon info 2024-11-05T18:11:48+05:00 ngfw-17 ideco-web-authd - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'web'.
+```
+{% endcode %}
+
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-web-authd` - название службы;
+* `192.168.101.25/32` - IP-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'web'` - тип авторизации (веб).
 
 </details>
 
@@ -625,14 +593,15 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-web-authd 1665 - - Subnet 192.168.100.49/32 is authorized as user 'user-1717140295.828113'. Connection made from None, type 'ip_permanent'.
+192.168.1.100 Nov 05 19:38:58 1 daemon info 2024-11-05T19:38:46+05:00 ngfw-17 ideco-auth-backend - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'ip'.
 ```
 {% endcode %}
 
-* `1665` - идентификатор процесса;
-* `192.168.100.49/32` - IP-адрес пользователя;
-* `'user-1717140295.828113'` - логин пользователя;
-* `type 'ip_permanent'` - тип авторизации IP с постоянной авторизацией.
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-auth-backend` - название службы;
+* `192.168.101.25/32` - IP-адрес пользователя;
+* `user` - логин пользователя;
+* `type 'ip'` - тип авторизации (IP).
 
 </details>
 
@@ -641,14 +610,15 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-auth-backend 3660 - - Subnet 192.168.100.10/32 is authorized as user 'user'. Connection made from None, type 'mac'.
+192.168.1.100 Nov 05 19:32:47 1 daemon info 2024-11-05T19:32:34+05:00 ngfw-17 ideco-auth-backend - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'mac'.
 ```
 {% endcode %}
 
-* `3660` - идентификатор процесса;
-* `192.168.100.10/32` - IP-адрес пользователя;
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-auth-backend` - название службы;
+* `192.168.101.25/32` - IP-адрес пользователя;
 * `user` - логин пользователя;
-* `type 'mac'` - тип авторизации MAC.
+* `type 'mac'` - тип авторизации (MAC).
 
 </details>
 
@@ -657,13 +627,62 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.100.2	Jan 12 11:20:06	1	local0	info		2023-01-12T11:20:05+05:00 ideco-ngfw ideco-auth-backend 3660 - - Subnet 192.168.100.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
+192.168.1.100 Nov 05 19:30:56 1 daemon info 2024-11-05T19:30:51+05:00 ngfw-17 ideco-auth-backend - - - Subnet 192.168.101.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
 ```
 {% endcode %}
 
-* `3660` - идентификатор процесса;
-* `192.168.100.0/24` - подсеть пользователя;
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-auth-backend` - название службы;
+* `192.168.101.0/24` - подсеть пользователя;
 * `user` - логин пользователя;
-* `type 'net'` - тип авторизации подсеть.
+* `type 'net'` - тип авторизации (подсеть).
+
+</details>
+
+<details>
+<summary>Подключение по VPN</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.1.100 Nov 06 12:12:36 1 daemon info 2024-11-06T14:12:24+05:00 ngfw-17 ideco-vpn-authd - - - Subnet 10.128.0.3/32 is authorized as user 'user'. Connection made from '192.168.1.25', type 'pptp'.
+```
+{% endcode %}
+
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-vpn-authd` - название службы;
+* `10.128.0.3/32` - сеть для VPN-подключений;
+* `user` - логин пользователя; 
+* `192.168.1.25` - IP-адрес, с которого установлено подключение;
+* `pptp` - протокол.
+
+</details>
+
+<details>
+<summary>Служба fail2ban</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.1.100 Nov 06 15:14:42 1 daemon info 2024-11-06T17:14:30+05:00 ngfw-17 fail2ban - - - INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-06 17:14:30
+```
+{% endcode %}
+
+* `ngfw-17` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `fail2ban` - название службы;
+* `INFO` или `NOTICE` - приоритет сообщения в логах в виде информационного сообщения или уведомления;
+* `INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-06 17:02:16` - факт обнаружения правил безопасности с указанием группы правил ([utm-vpn-authd]), IP-адреса и даты/времени. Список групп правил: 
+  * `utm-dovecot` - авторизация на почтовом сервере через почтовые клиенты;
+  * `utm-postfix-connrate` - превышение лимита подключения к почтовому серверу;
+  * `utm-postscreen-prgrt` - отслеживание нежелательных подключений (PREGREET) к почтовому серверу;
+  * `utm-reverse-proxy-conn` - защита от DoS (лимит подключений);
+  * `utm-reverse-proxy-req` - защита от DoS (лимит запросов в секунду);
+  * `utm-reverse-proxy` - Web Application Firewall (WAF);
+  * `utm-roundcube` - авторизация в веб-интерфейсы почтового сервера;
+  * `utm-smtp` - авторизация по smtp;
+  * `utm-ssh` - авторизация по ssh;
+  * `utm-two-factor-codes` - прохождение двухфакторной аутентификации;
+  * `utm-vpn-authd` - авторизация по VPN;
+  * `utm-vpn-pppoe-authd` - авторизация по VPN PPPoE;
+  * `utm-web-interface` - авторизация в административном веб-интерфейсе;
+  * `utm-user-cabinet` - авторизация в пользовательском веб-интерфейсе.
 
 </details>
