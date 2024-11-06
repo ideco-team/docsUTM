@@ -9,8 +9,8 @@ description:
 Видеоинструкция по настройке почтового релея в Ideco NGFW:
 {% endhint %}
 
-{% embed url="https://rutube.ru/video/0fe9c2ba646f21fbe3ef3cbc7d052db0/" %}
-<!-- [Ссылка на видеоинструкцию по настройке почтового релея в Ideco NGFW](https://rutube.ru/video/0fe9c2ba646f21fbe3ef3cbc7d052db0/) -->
+{% embed url="https://rutube.ru/video/bea28e26db1149db9f381cf40d2b7815/?r=wd" %}
+<!-- [Ссылка на видеоинструкцию по настройке почтового релея в Ideco NGFW](https://rutube.ru/video/bea28e26db1149db9f381cf40d2b7815/?r=wd) -->
 
 {% hint style="warning" %}
 NGFW не поддерживает кириллические почтовые домены.
