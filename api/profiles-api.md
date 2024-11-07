@@ -491,7 +491,7 @@ GET /reverse_proxy_backend/waf/profiles
     ],
     "server_tokens": "boolean",
     "comment": "string",
-    "central_console": "boolean"
+    "from_central_console": "boolean"
   },
   ...
 ]
@@ -508,7 +508,7 @@ GET /reverse_proxy_backend/waf/profiles
   * `enabled` - статус: `true` - включено, `false` - выключено.
 * `server_tokens` - статус HTTP-заголовка Server: `true` - показывать, `false` - скрывать;
 * `comment` - комментарий, может быть пустым, максимальная длина - 255 символов;
-* `central_console` - `true`, если профиль создан в Центральной консоли, только для чтения.
+* `from_central_console` - `true`, если профиль создан в Центральной консоли, только для чтения.
 
 </details>
 
@@ -529,7 +529,7 @@ POST /reverse_proxy_backend/waf/profiles
     "disabled_categories": ["string"],
     "server_tokens": "boolean",
     "comment": "string",
-    "central_console": "boolean"
+    "from_central_console": "boolean"
 }
 ```
 
@@ -538,7 +538,7 @@ POST /reverse_proxy_backend/waf/profiles
 * `disabled_categories` - список идентификаторов категорий для исключения, максимальная длина - 128 символов, при создании профиля может быть пустым;
 * `server_tokens` - статус HTTP-заголовка Server: `true` - показывать, `false` - скрывать;
 * `comment` - комментарий, может быть пустым, максимальная длина - 255 символов;
-* `central_console` - `true`, если профиль создан в Центральной консоли, только для чтения.
+* `from_central_console` - `true`, если профиль создан в Центральной консоли, только для чтения.
 
 **Ответ на успешный запрос:**
 
@@ -567,7 +567,7 @@ PATCH /reverse_proxy_backend/waf/profiles/<id профиля>
     "disabled_categories": ["string"],
     "server_tokens": "boolean",
     "comment": "string",
-    "central_console": "boolean"
+    "from_central_console": "boolean"
 }
 ```
 
@@ -576,7 +576,7 @@ PATCH /reverse_proxy_backend/waf/profiles/<id профиля>
 * `disabled_categories` - список идентификаторов категорий правил, которые были отключены, максимальная длина - 128 символов;
 * `server_tokens` - статус HTTP-заголовка Server: `true` - показывать, `false` - скрывать;
 * `comment` - комментарий, может быть пустым, максимальная длина - 255 символов;
-* `central_console` - `true`, если профиль создан в Центральной консоли, только для чтения.
+* `from_central_console` - `true`, если профиль создан в Центральной консоли, только для чтения.
 
 **Ответ на успешный запрос:** 200 ОК
 
