@@ -17,5 +17,5 @@ description: >-
 ![](/.gitbook/assets/antivirus-log.png)
 
 {% hint style="info" %}
-Для фильтрации логов воспользуйтесь фильтром.
+Для фильтрации логов воспользуйтесь кнопкой **Фильтры**.
 {% endhint %}
