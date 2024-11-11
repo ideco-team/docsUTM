@@ -398,7 +398,7 @@ GET /ad_backend/group_settings
 [
   {
     "id": "integer",
-    "group_id": "integer",
+    "group_alias_id": "string",
     "search_filter": "string",
     "object_guid": "string",
     "domain_name": "string",
@@ -409,7 +409,7 @@ GET /ad_backend/group_settings
 ```
 
 * `id` - идентификатор записи синхронизации;
-* `group_id` - идентификатор группы NGFW;
+* `group_alias_id` - идентификатор алиаса группы NGFW;
 * `search_filter` - фильтр поиска в домене;
 * `object_guid` - objectGUID группы из AD, с которой выполняется синхронизация;
 * `domain_name` - имя домена, с которым выполняется синхронизация;
@@ -438,7 +438,7 @@ POST /ad_backend/group_settings
 {
     "search_filter": "string",
     "object_guid": "string",
-    "group_id": "integer",
+    "group_alias_id": "string",
     "domain_name": "string",
     "sync_type": "ldap" | "security"
   }
@@ -446,7 +446,7 @@ POST /ad_backend/group_settings
 
 * `search_filter` - фильтр поиска в домене;
 * `object_guid` - objectGUID группы из AD, с которой выполняется синхронизация;
-* `group_id` - идентификатор группы NGFW;
+* `group_alias_id` - идентификатор алиаса группы NGFW;
 * `domain_name` - имя домена, с которым выполняется синхронизация;
 * `sync_type` - `security`, если группа синхронизируется с группой безопасности, `ldap` - если группа синхронизируется с OU.
 
@@ -479,14 +479,14 @@ PUT /ad_backend/group_settings/<id записи синхронизации>
     "search_filter": "string",
     "object_guid": "string",
     "domain_name": "string",
-    "group_id": "integer",
+    "group_alias_id": "string",
     "sync_type": "ldap" | "security"
   }
 ```
 
 * `search_filter` - фильтр поиска в домене;
 * `object_guid` - objectGUID группы из AD, с которой выполняется синхронизация;
-* `group_id` - идентификатор группы NGFW;
+* `group_alias_id` - идентификатор алиаса группы NGFW;
 * `domain_name` - имя домена, с которым выполняется синхронизация;
 * `sync_type` - `security`, если группа синхронизируется с группой безопасности, `ldap` - если группа синхронизируется с OU.
 
