@@ -79,7 +79,9 @@
 
 Пример готовой таблицы:
 
-<img src="/.gitbook/assets/ospf8.png" alt="" data-size="original">
+![](/.gitbook/assets/ospf8.png)
+
+При наличии большого количества настроек OSPF в таблице воспользуйтесь кнопкой **Фильтры**.
 
 </details>
 
