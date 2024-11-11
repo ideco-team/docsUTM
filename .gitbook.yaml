@@ -111,3 +111,4 @@ redirects:
   dpi: ./settings/security-profiles/application-control/README.md
   version_support: ./general/support-period.md
   ips_profiles: ./settings/security-profiles/ips-profiles.md
+  two_factor: ./settings/users/two-factor-authentication.md
