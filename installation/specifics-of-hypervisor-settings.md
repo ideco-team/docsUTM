@@ -43,8 +43,8 @@ Ideco NGFW поддерживает работу на следующих гип�
 
 **Видеоинструкция по настройке виртуальной машины**:
 
-{% embed url="https://www.youtube.com/watch?v=238bs_4ObPY" %}
-<!-- https://www.youtube.com/watch?v=238bs_4ObPY -->
+{% embed url="https://rutube.ru/video/63e3d7a8e65cb9c1a55a32948095a6a4/" %}
+<!-- https://rutube.ru/video/63e3d7a8e65cb9c1a55a32948095a6a4/ -->
 
 ## VMware ESXi 6.7
 
