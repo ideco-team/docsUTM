@@ -478,6 +478,25 @@ POST /firewall/checks_packets
 </details>
 
 <details>
+<summary>Добавление новой проверки путем копирования существующей</summary>
+
+```
+POST /firewall/checks_packets/<id проверки>/copy
+```
+
+**Ответ на успешный запрос**:
+
+```json5
+{
+  "id": "string"
+}
+```
+
+* `id` - идентификатор созданной проверки.
+
+</details>
+
+<details>
 <summary>Редактирование проверок</summary>
 
 ```
@@ -496,8 +515,8 @@ PATCH /firewall/checks_packets/<id проверки>
     "dst_port": "integer",
     "incoming_interface": "string",
     "expected_result": "drop" | "accept",
-    "comment": "string",
-},
+    "comment": "string"
+}
 ```
 
 * `enabled` - включена ли данная проверка;
