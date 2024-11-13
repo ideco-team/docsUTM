@@ -13,6 +13,7 @@
 
 * [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
 * [MY.IDECO.RU](installation/initial-action-my-ideco.md)
+* [Настройка программно-аппаратных комплексов Ideco NGFW](installation/ipmi-settings.md)
 * [Подготовка к установке на устройство](installation/preparation-install.md)
   * [Настройка гипервизора](installation/specifics-of-hypervisor-settings.md)
   * [Подготовка загрузочного диска](installation/usb.md)
