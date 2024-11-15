@@ -60,7 +60,7 @@
     * [Создание самоподписанного сертификата c помощью Powershell](settings/services/certificates/creating-ssl-sert-powershell.md)
     * [Создание сертификата c помощью openssl](settings/services/certificates/creating-openssl-cert.md)
 * [Отчеты и журналы](/settings/reports/README.md)
-  * [Журнал событий](/settings/reports/log.md)
+  * [Системный журнал](/settings/reports/log.md)
   * [События безопасности](/settings/reports/security-events.md)
   * [Действия администраторов](/settings/reports/admins-actions.md)
   * [Журнал авторизации](/settings/reports/authorization-log.md)
