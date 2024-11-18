@@ -102,7 +102,7 @@
 <summary>Конвертация сертификата из формата pkcs12 в формат pem с помощью openssl</summary>
 
 {% hint style="info" %}
-Для конвертации сертификата с помощью openssl на Windows воспользуйтесь ссылкой для [загрузки openssl на компьютер](http://slproweb.com/products/Win32OpenSSL.html) и для [установки openssl на компьютер](http://iljin-oleg.blogspot.com/2012/12/openssl-openssl-ssl-secure-socket-layer.html).
+Для конвертации сертификата с помощью openssl на Windows воспользуйтесь ссылкой для [загрузки openssl на компьютер](http://slproweb.com/products/Win32OpenSSL.html).
 {% endhint %}
 
 Для конвертации сертификата из формата **pkcs12** в формат **pem** выполните действия:
