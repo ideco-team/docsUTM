@@ -791,7 +791,7 @@ PATCH /reverse_proxy_backend/waf/profiles/<id профиля>/rules/<id прав
 <summary>Перемещение белых и черных списков в профиле</summary>
 
 ```
-PATCH /reverse_proxy_backend/waf/profiles/<id профиля>/rules/move
+PATCH /reverse_proxy_backend/waf/profiles/rules/move
 ```
 
 **Json-тело запроса:**
@@ -799,14 +799,16 @@ PATCH /reverse_proxy_backend/waf/profiles/<id профиля>/rules/move
 ```json5
 {
   "params": {
-    "id": "integer",
+    "profile_id": "string",
+    "rule_id": "integer",
     "anchor_item_id": "integer",
     "insert_after": "boolean",
   },
 }
 ```
 
-* `id` - идентификатор перемещаемого правила;
+* `profile_id` - идентификатор профиля, в котором перемещается правило;
+* `rule_id` - идентификатор перемещаемого правила;
 * `anchor_item_id` - идентификатор правила, относительно которого будет перемещено правило;
 * `insert_after` - вставить правило до или после `anchor_item_id`. Если `true` или отсутствует, то вставить правило сразу после указанного в `anchor_item_id`. Если `false`, то на месте указанного в `anchor_item_id`.
 
