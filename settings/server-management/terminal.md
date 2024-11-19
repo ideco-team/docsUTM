@@ -18,7 +18,6 @@
 * **Файловый редактор:** `nano`, `vi`;
 * **Просмотр логов:** `journalctl -u <название службы>` (например, `journalctl -u ideco-firewall-backend`).
 
-
 ## Команды для диагностики DataPlane интерфейсов
 
 {% hint style="info" %}
@@ -37,19 +36,27 @@
 
 | Раздел                                        | Имя службы   |
 | :-------------------------------------------- | :------------------------- |
-| Файрвол                                       | ideco-firewall-backend; ideco-nflog |
-| Предотвращение вторжений                      | ideco-suricata-backend; ideco-suricata; ideco-suricata-event-syncer; ideco-suricata-event-to-syslog |
-| Ограничение скорости                                | ideco-shaper-backend|
-| Контент-Фильтр                                | ideco-content-filter-backend|
-| Объекты                                       | ideco-alias-backend |
-| Сетевые интерфейсы                            | ideco-network-backend; ideco-network-nic |
-| Балансировка и резервирование, Маршрутизация  | ideco-routing-backend |
-| DNS                                 	        | ideco-dns-backend; unbound |
-| Центральная консоль	                          | ideco-central-console-backend |
-| Автоматическое обновление	                    | ideco-sysupdate-backend |
-| Резервное копирование                         | ideco-backup-backend; ideco-backup-create; ideco-backup-restore; ideco-backup-rotate |
-| Лицензия	                                    | ideco-license-backend |
-| Авторизация	                                  | ideco-auth-backend|
-| Active Directory	                            | ideco-ad-backend; ideco-ad-log-collector@<имя домена> |
+| Учетные записи                                | ideco-user-backend |
+| Авторизация                                   | ideco-auth-backend |
+| Active Directory	                            | ideco-ad-backend |
 | ALD Pro                                       | ideco-ald-rest; ideco-ald-backend |
-| Syslog	                                      | ideco-monitor-backend |
+| Файрвол                                       | ideco-firewall-backend; ideco-firewall-rest; ideco-cfw-backend; ideco-cfw-rest; |
+| Ограничение скорости                          | ideco-shaper-backend-vpp |
+| Предотвращение вторжений                      | ideco-suricata-backend; ideco-suricata-event-syncer; ideco-suricata-profiles-syncer-backend |
+| Объекты                                       | ideco-alias-backend |
+| Контроль приложений                           | ideco-app-backend-vpp, ideco-app-stats |
+| Контент-фильтр                                | ideco-content-filter-backend; ideco-content-filter-backend-vpp |
+| Сетевые интерфейсы                            | ideco-network-backend; ideco-vpp-backend; ideco-vpp-nic-syncer |
+| Маршрутизация                                 | ideco-routing-backend; ideco-routing-backend-vpp; ideco-routing-rest |
+| DNS                                 	        | ideco-dns-backend; nsd; unbound; unbound-anchor; unbound-keygen |
+| NTP-сервер                                	| chronyd |
+| Сертификаты                               	| ideco-cert-backend |
+| Действия администраторов                      | ideco-audit-backend |
+| Авторизация администраторов                   | ideco-web-backend |
+| Отчеты и журналы                              | ideco-logs-backend; ideco-logs-syncer; ideco-reports-backend |
+| Syslog	                                    | ideco-monitor-backend |
+| Кластеризация           	                    | ideco-cluster-backend |
+| Обновления            	                    | ideco-sysupdate-backend |
+| Бэкапы                                        | ideco-backup-backend; ideco-backup-create; ideco-backup-restore; ideco-backup-rotate |
+| Лицензия	                                    | ideco-license-backend |
+| Дополнительно	                                | ideco-system-backend |
