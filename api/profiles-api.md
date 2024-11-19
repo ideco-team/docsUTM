@@ -609,6 +609,7 @@ GET /reverse_proxy_backend/waf/categories
   {
     "id": "string",
     "title": "string",
+    "required": "boolean",
     "description": "string"
   },
   ...
@@ -617,6 +618,7 @@ GET /reverse_proxy_backend/waf/categories
 
 * `id` - идентификатор категории, максимальная длина - 42 символа;
 * `title` - название категории, максимальная длина - 42 символа;
+* `required` - является ли категория необходимой, т.е. еe нельзя будет выключать;
 * `description` - описание категории, максимальная длина - 255 символов.
 
 </details>
@@ -638,6 +640,7 @@ GET /reverse_proxy_backend/waf/profiles/<id профиля>/categories
   {
     "id": "string",
     "title": "string",
+    "required": "boolean",
     "description": "string"
   },
   ...
@@ -646,6 +649,7 @@ GET /reverse_proxy_backend/waf/profiles/<id профиля>/categories
 
 * `id` - идентификатор категории, максимальная длина - 42 символа;
 * `title` - название категории, максимальная длина - 42 символа;
+* `required` - является ли категория необходимой, т.е. еe нельзя будет выключать;
 * `description` - описание категории, максимальная длина - 255 символов.
 
 </details>
