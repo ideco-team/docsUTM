@@ -47,6 +47,7 @@
   * [Контроль приложений](/settings/security-profiles/application-control-profiles.md)
   * [Предотвращение вторжений](/settings/security-profiles/ips-profiles.md)
   * [Контент-фильтр](/settings/security-profiles/content-filter-profiles.md)
+    * [Изменение страницы блокировки Контент-фильтра](/settings/security-profiles/block-page.md)
   * [TLS/SSL-инспекция](/settings/security-profiles/tls-inspection-security-profiles.md)
     * [Настройка фильтрации HTTPS](/settings/security-profiles/sertificate-setup.md)
 * [Сервисы](/settings/services/README.md)
