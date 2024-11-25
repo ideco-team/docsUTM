@@ -84,4 +84,3 @@
 
 * [Ideco NGFW VPP 17.X](changelog/vpp/README.md)
 * [ФСТЭК Ideco UTM 16.X](changelog/fstek/README.md)
-* [Ideco Center 17.Х](changelog/cc/README.md)
