@@ -73,4 +73,3 @@
 ## changelog
 
 * [Ideco NGFW VPP 16.X](changelog/vpp.md)
-* [Ideco Center 16.X](changelog/cc.md)
