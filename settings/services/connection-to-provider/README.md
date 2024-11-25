@@ -11,6 +11,20 @@
 
 ![](/.gitbook/assets/interfaces18.png)
 
+<details>
+<summary>Статусы соединения</summary>
+
+* ![](/.gitbook/assets/icon-agg1.png) - сигнал есть;
+* ![](/.gitbook/assets/icon-agg.png) - статус сигнала не определен;
+* ![](/.gitbook/assets/icon-agg2.png) - сигнала нет;
+
+* ![](/.gitbook/assets/icon-eth.png) - IP-адрес назначен;
+
+* ![](/.gitbook/assets/icon-internet-on.png) - соединение с интернетом установлено;
+* ![](/.gitbook/assets/icon-internet-off.png) - соединение с интернетом отсутствует.
+
+</details>
+
 В режиме редактирования появляется возможность смены названия, сетевой карты (по кнопке ![](/.gitbook/assets/icon-edit.png)), зоны и настроек конфигурации (вручную или автоматически): 
 
 ![](/.gitbook/assets/interfaces.gif)
