@@ -29,7 +29,7 @@
 * **Просмотр списка всех IP-адресов интерфейсов:** `ideco-vppctl show interface addr`;
 * **Просмотр таблицы маршрутизации:** `ideco-vppctl show ip fib`;
 * **Просмотр ARP таблицы:** `ideco-vppctl show ip neighbors`;
-* **Утилиты сетевой диагностики:** `ideco-vppctl ping`.
+* **Утилиты сетевой диагностики:** `ideco-vppctl ping`;
 * **Запись последних 100 сетевых пакетов, прошедших через шлюз:** `ideco-vppctl pcap trace rx tx intfc any file capture.pcap`
 
 ## Таблица служб
