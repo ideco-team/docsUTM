@@ -18,10 +18,10 @@ GET /user_backend/users
 ```json5
 [
     {
-        "id": "integer",
+        "id": "string",
         "name": "string",
         "login": "string",
-        "parent_id": "integer",
+        "parent_id": "string",
         "enabled": "boolean",
         "domain_type": "local" | "ad" | "ald" | "radius" | "device",
         "domain_name": "string",
@@ -65,7 +65,7 @@ POST /user_backend/users
     "name": "string",
     "login": "string",
     "psw": "string",
-    "parent_id": "integer",
+    "parent_id": "string",
     "phone_number": "string" | null,
     "comment": "string"
 }
@@ -105,7 +105,7 @@ PUT /user_backend/users/<id пользователя>
 {
     "name": "string",
     "login": "string",
-    "parent_id": "integer",
+    "parent_id": "string",
     "enabled": "boolean",
     "domain_type": "string",
     "domain_name": "string",
@@ -182,9 +182,9 @@ GET /user_backend/groups
 ```json5
 [
     {
-        "id": "integer",
+        "id": "string",
         "name": "string",
-        "parent_id": "integer",
+        "parent_id": "string",
         "domain_type": "string",
         "domain_name": "string",
         "ldap_guid": "string"
@@ -218,7 +218,7 @@ POST /user_backend/groups
 ```json5
 {
     "name": "string",
-    "parent_id": "integer"
+    "parent_id": "string"
 }
 ```
 
@@ -251,7 +251,7 @@ PUT /user_backend/groups/<id группы>
 ```json5
 {
     "name": "string",
-    "parent_id": "integer",
+    "parent_id": "string",
     "domain_type": "string",
     "domain_name": "string",
     "ldap_guid": "string"
