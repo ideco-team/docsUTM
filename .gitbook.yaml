@@ -37,6 +37,7 @@ redirects:
   dpi: ./settings/security-profiles/application-control-profiles.md
   tls_inspection_security_profiles: ./settings/security-profiles/tls-inspection-security-profiles.md
   content_filter_security_profiles: ./settings/security-profiles/content-filter-profiles.md
+  ips_profiles: ./settings/security-profiles/ips-profiles.md
   bgp: ./settings/services/bgp.md
   source_port: ./settings/access-rules/firewall.md
   shaper: ./settings/access-rules/shaper.md
