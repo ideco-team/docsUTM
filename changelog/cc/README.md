@@ -7,7 +7,7 @@
 * Электронная почта: help@ideco.ru
 * Telegram: [ideco.bot](https://telegram.im/@ideco_support_bot)
 
-[Скачать Ideco Center 14](https://my.ideco.ru/). 
+[Скачать Ideco Center 19](https://my.ideco.ru/). 
 {% endhint %}
 
 {% hint style="warning" %}
