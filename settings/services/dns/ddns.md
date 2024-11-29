@@ -6,7 +6,7 @@ description: >-
 # DDNS
 
 DDNS в Ideco NGFW реализован через интеграцию с хостингом RU-CENTER. Перед настройкой DDNS зарегистрируйтесь на сайте [RU-CENTER](https://www.nic.ru/) и приобретите [DNS-хостинг](https://www.nic.ru/catalog/for-domain-use/dns-hosting/). \
-Для решения вопросов по работе с хостингом воспользуйтесь страницей [помощи](https://www.nic.ru/help/).
+Для решения вопросов по работе с хостингом воспользуйтесь страницей [помощи](https://www.nic.ru/help).
 
 ## Настройка DDNS
 

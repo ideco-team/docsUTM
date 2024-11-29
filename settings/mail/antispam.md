@@ -4,8 +4,8 @@
 Видеоинструкция по настройке антиспама в Ideco NGFW:
 {% endhint %}
 
-{% embed url="https://rutube.ru/video/beffd4c7a18e3456a9bf9a97f033476d" %}
-<!-- [Ссылка на видеоинструкцию по настройке антиспама в Ideco NGFW](https://rutube.ru/video/beffd4c7a18e3456a9bf9a97f033476d) -->
+{% embed url="https://rutube.ru/video/9d39d3d9e170f0df6d07a626ff001b39" %}
+<!-- [Ссылка на видеоинструкцию по настройке антиспама в Ideco NGFW](https://rutube.ru/video/9d39d3d9e170f0df6d07a626ff001b39) -->
 
 Раздел **Антиспам** состоит из двух подразделов: **Основное** и **Настройки фильтрации**.
 
