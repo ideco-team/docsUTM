@@ -150,7 +150,7 @@ description: >-
 * 5.255.192.176/31
 * 5.255.230.32/31
 
-Более подробная информация по настройке Телемоста в корпоративной сети представлена по [ссылке](https://yandex.ru/support/yandex-360/business/telemost/web/ru/settings#business-network-settings).
+Более подробная информация по настройке Телемоста в корпоративной сети представлена по [ссылке](https://yandex.ru/support/yandex-360/business/telemost/web/ru/settings).
 
 </details>
 
