@@ -14,24 +14,24 @@ description: Статья описывает возможности дерева
 
 Цвет пиктограммы пользователя зависит от состояния учетной записи пользователя:
 
-<table><thead><tr><th width="75" align="center">Состояние учетной записи пользователя</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="/.gitbook/assets/icon-green.svg" alt="icon-green.svg"></td><td>В данный момент времени пользователь прошел процедуру авторизации, и ему был предоставлен доступ в Интернет</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-yellow.svg" alt="icon-yellow.svg"></td><td>В <a href="customization-of-users.md">настройках пользователей</a> выбран запрет на авторизацию</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-account.svg" alt="icon-account.svg"></td><td>В данный момент времени пользователь не прошел процедуру авторизации, и ему не был предоставлен доступ в Интернет</td></tr></tbody></table>
+<table><thead><tr><th width="75" align="center">Состояние учетной записи пользователя</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="/.gitbook/assets/icon-green.png" alt="icon-green.png"></td><td>В данный момент времени пользователь прошел процедуру авторизации, и ему был предоставлен доступ в Интернет</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-yellow.png" alt="icon-yellow.png"></td><td>В <a href="customization-of-users.md">настройках пользователей</a> выбран запрет на авторизацию</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-account.png" alt="icon-account.png"></td><td>В данный момент времени пользователь не прошел процедуру авторизации, и ему не был предоставлен доступ в Интернет</td></tr></tbody></table>
 
 В дереве пользователей есть соответствующие кнопки, чтобы управлять группами и учетными записями:
 
-<table><thead><tr><th width="204" align="center">Обозначение</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="/.gitbook/assets/icon-add-user.svg" alt=""></td><td>Создать учетную запись пользователя</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-folder.svg" alt=""></td><td>Создать группу</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-delete.svg" alt=""></td><td>Удалить учетную запись пользователя или группу</td></tr></tbody></table>
+<table><thead><tr><th width="204" align="center">Обозначение</th><th>Описание</th></tr></thead><tbody><tr><td align="center"><img src="/.gitbook/assets/icon-add-user.png" alt=""></td><td>Создать учетную запись пользователя</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-folder.png" alt=""></td><td>Создать группу</td></tr><tr><td align="center"><img src="/.gitbook/assets/icon-delete.png" alt=""></td><td>Удалить учетную запись пользователя или группу</td></tr></tbody></table>
 
 ## Как создать учетную запись пользователя
 
 Создать учетную запись пользователя можно в определенной группе или вне групп:
 
-*   **В определенной группе** - Выберите группу, нажмите кнопку **Создать пользователя** во вкладке **Основное** или ![](/.gitbook/assets/icon-add-user.svg) рядом с названием группы в дереве:&#x20;
+*   **В определенной группе** - Выберите группу, нажмите кнопку **Создать пользователя** во вкладке **Основное** или ![](/.gitbook/assets/icon-add-user.png) рядом с названием группы в дереве:&#x20;
 
     <div align="left">
 
     <figure><img src="/.gitbook/assets/user-tree.gif" alt="" width="375"><figcaption></figcaption></figure>
 
     </div>
-*   **Вне групп** - Выберите группу **Все** в дереве пользователей и нажмите ![](/.gitbook/assets/icon-add-user.svg):&#x20;
+*   **Вне групп** - Выберите группу **Все** в дереве пользователей и нажмите ![](/.gitbook/assets/icon-add-user.png):&#x20;
 
     <div align="left">
 
