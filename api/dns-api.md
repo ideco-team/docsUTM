@@ -437,7 +437,7 @@ DELETE /dns/zones/master/<id Master-зоны>
 ## DDNS
 
 {% hint style="info" %}
-DDNS в Ideco NGFW реализован через интеграцию с хостингом RU-CENTER. Перед настройкой DDNS зарегистрируйтесь на сайте [RU-CENTER](https://www.nic.ru/) и приобретите [DNS-хостинг](https://www.nic.ru/catalog/for-domain-use/dns-hosting/).
+DDNS в Ideco NGFW реализован через интеграцию с хостингом RU-CENTER. Перед настройкой DDNS зарегистрируйтесь на сайте [RU-CENTER](https://www.nic.ru) и приобретите [DNS-хостинг](https://www.nic.ru/catalog/for-domain-use/dns-hosting).
 
 Подробнее о DDNS - в [статье](/settings/services/dns/ddns.md).
 {% endhint %}
