@@ -165,6 +165,26 @@ description: >-
 
 <details>
 
+<summary>Контроль приложений</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.1.150 Dec 02 18:40:20 daemon info 2024-12-02T20:40:13+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.2|0|syslog|0|deviceReceiptTime=1733154013 Severity=Notice DeviceProcessName=ideco-app-stats msg=192.168.101.25:37030 -> 192.168.101.10:53 [eBay] \= DROP
+```
+{% endcode %}
+
+* `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
+* `DeviceProcessName` - название службы NGFW;
+* `192.168.101.25:37030` - IP-адрес и порт источника;
+* `192.168.101.10:53` - IP-адрес и порт назначения;
+* `DROP` - результат анализа трафика;
+* `[eBay]` - название приложения, к которому применен результат. [Список всех приложений](https://static.ideco.ru/static/app_control.pdf).
+
+</details>
+
+<details>
+
 <summary>Контент-фильтр</summary>
 
 Логирование включается в разделе **Сервисы -> Прокси -> Основное**. Просмотр логов доступен в веб-интерфейсе в разделе **Отчеты и журналы -> Системный журнал**. Название служб для фильтрации: `ideco-content-filter-backend` и `squid`.
@@ -181,11 +201,10 @@ description: >-
 * `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
 * `DeviceProcessName` - название службы NGFW;
 * `10.128.0.5` - IP-адрес пользователя;
-* `[18/Nov/2024:19:56:41 +0500] "GET http://counter.yadro.ru/hit;argon? HTTP/1.1"`:
-  * `[18/Nov/2024:19:56:41 +0500]` - дата/время события блокировки;
-  * `GET` - метод;
-  * `http://counter.yadro.ru/hit;argon?` - URL заблокированного ресурса;
-  * `HTTP/1.1` - протокол.
+* `[18/Nov/2024:19:56:41 +0500]` - дата/время события блокировки;
+* `GET` - метод;
+* `http://counter.yadro.ru/hit;argon?` - URL заблокированного ресурса;
+* `HTTP/1.1` - протокол;
 * `403` - код состояния HTTP;
 * `7594` - передано байт (в ответ, включая HTTP заголовок);
 * `http://argon.pro/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
@@ -438,7 +457,7 @@ description: >-
 * `flow.age:0` - возраст;
 * `flow.state` - текущее состояние;
 * `flow.reason` - запущена ли IPsec в режиме отладки;
-* `flow.alerted` 0 - сгенерировался ли поток alert.
+* `flow.alerted:0` - сгенерировался ли поток alert.
 
 Состояние флага [TCP flow(сессии)](https://ru.wikipedia.org/wiki/Transmission_Control_Protocol#%D0%A4%D0%BB%D0%B0%D0%B3%D0%B8_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D0%B1%D0%B8%D1%82%D1%8B)):
 
@@ -485,6 +504,25 @@ description: >-
 
 <details>
 
+<summary>Контроль приложений</summary>
+
+{% code overflow="wrap" %}
+```
+192.168.1.150 Dec 02 18:38:54 1 daemon info 2024-12-02T20:38:38+05:00 ngfw-18 ideco-app-stats - - - 192.168.101.25:56854 -> 192.168.101.10:53 [eBay] = DROP
+```
+{% endcode %}
+
+* `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
+* `ideco-app-stats` - название службы;
+* `192.168.101.25:56854` - IP-адрес и порт источника;
+* `192.168.101.10:53` - IP-адрес и порт назначения;
+* `DROP` - результат анализа трафика;
+* `[eBay]` - название приложения, к которому применен результат. [Список всех приложений](https://static.ideco.ru/static/app_control.pdf).
+
+</details>
+
+<details>
+
 <summary>Контент-фильтр</summary>
 
 Логирование включается в разделе **Сервисы -> Прокси -> Основное**. Просмотр логов доступен в веб-интерфейсе в разделе **Отчеты и журналы -> Системный журнал**. Название служб для фильтрации: `ideco-content-filter-backend` и `squid`.
@@ -500,11 +538,10 @@ description: >-
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `squid` - название службы;
 * `10.128.0.6` - IP-адрес пользователя;
-* `[18/Nov/2024:19:49:58 +0500] "GET http://counter.yadro.ru/hit;argon? HTTP/1.1"`:
-  * `[18/Nov/2024:19:49:58 +0500]` - дата/время события блокировки;
-  * `GET` - метод;
-  * `http://counter.yadro.ru/hit;argon?` - URL заблокированного ресурса;
-  * `HTTP/1.1` - протокол.
+* `[18/Nov/2024:19:49:58 +0500]` - дата/время события блокировки;
+* `GET` - метод;
+* `http://counter.yadro.ru/hit;argon?` - URL заблокированного ресурса;
+* `HTTP/1.1` - протокол;
 * `403` - код состояния HTTP;
 * `7594` - передано байт (в ответ, включая HTTP заголовок);
 * `http://argon.pro/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
