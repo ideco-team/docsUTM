@@ -27,7 +27,3 @@ API правил трафика Ideco Center описано в статье [Ц�
 {% content-ref url="exceptions.md" %}
 [exceptions.md](exceptions.md)
 {% endcontent-ref %}
-
-{% content-ref url="quotas.md" %}
-[quotas.md](quotas.md)
-{% endcontent-ref %}

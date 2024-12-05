@@ -32,7 +32,6 @@ description: В разделе представлена информация о 
 * **Антивирусы веб-трафика** - `ideco-av-backend`;
 * **Предотвращение вторжений** - `ideco-suricata-event-syncer`, `ideco-suricata-backend`;
 * **Объекты** - `ideco-alias-backend`;
-* **Квоты** - `ideco-quotas-backend`;
 * **Сетевые интерфейсы** - `ideco-network-backend`, `ideco-network-nic`;
 * **Маршрутизация** - `ideco-routing-backend`, `ideco-routing-rest`;
 * **Прокси** - `ideco-proxy-backend`, `squid`;

@@ -41,7 +41,6 @@ redirects:
   terminal: ./settings/server-management/terminal/README.md
   user_authorization: ./settings/users/authorization/README.md
   user_management: ./settings/users/README.md
-  user_quota: ./settings/access-rules/quotas.md
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
   zabbix: ./settings/monitor/zabbix.md
   application_control: ./settings/access-rules/application-control.md

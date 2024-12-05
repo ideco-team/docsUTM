@@ -33,7 +33,3 @@ description: >-
 {% content-ref url="aliases.md" %}
 [aliases.md](aliases.md)
 {% endcontent-ref %}
-
-{% content-ref url="quotas.md" %}
-[quotas.md](quotas.md)
-{% endcontent-ref %}
