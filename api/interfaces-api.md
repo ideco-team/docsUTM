@@ -26,7 +26,8 @@ GET /network/connections
     "dns": [ "string" ],
     "vlan_tag": "null" | "integer",
     "zone": "null" | "string",
-    "is_vce_vlan": "boolean"
+    "is_vce_vlan": "boolean",
+    "netflow_index": "integer"
 }
 ```
 
@@ -39,7 +40,8 @@ GET /network/connections
 * `dns` - список IP-адресов DNS. Может быть пустым независимо от флага включения DHCP;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно). Может быть равен `null`, если не назначен;
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
-* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
+* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **WAN (Подключение к провайдеру по Ethernet):**
 
@@ -56,7 +58,8 @@ GET /network/connections
     "dns": [ "string" ],
     "vlan_tag": "null" | "integer",
     "zone": "null" | "string",
-    "is_vce_vlan": "boolean"
+    "is_vce_vlan": "boolean",
+    "netflow_index": "integer"
 }
 ```
 
@@ -70,7 +73,8 @@ GET /network/connections
 * `dns` - список IP-адресов DNS, может быть пустым независимо от флага включения DHCP;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно), `null`, если не назначен;
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
-* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
+* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **PPTP (Подключение к провайдеру по PPTP):**
 
@@ -90,7 +94,8 @@ GET /network/connections
     "dns": [ "string" ],
     "vlan_tag": "null" | "integer",
     "zone": "null" | "string",
-    "is_vce_vlan": "boolean"
+    "is_vce_vlan": "boolean",
+    "netflow_index": "integer"
 }
 ```
 
@@ -107,7 +112,8 @@ GET /network/connections
 * `dns` - список IP-адресов DNS, может быть пустым независимо от флага включения DHCP;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно). Может быть `null` если не назначен;
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
-* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
+* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **L2TP (Подключение к провайдеру по L2TP):**
 
@@ -127,7 +133,8 @@ GET /network/connections
     "dns": [ "string" ],
     "vlan_tag": "null" | "integer",
     "zone": "null" | "string",
-    "is_vce_vlan": "boolean"
+    "is_vce_vlan": "boolean",
+    "netflow_index": "integer"
 }
 ```
 
@@ -144,7 +151,8 @@ GET /network/connections
 * `dns` - список IP-адресов DNS, может быть пустым независимо от флага включения DHCP;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно), `null`, если не назначен;
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
-* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
+* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **PPPoE (Подключение к провайдеру по PPPoE):**
 
@@ -161,7 +169,8 @@ GET /network/connections
     "mac": "string",
     "vlan_tag": "null" | "integer",
     "zone": "null" | "string",
-    "is_vce_vlan": "boolean"
+    "is_vce_vlan": "boolean",
+    "netflow_index": "integer"
 }
 ```
 
@@ -175,7 +184,8 @@ GET /network/connections
 * `mac` - MAC-адрес сетевой карты или идентификатор агрегированного интерфейса. MAC-адрес в формате `11:22:33:44:55:66`, все буквы в нижнем регистре;
 * `vlan_tag` - тэг VLAN, число от 1 до 4095 (включительно), `null`, если не назначен;
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
-* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
+* `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 </details>
 
@@ -449,7 +459,8 @@ GET /network/tunnels
     "parent_interface": "string",
     "osdevname": "string",
     "server": "string",
-    "zone": "null" | "string"
+    "zone": "null" | "string",
+    "netflow_index": "integer"
   },
 ...
 ]
@@ -464,7 +475,8 @@ GET /network/tunnels
 * `parent_interface` - алиас родительского интерфейса, его IP-адрес будет источником туннеля;
 * `osdevname` - название существующего или планируемого сетевого интерфейса в ядре (например, `Gre00000001`). Значение создается автоматически, является уникальным и **доступно только для чтения**;
 * `server` - IP-адрес или доменное имя устройства, к которому осуществляется подключение;
-* `zone` - алиас зоны. Может быть `null`, если не назначен.
+* `zone` - алиас зоны. Может быть `null`, если не назначен;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **Важно:** Для каждого родительского интерфейса все настроенные туннели должны иметь уникальные значения в поле `server`.
 Не допускается создание туннельных интерфейсов с повторяющимися значениями в полях `parent_interface` и `server`!
@@ -513,7 +525,8 @@ POST /network/tunnels
     "parent_interface": "string",
     "osdevname": "string",
     "server": "string",
-    "zone": "null" | "string"
+    "zone": "null" | "string",
+    "netflow_index": "integer"
 }
 ```
 
@@ -525,7 +538,8 @@ POST /network/tunnels
 * `parent_interface` - алиас родительского интерфейса, его IP-адрес будет источником туннеля;
 * `osdevname` - название существующего или планируемого сетевого интерфейса в ядре (например, `Gre00000001`). Значение создается автоматически, является уникальным и **доступно только для чтения**;
 * `server` - IP-адрес или доменное имя устройства, к которому осуществляется подключение;
-* `zone` - алиас зоны. Может быть `null`, если не назначен.
+* `zone` - алиас зоны. Может быть `null`, если не назначен;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **Ответ на успешный запрос:**
 
@@ -558,7 +572,8 @@ PUT /network/tunnels/<id интерфейса>
     "parent_interface": "string",
     "osdevname": "string",
     "server": "string",
-    "zone": "null" | "string"
+    "zone": "null" | "string",
+    "netflow_index": "integer"
 }
 ```
 
@@ -570,7 +585,8 @@ PUT /network/tunnels/<id интерфейса>
 * `parent_interface` - алиас родительского интерфейса, его IP-адрес будет источником туннеля;
 * `osdevname` - название существующего или планируемого сетевого интерфейса в ядре (например, `Gre00000001`). Значение создается автоматически, является уникальным и **доступно только для чтения**;
 * `server` - IP-адрес или доменное имя устройства, к которому осуществляется подключение;
-* `zone` - алиас зоны. Может быть `null`, если не назначен.
+* `zone` - алиас зоны. Может быть `null`, если не назначен;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **Ответ на успешный запрос:** 200 OK
 
