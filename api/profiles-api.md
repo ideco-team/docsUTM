@@ -82,8 +82,6 @@ PATCH /ips/profiles/<id профиля>
 
 </details>
 
-</details>
-
 <details>
 <summary>Удаление профиля</summary>
 
@@ -99,7 +97,7 @@ DELETE /ips/profiles/<id профиля>
 <summary>Получение списка правил профиля</summary>
 
 ```
-GET /ips/profile_rules?profile_id=<string>
+GET /ips/profiles/<profile_id>/rules
 ```
 
 * `profile_id` - идентификатор профиля, список правил которого запрашивается (без скобок и кавычек).
@@ -139,7 +137,7 @@ GET /ips/profile_rules?profile_id=<string>
 <summary>Создание правила в профиле</summary>
 
 ```
-POST /ips/profile_rules?profile_id=<string>&anchor_item_id=<integer>&insert_after=<true|false>
+POST /ips/profiles/<profile_id>/rules?anchor_item_id=<integer>&insert_after=<true|false>
 ```
 
 * `profile_id` - идентификатор профиля, в котором создается правило (без скобок и кавычек);
@@ -186,7 +184,7 @@ POST /ips/profile_rules?profile_id=<string>&anchor_item_id=<integer>&insert_afte
 <summary>Изменение правила в профиле</summary>
 
 ```
-PATCH /ips/profile_rules?profile_id=<string>&rule_id=<integer>
+PATCH /ips/profiles/<profile_id>/rules/<rule_id>
 ```
 
 * `profile_id` - идентификатор профиля, в котором изменяется правило;
@@ -221,11 +219,37 @@ PATCH /ips/profile_rules?profile_id=<string>&rule_id=<integer>
 </details>
 
 <details>
+<summary>Перемещение правила в профиле</summary>
+
+```
+PATCH /ips/profiles/<profile_id>/rules/<rule_id>/move
+```
+
+* `profile_id` - идентификатор профиля, в котором перемещается правило;
+* `rule_id` - идентификатор правила в профиле.
+
+**Json-тело запроса:**:
+
+```json5
+{
+    "anchor_item_id": "string",
+    "insert_after": "boolean"
+}
+```
+
+* `anchor_item_id` - идентификатор правила, выше или ниже которого нужно разместить `rule_id`;
+* `insert_after` - вставить до (`false`) или после (`true`) правила `anchor_item_id`.
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+<details>
 
 <summary>Удаление правила в профиле</summary>
 
 ```
-DELETE /ips/profile_rules?profile_id=<string>&rule_id=<integer>
+DELETE /ips/profiles/<profile_id>/rules/<rule_id>
 ```
 
 * `profile_id` - идентификатор профиля, в котором удаляется правило;
