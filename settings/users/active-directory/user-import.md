@@ -67,7 +67,7 @@ curl -c /tmp/cookie -b /tmp/cookie -X POST https://адрес_сервера/web
 2\. Отправьте запрос на включение режима:
 
 ```
-curl -c /tmp/cookie -b /tmp/cookie -X PUT https://адрес_сервера/ad_backend/security_group_import_settings -d '{"compatibility_mode": true}' -i -k -H 'Content-type: application/json'
+curl -c /tmp/cookie -b /tmp/cookie -X PATCH https://адрес_сервера/ad_backend/security_group_import_settings -d '{"compatibility_mode": true}' -i -k -H 'Content-type: application/json'
 ```
 
 **Браузер**
@@ -97,7 +97,7 @@ POST https://адрес_сервера/web/auth/login
 5\. Отправьте запрос на включение режима:
 
 ```
-PUT /ad_backend/security_group_import_settings
+PATCH /ad_backend/security_group_import_settings
 ```
 
 Тело запроса:
