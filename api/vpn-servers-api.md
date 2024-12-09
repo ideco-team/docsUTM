@@ -44,7 +44,8 @@ GET /vpn_servers/settings
   },
   "network": "string",
   "zone": "string" | "null",
-  "dns_suffix": "string"
+  "dns_suffix": "string",
+  "netflow_index": "integer"
 }
 ```
 
@@ -55,7 +56,8 @@ GET /vpn_servers/settings
   * `port` - порт для подключения, одно из предустановленных значений (`1443`, `2443`, `3443`, `4443`).
 * `network` - сеть, из которой VPN-серверы раздают адреса. Первый адрес в этой сети - всегда адрес самого сервера;
 * `zone` - зона для Lvpn0-интерфейса. Если зона не назначена, то `null`;
-* `dns_suffix` - DNS-суффикс, передаваемый в Ideco Client. Если не назначен, то может быть пустой строкой.
+* `dns_suffix` - DNS-суффикс, передаваемый в Ideco Client. Если не назначен, то может быть пустой строкой;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 </details>
 
@@ -79,7 +81,8 @@ PUT /vpn_servers/settings
   },
   "network": "string",
   "zone": "string" | "null",
-  "dns_suffix": "string"
+  "dns_suffix": "string",
+  "netflow_index": "integer"
 }
 ```
 
@@ -90,7 +93,8 @@ PUT /vpn_servers/settings
   * `port` - порт для подключения, одно из предустановленных значений (`1443`, `2443`, `3443`, `4443`).
 * `network` - сеть, из которой VPN-серверы раздают адреса. Первый адрес в этой сети - всегда адрес самого сервера;
 * `zone` - зона для Lvpn0-интерфейса. Если зона не назначена, то `null`;
-* `dns_suffix` - DNS-суффикс, передаваемый в Ideco Client. Если не назначен, то может быть пустой строкой.
+* `dns_suffix` - DNS-суффикс, передаваемый в Ideco Client. Если не назначен, то может быть пустой строкой;
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
 
 **Ответ на успешный запрос:** 200 OK
 
