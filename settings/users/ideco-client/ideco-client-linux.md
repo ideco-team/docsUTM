@@ -1,7 +1,7 @@
 # Установка и настройка Ideco Client на Linux
 
 {% hint style="info" %}
-Ideco Client гарантированно работает на Alt Linux, Red OS, Astra Linux. Для остальных дистрибутивов работа не гарантируется.
+Ideco Client гарантированно работает на Alt Linux, РЕД ОС, Astra Linux, Fedora, Ubuntu. Для остальных дистрибутивов работа не гарантируется.
 {% endhint %}
 
 Файл установки Ideco Client на Linux можно скачать одним из двух способов:

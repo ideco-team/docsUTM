@@ -13,8 +13,15 @@ description: >-
 {% endhint %}
 
 {% hint style="warning" %}
-Установить программу Ideco Client можно на ОС семейства Windows с 10 версии и новее, а также на MacOS версии 12.7 и новее.\
-На MacOS Ideco Client работает с [некоторыми ограничениями](/settings/users/ideco-client/ideco-client-macos.md).
+Установить программу Ideco Client можно на:
+
+* ОС семейства Windows с 10 версии и выше;
+* MacOS версии 12.7 и выше. При этом Ideco Client работает с [некоторыми ограничениями](/settings/users/ideco-client/ideco-client-macos.md);
+* Astra Linux 1.7.0 и выше;
+* РЕД ОС 8.0 и выше;
+* Alt OS (Alt Workstation) 9.0 и выше;
+* Fedora 35 и выше;
+* Ubuntu 18.04 LTS (23.04) и выше.
 {% endhint %}
 
 Ideco Client управляет авторизацией пользователей при подключении к Ideco NGFW из локальной сети и по VPN из внешних сетей. При использовании Ideco Client возможны:
