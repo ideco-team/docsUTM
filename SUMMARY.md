@@ -83,7 +83,6 @@
     * [Изменение страницы блокировки Контент-фильтра](settings/access-rules/content-filter/block-page.md)
   * [Ограничение скорости](settings/access-rules/shaper.md)
   * [Антивирусы веб-трафика](settings/access-rules/antivirus.md)
-  * [Контроль приложений](settings/access-rules/application-control.md)
   * [Предотвращение вторжений](settings/access-rules/ips/README.md)
     * [Группы сигнатур](settings/access-rules/ips/rules.md)
     * [Пользовательские сигнатуры](settings/access-rules/ips/custom-signatures.md)
