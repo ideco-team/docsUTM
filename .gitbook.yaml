@@ -34,7 +34,7 @@ redirects:
   terminal: ./settings/server-management/terminal.md
   license_management: ./settings/server-management/binding-license.md
   additionally: ./settings/server-management/additionaly.md
-  dpi: ./settings/security-profiles/application-control-profiles.md
+  dpi: ./settings/security-profiles/application-control/README.md
   tls_inspection_security_profiles: ./settings/security-profiles/tls-inspection-security-profiles.md
   content_filter_security_profiles: ./settings/security-profiles/content-filter-profiles.md
   ips_profiles: ./settings/security-profiles/ips-profiles.md
