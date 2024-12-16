@@ -43,7 +43,6 @@ redirects:
   user_management: ./settings/users/README.md
   vpn_authorization: ./settings/users/authorization/vpn-connection/README.md
   zabbix: ./settings/monitor/zabbix.md
-  application_control: ./settings/access-rules/application-control.md
   dashboard: ./settings/monitor-panel.md
   traffmon: ./settings/monitor/traffic.md
   logs: ./settings/reports/logs.md
