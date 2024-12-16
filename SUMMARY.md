@@ -36,7 +36,7 @@
       * [Авторизация по MAC-адресу](settings/users/authorization/ip-and-mac-authorization/mac-authorization.md)
     * [Авторизация по подсетям](settings/users/authorization/authorization-by-subnet.md)
     * [Авторизация пользователей терминальных серверов](settings/users/authorization/terminal-server.md)
-  * [ЛК/Портал SSL VPN](settings/users/user-personal-account.md)
+  * [Личный кабинет пользователя](settings/users/user-personal-account.md)
   * [VPN-подключение](settings/users/authorization/vpn-connection/README.md)
     * [Двухфакторная аутентификация](settings/users/two-factor-authentication.md)
     * [Подключение по PPTP](settings/users/authorization/vpn-connection/pptp.md)
