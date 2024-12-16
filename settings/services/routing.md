@@ -141,4 +141,3 @@ description: >-
 Информация об особенностях маршрутизации и организации доступа при настроенном VPN-подключении представлена в [статье](/settings/users/authorization/vpn-connection/features.md).
 
 </details>
-
