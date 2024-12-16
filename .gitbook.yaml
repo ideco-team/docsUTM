@@ -80,7 +80,6 @@ redirects:
   session_sync: ./settings/server-management/cluster/cluster.md
   cc: ./settings-cc/README.md
   cc_firewall: ./settings-cc/policies-and-objects.md
-  cc_application_control: ./settings-cc/application-control.md
   cc_content_filter: ./settings-cc/policies-and-objects.md
   cc_aliases: ./settings-cc/policies-and-objects.md
   cc_shaper: ./settings-cc/policies-and-objects.md
