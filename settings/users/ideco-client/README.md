@@ -151,7 +151,7 @@ Device VPN - режим работы Ideco Client, в котором клиен�
 
 {% code overflow="wrap" %}
 ```
-<путь до IdecoClient>\IdecoClient.exe --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
+<абсолютный путь до IdecoClient>\IdecoClient.exe --set-devicevpn-cert-path=<абсолютный путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
 ```
 {% endcode %}
 
@@ -172,7 +172,7 @@ Device VPN - режим работы Ideco Client, в котором клиен�
 
 {% code overflow="wrap" %}
 ```
-sudo <путь до IdecoClient>/ld.so --argv0 IdecoClient --library-path <путь до IdecoClient>/lib <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
+sudo <абсолютный путь до IdecoClient>/ld.so --argv0 IdecoClient --library-path <абсолютный путь до IdecoClient>/lib <абсолютный путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<абсолютный путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
 ```
 {% endcode %}
 
@@ -180,7 +180,7 @@ sudo <путь до IdecoClient>/ld.so --argv0 IdecoClient --library-path <пу�
 
 {% code overflow="wrap" %}
 ```
-sudo <путь до IdecoClient>/ld.so --argv0 IdecoClient --library-path <путь до IdecoClient>/lib <путь до IdecoClient>/IdecoClient --print-devicevpn-config=True
+sudo <абсолютный путь до IdecoClient>/ld.so --argv0 IdecoClient --library-path <абсолютный путь до IdecoClient>/lib <абсолютный путь до IdecoClient>/IdecoClient --print-devicevpn-config=True
 ```
 {% endcode %}
 
@@ -193,7 +193,7 @@ sudo <путь до IdecoClient>/ld.so --argv0 IdecoClient --library-path <пу�
 
 {% code overflow="wrap" %}
 ```
-sudo <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
+sudo <абсолютный путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<абсолютный путь до файла сертификата> --set-devicevpn-host=<адрес NGFW> --set-enable-devicevpn=True
 ```
 {% endcode %}
 
@@ -201,7 +201,7 @@ sudo <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь
 
 {% code overflow="wrap" %}
 ```
-(sudo) <путь до IdecoClient>/IdecoClient --print-devicevpn-config=True
+(sudo) <абсолютный путь до IdecoClient>/IdecoClient --print-devicevpn-config=True
 ```
 {% endcode %}
 
@@ -216,4 +216,10 @@ sudo <путь до IdecoClient>/IdecoClient --set-devicevpn-cert-path=<путь
 * Исправить проблему подключения (загрузить правильный сертификат, определить корректность пути до него);
 * Настроить и активировать Device VPN: выполнить команду по настройке Device VPN и параметром `--set-enable-devicevpn=True`.
 * В интерфейсе Ideco NGFW убедиться, что подключение Device VPN выполнено.
+{% endhint %}
+
+{% hint style="info" %}
+Если в таблице **Пользователи -> VPN-подключения -> Доступ по VPN** устройству из группы Device VPN запрещен доступ, на короткое время подключение из внешней сети будет установлено. За это время может пройти определенный объем трафика. 
+
+Позже подключение будет разорвано. Это связано с тем, что проверка по таблице доступа VPN для Device VPN происходит не в момент подключения, а позже.
 {% endhint %}
