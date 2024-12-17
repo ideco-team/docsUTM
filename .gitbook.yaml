@@ -33,7 +33,7 @@ redirects:
   terminal: ./settings/server-management/terminal.md
   license_management: ./settings/server-management/binding-license.md
   additionally: ./settings/server-management/language-time-management.md
-  application_control_security_profiles: ./settings/control-blocking/security-profiles/application-control-profiles.md
+  application_control_security_profiles: ./settings/control-blocking/security-profiles/application-control/README.md
   tls_inspection_security_profiles: ./settings/control-blocking/security-profiles/tls-inspection-security-profiles.md
   content_filter_security_profiles: ./settings/control-blocking/security-profiles/content-filter-profiles.md
   bgp: ./settings/control-blocking/bgp.md
