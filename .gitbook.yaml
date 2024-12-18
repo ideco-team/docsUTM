@@ -107,6 +107,6 @@ redirects:
   administrator_sessions: ./settings/monitor/administrator-sessions.md
   dpi: ./settings/security-profiles/application-control/README.md
   version_support: ./general/support-period.md
-  ips_profiles: ./settings/security-profiles/ips-profiles.md
+  ips_profiles: ./settings/security-profiles/ips-profiles/README.md
   two_factor: ./settings/users/two-factor-authentication.md
   netflow: ./settings/monitor/netflow.md

@@ -14,10 +14,10 @@
 [waf-profiles.md](waf-profiles.md)
 {% endcontent-ref %}
 
-{% content-ref url="application-control.md" %}
-[application-control.md](application-control.md)
+{% content-ref url="application-control/README.md" %}
+[application-control/README.md](application-control/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="ips-profiles.md" %}
-[ips-profiles.md](ips-profiles.md)
+{% content-ref url="ips-profiles/README.md" %}
+[ips-profiles/README.md](ips-profiles/README.md)
 {% endcontent-ref %}
