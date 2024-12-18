@@ -126,6 +126,81 @@
 
 </details>
 
+<details>
+
+<summary>Настройка Cisco</summary>
+
+1\. Установите и запустите Cisco.
+
+2\. Настройте локальный интерфейс:
+
+```
+enable
+conf t
+interface GigabitEthernet0/1
+ip address <локальный IP Cisco> <маска подсети>
+no shutdown
+exit
+```
+
+3\. Настройте внешний интерфейс:
+
+```
+enable
+conf t
+interface GigabitEthernet0/0
+ip address <внешний IP Cisco> <маска подсети>
+no shutdown
+exit
+```
+
+Проверьте наличие связи между внешними интерфейсами Ideco NGFW и Cisco. Для этого в консоли Cisco используйте команду `ping <внешний IP NGFW>`. Результат вывода команды - наличие ICMP-ответов.
+
+4\. Сохраните настройки конфигурации:
+
+```
+write memory
+```
+
+5\. Запустите на Cisco процесс OSPF:
+
+```
+enable
+conf t
+router ospf 1
+```
+
+6\. По-умолчанию отключите отправку hello-пакетов на всех интерфейсах и включите на интерфейсе, подключенном к локальной сети Ideco NGFW:
+
+```
+passive-interface default
+no passive-interface GigabitEthernet0/0
+```
+
+7\. Укажите сети, маршруты до которых хотите анонсировать:
+
+```
+network <IP-адрес подсети> <wildcart-маска подсети> area <номер зоны, указанный при настройке Ideco NGFW>
+```
+
+Пример команды:
+
+```
+network 192.168.100.0 0.0.255.255 area 0
+```
+
+8\. Если Cisco получил уведомление вида `*Dec 18 10:02:03.628: %OSPF-5-ADJCHG: Process 1, Nbr 192.168.122.73 on GigabitEthernet0/0 from LOADING to FULL, Loading Done`, neighbour-отношения установлены.
+
+8\. Для просмотра списка соседей воспользуйтесь командой `show ip ospf neighbor`:
+
+![](/.gitbook/assets/ospf12.png)
+
+9\. Для вывода таблицы маршрутизации введите команду `show ip route` (В таблице должны появиться маршруты до сетей NGFW):
+
+![](/.gitbook/assets/ospf13.png)
+
+</details>
+
 ## Дополнительное
 
 На вкладке **Дополнительное** доступны к установке следующие флаги:
