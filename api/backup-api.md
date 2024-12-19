@@ -1,4 +1,4 @@
-# Бэкапы
+# Бэкапы и возврат к предыдущей версии
 
 {% hint style="info" %}
 Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
@@ -176,7 +176,7 @@ GET /backup/backups
   * `major` - мажорный номер версии;
   * `minor` - минорный номер версии;
   * `build` - номер сборки;
-  * `timestamp` - время выхода версии; 
+  * `timestamp` - время выхода версии;
   * `vendor` - вендор ("Ideco");
   * `product` - код продукта;
   * `kind` - вид продукта;
@@ -250,6 +250,82 @@ POST /backup/backups/<id бэкапа>/apply/fast
 ```
 DELETE /backup/backups/<id бэкапа>
 ```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+## Возврат к предыдущей версии Ideco NGFW
+
+<details>
+<summary>Получение информации о наличии предыдущей версии</summary>
+
+```
+GET /system_management/change_sys_root
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+   "previous_version": {
+      "major": "integer",
+      "minor": "integer",
+      "build": "integer",
+      "timestamp": "integer",
+      "vendor": "string",
+      "product": "UTM" | "CC",
+      "kind": "FSTEK" | "NGFW-FSTEK" | "VPP" | "STANDARD" | "BPF",
+      "release_type": "release" | "beta" | "devel"
+   }
+}
+```
+
+* `major` - мажорный номер версии;
+* `minor` - минорный номер версии;
+* `build` - номер сборки;
+* `timestamp` - время сборки версии в формате UNIX timestamp;
+* `vendor` - вендор продукта. Значения могут быть произвольными;
+* `product` - название продукта;
+* `kind` - вид продукта;
+* `release_type` - тип редакции.
+
+Если предыдущей версии не было, то значение поля `previous_version` будет `null`.
+
+</details>
+
+<details>
+<summary>Возврат к предыдущей версии</summary>
+
+```
+POST /system_management/change_sys_root
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+   "version": {
+      "major": "integer",
+      "minor": "integer",
+      "build": "integer",
+      "timestamp": "integer",
+      "vendor": "string",
+      "product": "UTM" | "CC",
+      "kind": "FSTEK" | "NGFW-FSTEK" | "VPP" | "STANDARD" | "BPF",
+      "release_type": "release" | "beta" | "devel"
+   }
+}
+```
+
+* `major` - мажорный номер версии;
+* `minor` - минорный номер версии;
+* `build` - номер сборки;
+* `timestamp` - время сборки версии в формате UNIX timestamp;
+* `vendor` - вендор продукта. Значения могут быть произвольными;
+* `product` - название продукта;
+* `kind` - вид продукта;
+* `release_type` - тип редакции.
 
 **Ответ на успешный запрос:** 200 OK
 
