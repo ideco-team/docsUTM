@@ -261,7 +261,7 @@
 * [DNS-сервер](api/dns-api.md)
 * [Настройка удаленной передачи системных логов](api/logs-api.md)
 * [Центральная консоль](api/cc-api.md)
-* [Бэкапы](api/backup-api.md)
+* [Бэкапы и возврат к предыдущей версии](api/backup-api.md)
 * [Почтовый релей](api/mail-api/mail-api.md)
   * [Расширенные настройки](api/mail-api/advanced-settings.md)
   * [Антиспам и антивирус](api/mail-api/antispam-api.md)
