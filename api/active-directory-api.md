@@ -283,7 +283,7 @@ GET /ad_backend/settings
 <summary>Изменение настроек авторизации</summary>
 
 ```
-PUT /ad_backend/settings
+PATCH /ad_backend/settings
 ```
 
 **Json-тело запроса:**

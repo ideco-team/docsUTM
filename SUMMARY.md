@@ -244,12 +244,12 @@
 ## API
 
 * [Описание основных хендлеров](api/description-of-handlers.md)
-* [Мониторинг](api/monitor-api.md)
 * [Управление интеграцией с Active Directory](api/active-directory-api.md)
 * [Управление интеграцией с ALD Pro](api/ald-pro-api.md)
 * [Управление администраторами](api/admin-management-api.md)
 * [Управление пользователями](api/user-management-api.md)
 * [Управление Ideco Client](api/ideco-client-api.md)
+* [Мониторинг](api/monitor-api.md)
 * [Управление правилами трафика](api/access-rules-api/README.md)
   * [Файрвол](api/access-rules-api/firewall.md)
   * [Контроль приложений](api/access-rules-api/application-control.md)
