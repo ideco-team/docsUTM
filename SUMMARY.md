@@ -77,6 +77,7 @@
     * [Логирование](settings/access-rules/logging.md)
     * [Тестирование правил](settings/access-rules/rule-check.md)
     * [Предварительная фильтрация](settings/access-rules/pre-filtration.md)
+    * [Аппаратная фильтрация](settings/access-rules/hardware-filtering.md)
   * [Контент-фильтр](settings/access-rules/content-filter/README.md)
     * [Правила](settings/access-rules/content-filter/rules.md)
     * [Описание категорий контент-фильтра](settings/access-rules/content-filter/custom-categories.md)
