@@ -37,12 +37,12 @@
 
 ## Поддержка IPsec IKEv2 в клиентских ОС
 
-* Microsoft **Windows 10**. Требует установки корневого сертификата Let's Encrypt;
-* Apple **MacOS X 10.11** "El Capitan" (2015 г.);
-* Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.);
-* Google **Android 11** (2020 г.). На более старых версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android);
-* Apple **iOS 9** (iPhone 4S) (2015 г.);
-* **KeeneticOS 3.5;**
+* Microsoft **Windows 10**. Требует установки корневого сертификата Let's Encrypt. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-windows10.md);
+* Apple **MacOS X 10.11** "El Capitan" (2015 г.). [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md);
+* Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.). Инструкция по настройке [Alt Linux](/recipes/popular-recipes/vpn/connection-for-alt-linux.md), [Ubuntu](/recipes/popular-recipes/vpn/connection-for-ubuntu.md), [Astra Linux](/recipes/popular-recipes/vpn/connection-for-astra-linux.md) и [Fedora](/recipes/popular-recipes/vpn/connection-for-fedora.md);
+* Google **Android 11** (2020 г.). На более старых версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android). [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md#podklyuchenie-na-android);
+* Apple **iOS 9** (iPhone 4S) (2015 г.). [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md#podklyuchenie-na-ios);
+* **KeeneticOS 3.5.** [Инструкция по настройке](/recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md);
 * MikroTik;
 * Cisco routers.
 
