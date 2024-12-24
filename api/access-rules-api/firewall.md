@@ -630,3 +630,454 @@ PUT /firewall/checks_settings
 **Ответ на успешный запрос:** 200 ОК
 
 </details>
+
+## Аппаратная фильтрация
+
+Список поддерживаемых сетевых карт доступен в [статье](/settings/access-rules/hardware-filtering.md).
+
+</details>
+
+<details>
+<summary>Получение выбранного режима фильтрации</summary>
+
+```
+GET /firewall/hw_settings
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "mode": "string"
+}
+```
+
+* `mode` - режим фильтрации; допустимые значения:
+    * `mac` - по MAC-адресу источника;
+    * `src-ip` - по IP-адресу источника;
+    * `dst-ip` - по IP-адресу назначения;
+    * `src-and-dst-ip` - по IP-адресу источника и назначения.
+
+</details>
+
+<details>
+<summary>Изменение выбранного режима фильтрации</summary>
+
+```
+PATCH /firewall/hw_settings
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "mode": "string"
+}
+```
+
+* `mode` - режим фильтрации; допустимые значения:
+    * `mac` - по MAC-адресу источника;
+    * `src-ip` - по IP-адресу источника;
+    * `dst-ip` - по IP-адресу назначения;
+    * `src-and-dst-ip` - по IP-адресу источника и назначения.
+
+**Ответ на успешный запрос:** 200 ОК
+
+</details>
+
+### Управление правилами аппаратной фильтрации
+
+<details>
+<summary>Получение правил фильтрации по MAC-адресу источника</summary>
+
+```
+GET /firewall/hw_rules_mac
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+    {
+        "id": "string",
+        "mac": "string",
+        "protocol": "integer",
+        "comment": "string",
+        "enabled": "boolean"
+        
+    },
+    ...
+]
+```
+
+* `id` - уникальный идентификатор правила;
+* `mac` - MAC-адрес в формате `11:22:33:aa:bb:СС`;
+* `protocol` - [номер](https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xhtml) протокола сетевого уровня. Диапазон 1-65535;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов;
+* `enabled` - `true`, если правило включено; `false` - если выключено.
+
+</details>
+
+<details>
+<summary>Создание правил фильтрации по MAC-адресу источника</summary>
+
+```
+POST /firewall/hw_rules_mac
+```
+
+**Json-тело запроса:**
+
+```json5
+
+{
+    "mac": "string",
+    "protocol": "integer",
+    "comment": "string",
+    "enabled": "boolean"    
+}
+```
+
+* `mac` - MAC-адрес в формате `11:22:33:aa:bb:СС`;
+* `protocol` - [номер](https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xhtml) протокола сетевого уровня. Диапазон 1-65535. **Не указывайте протокол IPv4** (значение 2048), для фильтрации  на сетевом уровне используйте правила *По IP-адресу источника*, *По IP-адресу назначения*, *По IP-адресу источника и назначения*;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов;
+* `enabled` - `true`, если правило включено; `false` - если выключено.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string",
+}
+```
+
+</details>
+
+<details>
+<summary>Редактирование правил фильтрации по MAC-адресу источника</summary>
+
+```
+PATCH /firewall/hw_rules_mac/<id правила>
+```
+
+**Json-тело запроса (любые поля):**
+
+```json5
+
+{
+    "mac": "string",
+    "protocol": "integer",
+    "comment": "string",
+    "enabled": "boolean"    
+}
+```
+
+* `mac` - MAC-адрес в формате `11:22:33:aa:bb:СС`;
+* `protocol` - [номер](https://www.iana.org/assignments/ieee-802-numbers/ieee-802-numbers.xhtml) протокола сетевого уровня. Диапазон 1-65535. **Не указывайте протокол IPv4** (значение 2048), для фильтрации  на сетевом уровне используйте правила *По IP-адресу источника*, *По IP-адресу назначения*, *По IP-адресу источника и назначения*;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов;
+* `enabled` - `true`, если правило включено; `false` - если выключено.
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Удаление правил фильтрации по MAC-адресу источника</summary>
+
+```
+DELETE /firewall/hw_rules_mac/<id правила>
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Получение правил фильтрации по IP-адресу источника</summary>
+
+```
+GET /firewall/hw_rules_src_ip
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+    {
+    "id": "string",
+    "enabled": "boolean",
+    "source_ip": "string",
+    "comment": "string"
+    },
+    ...
+]
+```
+
+* `id` - уникальный идентификатор правила;
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `source_ip` - IP-адрес источника без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+</details>
+
+<details>
+<summary>Создание правил фильтрации по IP-адресу источника</summary>
+
+```
+POST /firewall/hw_rules_src_ip
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "enabled": "boolean",
+    "source_ip": "string",
+    "comment": "string"
+}
+```
+
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `source_ip` - IP-адрес источника без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Редактирование правил фильтрации по IP-адресу источника</summary>
+
+```
+PATCH /firewall/hw_rules_src_ip
+```
+
+**Json-тело запроса (любые поля):**
+
+```json5
+{
+    "enabled": "boolean",
+    "source_ip": "string",
+    "comment": "string"
+}
+```
+
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `source_ip` - IP-адрес источника без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Удаление правил фильтрации по IP-адресу источника</summary>
+
+```
+DELETE /firewall/hw_rules_src_ip/<id правила>
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Получение правил фильтрации по IP-адресу назначения</summary>
+
+```
+GET /firewall/hw_rules_dst_ip
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+    {
+    "id": "string",
+    "enabled": "boolean",
+    "destination_ip": "string",
+    "comment": "string"
+    },
+    ...
+]
+```
+
+* `id` - уникальный идентификатор правила;
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `destination_ip` - IP-адрес назначения без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+</details>
+
+<details>
+<summary>Создание правил фильтрации по IP-адресу назначения</summary>
+
+```
+POST /firewall/hw_rules_dst_ip
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "enabled": "boolean",
+    "destination_ip": "string",
+    "comment": "string"
+}
+```
+
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `destination_ip` - IP-адрес назначения без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Редактирование правил фильтрации по IP-адресу назначения</summary>
+
+```
+PATCH /firewall/hw_rules_dst_ip
+```
+
+**Json-тело запроса (любые поля):**
+
+```json5
+{
+    "enabled": "boolean",
+    "destination_ip": "string",
+    "comment": "string"
+}
+```
+
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `destination_ip` - IP-адрес назначения без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Удаление правил фильтрации по IP-адресу назначения</summary>
+
+```
+DELETE /firewall/hw_rules_dst_ip/<id правила>
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Получение правил фильтрации по IP-адресу источника и назначения</summary>
+
+```
+GET /firewall/hw_rules_src_dst_ip
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+[
+    {
+    "id": "string",
+    "enabled": "boolean",
+    "source_ip": "string",
+    "destination_ip": "string",
+    "comment": "string"
+    },
+    ...
+]
+```
+
+* `id` - уникальный идентификатор правила;
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `source_ip` - IP-адрес источника без маски в формате `192.168.1.2`
+* `destination_ip` - IP-адрес назначения без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+</details>
+
+<details>
+<summary>Создание правил фильтрации по IP-адресу назначения</summary>
+
+```
+POST /firewall/hw_rules_dst_ip
+```
+
+**Json-тело запроса:**
+
+```json5
+{
+    "enabled": "boolean",
+    "source_ip": "string",
+    "destination_ip": "string",
+    "comment": "string"
+}
+```
+
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `source_ip` - IP-адрес источника без маски в формате `192.168.1.2`
+* `destination_ip` - IP-адрес назначения без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+  "id": "string"
+}
+```
+
+</details>
+
+<details>
+<summary>Редактирование правил фильтрации по IP-адресу назначения</summary>
+
+```
+PATCH /firewall/hw_rules_src_dst_ip/<id правила>
+```
+
+**Json-тело запроса (любые поля):**
+
+```json5
+{
+    "enabled": "boolean",
+    "source_ip": "string",
+    "destination_ip": "string",
+    "comment": "string"
+}
+```
+
+* `enabled` - `true`, если правило включено; `false` - если выключено;
+* `source_ip` - IP-адрес источника без маски в формате `192.168.1.2`
+* `destination_ip` - IP-адрес назначения без маски в формате `192.168.1.1`;
+* `comment` - комментарий к правилу, может быть пустым. Не длиннее 256 символов.
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
+
+<details>
+<summary>Удаление правил фильтрации по IP-адресу назначения</summary>
+
+```
+DELETE /firewall/hw_rules_src_dst_ip/<id правила>
+```
+
+**Ответ на успешный запрос:** 200 OK
+
+</details>
