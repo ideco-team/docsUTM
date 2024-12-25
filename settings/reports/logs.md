@@ -54,7 +54,7 @@ description: В разделе представлена информация о 
 * **Active Directory** - `ideco-ad-backend`;
 * **ALD Pro** - `ideco-ald-rest`, `ideco-ald-backend`;
 * **Ideco Client** - `ideco-agent-websocket`, `ideco-agent-backend`, `ideco-app-stats`;
-* **Syslog** - `ideco-monitor-backend`;
+* **Syslog** - `ideco-logs-backend`;
 * **Отчеты и журналы** - `ideco-logs-backend`, `ideco-reports-backend`, `ideco-logs-syncer`;
 * **Действия администраторов** - `ideco-audit-backend`;
 * **Обнаружение устройств** - `ideco-netscan-backend`;

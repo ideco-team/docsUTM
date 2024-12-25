@@ -34,7 +34,7 @@
 * **Обновления** - `ideco-sysupdate-backend`;
 * **Бэкапы** - `ideco-backup-backend`;
 * **Лицензия** - `ideco-license-backend`;
-* **Syslog** - `ideco-monitor-backend`;
+* **Syslog** - `ideco-logs-backend`;
 * **Отчеты и журналы** - `ideco-logs-backend`, `ideco-logs-syncer`;
 * **Действия администраторов** - `ideco-audit-backend`;
 * **Сертификаты** - `ideco-cert-backend`;
