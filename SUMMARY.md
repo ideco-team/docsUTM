@@ -241,6 +241,7 @@
   * [Что делать если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
   * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
   * [Если соединение по IPsec не устанавливается](recipes/problem-diagnosis/ipsec.md)
+  * [Ошибка 400 Bad Request Request Header Or Cookie Too Large при авторизации в браузерах](recipes/problem-diagnosis/maxtokensize.md)
 
 ## API
 
