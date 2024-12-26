@@ -111,3 +111,4 @@ redirects:
   two_factor: ./settings/users/two-factor-authentication.md
   netflow: ./settings/monitor/netflow.md
   traffic_log: ./settings/reports/traffic-log.md
+  usb_token: ./settings/services/usb_tokens.md
