@@ -110,3 +110,4 @@ redirects:
   ips_profiles: ./settings/security-profiles/ips-profiles/README.md
   two_factor: ./settings/users/two-factor-authentication.md
   netflow: ./settings/monitor/netflow.md
+  traffic_log: ./settings/reports/traffic-log.md

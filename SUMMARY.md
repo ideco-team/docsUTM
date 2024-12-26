@@ -141,6 +141,7 @@
   * [Трафик](settings/reports/traffic.md)
   * [Системный журнал](settings/reports/logs.md)
   * [Журнал веб-доступа](settings/reports/web-logs.md)
+  * [Журнал трафика](/settings/reports/traffic-log.md)
   * [Журнал антивируса](settings/reports/antivirus-logs.md)
   * [События безопасности](settings/reports/security-events.md)
   * [Действия администраторов](settings/reports/administrator-actions.md)
