@@ -144,7 +144,7 @@
 ![](/.gitbook/assets/servers8.gif)
 
 {% hint style="warning" %}
-При подключении к Ideco Center сервера, настройки которого [восстановлены](/recipes/popular-recipes/transferring-data-to-another-server.md) из бэкапа другого сервера, такой клон не появится в таблице серверов Ideco Center. Возникает конфликт с донором бэкапа из-за одинакового claster\_id.
+При подключении к Ideco Center сервера, настройки которого [восстановлены](/recipes/popular-recipes/transferring-data-to-another-server.md) из бекапа другого сервера, такой клон не появится в таблице серверов Ideco Center. Возникает конфликт с донором бекапа из-за одинакового claster\_id.
 
 В случае возникновения такой проблемы обратитесь в [Техническую поддержку](/general/technical-support.md).
 {% endhint %}

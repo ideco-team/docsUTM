@@ -145,7 +145,7 @@
   * [Кластеризация](settings/server-management/cluster/cluster.md)
     * [Настройка кластера](settings/server-management/cluster/cluster-creation.md)
   * [Обновления](settings/server-management/server-update.md)
-  * [Бэкапы](settings/server-management/backup.md)
+  * [Бекапы](settings/server-management/backup.md)
   * [Терминал](settings/server-management/terminal/README.md)
     * [Примеры использования утилит](settings/server-management/terminal/examples.md)
   * [Лицензия](settings/server-management/license-management.md)
