@@ -251,7 +251,7 @@
 * [Управление администраторами](api/admin-management-api.md)
 * [Управление пользователями](api/user-management-api.md)
 * [Управление Ideco Client](api/ideco-client-api.md)
-* [Мониторинг](api/monitor-api.md)
+* [Мониторинг и журналы](api/monitor-api.md)
 * [Управление правилами трафика](api/access-rules-api/README.md)
   * [Файрвол](api/access-rules-api/firewall.md)
   * [Контроль приложений](api/access-rules-api/application-control.md)
