@@ -137,6 +137,7 @@
     * [Загрузка SSL-сертификата на сервер](settings/services/certificates/upload-ssl-certificate-to-server.md)
     * [Создание самоподписанного сертификата c помощью PowerShell](settings/services/certificates/creating-ssl-sert-powershell.md)
     * [Создание сертификата c помощью openssl](settings/services/certificates/creating-openssl-cert.md)
+  * [USB-токены](/settings/services/usb_tokens.md)
 * [Отчеты и журналы](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
   * [Системный журнал](settings/reports/logs.md)
