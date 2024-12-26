@@ -12,7 +12,7 @@ description: >-
 Использует протокол WireGuard.
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Установить программу Ideco Client можно на:
 
 * ОС семейства Windows с 10 версии и выше;
@@ -22,6 +22,24 @@ description: >-
 * Alt OS (Alt Workstation) 9.0 и выше;
 * Fedora 35 и выше;
 * Ubuntu 18.04 LTS (23.04) и выше.
+{% endhint %}
+
+{% hint style="warning" %}
+
+Ideco Client не работает на операционной системе Windows 11 версии 24H2. Для устранения проблемы можно предпринять следующие действия:
+
+1\. Включить компонент **Virtual Machine Platform**:
+
+* Установите последнюю версию [MS Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist);
+* Нажмите комбинацию клавиш **Windows + R** и введите команду `appwiz.cpl`;
+* В левой части окна выберите **Включение или отключение компонентов Windows**;
+* Включите функцию **Virtual Machine Platform** (**Платформа виртуальной машины**);
+* Нажмите **ОК** и перезагрузите компьютер.
+
+2\. Вернуть предыдущую версию операционной системы Windows 11 23H2.
+
+3\. Использовать альтернативный способ [VPN-подключения](/settings/users/authorization/vpn-connection/README.md).
+
 {% endhint %}
 
 Ideco Client управляет авторизацией пользователей при подключении к Ideco NGFW из локальной сети и по VPN из внешних сетей. При использовании Ideco Client возможны:
