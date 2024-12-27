@@ -454,7 +454,7 @@ GET /sysupdate/iso-upload
 <summary>Запустить обновление из загруженного ISO-файла для офлайн-обновления системы</summary>
 
 ```
-PUT /sysupdate/iso-install
+POST /sysupdate/iso-install
 ```
 
 **Ответ на успешный запрос:** 200 ОК
