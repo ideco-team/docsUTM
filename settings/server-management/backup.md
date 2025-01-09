@@ -101,7 +101,7 @@ description: >-
 
 После завершения процесса восстановления Ideco NGFW автоматически отправит запрос в личный кабинет для обновления лицензии. Если используется офлайн-лицензия, ее необходимо загрузить самостоятельно.
 
-Если вы используете резервное копирование для переноса настроек с одного сервера на другой, выполните "перепривязку" лицензии. Подробную информацию вы можете найти в [статье](/recipes/popular-recipes/transferring-data-to-another-server#etap-6-privyazka-licenzii-k-vosstanovlennomu-iz-bekapa-serveru).
+Если резервное копирование используется для переноса настроек с одного сервера на другой, выполните "перепривязку" лицензии. Подробную информацию можно найти в статье [Перенос данных и настроек на другой сервер](/recipes/popular-recipes/transferring-data-to-another-server.md#etap-6-privyazka-licenzii-k-vosstanovlennomu-iz-bekapa-serveru).
 {% endhint %}
 
 {% hint style="info" %} 
