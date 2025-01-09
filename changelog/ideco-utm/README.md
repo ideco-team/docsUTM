@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>Примечания к релизу бета-версии Ideco NGFW 18.0</summary>
+<summary>Примечания к релизу бета-версии Ideco NGFW 19.0</summary>
 
 **Дата выхода версии**: ХХ.ХХ.ХХХХ.
 
