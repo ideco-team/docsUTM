@@ -35,10 +35,6 @@ Netflow экспортирует статистику по потокам дан
 
 ## Структура передаваемых на коллектор данных
 
-{% hint style="info" %}
-Сейчас TCP-флаги не учитываются при сборе статистики, в сообщении все флаги будут нулевыми.
-{% endhint %}
-
 Структура заголовка и записей для Netflow 5 доступна по [ссылке](https://www.cisco.com/c/en/us/td/docs/net_mgmt/netflow_collection_engine/3-6/user/guide/format.html#wp1006108).
 
 Структура шаблона для Netflow 9 и Netflow 10 (IPFIX) представлена в таблице:
