@@ -2,6 +2,8 @@
 
 **[Описание сертифицированной версии](https://static.ideco.ru/static/Ideco_UTM_2022.pdf?roistat_visit=462368)**.
 
+{% file src=".gitbook/assets/Руководство_Администратора_IDECO_UTM.pdf";base64,Cg==" name="Руководство_Администратора_IDECO_UTM.pdf" %}
+
 <details>
 
 <summary>Примечания к релизу ФСТЭК Ideco UTM 16.4 build 8</summary>
