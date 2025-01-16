@@ -16,7 +16,7 @@
 * [Настройка программно-аппаратных комплексов Ideco NGFW](installation/ipmi-settings.md)
 * [Подготовка к установке на устройство](installation/preparation-install.md)
   * [Настройка гипервизора](installation/specifics-of-hypervisor-settings.md)
-  * [Подготовка загрузочного диска](installation/usb.md)
+  * [Создание загрузочного USB-накопителя](installation/usb.md)
 * [Установка](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
 * [Регистрация сервера](installation/server-registration.md)
