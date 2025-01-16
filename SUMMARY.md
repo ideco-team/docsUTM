@@ -27,7 +27,7 @@
 * [Панель мониторинга](settings/monitor-panel.md)
 * [Пользователи](settings/users/README.md)
   * [Учетные записи](settings/users/user-tree/README.md)
-    * [Управление пользователями](settings/users/user-tree/user-management.md)
+    * [Управление учетными записями и группами](settings/users/user-tree/user-management.md)
     * [Настройка пользователей](settings/users/user-tree/customization-of-users.md)
   * [Авторизация пользователей](settings/users/authorization/README.md)
     * [Веб-аутентификация](settings/users/authorization/web-authorization.md)
