@@ -144,7 +144,7 @@
 * [Отчеты и журналы](settings/reports/README.md)
   * [Трафик](settings/reports/traffic.md)
   * [Системный журнал](settings/reports/logs.md)
-  * [Журнал веб-трафика](settings/reports/web-logs.md)
+  * [Журнал веб-трафика](settings/reports/web-traffic-log.md)
   * [Журнал трафика](/settings/reports/traffic-log.md)
   * [События безопасности](settings/reports/security-events.md)
   * [Действия администраторов](settings/reports/administrator-actions.md)
