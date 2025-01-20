@@ -12,8 +12,8 @@
 [web-logs.md](web-logs.md)
 {% endcontent-ref %}
 
-{% content-ref url="antivirus-logs.md" %}
-[antivirus-logs.md](antivirus-logs.md)
+{% content-ref url="traffic-log.md" %}
+[traffic-log.md](traffic-log.md)
 {% endcontent-ref %}
 
 {% content-ref url="security-events.md" %}
