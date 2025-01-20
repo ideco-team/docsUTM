@@ -29,7 +29,7 @@ description: В разделе представлена информация о 
 * **Контроль приложений** - `ideco-app-backend`;
 * **Контент-фильтр** - `ideco-content-filter-backend`;
 * **Ограничение скорости** - `ideco-shaper-backend`;
-* **Антивирусы веб-трафика** - `ideco-av-backend`;
+* **Антивирус** - `ideco-av-backend`;
 * **Предотвращение вторжений** - `ideco-suricata-event-syncer`, `ideco-suricata-backend`;
 * **Объекты** - `ideco-alias-backend`;
 * **Сетевые интерфейсы** - `ideco-network-backend`, `ideco-network-nic`;
