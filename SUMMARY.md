@@ -6,7 +6,7 @@
 
 * [Виды и состав лицензий](general/license.md)
 * [Системные требования и источники обновления данных](general/data-update-source-utm-vpp.md)
-* [10 мифов о кошках, в которые пора перестать верить](general/e-station.md)
+* [Что такое NGFW](general/e-station.md)
 * [Техническая поддержка](general/technical-support.md)
 
 ## Быстрый старт <a href="#initial-setup" id="initial-setup"></a>
