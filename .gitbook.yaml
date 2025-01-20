@@ -62,7 +62,7 @@ redirects:
   ideco_client: ./settings/users/ideco-client/README.md
   two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
-  web_access_log: ./settings/reports/web-logs.md
+  web_traffic_log: ./settings/reports/web-traffic-log.md
   ddns: ./settings/services/dns/ddns.md 
   ald_pro: ./settings/users/ald-pro.md 
   igmp_proxy: ./settings/services/igmp.md

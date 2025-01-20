@@ -8,8 +8,8 @@
 [logs.md](logs.md)
 {% endcontent-ref %}
 
-{% content-ref url="web-logs.md" %}
-[web-logs.md](web-logs.md)
+{% content-ref url="web-traffic-log.md" %}
+[web-traffic-log.md](web-traffic-log.md)
 {% endcontent-ref %}
 
 {% content-ref url="traffic-log.md" %}
