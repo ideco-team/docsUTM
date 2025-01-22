@@ -28,6 +28,10 @@
 [reverse-proxy.md](reverse-proxy.md)
 {% endcontent-ref %}
 
+{% content-ref url="user-personal-account.md" %}
+[user-personal-account.md](user-personal-account.md)
+{% endcontent-ref %}
+
 {% content-ref url="dns/README.md" %}
 [dns/README.md](dns/README.md)
 {% endcontent-ref %}

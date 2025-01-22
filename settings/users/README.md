@@ -8,10 +8,6 @@
 [authorization/README.md](authorization/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="user-personal-account.md" %}
-[user-personal-account.md](user-personal-account.md)
-{% endcontent-ref %}
-
 {% content-ref url="authorization/vpn-connection/README.md" %}
 [authorization/vpn-connection/README.md](authorization/vpn-connection/README.md)
 {% endcontent-ref %}
