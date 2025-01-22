@@ -54,7 +54,7 @@ description: >-
 
 ![](/.gitbook/assets/initial-setup3.png)
 
-Для публикации личного кабинета пользователя воспользуйтесь [статьей](/settings/users/user-personal-account.md).
+Для публикации личного кабинета пользователя воспользуйтесь [статьей](/settings/services/user-personal-account.md).
 
 </details>
 
