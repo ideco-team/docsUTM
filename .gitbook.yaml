@@ -112,4 +112,5 @@ redirects:
   netflow: ./settings/monitor/netflow.md
   traffic_log: ./settings/reports/traffic-log.md
   usb_token: ./settings/services/usb_tokens.md
+  gost-vpn: ./settings/services/gost-vpn.md
   hardware_filtering: ./settings/access-rules/hardware-filtering.md
