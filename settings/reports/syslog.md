@@ -8,7 +8,8 @@ description: >-
 # Syslog
 
 {% hint style="success" %}
-Название службы раздела **Syslog**: `ideco-logs-backend`. \ 
+Название службы раздела **Syslog**: `ideco-logs-backend`.
+ 
 Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 
@@ -16,13 +17,13 @@ description: >-
 
 Чтобы настроить пересылку системных сообщений, перейдите в раздел **Отчеты и журналы -> Syslog** и выполните действия:
 
-1\. Укажите IP-адрес сервера-коллектора (любой локальный "серый" или публичный "белый" IP-адрес);
+1\. Укажите IP-адрес сервера-коллектора (любой локальный или публичный IP-адрес).
 
-2\. В поле **Порт** укажите любой порт из диапазона от 1 до 65535;
+2\. В поле **Порт** укажите порт, настроенный на сервере-коллекторе (в диапазоне от 1 до 65535).
 
-3\. Выберите формат передаваемых системных сообщений (Syslog или CEF);
+3\. Выберите формат передаваемых системных сообщений (Syslog или CEF).
 
-4\. Выберите протокол передачи системных логов - TCP или UDP;
+4\. Выберите протокол передачи системных логов - TCP или UDP.
 
 5\. Нажмите **Сохранить** и включите опцию Syslog:
 
@@ -34,20 +35,21 @@ description: >-
 
 ## Расшифровка передаваемых логов
 
+В статье представлены примеры сообщений (message) в форматах CEF и Syslog (скриншот из Visual Syslog server):
+
+![](/.gitbook/assets/syslog.png)
+
 ### Формат CEF
 
-Логи в CEF-формате начинаются со строки вида:
+Message в CEF-формате начинается со строки вида:
 
 {% code overflow="wrap" %}
 ``` 
-192.168.1.120 Nov 18 13:38:59 daemon warning 2024-11-18T15:38:54+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|
+2024-11-18T15:38:54+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|
 ```
 {% endcode %}
 где:
 
-* `192.168.1.120` - IP-адрес NGFW отправителя;
-* `Nov 18 13:38:59` - время получения события по Syslog;
-* `warning` - приоритет сообщения в логах. Другие значения: `info` (информационное сообщение), `notice` (уведомление);
 * `2024-11-18T15:38:54+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `CEF:0` - версия формата CEF;
@@ -62,7 +64,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.120 Nov 18 13:38:59 daemon warning 2024-11-18T15:38:54+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731926334 Severity=Warning DeviceProcessName=web-proxy DeviceCustomString1=1881087344384816 DeviceInboundInterface= DeviceProcessName=ideco-ips DeviceCustomString5=alert SourceAddress=192.168.101.25 DeviceCustomString1=local DeviceCustomString1Label=Src IP Type SourcePort=55644 SourceCountry= DeviceCustomString2= DeviceCustomString2Label=Src Country Code DeviceCustomString3=34fbd7c6-716b-4858-bb68-313729b1cad4 DeviceCustomString3Label=Src session UUID SourceUserID=9 SourceUserName=user DestinationAddress=212.70.163.70 DeviceCustomString4=external DeviceCustomString4Label=Dst IP Type DestinationPort=443 DestinationCountry=Латвия DeviceCustomString5=LV DeviceCustomString5Label=Dst Country Code DeviceCustomString6= DeviceCustomString6Label=Dst session UUID DestinationUserID=-1 DestinationUserName= TransportProtocol=TCP DeviceEventClassID=1005404 Message=GeoIP Latvia DeviceEventCategory=GeoIP Страны Восточной Европы Severity=2 DeviceCustomString8=1 DeviceCustomString8Label=Alert GID DeviceCustomString9=blocked DeviceCustomString9Label=Alert action DestinationHostName= RequestUrl= RequestClientApplication= FlexNumber1=1 FlexNumber1Label=Flow packets to server FlexNumber2=0 FlexNumber2Label=Flow packets to client BytesIn=60 BytesOut=0 StartTime=2024-11-18 10:38:54.110294 EndTime=2024-11-18 10:38:54.110969 FlexNumber3=0 FlexNumber3Label=flow DeviceCustomString11= DeviceCustomString11Label=flow.state DeviceCustomString12= DeviceCustomString12Label=flow.reason FlexNumber4=0 FlexNumber4Label=flow.alerted DeviceCustomString14= DeviceCustomString14Label=tcp.tcp_flags DeviceCustomString15= DeviceCustomString15Label=tcp.tcp_flags_ts DeviceCustomString16= DeviceCustomString16Label=tcp.tcp_flags_tc FlexNumber5=0 FlexNumber5Label=tcp.cwr FlexNumber6=0 FlexNumber6Label=tcp.ecn FlexNumber7=0 FlexNumber7Label=tcp.urg FlexNumber8=0 FlexNumber8Label=tcp.ack FlexNumber9=0 FlexNumber9Label=tcp.psh FlexNumber10=0 FlexNumber10Label=tcp.rst FlexNumber11=0 FlexNumber11Label=tcp.syn FlexNumber12=0 FlexNumber12Label=tcp.fin DeviceCustomString17= DeviceCustomString17Label=tcp.state
+2024-11-18T15:38:54+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731926334 Severity=Warning DeviceProcessName=web-proxy DeviceCustomString1=1881087344384816 DeviceInboundInterface= DeviceProcessName=ideco-ips DeviceCustomString5=alert SourceAddress=192.168.101.25 DeviceCustomString1=local DeviceCustomString1Label=Src IP Type SourcePort=55644 SourceCountry= DeviceCustomString2= DeviceCustomString2Label=Src Country Code DeviceCustomString3=34fbd7c6-716b-4858-bb68-313729b1cad4 DeviceCustomString3Label=Src session UUID SourceUserID=9 SourceUserName=user DestinationAddress=212.70.163.70 DeviceCustomString4=external DeviceCustomString4Label=Dst IP Type DestinationPort=443 DestinationCountry=Латвия DeviceCustomString5=LV DeviceCustomString5Label=Dst Country Code DeviceCustomString6= DeviceCustomString6Label=Dst session UUID DestinationUserID=-1 DestinationUserName= TransportProtocol=TCP DeviceEventClassID=1005404 Message=GeoIP Latvia DeviceEventCategory=GeoIP Страны Восточной Европы Severity=2 DeviceCustomString8=1 DeviceCustomString8Label=Alert GID DeviceCustomString9=blocked DeviceCustomString9Label=Alert action DestinationHostName= RequestUrl= RequestClientApplication= FlexNumber1=1 FlexNumber1Label=Flow packets to server FlexNumber2=0 FlexNumber2Label=Flow packets to client BytesIn=60 BytesOut=0 StartTime=2024-11-18 10:38:54.110294 EndTime=2024-11-18 10:38:54.110969 FlexNumber3=0 FlexNumber3Label=flow DeviceCustomString11= DeviceCustomString11Label=flow.state DeviceCustomString12= DeviceCustomString12Label=flow.reason FlexNumber4=0 FlexNumber4Label=flow.alerted DeviceCustomString14= DeviceCustomString14Label=tcp.tcp_flags DeviceCustomString15= DeviceCustomString15Label=tcp.tcp_flags_ts DeviceCustomString16= DeviceCustomString16Label=tcp.tcp_flags_tc FlexNumber5=0 FlexNumber5Label=tcp.cwr FlexNumber6=0 FlexNumber6Label=tcp.ecn FlexNumber7=0 FlexNumber7Label=tcp.urg FlexNumber8=0 FlexNumber8Label=tcp.ack FlexNumber9=0 FlexNumber9Label=tcp.psh FlexNumber10=0 FlexNumber10Label=tcp.rst FlexNumber11=0 FlexNumber11Label=tcp.syn FlexNumber12=0 FlexNumber12Label=tcp.fin DeviceCustomString17= DeviceCustomString17Label=tcp.state
 ```
 {% endcode %}
 где:
@@ -139,27 +141,26 @@ description: >-
 
 <summary>Файрвол</summary>
 
-Логирование включается в разделе **Правила трафика -> Файрвол -> Логирование**.
+Логирование включается в разделе **Правила трафика -> Файрвол -> Логирование**. Включите опцию **Логировать срабатывания правил**. 
 
 {% code overflow="wrap" %}
 ```
-192.168.1.120 Nov 18 14:25:06 daemon info 2024-11-18T16:25:00+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731929100 Severity=Notice DeviceProcessName=ideco-conndrop msg=tcp 6 9 CLOSE src\=192.168.101.25 dst\=151.101.85.188 sport\=58770 dport\=443 src\=151.101.85.188 dst\=192.168.1.120 sport\=443 dport\=58770 [ASSURED] mark\=2 use\=1
+2025-01-27T13:28:14+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.3|0|syslog|0|deviceReceiptTime=1737966494 Severity=Warning DeviceProcessName=ideco-nflog msg=TCP src 192.168.101.25 sport 41528 dst 74.125.131.105 dport 443 table FWD rule 2 action drop
 ```
 {% endcode %}
 где:
 
 * `deviceReceiptTime` - время события в системе NGFW, может не совпадать с временем получения события по Syslog;
-* `Severity` - важность события (Emergency, Alert', Critical, Error, Warning, Notice, Informational, Debug);
+* `Severity` - важность события (Emergency, Alert, Critical, Error, Warning, Notice, Informational, Debug);
 * `DeviceProcessName` - название службы NGFW;
-* `tcp 6` - идентификтор протокола в строчном и в десятичном виде;
-* `9` - продолжительность conntrack (модуль отслеживания соединения);
-* `CLOSE` - состояние соединения;
+* `TCP` - протокол. Это поле принимает значения: UDP, TCP, ICMP, GRE, ESP и AH;
 * `src` - IP-адрес источника;
 * `sport` - порт источника для UDP и TCP;
 * `dst` - IP-адрес назначения;
 * `dport` - порт назначения для UDP и TCP;
-* `[ASSURED]` - уведомление, что соединение не будет сброшено при перегрузке conntrack;
-* `mark`- маркировка conntrack.
+* `table` - таблица правил, в которой произошло логирование;
+* `rule` - ID правила из таблицы;
+* `action` - действие, которое произошло.
 
 </details>
 
@@ -169,7 +170,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.150 Dec 02 18:40:20 daemon info 2024-12-02T20:40:13+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.2|0|syslog|0|deviceReceiptTime=1733154013 Severity=Notice DeviceProcessName=ideco-app-stats msg=192.168.101.25:37030 -> 192.168.101.10:53 [eBay] \= DROP
+2024-12-02T20:40:13+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.2|0|syslog|0|deviceReceiptTime=1733154013 Severity=Notice DeviceProcessName=ideco-app-stats msg=192.168.101.25:37030 -> 192.168.101.10:53 [eBay] \= DROP
 ```
 {% endcode %}
 
@@ -193,7 +194,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:56:45 daemon info 2024-11-18T19:56:41+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731941801 Severity=Notice DeviceProcessName=squid msg={10.128.0.5 - - [18/Nov/2024:19:56:41 +0500] "GET http://counter.yadro.ru/hit;argon? HTTP/1.1" 403 7594 "http://argon.pro/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" TCP_MISS:ORIGINAL_DST "-","av_name": "-","av_object_infected": "-","av_object_size": "7250","av_virus_name": "-","x_infection_found": "-","x_virus_id": "-","x_av_verifed": "-","morph-action": "CheckedOK","morph-dict-id": "-"}
+2024-11-18T19:56:41+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731941801 Severity=Notice DeviceProcessName=squid msg={10.128.0.5 - - [18/Nov/2024:19:56:41 +0500] "GET http://counter.yadro.ru/hit;argon? HTTP/1.1" 403 7594 "http://argon.pro/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" TCP_MISS:ORIGINAL_DST "-","av_name": "-","av_object_infected": "-","av_object_size": "7250","av_virus_name": "-","x_infection_found": "-","x_virus_id": "-","x_av_verifed": "-","morph-action": "CheckedOK","morph-dict-id": "-"}
 ```
 {% endcode %}
 
@@ -206,7 +207,7 @@ description: >-
 * `http://counter.yadro.ru/hit;argon?` - URL заблокированного ресурса;
 * `HTTP/1.1` - протокол;
 * `403` - код состояния HTTP;
-* `7594` - передано байт (в ответ, включая HTTP заголовок);
+* `7594` - передано байт (в ответ, включая HTTP-заголовок);
 * `http://argon.pro/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
 * `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0` - цифровой отпечаток браузера; 
 * `TCP_MISS:ORIGINAL_DST` - техническое сообщение от [squid](http://wiki.squid-cache.org/SquidFaq/SquidLogs#Squid_result_codes);
@@ -262,7 +263,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.120 Nov 18 12:54:36 daemon info 2024-11-18T14:54:21+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731923661 Severity=Notice DeviceProcessName=ideco-web-authd msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'web'.
+2024-11-18T14:54:21+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731923661 Severity=Notice DeviceProcessName=ideco-web-authd msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'web'.
 ```
 {% endcode %}
 
@@ -280,7 +281,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 16:51:54 daemon info 2024-11-18T18:51:43+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731937903 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'ip'.
+2024-11-18T18:51:43+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731937903 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'ip'.
 ```
 {% endcode %}
 
@@ -298,7 +299,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 16:54:35 daemon info 2024-11-18T18:54:21+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731938061 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'mac'.
+2024-11-18T18:54:21+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731938061 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'mac'.
 ```
 {% endcode %}
 
@@ -316,7 +317,7 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:08:03 daemon info 2024-11-18T19:07:54+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731938874 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
+2024-11-18T19:07:54+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731938874 Severity=Notice DeviceProcessName=ideco-auth-backend msg=Subnet 192.168.101.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
 ```
 {% endcode %}
 
@@ -335,8 +336,8 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:16:25 daemon info 2024-11-18T19:16:18+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731939378 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Start vpn authorization ('user', '192.168.1.25', 'pptp').
-192.168.1.10 Nov 18 17:16:25 daemon info 2024-11-18T19:16:18+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731939378 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Subnet 10.128.0.6/32 is authorized as user 'user'. Connection made from '192.168.1.25', type 'pptp'.
+2024-11-18T19:16:18+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731939378 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Start vpn authorization ('user', '192.168.1.25', 'pptp').
+2024-11-18T19:16:18+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731939378 Severity=Notice DeviceProcessName=ideco-vpn-authd msg=Subnet 10.128.0.6/32 is authorized as user 'user'. Connection made from '192.168.1.25', type 'pptp'.
 ```
 {% endcode %}
 
@@ -356,8 +357,8 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:27:07 daemon info 2024-11-18T19:26:57+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731940017 Severity=Notice DeviceProcessName=fail2ban msg=INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-18 19:26:57
-192.168.1.10 Nov 18 17:27:07 daemon notice 2024-11-18T19:26:57+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731940017 Severity=Warning DeviceProcessName=fail2ban msg=NOTICE [utm-vpn-authd] Ban 192.168.1.25
+2024-11-18T19:26:57+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731940017 Severity=Notice DeviceProcessName=fail2ban msg=INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-18 19:26:57
+2024-11-18T19:26:57+05:00 ngfw-18 CEF:0|Ideco|NGFW|18.0|0|syslog|0|deviceReceiptTime=1731940017 Severity=Warning DeviceProcessName=fail2ban msg=NOTICE [utm-vpn-authd] Ban 192.168.1.25
 ```
 {% endcode %}
 
@@ -388,30 +389,19 @@ description: >-
 
 ### Формат Syslog
 
-Логи в Syslog-формате начинаются со строки вида:
-
-{% code overflow="wrap" %}
-``` 
-192.168.1.120 Nov 18 13:40:24 1 daemon warning 2024-11-18T15:40:12+05:00
-```
-{% endcode %}
-где:
-
-* `192.168.1.120` - IP-адрес NGFW отправителя;
-* `Nov 18 13:40:24` - время получения события по Syslog;
-* `warning` - приоритет сообщения в логах. Другие значения: `info` (информационное сообщение), `notice` (уведомление);
-* `2024-11-18T15:40:12+05:00` - время события в Ideco NGFW.
+Message в Syslog-формате:
 
 <details>
 <summary>Предотвращение вторжений</summary>
 
 {% code overflow="wrap" %}
 ```
-192.168.1.120 Nov 18 13:40:24 1 daemon warning 2024-11-18T15:40:12+05:00 ngfw-18 suricata - - - flow_id:1344232018329395, in_iface:, sensor_name:ideco-ips, event_type:alert, src_ip:192.168.101.25, src_ip_type:local, src_port:40632, src_country:, src_country_code:, src_session_uuid:34fbd7c6-716b-4858-bb68-313729b1cad4, src_user_id:9, src_user_name:user, dest_ip:212.70.163.70, dest_ip_type:external, dest_port:443, dest_country:Латвия, dest_country_code:LV, dest_session_uuid:, dest_user_id:-1, dest_user_name:, proto:TCP, alert.signature_id:1005404, alert.signature:GeoIP Latvia, alert.category:GeoIP Страны Восточной Европы, alert.severity:2, alert.gid:1, alert.action:blocked, http.hostname:, http.url:, http.http_user_agent:, flow.pkts_toserver:1, flow.pkts_toclient:0, flow.bytes_toserver:60, flow.bytes_toclient:0, flow.start:2024-11-18 10:40:12.378514, flow.end:2024-11-18 10:40:12.379198, flow.age:0, flow.state:, flow.reason:, flow.alerted:0, tcp.tcp_flags:, tcp.tcp_flags_ts:, tcp.tcp_flags_tc:, tcp.cwr:0, tcp.ecn:0, tcp.urg:0, tcp.ack:0, tcp.psh:0, tcp.rst:0, tcp.syn:0, tcp.fin:0, tcp.state:
+2024-11-18T15:40:12+05:00 ngfw-18 suricata - - - flow_id:1344232018329395, in_iface:, sensor_name:ideco-ips, event_type:alert, src_ip:192.168.101.25, src_ip_type:local, src_port:40632, src_country:, src_country_code:, src_session_uuid:34fbd7c6-716b-4858-bb68-313729b1cad4, src_user_id:9, src_user_name:user, dest_ip:212.70.163.70, dest_ip_type:external, dest_port:443, dest_country:Латвия, dest_country_code:LV, dest_session_uuid:, dest_user_id:-1, dest_user_name:, proto:TCP, alert.signature_id:1005404, alert.signature:GeoIP Latvia, alert.category:GeoIP Страны Восточной Европы, alert.severity:2, alert.gid:1, alert.action:blocked, http.hostname:, http.url:, http.http_user_agent:, flow.pkts_toserver:1, flow.pkts_toclient:0, flow.bytes_toserver:60, flow.bytes_toclient:0, flow.start:2024-11-18 10:40:12.378514, flow.end:2024-11-18 10:40:12.379198, flow.age:0, flow.state:, flow.reason:, flow.alerted:0, tcp.tcp_flags:, tcp.tcp_flags_ts:, tcp.tcp_flags_tc:, tcp.cwr:0, tcp.ecn:0, tcp.urg:0, tcp.ack:0, tcp.psh:0, tcp.rst:0, tcp.syn:0, tcp.fin:0, tcp.state:
 ```
 {% endcode %}
 
 где:
+* `2024-11-18T15:40:12+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `suricata` - название службы;
 * `flow_id:1344232018329395` - внутренний идентификатор системы предотвращения вторжений flow (сессии);
@@ -480,25 +470,25 @@ description: >-
 
 <summary>Файрвол</summary>
 
-Логирование включается в разделе **Правила трафика -> Файрвол -> Логирование**.
+Логирование включается в разделе **Правила трафика -> Файрвол -> Логирование**. Включите опцию **Логировать срабатывания правил**. 
 
 {% code overflow="wrap" %}
 ```
-192.168.1.120	Nov 18 13:55:07	1 daemon info 2024-11-18T15:55:00+05:00 ngfw-18 ideco-conndrop - - - tcp 6 7 CLOSE src=192.168.101.25 dst=151.101.236.157 sport=34802 dport=443 src=151.101.236.157 dst=192.168.1.120 sport=443 dport=34802 [ASSURED] mark=2 use=1
+2025-01-27T13:33:19+05:00 ngfw-18 ideco-nflog - - - TCP src 192.168.101.25 sport 54186 dst 64.233.164.105 dport 443 table FWD rule 2 action drop
 ```
 {% endcode %}
 
+* `2025-01-27T13:33:19+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
-* `ideco-conndrop` - название службы;
-* `tcp 6` - идентификтор протокола в строчном и в десятичном виде;
-* `9` - продолжительность conntrack (модуль отслеживания соединения);
-* `CLOSE` - состояние соединения;
+* `ideco-nflog` - название службы;
+* `TCP` - протокол. Это поле принимает значения: UDP, TCP, ICMP, GRE, ESP и AH;
 * `src` - IP-адрес источника;
-* `dst` - IP-адрес назначения;
 * `sport` - порт источника для UDP и TCP;
+* `dst` - IP-адрес назначения;
 * `dport` - порт назначения для UDP и TCP;
-* `[ASSURED]` - уведомление, что соединение не будет сброшено при перегрузке conntrack;
-* `mark`- маркировка conntrack.
+* `table` - таблица правил, в которой произошло логирование;
+* `rule` - ID правила из таблицы;
+* `action` - действие, которое произошло.
 
 </details>
 
@@ -508,10 +498,11 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.150 Dec 02 18:38:54 1 daemon info 2024-12-02T20:38:38+05:00 ngfw-18 ideco-app-stats - - - 192.168.101.25:56854 -> 192.168.101.10:53 [eBay] = DROP
+2024-12-02T20:38:38+05:00 ngfw-18 ideco-app-stats - - - 192.168.101.25:56854 -> 192.168.101.10:53 [eBay] = DROP
 ```
 {% endcode %}
 
+* `2024-12-02T20:38:38+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-app-stats` - название службы;
 * `192.168.101.25:56854` - IP-адрес и порт источника;
@@ -531,10 +522,11 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:50:05 1 daemon info 2024-11-18T19:49:58+05:00 ngfw-18 squid - - - {10.128.0.6 - - [18/Nov/2024:19:49:58 +0500] "GET http://counter.yadro.ru/hit;argon? HTTP/1.1" 403 7594 "http://argon.pro/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" TCP_MISS:ORIGINAL_DST "-","av_name": "-","av_object_infected": "-","av_object_size": "7250","av_virus_name": "-","x_infection_found": "-","x_virus_id": "-","x_av_verifed": "-","morph-action": "CheckedOK","morph-dict-id": "-"}
+2024-11-18T19:49:58+05:00 ngfw-18 squid - - - {10.128.0.6 - - [18/Nov/2024:19:49:58 +0500] "GET http://counter.yadro.ru/hit;argon? HTTP/1.1" 403 7594 "http://argon.pro/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" TCP_MISS:ORIGINAL_DST "-","av_name": "-","av_object_infected": "-","av_object_size": "7250","av_virus_name": "-","x_infection_found": "-","x_virus_id": "-","x_av_verifed": "-","morph-action": "CheckedOK","morph-dict-id": "-"}
 ```
 {% endcode %}
 
+* `2024-11-18T19:49:58+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `squid` - название службы;
 * `10.128.0.6` - IP-адрес пользователя;
@@ -543,7 +535,7 @@ description: >-
 * `http://counter.yadro.ru/hit;argon?` - URL заблокированного ресурса;
 * `HTTP/1.1` - протокол;
 * `403` - код состояния HTTP;
-* `7594` - передано байт (в ответ, включая HTTP заголовок);
+* `7594` - передано байт (в ответ, включая HTTP-заголовок);
 * `http://argon.pro/` - [HTTP referer](https://ru.wikipedia.org/wiki/HTTP_referer);
 * `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0` - цифровой отпечаток браузера; 
 * `TCP_MISS:ORIGINAL_DST` - техническое сообщение от [squid](http://wiki.squid-cache.org/SquidFaq/SquidLogs#Squid_result_codes);
@@ -566,6 +558,7 @@ description: >-
 ```
 {% endcode %}
 
+* `2024-07-18T16:59:55+05:00` - время события в Ideco NGFW;
 * `Ideco-NGFW` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-web-authd` - название службы;
 * `192.168.205.254/32` - IP-адрес пользователя;
@@ -583,6 +576,7 @@ description: >-
 ```
 {% endcode %}
 
+* `2024-07-18T16:19:39+05:00` - время события в Ideco NGFW;
 * `Ideco-NGFW` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-auth-backend` - название службы;
 * `192.168.205.254/32` - IP-адрес пользователя;
@@ -596,10 +590,11 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.120 Nov 18 12:47:27 1 daemon info 2024-11-18T14:47:11+05:00 ngfw-18 ideco-web-authd - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'web'.
+2024-11-18T14:47:11+05:00 ngfw-18 ideco-web-authd - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'web'.
 ```
 {% endcode %}
 
+* `2024-11-18T14:47:11+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-web-authd` - название службы;
 * `192.168.101.25/32` - IP-адрес пользователя;
@@ -613,10 +608,11 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 16:42:56 1 daemon info 2024-11-18T18:42:45+05:00 ngfw-18 ideco-auth-backend - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'ip'.
+2024-11-18T18:42:45+05:00 ngfw-18 ideco-auth-backend - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'ip'.
 ```
 {% endcode %}
 
+* `2024-11-18T18:42:45+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-web-authd` - название службы;
 * `192.168.101.25/32` - IP-адрес пользователя;
@@ -630,10 +626,11 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:01:22 1 daemon info 2024-11-18T19:01:14+05:00 ngfw-18 ideco-auth-backend - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'mac'.
+2024-11-18T19:01:14+05:00 ngfw-18 ideco-auth-backend - - - Subnet 192.168.101.25/32 is authorized as user 'user'. Connection made from None, type 'mac'.
 ```
 {% endcode %}
 
+* `2024-11-18T19:01:14+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-auth-backend` - название службы;
 * `192.168.101.25/32` - IP-адрес пользователя;
@@ -647,10 +644,11 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:06:23 1 daemon info 2024-11-18T19:06:08+05:00 ngfw-18 ideco-auth-backend - - - Subnet 192.168.101.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
+2024-11-18T19:06:08+05:00 ngfw-18 ideco-auth-backend - - - Subnet 192.168.101.0/24 is authorized as user 'user'. Connection made from None, type 'net'.
 ```
 {% endcode %}
 
+* `2024-11-18T19:06:08+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-auth-backend` - название службы;
 * `192.168.101.0/24` - подсеть пользователя;
@@ -665,11 +663,12 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:18:04 1 daemon info 2024-11-18T19:17:56+05:00 ngfw-18 ideco-vpn-authd - - - Start vpn authorization ('user', '192.168.1.25', 'pptp').
-192.168.1.10 Nov 18 17:18:04 1 daemon info 2024-11-18T19:17:56+05:00 ngfw-18 ideco-vpn-authd - - - Subnet 10.128.0.5/32 is authorized as user 'user'. Connection made from '192.168.1.25', type 'pptp'.
+2024-11-18T19:17:56+05:00 ngfw-18 ideco-vpn-authd - - - Start vpn authorization ('user', '192.168.1.25', 'pptp').
+2024-11-18T19:17:56+05:00 ngfw-18 ideco-vpn-authd - - - Subnet 10.128.0.5/32 is authorized as user 'user'. Connection made from '192.168.1.25', type 'pptp'.
 ```
 {% endcode %}
 
+* `2024-11-18T19:17:56+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `ideco-vpn-authd` - название службы;
 * `10.128.0.5/32` - сеть для VPN-подключений;
@@ -685,11 +684,12 @@ description: >-
 
 {% code overflow="wrap" %}
 ```
-192.168.1.10 Nov 18 17:22:05 1 daemon info 2024-11-18T19:21:54+05:00 ngfw-18 fail2ban - - - INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-18 19:21:54
+2024-11-18T19:21:54+05:00 ngfw-18 fail2ban - - - INFO [utm-vpn-authd] Found 192.168.1.25 - 2024-11-18 19:21:54
 
 ```
 {% endcode %}
 
+* `2024-11-18T19:21:54+05:00` - время события в Ideco NGFW;
 * `ngfw-18` - hostname сервера NGFW, заданный в левом верхнем углу веб-интерфейса;
 * `fail2ban` - название службы;
 * `info` или `notice` - приоритет сообщения в логах в виде информационного сообщения или уведомления;
