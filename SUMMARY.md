@@ -186,6 +186,7 @@
   * [Настройка публичного IP-адреса на компьютере в локальной сети](settings/publishing-resources/configure-public-ip-on-computer-on-the-local-net.md)
   * [Портмаппинг (проброс портов, DNAT)](settings/publishing-resources/portmapping.md)
 * [Интеграция NGFW и SkyDNS](settings/skydns.md)
+* [Полный цикл обработки трафика в Ideco NGFW](settings/traffic-path.md)
 
 ## Настройка MY.IDECO <a href="#settings-my" id="settings-my"></a>
 
