@@ -115,3 +115,4 @@ redirects:
   tokens: ./settings/services/usb_tokens.md
   gost-vpn: ./settings/services/gost-vpn.md
   hardware_filtering: ./settings/access-rules/hardware-filtering.md
+  personal_account_auth_log: ./settings/reports/personal-account-auth-log.md
