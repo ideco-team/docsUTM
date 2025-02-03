@@ -150,6 +150,7 @@
   * [События безопасности](settings/reports/security-events.md)
   * [Действия администраторов](settings/reports/administrator-actions.md)
   * [Журнал авторизации](settings/reports/authorization-log.md)
+  * [Журнал авторизации ЛК](settings/reports/personal-account-auth-log.md)
   * [Конструктор отчетов](settings/reports/report-designer.md)
   * [Syslog](settings/reports/syslog.md)
 * [Управление сервером](settings/server-management/README.md)
