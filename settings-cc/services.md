@@ -61,3 +61,9 @@
 {% hint style="success" %}
 На Ideco Center можно загрузить самоподписанные сертификаты, созданные в [PowerShell](/settings/services/certificates/creating-ssl-sert-powershell.md) или [OpenSSL](/settings/services/certificates/creating-openssl-cert.md).
 {% endhint %}
+
+### Системные сертификаты 
+
+Раздел позволяет загружать свои сертификаты в хранилище доверенных сертификатов OC Fedora на Ideco Center. Подробнее о системных сертификатах - по [ссылке](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/). После добавления сертификата в таблицу **Системные сертификаты** Ideco Center будет доверять загруженному сертификату и всем сертификатам, подписанным загруженным сертификатом:
+
+![](/.gitbook/assets/cc-certs3.png)
