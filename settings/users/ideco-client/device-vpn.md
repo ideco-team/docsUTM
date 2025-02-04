@@ -27,7 +27,7 @@
 
 6\. Установите Ideco Client на устройство пользователя ([Windows](/settings/users/ideco-client/ideco-client-windows.md), [Linux](/settings/users/ideco-client/ideco-client-linux.md), [MacOS](/settings/users/ideco-client/ideco-client-macos.md)).
 
-7\. Загрузите на устройство пользователя сертификат с расширением .pem, который содержит приватный ключ и подписан доверенным сертификатом. Процесс создания сертификата описан в статье [Создание сертификатов для Device VPN](/settings/users/ideco-client/device-vpn/device-vpn-cert.md).
+7\. Загрузите на устройство пользователя сертификат с расширением .pem, который содержит приватный ключ и подписан доверенным сертификатом. Процесс создания сертификата описан в статье [Создание сертификатов для Device VPN](/settings/users/ideco-client/device-vpn-cert.md).
 
 {% hint style="danger" %}
 Рекомендуем для безопасности хранить сертификаты в директориях, к которым есть доступ только у администратора. Например:
