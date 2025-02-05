@@ -74,17 +74,40 @@
 
 ## Управление RADIUS-администраторами
 
-{% hint style="info" %}
-В Ideco NGFW используется **Vendor Code** - 39410, для авторизации через RADIUS необходимо указать атрибуты 30 и 31, в которых передавать ID роли и ФИО администратора соответственно. 
+### Особенности настройки RADIUS-сервера
+
+В Ideco NGFW используется **Vendor Code** 39410. Для авторизации через RADIUS укажите атрибуты: 
+
+```
+ATTRIBUTE   Ideco-Administrator-Role    	30  string
+ATTRIBUTE   Ideco-Administrator-Name    	31  string
+```
+
+`Ideco-Administrator-Role` обязателен для авторизации, а `Ideco-Administrator-Name` опционален. Атрибуты передают ID роли и ФИО администратора соответственно.
 
 Чтобы узнать ID роли RADIUS-администратора:
 
 1\. Перейдите в раздел **Управление сервером -> Администраторы -> Роли**;
 
 2\. Нажмите на **Отображение** и включите столбец ID. ID роли появится в левом столбце таблицы.
-{% endhint %}
 
-Для интеграции администраторов RADIUS с Ideco NGFW выполните действия:
+<details>
+
+<summary>ID роли администраторов</summary>
+
+* `predefined_admin_write` - Администратор;
+* `predefined_admin_readonly` - Только просмотр;
+* `predefined_security_admin` - Администратор информационной безопасности;
+* `predefined_firewall_admin` - Администратор файрвола;
+* `predefined_access_settings_admin` - Администратор настройки доступов;
+* `predefined_reports_view` - Просмотр отчетов;
+* `predefined_reports_change` - Создание отчетов.
+
+</details>
+
+### Интеграция администраторов RADIUS с Ideco NGFW
+
+Выполните действия:
 
 1\. Перейдите в раздел **Управление сервером -> Администраторы**, на вкладку **RADIUS** и включите опцию **Интеграция с RADIUS-сервером**.
 
