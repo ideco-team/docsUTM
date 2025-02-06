@@ -17,7 +17,7 @@ description: >-
 * [x] Защита от ботнетов, фишинга и spyware
 * [x] VPN  (site-to-site и client-to-site (с 2FA), протоколы IKEv2/IPSec, L2TP/IPSec, SSTP, WireGuard)
 * [x] Логирование действий администратора
-* [x] Управление через Центральную консоль 
+* [x] Управление через Ideco Center
 * [x] Отчетность по трафику пользователей и событиям безопасности
 * [x] Интеграция с Microsoft Active Directory, ALD Pro, Samba DC, SIEM и DLP-системами
 

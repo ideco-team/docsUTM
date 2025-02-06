@@ -1,7 +1,7 @@
 # Об Ideco Center
 
 {% hint style="success" %}
-Название службы раздела **Центральная консоль**: `ideco-central-console-backend`. \
+Название службы раздела **Ideco Center**: `ideco-central-console-backend`. \
 Список служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
 {% endhint %}
 

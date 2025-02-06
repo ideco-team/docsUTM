@@ -1,10 +1,10 @@
-  # Центральная консоль
+  # Управление Ideco Center
 
 {% hint style="info" %}
 Длина комментариев (`comment`) при API-запросах ограничена 255 символами.
 {% endhint %}
 
-## Настройки Центральной консоли в Ideco NGFW
+## Настройки Ideco Center в Ideco NGFW
 
 <details>
 <summary>Получение настроек Ideco Center</summary>
@@ -24,7 +24,7 @@ GET /central_console/settings
 }
 ```
 
-* `cc_server` - доменное имя или IP-адрес центральной консоли;
+* `cc_server` - доменное имя или IP-адрес Ideco Center;
 * `last_connect` - timestamp последней успешной синхронизации данных;
 * `last_sync` - timestamp;
 * `root_ca` - корневой сертификат в формате PEM.
@@ -46,7 +46,7 @@ PATCH /central_console/settings
 }
 ```
 
-* `cc_server` - доменное имя или IP-адрес центральной консоли.
+* `cc_server` - доменное имя или IP-адрес Ideco Center.
 
 </details>
 
@@ -530,7 +530,7 @@ PUT /content-filter/users_categories/<id категории>
 
 * `GET /content-filter/rules/before?groups=[UUID1,UUID2]` - начальные правила;
 * `GET /content-filter/rules/after?groups=[UUID1,UUID2]` - конечные правила.
-  * `UUID1` - идентификатор группы серверов в Центральной консоли (`id`).
+  * `UUID1` - идентификатор группы серверов в Ideco Center (`id`).
 
 **Ответ на успешный запрос:**
 
