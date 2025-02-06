@@ -41,7 +41,7 @@ description: В разделе представлена информация о 
 * **DHCP** - `ideco-dhclient`, `ideco-dhcp-server-backend`;
 * **NTP** - `chronyd`;
 * **IPsec** - `ideco-ipsec-backend`;
-* **Центральная консоль** - `ideco-central-console-backend`;
+* **Ideco Center** - `ideco-central-console-backend`;
 * **VCE** - `ideco-vce-backend`;
 * **Кластеризация** - `ideco-cluster-backend`;
 * **Обновления** - `ideco-sysupdate-backend`;

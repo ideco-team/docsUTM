@@ -1,7 +1,7 @@
 # Управление правилами трафика
 
 {% hint style="info" %}
-API правил трафика Ideco Center описано в статье [Центральная консоль](/api/cc-api.md).
+API правил трафика Ideco Center описано в статье [Управление Ideco Center](/api/cc-api.md).
 {% endhint %}
 
 {% hint style="info" %}
