@@ -50,6 +50,7 @@
     * [Установка и настройка Ideco Client на Linux](settings/users/ideco-client/ideco-client-linux.md)
     * [Настройка Device VPN](settings/users/ideco-client/device-vpn.md)
     * [Создание сертификатов для Device VPN](settings/users/ideco-client/device-vpn-cert.md)
+    * [Балансировка VPN-подключений](settings/users/ideco-client/balancing-vpn.md)
   * [Профили устройств](settings/users/hip-profiles.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
     * [Ввод сервера в домен](settings/users/active-directory/entering-the-server-into-the-domain.md)
