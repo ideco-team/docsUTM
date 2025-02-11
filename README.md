@@ -15,7 +15,7 @@ description: >-
 * [x] Контроль приложений
 * [x] Многоуровневая антивирусная и антиспам-проверка трафика
 * [x] Защита от ботнетов, фишинга и spyware
-* [x] VPN  (site-to-site и client-to-site (с 2FA), протоколы IKEv2/IPSec, L2TP/IPSec, SSTP, WireGuard)
+* [x] VPN site-to-site (GRE, IPSec) и client-to-site (IKEv2/IPSec, L2TP/IPSec, SSTP, Wireguard) с 2FA
 * [x] Логирование действий администратора
 * [x] Управление через Ideco Center
 * [x] Отчетность по трафику пользователей и событиям безопасности
