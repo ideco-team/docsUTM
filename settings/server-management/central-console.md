@@ -24,10 +24,6 @@ Ideco Center - это центральная консоль, которая по
 
 {% endhint %}
 
-<details>
-
-<summary>Подключение Ideco NGFW к Ideco Center</summary>
-
 1\. Перейдите в раздел **Управление сервером -> Ideco Center**.
 
 2\. Введите IP-адрес или доменное имя в строке **Адрес сервера** и нажмите **Подключить**:
@@ -44,11 +40,14 @@ Ideco Center - это центральная консоль, которая по
 
 ![](/.gitbook/assets/servers4.png)
 
-
-</details>
-
 **Для удаления сервера Ideco NGFW из Ideco Center разорвите привязку в интерфейсе Ideco Center:**
 
 ![](/.gitbook/assets/servers.gif)
+
+## Настройка просмотра логов
+
+Для отображения логов Ideco NGFW в разделе **[Отчеты и журналы](/settings-cc/reports.md)** Ideco Center необходимо включить опцию **Отправлять журналы на Ideco Center**:
+
+![](/.gitbook/assets/cc-logs2.png)
 
 <!-- Для этого в таблице **Серверы** в столбце **Управление** напротив нужного сервера выберите ![](/.gitbook/assets/icon-delete1.png) и подтвердите выбор. -->
