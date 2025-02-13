@@ -50,18 +50,6 @@ description: Описание создания и использования п�
 
 После обновления Ideco Center на 18 версию правила, синхронизированные из Ideco Center в **Правила трафика -> Контроль приложений**, будут доступны только для просмотра и не будут влиять на обработку трафика в подключенных NGFW.
 
-{% content-ref url="profile-creation.md" %}
-[profile-creation.md](profile-creation.md)
-{% endcontent-ref %}
-
-{% content-ref url="structure.md" %}
-[structure.md](structure.md)
-{% endcontent-ref %}
-
-{% content-ref url="no-rules.md" %}
-[no-rules.md](no-rules.md)
-{% endcontent-ref %}
-
 <details>
 <summary>Перечень доступных на вкладке Доступ к приложениям групп приложений и протоколов</summary>
 
@@ -1364,3 +1352,21 @@ description: Описание создания и использования п�
  Протокол ZUG является частью консенсусной модели Casper 2.0.
  
 </details>
+
+## Полезные ссылки
+
+{% content-ref url="profile-creation.md" %}
+[profile-creation.md](profile-creation.md)
+{% endcontent-ref %}
+
+{% content-ref url="structure.md" %}
+[structure.md](structure.md)
+{% endcontent-ref %}
+
+{% content-ref url="no-rules.md" %}
+[no-rules.md](no-rules.md)
+{% endcontent-ref %}
+
+{% content-ref url="/recipes/popular-recipes/allow-access.md" %}
+[/recipes/popular-recipes/allow-access.md](/recipes/popular-recipes/allow-access.md)
+{% endcontent-ref %}
