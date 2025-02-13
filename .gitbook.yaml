@@ -35,7 +35,7 @@ redirects:
   server_update: ./settings/server-management/server-update.md
   snmp: ./settings/monitor/snmp.md
   shaper: ./settings/access-rules/shaper.md
-  support: ./general/remote-assistant.md
+  support: ./recipes/popular-recipes/remote-assistant.md
   syslog: ./settings/reports/syslog.md
   telegram_bot: ./settings/monitor/telegram-bot.md 
   terminal: ./settings/server-management/terminal/README.md
