@@ -87,3 +87,7 @@ description: >-
 {% content-ref url="no-rules.md" %}
 [no-rules.md](no-rules.md)
 {% endcontent-ref %}
+
+{% content-ref url="/recipes/popular-recipes/allow-access.md" %}
+[/recipes/popular-recipes/allow-access.md](/recipes/popular-recipes/allow-access.md)
+{% endcontent-ref %}

@@ -206,6 +206,7 @@
   * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
   * [Настройка LACP на Hyper-V](recipes/popular-recipes/lacp-hyperpv.md)
   * [Разрешить интернет всем: диагностика неполадок](recipes/popular-recipes/allow-internet-all.md)
+  * [Как разрешить доступ к ресурсам в ограниченной сети](recipes/popular-recipes/allow-access.md)
   * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
   * [Тестирование оперативной памяти сервера](recipes/popular-recipes/memory-testing.md)
   * [Как избавиться от асимметричной маршрутизации трафика](recipes/popular-recipes/access-to-remote-networks.md)
