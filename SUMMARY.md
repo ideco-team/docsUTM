@@ -89,5 +89,5 @@
 
 ## changelog
 
-* [Ideco NGFW VPP 17.X](changelog/vpp/README.md)
+* [Ideco NGFW VPP 18.X](changelog/vpp/README.md)
 * [ФСТЭК Ideco UTM 16.X](changelog/fstek/README.md)
