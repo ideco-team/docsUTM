@@ -1,32 +1,31 @@
 ---
 description: >-
-  Межсетевой экран Ideco NGFW - современное программное решение для защиты
-  сетевого периметра, которое позволяет сделать доступ в интернет абсолютно
-  управляемым, безопасным и надежным.
+  Проблемы, которые возникли на текущий момент, и как эти проблемы были решены.
+  Предложения по улучшению.
 ---
 
-# Об Ideco NGFW
+# Тест
 
-## Возможности Ideco NGFW:
+#### [Перемещение виртуалки с локального компьютера на сервер](https://technical-writer.outline.ideco.dev/doc/rabota-s-serverom-virtualizacii-WK6jyMjtYS#h-peremeshenie-virtualki-s-lokal%D1%8Cnogo-komp%D1%8Cyutera-na-server)
 
-* [x] Межсетевой экран
-* [x] Система предотвращения вторжений
-* [x] Контент-фильтр
-* [x] Контроль приложений
-* [x] Многоуровневая антивирусная и антиспам-проверка трафика
-* [x] Защита от ботнетов, фишинга и spyware
-* [x] VPN site-to-site (GRE, IPSec) и client-to-site (IKEv2/IPSec, L2TP/IPSec, SSTP, Wireguard) с 2FA
-* [x] Логирование действий администратора
-* [x] Управление через Центральную консоль 
-* [x] Отчетность по трафику пользователей и событиям безопасности
-* [x] Интеграция с Microsoft Active Directory, ALD Pro, Samba DC, SIEM и DLP-системами
+До 5 шага все понятно. Далее на 6м шаге - желательно в связи с удалением диска сделать скрин проверки, как должны выглядеть окончательные параметры виртуалки
 
-И это далеко не полный список возможностей и сервисов Ideco NGFW, которые позволяют создать надежный барьер для защиты локальной сети от современных угроз безопасности.
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Техническое описание Ideco NGFW доступно по [ссылке](https://ideco.ru/mezhsetevoj-ekran-ideco-utm).
+После этого появляются вопросы:\
+1\. Где смотреть путь диска?\
+2\. Где мне нужно написать эти команды?
 
-Online-документация актуальна для версий Ideco UTM начиная с 7.9 и Ideco NGFW с 16.0 (выбрать нужную версию можно в верхней части меню).
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Скачать Ideco NGFW можно в [личном кабинете](https://my.ideco.ru/#/login).
+| Тест | Таблицы |
+| ---- | ------- |
+|      |         |
+|      |         |
 
-Видеодокументация доступна на нашем [YouTube-канале](https://www.youtube.com/playlist?list=PLQJTQf4Vb3wD2bhYMhsdbgMXk4PnSfY10).
+{% hint style="info" %}
+Тест цветной сноски
+{% endhint %}
+
+<figure><img src=".gitbook/assets/Анимация.gif" alt=""><figcaption></figcaption></figure>
+
