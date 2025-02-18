@@ -45,7 +45,7 @@
 
 ## device\_detection
 
-* [Обнаружение устройств](../settings/services/device-discovery.md)
+* [Обнаружение устройств](../settings/users/device-discovery.md)
 
 ## dhcp
 
