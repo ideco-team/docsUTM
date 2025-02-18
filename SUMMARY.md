@@ -131,7 +131,6 @@
     * [Подключение между двумя Ideco NGFW в транспортном режиме работы](settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md)
     * [Подключение Ideco NGFW и Mikrotik](settings/services/ipsec/site-to-site/site-to-site-ideco-mikrotik.md)
     * [Подключение MikroTik и Ideco NGFW по L2TP/IPsec](settings/services/ipsec/site-to-site/utm-to-mikrotik-vpn.md)
-    * [Подключение Cisco IOS и Ideco NGFW](settings/services/ipsec/site-to-site/connect-utm-to-cisco-via-ipsec.md)
     * [Подключение pfSense к Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-pfsense-to-utm.md)
     * [Подключение Kerio Control и Ideco NGFW по IPsec](settings/services/ipsec/site-to-site/ipsec-connection-kerio-control-to-utm.md)
     * [Подключение Keenetic по SSTP или IPsec](settings/services/ipsec/site-to-site/keenetic-connection.md)
