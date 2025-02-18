@@ -1,13 +1,7 @@
 ---
-title: Защита от brute-force атак
 description: >-
   Интегрированный модуль fail2ban блокирует попытки злоумышленников подобрать
   пароль к сервисам SSH, веб-интерфейсу администратора, VPN-подключениям.
-published: true
-date: '2021-04-22T09:34:48.843Z'
-tags: null
-editor: markdown
-dateCreated: '2021-04-02T07:24:16.788Z'
 ---
 
 # Защита от brute-force атак
@@ -18,11 +12,11 @@ dateCreated: '2021-04-02T07:24:16.788Z'
 
 Посмотреть логи работы службы можно в веб-интерфейсе во вкладке **Мониторинг -&gt; Журналы -&gt; Служба защиты от подбора паролей**. Либо на вкладке **Терминал**, введя команду `journalctl -u fail2ban`.
 
-![](../../.gitbook/assets/bruteforce-logs.png)
+![](/.gitbook/assets/bruteforce-logs.png)
 
 Сбросить блокировки можно из локального меню шлюза: **Правила доступа -&gt; Сбросить блокировки по IP**.
 
-![](../../.gitbook/assets/bruteforce.png)
+![](/.gitbook/assets/bruteforce.png)
 
 {% hint style="info" %}
 Защита от brute-force атак работает только для UTM.

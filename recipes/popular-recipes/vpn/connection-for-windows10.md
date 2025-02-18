@@ -12,11 +12,11 @@
 
 1\. Кликните на иконке сетевого подключения в системном трее, и в появившемся окне выберите **Параметры сети и Интернет**:
 
-![](../../../.gitbook/assets/vpn-windows.png)
+![](/.gitbook/assets/vpn-windows.png)
 
 2\. Перейдите в раздел **VPN** и нажмите **Добавить VPN-подключение**:
 
-![](../../../.gitbook/assets/vpn-windows1.png)
+![](/.gitbook/assets/vpn-windows1.png)
 
 3\. Заполните соответствующие поля и нажмите **Сохранить**:
 
@@ -31,7 +31,7 @@
 
 <summary>Для PPTP</summary>
 
-![](../../../.gitbook/assets/vpn-windows2.png)
+![](/.gitbook/assets/vpn-windows2.png)
 
 При настройке подключения по VPN из сети Интернет, в свойствах VPN-подключения нужно указать следующие параметры:
 
@@ -51,7 +51,7 @@
 
 * Общий ключ - значение строки **PSK** в разделе **Пользователи -&gt; Авторизация -&gt; VPN-подключение -&gt; Подключение по L2TP/IPSec**.
 
-![](../../../.gitbook/assets/vpn-windows3.png)
+![](/.gitbook/assets/vpn-windows3.png)
 
 {% hint style="info" %}
 Если вы создаете VPN-подключение к UTM через проброс портов, рекомендуем выполнить следующие действия:
@@ -80,7 +80,7 @@
 
 * Имя или адрес сервера - адрес VPN-сервера в формате *адрес_VPN_сервера:порт*.
 
-![](../../../.gitbook/assets/vpn-windows4.png)
+![](/.gitbook/assets/vpn-windows4.png)
 
 </details>
 
@@ -88,15 +88,15 @@
 
 <summary>Для IKEv2</summary>
 
-![](../../../.gitbook/assets/vpn-windows5.png)
+![](/.gitbook/assets/vpn-windows5.png)
 
 4\. Активируйте подключение, нажав правой кнопкой мыши по созданному подключению и выбрав **Подключиться**:
 
-![](../../../.gitbook/assets/vpn-windows6.png)
+![](/.gitbook/assets/vpn-windows6.png)
 
 5\. Для разрыва подключения нажмите **Отключиться**. Если нужно внести изменение в созданное подключение, нажмите **Дополнительные параметры -&gt; Изменить**
 
-![](../../../.gitbook/assets/vpn-windows7.png)
+![](/.gitbook/assets/vpn-windows7.png)
 
 </details>
 
@@ -117,7 +117,7 @@
 * Нажмите правой кнопкой мыши по параметру именем **NegotiateDH2048\_AES256** и нажмите **Изменить**.
 * В строке **Значение** укажите значение `1`:
 
-![](../../../.gitbook/assets/windows-vpn.png)
+![](/.gitbook/assets/windows-vpn.png)
 
 * Нажмите **OK**.
 *   Перезагрузите Windows.
@@ -125,16 +125,16 @@
     Если параметра именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
-![](../../../.gitbook/assets/windows-vpn2.png)
+![](/.gitbook/assets/windows-vpn2.png)
 
 * Задайте имя **NegotiateDH2048\_AES256**.
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
-![](../../../.gitbook/assets/windows-vpn3.png)
+![](/.gitbook/assets/windows-vpn3.png)
 
 * В строке **Значение** укажите значение `1`:
 
-![](../../../.gitbook/assets/windows-vpn4.png)
+![](/.gitbook/assets/windows-vpn4.png)
 
 * Нажмите **OK**.
 

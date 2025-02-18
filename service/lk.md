@@ -1,10 +1,4 @@
 ---
-title: Личный кабинет
-published: true
-date: '2021-06-08T10:05:06.692Z'
-tags: user_authorization, server_registration, license
-editor: markdown
-dateCreated: '2021-05-28T13:12:05.352Z'
 description: Зачем пользователю Ideco UTM нужен личный кабинет
 ---
 
@@ -21,11 +15,11 @@ description: Зачем пользователю Ideco UTM нужен личны
 
 Зайдите на [сайт](https://my.ideco.ru/#/login/?next=/utm/license/) личного кабинета и перейдите по ссылке **Зарегистрироваться**.
 
-![](../.gitbook/assets/1.\_регистрация.png)
+![](/.gitbook/assets/registration.png)
 
 Укажите свои личные данные и данные о компании.
 
-![](../.gitbook/assets/reglk.png)
+![](/.gitbook/assets/reglk.png)
 
 **На указанную электронную почту придет активационное письмо.**
 

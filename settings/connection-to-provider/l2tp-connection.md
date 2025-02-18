@@ -16,7 +16,7 @@ description: >-
 
 1\. Перейдите в меню **Сервисы -> Сетевые интерфейсы**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../../.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + L2TP**
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + L2TP**
 
 3\. Выберите сетевую карту.
 
@@ -39,4 +39,4 @@ description: >-
 
 **Пример настройки:**
 
-![](../../.gitbook/assets/ethernet+l2tp.jpg)
+![](/.gitbook/assets/ethernet+l2tp.jpg)

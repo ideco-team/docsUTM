@@ -8,7 +8,7 @@ description: >-
 
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
-![](../../../../.gitbook/assets/dia1.png)
+![](/.gitbook/assets/dia1.png)
 
 ## Шаг 1. Первоначальная настройка Ideco UTM
 
@@ -42,7 +42,7 @@ exit
 
 3\. Проверьте наличие связи между внешними интерфейсами Ideco UTM и Cisco. Для этого в консоли Cisco используйте команду `ping {внешний IP UTM}`. Результат вывода команды - наличие ICMP-ответов.
 
-4\. Создание access-list с адресацией локальной сети (подробную информацию по созданию access-list вы можете прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/security/ios-firewall/23602-confaccesslists.html) на официальном сайте Cisco):
+4\. Создание access-list с адресацией локальной сети (подробную информацию по созданию access-list вы можете прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/security/ios-firewall/23602-confaccesslists.html) на официальном сайте Cisco):
 
 ```
 ip access-list extended NAT
@@ -50,7 +50,7 @@ permit ip {локальная подсеть Cisco} {обратная маска
 exit
 ```
 
-5\. Настройка NAT (подробную информацию по настройке данного пункта вы можете прочитать в [статье](https://www.cisco.com/c/ru\_ru/support/docs/ip/network-address-translation-nat/13772-12.html) на официальном сайте Cisco):
+5\. Настройка NAT (подробную информацию по настройке данного пункта вы можете прочитать в [статье](https://www.cisco.com/c/ru_ru/support/docs/ip/network-address-translation-nat/13772-12.html) на официальном сайте Cisco):
 
 ```
 ip nat inside source list NAT interface GigabitEthernet1 overload
@@ -67,7 +67,7 @@ write memory
 
 ## Шаг 3. Настройка IKEv2+IPSec на Cisco
 
-1\. Создание proposal (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939\_\_GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)на официальном сайте Cisco):
+1\. Создание proposal (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-6F6D8166-508A-4669-9DDC-4FE7AE9B9939__GUID-A5DB59F5-70A0-421E-86AE-AE983B283E6F)на официальном сайте Cisco):
 
 ```
 conf t
@@ -78,7 +78,7 @@ group 19
 exit
 ```
 
-2\. Создание policy (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772\_\_GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)на официальном сайте Cisco):
+2\. Создание policy (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-B5C198FE-97D9-4F74-88C6-6B5802195772__GUID-613A19C3-C5D6-456A-8D8A-4693F3553ED3)на официальном сайте Cisco):
 
 ```
 crypto ikev2 policy ikev2policy 
@@ -87,7 +87,7 @@ proposal ikev2proposal
 exit
 ```
 
-3\. Создание peer (key\_id - идентификатор удаленной стороны, т.е. Ideco UTM). Подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659\_\_GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9)на официальном сайте Cisco.
+3\. Создание peer (key_id - идентификатор удаленной стороны, т.е. Ideco UTM). Подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#GUID-D6AC9B42-1F22-4F60-A06A-A72575181659__GUID-A1CB9A0A-6098-475C-99BE-5D41009CD9A9)на официальном сайте Cisco.
 
 ```
 crypto ikev2 keyring key
@@ -100,7 +100,7 @@ exit
 exit
 ```
 
-4\. Создание IKEv2 profile (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec\_conn\_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task\_20288C58E8B1416897A763FABA8B0885\_\_GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)на официальном сайте Cisco):
+4\. Создание IKEv2 profile (подробную информацию по настройке данного пункта вы можете прочитать в [статье ](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/xe-16-8/sec-flex-vpn-xe-16-8-book/sec-cfg-ikev2-flex.html#task_20288C58E8B1416897A763FABA8B0885__GUID-B31A2B1F-E07A-4DA9-8CEA-45D92E283D14)на официальном сайте Cisco):
 
 ```
 crypto ikev2 profile ikev2profile

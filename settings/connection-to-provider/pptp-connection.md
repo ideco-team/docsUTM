@@ -16,7 +16,7 @@ description: >-
 
 1\. Перейдите в меню **Сервисы -> Сетевые интерфейсы**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../../.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите **Ethernet + PPTP**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите **Ethernet + PPTP**.
 
 3\. Выберите сетевую карту.
 
@@ -39,4 +39,4 @@ description: >-
 
 **Пример настройки подключения по PPTP:**
 
-![](../../.gitbook/assets/ethernet+pptp.jpg)
+![](/.gitbook/assets/ethernet+pptp.jpg)

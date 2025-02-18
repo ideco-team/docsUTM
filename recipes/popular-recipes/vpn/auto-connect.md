@@ -204,7 +204,7 @@ Add-VpnConnection `
 * Нажмите правой кнопкой мыши по параметру именем **NegotiateDH2048\_AES256** и нажмите **Изменить**.
 * В строке **Значение** укажите значение `1`:
 
-![](../../../../.gitbook/assets/windows-vpn.png)
+![](/.gitbook/assets/windows-vpn.png)
 
 * Нажмите **OK**.
 *   Перезагрузите Windows.
@@ -212,16 +212,16 @@ Add-VpnConnection `
     Если параметра именем **NegotiateDH2048\_AES256** нет, то создайте его. Для этого:
 * Нажмите правой кнопкой мыши по свободному месту реестра в **Parameters** и выберите **Создать -> DWORD**:
 
-![](../../../../.gitbook/assets/windows-vpn2.png)
+![](/.gitbook/assets/windows-vpn2.png)
 
 * Задайте имя **NegotiateDH2048\_AES256**.
 * Нажмите правой кнопкой мыши по созданному файлу и выберите **Изменить**:
 
-![](../../../../.gitbook/assets/windows-vpn3.png)
+![](/.gitbook/assets/windows-vpn3.png)
 
 * В строке **Значение** укажите значение `1`:
 
-![](../../../../.gitbook/assets/windows-vpn4.png)
+![](/.gitbook/assets/windows-vpn4.png)
 
 * Нажмите **OK**.
 

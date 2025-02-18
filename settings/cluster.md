@@ -52,27 +52,27 @@ description: >-
 
 1\. При входе в локальное меню резервной ноды увидите следующее сообщение:
 
-![](../.gitbook/assets/cluster8.png)
+![](/.gitbook/assets/cluster8.png)
 
 2\. Введите **y** и нажмите Enter;
 
 3\. Выберите сетевую карту:
 
-![](../.gitbook/assets/cluster9.png)
+![](/.gitbook/assets/cluster9.png)
 
 4\. Подтвердите создание кластера введя **y** и нажав Enter:
 
-![](../.gitbook/assets/cluster10.png)
+![](/.gitbook/assets/cluster10.png)
 
 5\. UTM предложит изменить название сервера. Если вы ответите положительно на вопрос **"Изменить название сервера?"**, то появится надпись с предложением ввести новое название сервера.\
 Минимальное количество символов в названии - 2.\
 Максимальное количество символов в названии - 42.
 
-![](../.gitbook/assets/cluster11.png)
+![](/.gitbook/assets/cluster11.png)
 
 6\. Появится сообщение о том, что процесс создания кластера запущен:
 
-![](../.gitbook/assets/cluster12.png)
+![](/.gitbook/assets/cluster12.png)
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -86,27 +86,27 @@ description: >-
 
 2\. Выберите пункт **Создание кластера**:
 
-![](../.gitbook/assets/cluster4.png)
+![](/.gitbook/assets/cluster4.png)
 
 3\. Выберите свободную физическую сетевую карту для создания кластерной сети и подтвердите выбор:
 
-![](../.gitbook/assets/cluster5.png)
+![](/.gitbook/assets/cluster5.png)
 
 4\. Подтвердите создание кластера введя **y** и нажав Enter:
 
-<img src="../.gitbook/assets/cluster6.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster6.png" alt="" data-size="original">
 
 5\. UTM предложит изменить название сервера. Если вы ответите положительно на вопрос **"Изменить название сервера?"**, то появится надпись с предложением ввести новое название сервера.\
 Минимальное количество символов в названии - 2.\
 Максимальное количество символов в названии - 42.\\
 
-<img src="../.gitbook/assets/cluster7.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster7.png" alt="" data-size="original">
 
 После ввода нового названия, нажмите **Enter** для продолжения диалога.
 
 6\. Появится сообщение, что процесс создания кластера запущен.
 
-<img src="../.gitbook/assets/cluster-create-pocess.png" alt="" data-size="original">
+<img src="/.gitbook/assets/cluster-create-pocess.png" alt="" data-size="original">
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт [Конфигурация активной ноды](cluster.md#konfiguraciya-aktivnoi-nody)). Для этого выделяется 3600 секунд.
 
@@ -120,19 +120,19 @@ description: >-
 
 2\. Подтвердите, что топология вашей сети соответствует схеме на рисунке ниже:
 
-![](../.gitbook/assets/cluster-topology.png)
+![](/.gitbook/assets/cluster-topology.png)
 
 3\. Выберите сетевую карту для соединения между нодами:
 
-![](../.gitbook/assets/cluster1.png)
+![](/.gitbook/assets/cluster1.png)
 
 4\. Сопоставьте сетевые карты. Для этого выберите в каждом столбце по одной сетевой карте и нажмите **Сопоставить**:
 
-![](../.gitbook/assets/cluster3.png)
+![](/.gitbook/assets/cluster3.png)
 
 5\. После применения настроек резервная нода перезагрузится, и в веб-интерфейсе активной ноды отобразится информация, что связь с сервером установлена.
 
-![](../.gitbook/assets/cluster-done.png)
+![](/.gitbook/assets/cluster-done.png)
 
 ## Возможности резервной ноды
 
@@ -157,7 +157,7 @@ description: >-
 
 2\. Появится предупреждающая надпись:
 
-![](../.gitbook/assets/cluster-warning-local.png)
+![](/.gitbook/assets/cluster-warning-local.png)
 
 3\. Введите **y** и нажмите **Enter**.
 
@@ -171,11 +171,11 @@ description: >-
 
 2\. Появится окно с предупреждением:
 
-![](../.gitbook/assets/cluster-warning.png)
+![](/.gitbook/assets/cluster-warning.png)
 
 3\. Нажмите **OK**:
 
-![](../.gitbook/assets/cluster-kill.png)
+![](/.gitbook/assets/cluster-kill.png)
 
 </details>
 

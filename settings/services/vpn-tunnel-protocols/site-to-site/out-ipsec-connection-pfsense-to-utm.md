@@ -41,7 +41,7 @@
         **DH Group** - Elliptic Curve 25519-256.
     * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/aes\(v9\).png)
+![](/.gitbook/assets/aes-v9-.png)
 
 3\. Сохраните подключение.
 
@@ -52,7 +52,7 @@
 * **Для Ideco UTM версии 10.0 и новее** используйте следующие параметры:  **Algorithm** - AES256-GCM;  **Key length** - 128 bit;  **Hash** - SHA256;  **DH Group** - Elliptic Curve 25519-256.
 * **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/esp\(v9\).png)
+![](/.gitbook/assets/esp-v9-.png)
 
 **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM;\
 **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense;

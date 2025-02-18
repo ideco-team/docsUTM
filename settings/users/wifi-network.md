@@ -28,7 +28,7 @@ dateCreated: '2021-04-02T07:25:37.049Z'
 
 Пример настройки интерфейсов на UTM для клиентов, подключающихся по Wi-Fi представлен на скриншоте ниже:
 
-![](../../.gitbook/assets/utm-interfaces-for-wifi.png)
+![](/.gitbook/assets/utm-interfaces-for-wifi.png)
 
 * **10.0.1.2/24** - шлюз для беспроводной Wi-Fi сети;
 * **10.0.0.1/24** - шлюз для локальной Ethernet-сети.
@@ -41,7 +41,7 @@ dateCreated: '2021-04-02T07:25:37.049Z'
 
 Пример настройки пользователя в режиме роутера представлен на скриншоте ниже:
 
-![](../../.gitbook/assets/router.png)
+![](/.gitbook/assets/router.png)
 
 Общие ограничения [контент-фильтра](../access-rules/content-filter/) и [файрвола](../access-rules/firewall.md) для Wi-Fi сети необходимо применять\
 к данному пользователю.

@@ -5,7 +5,7 @@
 {% endhint %}
 
 {% hint style="info" %}
-Инструкции по настройке VPN-подключений на разных ОС: [Windows](connection-for-windows.md), [Ubuntu](connection-for-ubuntu.md), [Mac OS](connection-for-high-sierra-macos.md) и на [мобильных устройствах](connection-for-mobile-devices.md).
+Инструкции по настройке VPN-подключений на разных ОС: [Windows](/recipes/popular-recipes/vpn/connection-for-windows10.md), [Ubuntu](/recipes/popular-recipes/vpn/connection-for-ubuntu.md), [Mac OS](/recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md) и на [мобильных устройствах](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md).
 {% endhint %}
 
 ## Настройка глобальных параметров Ideco UTM
@@ -15,7 +15,7 @@
 3. Укажите секретную фразу (PSK ключ).
 4. Нажмите на кнопку **Сохранить**.
 
-![](../../../../.gitbook/assets/l2tp-on.png)
+![](/.gitbook/assets/l2tp-on.png)
 
 ## Настройка пользователей в Ideco UTM
 

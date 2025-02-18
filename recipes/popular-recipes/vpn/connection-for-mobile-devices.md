@@ -14,7 +14,7 @@
 
 1\. Нажмите **Добавить VPN профиль**:
 
-![](../../../../.gitbook/assets/strongswan2.png)
+![](/.gitbook/assets/strongswan2.png)
 
 2\. Заполните поля:
 
@@ -23,11 +23,11 @@
 * Логин - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-![](../../../../.gitbook/assets/strongswan1.png)
+![](/.gitbook/assets/strongswan1.png)
 
 3\. Нажмите **Сохранить** и кликните по созданному подключению:
 
-![](../../../../.gitbook/assets/strongswan.png)
+![](/.gitbook/assets/strongswan.png)
 
 </details>
 
@@ -46,7 +46,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-![](../../../../.gitbook/assets/android.png)
+![](/.gitbook/assets/android.png)
 
 **Для IKEv2/IPSec MSCHAPv2:**
 
@@ -58,7 +58,7 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-![](../../../../.gitbook/assets/android2.png)
+![](/.gitbook/assets/android2.png)
 
 **Для L2TP/IPSec PSK:**
 
@@ -66,7 +66,7 @@
 * Адрес сервера - адрес VPN-сервера;
 * Общий ключ IPSec - значение строки **PSK** в разделе **Пользователи -&gt; Авторизация -&gt; VPN-подключение -&gt; Подключение по L2TP/IPSec**
 
-![](../../../../.gitbook/assets/android1.png)
+![](/.gitbook/assets/android1.png)
 
 4\. Нажмите **Сохранить** и активируйте подключение.
 
@@ -78,11 +78,11 @@
 
 1\. Перейдите в раздел **Настройки -&gt; Основные -&gt; VPN**:
 
-![](../../../../.gitbook/assets/vpn-iphone.png)
+![](/.gitbook/assets/vpn-iphone.png)
 
 2\. Нажмите **Добавить конфигурацию VPN**:
 
-![](../../../../.gitbook/assets/vpn-iphone1.png)
+![](/.gitbook/assets/vpn-iphone1.png)
 
 3\. Выберите **Тип** подключения и заполните соответствующие поля:
 
@@ -95,7 +95,7 @@
 * Учетная запись - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-![](../../../../.gitbook/assets/vpn-iphone4.png)
+![](/.gitbook/assets/vpn-iphone4.png)
 
 **Для L2TP:**
 
@@ -105,7 +105,7 @@
 * Пароль - пароль пользователя;
 * Общий ключ - значение строки **PSK** в разделе **Пользователи -&gt; Авторизация -&gt; VPN-подключение -&gt; Подключение по L2TP/IPSec**.
 
-![](../../../../.gitbook/assets/vpn-iphone2.png)
+![](/.gitbook/assets/vpn-iphone2.png)
 
 **Для IKEv2:**
 
@@ -115,12 +115,12 @@
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя;
 
-![](../../../../.gitbook/assets/vpn-iphone3.png)
+![](/.gitbook/assets/vpn-iphone3.png)
 
 4\. Нажмите **Готово**;
 
 5\. Для подключения перевести переключатель **Статус** вправо:
 
-![](../../../../.gitbook/assets/vpn-iphone5.png)
+![](/.gitbook/assets/vpn-iphone5.png)
 
 </details>

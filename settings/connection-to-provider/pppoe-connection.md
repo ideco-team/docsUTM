@@ -16,7 +16,7 @@ description: >-
 
 1\. Перейдите в меню **Сервисы -> Сетевые интерфейсы**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../../.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + PPPoE**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + PPPoE**.
 
 3\. Выберите сетевую карту.
 
@@ -36,4 +36,4 @@ description: >-
 
 **Пример настройки:**
 
-![](../../.gitbook/assets/ethernet+pppoe.jpg)
+![](/.gitbook/assets/ethernet+pppoe.jpg)
