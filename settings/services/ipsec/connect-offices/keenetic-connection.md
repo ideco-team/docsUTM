@@ -12,11 +12,11 @@
 2. В разделе **Пользователи -> Учетные записи** создайте специального пользователя для удаленного роутера и установите флаг **Разрешить удаленный доступ через VPN**. \
 **Логин и пароль пользователя будут использоваться на роутере, сохраните или запишите их.**
 
-![](../../../../.gitbook/assets/keenetic-connection1.png)
+![](/.gitbook/assets/keenetic-connection1.png)
 
 3. Пропишите маршруты в удаленную сеть. Например, если сеть за роутером `192.168.10.0/24`, необходимо добавить следующий маршрут в раздел **Сервисы -> Маршрутизация -> Локальные сети**:
 
-![](../../../../.gitbook/assets/keenetic-connection2.png)
+![](/.gitbook/assets/keenetic-connection2.png)
 
 </details>
 
@@ -50,8 +50,8 @@
 
 На стороне устройства Keenetic используйте следующие настройки протоколов шифрования:
 
-![](../../../../.gitbook/assets/keenetic-connection3.jpg)
+![](/.gitbook/assets/keenetic-connection3.jpg)
 
-![](../../../../.gitbook/assets/keenetic-connection4.jpg)
+![](/.gitbook/assets/keenetic-connection4.jpg)
 
-![](../../../../.gitbook/assets/keenetic-connection5.jpg)
+![](/.gitbook/assets/keenetic-connection5.jpg)

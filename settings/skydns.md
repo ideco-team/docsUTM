@@ -38,7 +38,7 @@ dateCreated: '2021-04-02T07:20:07.443Z'
 
 1\. Прописать DNS-сервер SkyDNS \(193.58.251.251\) в настройках DNS-сервера в Ideco UTM \(Веб-интерфейс: **Сервисы -&gt; DNS**\).
 
-![](../.gitbook/assets/skydns.png)
+![](/.gitbook/assets/skydns.png)
 
 2\. Для запрета обращения к другим DNS-серверам включить опцию перехвата DNS-запросов \(если для всей сети обязательна фильтрация через SkyDNS\).
 
@@ -52,7 +52,7 @@ dateCreated: '2021-04-02T07:20:07.443Z'
 
 Создав правило:
 
-![](../.gitbook/assets/ip-kf.png)
+![](/.gitbook/assets/ip-kf.png)
 
 6\. Если провайдер предоставляет вам статический белый IP-адрес, то привяжите этот адрес к аккаунту SkyDNS в [личном кабинете](https://www.skydns.ru/auth/login/?next=/cabinet/guide/) на сайте SkyDNS \(в разделе **Настройки -&gt; Сети**\).
 
@@ -80,5 +80,5 @@ dateCreated: '2021-04-02T07:20:07.443Z'
 
 ## Схема фильтрации веб-трафика при использовании SkyDNS
 
-![](../.gitbook/assets/ip-kf.jpg)
+![](/.gitbook/assets/ip-kf.jpg)
 

@@ -19,6 +19,6 @@ dateCreated: '2021-04-02T07:23:14.579Z'
 
 Пример вывода команды:
 
-![](../../../.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/ethernet-connection3.png)
 {% endhint %}
 

@@ -1,7 +1,3 @@
----
-description: >-
-  
----
 # Основные настройки
 
 {% hint style="warning" %}
@@ -25,7 +21,7 @@ UTM не поддерживает кириллические почтовые д
 При добавлении нового домена в графу **Дополнительные почтовые домены** происходит привязка к текущему почтовому ящику.
 {% endhint %}
 
-![](../../.gitbook/assets/relay-gen-settings.png)
+![](/.gitbook/assets/relay-gen-settings.png)
 
 ---
 ## SSL-сертификат для почтового домена
@@ -44,5 +40,5 @@ UTM не поддерживает кириллические почтовые д
 {% endhint %}
 
 {% hint style="info" %}
-Для загрузки своего сертификата на сервер можете воспользоваться [инструкцией](../../services/certificates/upload-ssl-certificate-to-server.md).
+Для загрузки своего сертификата на сервер можете воспользоваться [инструкцией](/settings/services/certificates/upload-ssl-certificate-to-server.md).
 {% endhint %}

@@ -10,7 +10,7 @@
 Перед загрузкой ключа обязательно включите модуль антиспама.
 {% endhint %}
 
-![](../../.gitbook/assets/antispam-key.png)
+![](/.gitbook/assets/antispam-key.png)
 
 ---
 ## Настройки фильтрации
@@ -19,7 +19,7 @@
 * **Почтовый ящик для спама.** Весь входящий спам будет пересылаться на указанный ящик (не используйте ящик Spam).
 * **Ящики, исключенные из сортировки спама.** Позволяет задать почтовые ящики, при отправлении на которые корреспонденция не будет проверяться на спам.
 
-![](../../.gitbook/assets/antispam.png)
+![](/.gitbook/assets/antispam.png)
 
 ---
 ## Веб-интерфейс для Антиспама
@@ -48,19 +48,19 @@
 4\) Числа;\
 5\) Содержать минимум 8 символов.
 
-![](../../.gitbook/assets/klms-activate-set-web-admin-password.png)
+![](/.gitbook/assets/klms-activate-set-web-admin-password.png)
 
 3\. Для доступа к Веб-интерфейсу перейдите в адресной строке по пути `utm_ip_address:8443/klms/`
 
-![](../../.gitbook/assets/klms-web-interface.png)
+![](/.gitbook/assets/klms-web-interface.png)
 
 4\. Войдите в веб-интерфейс с учетной записью **Administrator** и ранее заданным в терминале паролем.
 
-![](../../.gitbook/assets/klms-web-interface-credentials.png)
+![](/.gitbook/assets/klms-web-interface-credentials.png)
 
 После успешного входа, будет отображен дашборд со статистикой работы Антиспама.
 
-![](../../.gitbook/assets/klms-web-interface-autenticated-1.png)
+![](/.gitbook/assets/klms-web-interface-autenticated-1.png)
 
 {% hint style="warning" %}
 Настоятельно не рекомендуем Вам вносить какие-либо изменения в разделе `Settings`, потому как не можем гарантировать функциональность работы Антиспама в таких случаях.

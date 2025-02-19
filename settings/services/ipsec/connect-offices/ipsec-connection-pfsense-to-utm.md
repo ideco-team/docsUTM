@@ -1,10 +1,4 @@
 ---
-title: Подключение pfSense к Ideco UTM по IPsec
-published: true
-date: '2021-06-02T10:39:48.651Z'
-tags: ipsec
-editor: markdown
-dateCreated: '2021-04-02T07:27:28.235Z'
 description: >-
   С помощью статьи можно объединить сети pfSense и Ideco UTM по IPsec с
   использованием PSK.
@@ -30,7 +24,7 @@ description: >-
 * **Домашние локальные сети** – укажите локальную сеть Ideco UTM, которая будет видна из подсети pfSense;
 * **Удалённые локальные сети** – укажите локальную сеть pfSense, которая будет видна из подсети Ideco UTM.
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm4.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm4.png)
 
 3. Сохраните созданное подключение, нажмите на кнопку **Включить**.
 
@@ -42,7 +36,7 @@ description: >-
 
 Во вкладке **Сервисы -> IPsec -> Устройства** в строке **Идентификатор удаленной стороны**.
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm5.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm5.png)
 
 </details>
 <details>
@@ -51,7 +45,7 @@ description: >-
 
 На Ideco UTM в папке `/run/ideco-ipsec-backend/strongswan/swanctl/conf.d/` будет сгенерирован конфигурационный файл. Необходимо перейти в консоль и открыть на редактирование файл вида `device_<номер>.conf`. Из этого файла необходимо скопировать значение строки `id`(идентификатор удаленной стороны).
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm1.png) 
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm1.png) 
 
 </details>
 
@@ -83,9 +77,9 @@ description: >-
 
 **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm3.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm3.png)
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm2.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm2.png)
 
 Все остальные значения можно оставить по умолчанию.
 
@@ -103,7 +97,7 @@ description: >-
 **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
 
-![](../../../../.gitbook/assets/ipsec-connection-pfsense-to-utm.png)
+![](/.gitbook/assets/ipsec-connection-pfsense-to-utm.png)
 
 
 * **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM.
@@ -169,7 +163,7 @@ description: >-
 
 * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/aes(v9).png)
+![](/.gitbook/assets/aes-v9-.png)
 
 3. Сохраните подключение.
 
@@ -186,7 +180,7 @@ description: >-
 
 * **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/esp(v9).png)
+![](/.gitbook/assets/esp-v9.png)
 
 * **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM.
 * **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense.

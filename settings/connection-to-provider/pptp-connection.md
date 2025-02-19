@@ -16,7 +16,7 @@ dateCreated: '2021-04-02T07:23:31.089Z'
 
 1\. Перейдите в меню **Сервисы -> Сетевые интерфейсы**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../../.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите **Ethernet + PPTP**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите **Ethernet + PPTP**.
 
 3\. Выберите сетевую карту.
 
@@ -39,12 +39,12 @@ dateCreated: '2021-04-02T07:23:31.089Z'
 
 **Пример настройки подключения по PPTP:**
 
-![](../../.gitbook/assets/ethernet+pptp.jpg)
+![](/.gitbook/assets/ethernet+pptp.jpg)
 
 {% hint style="info" %}
 Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
 
 Пример вывода команды:
 
-![](../../../.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/ethernet-connection3.png)
 {% endhint %}

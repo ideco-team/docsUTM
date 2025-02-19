@@ -16,7 +16,7 @@ dateCreated: '2021-04-02T07:23:22.687Z'
 
 1\. Перейдите в меню **Сервисы -> Сетевые интерфейсы**.
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../../.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + L2TP**
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + L2TP**
 
 3\. Выберите сетевую карту.
 
@@ -39,12 +39,12 @@ dateCreated: '2021-04-02T07:23:22.687Z'
 
 **Пример настройки:**
 
-![](../../.gitbook/assets/ethernet+l2tp.jpg)
+![](/.gitbook/assets/ethernet+l2tp.jpg)
 
 {% hint style="info" %}
 Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
 
 Пример вывода команды:
 
-![](../../../.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/ethernet-connection3.png)
 {% endhint %}

@@ -1,13 +1,3 @@
----
-title: Wi-Fi сети
-description: Настройка режимов точки доступа и роутера.
-published: true
-date: '2021-05-18T11:30:18.964Z'
-tags: user_management
-editor: markdown
-dateCreated: '2021-04-02T07:25:37.049Z'
----
-
 # Wi-Fi-сети
 
 В текущей версии Ideco UTM не поддерживает Wi-Fi адаптеры. Для работы беспроводных клиентов необходимо использовать специальные беспроводные точки доступа или Wi-Fi-маршрутизаторы.
@@ -32,7 +22,7 @@ dateCreated: '2021-04-02T07:25:37.049Z'
 Пример настройки интерфейса для клиентов, подключающихся по Wi-Fi представлен \
 на скриншоте ниже:
 
-![](../../.gitbook/assets/utm-interfaces-for-wifi.png)
+![](/.gitbook/assets/utm-interfaces-for-wifi.png)
 
 * **10.0.1.2/24** - шлюз для беспроводной Wi-Fi сети;
 * **10.0.0.1/24** - шлюз для локальной Ethernet-сети.
@@ -56,11 +46,11 @@ dateCreated: '2021-04-02T07:25:37.049Z'
 Пароль у пользователя может быть любой.
 {% endhint %}
 
-![](../../.gitbook/assets/router\_user.png)
+![](/.gitbook/assets/router_user.png)
 
 2\. В разделе **Пользователи -> Авторизация -> IP-авторизация** создайте правило следующего вида:
 
-![](../../.gitbook/assets/user-ip-authorization-rule.png)
+![](/.gitbook/assets/user-ip-authorization-rule.png)
 
 Общие ограничения [контент-фильтра](../access-rules/content-filter/) и [файрвола](../access-rules/firewall.md) для Wi-Fi сети необходимо применять к данному пользователю.
 

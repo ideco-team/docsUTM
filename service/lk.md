@@ -21,11 +21,11 @@ description: Зачем пользователю Ideco UTM нужен личны
 
 Зайдите на [сайт](https://my.ideco.ru/#/login/?next=/utm/license/) личного кабинета и перейдите по ссылке **Зарегистрироваться**.
 
-![](../.gitbook/assets/reglk2.png)
+![](/.gitbook/assets/reglk2.png)
 
 Укажите свои личные данные и данные о компании.
 
-![](../.gitbook/assets/reglk.png)
+![](/.gitbook/assets/reglk.png)
 
 **На указанную электронную почту придет активационное письмо.**
 

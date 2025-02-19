@@ -62,7 +62,7 @@ Ideco UTM поддерживает работу на следующих гипе
 
 2\. На пятом шаге (virtm-manager) установки обязательно поставьте флаг **Проверить конфигурацию перед установкой** и нажмите кнопку **Готово**.
 
-![](../.gitbook/assets/create-vm.png)
+![](/.gitbook/assets/create-vm.png)
 
 3\. Для дисков и сетевых карт укажите/измените интерфейс на **virtio.**
 
@@ -70,7 +70,7 @@ Ideco UTM поддерживает работу на следующих гипе
 
 5\. В появившемся окне на вкладке **Обзор** в поле Firmware выберите пункт **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd**. Выбор этого пункта включит UEFI и выключит опцию **Secure Boot**.
 
-![](../.gitbook/assets/create-vm1.png)
+![](/.gitbook/assets/create-vm1.png)
 
 {% hint style="info" %}
 Если пункта **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd** нет в списке, то нужно доустановить пакет ovmf. В Ubuntu этот пакет устанавливается командой **sudo apt install ovmf**.

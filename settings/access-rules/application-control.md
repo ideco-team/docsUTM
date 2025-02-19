@@ -1,13 +1,7 @@
 ---
-title: Контроль приложений
 description: >-
   Модуль осуществляет глубокий анализ трафика (Deep Packet Inspection - DPI) для
   выявления протоколов популярных приложений (layer-7 фильтрация).
-published: true
-date: '2021-04-22T09:35:20.435Z'
-tags: application_control
-editor: markdown
-dateCreated: '2021-04-02T07:24:21.343Z'
 ---
 
 # Контроль приложений
@@ -24,7 +18,7 @@ dateCreated: '2021-04-02T07:24:21.343Z'
 
 Статус модуля можно посмотреть, нажав на иконку флаг в верхней части экрана около надписи **Контроль приложений**:
 
-![](../../.gitbook/assets/control-app-status.gif)
+![](/.gitbook/assets/control-app-status.gif)
 
 Принцип действия набора правил:
 
@@ -38,7 +32,7 @@ Ideco UTM анализирует трафик, ищет правило, кото
 
 1\. Нажмите **Добавить** в левом верхнем углу экрана:
 
-![](../../.gitbook/assets/deny-discord.png)
+![](/.gitbook/assets/deny-discord.png)
 
 2\. Укажите значения следующих параметров:
 

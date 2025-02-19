@@ -18,23 +18,23 @@ dateCreated: '2021-04-02T07:23:56.810Z'
 
 * Создать алиас `manager@yourdomain.ru` для ящика менеджера вашей компании для связи с клиентами и партнерами, у которого реальный почтовый ящик имеет имя `p.petrov@yourmaildomain.ru`:
 
-![](../../.gitbook/assets/post_rule_001.png)
+![](/.gitbook/assets/post_rule_001.png)
 
 * Создать корпоративный алиас для отдела продаж `sales@yourmaildomail.ru`, чтобы почта пересылалась на всех сотрудников этого отдела:
 
-![](../../.gitbook/assets/post_rule_002.png)
+![](/.gitbook/assets/post_rule_002.png)
 
 * Создать временный алиас для переадресации почты сотрудника, который находится в отпуске `i.ivanov@yourmaildomail.ru` на ящик его коллеги `a.alexeev@yourmaildomain.ru` с сохранением почты на ящике `i.ivanov@yourmaildomail.ru`:
 
-![](../../.gitbook/assets/post_rule_003.png)
+![](/.gitbook/assets/post_rule_003.png)
 
 * Создать алиас `director@yourmaildomain.ru`, который будет перенаправлять почту на реальный ящик `director@yandex.ru`:
 
-![](../../.gitbook/assets/post_rule_004.png)
+![](/.gitbook/assets/post_rule_004.png)
 
 После создания всех правил у нас получился вот такой список:
 
-![](../../.gitbook/assets/post_rule_005.png)
+![](/.gitbook/assets/post_rule_005.png)
 
 ### Опишем, как будет работать почта при таких правилах переадресации:
 

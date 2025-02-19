@@ -1,13 +1,7 @@
 ---
-title: DHCP
 description: >-
   DHCP-сервер используется для автоматического назначения IP-адресов сетевым
   устройствам в локальной сети.
-published: true
-date: '2021-06-15T06:32:27.647Z'
-tags: dhcp
-editor: markdown
-dateCreated: '2021-04-02T07:25:10.501Z'
 ---
 
 # DHCP
@@ -35,7 +29,7 @@ dateCreated: '2021-04-02T07:25:10.501Z'
 
 Пример настройки DHCP-сервера представлен на скриншоте ниже:
 
-![](../../.gitbook/assets/dhcp-example.png)
+![](/.gitbook/assets/dhcp-example.png)
 
 {% hint style="info" %}
 Если не задано значение в поле DNS-1 или DNS-2, то DNS-сервером будет являться Ideco UTM для всех сетевых устройств локальной сети.
@@ -47,7 +41,7 @@ dateCreated: '2021-04-02T07:25:10.501Z'
 Так же, при использования DHCP-сервера, не забывайте передвинуть ползунок в верхней части экрана около надписи **DHCP-сервер** в положение **Включен**.
 {% endhint %}
 
-![](../../.gitbook/assets/dhcp-on.gif)
+![](/.gitbook/assets/dhcp-on.gif)
 
 
 ### Настройка DHCP-сервера с привязкой IP к MAC
@@ -56,11 +50,11 @@ dateCreated: '2021-04-02T07:25:10.501Z'
 
 1\. В разделе **Сервисы -> DHCP** выберите вкладку **Привязка IP к MAC**
 
-![](../../.gitbook/assets/dhcp-binding-creating-rule.png)
+![](/.gitbook/assets/dhcp-binding-creating-rule.png)
 
 2\. Создайте правило привязки **IP к MAC** по следующему образцу:
 
-![](../../.gitbook/assets/dhcp-binding-rule.png)
+![](/.gitbook/assets/dhcp-binding-rule.png)
 
 | Название поля | Описание                                                    |
 | :------------- | :----------------------------------------------------------- |
@@ -70,11 +64,11 @@ dateCreated: '2021-04-02T07:25:10.501Z'
 
 Пример созданного правила привязки показан ниже на скриншоте:
 
-![](../../.gitbook/assets/dhcp-binding-ready-rule.png)
+![](/.gitbook/assets/dhcp-binding-ready-rule.png)
 
 Для проверки созданного правила, на компьютере с указанным в правиле MAC-адресом, получите IP-адрес по DHCP и проверьте результат с помощью команды `ipconfig /all`
 
-![](../../.gitbook/assets/dhcp-binding-result.png)
+![](/.gitbook/assets/dhcp-binding-result.png)
 
 {% hint style="info" %}
 Советы по настройке клиентов:

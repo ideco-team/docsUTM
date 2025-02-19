@@ -6,7 +6,7 @@ description: >-
 
 Рассмотрим настройку подключения по схеме, представленной на рисунке ниже:
 
-![](../../../../.gitbook/assets/connect-utm-to-cisco-via-ipsec1.png)
+![](/.gitbook/assets/connect-utm-to-cisco-via-ipsec1.png)
 
 Для настройки подключения Cisco IOS к Ideco UTM нужно следовать инструкции в каждой из пунктов.
 

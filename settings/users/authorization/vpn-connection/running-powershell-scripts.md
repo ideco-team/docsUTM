@@ -25,26 +25,26 @@ description: >-
 * Перейдя в раздел **Пользователи -> Авторизация -> VPN-подключение**;
 * Установите флаг у требуемого протокола подключения, если требуется, заполните поля и нажмите **Сохранить**;
 * Кликните по ссылке **PowerShell - скрипт для настройки подключений**: 
-  ![](../../../../.gitbook/assets/powershell5.png)
+  ![](/.gitbook/assets/powershell5.png)
 * Перенесите скачанный файл на устройство, на котором требуется создать VPN-подключение.
 
 **В личном кабинете пользователя:**
 
 * Скачайте скрипт, кликнув по ссылке **Скачать скрипт для создания подключения**:
-  ![](../../../../.gitbook/assets/powershell1.png)
+  ![](/.gitbook/assets/powershell1.png)
 * Перейдите к выполнению пункта 2.
 
 2\. Щелкните правой кнопкой мыши по скаченному файлу и в контекстном меню выберите **Свойства**.
 
-<img src="../../../../.gitbook/assets/powershell1.png" alt="" data-size="original">
+<img src="/.gitbook/assets/powershell1.png" alt="" data-size="original">
 
 3\. Поставьте флаг **Разблокировать** справа в нижнем углу свойств файла (по умолчанию ОС блокирует выполнение скаченных из интернета файлов):
 
-<img src="../../../../.gitbook/assets/powershell2.png" alt="" data-size="original">
+<img src="/.gitbook/assets/powershell2.png" alt="" data-size="original">
 
 4\. Нажмите правой кнопкой мыши на файл и выберите **Выполнить в PowerShell** в контекстном меню:
 
-<img src="../../../../.gitbook/assets/powershell3.png" alt="" data-size="original">
+<img src="/.gitbook/assets/powershell3.png" alt="" data-size="original">
 
 При появлении ошибки «Выполнение сценариев отключено в этой системе», нужно включить выполнение сценариев, выполнив команду в PowerShell (вызовите его через меню «Пуск»): `Set-ExecutionPolicy Unrestricted`;
 
@@ -52,7 +52,7 @@ description: >-
 
 6\. Подключение создано. Нажмите **Подключиться** в списке ваших сетей.
 
-<img src="../../../../.gitbook/assets/powershell4.png" alt="" data-size="original">
+<img src="/.gitbook/assets/powershell4.png" alt="" data-size="original">
 
 ### Что делать, если запустить скрипт не получается?
 

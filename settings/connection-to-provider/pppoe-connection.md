@@ -16,7 +16,7 @@ dateCreated: '2021-04-02T07:23:26.684Z'
 
 1\. Перейдите в меню **Сервисы -> Сетевые интерфейсы**.&#x20;
 
-2\. Нажмите на иконку ![ok\_with\_icon.png](../../.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + PPPoE**.
+2\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу окна и выберите пункт **Ethernet + PPPoE**.
 
 3\. Выберите сетевую карту.&#x20;
 
@@ -36,12 +36,12 @@ dateCreated: '2021-04-02T07:23:26.684Z'
 
 **Пример настройки:**
 
-![](../../.gitbook/assets/ethernet+pppoe.jpg)
+![](/.gitbook/assets/ethernet+pppoe.jpg)
 
 {% hint style="info" %}
 Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
 
 Пример вывода команды:
 
-![](../../../.gitbook/assets/ethernet-connection3.png)
+![](/.gitbook/assets/ethernet-connection3.png)
 {% endhint %}

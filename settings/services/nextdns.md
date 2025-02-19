@@ -1,13 +1,3 @@
----
-title: NextDNS
-description: null
-published: true
-date: '2021-04-02T07:25:18.431Z'
-tags: null
-editor: undefined
-dateCreated: '2021-04-02T07:25:15.191Z'
----
-
 # NextDNS
 
 NextDNS является облачным поставщиком услуг DNS в Интернете, используемый \
@@ -33,14 +23,14 @@ NextDNS является облачным поставщиком услуг DNS 
 
 1\. Необходимо зайти на сайт https://my.nextdns.io/`nextDNS-id`/setup
 
-![Первичное окно настройки NextDNS](../../.gitbook/assets/nextdns\_first\_configuration.png)
+![Первичное окно настройки NextDNS](/.gitbook/assets/nextdns_first_configuration.png)
 
 2\. Перейдите в раздел **Сервисы -> DNS**.
 
 3\. Установите флаг с **NextDNS** и вставить в поле ID из личного кабинета, как показано\
 на скриншоте:
 
-![](../../.gitbook/assets/nextdns\_paste\_id\_in\_dns.png)
+![](/.gitbook/assets/nextdns_paste_id_in_dns.png)
 
 4\. Нажмите на кнопку **Сохранить**.
 

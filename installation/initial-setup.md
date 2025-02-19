@@ -15,27 +15,27 @@
 
 Пример ошибки в браузере Google Chrome:
 
-![](../.gitbook/assets/browser-chrome.gif)
+![](/.gitbook/assets/browser-chrome.gif)
 
 После того как вы перешли на сайт по IP-адресу, в окне браузера должно появиться окно авторизации в веб-интерфейс Ideco UTM. Введите логин и пароль от учетной записи администратора, созданной на этапе установки Ideco UTM.
 
 Чтобы ошибка больше не появлялась, импортируйте корневой сертификат UTM в браузер. Сертификат можно скачать тремя способами:
 
-1\. В разделе **Сервисы -> Сертификаты**, нажав на иконку ![ok\_with\_icon.png](../.gitbook/assets/icon-download.png) **Скачать**:
+1\. В разделе **Сервисы -> Сертификаты**, нажав на иконку ![ok\_with\_icon.png](/.gitbook/assets/icon-download.png) **Скачать**:
 
-![](../.gitbook/assets/sertificate.png)
+![](/.gitbook/assets/sertificate.png)
 
 2\. В разделе **Правила трафика -> Контент-фильтр -> Настройки**:
 
-![](../.gitbook/assets/sertificate-kf.png)
+![](/.gitbook/assets/sertificate-kf.png)
 
 3\. Также корневой сертификат можно скачать, зайдя в личный кабинет Ideco UTM под учетной записью одного из имеющихся пользователей:
 
-![](../.gitbook/assets/user-download-cert.png)
+![](/.gitbook/assets/user-download-cert.png)
 
 После первого входа в веб-интерфейс вы увидите несколько уведомлений, которые подскажут вам, что для корректной работы Ideco UTM необходимо настроить подключение к провайдеру и зарегистрировать сервер.
 
-![](../.gitbook/assets/notifications.png)
+![](/.gitbook/assets/notifications.png)
 
 ## Настройка подключения к интернет-провайдеру
 
@@ -57,9 +57,9 @@
 
 Для настройки Ethernet-подключения выполните следующие шаги:
 
-1\. Нажмите на иконку ![ok\_with\_icon.png](../.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
+1\. Нажмите на иконку ![ok\_with\_icon.png](/.gitbook/assets/ok-with-icon.png) в правом верхнем углу и выберите пункт **Внешний Ethernet**.
 
-![](../.gitbook/assets/create-interface.png)
+![](/.gitbook/assets/create-interface.png)
 
 {% hint style="danger" %}
 **Будьте внимательны!**
@@ -75,7 +75,7 @@
 * IP-адрес/маска;
 * Шлюз (или установите флаг в строке *Автоматическая конфигурация через DHCP*);
 
-![](../.gitbook/assets/create-int.png)
+![](/.gitbook/assets/create-int.png)
 
 4\. Проверьте правильность введенных данных и нажмите кнопку **Сохранить**.
 
