@@ -10,119 +10,187 @@
 Не рекомендуем использовать для VPN-подключений кириллические логины.
 {% endhint %}
 
-<details>
+{% tabs %}
 
-<summary>Подключение через приложение StrongSwan</summary>
-
-1\. Нажмите **Добавить VPN профиль**:
-
-<img src="/.gitbook/assets/connection-for-mobile-devices1.png" alt="" data-size="original">
-
-2\. Заполните поля:
-
-<img src="/.gitbook/assets/connection-for-mobile-devices2.png" alt="" data-size="original">
-
-* **Сервер** - домен, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
-* **VPN тип** - IKEv2 EAP (Логин/Пароль);
-* **Логин** - имя пользователя, которому разрешено подключение по VPN;
-* **Пароль** - пароль пользователя.
-
-3\. Нажмите **Сохранить** и кликните по созданному подключению:
-
-<img src="/.gitbook/assets/connection-for-mobile-devices3.png" alt="" data-size="original">
-
-</details>
-
-<details>
-
-<summary>Подключение на Android</summary>
+{% tab title="Android" %}
 
 1\. Перейдите в **VPN** в раздел **Настройки -> Подключения -> Другие настройки**. При необходимости воспользуйтесь строкой поиска по настройкам.
 
-2\. Выберите тип подключения и заполните следующие поля:
+2\. Выберите тип подключения и заполните поля:
 
 **Для PPTP:**
 
-<img src="/.gitbook/assets/connection-for-mobile-devices4.png" alt="" data-size="original">
-
-* **Имя** - имя подключения;
-* **Адрес сервера** - адрес VPN-сервера;
-* **Имя пользователя** - имя пользователя, которому разрешено подключение по VPN;
-* **Пароль** - пароль пользователя.
-
-**Для IKEv2/IPsec MSCHAPv2:**
-
-<img src="/.gitbook/assets/connection-for-mobile-devices5.png" alt="" data-size="original">
-
-* **Имя** - имя подключения;
-* **Адрес сервера** - адрес VPN-сервера;
-* **Идентификатор IPsec** - логин пользователя;
-* **Сертификат сервера** - "Принято от сервера";
-* **Сертификат ЦС IPsec** - "Не проверять сервер";
-* **Имя пользователя** - имя пользователя, которому разрешено подключение по VPN;
-* **Пароль** - пароль пользователя.
-
-**Для L2TP/IPsec PSK:**
-
-<img src="/.gitbook/assets/connection-for-mobile-devices6.png" alt="" data-size="original">
-
-* **Имя** - имя подключения;
-* **Адрес сервера** - адрес VPN-сервера;
-* **Общий ключ IPsec** - значение строки **PSK** в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по L2TP/IPsec**.
-
-4\. Нажмите **Сохранить** и активируйте подключение.
-
-</details>
+![](/.gitbook/assets/connection-for-mobile-devices4.png)
 
 <details>
 
-<summary>Подключение на iOS</summary>
+<summary>Расшифровка полей</summary>
+
+* **Имя** - имя подключения;
+* **Адрес сервера** - домен или IP-адрес Ideco NGFW;
+* **Имя пользователя** - логин пользователя, которому разрешено подключение по VPN;
+* **Пароль** - пароль пользователя.
+  
+</details>
+
+**Для IKEv2/IPsec MSCHAPv2:**
+
+![](/.gitbook/assets/connection-for-mobile-devices5.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **Имя** - имя подключения;
+* **Адрес сервера** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
+* **Идентификатор IPsec** - логин пользователя, которому разрешено подключение по VPN;
+* **Сертификат сервера** - Принято от сервера;
+* **Сертификат ЦС IPsec** - Не проверять сервер;
+* **Имя пользователя** - логин пользователя, которому разрешено подключение по VPN;
+* **Пароль** - пароль пользователя.
+
+</details>
+
+**Для L2TP/IPsec PSK:**
+
+![](/.gitbook/assets/connection-for-mobile-devices6.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **Имя** - имя подключения;
+* **Адрес сервера** - домен или IP-адрес Ideco NGFW;
+* **Общий ключ IPsec** - значение строки **PSK** в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по L2TP/IPsec**.
+
+</details>
+
+3\. Нажмите **Сохранить** и активируйте подключение.
+
+{% endtab %}
+
+{% tab title="iOS" %}
 
 1\. Перейдите в раздел **Настройки -> Основные -> VPN и управление устройством -> VPN**:
 
-<img src="/.gitbook/assets/connection-for-mobile-devices7.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-mobile-devices7.png)
 
 2\. Нажмите **Добавить конфигурацию VPN**:
 
-<img src="/.gitbook/assets/connection-for-mobile-devices8.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-mobile-devices8.png)
 
-3\. Выберите **Тип** подключения и заполните соответствующие поля:
+3\. Выберите **Тип** подключения и заполните поля:
 
 **Для PPTP:**
 
+{% hint style="info" %}
 Начиная с версии iOS-10 компания Apple убрала поддержку протокола PPTP.
+{% endhint %}
 
-<img src="/.gitbook/assets/connection-for-mobile-devices9.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-mobile-devices9.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
 
 * **Описание** - название соединения;
-* **Сервер** - адрес VPN-сервера;
-* **Учетная запись** - имя пользователя, которому разрешено подключение по VPN;
+* **Сервер** - домен или IP-адрес Ideco NGFW;
+* **Учетная запись** - логин пользователя, которому разрешено подключение по VPN;
 * **Пароль** - пароль пользователя.
+
+</details>
 
 **Для L2TP:**
 
-<img src="/.gitbook/assets/connection-for-mobile-devices10.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-mobile-devices10.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
 
 * **Описание** - название соединения;
-* **Сервер** - адрес VPN-сервера;
-* **Учетная запись** - имя пользователя, которому разрешено подключение по VPN;
+* **Сервер** - домен или IP-адрес Ideco NGFW;
+* **Учетная запись** - логин пользователя, которому разрешено подключение по VPN;
 * **Пароль** - пароль пользователя;
 * **Общий ключ** - значение строки **PSK** в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по L2TP/IPsec**.
 
+</details>
+
 **Для IKEv2:**
 
-<img src="/.gitbook/assets/connection-for-mobile-devices11.png" alt="" data-size="original">
+![](/.gitbook/assets/connection-for-mobile-devices11.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
 
 * **Описание** - название соединения;
-* **Сервер** - адрес VPN-сервера;
-* **Удаленный ID** - адрес VPN-сервера;
-* **Имя пользователя** - имя пользователя, которому разрешено подключение по VPN;
+* **Сервер** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
+* **Удаленный ID** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
+* **Имя пользователя** - логин пользователя, которому разрешено подключение по VPN;
 * **Пароль** - пароль пользователя.
 
-4\. Нажмите **Готово**;
+</details>
 
-5\. Переведите опцию **Статус** вправо:
+4\. Нажмите **Готово**.
 
-<img src="/.gitbook/assets/connection-for-mobile-devices12.png" alt="" data-size="original">
+5\. Включите опцию **Статус**:
+
+![](/.gitbook/assets/connection-for-mobile-devices12.png)
+
+{% endtab %}
+
+{% tab title="StrongSwan (Android)" %}
+
+1\. Нажмите **Добавить VPN профиль**:
+
+![](/.gitbook/assets/connection-for-mobile-devices1.png)
+
+2\. Заполните поля:
+
+![](/.gitbook/assets/connection-for-mobile-devices2.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **Сервер** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
+* **VPN тип** - IKEv2 EAP (Логин/Пароль);
+* **Логин** - логин пользователя, которому разрешено подключение по VPN;
+* **Пароль** - пароль пользователя.
 
 </details>
+
+3\. Нажмите **Сохранить** и перейдите по созданному подключению:
+
+![](/.gitbook/assets/connection-for-mobile-devices3.png)
+
+{% endtab %}
+
+{% tab title="Brooog IKEv2 (iOS)" %}
+
+1\. Нажмите **Add VPN Connection**:
+
+![](/.gitbook/assets/vpn-autorization21.png)
+
+2\. Заполните поля и включите опцию **Connect on Demand**:
+
+![](/.gitbook/assets/vpn-authorization22.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **Server** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
+* **Username** - логин пользователя, которому разрешено подключение по VPN;
+* **Password** - пароль пользователя.
+
+</details>
+
+3\. Нажмите **Save** и переведите опцию в режим **CONNECTED**:
+
+![](/.gitbook/assets/vpn-autorization23.png)
+
+{% endtab %}
+
+{% endtabs %}
