@@ -8,7 +8,6 @@ description: Система обнаружения и предотвращени
 
 Система **Предотвращения вторжений** доступна только в **Enterprise-версии Ideco NGFW** для пользователей с активной подпиской на обновления.
 
-Профили **Предотвращения вторжений** и [Контроля приложений](/settings/security-profiles/application-control/README.md), а также правила [Ограничения скорости](/settings/access-rules/shaper.md) не обрабатывают трафик между локальными сетями и сетями филиалов.
 {% endhint %}
 
 **Система предотвращения вторжений** (IDS/IPS, Intrusion detection system / Intrusion prevention system) предназначена для:
