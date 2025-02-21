@@ -10,7 +10,7 @@
 
 2\. Выберите нужный USB flash диск в пункте **Устройства**:
 
-![](../.gitbook/assets/screenshot\_1.png)
+![](../.gitbook/assets/screenshot_1.png)
 
 3\. Выберите метод загрузки **Диск или ISO образ**.
 

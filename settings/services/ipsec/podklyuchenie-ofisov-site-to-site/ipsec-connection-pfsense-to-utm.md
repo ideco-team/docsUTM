@@ -163,7 +163,7 @@ description: >-
 
 * Для **Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/aes(v9).png)
+![](../../../../.gitbook/assets/aes-v9.png)
 
 3. Сохраните подключение.
 
@@ -180,7 +180,7 @@ description: >-
 
 * **Для Ideco UTM версии 9** используйте параметры, выбранные на скриншоте ниже:
 
-![](../../../../.gitbook/assets/esp(v9).png)
+![](../../../../.gitbook/assets/esp-v9.png)
 
 * **Local Network** – локальную сеть pfSense, которая будет доступна из подсети Ideco UTM.
 * **Remote Network** – локальную сеть Ideco UTM, которая будет доступна из подсети pfSense.

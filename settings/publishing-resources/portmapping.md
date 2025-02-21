@@ -26,7 +26,7 @@
 
 Исходя из первоначальной задачи, правило будет выглядеть как на скриншоте ниже:
 
-<img src="../../.gitbook/assets/dnat-ssh (1).JPG" alt="" data-size="original">
+<img src="../../.gitbook/assets/dnat-ssh.jpg" alt="" data-size="original">
 
 После сохранения созданного правила, его итоговый вид в таблице будет выглядеть следующим образом:
 

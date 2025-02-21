@@ -101,8 +101,6 @@ POST https://адрес_сервера/web/auth/login
 }
 ```
 
-![](../../../.gitbook/assets/user-import.png)
-
 5\. Отправьте запрос на включение режима:
 
 ```
@@ -116,8 +114,6 @@ PUT /ad_backend/security_group_import_settings
   "compatibility_mode": true
 }
 ```
-
-![](../../../.gitbook/assets/user-import1.png)
 
 Для выключения режима совместимости в теле запроса вместо `true` укажите `false`.
 
