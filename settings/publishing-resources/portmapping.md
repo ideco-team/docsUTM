@@ -22,7 +22,7 @@
 
 Заполните поля в соответствии с характеристиками, указанными в примере:
 
-<img src="../../.gitbook/assets/dnat-ssh (1).JPG" alt="" data-size="original">
+<img src="../../.gitbook/assets/dnat-ssh.jpg" alt="" data-size="original">
 
 После сохранения созданное правило будет выглядеть следующим образом:
 
