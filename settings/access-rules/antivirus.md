@@ -25,7 +25,7 @@
 
 В случае правильной настройки браузер выведет ошибку доступа:
 
-<img src="/.gitbook/assets/antivirus (2).jpeg" alt="" data-size="original">
+<img src="/.gitbook/assets/antivirus2" alt="" data-size="original">
 
 </details>
 

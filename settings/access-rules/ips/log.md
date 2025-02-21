@@ -28,7 +28,7 @@
 
 3\. В открывшемся окне выберите **с разделителями** и нажмите **Далее**:
 
-<img src="/.gitbook/assets/log1 (1).png" alt="" data-size="original">
+<img src="/.gitbook/assets/log1-1.png" alt="" data-size="original">
 
 4\. В блоке **Символом-разделителем является:** выберите **запятая** и нажмите **Далее**:
 
