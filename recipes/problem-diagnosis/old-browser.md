@@ -3,9 +3,9 @@
 Если используется браузер, который не поддерживает NGFW, при авторизации появится ошибка **Your browser is outdated. This version of browser is unsecure and unsupported by modern web-technologies. Please, install the latest version of one of the listed browsers**.
 
 Поддерживаемые версии браузеров: 
-* Google Chrome версия >= 90;
-* Firefox версия >= 78;
-* Safari версия >= 14. 
+* Google Chrome версия >= 109;
+* Firefox версия >= 115;
+* Safari версия >= 15.4. 
 
 Рекомендуем обновить браузер до минимально поддерживаемой версии.
 
