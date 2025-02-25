@@ -114,6 +114,7 @@ PUT /firewall/settings
     "id": "integer",
     "parent_id": "string",
     "enabled": "boolean",
+    "logging": "boolean",
     "protocol": "string",
     "source_addresses": [ "string" ],
     "source_addresses_negate": "boolean",
@@ -137,6 +138,7 @@ PUT /firewall/settings
 * `id` - идентификатор правила.
 * `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `enabled` - если `true`, то правило включено, `false` - выключено;
+* `logging` - если `true`, то включено логирование правила, `false` - выключено;
 * `protocol` - протокол;
 * `source_addresses` - адрес источника;
 * `source_addresses_negate` - инвертировать адрес источника;
@@ -164,6 +166,7 @@ PUT /firewall/settings
     "id": "integer",
     "parent_id": "string",
     "enabled": "boolean",
+    "logging": "boolean",
     "protocol": "string",
     "source_addresses": [ "string" ],
     "source_addresses_negate": "boolean",
@@ -183,6 +186,7 @@ PUT /firewall/settings
 * `id` - идентификатор правила.
 * `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `enabled` - если `true`, то правило включено, `false` - выключено;
+* `logging` - если `true`, то включено логирование правила, `false` - выключено;
 * `protocol` - протокол;
 * `source_addresses` - адрес источника;
 * `source_addresses_negate` - инвертировать адрес источника;
@@ -206,6 +210,7 @@ PUT /firewall/settings
     "id": "integer",
     "parent_id": "string",
     "enabled": "boolean",
+    "logging": "boolean",
     "protocol": "string",
     "source_addresses": [ "string" ],
     "source_addresses_negate": "boolean",
@@ -224,6 +229,7 @@ PUT /firewall/settings
 * `id` - идентификатор правила.
 * `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `enabled` - если `true`, то правило включено, `false` - выключено;
+* `logging` - если `true`, то включено логирование правила, `false` - выключено;
 * `protocol` - протокол;
 * `source_addresses` - адрес источника;
 * `source_addresses_negate` - инвертировать адрес источника;
