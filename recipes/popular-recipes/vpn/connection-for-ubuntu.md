@@ -26,7 +26,7 @@ description: >-
 
 **Создание подключения в Ubuntu:**
 
-1\. Перейдите в **Настройки -> Сети** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
+1\. Перейдите в **Настройки -> Сеть** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
 ![](/.gitbook/assets/connection-for-ubuntu1.png)
 
@@ -108,7 +108,7 @@ sudo cp ca.crt /usr/local/share/ca-certificates/ca.crt
 sudo update-ca-certificates
 ```
 
-6\. Перейдите в **Настройки -> Сети** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
+6\. Перейдите в **Настройки -> Сеть** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
 ![](/.gitbook/assets/connection-for-ubuntu1.png)
 
@@ -163,7 +163,7 @@ sudo apt install -y network-manager-sstp sstp-client
 sudo reboot
 ```
 
-3\. Перейдите в **Настройки -> Сети** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png).
+3\. Перейдите в **Настройки -> Сеть** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png).
 
 4\. В появившемся окне выберите **Secure Socket Tunneling Protocol (SSTP)** (**Туннельный протокол типа точка-точка (SSTP)**):
 
@@ -174,7 +174,7 @@ sudo reboot
 ![](/.gitbook/assets/connection-for-ubuntu9.png)
 
 * **Название** - имя подключения;
-* **Шлюз** - укажите в формате `домен:\[порт, выбранный на NGFW]`;
+* **Шлюз** - укажите в формате `домен:<порт, выбранный на NGFW>`;
 * **Имя пользователя** - логин пользователя, которому разрешено подключение по VPN;
 * **Пароль** - пароль пользователя. В правой части поля выберите вариант хранения для пароля от VPN-соединения;
 * **NT-домен** - оставьте поле пустым.
@@ -205,7 +205,7 @@ sudo reboot
 
 <summary>Протокол L2TP/IPsec</summary>
 
-**Важно:** L2TP/IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения, если их более одного. Рекомендуем вместо L2TP IPsec использовать IKEv2 IPsec.
+**Важно:** L2TP/IPsec клиенты, находящиеся за одним NAT'ом, могут испытывать проблемы подключения, если их более одного. Рекомендуем вместо L2TP/IPsec использовать IKEv2/IPsec.
 
 **Настройка Ideco NGFW:**
 
@@ -249,7 +249,7 @@ sudo apt purge go-l2tp
 sudo apt install xl2tpd
 ```
 
-5\. Перейдите в **Настройки -> Сети** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
+5\. Перейдите в **Настройки -> Сеть** и в разделе **VPN** нажмите ![](/.gitbook/assets/icon-add.png):
 
 ![](/.gitbook/assets/connection-for-ubuntu1.png)
 
