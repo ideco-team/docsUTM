@@ -236,7 +236,7 @@ sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
 sudo reboot
 ```
 
-4\. Проверьте, какие пакеты установили:
+4\. Проверьте, какие пакеты установлены:
 
 ```bash
 dpkg --get-selections | grep l2tp
