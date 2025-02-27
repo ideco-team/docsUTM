@@ -8,7 +8,9 @@ description: >-
 Перед настройкой VPN-подключения перейдите на вкладку **Пользователи -> VPN-подключения -> Доступ по VPN** и создайте разрешающее VPN-подключение правило.
 
 {% tabs %}
+
 {% tab title="IKEv2/IPsec" %}
+
 **Настройка Ideco NGFW:**
 
 1\. Перейдите на вкладку **Пользователи -> VPN-подключения -> Основное**.
@@ -63,10 +65,11 @@ sudo reboot
 * для Phase1 Algorithm ищите значения **proposals=**;
 * для Phase2 Algorithms ищите значения **esp_proposals=**.
 {% endhint %}
+
 {% endtab %}
 
-{% tabs %}
 {% tab title="L2TP/IPsec" %}
+
 **Настройка Ideco NGFW:**
 
 1\. Перейдите на вкладку **Пользователи -> VPN-подключения -> Основное**.
@@ -124,4 +127,7 @@ sudo reboot
 Далее в трее (в настройках сети) **Соединение VPN** появится VPN-подключение. Для активации включите опцию **VPN-соединение**:
 
 ![](/.gitbook/assets/connection-for-astra-linux4.png)
+
 {% endtab %}
+
+{% endtabs %}
