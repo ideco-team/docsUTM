@@ -6,6 +6,10 @@ description: >-
 
 # Подключение Cisco IOS и Ideco NGFW по IPsec
 
+{% hint style="info" %}
+В некоторых версиях Cisco передает внешний IP-адрес вместо **KeyID** (проверьте, включив расширенный лог IPsec на Cisco). При настройке подключения от таких роутеров к Ideco NGFW в качестве **Идентификатора удаленной стороны** укажите внешний IP-адрес Cisco, в качестве **Типа идентификатора** - auto.
+{% endhint %}
+
 ## Настройка подключения в туннельном режиме
 
 Рассмотрим настройку подключения по схеме ниже:
@@ -24,9 +28,9 @@ description: >-
 
 ### Настройка Cisco IOS XE
 
-Настройку Cisco можно осуществить через консоль устройства или, воспользовавшись нашими конфигурационными скриптами, сгенерированными по адресу [https://cisco.ideco.ru/](https://cisco.ideco.ru).
+Настройку Cisco можно осуществить, воспользовавшись нашими конфигурационными скриптами, сгенерированными по адресу [https://cisco.ideco.ru/](https://cisco.ideco.ru).
 
-#### Настройка Cisco через консоль
+Для настройки Cisco через консоль выполните действия:
 
 1\. Настройка локального интерфейса:
 
@@ -73,10 +77,15 @@ exit
 write memory
 ```
 
-7\. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть интернет.**\
-   Для этого перейдите на какой-нибудь сайт (например: [https://www.cisco.com/](https://www.cisco.com)) с устройства в локальной сети Cisco.
+7\. **После сохранения настроек проверьте, что из локальной сети Cisco присутствует доступ в сеть интернет.**
 
-### Настройка IKEv2+IPsec на Cisco
+Для этого перейдите на какой-нибудь сайт (например: [https://www.cisco.com/](https://www.cisco.com)) с устройства в локальной сети Cisco.
+
+</details>
+
+<details>
+
+<summary>Настройка IKEv2+IPsec на Cisco</summary>
 
 1\. Создание proposal:
 
@@ -98,13 +107,28 @@ proposal ikev2proposal
 exit
 ```
 
-3\. Создание peer (key\_id - идентификатор удаленной стороны, т. е. Ideco NGFW).:
+3\. Создание peer:
+
+
+* Для подключения от Ideco NGFW к Cisco:
 
 ```
 crypto ikev2 keyring key
 peer strongswan
 address <внешний IP NGFW>
-identity key-id <key_id>
+pre-shared-key local <psk>
+pre-shared-key remote <psk>
+exit
+exit
+```
+
+* Для подключения от Cisco к Ideco NGFW:
+
+```
+crypto ikev2 keyring key
+peer strongswan
+address <внешний IP NGFW>
+identity key-i <key-id> # Если Cisco передает IP вместо key-id, то identity address <внешний IP-адрес Cisco>
 pre-shared-key local <psk>
 pre-shared-key remote <psk>
 exit
@@ -112,6 +136,19 @@ exit
 ```
 
 4\. Создание IKEv2 profile:
+
+* Для подключения от Ideco NGFW к Cisco:
+
+```
+crypto ikev2 profile ikev2profile
+match identity remote key-id <key-id>
+authentication remote pre-share
+authentication local pre-share
+keyring local key
+exit
+```
+
+* Для подключения от Cisco к Ideco NGFW:
 
 ```
 crypto ikev2 profile ikev2profile
@@ -138,6 +175,7 @@ set peer <внешний IP NGFW>
 set transform-set TS
 set ikev2-profile ikev2profile
 match address cryptoacl
+reverse-route
 exit
 ```
 
@@ -206,10 +244,6 @@ write memory
 
 </details>
 
-{% hint style="info" %}
-Если Cisco передает внешний IP-адрес вместо **KeyID** (проверьте, включив расширенный лог IPsec на Cisco), укажите в качестве **Идентификатора удаленной стороны** внешний IP-адрес Cisco.
-{% endhint %}
-
 <details>
 
 <summary>Настройка входящего подключения на Ideco NGFW</summary>
@@ -229,7 +263,8 @@ write memory
    * **Удаленные локальные сети** - укажите локальную сеть Cisco;
    * **Тип аутентификации** - PSK;
    * **PSK** - укажите PSK-ключ;
-   * **Идентификатор удаленной стороны** - вставьте идентификатор Cisco (параметр Key ID);
+   * **Тип идентификатора** - keyid или auto, если Cisco передает IP-адрес вместо key-id;
+   * **Идентификатор удаленной стороны** - вставьте идентификатор Cisco (параметр Key ID) или IP-адрес Cisco, если Cisco передает IP-адрес вместо key-id;
    * **Индекс интерфейса для Netflow** - введите индекс для идентификации интерфейса (целое число от 0 до 65535), если используете Netflow.
 
 3\. Сохраните созданное подключение, затем нажмите на кнопку **Включить**.
@@ -242,6 +277,10 @@ write memory
 
 Итоговая конфигурация IKEv2 IPsec на Cisco IOS должна выглядеть следующим образом:
 
+<details>
+
+<summary>Для подключения от Cisco к Ideco NGFW</summary>
+
 ```
 crypto ikev2 proposal ikev2proposal
  encryption aes-cbc-256
@@ -252,30 +291,33 @@ crypto ikev2 policy ikev2policy
  match fvrf any
  proposal ikev2proposal
 
+
 crypto ikev2 keyring key
- peer strongswan
-  address 5.5.5.5
-  pre-shared-key local QWEqwe1234567890
-  pre-shared-key remote QWEqwe1234567890
+  peer strongswan
+   address <внешний IP NGFW>
+   identity key-i <key-id> # Если Cisco передает IP вместо key-id, то identity address <внешний IP-адрес Cisco>
+   pre-shared-key local <psk>
+   pre-shared-key remote <psk>
 
 crypto ikev2 profile ikev2profile
- match identity remote key-id key-id
- authentication remote pre-share
- authentication local pre-share
- keyring local key
+  match identity remote address <внешний IP NGFW> 255.255.255.255
+  authentication remote pre-share
+  authentication local pre-share
+  keyring local key
 
 crypto ipsec transform-set TS esp-gcm 256
  mode tunnel
 
 crypto map cmap 10 ipsec-isakmp
- set peer 5.5.5.5
+ set peer <внешний IP NGFW>
  set transform-set TS
  set ikev2-profile ikev2profile
  match address cryptoacl
+ reverse-route
 
 interface GigabitEthernet1
 ! внешний интерфейс
- ip address 1.1.1.1 255.255.255.0
+ ip address <внешний IP Cisco> <маска подсети>
  ip nat outside
  negotiation auto
  no mop enabled
@@ -284,7 +326,7 @@ interface GigabitEthernet1
 
 interface GigabitEthernet2
 ! локальный интерфейс
- ip address 2.2.2.2 255.255.255.0
+ ip address <локальный IP Cisco> <маска подсети>
  ip nat inside
  negotiation auto
  no mop enabled
@@ -293,13 +335,82 @@ interface GigabitEthernet2
 ip nat inside source list NAT interface GigabitEthernet1 overload
 
 ip access-list extended NAT
- deny   ip 2.2.2.0 0.0.0.255 3.3.3.0 0.0.0.255
- permit ip 2.2.2.0 0.0.0.255 any
+ deny   ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть NGFW> <обратная маска подсети>
+ permit ip <локальная подсеть Cisco> <обратная маска подсети> any
 ip access-list extended cryptoacl
- permit ip 2.2.2.0 0.0.0.255 3.3.3.0 0.0.0.255
+ permit ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть NGFW> <обратная маска подсети>
 ```
 
-## Настройка подключения в транспортном режиме
+</details>
+
+<details>
+
+<summary>Для подключения от Ideco NGFW к Cisco</summary>
+
+```
+crypto ikev2 proposal ikev2proposal
+ encryption aes-cbc-256
+ integrity sha256
+ group 19
+
+crypto ikev2 policy ikev2policy
+ match fvrf any
+ proposal ikev2proposal
+
+
+crypto ikev2 keyring key
+  peer strongswan
+   address <внешний IP NGFW>
+   pre-shared-key local <psk>
+   pre-shared-key remote <psk>
+
+crypto ikev2 profile ikev2profile
+  match identity remote key-id <key-id>
+  authentication remote pre-share
+  authentication local pre-share
+  keyring local key
+
+crypto ipsec transform-set TS esp-gcm 256
+ mode tunnel
+
+crypto map cmap 10 ipsec-isakmp
+ set peer <внешний IP NGFW>
+ set transform-set TS
+ set ikev2-profile ikev2profile
+ match address cryptoacl
+ reverse-route
+
+interface GigabitEthernet1
+! внешний интерфейс
+ ip address <внешний IP Cisco> <маска подсети>
+ ip nat outside
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ crypto map cmap
+
+interface GigabitEthernet2
+! локальный интерфейс
+ ip address <локальный IP Cisco> <маска подсети>
+ ip nat inside
+ negotiation auto
+ no mop enabled
+ no mop sysid
+
+ip nat inside source list NAT interface GigabitEthernet1 overload
+
+ip access-list extended NAT
+ deny   ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть NGFW> <обратная маска подсети>
+ permit ip <локальная подсеть Cisco> <обратная маска подсети> any
+ip access-list extended cryptoacl
+ permit ip <локальная подсеть Cisco> <обратная маска подсети> <локальная подсеть NGFW> <обратная маска подсети>
+```
+
+</details>
+
+
+
+<!-- ## Настройка подключения в транспортном режиме
 
 {% hint style="success" %}
 GRE over IPsec поддерживает мультикаст-трафик, что позволяет использовать более сложные механизмы маршрутизации, включая динамическую маршрутизацию через OSPF.
@@ -412,7 +523,7 @@ exit
 
 ```
 crypto ipsec profile SECURE-P
-set transform-set SECURE-TS 
+set transform-set TS 
 set pfs group2
 ```
 
@@ -547,3 +658,4 @@ interface GigabitEthernet2
  ip address 192.168.10.1 255.255.255.0
 
 ```
+-->
