@@ -2,7 +2,7 @@
 
 ## Администраторы
 
-В Ideco Center вы можете создать локальных администраторов или интегрировать администраторов из RADIUS-сервера. Добавление администраторов в Ideco Center аналогично механизму в [Ideco NGFW](/settings/server-management/admins.md).
+В Ideco Center вы можете создать локальных администраторов или интегрировать администраторов из RADIUS-сервера. Добавление администраторов в Ideco Center аналогично механизму в [Ideco NGFW](../settings/server-management/admins.md).
 
 Локальным администраторам могут быть назначены роли:
 
@@ -22,7 +22,7 @@
 
 Для получения доступа к Ideco Center по SSH из локальной сети включите опцию. Доступ осуществляется по 22 TCP-порту. Попытки подбора паролей будут автоматически блокироваться.
 
-![](/.gitbook/assets/cc-admins1.png)
+![](../.gitbook/assets/cc-admins1.png)
 
 ## Обновления
 
@@ -152,21 +152,23 @@
 ### Ручное создание бэкапа
 
 <details>
+
 <summary>Через веб-интерфейс</summary>
 
 Для создания бэкапа через интерфейс Ideco Center перейдите в **Управление сервером -> Бэкапы -> Бэкапы** и выполните действия:
 
-1\. Нажмите **Добавить -> Создать** или нажмите ![](../.gitbook/assets/icon-backup.png) **Создать бэкап** в правом верхнем углу веб-интерфейса. 
+1\. Нажмите **Добавить -> Создать** или нажмите ![](../.gitbook/assets/icon-backup.png) **Создать бэкап** в правом верхнем углу веб-интерфейса.
 
 2\. Введите комментарий и нажмите **Добавить**.
 
 Новый бэкап появится в таблице:
 
-![](../.gitbook/assets/backup4.png)
+<img src="../.gitbook/assets/backup4.png" alt="" data-size="original">
 
 </details>
 
 <details>
+
 <summary>Через локальное меню</summary>
 
 Чтобы создать новый бэкап через локальное меню Ideco Center, выполните действия:
@@ -177,7 +179,7 @@
 
 Пример создания бэкапа через локальное меню приведен на скриншоте ниже:
 
-![](../.gitbook/assets/cc-local-menu1.png)
+<img src="../.gitbook/assets/cc-local-menu1.png" alt="" data-size="original">
 
 Настройка сохранения бэкапа в сетевом файловом хранилище возможна только через веб-интерфейс Ideco Center. Выгрузка на внешние сетевые хранилища производится только при автоматическом создании бэкапа.
 
@@ -205,10 +207,12 @@
 
 Также можно загрузить бэкап из файла. Например, в случае переноса с другого сервера. Для восстановления конфигураций бэкапа, который находится на внешнем носителе, перейдите в **Управление сервером -> Бэкапы -> Бэкапы**, нажмите на кнопку **Добавить** и выберите **Загрузить из файла**:
 
-![](../.gitbook/assets/backup2.png)
+<img src="../.gitbook/assets/backup2.png" alt="" data-size="original">
 
 </details>
+
 <details>
+
 <summary>Через локальное меню</summary>
 
 Перейдите в локальное меню и выполните действия:
@@ -216,7 +220,7 @@
 1\. Выберите пункт:
 
 * **11. Восстановить из бэкапа** - восстановятся все настройки и перезагрузится сервер;
-* **12. Мгновенно восстановить из бэкапа** - восстановятся все настройки без перезагрузки сервера, кроме изменений в списке пользователей и отчетах.
+*   **12. Мгновенно восстановить из бэкапа** - восстановятся все настройки без перезагрузки сервера, кроме изменений в списке пользователей и отчетах.
 
     Нажмите **Enter**.
 
@@ -226,9 +230,9 @@
 
 Пример восстановления из бэкапа через локальное меню:
 
-![](../.gitbook/assets/cc-local-menu2.png)
+<img src="../.gitbook/assets/cc-local-menu2.png" alt="" data-size="original">
 
-Чтобы перенести установленный Ideco Center с одного сервера на другой с сохранением всех настроек, воспользуйтесь статьей [Перенос данных и настроек на другой сервер](/recipes/popular-recipes/transferring-data-to-another-server.md).
+Чтобы перенести установленный Ideco Center с одного сервера на другой с сохранением всех настроек, воспользуйтесь статьей [Перенос данных и настроек на другой сервер](../recipes/popular-recipes/transferring-data-to-another-server.md).
 
 </details>
 
@@ -240,8 +244,6 @@
 
 ### Основные команды
 
-Работа терминала в Ideco Center аналогична работе в [Ideco NGFW](/settings/server-management/terminal/README.md).
-
 * **Утилиты сетевой диагностики:** `ping`, `host`, `nslookup`, `tracepath`, `tcpdump`, `arping`, `ss` (аналог `netstat`);
 * **Файловый редактор:** `nano`;
 * **Просмотр логов:** `journalctl -u <название службы>` (например, `journalctl -u ideco-routing-backend`);
@@ -251,6 +253,14 @@
   * `fail2ban-client unban --all` - команда используется для снятия всех блокировок;
   * `fail2ban-client unban <IP-адрес>` - команда используется для разблокировки конкретного IP-адреса. Укажите нужный IP-адрес в качестве аргумента.
 * **Просмотр конфигурации FRR:** `vtysh`.
+
+<details>
+
+<summary>Таблица служб</summary>
+
+<table><thead><tr><th width="329">Раздел</th><th>Имя службы</th></tr></thead><tbody><tr><td>Серверы</td><td>ideco-servers-backend, ideco-servers-websocket</td></tr><tr><td>Файрвол</td><td>ideco-firewall-backend, ideco-firewall-rest</td></tr><tr><td>Контент-фильтр</td><td>ideco-content-filter-backend</td></tr><tr><td>Предотвращение вторжений</td><td>ideco-suricata-backend</td></tr><tr><td>Объекты</td><td>ideco-alias-backend</td></tr><tr><td>Сетевые интерфейсы</td><td>ideco-network-backend, ideco-network-nic</td></tr><tr><td>Маршрутизация</td><td>ideco-routing-backend, ideco-routing-rest</td></tr><tr><td>Обратный прокси</td><td>ideco-reverse-backend</td></tr><tr><td>Защита и управление DNS</td><td>ideco-dns-backend, unbound, nsd, unbound-anchor, unbound-keygen</td></tr><tr><td>DHCP-сервер</td><td>ideco-dhclient</td></tr><tr><td>NTP-сервер</td><td>chronyd</td></tr><tr><td>Кластеризация</td><td>ideco-cluster-backend</td></tr><tr><td>Обновления</td><td>ideco-sysupdate-backend</td></tr><tr><td>Бэкапы</td><td>ideco-backup-backend, ideco-backup-create</td></tr><tr><td>Лицензия</td><td>ideco-license-backend</td></tr><tr><td>Syslog</td><td>ideco-logs-backend, ideco-monitor-backend</td></tr><tr><td>Отчеты и журналы</td><td>ideco-logs-backend, ideco-logs-syncer</td></tr><tr><td>Действия администраторов</td><td>ideco-audit-backend</td></tr><tr><td>Авторизация администраторов</td><td>ideco-web-backend</td></tr><tr><td>Сертификаты</td><td>ideco-cert-backend</td></tr><tr><td>Локальное меню</td><td>ideco-local-menu</td></tr><tr><td>Дополнительно</td><td>ideco-system-backend</td></tr><tr><td>Сбор анонимной статистики о работе сервера</td><td>ideco-gatherstat-backend</td></tr><tr><td>Защита от несанкционированного доступа, в т.ч. от брутфорс-атак (brute force - атака полным перебором)</td><td>fail2ban</td></tr><tr><td>REST API NGFW</td><td>ideco-rest-api-backend</td></tr><tr><td>Доступ по SSH</td><td>sshd</td></tr></tbody></table>
+
+</details>
 
 ## Дополнительно
 
