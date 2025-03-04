@@ -85,7 +85,9 @@ HIP-профили помогают реализовать ZTNA (Zero Trust Netw
 
  ![](/.gitbook/assets/ideco-client2.png)
 
-3\. Пройдите двухфакторную аутентификацию.
+3\. Введите код двухфакторной аутентификации:
+
+![](/.gitbook/assets/ideco-client9.png)
 
 </details>
 
