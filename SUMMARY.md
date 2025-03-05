@@ -122,7 +122,7 @@
     * [Настройка прокси с одним интерфейсом](settings/services/proxy/proxy-single-interface.md)
   * [Обратный прокси](settings/services/reverse-proxy.md)
   * [ЛК/Портал SSL VPN](settings/services/user-personal-account.md)
-  * [DNS](settings/services/dns/README.md)
+  * [Защита и управление DNS](settings/services/dns/README.md)
     * [Внешние DNS-серверы](settings/services/dns/dns-external.md)
     * [Master-зоны](settings/services/dns/master-zon.md)
     * [Forward-зоны](settings/services/dns/forward-zon.md)
