@@ -19,7 +19,7 @@ description: >-
 
 После сохранения настроек будет выдан Let’s Encrypt сертификат, пользователь будет перенаправляться на окно авторизации, минуя страницу исключения безопасности:
 
-<img src="/.gitbook/assets/web-autorization2.png" alt="" data-size="original">
+![](/.gitbook/assets/web-autorization2.png)
 
 Если сертификат для такого домена уже загружен в разделе [Сертификаты](/settings/services/certificates/), то будет использоваться загруженный сертификат. Новый сертификат выдаваться не будет.
 
@@ -29,4 +29,12 @@ description: >-
 
 {% content-ref url="active-directory-web-authentication.md" %}
 [active-directory-web-authentication.md](active-directory-web-authentication.md)
+{% endcontent-ref %}
+
+{% content-ref url="ad-autorization.md" %}
+[ad-autorization.md](ad-autorization.md)
+{% endcontent-ref %}
+
+{% content-ref url="auto-de-authorization-script.md" %}
+[auto-de-authorization-script.md](auto-de-authorization-script.md)
 {% endcontent-ref %}

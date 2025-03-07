@@ -79,3 +79,19 @@ description: >-
 * **192.168.10.3** - IP-адрес DNS-сервера.
 
 При такой настройке компьютеры могут использовать Ideco NGFW в качестве основного DNS-сервера. При этом разрешение локальных и интернет-имен будет работать корректно для всех сервисов.
+
+{% content-ref url="configuring-accounts.md" %}
+[configuring-accounts.md](configuring-accounts.md)
+{% endcontent-ref %}
+
+{% content-ref url="user-import.md" %}
+[user-import.md](user-import.md)
+{% endcontent-ref %}
+
+{% content-ref url="user-import.md" %}
+[user-import.md](user-import.md)
+{% endcontent-ref %}
+
+{% content-ref url="active-directory-web-authentication.md" %}
+[active-directory-web-authentication.md](active-directory-web-authentication.md)
+{% endcontent-ref %}
