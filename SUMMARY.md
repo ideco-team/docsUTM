@@ -53,7 +53,6 @@
     * [Балансировка VPN-подключений](settings/users/ideco-client/balancing-vpn.md)
   * [Профили устройств](settings/users/hip-profiles.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
-    * [Настройка учетных записей и групп безопасности в качестве объектов фильтрации](settings/users/active-directory/configuring-accounts.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
     * [Аутентификация пользователей AD/Samba DC](settings/users/active-directory/active-directory-user-authorization.md)
        * [Настройка сервера Active Directory](settings/users/active-directory/active-ditrctory-server-configuring.md)
