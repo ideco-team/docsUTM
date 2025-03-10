@@ -19,20 +19,9 @@ description: >-
 
 После сохранения настроек будет выдан Let’s Encrypt сертификат, пользователь будет перенаправляться на окно авторизации, минуя страницу исключения безопасности:
 
-<img src="/.gitbook/assets/web-autorization2.png" alt="" data-size="original">
+![](/.gitbook/assets/web-autorization2.png)
 
 Если сертификат для такого домена уже загружен в разделе [Сертификаты](/settings/services/certificates/), то будет использоваться загруженный сертификат. Новый сертификат выдаваться не будет.
-
-Чтобы пользователи SambaDC могли использовать VPN-подключение, необходимо включить **NTLM-авторизацию**. Для этого отредактируйте файл с помощью команды `nano /etc/samba/smb.conf`, добавив в секцию `[global]` строку `ntlm auth = yes`.
-
-{% hint style="info" %}
-Если у домена, в который введен **NGFW**, настроено доверие с другим доменом, то пользователи доверенного домена смогут авторизоваться на **NGFW** при выполнении условий:
-
-* Для аутентификации пользователей домена используется **SSO-аутентификация**;
-* Пользователь доверенного домена должен быть в локальной группе AD на контроллере домена, и эта группа должна быть импортирована на NGFW.
-
-После авторизации пользователи доверенного домена будут добавлены в группу AD **Пользователи из доверенных доменов** в дереве пользователей NGFW.
-{% endhint %}
 
 {% content-ref url="active-ditrctory-server-configuring.md" %}
 [active-ditrctory-server-configuring.md](active-ditrctory-server-configuring.md)
@@ -40,4 +29,12 @@ description: >-
 
 {% content-ref url="active-directory-web-authentication.md" %}
 [active-directory-web-authentication.md](active-directory-web-authentication.md)
+{% endcontent-ref %}
+
+{% content-ref url="ad-autorization.md" %}
+[ad-autorization.md](ad-autorization.md)
+{% endcontent-ref %}
+
+{% content-ref url="auto-de-authorization-script.md" %}
+[auto-de-authorization-script.md](auto-de-authorization-script.md)
 {% endcontent-ref %}
