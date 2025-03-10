@@ -59,6 +59,7 @@
        * [Настройка клиентских машин](settings/users/active-directory/active-directory-web-authentication.md)
        * [Авторизация пользователей](settings/users/active-directory/ad-autorization.md)
        * [Скрипты автоматической разавторизации](settings/users/active-directory/auto-de-authorization-script.md)
+  * [Интеграция с RADIUS-сервером](settings/users/radius.md)
   * [ALD Pro](settings/users/ald-pro.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
   * [Wi-Fi-сети](settings/users/wifi-network.md)
