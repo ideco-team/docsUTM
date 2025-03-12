@@ -1,6 +1,6 @@
 # Создание сертификатов для Device VPN
 
-В статье описан процесс создания сертификатов с использованием OpenSSL для подключения по [Device VPN](/settings/users/ideco-client/README.md#device-vpn) между Ideco NGFW и Ideco Client. Процесс включает в себя два этапа:
+В статье описан процесс создания сертификатов с использованием OpenSSL для подключения по [Device VPN](/settings/users/ideco-client/README.md#device-vpn) между Ideco NGFW и Ideco Client. Процесс включает два этапа:
 
 1\. Создание корневого сертификата с защищенным приватным ключом.
 
@@ -33,7 +33,29 @@ openssl req -x509 -new -sha256 -days 1825 -key ideco-dvpn_root-ca.key -nodes -ou
 * `ideco-dvpn_root-ca.key` - файл, содержащий приватный ключ корневого сертификата;
 * `ideco-dvpn_root-ca.pem` - файл, содержащий корневой сертификат.
 
-3\. Проверьте, что сертификат был успешно создан командой:
+3\. Заполните параметры сертификата:
+
+![](/.gitbook/assets/ideco-client10.png)
+
+{% hint style="danger" %}
+**Common Name (eg, your name or your server's hostname)** - обязательная строка для заполнения.
+{% endhint %}
+
+<details>
+
+<summary>Расшифровка строк</summary>
+
+* **Country Name (2 letter code) [XX]** — код страны в формате ISO 3166-1 alpha-2 (например, RU);
+* **State or Province Name (full name)** — название региона или области (например, Moscow);
+* **Locality Name (eg, city) [Default City]** — название города (например, Saint Petersburg);
+* **Organization Name (eg, company) [Default Company Ltd]** — название организации;
+* **Organizational Unit Name (eg, section) []** — название подразделения организации;
+* **Common Name (eg, your name or your server's hostname) []** — наименование сертификата;
+* **Email Address []** — контактный email.
+
+</details>
+
+4\. Проверьте, что сертификат был успешно создан командой:
 
 {% code overflow="wrap" %}
 ```
@@ -44,7 +66,7 @@ openssl x509 -text -noout -in ideco-dvpn_root-ca.pem
 * Корневой сертификат должен иметь атрибут `CA:TRUE`;
 * `ideco-dvpn_root-ca.pem` - файл, содержащий корневой сертификат.
 
-4\. В разделе **Пользователи -> Ideco Client** в поле **Доверенный сертификат** загрузите созданый сертификат `ideco-dvpn_root-ca.pem` без приватного ключа:
+5\. В разделе **Пользователи -> Ideco Client** в поле **Доверенный сертификат** загрузите созданый сертификат `ideco-dvpn_root-ca.pem` без приватного ключа:
 
 ![](/.gitbook/assets/device-vpn.png)
 
@@ -73,7 +95,29 @@ openssl req -new -key client1-dvpn.key -out client1-dvpn.csr
 * `client1-dvpn.key` - файл, содержащий приватный ключ;
 * `client1-dvpn.csr` - файл, содержащий зашифрованный запрос на выпуск сертификата.
 
-3\. Создайте файл расширений сертификата для использования в генерации сертификата:
+3\. Заполните параметры сертификата:
+
+![](/.gitbook/assets/ideco-client10.png)
+
+{% hint style="danger" %}
+**Common Name (eg, your name or your server's hostname)** - обязательная строка для заполнения.
+{% endhint %}
+
+<details>
+
+<summary>Расшифровка строк</summary>
+
+* **Country Name (2 letter code) [XX]** — код страны в формате ISO 3166-1 alpha-2 (например, RU);
+* **State or Province Name (full name)** — название региона или области (например, Moscow);
+* **Locality Name (eg, city) [Default City]** — название города (например, Saint Petersburg);
+* **Organization Name (eg, company) [Default Company Ltd]** — название организации;
+* **Organizational Unit Name (eg, section) []** — название подразделения организации;
+* **Common Name (eg, your name or your server's hostname) []** — наименование сертификата;
+* **Email Address []** — контактный email.
+
+</details>
+
+4\. Создайте файл расширений сертификата для использования в генерации сертификата:
 
 {% code overflow="wrap" %}
 ```
@@ -90,7 +134,7 @@ DNS.1 = client1.lan1.ru
 
 * В этом файле используется subjectAltName (SAN) и указывается DNS-имя пользовательского устройства. DNS-имя используется в качестве имени пользователя Device VPN на Ideco NGFW.
 
-4\. Сгенерируйте сертификат пользовательского устройства от [корневого сертификата для Device VPN](/settings/users/ideco-client/device-vpn-cert.md#sozdanie-kornevogo-sertifikata). Это может сделать администратор, используя зашифрованный [приватный ключ](/settings/users/ideco-client/device-vpn-cert.md#sozdanie-kornevogo-sertifikata) от корневого сертификата для Device VPN:
+5\. Сгенерируйте сертификат пользовательского устройства от [корневого сертификата для Device VPN](/settings/users/ideco-client/device-vpn-cert.md#sozdanie-kornevogo-sertifikata). Это может сделать администратор, используя зашифрованный [приватный ключ](/settings/users/ideco-client/device-vpn-cert.md#sozdanie-kornevogo-sertifikata) от корневого сертификата для Device VPN:
 
 {% code overflow="wrap" %}
 ```
@@ -103,7 +147,7 @@ openssl x509 -req -in client1-dvpn.csr -CA ideco-dvpn_root-ca.pem -CAkey ideco-d
 * `ideco-dvpn_root-ca.key` - файл, содержащий приватный ключ корневого сертификата;
 * `client1-dvpn.crt` - файл, содержащий пользовательский сертификат.
 
-5\. Проверьте, что сертификат был успешно создан командой:
+6\. Проверьте, что сертификат был успешно создан командой:
 
 {% code overflow="wrap" %}
 ```
@@ -114,7 +158,7 @@ openssl x509 -text -noout -in client1-dvpn.crt
 * `client1-dvpn.crt` - файл, содержащий пользовательский сертификат;
 * Cертификат должен иметь атрибут `CA:FALSE` и `Subject Key Identifier`.
 
-6\. Объедините приватный ключ и сертификат пользовательского устройства:
+7\. Объедините приватный ключ и сертификат пользовательского устройства:
 
 {% code overflow="wrap" %}
 ```
@@ -126,5 +170,4 @@ cat client1-dvpn.key client1-dvpn.crt > client1-dvpn.pem
 * `client1-dvpn.crt` - файл, содержащий пользовательский сертификат;
 * `client1-dvpn.pem` - файл, содержащий пользовательский сертификат с приватным ключом внутри.
 
-
-7\. Сертификат `client1-dvpn.pem` с приватным ключом внутри, полученный на этом этапе, устанавливается на пользовательском устройстве и используется в параметрах Ideco Client.
+8\. Сертификат `client1-dvpn.pem` с приватным ключом внутри, полученный на этом этапе, устанавливается на пользовательском устройстве и используется в параметрах Ideco Client.
