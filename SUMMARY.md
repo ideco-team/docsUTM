@@ -49,6 +49,7 @@
     * [Установка и настройка Ideco Client на MacOS](settings/users/ideco-client/ideco-client-macos.md)
     * [Установка и настройка Ideco Client на Linux](settings/users/ideco-client/ideco-client-linux.md)
     * [Настройка Device VPN](settings/users/ideco-client/device-vpn.md)
+    * [Кастомная настройка Ideco Client](settings/users/ideco-client/custom-settings.md)
     * [Создание сертификатов для Device VPN](settings/users/ideco-client/device-vpn-cert.md)
     * [Балансировка VPN-подключений](settings/users/ideco-client/balancing-vpn.md)
   * [Профили устройств](settings/users/hip-profiles.md)
