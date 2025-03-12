@@ -51,6 +51,7 @@
     * [Настройка Device VPN](settings/users/ideco-client/device-vpn.md)
     * [Создание сертификатов для Device VPN](settings/users/ideco-client/device-vpn-cert.md)
     * [Балансировка VPN-подключений](settings/users/ideco-client/balancing-vpn.md)
+    * [Кастомная настройка Ideco Client](settings/users/ideco-client/custom-settings.md)
   * [Профили устройств](settings/users/hip-profiles.md)
   * [Интеграция с Active Directory/Samba DC](settings/users/active-directory/README.md)
     * [Импорт пользователей](settings/users/active-directory/user-import.md)
