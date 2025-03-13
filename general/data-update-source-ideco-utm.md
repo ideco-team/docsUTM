@@ -49,14 +49,14 @@ description: >-
 
 Ideco NGFW получает обновления из следующих источников:
 
-* Отсылка уведомлений в личный кабинет/телеграм-бот: alerts.v18.ideco.dev; 
-* Обновление баз **Контент-фильтра**: content-filter.v18.ideco.dev;
-* Отсылка анонимной статистики: gatherstat.v18.ideco.dev;
-* Обновления баз GeoIP: ip-list.v18.ideco.dev;
-* Обмен информации о лицензии: license.v18.ideco.dev;
-* Отправка отчетов по почте: send-reports.v18.ideco.dev;
-* Обновления suricata: suricata.v18.ideco.dev;
-* Обновления системы: sysupdate.v18.ideco.dev;
+* Отсылка уведомлений в личный кабинет/телеграм-бот: alerts.v20.ideco.dev; 
+* Обновление баз **Контент-фильтра**: content-filter.v20.ideco.dev;
+* Отсылка анонимной статистики: gatherstat.v20.ideco.dev;
+* Обновления баз GeoIP: ip-list.v20.ideco.dev;
+* Обмен информации о лицензии: license.v20.ideco.dev;
+* Отправка отчетов по почте: send-reports.v20.ideco.dev;
+* Обновления suricata: suricata.v20.ideco.dev;
+* Обновления системы: sysupdate.v20.ideco.dev;
 * Синхронизация времени: ntp.ideco.ru;
 * Антивирус Касперского для обновления баз использует список серверов, указанный на [официальном сайте](https://support.kaspersky.ru/common/start/6105) "Лаборатории Касперского".
 
