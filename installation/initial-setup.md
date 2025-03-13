@@ -98,9 +98,5 @@ description: >-
 
 Если провайдер использует другой тип подключения, ознакомиться с остальными инструкциями по настройке можно по ссылкам:
 
-* [Подключение по протоколу PPPoE](/settings/services/connection-to-provider/pppoe-connection.md);
-* [Подключение по технологии VPN (с использованием протокола PPTP)](/settings/services/connection-to-provider/pptp-connection.md);
-* [Подключение по L2TP](/settings/services/connection-to-provider/l2tp-connection.md);
-* [Подключение Локального Ethernet](/settings/services/connection-to-provider/local-ethernet.md);
-* [Подключение по 3G и 4G](/settings/services/connection-to-provider/3g-4g-connection.md);
+* [Внешние и локальные интерфейсы](/settings/services/connection-to-provider/all-ethernet.md);
 * [Одновременное подключение к нескольким провайдерам](/settings/services/multiple-simultaneous-connections.md).
