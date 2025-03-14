@@ -674,7 +674,6 @@ GET /user_cabinet_reports/auth_journal?<GET-параметры, разделен
     "data": [
         {
             "id": "string",
-            "date_time": "integer",
             "user_id": "number",
             "login": "string",
             "name": "string",
@@ -683,6 +682,7 @@ GET /user_cabinet_reports/auth_journal?<GET-параметры, разделен
             "ip": "string",
             "country_name": "string",
             "country_code": "string",
+            "start": "number",
             "end": "number",
             "time_online": "number"
         },
@@ -698,7 +698,6 @@ GET /user_cabinet_reports/auth_journal?<GET-параметры, разделен
 * `type` - тип данных;
 * `data` - массив из `AuthUser` для отображения в таблице. `AuthUser` - объект с данными, соответствующими одной строке таблицы:
     * `id` - уникальный идентификатор сессии;
-    * `date_time` - время создания сессии, целое положительное число в формате `YYYYmmddHHMMSS`;
     * `user_id` - идентификатор пользователя;
     * `login` - логин пользователя;
     * `name` - имя пользователя;
@@ -707,6 +706,7 @@ GET /user_cabinet_reports/auth_journal?<GET-параметры, разделен
     * `ip` - IP-адрес, с которого подключался пользователь;
     * `country_name` - страна IP-адреса;
     * `country_code` - код страны IP-адреса;
+    * `start` - время создания сессии, целое положительное число в формате `YYYYmmddHHMMSS`;
     * `end` - время удаления сессии, целое положительное число в формате `YYYYmmddHHMMSS`;
     * `time_online` - время в сети, в секундах (может быть отрицательным числом, если после старта сессии изменили время).
 * `rows` - количество `AuthUser`;
