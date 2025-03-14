@@ -117,3 +117,4 @@ redirects:
   hardware_filtering: ./settings/access-rules/hardware-filtering.md
   personal_account_auth_log: ./settings/reports/personal-account-auth-log.md
   personal_account_sessions: ./settings/monitor/personal-account-sessions.md
+  custom_categories: .settings/access-rules/content-filter/custom-categories.md
