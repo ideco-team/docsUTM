@@ -41,11 +41,11 @@
 
 3\. Выберите временную зону, в которой вы находитесь:
 
-![](/.gitbook/assets/installation-process2.png)
+![](/.gitbook/assets/local-menu18.png)
 
 4\. Настройте дату и время в соответствии с вашей временной зоной. **Обязательно проверьте правильность даты и времени**:
 
-![](/.gitbook/assets/installation-process3.png)
+![](/.gitbook/assets/local-menu19.png)
 
 {% hint style="info" %}
 Не забудьте извлечь USB диск после установки Ideco Center, чтобы загрузка с USB диска не началась заново.
@@ -55,7 +55,7 @@
 
 Для входа в веб-интерфейс Ideco Center создайте учетную запись администратора с соблюдением требований к паролю:
 
-![](/.gitbook/assets/installation-process4.png)
+![](/.gitbook/assets/local-menu20.png)
 
 <details>
 <summary>Требования к паролю</summary>
@@ -83,23 +83,23 @@
 
 1\. Введите номер сетевого адаптера, который будет использоваться в качестве локального сетевого интерфейса:
 
-![](/.gitbook/assets/installation-process7.png)
+![](/.gitbook/assets/local-menu22.png)
 
 2\. Настройте локальную сеть автоматически через DHCP, введя **y**, или вручную, введя **n**:
 
-![](/.gitbook/assets/installation-process8.png)
+![](/.gitbook/assets/local-menu23.png)
 
 3\. Введите локальный IP-адрес и маску подсети в формате `ip/маска` и нажмите **Enter**:
 
-![](/.gitbook/assets/installation-process5.png)
+![](/.gitbook/assets/local-menu24.png)
 
 4\. Введите адрес шлюза или оставьте поле пустым:
 
-![](/.gitbook/assets/installation-process9.png)
+![](/.gitbook/assets/local-menu25.png)
 
 5\. Задайте тег VLAN (стандарт VLAN 802.3q) или оставьте поле пустым:
 
-![](/.gitbook/assets/installation-process11.png)
+![](/.gitbook/assets/local-menu27.png)
 
 После создания локального интерфейса откроется локальное меню управления: 
 
