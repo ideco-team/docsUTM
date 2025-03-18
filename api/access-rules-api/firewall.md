@@ -125,6 +125,7 @@ PUT /firewall/settings
     "destination_ports": [ "string" ],
     "outgoing_interface": "string",
     "hip_profiles": [ "string" ],
+    "hip_profiles_negate": "boolean",
     "dpi_profile": "string",
     "dpi_enabled": "boolean",
     "ips_profile": "string",
@@ -149,6 +150,7 @@ PUT /firewall/settings
 * `destination_ports` - порты назначения;
 * `outgoing_interface` - зона назначения;
 * `hip_profiles` - HIP-профили;
+* `hip_profiles_negate` - инвертировать HIP-профили;
 * `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
 * `dpi_enabled` - если `true`, то обработка с помощью модуля **Контроль приложений** включена, `false` - выключена;
 * `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
