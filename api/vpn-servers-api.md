@@ -45,7 +45,8 @@ GET /vpn_servers/settings
   "network": "string",
   "zone": "string" | "null",
   "dns_suffix": "string",
-  "netflow_index": "integer"
+  "netflow_index": "integer",
+  "expired_after_seconds": "integer"
 }
 ```
 
@@ -57,7 +58,8 @@ GET /vpn_servers/settings
 * `network` - сеть, из которой VPN-серверы раздают адреса. Первый адрес в этой сети - всегда адрес самого сервера;
 * `zone` - зона для Lvpn0-интерфейса. Если зона не назначена, то `null`;
 * `dns_suffix` - DNS-суффикс, передаваемый в Ideco Client. Если не назначен, то может быть пустой строкой;
-* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md);
+* `expired_after_seconds` - количество секунд, после которого VPN сессия считается просроченной.
 
 </details>
 
@@ -82,7 +84,8 @@ PUT /vpn_servers/settings
   "network": "string",
   "zone": "string" | "null",
   "dns_suffix": "string",
-  "netflow_index": "integer"
+  "netflow_index": "integer",
+  "expired_after_seconds": "integer"
 }
 ```
 
@@ -94,7 +97,8 @@ PUT /vpn_servers/settings
 * `network` - сеть, из которой VPN-серверы раздают адреса. Первый адрес в этой сети - всегда адрес самого сервера;
 * `zone` - зона для Lvpn0-интерфейса. Если зона не назначена, то `null`;
 * `dns_suffix` - DNS-суффикс, передаваемый в Ideco Client. Если не назначен, то может быть пустой строкой;
-* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md).
+* `netflow_index` - целое число от 0 до 65535, индекс сетевого подключения для [NetFlow](/settings/monitor/netflow.md);
+* `expired_after_seconds` - количество секунд, после которого VPN сессия считается просроченной.
 
 **Ответ на успешный запрос:** 200 OK
 
