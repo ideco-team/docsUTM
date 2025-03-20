@@ -12,15 +12,13 @@
 
 4\. Включите в NGFW **SSO-аутентификацию через Active Directory и ALD Pro** в разделе **Пользователи -> Авторизация -> Веб-аутентификация**.
 
-5\. Зайдите под доменной учетной записью на Astra Linux. 
+5\. Зайдите под доменной учетной записью на Astra Linux.
 
 6\. В зависимости от выбранного браузера, выполните действия:
 
 <details>
 
-<summary>
-
-Для браузера **Yandex**</summary>
+<summary>Для браузера **Yandex**</summary>
 
 1\. Создайте файл **mydomain.json** в директории `/etc/opt/yandex/browser/policies/managed/` и впишите в него строку:
 
@@ -37,15 +35,14 @@
 
 <details>
 
-<summary>
-
-Для браузера **Chromium**</summary>
+<summary>Для браузера **Chromium**</summary>
 
 1\. Создайте файл **mydomain.json** в директории `/etc/chromium/policies/managed/` и впишите в него строку:
 
 ```
-{
-    "AuthServerWhitelist": "*.имя_домена"
+{ 
+    "AuthServerAllowlist": "*.имя_домена" ,
+    "AuthNegotiateDelegateAllowlist": "*.имя_домена"
 }
 ```
 
@@ -54,15 +51,13 @@
 
 <details>
 
-<summary>
-
-Для браузера **Firefox** </summary>
+<summary>Для браузера Firefox </summary>
 
 1\. Запустите браузер и в адресной строке введите `about:config`, чтобы попасть в режим редактирования расширенных настроек.
 
-2\. Введите параметр `security.enterprise\_roots.enabled` и дважды кликните по блоку, чтобы значение изменилось на **True**.
+2\. Введите параметр `security.enterprise_roots.enabled` и дважды кликните по блоку, чтобы значение изменилось на **True**, что позволит Firefox доверять системным сертификатам и авторизовывать пользователей при переходе на HTTPS-сайты.
 
-3\. В параметрах `network.automatic-ntlm-auth.trusted-uris` и `network.negotiate-auth.trusted-uris` впишите доменное имя NGFW через HTTP и HTTPS через запятую. Например, http://utm.domain.com, https://utm.domain.com.
+3\. В параметрах `network.automatic-ntlm-auth.trusted-uris` и `network.negotiate-auth.trusted-uris` укажите `имя_NGFW.имя_домена`.
 
 4\. Откройте страницу любого сайта в браузере. Появится окно с авторизацией, после чего произойдет перенаправление на начальную страницу.
 
@@ -74,37 +69,39 @@
 
 <details>
 
-<summary>
+<summary>Для браузера Yandex</summary>
 
-Для браузера **Yandex**</summary>
-
-1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)).
+1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** ![](/.gitbook/assets/icon-download.png).
 
 2\. В браузере Yandex перейдите на вкладку **Настройки -> Системные -> Управление сертификатами -> Центры сертификации -> Импорт** и добавьте сертификат в список доверенных.
 
-</details>
+3\. Включите опции доверия для сертификата:
 
-<details>
-
-<summary>
-
-Для браузера **Chromium**</summary>
-
-1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)).
-
-2\. В браузере Chromium перейдите на вкладку **Безопасность -> Управление сертификатами -> Центры сертификации -> Импортировать** и добавьте сертификат в список доверенных.
+![](/.gitbook/assets/ald-pro2.png)
 
 </details>
 
 <details>
 
-<summary>
+<summary>Для браузера Chromium</summary>
 
-Для браузера **Firefox**</summary>
+1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** ![](/.gitbook/assets/icon-download.png).
 
-1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** (![](/.gitbook/assets/icon-download.png)). 
+2\. В браузере Chromium перейдите на вкладку **Настройки -> Конфиденциальность и безопасность -> Безопасность -> Настроить сертификаты -> Центры сертификации -> Импортировать** и добавьте сертификат в список доверенных.
 
-2\. В настройках браузера Firefox в пункте **Защита и приватность** в разделе **Защита** выберите **Просмотр сертификатов**:
+3\. Включите опции доверия для сертификата:
+
+![](/.gitbook/assets/ald-pro3.png)
+
+</details>
+
+<details>
+
+<summary>Для браузера Firefox</summary>
+
+1\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке **Скачать** ![](/.gitbook/assets/icon-download.png).
+
+2\. В настройках браузера Mozilla Firefox в пункте **Приватность и Защита** в разделе **Защита** выберите **Просмотр сертификатов**:
 
 ![](/.gitbook/assets/authorization-astra-linux1.png)
 

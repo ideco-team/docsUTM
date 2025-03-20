@@ -75,6 +75,22 @@ description: >-
 
 </details>
 
+<details>
+
+<summary>Настройка браузера Chromium для веб-аутентификации по SSO или NTLM</summary>
+
+1\. Откройте **Редактор реестра**.
+
+2\. Перейдите по пути `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Chromium` (для компьютера) или `HKEY_CURRENT_USER\SOFTWARE\Policies\Chromium` (для конкретного пользователя).
+
+3\. Создайте два новых ключа:
+
+*  Первый ключ должен иметь тип `REG_SZ`, имя `AuthServerAllowlist` и значение `*.имя_домена`;
+*  Второй ключ также должен иметь тип `REG_SZ`, имя `AuthNegotiateDelegateAllowlist` и значение `*.имя_домена`.
+
+
+</details>
+
 Способы аутентификации импортированных пользователей:
 
 * **Через Ideco Client** - подходит для аутентификации пользователей терминальных серверов (с использованием Remote Desktop IP Virtualization на терминальном сервере);
