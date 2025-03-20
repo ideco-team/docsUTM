@@ -104,21 +104,101 @@ ALD Pro поддерживает два типа входа в систему:
 * [Авторизация по подсетям](/settings/users/authorization/authorization-by-subnet.md) - подходит в случаях, когда не требуется регистрировать каждое устройство как отдельного пользователя NGFW, позволяет автоматически авторизовать большое количество устройств;
 * [Авторизация по VPN](/settings/users/authorization/vpn-connection/README.md) - подходит для аутентификации пользователей удаленных сетей.
 
-### Настройка клиентских машин для SSO-авторизации
+### Настройка клиентских машин для веб-аутентификации по SSO или NTLM
+
+1\. В зависимости от выбранного браузера выполните следующие действия:
 
 <details>
 
-<summary>Настройка браузера Mozilla Firefox для веб-аутентификации по SSO или NTLM</summary>
+<summary>Настройка браузера Yandex</summary>
 
-На странице настроек браузера Mozilla Firefox (about:config в адресной строке) настройте следующие параметры:
+1\. Создайте файл **mydomain.json** в директории `/etc/opt/yandex/browser/policies/managed/` и добавьте строки:
 
-* В `network.automatic-ntlm-auth.trusted-uris` и `network.negotiate-auth.trusted-uris` добавьте адрес локального интерфейса Ideco NGFW;
-* `security.enterprise_roots.enabled` переведите в значении `true`, что позволит Firefox доверять системным сертификатам и авторизовывать пользователей при переходе на HTTPS-сайты.
+```
+{ 
+  "AuthServerAllowlist": "*.имя_домена",
+  "AuthNegotiateDelegateAllowlist": "*.имя_домена"
+}
+```
+
+2\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке ![](/.gitbook/assets/icon-download.png).
+
+3\. В браузере Yandex перейдите на вкладку **Настройки -> Системные -> Управление сертификатами -> Центры сертификации -> Импорт** и добавьте сертификат в список доверенных.
+
+4\. Включите опции доверия для сертификата:
+
+![](/.gitbook/assets/ald-pro2.png)
 
 </details>
 
-1\. Загрузите корневой сертификат и добавьте его в доверенные.
+<details>
 
-2\. На машине ALD-клиента, введенной в домен ALD Pro, добавьте IP локального интерфейса и доменное имя Ideco NGFW в /etc/hosts. Пример: `192.168.100.10  domain.ald`.
+<summary>Настройка браузера Google Chrome</summary>
+
+1\. Создайте файл **mydomain.json** в директории `/etc/opt/chrome/policies/managed/` и добавьте строки:
+
+```
+{ 
+  "AuthServerAllowlist": "*.имя_домена",
+  "AuthNegotiateDelegateAllowlist": "*.имя_домена"
+}
+```
+
+2\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке ![](/.gitbook/assets/icon-download.png).
+
+3\. В браузере Chromium перейдите на вкладку **Настройки -> Конфиденциальность и безопасность -> Безопасность -> Настроить сертификаты -> Центры сертификации -> Импортировать** и добавьте сертификат в список доверенных.
+
+4\. Включите опции доверия для сертификата:
+
+![](/.gitbook/assets/ald-pro3.png)
+
+</details>
+
+<details>
+
+<summary>Настройка браузера Chromium</summary>
+
+1\. Создайте файл **mydomain.json** в директории `/etc/chromium/policies/managed/` и добавьте строки:
+
+```
+{ 
+    "AuthServerAllowlist": "*.имя_домена" ,
+    "AuthNegotiateDelegateAllowlist": "*.имя_домена"
+}
+```
+
+2\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке ![](/.gitbook/assets/icon-download.png).
+
+3\. В браузере Chromium перейдите на вкладку **Настройки -> Конфиденциальность и безопасность -> Безопасность -> Настроить сертификаты -> Центры сертификации -> Импортировать** и добавьте сертификат в список доверенных.
+
+4\. Включите опции доверия для сертификата:
+
+![](/.gitbook/assets/ald-pro3.png)
+
+</details>
+
+<details>
+
+<summary>Настройка браузера Mozilla Firefox</summary>
+
+1\. Запустите браузер и в адресной строке введите `about:config`, чтобы попасть в режим редактирования расширенных настроек.
+
+2\. Введите параметр `security.enterprise_roots.enabled` и дважды кликните по блоку, чтобы значение изменилось на **True**, что позволит Firefox доверять системным сертификатам и авторизовывать пользователей при переходе на HTTPS-сайты.
+
+3\. В параметрах `network.automatic-ntlm-auth.trusted-uris` и `network.negotiate-auth.trusted-uris` укажите `имя_NGFW.имя_домена`.
+
+4\. Скачайте корневой [сертификат](/installation/initial-setup.md#import-kornevogo-sertifikata-ngfw-v-brauzer/) NGFW из раздела **Сервисы -> Сертификаты** по кнопке ![](/.gitbook/assets/icon-download.png).
+
+5\. В настройках браузера Mozilla Firefox в пункте **Приватность и Защита** в разделе **Защита** выберите **Просмотр сертификатов**:
+
+![](/.gitbook/assets/authorization-astra-linux1.png)
+
+6\. На вкладке **Центры сертификации** нажмите **Импортировать** и выберите скачанный с NGFW сертификат.
+
+7\. Включите опции доверия для сертификата.
+
+</details>
+
+2\. На машине ALD-клиента, введенной в домен ALD Pro, добавьте IP локального интерфейса и доменное имя Ideco NGFW в директорию `/etc/hosts`. Пример: `192.168.100.10 ngfw.domain.ald`.
 
 Руководства по эксплуатации ALD Pro доступны на [официальном сайте](https://www.aldpro.ru/docs/).
