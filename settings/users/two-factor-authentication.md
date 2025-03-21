@@ -19,7 +19,7 @@ description: В статье описаны типы двухфакторной 
 {% hint style="warning" %}
 Для входа в личный кабинет Ideco NGFW с использованием **Мультифактора** необходим доступ в интернет.
 
-Двухфакторная аутентификация для пользователей **RADIUS-сервера** работает только при авторизации через **Ideco Client**. Для этого нужно настроить двухфакторную аутентификацию на **RADIUS-сервере**, о настройке Ideco NGFW - в [статье](/settings/users/radius.md). 
+Двухфакторная аутентификация для пользователей **RADIUS-сервера** работает только при авторизации через **Ideco Client**. Для этого нужно настроить двухфакторную аутентификацию на **RADIUS-сервере**, о настройке Ideco NGFW - в [статье](/settings/users/radius.md).
 {% endhint %}
 
 ## Настройки Ideco NGFW c разными типами аутентификации
@@ -46,7 +46,7 @@ description: В статье описаны типы двухфакторной 
 
 **Видеоинструкция по настройке двухфакторной аутентификации Ideco NGFW c использованием TOTP-токена**:
 
-{% embed url="https://rutube.ru/video/151a2179c4649bd0fb2349d64841c6f1/" %}
+{% embed url="https://rutube.ru/video/151a2179c4649bd0fb2349d64841c6f1" %}
 <!-- [Ссылка на видеоинструкцию настройке двухфакторной аутентификации Ideco NGFW c использованием TOTP-токена](https://rutube.ru/video/151a2179c4649bd0fb2349d64841c6f1/) -->
 
 {% endtab %}
@@ -61,7 +61,7 @@ description: В статье описаны типы двухфакторной 
 
 **Видеоинструкция по настройке двухфакторной аутентификации Ideco NGFW c использованием SMS Aero**:
 
-{% embed url="https://rutube.ru/video/a756ffc91fc7c0d8cebcbac83df0b9fc/" %}
+{% embed url="https://rutube.ru/video/a756ffc91fc7c0d8cebcbac83df0b9fc" %}
 <!-- [Ссылка на видеоинструкцию настройке двухфакторной аутентификации Ideco NGFW c использованием SMSAero](https://rutube.ru/video/a756ffc91fc7c0d8cebcbac83df0b9fc/) -->
 
 {% endtab %}
@@ -80,7 +80,7 @@ description: В статье описаны типы двухфакторной 
 
 **Видеоинструкция по настройке двухфакторной аутентификации Ideco NGFW c использованием Мультифактора**:
 
-{% embed url="https://rutube.ru/video/181dc7eed9cf30b3088b22ff591ebe59/" %}
+{% embed url="https://rutube.ru/video/181dc7eed9cf30b3088b22ff591ebe59" %}
 <!-- [Ссылка на видеоинструкцию настройке двухфакторной аутентификации Ideco NGFW c использованием Мультифактора](https://rutube.ru/video/181dc7eed9cf30b3088b22ff591ebe59/)-->
 
 {% endtab %}
