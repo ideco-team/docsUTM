@@ -220,7 +220,7 @@
     * [Создание VPN-подключения на мобильных устройствах](recipes/popular-recipes/vpn/connection-for-mobile-devices.md)
     * [Создание подключения в Mac OS](recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md)
     * [Подключение по SSTP Wi-Fi роутеров Keenetic](recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md)
-  * [Подключение к сертифицированным Ideco EX и настройка Ideco NGFW](recipes/popular-recipes/ideco-ex.md)
+  * [Подлючение к серверу по COM-порту и настройка Ideco NGFW](recipes/popular-recipes/com-port.md)
   * [Анализ трафика](recipes/popular-recipes/traffic-analysis.md)
   * [Режим удаленного помощника](recipes/popular-recipes/remote-assistant.md)
   * [Настройка LACP на Hyper-V](recipes/popular-recipes/lacp-hyperpv.md)
