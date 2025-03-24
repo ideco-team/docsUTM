@@ -110,7 +110,7 @@ Ideco NGFW поддерживает только один DNS-суффикс. Н
 ![](/.gitbook/assets/ideco-client8.png)
 
 * После каждого обновления приложение Ideco Client запускается автоматически;
-* Информация о сессиях пользователей отображается в разделе [Авторизованные пользователи](/settings/monitor/authorized-users.md):
+* Информация о сессиях пользователей отображается в разделе [Сессии пользователей](/settings/monitor/authorized-users.md):
 
 ![](/.gitbook/assets/monitor-connections8.png)
 
