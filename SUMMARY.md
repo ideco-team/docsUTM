@@ -66,7 +66,7 @@
 * [Мониторинг](settings/monitor/README.md)
   * [Сессии администраторов](settings/monitor/administrator-sessions.md)
   * [Авторизованные пользователи](settings/monitor/authorized-users.md)
-  * [График загруженности](settings/monitor/workload-schedule.md)
+  * [Графики загруженности](settings/monitor/workload-schedule.md)
   * [Монитор трафика](settings/monitor/traffic.md)
   * [Telegram-бот](settings/monitor/telegram-bot.md)
   * [SNMP](settings/monitor/snmp.md)
