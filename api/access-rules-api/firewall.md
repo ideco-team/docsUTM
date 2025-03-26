@@ -88,7 +88,7 @@ PUT /firewall/settings
 
 * `automatic_snat_enabled` - включение автоматического SNAT: `true` - включен, `false`- выключен;
 * `log_mode` - режим логирования;
-* `log_actions` - события, которые будут логироваться. 
+* `log_actions` - события, которые будут логироваться.
 
 **Ответ на успешный запрос**: 200 ОК
 
@@ -116,12 +116,22 @@ PUT /firewall/settings
     "enabled": "boolean",
     "logging": "boolean",
     "protocol": "string",
-    "source_addresses": [ "string" ],
-    "source_addresses_negate": "boolean",
+    "sources": [
+    {
+      "source_addresses": [ "string" ],
+      "source_addresses_negate": "boolean"
+    },
+    ...
+    ],
     "source_ports": [ "string" ],
     "incoming_interface": "string",
-    "destination_addresses": [ "string" ],
-    "destination_addresses_negate": "boolean",
+    "destinations": [
+    {
+        "destination_addresses": [ "string" ],
+        "destination_addresses_negate": "boolean",
+    },
+    ...
+    ],
     "destination_ports": [ "string" ],
     "outgoing_interface": "string",
     "hip_profiles": [ "string" ],
@@ -135,17 +145,19 @@ PUT /firewall/settings
 }
 ```
 
-* `id` - идентификатор правила.
+* `id` - идентификатор правила;
 * `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `enabled` - если `true`, то правило включено, `false` - выключено;
 * `logging` - если `true`, то включено логирование правила, `false` - выключено;
 * `protocol` - протокол;
-* `source_addresses` - адрес источника;
-* `source_addresses_negate` - инвертировать адрес источника;
+* `sources` - список источников, объединенных логическим опреатором `and` (не более двух). Не может быть пустой строкой:
+  * `addresses` - адрес источника (не более двухсот адресов);
+  * `addresses_negate` - инвертировать адрес источника.
 * `source_ports` - порты источников, список идентификаторов алиасов;
 * `incoming_interface` - зона источника;
-* `destination_addresses` - адрес назначения;
-* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destinations` - список назначений, объединенных логическим опреатором `and` (не более двух). Не может быть пустой строкой:
+  * `addresses` - адрес назначения;
+  * `addresses_negate` - инвертировать адрес назначения.
 * `destination_ports` - порты назначения;
 * `outgoing_interface` - зона назначения;
 * `hip_profiles` - HIP-профили;
@@ -168,12 +180,22 @@ PUT /firewall/settings
     "enabled": "boolean",
     "logging": "boolean",
     "protocol": "string",
-    "source_addresses": [ "string" ],
-    "source_addresses_negate": "boolean",
+    "sources": [
+    {
+      "source_addresses": [ "string" ],
+      "source_addresses_negate": "boolean"
+    },
+    ...
+    ],
     "source_ports": [ "string" ],
     "incoming_interface": "string",
-    "destination_addresses": [ "string" ],
-    "destination_addresses_negate": "boolean",
+    "destinations": [
+    {
+      "destination_addresses": [ "string" ],
+      "destination_addresses_negate": "boolean",
+    },
+    ...
+    ],
     "destination_ports": [ "string" ],
     "timetable": [ "string" ],
     "comment": "string",
@@ -183,17 +205,19 @@ PUT /firewall/settings
 }
 ```
 
-* `id` - идентификатор правила.
+* `id` - идентификатор правила;
 * `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `enabled` - если `true`, то правило включено, `false` - выключено;
 * `logging` - если `true`, то включено логирование правила, `false` - выключено;
 * `protocol` - протокол;
-* `source_addresses` - адрес источника;
-* `source_addresses_negate` - инвертировать адрес источника;
+* `sources` - список источников, объединенных логическим опреатором `and` (не более двух). Не может быть пустой строкой:
+  * `addresses` - адрес источника (не более двухсот адресов);
+  * `addresses_negate` - инвертировать адрес источника.
 * `source_ports` - порты источников, список идентификаторов алиасов;
 * `incoming_interface` - зона источника;
-* `destination_addresses` - адрес назначения;
-* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destinations` - список назначений, объединенных логическим опреатором `and` (не более двух). Не может быть пустой строкой:
+  * `addresses` - адрес назначения;
+  * `addresses_negate` - инвертировать адрес назначения.
 * `destination_ports` - порты назначения;
 * `timetable` - время действия;
 * `comment` - комментарий, может быть пустым;
@@ -212,11 +236,21 @@ PUT /firewall/settings
     "enabled": "boolean",
     "logging": "boolean",
     "protocol": "string",
-    "source_addresses": [ "string" ],
-    "source_addresses_negate": "boolean",
+    "sources": [
+    {
+      "source_addresses": [ "string" ],
+      "source_addresses_negate": "boolean"
+    },
+    ...
+    ],
     "source_ports": [ "string" ],
-    "destination_addresses": [ "string" ],
-    "destination_addresses_negate": "boolean",
+    "destinations": [
+    {
+      "destination_addresses": [ "string" ],
+      "destination_addresses_negate": "boolean",
+    },
+    ...
+    ],
     "destination_ports": [ "string" ],
     "outgoing_interface": "string",
     "timetable": [ "string" ],
@@ -226,16 +260,18 @@ PUT /firewall/settings
 }
 ```
 
-* `id` - идентификатор правила.
+* `id` - идентификатор правила;
 * `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
 * `enabled` - если `true`, то правило включено, `false` - выключено;
 * `logging` - если `true`, то включено логирование правила, `false` - выключено;
 * `protocol` - протокол;
-* `source_addresses` - адрес источника;
-* `source_addresses_negate` - инвертировать адрес источника;
+* `sources` - список источников, объединенных логическим опреатором `and` (не более двух). Не может быть пустой строкой:
+  * `addresses` - адрес источника (не более двухсот адресов);
+  * `addresses_negate` - инвертировать адрес источника.
 * `source_ports` - порты источников, список идентификаторов алиасов;
-* `destination_addresses` - адрес назначения;
-* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destinations` - список назначений, объединенных логическим опреатором `and` (не более двух). Не может быть пустой строкой:
+  * `addresses` - адрес назначения;
+  * `addresses_negate` - инвертировать адрес назначения.
 * `destination_ports` - порты назначения;
 * `outgoing_interface` - зона назначения;
 * `timetable` - время действия;
