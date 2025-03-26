@@ -11,7 +11,6 @@
 
 * [Контент-фильтр](/settings/access-rules/content-filter/README.md);
 * [Контроль приложений](/settings/security-profiles/application-control/README.md);
-* [Антивирус](/settings/access-rules/antivirus.md) (антивирус Касперского);
 * [Предотвращение вторжений](/settings/access-rules/ips/README.md).
 
 Эти службы полноценно работают только при активной подписке на обновления Ideco NGFW. Для проверки статуса вашей лицензии и модулей, которые в нее входят, откройте раздел **Управление сервисом -> Лицензия**.
@@ -87,3 +86,6 @@
 {% hint style="info" %}
 После изменений правил проведите повторное тестирование с помощью [security.ideco.ru](https://security.ideco.ru/).
 {% endhint %}
+
+### Антивирус
+В разделе **Профили безопасности -> [Антивирус](/settings/security-profiles/antivirus.md)** антивирус Касперского включен.

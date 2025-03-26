@@ -6,7 +6,7 @@ redirects:
   ad: ./settings/users/active-directory/README.md
   additionally: ./settings/server-management/additionally.md
   admins: ./settings/server-management/admins.md
-  antivirus: ./settings/access-rules/antivirus.md
+  antivirus: ./settings/security-profiles/antivirus.md
   backup: ./settings/server-management/backup.md
   balancing_and_reserving: ./settings/services/multiple-simultaneous-connections.md
   certificate: ./settings/services/certificates/README.md
