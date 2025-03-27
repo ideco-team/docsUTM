@@ -276,6 +276,7 @@
 * [Управление VPN](api/vpn-servers-api.md)
 * [DHCP-сервер](api/dhcp-api.md)
 * [DNS-сервер](api/dns-api.md)
+* [Управление сертификатами](api/certificates-api.md)
 * [Настройка удаленной передачи системных логов](api/logs-api.md)
 * [Управление Ideco Center](api/cc-api.md)
 * [Бэкапы и возврат к предыдущей версии](api/backup-api.md)
