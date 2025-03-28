@@ -50,7 +50,7 @@
 ![](/.gitbook/assets/ips-security-profiles3.png)
 
 {% hint style="info" %}
-В один профиль **Предотвращения вторжений** можно добавить несколько правил выбора сигнатур. Их приоритет можно менять в таблице профиля кнопками ![](/.gitbook/assets/icon-up.png) и ![](/.gitbook/assets/icon-down.png).
+В один профиль **Предотвращения вторжений** можно добавить несколько правил выбора сигнатур. Их приоритет можно менять в таблице профиля кнопками ![](/.gitbook/assets/icon-arrow-up.png) и ![](/.gitbook/assets/icon-arrow-down.png).
 {% endhint %}
 
 {% hint style="danger" %}
