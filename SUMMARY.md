@@ -290,3 +290,4 @@
 ## changelog
 
 * [Ideco NGFW 19.X](changelog/ideco-utm/README.md)
+* [ФСТЭК Ideco UTM 19.X](changelog/fstek/README.md)
