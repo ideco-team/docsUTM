@@ -130,7 +130,7 @@ PUT /ad_backend/security_group_import_settings
 Импортированные из AD/Samba группы безопасности и учетные записи можно использовать в качестве объектов фильтрации в разделах:
 
 * [X] [Файрвол](/settings/access-rules/firewall.md);
-* [X] [Контент-фильтр](/settings/security-profiles/content-filter-profiles.md/);
+* [X] [Контент-фильтр](/settings/security-profiles/content-filter-profiles.md);
 * [X] [Ограничение скорости](/settings/access-rules/shaper.md).
 
 #### Пример использования учетной записи, импортированной из Active Directory, для ограничения скорости:

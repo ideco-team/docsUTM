@@ -20,5 +20,5 @@ description: >-
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Настройка авторизации через журнал безопасности Active Directory описана в [статье](/settings/users/active-directory/ad-auth-logs.md).
+Настройка авторизации через журнал безопасности Active Directory описана в [статье](/settings/users/active-directory/README.md).
 {% endhint %}
