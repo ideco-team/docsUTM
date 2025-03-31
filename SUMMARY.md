@@ -5,7 +5,7 @@
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Виды и состав лицензий](general/license.md)
-* [Системные требования и источники обновления данных](general/data-update-source-utm-vpp.md)
+* [Системные требования и источники данных](general/data-update-source-utm-vpp.md)
 * [Техническая поддержка](general/technical-support.md)
 
 ## Быстрый старт <a href="#initial-setup" id="initial-setup"></a>
