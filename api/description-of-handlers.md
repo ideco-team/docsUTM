@@ -541,7 +541,6 @@ GET /aliases/<название объекта> | all
 * `protocol.icmp` - протокол ICMP;
 * `protocol.tcp` - протокол TCP;
 * `protocol.udp` - протокол UDP;
-* `quota.exceeded`- IP-адреса пользователей, которые превысили квоту;
 * `any` - допускается любое значение в этом поле;
 * `interface.external_any` - все внешние интерфейсы (равно таблице *Подключение к провайдеру* в веб-интерфейсе и включает в себя подключения к провайдеру по Ethernet/VPN);
 * `interface.external_eth` - внешние Ethernet-интерфейсы;
