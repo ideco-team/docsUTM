@@ -281,4 +281,5 @@
 ## changelog
 
 * [Ideco NGFW 18.X](changelog/ideco-utm/README.md)
+* [ФСТЭК Ideco UTM 18.X](changelog/fstek/README.md)
 * [Ideco Center 18.X](changelog/cc/README.md)
