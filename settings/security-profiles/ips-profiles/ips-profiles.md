@@ -1,7 +1,10 @@
 # Создание профилей и добавление в правила Файрвола
 
-{% embed url="https://rutube.ru/video/cab99c95cec5e6c09f4e75ddb7cbe4c2" %}
-<!-- [Профили предотвращения вторжений](https://rutube.ru/video/cab99c95cec5e6c09f4e75ddb7cbe4c2) -->
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/cab99c95cec5e6c09f4e75ddb7cbe4c2/);
+* [Youtube](https://youtu.be/RO_f8PBMscA?si=F6vtlpnjSYEWzZQp).
+{% endhint %}
 
 Чтобы создать профиль **Предотвращения вторжений**, выполните действия:
 

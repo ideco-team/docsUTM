@@ -3,8 +3,11 @@ description: >-
  my.ideco.ru - ваш личный кабинет, где можно получить информацию об имеющихся лицензиях, скачать ISO-образы продуктов, узнать о сроке окончания подписки на обновления модулей и технической поддержки.
 ---
 
-{% embed url="https://rutube.ru/video/1cc0ac23b4f957ece277f767beccda39/" %}
-<!-- [Возможности MY.IDECO](https://rutube.ru/video/1cc0ac23b4f957ece277f767beccda39/) -->
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/1cc0ac23b4f957ece277f767beccda39/);
+* [Youtube](https://youtu.be/e0zmOur4tzY?si=uw7WeZQKx2EnmFiu).
+{% endhint %}
 
 # Личный кабинет my.ideco
 

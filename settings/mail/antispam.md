@@ -1,11 +1,10 @@
 # Антиспам и антивирус
 
-{% hint style="info" %}
-Видеоинструкция по настройке антиспама в Ideco NGFW:
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/beffd4c7a18e3456a9bf9a97f033476d);
+* [Youtube](https://youtu.be/k2UqtI4yi84?si=8c8laLD5Qul0Yhpw).
 {% endhint %}
-
-{% embed url="https://rutube.ru/video/9d39d3d9e170f0df6d07a626ff001b39" %}
-<!-- [Ссылка на видеоинструкцию по настройке антиспама в Ideco NGFW](https://rutube.ru/video/9d39d3d9e170f0df6d07a626ff001b39) -->
 
 Раздел **Антиспам и антивирус** состоит из двух подразделов: **Основное** и **Настройки фильтрации**.
 
