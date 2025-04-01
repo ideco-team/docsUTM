@@ -4,8 +4,11 @@ description: Система обнаружения и предотвращени
 
 # Предотвращение вторжений
 
-{% embed url="https://rutube.ru/video/51ab34552faab4f364f6122ad1001a72/" %}
-<!-- [Ссылка на видеоинструкцию по разделу Предотвращение вторжений](https://rutube.ru/video/51ab34552faab4f364f6122ad1001a72/) -->
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/51ab34552faab4f364f6122ad1001a72/);
+* [Youtube](https://youtu.be/LfsQ0VeH_Z8).
+{% endhint %}
 
 {% hint style="info" %}
 
