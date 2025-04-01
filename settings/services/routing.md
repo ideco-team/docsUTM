@@ -23,9 +23,11 @@ description: >-
 
 Для организации доступа в удаленные сети через роутер в локальной сети читайте статью по [ссылке](/settings/users/authorization/vpn-connection/features.md).
 
-**Видеоинструкция по настройке Маршрутизации Ideco NGFW**:
-{% embed url="https://rutube.ru/video/53bc798950849f68d1f92ac0600ddf47/" %}
-<!-- [Ссылка на видеоинструкцию по маршрутизации Ideco NGFW](https://rutube.ru/video/53bc798950849f68d1f92ac0600ddf47/) -->
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/53bc798950849f68d1f92ac0600ddf47/?r=wd);
+* [Youtube](https://youtu.be/9eYa5KiwDuc?si=wGOZBm6pxFjj8J0V).
+{% endhint %}
 
 ## Маршрутизация локальных сетей
 
