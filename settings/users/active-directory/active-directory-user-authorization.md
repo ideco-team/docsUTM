@@ -5,8 +5,11 @@
 Для возобновления синхронизации вынесите локальных пользователей из групп AD. Автоматическая синхронизация произойдет через 15 минут.
 {% endhint %}
 
-{% embed url="https://rutube.ru/video/590d482c7e412deb0dcfbe945e1448e4/" %}
-<!-- [Ссылка на видеоинструкцию по настройке аутентификации пользователей Active Directory c  Ideco NGFW (https://rutube.ru/video/590d482c7e412deb0dcfbe945e1448e4/) -->
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/590d482c7e412deb0dcfbe945e1448e4/?r=wd);
+* [Youtube](https://youtu.be/RgzyOM7opUY?si=7M2U2OvM04Ab_znL).
+{% endhint %}
 
 ## Настройка авторизации пользователей
 
