@@ -43,10 +43,11 @@ description: В статье описаны типы двухфакторной 
 
 </details>
 
-**Видеоинструкция по настройке двухфакторной аутентификации Ideco NGFW c использованием TOTP-токена**:
-
-{% embed url="https://rutube.ru/video/151a2179c4649bd0fb2349d64841c6f1" %}
-<!-- [Ссылка на видеоинструкцию настройке двухфакторной аутентификации Ideco NGFW c использованием TOTP-токена](https://rutube.ru/video/151a2179c4649bd0fb2349d64841c6f1/) -->
+{% hint style="success" %}
+Видеоинструкцию по настройке двухфакторной аутентификации Ideco NGFW c использованием TOTP-токена смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/151a2179c4649bd0fb2349d64841c6f1/?r=wd);
+* [Youtube](https://youtu.be/YVjT62b-0rk?si=YJ9ReKNki9UgLJpz).
+{% endhint %}
 
 <details>
 
@@ -60,10 +61,11 @@ description: В статье описаны типы двухфакторной 
 
 </details>
 
-**Видеоинструкция по настройке двухфакторной аутентификации Ideco NGFW c использованием SMS Aero**:
-
-{% embed url="https://rutube.ru/video/a756ffc91fc7c0d8cebcbac83df0b9fc" %}
-<!-- [Ссылка на видеоинструкцию настройке двухфакторной аутентификации Ideco NGFW c использованием SMSAero](https://rutube.ru/video/a756ffc91fc7c0d8cebcbac83df0b9fc/) -->
+{% hint style="success" %}
+Видеоинструкцию по настройке двухфакторной аутентификации Ideco NGFW c использованием SMS Aero смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/a756ffc91fc7c0d8cebcbac83df0b9fc/?r=wd);
+* [Youtube](https://youtu.be/m8fzfX6d9HE?si=HDBIbZZ93ga9eL7t).
+{% endhint %}
 
 <details>
 
@@ -81,10 +83,11 @@ description: В статье описаны типы двухфакторной 
 
 </details>
 
-**Видеоинструкция по настройке двухфакторной аутентификации Ideco NGFW c использованием Мультифактора**:
-
-{% embed url="https://rutube.ru/video/181dc7eed9cf30b3088b22ff591ebe59" %}
-<!-- [Ссылка на видеоинструкцию настройке двухфакторной аутентификации Ideco NGFW c использованием Мультифактора](https://rutube.ru/video/181dc7eed9cf30b3088b22ff591ebe59/)-->
+{% hint style="success" %}
+Видеоинструкцию по настройке двухфакторной аутентификации Ideco NGFW c использованием Мультифактора смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/181dc7eed9cf30b3088b22ff591ebe59/);
+* [Youtube](https://youtu.be/w-mkHyhxny4?si=mm5vU_Yf1JxU5Zf5).
+{% endhint %}
 
 4\. Разрешите доступ по VPN нужным группам пользователей в таблице **Доступ по VPN**, воспользовавшись [инструкцией](/settings/users/authorization/vpn-connection/README.md).
 

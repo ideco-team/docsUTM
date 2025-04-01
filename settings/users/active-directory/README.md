@@ -4,7 +4,11 @@ description: >-
   базе Microsoft Active Directory (AD) и Samba DC.
 ---
 
-{% embed url="https://rutube.ru/video/9772209e77cf48c78a9e39f337bbe932/?r=wd" %}
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/9772209e77cf48c78a9e39f337bbe932/);
+* [Youtube](https://youtu.be/noB-O7cnb94?si=vnt62RtV56NTo57f).
+{% endhint %}
 
 # Интеграция с Microsoft Active Directory/Samba DC
 
