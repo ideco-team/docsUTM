@@ -1,17 +1,15 @@
 # Создание самоподписанного сертификата c помощью openssl
 
-{% hint style="info" %}
-Видеоинструкция по созданию пользовательских и корневых сертификатов:
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/b6d23fab68fd4c6be6184e23e65abf1e/?r=wd);
+* [Youtube](https://youtu.be/yEdUfLVab_4?si=fZW8lq-lFuHU-Fkj).
 {% endhint %}
-
-{% embed url="https://rutube.ru/video/b6d23fab68fd4c6be6184e23e65abf1e/" %}
-<!-- [Ссылка на видеоинструкцию по созданию пользовательских и корневых сертификатов](https://rutube.ru/video/b6d23fab68fd4c6be6184e23e65abf1e/) -->
 
 {% hint style="info" %}
 Используйте эту статью, если вы пользуетесь операционной системой с ядром Linux.
 При использовании операционной системы Windows воспользуйтесь статьей [Создание самоподписанного сертификата c помощью Powershell](creating-ssl-sert-powershell.md)
 {% endhint %}
-
 
 Для создания самоподписанного сертификата выполните действия:
 
