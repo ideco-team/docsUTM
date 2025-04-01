@@ -1,5 +1,11 @@
 # Личный кабинет my.ideco
 
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/1cc0ac23b4f957ece277f767beccda39/);
+* [Youtube](https://youtu.be/e0zmOur4tzY?si=uw7WeZQKx2EnmFiu).
+{% endhint %}
+
 {% hint style="info" %}
 Личный кабинет my.ideco.ru позволяет пользователю получить информацию:
 
