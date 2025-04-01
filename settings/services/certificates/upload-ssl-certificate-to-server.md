@@ -1,11 +1,10 @@
 # Загрузка SSL-сертификата на сервер
 
-{% hint style="info" %}
-Видеоинструкция по загрузке пользовательского и корневого сертификата на Ideco NGFW:
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/b7d89445247e85d31c0d9d5a1be8cd9e/?r=wd);
+* [Youtube](https://youtu.be/7HpMFN6R2UE?si=b6ry3fEcy9UZfv6e).
 {% endhint %}
-
-{% embed url="https://rutube.ru/video/b7d89445247e85d31c0d9d5a1be8cd9e" %}
-<!-- [Ссылка на видеоинструкцию по загрузке пользовательского и корневого сертификата на NGFW](https://rutube.ru/video/b7d89445247e85d31c0d9d5a1be8cd9e) -->
 
 Перед загрузкой корневого или пользовательского сертификата на NGFW убедитесь, что они отвечают требованиям:
 

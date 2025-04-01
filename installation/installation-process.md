@@ -2,12 +2,15 @@
 
 ## Процесс установки
 
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/20b2277f194e98a4faebb1cc7a2f2df2/);
+* [Youtube](https://youtu.be/sy_ANcdgrxk?si=fM86bL6WMkqs13C7).
+{% endhint %}
+
 {% hint style="info" %}
 При установке Ideco NGFW с загрузочного USB-диска выберите загрузку с USB-диска в настройках UEFI сервера.
 {% endhint %}
-
-{% embed url="https://rutube.ru/video/20b2277f194e98a4faebb1cc7a2f2df2/" %}
-<!-- [Ссылка на видеоинструкцию по установке Ideco NGFW](https://rutube.ru/video/20b2277f194e98a4faebb1cc7a2f2df2/) -->
 
 {% hint style="warning" %}
 Если при установке Ideco NGFW появилась ошибка **Требуется не менее 16 ГБ оперативной памяти** и при этом указан рекомендуемый размер оперативной памяти, необходимо уменьшить размер ресурсов, выделенных под видеопамять.
