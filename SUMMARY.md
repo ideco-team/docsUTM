@@ -108,6 +108,7 @@
   * [Сетевые интерфейсы](settings/services/connection-to-provider/README.md)
     * [Внешние и локальные интерфейсы](settings/services/connection-to-provider/all-ethernet.md)
     * [Агрегированные интерфейсы (LACP)](settings/services/connection-to-provider/lacp-connection.md)
+    * [Агрегированные интерфейсы](settings/services/connection-to-provider/aggregated-interfaces.md)
     * [Туннельные интерфейсы (GRE)](settings/services/connection-to-provider/gre-connection.md)
     * [VCE-интерфейсы](settings/services/connection-to-provider/vce-connection.md)
     * [SPAN-интерфейсы](settings/services/connection-to-provider/span-connection.md)
