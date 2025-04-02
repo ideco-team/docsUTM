@@ -1,6 +1,6 @@
 ---
 description: >-
-  В статье описано как настроить сервер Microsoft Active Directory для работы с Ideco NGFW.
+  В статье описана настройка сервера Microsoft Active Directory для работы с Ideco NGFW.
 ---
 
 # Настройка сервера Microsoft Active Directory
