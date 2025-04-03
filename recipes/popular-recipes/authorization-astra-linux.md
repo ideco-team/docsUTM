@@ -1,3 +1,8 @@
+---
+description: >-
+  Как настроить прозрачную авторизацию на Astra Linux через Ideco NGFW с использованием SSO-аутентификации.
+---
+
 # Настройка прозрачной авторизации на Astra Linux
 
 {% hint style="warning" %}
@@ -10,7 +15,9 @@
 
 3\. Введите NGFW в тот же домен и импортируйте пользователей (в том числе Astra Linux) в группу.
 
-4\. Включите в NGFW **SSO-аутентификацию через Active Directory и ALD Pro** в разделе **Пользователи -> Авторизация -> Веб-аутентификация**.
+4\. Включите в NGFW **SSO-аутентификацию через Active Directory и ALD Pro** в разделе **Пользователи -> Авторизация -> Веб-аутентификация**:
+
+![](/.gitbook/assets/authorization10.png)
 
 5\. Зайдите под доменной учетной записью на Astra Linux.
 
@@ -18,14 +25,14 @@
 
 <details>
 
-<summary>Для браузера **Yandex**</summary>
+<summary>Для браузера Yandex</summary>
 
 1\. Создайте файл **mydomain.json** в директории `/etc/opt/yandex/browser/policies/managed/` и впишите в него строку:
 
 ```
 { 
-  "AuthServerAllowlist": "*.имя_домена",
-  "AuthNegotiateDelegateAllowlist": "*.имя_домена"
+  "AuthServerAllowlist": "имя_NGFW.имя_домена",
+  "AuthNegotiateDelegateAllowlist": "имя_NGFW.имя_домена"
 }
 ```
 
@@ -35,14 +42,14 @@
 
 <details>
 
-<summary>Для браузера **Chromium**</summary>
+<summary>Для браузера Chromium</summary>
 
 1\. Создайте файл **mydomain.json** в директории `/etc/chromium/policies/managed/` и впишите в него строку:
 
 ```
 { 
-    "AuthServerAllowlist": "*.имя_домена" ,
-    "AuthNegotiateDelegateAllowlist": "*.имя_домена"
+    "AuthServerAllowlist": "имя_NGFW.имя_домена" ,
+    "AuthNegotiateDelegateAllowlist": "имя_NGFW.имя_домена"
 }
 ```
 
