@@ -153,6 +153,7 @@
   * [VCE](settings/server-management/vce.md)
   * [Кластеризация](settings/server-management/cluster/cluster.md)
     * [Настройка кластера](/settings/server-management/cluster/cluster-creation.md)
+    * [Обновление кластера](/settings/server-management/cluster/cluster-update.md)
   * [Обновления](settings/server-management/server-update.md)
   * [Бэкапы](settings/server-management/backup.md)
   * [Терминал](settings/server-management/terminal/README.md)
