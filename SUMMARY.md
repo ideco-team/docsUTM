@@ -6,6 +6,7 @@
 
 * [Лицензирование](general/license.md)
 * [Системные требования и источники данных Ideco NGFW](general/data-update-source-ideco-utm.md)
+  * [Выбор аппаратной платформы](general/choosing-hardware-platform.md)
 * [Техническая поддержка](general/technical-support.md)
   * [Информация о поддержке версий Ideco NGFW](general/support-period.md)
 
@@ -233,7 +234,6 @@
   * [Как восстановить доступ к Ideco NGFW](recipes/popular-recipes/restore-access-to-ideco-utm.md)
   * [Как восстановиться на прошлую версию после обновления Ideco NGFW](recipes/popular-recipes/go-back.md)
   * [Проверка настроек фильтрации с помощью security ideco](recipes/popular-recipes/security-ideco.md)
-  * [Выбор аппаратной платформы для Ideco NGFW](recipes/popular-recipes/choosing-hardware-platform.md)
   * [Поддержка устаревших алгоритмов шифрования](recipes/popular-recipes/legacy-encryption-support.md)
   * [Настройка программы Proxifier для прямых подключений к прокси серверу](recipes/popular-recipes/configuring-proxifier.md)
   * [Блокировка популярных ресурсов](recipes/popular-recipes/blocking-popular-resources.md)
