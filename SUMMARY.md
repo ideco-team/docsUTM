@@ -58,7 +58,6 @@
     * [Аутентификация пользователей AD/Samba DC](settings/users/active-directory/active-directory-user-authorization.md)
        * [Настройка сервера Active Directory](settings/users/active-directory/active-ditrctory-server-configuring.md)
        * [Настройка клиентских машин](settings/users/active-directory/active-directory-web-authentication.md)
-       * [Авторизация пользователей](settings/users/active-directory/ad-autorization.md)
        * [Скрипты автоматической разавторизации](settings/users/active-directory/auto-de-authorization-script.md)
   * [Интеграция с RADIUS-сервером](settings/users/radius.md)
   * [ALD Pro](settings/users/ald-pro.md)
