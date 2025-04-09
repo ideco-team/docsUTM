@@ -46,8 +46,6 @@ description: >-
 * Имя пользователя - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/android.png" alt="" data-size="original">
-
 **Для L2TP/IPsec PSK:**
 
 {% hint style="info" %}
@@ -131,8 +129,6 @@ description: >-
 
 1\. Нажмите **Добавить VPN профиль**:
 
-<img src="/.gitbook/assets/strongswan2.png" alt="" data-size="original">
-
 2\. Заполните поля:
 
 * Сервер - домен, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключение -> Основное -> Подключение по IKEv2/IPsec**;
@@ -140,10 +136,6 @@ description: >-
 * Логин - имя пользователя, которому разрешено подключение по VPN;
 * Пароль - пароль пользователя.
 
-<img src="/.gitbook/assets/strongswan1.png" alt="" data-size="original">
-
-3\. Нажмите **Сохранить** и кликните по созданному подключению:
-
-<img src="/.gitbook/assets/strongswan.png" alt="" data-size="original">
+3\. Нажмите **Сохранить** и кликните по созданному подключению.
 
 </details>

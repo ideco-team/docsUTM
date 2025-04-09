@@ -11,5 +11,5 @@
 * [x] Настраивать независимые друг от друга политики безопасности для модулей фильтрации.
 
 {% content-ref url="application-control.md" %}
-[application-control.md](application-control.md)
+[application-control.md]
 {% endcontent-ref %}
