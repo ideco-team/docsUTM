@@ -33,15 +33,15 @@
 
 1\. Перейдите к установке, нажав **Install Ideco CC**.
 
-![](/.gitbook/assets/сс-setup.png)
+![](/.gitbook/assets/cc-setup.png)
 
 2\. Выберите диск для установки и ознакомьтесь с **предупреждением об уничтожении данных на диске**:
 
-![](/.gitbook/assets/сс-setup1.png)
+![](/.gitbook/assets/cc-setup1.png)
 
 3\. Выберите временную зону, в которой вы находитесь:
 
-![](/.gitbook/assets/installation-process2.png)
+![](/.gitbook/assets/local-menu18.png)
 
 4\. Настройте дату и время в соответствии с вашей временной зоной. **Обязательно проверьте правильность даты и времени**:
 
@@ -103,4 +103,4 @@
 
 После создания локального интерфейса откроется локальное меню управления: 
 
-![](/.gitbook/assets/сс-local-menu.png)
+![](/.gitbook/assets/cc-local-menu.png)

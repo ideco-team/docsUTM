@@ -5,7 +5,7 @@ description: >-
 
 # Настройка сервера Microsoft Active Directory
 
-Перед настройкой убедитесь, что Ideco NGFW уже [введен в домен](settings\users\active-directory\entering-the-server-into-the-domain.md).
+Перед настройкой убедитесь, что Ideco NGFW уже [введен в домен](/settings/users/active-directory/README.md).
 
 1\. В настройках брандмауэра Windows на всех контроллерах домена разрешите **Удаленное управление журналом событий (Remote Event Log Management)**:
 

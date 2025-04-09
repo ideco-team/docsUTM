@@ -73,9 +73,11 @@
 
 ![](/.gitbook/assets/ospf7.png)
 
-* **Интерфейс** - выберите локальный или [Loopback-интерфейс](/settings/services/connection-to-provider/loopback.md) Ideco NGFW, IP-адрес которого будет использован для обмена маршрутами;
+* **Интерфейс** - выберите локальный или [Loopback-интерфейс](/settings/services/connection-to-provider/all-ethernet.md#loopback) Ideco NGFW, IP-адрес которого будет использован для обмена маршрутами;
 * **Название зоны** - введите номер зоны (значение `area`, для небольших сетей введите 0). Можно ввести в виде числа или IP-адреса, нажав иконку ![](/.gitbook/assets/icon-ospf.png);
 * **Вес** - введите стоимость маршрута.
+
+
   
 3\. Нажмите **Добавить**.
 
@@ -188,7 +190,7 @@ network 192.168.100.0 0.0.255.255 area 0
 
 * **Redistribute default** - будут анонсироваться маршруты по умолчанию. Устройство, принявшее эту информацию, будет отправлять на NGFW весь трафик;
 * **Redistribute static** - будут анонсироваться статические маршруты, указанные на вкладке **Сервисы -> Маршрутизация -> Локальных сетей**;
-* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/loopback.md). Если настройку отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в конфигурацию OSPF Loopback-интерфейса.
+* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/all-ethernet.md#loopback). Если настройку отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в конфигурацию OSPF Loopback-интерфейса.
 
 Подробнее о значении поля **Метрика** - в [статье](https://docs.frrouting.org/en/latest/ospfd.html#ospf-redistribute).
 
