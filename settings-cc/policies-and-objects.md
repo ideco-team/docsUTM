@@ -121,7 +121,7 @@ description: >-
 
 Процессы создания правил ограничения скорости в Ideco Center и в [Ideco NGFW](/settings/access-rules/shaper.md) аналогичны. Созданные в Ideco Center правила переносятся в подключенные Ideco NGFW в соответствии с группами серверов:
 
-![](/.gitbook/assets/cc_shaper.png)
+![](/.gitbook/assets/cc-shaper.png)
 
 В Ideco Center все правила, которые создаются в разделе **Политики и объекты**, работают по одному и тому же принципу. Рассмотрим это на примере раздела [Файрвол](/settings-cc/policies-and-objects.md#fairvol).
 

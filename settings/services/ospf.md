@@ -54,7 +54,7 @@
 ## Особенности работы OSPF в Ideco NGFW
 
 * Ideco NGFW всегда будет являться шлюзом по умолчанию для других устройств. Считать другие устройства шлюзом по умолчанию NGFW не сможет;
-* OSPF работает только на локальных интерфейсах. Локальными считаются [Локальные Ethernet-интерфейсы](/settings/services/connection-to-provider/all-ethernet.md), [GRE over IPsec](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md);
+* OSPF работает только на локальных интерфейсах. Локальными считаются [Локальные Ethernet-интерфейсы](/settings/services/connection-to-provider/all-ethernet.md#loopback), [GRE over IPsec](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md);
 * Значение *Типа сети* (*Network Type*) в Ideco NGFW устанавливается автоматически в зависимости от типа интерфейса, используемого для OSPF: для GRE-интерфейсов - значение p2p, для Ethernet-интерфейсов - значение broadcast.
 
 ## Основное
@@ -71,7 +71,7 @@
 
 ![](/.gitbook/assets/ospf7.png)
 
-* **Интерфейс** - выберите локальный или [Loopback-интерфейс](/settings/services/connection-to-provider/loopback.md) Ideco NGFW, IP-адрес которого будет использован для обмена маршрутами;
+* **Интерфейс** - выберите локальный или [Loopback-интерфейс](/settings/services/connection-to-provider/all-ethernet.md#loopback) Ideco NGFW, IP-адрес которого будет использован для обмена маршрутами;
 * **Название зоны** - введите номер зоны (значение `area`, для небольших сетей введите 0). Можно ввести в виде числа или IP-адреса, нажав иконку ![](/.gitbook/assets/icon-ospf.png);
 * **Вес** - введите стоимость маршрута.
   
@@ -186,7 +186,7 @@ network 192.168.100.0 0.0.255.255 area 0
 
 * **Redistribute default** - будут анонсироваться маршруты по умолчанию. Устройство, принявшее эту информацию, будет отправлять на NGFW весь трафик;
 * **Redistribute static** - будут анонсироваться статические маршруты, указанные на вкладке **Сервисы -> Маршрутизация -> Локальных сетей**;
-* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/loopback.md). Если настройку отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в конфигурацию OSPF Loopback-интерфейса.
+* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/all-ethernet.md#loopback). Если настройку отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в конфигурацию OSPF Loopback-интерфейса.
 
 Подробнее о значении поля **Метрика** - в [статье](https://docs.frrouting.org/en/latest/ospfd.html#ospf-redistribute).
 
