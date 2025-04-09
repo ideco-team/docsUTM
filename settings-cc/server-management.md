@@ -34,7 +34,7 @@
 
 На вкладке **Система** доступны следующие настройки:
 
-![](../.gitbook/assets/сс-updates.png)
+![](../.gitbook/assets/cc-updates.png)
 
 <details>
 
