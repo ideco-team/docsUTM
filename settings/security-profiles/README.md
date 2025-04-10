@@ -10,7 +10,6 @@
 [tls-inspection-security-profiles.md](tls-inspection-security-profiles.md)
 {% endcontent-ref %}
 
-{% content-ref url="application-control-profiles.md" %}
-[application-control-profiles.md](application-control-profiles.md)
+{% content-ref url="/settings/security-profiles/application-control/README.md" %}
+[a/settings/security-profiles/application-control/README.md](/settings/security-profiles/application-control/README.md)
 {% endcontent-ref %}
-
