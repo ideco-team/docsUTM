@@ -218,7 +218,7 @@ POST /api/v3/login
 2\. Выполните запрос на регистрацию сервера:
 
 ```
-PUT /api/v3/<company_id>/go_to_product
+PUT /api/v3/<company_id>/go_to_product 
 ```
 
 *  `company_id` - идентификатор компании пользователя, его можно получить по запросу `GET /api/v3/companies`.
@@ -969,7 +969,7 @@ POST /aliases/lists/times
 <summary>Изменение объекта IP-адрес</summary>
 
 ```
-PUT /aliases/ip_addresses/<id объекта>
+PATCH /aliases/ip_addresses/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -995,7 +995,7 @@ PUT /aliases/ip_addresses/<id объекта>
 <summary>Изменение объекта Диапазон IP-адресов</summary>
 
 ```
-PUT /aliases/ip_ranges/<id объекта>
+PATCH /aliases/ip_ranges/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1023,7 +1023,7 @@ PUT /aliases/ip_ranges/<id объекта>
 <summary>Изменение объекта Подсеть</summary>
 
 ```
-PUT /aliases/networks/<id объекта>
+PATCH /aliases/networks/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1049,7 +1049,7 @@ PUT /aliases/networks/<id объекта>
 <summary>Изменение объекта Домен</summary>
 
 ```
-PUT /aliases/domains/<id объекта>
+PATCH /aliases/domains/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1075,7 +1075,7 @@ PUT /aliases/domains/<id объекта>
 <summary>Изменение объекта Порт</summary>
 
 ```
-PUT /aliases/ports/<id объекта>
+PATCH /aliases/ports/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1101,7 +1101,7 @@ PUT /aliases/ports/<id объекта>
 <summary>Изменение объекта Диапазон портов</summary>
 
 ```
-PUT /aliases/port_ranges/<id объекта>
+PATCH /aliases/port_ranges/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1129,7 +1129,7 @@ PUT /aliases/port_ranges/<id объекта>
 <summary>Изменение объекта Время</summary>
 
 ```
-PUT /aliases/time_ranges/<id объекта>
+PATCH /aliases/time_ranges/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1167,7 +1167,7 @@ PUT /aliases/time_ranges/<id объекта>
 <summary>Изменение объекта Список IP-объектов</summary>
 
 ```
-PUT /aliases/lists/addresses/<id объекта>
+PATCH /aliases/lists/addresses/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1193,7 +1193,7 @@ PUT /aliases/lists/addresses/<id объекта>
 <summary>Изменение объекта Список IP-адресов</summary>
 
 ```
-PUT /aliases/ip_address_lists/<id объекта>
+PATCH /aliases/ip_address_lists/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1219,7 +1219,7 @@ PUT /aliases/ip_address_lists/<id объекта>
 <summary>Изменение объекта Порты</summary>
 
 ```
-PUT /aliases/lists/ports/<id объекта>
+PATCH /aliases/lists/ports/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1245,7 +1245,7 @@ PUT /aliases/lists/ports/<id объекта>
 <summary>Изменение объекта Расписание</summary>
 
 ```
-PUT /aliases/lists/times/<id объекта>
+PATCH /aliases/lists/times/<id объекта>
 ```
 
 **Json-тело запроса:**
@@ -1336,7 +1336,7 @@ GET /netscan_backend/settings
 <summary>Изменение настроек</summary>
 
 ```
-PUT /netscan_backend/settings
+PATCH  /netscan_backend/settings
 ```
 
 **Json-тело запроса:**

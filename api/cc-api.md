@@ -133,7 +133,7 @@ GET /servers/setting
 <summary>Изменение общих настроек</summary>
 
 ```
-PUT /servers/setting
+PATCH /servers/setting
 ```
 
 **Json-тело запроса:**
@@ -173,7 +173,7 @@ GET /servers/state
 <summary>Включение/выключение синхронизации правил</summary>
 
 ```
-PUT /servers/state
+PATCH  /servers/state
 ```
 
 **Json-тело запроса:**
@@ -734,7 +734,7 @@ GET /firewall/state
 <summary>Изменение настроек</summary>
 
 ```
-PUT /firewall/state
+PATCH /firewall/state
 ```
 
 **Json-тело запроса:**
@@ -885,10 +885,10 @@ PUT /firewall/state
 <details>
 <summary>Редактирование правила</summary>
 
-* `PUT /firewall/rules/forward/before/<id правила>` - раздел FORWARD, начальное правило;
-* `PUT /firewall/rules/forward/after/<id правила>` - раздел FORWARD, конечное правило;
-* `PUT /firewall/rules/input/before/<id правила>` - раздел INPUT, начальное правило;
-* `PUT /firewall/rules/input/after/<id правила>` - раздел INPUT, конечное правило.
+* `PATCH  /firewall/rules/forward/before/<id правила>` - раздел FORWARD, начальное правило;
+* `PATCH  /firewall/rules/forward/after/<id правила>` - раздел FORWARD, конечное правило;
+* `PATCH  /firewall/rules/input/before/<id правила>` - раздел INPUT, начальное правило;
+* `PATCH  /firewall/rules/input/after/<id правила>` - раздел INPUT, конечное правило.
 
 **Json-тело запроса:** 
 

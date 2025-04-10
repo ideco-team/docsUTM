@@ -55,7 +55,7 @@ GET /dns/settings
 <summary>Включение/выключение DNS-сервера</summary>
 
 ```
-PUT /dns/settings
+PATCH /dns/settings
 ```
 
 **Json-тело запроса:**
@@ -94,7 +94,7 @@ GET /dns/safesearch
 ### Изменение настроек:
 
 ```
-PUT /dns/safesearch
+PATCH /dns/safesearch
 ```
 
 **Json-тело запроса:**
@@ -465,7 +465,7 @@ GET /dns/ddns/state
 <summary>Включение/выключение DDNS</summary>
 
 ```
-PUT /dns/ddns/state
+PATCH /dns/ddns/state
 ```
 
 **Json-тело запроса:**
@@ -509,7 +509,7 @@ GET /dns/ddns
 <summary>Изменение настроек</summary>
 
 ```
-PUT /dns/ddns
+PATCH /dns/ddns
 ```
 
 **Json-тело запроса:**
