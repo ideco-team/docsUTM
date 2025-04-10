@@ -66,7 +66,7 @@ GET /vpn_servers/settings
 <summary>Изменение настроек</summary>
 
 ```
-PUT /vpn_servers/settings
+PATCH /vpn_servers/settings
 ```
 
 **Json-тело запроса:**

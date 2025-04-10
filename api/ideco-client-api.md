@@ -6,7 +6,7 @@
 <summary>Получение настроек авторизации</summary>
 
 ```
-GET /agent_backend/wireguard/state
+GET /agent_backend/agent-server/state
 ```
 
 **Ответ на успешный запрос:**
@@ -25,7 +25,7 @@ GET /agent_backend/wireguard/state
 <summary>Изменение настроек авторизации</summary>
 
 ```
-PUT /agent_backend/wireguard/state
+PATCH /agent_backend/agent-server/state
 ```
 
 **Json-тело запроса:**
@@ -48,7 +48,7 @@ PUT /agent_backend/wireguard/state
 <summary>Получение настроек авторизации Ideco Client</summary>
 
 ```
-GET /agent_backend/wireguard/setting
+GET /agent_backend/agent-server/setting
 ```
 
 **Ответ на успешный запрос:**
@@ -74,7 +74,7 @@ GET /agent_backend/wireguard/setting
 <summary>Изменение настроек авторизации Ideco Client</summary>
 
 ```
-PUT /agent_backend/wireguard/setting
+PATCH /agent_backend/agent-server/setting
 ```
 
 **Json-тело запроса:**

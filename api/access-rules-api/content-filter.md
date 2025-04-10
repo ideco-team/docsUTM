@@ -23,7 +23,7 @@ GET /content-filter/state
 ## Включить/выключить Контент-фильтр
 
 ```
-PUT /content-filter/state
+PATCH /content-filter/state
 ```
 
 **Json-тело запроса:**
@@ -109,7 +109,7 @@ GET /proxy_backend/safe_search
 <summary>Изменение настройки безопасного поиска</summary>
 
 ```
-PUT /proxy_backend/safe_search
+PATCH /proxy_backend/safe_search
 ```
 
 **Json-тело запроса:**
@@ -360,7 +360,7 @@ POST /content-filter/rules?anchor_item_id=<id правила>&insert_after={true
 <summary>Редактирование правила</summary>
 
 ```
-PUT /content-filter/rules/<id правила>
+PATCH /content-filter/rules/<id правила>
 ```
 
 **Json-тело запроса:**
@@ -463,7 +463,7 @@ GET /content-filter/morph_analysis/state
 <summary>Изменение состояния модуля морфологического анализа</summary>
 
 ```
-PUT /content-filter/morph_analysis/state
+PATCH /content-filter/morph_analysis/state
 ```
 
 **Json-тело запроса:**

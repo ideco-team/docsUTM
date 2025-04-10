@@ -59,7 +59,7 @@ GET /backup/settings
 <summary>Изменение настроек бэкапов и настройка выгрузки на FTP-сервер или в общую папку CIFS</summary>
 
 ```
-PUT /backup/settings
+PATCH  /backup/settings
 ```
 
 **Json-тело запроса:**
