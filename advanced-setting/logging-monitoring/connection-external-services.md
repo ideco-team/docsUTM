@@ -39,10 +39,10 @@
 <summary>Управления оповещениями</summary>
 
 После привязки бота есть возможность настроить оповещения Ideco Monitoring Bot для каждой беседы:
-1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](/.gitbook/assets/bot-notification-settings.svg).
+1. Перейдите в раздел настройки, нажав на иконку ![bot\_notification\_settings.svg](/.gitbook/assets/icon-bot-notification-settings.svg).
 2. Проставьте галочки напротив тех уведомлений, которые хотели бы получать в выбранной беседе.
 
-Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](/.gitbook/assets/bot-notification-shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
+Если требуется временно отключить отправку уведомлений, нажмите на иконку ![bot\_notification\_shutdown.svg](/.gitbook/assets/icon-bot-notification-shutdown.svg). Оповещение перестанут приходить, пока снова не нажмете на эту иконку.
 </details>
 
 ## Интеграция с Zabbix агент
