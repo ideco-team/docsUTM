@@ -63,7 +63,7 @@
 <details>
 <summary>Сохранение настроек почтового сервера</summary>
 
-`PUT /mail/settings/general`
+`PATCH /mail/settings/general`
 
 **Json-тело запроса:**
 
@@ -247,7 +247,7 @@
 <details>
 <summary>Включение/отключение почтового сервера</summary>
 
-`PUT /mail/settings/general/state`
+`PATCH /mail/settings/general/state`
 
 **Json-тело запроса:**
 

@@ -20,7 +20,7 @@
 <details>
 <summary>Изменение настроек Антиспама и антивируса</summary>
 
-`PUT /mail/klms/state`
+`PATCH /mail/klms/state`
 
 **Json-тело запроса:**
 

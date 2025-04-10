@@ -64,7 +64,7 @@
 <details>
 <summary>Изменение правил переадресации</summary>
 
-`PUT /mail/rules/alias/<id правила>`
+`PATCH  /mail/rules/alias/<id правила>`
 
 **Json-тело запроса:**
 
@@ -155,7 +155,7 @@
 <details>
 <summary>Изменение разрешенного адреса</summary>
 
-`PUT /mail/rules/whitelist/<id правила>`
+`PATCH /mail/rules/whitelist/<id правила>`
 
 **Json-тело запроса:**
 
@@ -242,7 +242,7 @@
 <details>
 <summary>Изменение запрещенного адреса</summary>
 
-`PUT /mail/rules/blacklist/<id правила>`
+`PATCH /mail/rules/blacklist/<id правила>`
 
 **Json-тело запроса:**
 

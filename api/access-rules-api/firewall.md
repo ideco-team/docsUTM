@@ -73,7 +73,7 @@ GET /firewall/settings
 <summary>Изменение настроек</summary>
 
 ```
-PUT /firewall/settings
+PATCH /firewall/settings
 ```
 
 **Json-тело запроса:**
@@ -313,11 +313,11 @@ PUT /firewall/settings
 <details>
 <summary>Редактирование правила</summary>
 
-* `PUT /firewall/rules/forward/<id правила>` - раздел FORWARD;
-* `PUT /firewall/rules/input/<id правила>` - раздел INPUT;
-* `PUT /firewall/rules/dnat/<id правила>` - раздел DNAT;
-* `PUT /firewall/rules/snat/<id правила>` - раздел SNAT;
-* `PUT /firewall/rules/log/<id правила>` - раздел Логирование.
+* `PATCH  /firewall/rules/forward/<id правила>` - раздел FORWARD;
+* `PATCH  /firewall/rules/input/<id правила>` - раздел INPUT;
+* `PATCH  /firewall/rules/dnat/<id правила>` - раздел DNAT;
+* `PATCH  /firewall/rules/snat/<id правила>` - раздел SNAT;
+* `PATCH  /firewall/rules/log/<id правила>` - раздел Логирование.
 
 **Json-тело запроса:** один из объектов FilterRuleObject (разделы FORWARD и INPUT) | DnatRuleObject (раздел DNAT) | SnatRuleObject (раздел SNAT), которые описаны в раскрывающемся блоке [**Получение списка правил**](access-rules-api/firewall.md#poluchenie-spiska-pravil), без поля `id`
 
@@ -390,7 +390,7 @@ GET /firewall/watch
 <summary>Включение/выключение счетчика срабатывания правил</summary>
 
 ```
-PUT /firewall/watch
+PATCH /firewall/watch
 ```
 
 **Json-тело запроса:**
@@ -656,7 +656,7 @@ GET /firewall/checks_settings
 <summary>Изменение настроек блокировки трафика в случае неудачных проверок</summary>
 
 ```
-PUT /firewall/checks_settings
+PATCH /firewall/checks_settings
 ```
 
 **Json-тело запроса:**

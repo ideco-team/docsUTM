@@ -49,7 +49,7 @@ GET /ips/state
 **Изменение настройки включенности модуля**
 
 ```
-PUT /ips/state
+PATCH /ips/state
 ```
 
 **Json-тело запроса:**

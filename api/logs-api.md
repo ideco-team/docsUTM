@@ -50,7 +50,7 @@ GET /logs_backend/remote_syslog/state
 **Включение/выключение**
 
 ```
-PUT /logs_backend/remote_syslog/state
+PATCH /logs_backend/remote_syslog/state
 ```
 
 **Json-тело запроса:**
