@@ -13,13 +13,13 @@ description: >-
 * [x] Система предотвращения вторжений
 * [x] Контент-фильтр
 * [x] Контроль приложений
-* [x] Многоуровневая антивирусная и антиспам-проверка трафика
-* [x] Защита от ботнетов, фишинга и spyware
+* [x] Антивирусная и антиспам-проверка трафика
+* [x] Защита от ботнетов, фишинга и шпионского ПО
 * [x] VPN site-to-site (GRE, IPSec) и client-to-site (IKEv2/IPSec, L2TP/IPSec, SSTP, Wireguard) с 2FA
 * [x] Логирование действий администратора
-* [x] Управление через Ideco Center
+* [x] Управление через Центральную консоль 
 * [x] Отчетность по трафику пользователей и событиям безопасности
-* [x] Интеграция с Microsoft Active Directory, ALD Pro, Samba DC, SIEM и DLP-системами
+* [x] Интеграция с Microsoft Active Directory, ALD Pro, Samba DC, SIEM, Zabbix и DLP-системами
 
 И это далеко не полный список возможностей и сервисов Ideco NGFW, которые позволяют создать надежный барьер для защиты локальной сети от современных угроз безопасности.
 
@@ -29,4 +29,4 @@ Online-документация актуальна для версий Ideco UTM
 
 Скачать Ideco NGFW можно в [личном кабинете](https://my.ideco.ru/#/login).
 
-Видеодокументация доступна на нашем [YouTube-канале](https://www.youtube.com/playlist?list=PLQJTQf4Vb3wD2bhYMhsdbgMXk4PnSfY10).
+Видеодокументация доступна на [YouTube](https://www.youtube.com/playlist?list=PLQJTQf4Vb3wD2bhYMhsdbgMXk4PnSfY10) и [Rutube](https://rutube.ru/channel/25585396/).
