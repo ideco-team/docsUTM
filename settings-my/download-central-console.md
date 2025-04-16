@@ -1,25 +1,19 @@
 ---
-description: Скачать Ideco Center - центральную консоль, которая помогает в администрировании нескольких серверов Ideco NGFW.
+description: Скачать Ideco Center - центральную консоль для управления группой серверов Ideco NGFW.
 ---
 
 # Скачать Ideco Center
 
-{% hint style="info" %}
-Для скачивания доступна как обычная, так и ФСТЭК версия центральной консоли.
-{% endhint %}
-
-Чтобы скачать Ideco Center:
-
-1\. Зайдите в личный кабинет [my.ideco.ru](https://my.ideco.ru/).
-
-2\. Перейдите в раздел **Центральная консоль**.
-
-3\. Выберите необходимую версию и нажмите скачать:
+В [MY.IDECO](https://my.ideco.ru/) доступно скачивание центральной консоли Ideco Center, которая помогает в администрировании нескольких серверов Ideco NGFW. Не требует лицензирования и не имеет ограничений к использованию. Автоматически распространяет политики безопасности на все подключенные Ideco NGFW.
 
 ![](/.gitbook/assets/download-central-console.png)
 
+{% hint style="info" %}
+Для скачивания доступна как обычная, так и ФСТЭК версия.
+{% endhint %}
+
 ## Полезные ссылки
 
-* Как [создать](/preparation-install/usb.md) загрузочный USB-диск для установки на сервер.
-* Как [установить](/settings-cc/setup.md) Ideco Center.
-* Как [подключить] (/server-management/central-console.md) Ideco Center к Ideco NGFW. 
+* [Создание загрузочного USB-диска для установки на сервер](/installation/usb.md)
+* [Установка Ideco Center](/settings-cc/setup.md)
+* [Подключение Ideco Center к Ideco NGFW](/settings/server-management/central-console.md)
