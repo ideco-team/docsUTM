@@ -138,7 +138,7 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 
 ## Первый запуск
 
-1\. Запустите Ideco Client. Программа установит связь с сервером.
+1\. Запустите Ideco Client.
 
 2\. Введите данные:
 
