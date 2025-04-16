@@ -127,7 +127,7 @@ sudo rm /etc/systemd/system/IdecoService.service
 
 ## Первый запуск
 
-1\. Запустите Ideco Client. Программа установит связь с сервером.
+1\. Запустите Ideco Client.
 
 2\. Введите данные:
 
