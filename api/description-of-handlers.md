@@ -46,7 +46,7 @@ set-cookie: __Secure-ideco-3ea57fca-65cb-439b-b764-d7337530f102=df164532-b916-4c
 <summary>Разавторизация администратора</summary>
 
 ```
-DELETE /web/admin/auth/login
+DELETE /web/auth/login
 ```
 
 **Ответ на успешный запрос:** 200 ОК

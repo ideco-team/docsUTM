@@ -210,9 +210,9 @@ PATCH /ips/profiles/<profile_id>/rules/<rule_id>
 ```
 
 * `filters` - список фильтров правила (список не может быть пустым):
-    * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
-    * `operator` - оператор, только `equals`;
-    * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
+  * `key` - поле фильтра (`sid` - идентификатор, `mitre_tactic_id` - тактика MITRE, `protocol` - протокол, `signature_severity` - уровень серьезности, `flow` - направление, `classtype` - класс);
+  * `operator` - оператор, только `equals`;
+  * `values` - список значений, которые должны принимать поля `key` (если `key` - `sid`, то `values` - число).
 * `action` - строка с действием при срабатывании правила;
 * `comment` - комментарий, максимальная длина - 255 символов.
 
