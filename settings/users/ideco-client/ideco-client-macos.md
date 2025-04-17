@@ -132,8 +132,9 @@ Cертификат должен быть установлен **для всех
 Также сертификат можно добавить с помощью команды:
 
 ```
-sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain/Users/<учетная запись>/Downloads/root_ca.crt
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /Users/<учетная запись>/root_ca.crt
 ```
+
 5\. Перезагрузите компьютер.
 
 ## Первый запуск
