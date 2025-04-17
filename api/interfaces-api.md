@@ -2,16 +2,16 @@
 
 ## Внешние и локальные интерфейсы
 
+### Получение списка всех внешних и локальных интерфейсов
+
 <details>
-<summary>Получение списка всех внешних и локальных интерфейсов</summary>
+<summary>LAN (Локальный Ethernet-интерфейс)</summary>
 
 ```
 GET /network/connections
 ```
 
-**Ответ на успешный запрос:** объекты LAN, WAN, PPTP, L2TP, PPPoE
-
-**LAN (Локальный Ethernet-интерфейс):**
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -41,7 +41,17 @@ GET /network/connections
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**WAN (Подключение к провайдеру по Ethernet):**
+
+</details>
+
+<details>
+<summary>WAN (Подключение к провайдеру по Ethernet)</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -72,7 +82,17 @@ GET /network/connections
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**PPTP (Подключение к провайдеру по PPTP):**
+</details>
+
+<details>
+<summary>PPTP (Подключение к провайдеру по PPTP)</summary>
+
+
+**Ответ на успешный запрос:**
+
+```
+GET /network/connections
+```
 
 ```json5
 {
@@ -109,7 +129,17 @@ GET /network/connections
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**L2TP (Подключение к провайдеру по L2TP):**
+
+</details>
+
+<details>
+<summary>L2TP (Подключение к провайдеру по L2TP)</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -146,7 +176,17 @@ GET /network/connections
 * `zone` - алиас зоны. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**PPPoE (Подключение к провайдеру по PPPoE):**
+
+</details>
+
+<details>
+<summary>PPPoE (Подключение к провайдеру по PPPoE)</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -178,6 +218,49 @@ GET /network/connections
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
 </details>
+
+<details>
+<summary>Loopback</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "mac": "string",
+    "osdevname": "string",
+    "addresses": [ "string" ],
+    "comment": "string",
+    "enabled": "boolean",
+    "is_vce_vlan": "boolean",
+    "title": "string",
+    "type": "loopback",
+    "vlan_tag": "integer",
+    "zone": "string",
+    "id": "integer"
+}
+```
+
+* `mac` - MAC-адрес интерфейса. Для Loopback-интерфейса - `null`;
+* `osdevname` - название Loopback-интерфейса в операционной системе (например, `Oloopback3`). Значение создается автоматически, является уникальным и доступно только для чтения;
+* `addresses` - список адресов в формате `IP/prefix`.
+* `comment` - комментарий, может быть пустым. Максимальное количество символов - 256;
+* `enabled` - статус активности интерфейса:
+  * `true` - включен;
+  * `false` - выключен.
+* `is_vce_vlan` - признак подключения, созданного на основе проброшенного в VCE VLAN. Для Loopback-интерфейса - `false`;
+* `title` - название интерфейса, не может быть пустым;
+* `type` - тип подключения;
+* `vlan_tag` - тэг VLAN. Для Loopback-интерфейса - `null`;
+* `zone` - идентификатор зоны, к которой относится интерфейс. Для Loopback-интерфейса - `null`;
+* `id` - идентификатор интерфейса.
+
+</details>
+
+### Управление внешними и локальными интерфейсами
 
 <details>
 <summary>Получение состояния локальных интерфейсов и подключений</summary>
@@ -259,7 +342,10 @@ GET /network/states
 POST /network/connections
 ```
 
-**Json-тело запроса:** один из объектов LAN | WAN | PPTP | L2TP | PPPoE, которые описаны в раскрываюшемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov), без поля "id"
+**Json-тело запроса:** один из объектов описанных в разделе [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov):
+
+* LAN | WAN | PPTP | L2TP | PPPoE - без поля `id`.
+* Loopback - без полей `id` и `osdevname`.
 
 **Ответ на успешный запрос:**
 
@@ -280,7 +366,7 @@ POST /network/connections
 PATCH /network/connections/<id интерфейса>
 ```
 
-**Json-тело запроса:** некоторые поля одного из объектов LAN | WAN | PPTP | L2TP | PPPoE, которые описаны в раскрываюшемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov)
+**Json-тело запроса:** один из объектов описанных в разделе [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov).
 
 **Ответ на успешный запрос:** 200 OK
 
