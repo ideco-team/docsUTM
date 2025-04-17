@@ -2,16 +2,16 @@
 
 ## Внешние и локальные интерфейсы
 
+### Получение списка всех внешних и локальных интерфейсов
+
 <details>
-<summary>Получение списка всех внешних и локальных интерфейсов</summary>
+<summary>LAN (Локальный Ethernet-интерфейс)</summary>
 
 ```
 GET /network/connections
 ```
 
-**Ответ на успешный запрос:** объекты LAN, WAN, PPTP, L2TP, PPPoE, Loopback.
-
-**LAN (Локальный Ethernet-интерфейс):**
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -43,7 +43,17 @@ GET /network/connections
 * `zone` - идентификатор зоны, к которой относится интерфейс. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**WAN (Подключение к провайдеру по Ethernet):**
+
+</details>
+
+<details>
+<summary>WAN (Подключение к провайдеру по Ethernet)</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -76,7 +86,17 @@ GET /network/connections
 * `zone` - идентификатор зоны, к которой относится интерфейс. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**PPTP (Подключение к провайдеру по PPTP):**
+</details>
+
+<details>
+<summary>PPTP (Подключение к провайдеру по PPTP)</summary>
+
+
+**Ответ на успешный запрос:**
+
+```
+GET /network/connections
+```
 
 ```json5
 {
@@ -115,7 +135,17 @@ GET /network/connections
 * `zone` - идентификатор зоны, к которой относится интерфейс. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**L2TP (Подключение к провайдеру по L2TP):**
+
+</details>
+
+<details>
+<summary>L2TP (Подключение к провайдеру по L2TP)</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -154,7 +184,17 @@ GET /network/connections
 * `zone` - идентификатор зоны, к которой относится интерфейс. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**PPPoE (Подключение к провайдеру по PPPoE):**
+
+</details>
+
+<details>
+<summary>PPPoE (Подключение к провайдеру по PPPoE)</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -187,7 +227,16 @@ GET /network/connections
 * `zone` - идентификатор зоны, к которой относится интерфейс. Может быть `null`, если не назначен;
 * `is_vce_vlan` - `true`, если подключение создано на основе проброшенного в VCE VLAN.
 
-**Loopback:**
+</details>
+
+<details>
+<summary>Loopback</summary>
+
+```
+GET /network/connections
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -220,6 +269,8 @@ GET /network/connections
 * `id` - идентификатор интерфейса.
 
 </details>
+
+### Управление внешними и локальными интерфейсами
 
 <details>
 <summary>Получение состояния локальных интерфейсов и подключений</summary>
@@ -305,7 +356,7 @@ GET /network/states
 POST /network/connections
 ```
 
-**Json-тело запроса:** один из объектов, которые описаны в раскрывающемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov):
+**Json-тело запроса:** один из объектов описанных в разделе [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov):
 
 * LAN | WAN | PPTP | L2TP | PPPoE - без поля `id`.
 * Loopback - без полей `id` и `osdevname`.
@@ -329,7 +380,7 @@ POST /network/connections
 PATCH /network/connections/<id интерфейса>
 ```
 
-**Json-тело запроса:** некоторые поля одного из объектов LAN | WAN | PPTP | L2TP | PPPoE | Loopback, которые описаны в раскрывающемся блоке [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov)
+**Json-тело запроса:** один из объектов описанных в разделе [Получение списка всех внешних и локальных интерфейсов](interfaces-api.md#poluchenie-spiska-vsekh-vneshnikh-i-lokalnykh-interfeisov).
 
 **Ответ на успешный запрос:** 200 OK
 

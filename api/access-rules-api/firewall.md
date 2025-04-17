@@ -88,26 +88,21 @@ PUT /firewall/settings
 
 * `automatic_snat_enabled` - включение автоматического SNAT: `true` - включен, `false`- выключен;
 * `log_mode` - режим логирования;
-* `log_actions` - события, которые будут логироваться. 
+* `log_actions` - события, которые будут логироваться.
 
 **Ответ на успешный запрос**: 200 ОК
 
 </details>
 
-## Управление правилами
+## Получение списка правил
 
 <details>
-<summary>Получение списка правил</summary>
+<summary>Получение списка правил FORWARD и INPUT</summary>
 
 * `GET /firewall/rules/forward` - раздел FORWARD;
-* `GET /firewall/rules/input` - раздел INPUT;
-* `GET /firewall/rules/dnat` - раздел DNAT;
-* `GET /firewall/rules/snat` - раздел SNAT;
-* `GET /firewall/rules/log` - раздел Логирование.
+* `GET /firewall/rules/input` - раздел INPUT.
 
-**Ответ на успешный запрос:** объекты FilterRuleObject, DnatRuleObject, SnatRuleObject
-
-**Объект FilterRuleObject** (разделы FORWARD и INPUT)
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -157,7 +152,16 @@ PUT /firewall/settings
   * `accept` - разрешить;
   * `drop` - запретить.
 
-**Объект DnatRuleObject** (раздел DNAT)
+</details>
+
+<details>
+<summary>Получение списка правил DNAT</summary>
+
+```
+GET /firewall/rules/dnat
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -199,7 +203,16 @@ PUT /firewall/settings
 * `change_destination_address` - IP-адрес или диапазон IP-адресов для замены назначения, или `null`, если `action` = `accept`;
 * `change_destination_port` - порт или диапазон портов для замены значения, или `null`, если `action` = `accept`.
 
-**Объект SnatRuleObject** (раздел SNAT)
+</details>
+
+<details>
+<summary>Получение списка правил SNAT</summary>
+
+```
+GET /firewall/rules/snat
+```
+
+**Ответ на успешный запрос:**
 
 ```json5
 {
@@ -241,6 +254,63 @@ PUT /firewall/settings
 </details>
 
 <details>
+<summary>Получение списка правил Логирования</summary>
+
+```
+GET /firewall/rules/log
+```
+
+**Ответ на успешный запрос:**
+
+```json5
+{
+    "id": "integer",
+    "parent_id": "string",
+    "enabled": "boolean",
+    "protocol": "string",
+    "source_addresses": [ "string" ],
+    "source_addresses_negate": "boolean",
+    "source_ports": [ "string" ],
+    "incoming_interface": "string",
+    "destination_addresses": [ "string" ],
+    "destination_addresses_negate": "boolean",
+    "destination_ports": [ "string" ],
+    "outgoing_interface": "string",
+    "timetable": [ "string" ],
+    "comment": "string",
+    "action": "mark_log"
+}
+```
+
+* `id` - идентификатор правила.
+* `parent_id` - идентификатор группы в Ideco Center, в которую входит сервер, или константа `f3ffde22-a562-4f43-ac04-c40fcec6a88c` (соответствует Корневой группе);
+* `enabled` - если `true`, то правило включено, `false` - выключено;
+* `protocol` - протокол;
+* `source_addresses` - адрес источника;
+* `source_addresses_negate` - инвертировать адрес источника;
+* `source_ports` - порты источников, список идентификаторов алиасов;
+* `incoming_interface` - зона источника;
+* `destination_addresses` - адрес назначения;
+* `destination_addresses_negate` - инвертировать адрес назначения;
+* `destination_ports` - порты назначения;
+* `outgoing_interface` - зона назначения;
+* `hip_profiles` - HIP-профили;
+* `dpi_profile` - строка в формате UUID, идентификатор профиля DPI. Не может быть пустой строкой, если `dpi_enabled` = `true`;
+* `dpi_enabled` - если `true`, то обработка с помощью модуля **Контроль приложений** включена, `false` - выключена;
+* `ips_profile` - строка в формате UUID, идентификатор профиля IPS. Не может быть пустой строкой, если `ips_enabled` = `true`;
+* `ips_enabled` - если `true`, то обработка с помощью модуля **Предотвращение вторжений** включена, `false` - выключена;
+* `timetable` - время действия;
+* `comment` - комментарий, может быть пустым;
+* `action` - действие:
+  * `accept` - разрешить;
+  * `drop` - запретить.
+
+</details>
+
+
+## Управление правилами
+
+<details>
 <summary>Добавление правила</summary>
 
 * `POST /firewall/rules/forward?anchor_item_id=<id правила>&insert_after={true|false}` - раздел FORWARD;
@@ -252,9 +322,7 @@ PUT /firewall/settings
   * `anchor_item_id` - идентификатор правила, ниже или выше которого нужно создать новое. Если отсутствует, то новое правило будет добавлено в конец таблицы;
   * `insert_after` - вставка до или после. Если значение `true` или отсутствует, то новое правило будет добавлено сразу после указанного в `anchor_item_id`. Если `false` - на месте указанного в `anchor_item_id`.
 
-**Json-тело запроса:** один из объектов FilterRuleObject (разделы FORWARD и INPUT) | DnatRuleObject (раздел DNAT) | SnatRuleObject (раздел SNAT), описанных в раскрывающемся блоке [**Получение списка правил**](access-rules-api/firewall.md#poluchenie-spiska-pravil)
-
-* В запросе не должно быть `id`, так как правило еще не создано и не имеет идентификатора.
+**Json-тело запроса:** один из объектов описанных в разделе [**Получение списка правил**](firewall.md#poluchenie-spiska-pravil), без поля `id`.
 
 **Ответ на успешный запрос:**
 
@@ -277,7 +345,7 @@ PUT /firewall/settings
 * `PUT /firewall/rules/snat/<id правила>` - раздел SNAT;
 * `PUT /firewall/rules/log/<id правила>` - раздел Логирование.
 
-**Json-тело запроса:** один из объектов FilterRuleObject (разделы FORWARD и INPUT) | DnatRuleObject (раздел DNAT) | SnatRuleObject (раздел SNAT), которые описаны в раскрывающемся блоке [**Получение списка правил**](access-rules-api/firewall.md#poluchenie-spiska-pravil), без поля `id`
+**Json-тело запроса:** один из объектов описанных в разделе [**Получение списка правил**](firewall.md#poluchenie-spiska-pravil), без поля `id`.
 
 **Ответ на успешный запрос:** 200 ОК
 
