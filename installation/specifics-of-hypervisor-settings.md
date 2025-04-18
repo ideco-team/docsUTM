@@ -183,8 +183,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 
 3\. Измените интерфейс на **virtio** для дисков и сетевых карт.
 
-4\. Используйте режим кеширования **writeback**, если диски хранятся в qcow2 или raw-файлах.\
-Если нет - проконсультируйтесь у администратора хранилища или нашей технической поддержки относительно выбора режима кеширования.
+4\. Выберите режим кеширования. Если диски имеют формат qcow2 или raw, используйте **writeback**. Если используется другой формат дисков, проконсультируйтесь у своего системного администратора или в нашей технической поддержке.
 
 5\. В появившемся окне на вкладке **Обзор** в поле **Firmware** выберите пункт **UEFI x86\_64:/usr/share/OVMF/OVMF\_CODE.fd**. Выбор этого пункта включит **UEFI** и выключит опцию **Secure Boot**.
 
@@ -258,6 +257,12 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 </details>
 
 ## Microsoft Hyper-V
+
+{% hint style="success" %}
+Видеоинструкцию по установке Ideco NGFW на Microsoft Hyper-V смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/17bf175e041bc159a1868a76936d69df/)
+* [Youtube](https://www.youtube.com/watch?v=238bs_4ObPY)
+{% endhint %}
 
 * Поддерживается только второе поколение виртуальных машин под Windows Server 2012 R2 или выше.
 * Отключите опцию **Secure Boot** (безопасная загрузка).
