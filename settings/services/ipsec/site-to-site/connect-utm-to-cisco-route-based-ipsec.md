@@ -10,12 +10,13 @@ description: >-
 ![](/.gitbook/assets/connect-utm-to-cisco-route-based-ipsec.png)
 
 Адресация:
-192.168.26.125/30 - IP-адрес интерфейса туннеля NGFW.
-192.168.26.126/30 - IP-адрес интерфейса туннеля Cisco.
-172.16.50.3/24 - внешний IP-адрес NGFW.
-192.168.100.2/24 - локальный IP-адрес NGFW.
-172.16.50.4/24 - внешний IP-адрес Cisco.
-192.168.105.2/24 - локальный IP-адрес Cisco.
+
+* `192.168.26.125/30` - IP-адрес интерфейса туннеля NGFW.
+* `192.168.26.126/30` - IP-адрес интерфейса туннеля Cisco.
+* `172.16.50.3/24` - внешний IP-адрес NGFW.
+* `192.168.100.2/24` - локальный IP-адрес NGFW.
+* `172.16.50.4/24` - внешний IP-адрес Cisco.
+* `192.168.105.2/24` - локальный IP-адрес Cisco.
 
 <details>
 
@@ -39,6 +40,7 @@ ip address <внешний IP-адрес Cisco> <маска подсети>
 no shutdown
 ip nat outside
 exit
+
 interface gigabitEthernet 2
 ip address <локальный IP-адрес Cisco> <маска подсети>
 no shutdown
@@ -97,6 +99,7 @@ write
 configure terminal
 crypto ikev2 proposal ikev2proposal
 encryption aes-cbc-256
+integrity sha256
 group 19
 exit
 ```
@@ -133,6 +136,7 @@ keyring local key
 no config-exchange set send
 no config-exchange set accept
 no config-exchange request
+exit
 ```
 
 5\. Настройка шифрования в esp:
