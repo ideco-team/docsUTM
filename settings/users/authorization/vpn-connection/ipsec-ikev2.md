@@ -25,7 +25,16 @@ IKEv2/IPsec — протокол, который используется для
 2\. Включите опцию **Подключение по IKEv2/IPsec**.
 
 3\. В соответствующем поле укажите доменное имя или IP-адрес и нажмите **Сохранить**. \
-Важно: в разделе **Сервисы -> Сертификаты -> Загруженные сертификаты** загрузите сертификат с указанием полного доменного имени в расширении SAN.
+
+{% hint style="info" %}
+
+* Если используется сертификат Let's Encrypt, то дополнительных действий не требуется.
+* Если сертификат для VPN-подключений издан NGFW, появится уведомление о необходимости установить корневой сертификат Ideco NGFW у клиентов:
+
+![](/.gitbook/assets/vpn-authorization29.png)
+
+* Если используете сторонний сертификат (например, от коммерческих Certificate Authority), убедитесь, что домен указан в поле **Subject Alternative Name (SAN)**. Загрузите сертификат как пользовательский в разделе **Сервисы -> Сертификаты -> Загруженные сертификаты**.
+{% endhint %}
 
 4\. Передача клиентам маршрутов до ваших локальных сетей происходит автоматически. Для управления доступом к сетям используйте [Файрвол](/settings/access-rules/firewall.md).
 
@@ -35,11 +44,11 @@ IKEv2/IPsec — протокол, который используется для
 
 ## Поддержка IPsec IKEv2 в клиентских ОС
 
-* Microsoft **Windows 10** и выше. Требует установки корневого сертификата Let's Encrypt. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-windows10.md);
-* Apple **MacOS X 10.11** "El Capitan" (2015 г.) и выше. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md);
-* Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.). Инструкция по настройке [Alt Linux](/recipes/popular-recipes/vpn/connection-for-alt-linux.md), [Ubuntu](/recipes/popular-recipes/vpn/connection-for-ubuntu.md), [Astra Linux](/recipes/popular-recipes/vpn/connection-for-astra-linux.md) и [Fedora](/recipes/popular-recipes/vpn/connection-for-fedora.md);
-* Google **Android 11** (2020 г.) и выше. На более ранних версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android). [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md#podklyuchenie-na-android);
-* Apple **iOS 9** (iPhone 4S, 2015 г.) и выше. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md#podklyuchenie-na-ios);
-* **KeeneticOS 3.5** и выше. [Инструкция по настройке](/recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md);
-* MikroTik;
+* Microsoft **Windows 10** и выше. Требует установки корневого сертификата Let's Encrypt. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-windows10.md).
+* Apple **MacOS X 10.11** "El Capitan" (2015 г.) и выше. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-high-sierra-macos.md).
+* Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.). Инструкция по настройке [Alt Linux](/recipes/popular-recipes/vpn/connection-for-alt-linux.md), [Ubuntu](/recipes/popular-recipes/vpn/connection-for-ubuntu.md), [Astra Linux](/recipes/popular-recipes/vpn/connection-for-astra-linux.md) и [Fedora](/recipes/popular-recipes/vpn/connection-for-fedora.md).
+* Google **Android 11** (2020 г.) и выше. На более ранних версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android). [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md#podklyuchenie-na-android).
+* Apple **iOS 9** (iPhone 4S, 2015 г.) и выше. [Инструкция по настройке](/recipes/popular-recipes/vpn/connection-for-mobile-devices.md#podklyuchenie-na-ios).
+* **KeeneticOS 3.5** и выше. [Инструкция по настройке](/recipes/popular-recipes/vpn/sstp-connecting-keenetic-wi-fi-routers.md).
+* MikroTik.
 * Cisco routers.
