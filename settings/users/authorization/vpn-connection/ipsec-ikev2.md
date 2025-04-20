@@ -23,10 +23,19 @@
 
 1\. Для включения авторизации по IKEv2 установите соответствующий флаг **Подключение по IKEv2/IPsec** в разделе веб-интерфейса **Пользователи -> VPN-подключения -> Основное**.
 
-2\. В соответствующем поле укажите доменное имя или IP-адрес и нажмите **Сохранить**. \
-Важно: в разделе **Сервисы -> Сертификаты -> Загруженные сертификаты** загрузите сертификат с указанием полного доменного имени в расширении SAN. Wildcard-сертификат не может быть использован.
+2\. В соответствующем поле укажите доменное имя или IP-адрес и нажмите **Сохранить**:
 
 ![](/.gitbook/assets/vpn-authorization8.png)
+
+{% hint style="info" %}
+
+* Если используется сертификат Let's Encrypt, то дополнительных действий не требуется.
+* Если сертификат для VPN-подключений издан NGFW, появится уведомление о необходимости установить корневой сертификат Ideco NGFW у клиентов:
+
+![](/.gitbook/assets/vpn-authorization29.png)
+
+* Если используете сторонний сертификат (например, от коммерческих Certificate Authority), убедитесь, что домен указан в поле **Subject Alternative Name (SAN)**. Загрузите сертификат как пользовательский в разделе **Сервисы -> Сертификаты -> Загруженные сертификаты**. Wildcard-сертификат не может быть использован.
+{% endhint %}
 
 3\. Создайте в разделе **Пользователи -> VPN-подключения -> Доступ по VPN** правило, разрешающее пользователю VPN-подключение для пользователей, которым необходимо подключаться извне по VPN. Указанный в карточке пользователя логин и пароль будут использоваться для подключения.
 
@@ -34,13 +43,13 @@
 
 ## Поддержка IPsec IKEv2 в клиентских ОС
 
-* Microsoft **Windows 10**. Требует установки корневого сертификата Let's Encrypt;
-* Apple **MacOS X 10.11** "El Capitan" (2015 г.);
-* Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.);
-* Google **Android 11** (2020 г.). На более старых версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android);
-* Apple **iOS 9** (iPhone 4S) (2015 г.);
-* **KeeneticOS 3.5;**
-* MikroTik;
+* Microsoft **Windows 10**. Требует установки корневого сертификата Let's Encrypt.
+* Apple **MacOS X 10.11** "El Capitan" (2015 г.).
+* Linux [NetworkManager plugin](https://wiki.strongswan.org/projects/strongswan/wiki/NetworkManager) (c 2008 г.).
+* Google **Android 11** (2020 г.). На более старых версиях можно использовать приложение [StrongSwan](https://play.google.com/store/apps/details?id=org.strongswan.android).
+* Apple **iOS 9** (iPhone 4S) (2015 г.).
+* **KeeneticOS 3.5.**.
+* MikroTik.
 * Cisco routers.
 
 {% hint style="info" %}

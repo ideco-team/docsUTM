@@ -87,7 +87,7 @@ Ideco Client для MacOS требует версии системы 12.7 и в�
 Также сертификат можно добавить с помощью команды:
 
 ```
-sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain/Users/учетная_запись/Downloads/root_ca.crt
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /Users/<учетная запись>/root_ca.crt
 ```
 
 </details>
