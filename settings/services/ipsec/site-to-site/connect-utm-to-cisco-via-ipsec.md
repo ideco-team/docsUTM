@@ -1,6 +1,6 @@
 ---
 description: >-
-  По шагам статьи можно объединить сети Cisco и Ideco NGFW по IPsec с использованием PSK.
+  В статье описано, как объединить сети Cisco и Ideco NGFW по IPsec с использованием PSK.
 ---
 
 # Подключение Cisco IOS и Ideco NGFW по IPsec в туннельном режиме
@@ -24,7 +24,7 @@ description: >-
 
 ## Настройка Ideco NGFW
 
-Настройте на Ideco NGFW локальный и внешний интерфейсы. Подробная информация находится в статье [Первоначальная настройка](/installation/initial-setup.md).
+Настройте на Ideco NGFW локальный и внешний интерфейсы. Инструкция по настройке - в [статье](/installation/initial-setup.md).
 
 ## Настройка Cisco IOS XE
 
