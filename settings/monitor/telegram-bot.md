@@ -41,7 +41,7 @@ description: >-
 При подключении Ideco Monitoring Bot к беседе нельзя использовать подсказки для команд, поскольку требуется ввод команды `/start` вручную.
 {% endhint %}
 
-1\. Перейдите в группу в Telegram и добавьте бота: @ideco_monitoring_bot.
+1\. Перейдите в группу в Telegram и добавьте бота: @ideco_monitor_bot.
 2\. Напишите `/start` в группе.
 3\. Скопируйте код привязки к аккаунту.
 4\. Перейдите в раздел **Ideco Monitoring Bot** в [личном кабинете](https://my.ideco.ru/#/ideco-monitoring-bot).
