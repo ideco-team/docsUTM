@@ -38,7 +38,7 @@ description: >-
 
 1. Настроить интернет на Ideco NGFW.
 2. [Привязать лицензию](/settings/server-management/license-management.md) к серверу.
-3. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
+3. Перейти в группу и добавить пользователя @ideco_monitor_bot.
 4. Написать `/start` в группе.
 5. Скопировать код привязки к аккаунту.
 6. Перейти в раздел **Ideco Monitoring Bot** в [личном кабинете](https://my.ideco.ru/#/ideco-monitoring-bot).
