@@ -177,6 +177,7 @@ GET /monitor_backend/admin_sessions
     "auth_rule_id": "string",
     "admin_id": "string",
     "login_timestamp": "integer",
+    "duration": "int",
     "country_code": "string"
     }
 ]
@@ -193,7 +194,8 @@ GET /monitor_backend/admin_sessions
 * `auth_type` - тип авторизации администратора (`ad`, `ald`, `local`, `radius`);
 * `auth_rule_id` - идентификатор правила, по которому авторизовался администратор;
 * `admin_id` - идентификатор администратора;
-* `login_timestamp` - время момента успешной авторизации администратора (число в формате `YYYYMMDDhhmmss`).
+* `login_timestamp` - время момента успешной авторизации администратора (число в формате `YYYYMMDDhhmmss`);
+* `duration` - продолжительность сессии в секундах;
 * `country_code` - код страны источника подключения. Пустая строка, если страну не удалось определить.
 
 </details>
