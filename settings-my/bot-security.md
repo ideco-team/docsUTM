@@ -43,7 +43,7 @@ Ideco Monitoring Bot присылает уведомления о события
 
 2\. [Привязать лицензию](/settings/server-management/license-management.md) к серверу.
 
-3\. Перейти в группу и добавить пользователя @ideco_monitoring_bot.
+3\. Перейти в группу и добавить пользователя @ideco_monitor_bot.
 
 4\. Написать `/start` в группе.
 
