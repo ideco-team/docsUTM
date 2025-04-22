@@ -194,6 +194,7 @@
 
 * [О личном кабинете MY.IDECO](settings-my/README.md)
 * [NGFW](settings-my/ngfw.md)
+* [Центральная консоль](settings-my/download-central-console.md)
 * [Monitoring Bot и Security](settings-my/bot-security.md)
 * [Личные данные и Компании](settings-my/personal-details-and-companies.md)
 
