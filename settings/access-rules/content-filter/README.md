@@ -54,12 +54,8 @@ HTTPS-сайты без расшифровки трафика фильтруют
 [filtering-https-traffic.md](filtering-https-traffic.md)
 {% endcontent-ref %}
 
-Порядок действий для изменения страницы блокировки Контент-фильтра описан в статье:
-
-{% content-ref url="block-page.md" %}
-[block-page.md](block-page.md)
-{% endcontent-ref %}
-
 {% hint style="info" %}
-Процесс блокировки ресурсов, взаимодействующих с чат-ботами, описан в [статье](/recipes/popular-recipes/block-chat-bot.md)
+Для изменения страницы блокировки Контент-фильтра обратитесь в [Техническую поддержку](/general/technical-support.md).
+
+Процесс блокировки ресурсов, взаимодействующих с чат-ботами, описан в [статье](/recipes/popular-recipes/block-chat-bot.md).
 {% endhint %}
