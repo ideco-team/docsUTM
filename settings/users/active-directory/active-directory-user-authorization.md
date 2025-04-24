@@ -58,5 +58,5 @@ description: >-
 ## Полезные ссылки
 
 * [**Настройка сервера Microsoft Active Directory**](/settings/users/active-directory/active-ditrctory-server-configuring.md)
-* [**Настройка клиентских машин**](settings/users/active-directory/active-directory-web-authentication.md)
-* [**Скрипты автоматической разавторизации**](settings/users/active-directory/auto-de-authorization-script.md)
+* [**Настройка клиентских машин**](/settings/users/active-directory/active-directory-web-authentication.md)
+* [**Скрипты автоматической разавторизации**](/settings/users/active-directory/auto-de-authorization-script.md)
