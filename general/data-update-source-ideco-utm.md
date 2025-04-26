@@ -17,7 +17,7 @@ description: >-
 
 {% tab title="Сервер" %}
 
-<table><thead><tr><th width="164">Требования</th><th>Характеристики</th></tr></thead><tbody><tr><td>Процессор</td><td><p>- Intel i3/i5/i7/i9/Xeon;</p><p>- AMD FX/Ryzen/EPYC;</p><p>- Поддержка SSE 4.2;</p><p>- Минимум 4 ядра.</p></td></tr><tr><td>Объем оперативной памяти</td><td>- 16 ГБ (16-64 ГБ в зависимости от количества пользователей).</td></tr><tr><td>Дисковая подсистема</td><td><p>- Объем 150 ГБ или более;</p><p>- IOPS не менее 120;</p><p>- SSD с интерфейсом SATA, mSATA, SAS, NVMe;</p><p>- Дополнительный SSD при использовании почтового сервера;</p><p>- Не гарантируется работа с аппаратными RAID-контроллерами (программные контроллеры, интегрированные в чипсет, не поддерживаются).</p></td></tr><tr><td>Сеть</td><td>- Две сетевые карты (или два сетевых порта) 100/1000 Mbps на чипах Intel.</td></tr><tr><td>BIOS</td><td><p>- Поддержка UEFI;</p><p>- Отключенная опция Secure Boot в UEFI;</p><p>- Отключенный режим Legacy, может называться CSM (Compatability Support Module).</p></td></tr><tr><td>Дополнительно</td><td>- Монитор и клавиатура.</td></tr></tbody></table>
+<table><thead><tr><th width="164">Требования</th><th>Характеристики</th></tr></thead><tbody><tr><td>Процессор</td><td><p>- Intel i3/i5/i7/i9/Xeon.</p><p>- AMD FX/Ryzen/EPYC.</p><p>- Поддержка SSE 4.2.</p><p>- От 4 ядер.</p></td></tr><tr><td>Объем оперативной памяти</td><td>- 16 ГБ (16-64 ГБ в зависимости от количества пользователей).</td></tr><tr><td>Накопитель</td><td><p>- Объем 150 ГБ или более.</p><p>- Запись 4К блоками в один поток, с синхронизацией каждой записи не менее 1000 IOPS.</p><p>- SSD с интерфейсом SATA, mSATA, SAS, NVMe.</p><p>- Дополнительный SSD при использовании почтового сервера.</p><p>- Не гарантируется работа с аппаратными RAID-контроллерами (программные контроллеры, интегрированные в чипсет, не поддерживаются).</p></td></tr><tr><td>Сеть</td><td>- Две сетевые карты (или два сетевых порта) 100/1000 Mbps на чипах Intel.</td></tr><tr><td>BIOS</td><td><p>- Поддержка UEFI.</p><p>- Отключенная опция Secure Boot в UEFI.</p><p>- Отключенный режим Legacy, может называться CSM (Compatability Support Module).</p></td></tr><tr><td>Дополнительно</td><td>- Монитор и клавиатура.</td></tr></tbody></table>
 
 Для оптимального выбора аппаратной платформы обратите внимание на [рекомендации](choosing-hardware-platform.md) по подбору оборудования для Ideco NGFW. Примерный объем необходимого места на диске для хранения статистики веб-отчетности для 1000 пользователей за 1 год составляет 10-15 Гб.
 
@@ -29,7 +29,7 @@ description: >-
 
 {% tab title="Гипервизор" %}
 
-<table><thead><tr><th width="164">Требования</th><th>Характеристики</th></tr></thead><tbody><tr><td>Платформы виртуализации</td><td><p>- VMware;</p><p>- Microsoft Hyper-V (виртуальные машины 2-го поколения);</p><p>- VirtualBox;</p><p>- KVM;</p><p>- Citrix XenServer;</p><p>- Proxmox VE.</p></td></tr><tr><td>Тип ОС для создания виртуальной машины</td><td>- Linux Fedora 64 bit.</td></tr><tr><td>Процессор</td><td><p>- Поддержка SSE 4.2;</p><p>- Минимум 4 ядра;</p></td></tr><tr><td>Объем оперативной памяти</td><td>- 16 ГБ (16-64 ГБ в зависимости от количества пользователей).</td></tr><tr><td>Дисковая подсистема</td><td><p>- Объем 150 ГБ или более;</p><p>- IOPS не менее 120;</p><p>- Дополнительный диск при использовании почтового сервера (физически выделить на SSD);</p><p>- KVM: virtio для дисков.</p></td></tr><tr><td>Сеть</td><td><p>- WMWare: vmxnet3;</p><p>- VirtualBox: сетевая карта с типом подключения NAT;</p><p>- KVM: virtio;</p><p>- Microsoft Hyper-V: виртуальный сетевой адаптер (Network Adapter).</p></td><tr><td>BIOS</td><td><p>- Поддержка UEFI;</p><p>- Отключенная опция Secure Boot в UEFI;</p><p>- Отключенный режим Legacy, может называться CSM (Compatability Support Module).</p></td></tr><tr><td>Дополнительно</td><td><p>- Доступ до VGA-консоли виртуальной машины;</p><p>- Внутренние часы виртуальной машины должны быть настроены на хранение времени во временной зоне UTC.</p></td></tr></tbody></table>
+<table><thead><tr><th width="164">Требования</th><th>Характеристики</th></tr></thead><tbody><tr><td>Платформы виртуализации</td><td><p>- VMware.</p><p>- Microsoft Hyper-V (виртуальные машины 2-го поколения).</p><p>- VirtualBox.</p><p>- KVM.</p><p>- Citrix XenServer.</p><p>- Proxmox VE.</p></td></tr><tr><td>Тип ОС для создания виртуальной машины</td><td>- Linux Fedora 64 bit.</td></tr><tr><td>Процессор</td><td><p>- Поддержка SSE 4.2.</p><p>- От 4 ядер.</p></td></tr><tr><td>Объем оперативной памяти</td><td>- 16 ГБ (16-64 ГБ в зависимости от количества пользователей).</td></tr><tr><td>Накопитель</td><td><p>- Объем 150 ГБ или более.</p><p>- Запись 4К блоками в один поток, с синхронизацией каждой записи не менее 1000 IOPS.</p><p>- Дополнительный диск при использовании почтового сервера.</p><p>- KVM: virtio для дисков.</p></td></tr><tr><td>Сеть</td><td><p>- WMWare: vmxnet3.</p><p>- VirtualBox: сетевая карта с типом подключения NAT.</p><p>- KVM: virtio.</p><p>- Microsoft Hyper-V: виртуальный сетевой адаптер (Network Adapter).</p></td><tr><td>BIOS</td><td><p>- Поддержка UEFI.</p><p>- Отключенная опция Secure Boot в UEFI.</p><p>- Отключенный режим Legacy, может называться CSM (Compatability Support Module).</p></td></tr><tr><td>Дополнительно</td><td><p>- Доступ до VGA-консоли или COM-порту виртуальной машины.</p><p>- Внутренние часы виртуальной машины должны быть настроены на хранение времени во временной зоне UTC.</p></td></tr></tbody></table>
 
 {% endtab %}
 
@@ -37,7 +37,7 @@ description: >-
 
 Описание программно-аппаратных комплексов доступно по [ссылке](https://ideco.ru/apparatnye-resheniya).
  
-Сертифицированные ПАК не имеют интеллектуальный интерфейс управления платформой (IPMI).
+Сертифицированные ПАК не имеют автономного управления платформой (IPMI).
 
 {% endtab %}
 
@@ -46,8 +46,8 @@ description: >-
 {% hint style="success" %}
 На каждый VCE требуется минимум:
 
-* Процессор: 4 ядра;
-* Оперативная память: 16 ГБ ;
+* Процессор: 4 ядра.
+* Оперативная память: 16 ГБ .
 * Дисковое пространство: дополнительное место на SSD в зависимости от нагрузки.
 {% endhint %}
 
@@ -55,29 +55,31 @@ description: >-
 
 Типы конфигураций относятся ко всем функциональностям продукта и зависят от количества пользователей:
 
-<table data-full-width="false"><thead><tr><th width="167">Количество пользователей</th><th width="161">Модель процессора</th><th width="114">Объем оперативной памяти</th><th width="124">Дисковая подсистема</th><th>Сетевые адаптеры</th></tr></thead><tbody><tr><td>до 100</td><td>Intel Core i3 или совместимый</td><td>16 ГБ</td><td>150 ГБ</td><td>2 шт.</td></tr><tr><td>до 350</td><td>Intel Core i5 или совместимый</td><td>16 ГБ</td><td>240 ГБ</td><td>2 шт.</td></tr><tr><td>до 1000</td><td>Intel Core i7, Xeon-E, Xeon Scalable от 8 ядер или совместимый</td><td>32 ГБ</td><td>480 ГБ</td><td>2 шт.</td></tr><tr><td>от 1000 до 3000</td><td>Intel Xeon Silver 4214R или совместимый</td><td>64 ГБ</td><td>480 ГБ</td><td>2 шт.</td></tr><tr><td>от 3000</td><td>Xeon Gold 6238R 28 Cores или совместимый</td><td>64 ГБ</td><td>480 ГБ</td><td>2 шт.</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="167">Количество пользователей</th><th width="161">Модель процессора</th><th width="114">Объем оперативной памяти</th><th width="124">Накопитель</th><th>Сетевые адаптеры</th></tr></thead><tbody><tr><td>до 100</td><td>Intel Core i3 или совместимый</td><td>16 ГБ</td><td>150 ГБ</td><td>2 шт</td></tr><tr><td>до 350</td><td>Intel Core i5 или совместимый</td><td>16 ГБ</td><td>240 ГБ</td><td>2 шт</td></tr><tr><td>до 1000</td><td>Intel Core i7, Xeon-E, Xeon Scalable от 8 ядер или совместимый</td><td>32 ГБ</td><td>480 ГБ</td><td>2 шт</td></tr><tr><td>от 1000 до 3000</td><td>Intel Xeon Silver 4214R или совместимый</td><td>64 ГБ</td><td>480 ГБ</td><td>2 шт</td></tr><tr><td>от 3000</td><td>Xeon Gold 6238R 28 Cores или совместимый</td><td>64 ГБ</td><td>480 ГБ</td><td>2 шт</td></tr></tbody></table>
 
 {% hint style="info" %}
-Рекомендуемая дисковая подсистема - PLP, SSD с защитой данных при сбое в питании. Например, Kingston DC1000B (SEDC1000BM8/240G).
+Рекомендуем использовать серверные SSD с технологией защиты от сбоев питания. Например, Kingston DC1000B (SEDC1000BM8/240G).
 {% endhint %}
 
 ## Источники данных
 
 Ideco NGFW может обращаться к адресам для получения данных:
 
-* Отсылка уведомлений в личный кабинет/телеграм-бот: `alerts.v19.ideco.dev`; 
-* Обновление баз **Контент-фильтра**: `content-filter.v19.ideco.dev`;
-* Отсылка анонимной статистики: `gatherstat.v19.ideco.dev`;
-* Обновления баз GeoIP: `ip-list.v19.ideco.dev`;
-* Обмен информации о лицензии: `license.v19.ideco.dev`;
-* Отправка отчетов по почте: `send-reports.v19.ideco.dev`;
-* Обновления сигнатур IDS/IPS: `suricata.v19.ideco.dev`;
-* Обновления системы: `sysupdate.v19.ideco.dev`;
-* Синхронизация времени: `ntp.ideco.ru`;
-* Получение сертификатов Let's Encrypt: `acme-v02.api.letsencrypt.org`;
-* Антивирус Касперского для обновления баз использует список серверов, указанный на [официальном сайте](https://support.kaspersky.ru/common/start/6105) "Лаборатории Касперского".
+<table><thead><tr><th width="300">Тип запроса</th><th>Адрес</th></tr></thead><tbody>
+<tr><td>Отсылка уведомлений в личный кабинет/телеграм-бот</td><td>alerts.v19.ideco.dev</td></tr>
+<tr><td>Обновление баз Контент-фильтра</td><td>content-filter.v19.ideco.dev</td></tr>
+<tr><td>Отсылка анонимной статистики</td><td>gatherstat.v19.ideco.dev</td></tr>
+<tr><td>Обновления баз GeoIP</td><td>ip-list.v19.ideco.dev</td></tr>
+<tr><td>Обмен информации о лицензии</td><td>license.v19.ideco.dev</td></tr>
+<tr><td>Отправка отчетов по почте</td><td>send-reports.v19.ideco.dev</td></tr>
+<tr><td>Обновления сигнатур IDS/IPS</td><td>suricata.v19.ideco.dev</td></tr>
+<tr><td>Обновления системы</td><td>sysupdate.v19.ideco.dev</td></tr>
+<tr><td>Синхронизация времени</td><td>ntp.ideco.ru</td></tr>
+<tr><td>Получение сертификатов Let's Encrypt</td><td>acme-v02.api.letsencrypt.org</td></tr>
+<tr><td>Антивирус Касперского (обновление баз)</td><td>Серверы с <a href="https://support.kaspersky.ru/common/start/6105">официального сайта</a> Лаборатории Касперского</td></tr>
+</tbody></table>
 
-Часть запросов к указанным выше серверам может быть перенаправлена на `mcs-vm.ideco.ru`, `update.ideco.ru`, `storage.yandexcloud.net`.
+Часть запросов к указанным выше серверам может быть перенаправлена на mcs-vm.ideco.ru, update.ideco.ru, storage.yandexcloud.net.
 
 {% hint style="warning" %}
 Для корректной работы всех модулей фильтрации Ideco NGFW необходимо, чтобы доступ к вышеуказанным ресурсам был разрешен настройками фильтрации.
