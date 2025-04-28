@@ -18,6 +18,10 @@ description: >-
 [shaper.md](shaper.md)
 {% endcontent-ref %}
 
+{% content-ref url="antivirus.md" %}
+[antivirus.md](antivirus.md)
+{% endcontent-ref %}
+
 {% content-ref url="ips/README.md" %}
 [ips/README.md](ips/README.md)
 {% endcontent-ref %}
