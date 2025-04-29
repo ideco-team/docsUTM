@@ -175,13 +175,29 @@ sudo apt install -y network-manager-sstp sstp-client
 sudo reboot
 ```
 
-3\. Перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png).
+3\. Перейдите в терминале в директорию с загруженным корневым сертификатом (если на доменное имя NGFW выпущен Let`s Encrypt сертификат, сразу перейдите к пункту 6).
 
-4\. В появившемся окне выберите **Secure Socket Tunneling Protocol (SSTP)** или **Туннельный протокол типа точка-точка (SSTP)**:
+4\. Установите корневой сертификат NGFW в хранилище доверенных сертификатов Ubuntu:
+
+```bash
+sudo cp ca.crt /usr/local/share/ca-certificates/ca.crt
+```
+
+* `ca.crt` - имя скачанного сертификата.
+
+5\. Для обновления сертификатов устройства выполните команду:
+
+```bash
+sudo update-ca-certificates
+```
+
+6\. Перейдите в **Настройки -> Сети** и в строке **VPN** нажмите ![](/.gitbook/assets/icon-add.png).
+
+7\. В появившемся окне выберите **Secure Socket Tunneling Protocol (SSTP)** или **Туннельный протокол типа точка-точка (SSTP)**:
 
 <img src="/.gitbook/assets/connection-for-ubuntu8.png" alt="" data-size="original">
 
-5\. В разделе **Identity (Идентификация)** заполните следующие поля:
+8\. В разделе **Identity (Идентификация)** заполните следующие поля:
 
 <img src="/.gitbook/assets/connection-for-ubuntu9.png" alt="" data-size="original">
 
@@ -191,7 +207,7 @@ sudo reboot
 * **Пароль** - пароль пользователя. В правой части поля необходимо выбрать вариант хранения для пароля от VPN-соединения;
 * **NT-домен** - оставьте поле пустым.
 
-6\. Нажмите **Advanced**:
+9\. Нажмите **Advanced**:
 
 * На вкладке **Connection** отключите настройки:
     * **Use TLS hostname extentions**;
@@ -207,7 +223,7 @@ sudo reboot
 
 ![](/.gitbook/assets/connection-for-ubuntu16.png)
 
-6\. Нажмите **Добавить** и включите созданное VPN-подключение:
+10\. Нажмите **Добавить** и включите созданное VPN-подключение:
 
 <img src="/.gitbook/assets/connection-for-ubuntu10.png" alt="" data-size="original">
 
