@@ -130,4 +130,3 @@ description: >-
 ![](/.gitbook/assets/cc-shaper.png)
 
 В Ideco Center все правила, которые создаются в разделе **Политики и объекты**, работают по одному и тому же принципу. Рассмотрим это на примере раздела [Файрвол](/settings-cc/policies-and-objects.md#fairvol).
-
