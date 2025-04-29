@@ -3,6 +3,7 @@ description: Система обнаружения и предотвращени
 ---
 
 # Предотвращение вторжений
+
 {% hint style="success" %}
 Название службы раздела **Предотвращение вторжений**: `ideco-suricata-backend`; `ideco-suricata`; `ideco-suricata-event-syncer`; `ideco-suricata-profiles-syncer`. \
 Список имен служб для других разделов доступен по [ссылке](/settings/server-management/terminal/README.md).
