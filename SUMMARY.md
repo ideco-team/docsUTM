@@ -13,9 +13,9 @@
 ## Быстрый старт Ideco NGFW <a href="#installation" id="installation"></a>
 
 * [Рекомендации при первоначальной настройке](installation/tips-for-initial-setup.md)
-* [Настройка программно-аппаратных комплексов Ideco NGFW](installation/ipmi-settings.md)
-* [Подготовка к установке на устройство](installation/preparation-install.md)
+* [Подготовка платформы к установке](installation/preparation-install.md)
   * [Настройка гипервизора](installation/specifics-of-hypervisor-settings.md)
+  * [Настройка программно-аппаратных комплексов Ideco NGFW](installation/ipmi-settings.md)
   * [Создание загрузочного USB-накопителя](installation/usb.md)
 * [Установка](installation/installation-process.md)
 * [Первоначальная настройка](installation/initial-setup.md)
