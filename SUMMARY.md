@@ -103,7 +103,7 @@
     * [Настройка фильтрации трафика, для которого в таблице FORWARD нет правил](settings/security-profiles/application-control/no-rules.md)
   * [Предотвращение вторжений](settings/security-profiles/ips-profiles/README.md)
   * [Web Application Firewall](settings/security-profiles/waf-profiles.md)
-  * [Сервисы](settings/services/README.md)
+* [Сервисы](settings/services/README.md)
   * [Сетевые интерфейсы](settings/services/connection-to-provider/README.md)
     * [Внешние и локальные интерфейсы](settings/services/connection-to-provider/all-ethernet.md)
     * [Агрегированные интерфейсы (LACP)](settings/services/connection-to-provider/lacp-connection.md)
