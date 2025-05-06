@@ -267,12 +267,3 @@ Ideco NGFW поддерживает модели USB-модемов с Network C
 
 {% endtab %}
 {% endtabs %}
-
-{% hint style="info" %}
-Для проверки скорости ранее настроенного интерфейса перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`. 
-
-Пример вывода команды:
-
-![](/.gitbook/assets/web-terminal4.png)
-
-{% endhint %}
