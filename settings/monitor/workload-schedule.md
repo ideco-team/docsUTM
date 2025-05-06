@@ -38,15 +38,6 @@ description: >-
 
 Эта статистика может помочь в настройке резервирования каналов, статической и динамической [балансировки](/settings/services/multiple-simultaneous-connections.md).
 
-{% hint style="info" %}
-Для проверки скорости сети внешнего Ethernet перейдите в раздел **Управление сервером -> Терминал** и введите `speedtest-cli`.
-
-Пример вывода команды:
-
-![](/.gitbook/assets/monitor-prometheus.png)
-
-{% endhint %}
-
 </details>
 
 <details>
