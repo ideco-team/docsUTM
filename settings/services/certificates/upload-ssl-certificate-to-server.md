@@ -95,11 +95,6 @@
 
 4\. Сохраните файл с расширением **.pem** и загрузите его на NGFW.
 
-{% hint style="info" %}
-С общепринятым стандартом создания файла-цепочки сертификатов можно также ознакомиться здесь: [https://www.digicert.com/ssl-support/pem-ssl-creation.htm](https://www.digicert.com/ssl-support/pem-ssl-creation.htm).
-{% endhint %}
-</details>
-
 <details>
 <summary>Конвертация сертификата из формата pkcs12 в формат pem с помощью openssl</summary>
 
