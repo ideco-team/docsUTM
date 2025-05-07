@@ -1,6 +1,14 @@
 # Подключение по IKEv2/IPsec
 
 {% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/5ff5b898fe9b5b010074ac972548bf1f/);
+* [Youtube](https://www.youtube.com/watch?v=1dQJsP2B2S8).
+{% endhint %}
+
+IKEv2/IPsec - протокол, который используется для создания защищенного соединения между двумя устройствами в сети.
+
+{% hint style="success" %}
 Данный протокол VPN является предпочтительным и рекомендованным для всех сценариев использования.
 
 Инструкции по настройке VPN-подключений на разных ОС доступны по [ссылке](/recipes/popular-recipes/vpn/README.md).
