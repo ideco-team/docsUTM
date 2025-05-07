@@ -6,6 +6,12 @@ description: >-
 
 # Подключение между двумя Ideco NGFW в туннельном режиме работы
 
+{% hint style="success" %}
+Видеоинструкцию смотрите по ссылкам:
+* [Rutube](https://rutube.ru/video/7d644e005cecd2f8c7270586e87d0df8/);
+* [Youtube](https://www.youtube.com/watch?v=Lo-aWXKO0A8&t).
+{% endhint %}
+
 ![](/.gitbook/assets/ipsec-utm-to-utm-tunnel.png)
 
 Для создания IPsec-подключения между Ideco NGFW нужно настроить на одном NGFW входящее подключение, а на другом NGFW - исходящее подключение. Будем настраивать на **NGFW-1** исходящее подключение, а на **NGFW-2** - входящее подключение.
