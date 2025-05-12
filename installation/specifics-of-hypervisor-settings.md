@@ -17,7 +17,7 @@ Ideco NGFW совместим с указанными гипервизорами
 * Минимальный объем жесткого диска: **150 ГБ**.
 * Минимальное количество оперативной памяти: **16 ГБ**.
 * Минимальное количество ядер: **4**.
-* Видеопамять (VRAM): 16 Мб.
+* Видеопамять (VRAM): **16 МБ**.
 * Включение режима UEFI.
 * Отключение опции Secure Boot в UEFI.
 * Отключение режима Legacy загрузки (он также может называться CSM).
@@ -61,7 +61,7 @@ Ideco NGFW совместим с указанными гипервизорами
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings6.png)
 
-4\. Установите размер оперативной памяти **16ГБ** и размер диска **150ГБ**. После выберите в поле **CD/DVD Drive** Datastore ISO file и укажите путь к загрузочному образу:
+4\. Установите размер оперативной памяти **16 ГБ** и размер диска **150 ГБ**. После выберите в поле **CD/DVD Drive** Datastore ISO file и укажите путь к загрузочному образу:
    
 ![](/.gitbook/assets/specifics-of-hypervisor-settings7.png)
 
@@ -100,7 +100,7 @@ Ideco NGFW совместим с указанными гипервизорами
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings15.png)
 
-5\. Укажите размер вирутального жесткого диска **150ГБ**:
+5\. Укажите размер вирутального жесткого диска **150 ГБ**:
    
 ![](/.gitbook/assets/specifics-of-hypervisor-settings16.png)
 
@@ -108,7 +108,7 @@ Ideco NGFW совместим с указанными гипервизорами
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings17.png)
 
-7\. Укажите размер виртуальной оперативной памяти **16384МБ**:
+7\. Укажите размер виртуальной оперативной памяти **16384 МБ**:
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings18.png)
 
@@ -169,7 +169,7 @@ xe vm-param-set uuid=<UUID> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
     
 ![](/.gitbook/assets/specifics-of-hypervisor-settings25.png)
 
-3\. Создайте виртуальный жесткий диск под ВМ (Объем не меньше **150ГБ**):
+3\. Создайте виртуальный жесткий диск под ВМ (Объем не меньше **150 ГБ**):
 
 ![](/.gitbook/assets/specifics-of-hypervisor-settings26.png)
 

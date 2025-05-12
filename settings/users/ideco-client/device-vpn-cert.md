@@ -45,13 +45,13 @@ openssl req -x509 -new -sha256 -days 1825 -key ideco-dvpn_root-ca.key -nodes -ou
 
 <summary>Расшифровка строк</summary>
 
-* **Country Name (2 letter code) [XX]** — код страны в формате ISO 3166-1 alpha-2 (например, RU);
-* **State or Province Name (full name)** — название региона или области (например, Moscow);
-* **Locality Name (eg, city) [Default City]** — название города (например, Saint Petersburg);
-* **Organization Name (eg, company) [Default Company Ltd]** — название организации;
-* **Organizational Unit Name (eg, section) []** — название подразделения организации;
-* **Common Name (eg, your name or your server's hostname) []** — наименование сертификата;
-* **Email Address []** — контактный email.
+* **Country Name (2 letter code) [XX]** - код страны в формате ISO 3166-1 alpha-2 (например, RU).
+* **State or Province Name (full name)** - название региона или области (например, Moscow).
+* **Locality Name (eg, city) [Default City]** - название города (например, Saint Petersburg).
+* **Organization Name (eg, company) [Default Company Ltd]** - название организации.
+* **Organizational Unit Name (eg, section) []** - название подразделения организации.
+* **Common Name (eg, your name or your server's hostname) []** - наименование сертификата.
+* **Email Address []** - контактный email.
 
 </details>
 
@@ -63,7 +63,7 @@ openssl x509 -text -noout -in ideco-dvpn_root-ca.pem
 ```
 {% endcode %}
 
-* Корневой сертификат должен иметь атрибут `CA:TRUE`;
+* Корневой сертификат должен иметь атрибут `CA:TRUE`.
 * `ideco-dvpn_root-ca.pem` - файл, содержащий корневой сертификат.
 
 5\. В разделе **Пользователи -> Ideco Client** в поле **Доверенный сертификат** загрузите созданый сертификат `ideco-dvpn_root-ca.pem` без приватного ключа:
@@ -107,13 +107,13 @@ openssl req -new -key client1-dvpn.key -out client1-dvpn.csr
 
 <summary>Расшифровка строк</summary>
 
-* **Country Name (2 letter code) [XX]** — код страны в формате ISO 3166-1 alpha-2 (например, RU);
-* **State or Province Name (full name)** — название региона или области (например, Moscow);
-* **Locality Name (eg, city) [Default City]** — название города (например, Saint Petersburg);
-* **Organization Name (eg, company) [Default Company Ltd]** — название организации;
-* **Organizational Unit Name (eg, section) []** — название подразделения организации;
-* **Common Name (eg, your name or your server's hostname) []** — наименование сертификата;
-* **Email Address []** — контактный email.
+* **Country Name (2 letter code) [XX]** - код страны в формате ISO 3166-1 alpha-2 (например, RU).
+* **State or Province Name (full name)** - название региона или области (например, Moscow).
+* **Locality Name (eg, city) [Default City]** - название города (например, Saint Petersburg).
+* **Organization Name (eg, company) [Default Company Ltd]** - название организации.
+* **Organizational Unit Name (eg, section) []** - название подразделения организации.
+* **Common Name (eg, your name or your server's hostname) []** - наименование сертификата.
+* **Email Address []** - контактный email.
 
 </details>
 
