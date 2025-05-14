@@ -71,10 +71,15 @@ Ideco NGFW автоматически заполняет поле **Router ID** 
 ![](/.gitbook/assets/ospf7.png)
 
 * **Интерфейс** - локальный или [Loopback-интерфейс](/settings/services/connection-to-provider/all-ethernet.md#loopback) Ideco NGFW, IP-адрес которого будет использован для обмена маршрутами.
+
 * **Название зоны** - номер зоны (значение `area`, для небольших сетей введите `0`). Можно ввести в виде числа или IP-адреса, нажав ![](/.gitbook/assets/icon-ospf.png).
 * **Вес** - стоимость маршрута.
 
 2\. Нажмите **Добавить**.
+
+{% hint style="warning" %}
+Добавьте в таблицу OSPF **Loopback-интерфейс**, если на вкладке **Дополнительно** отключена опция **Redistribute connected** (по умолчанию включена), чтобы сети **Loopback-интерфейсов** анонсировались.
+{% endhint %}
 
 Пример готовой таблицы:
 
@@ -88,7 +93,11 @@ Ideco NGFW автоматически заполняет поле **Router ID** 
 
 * **Redistribute default** - будут анонсироваться маршруты по умолчанию. Устройство, принявшее эту информацию, будет отправлять на NGFW весь трафик.
 * **Redistribute static** - будут анонсироваться статические маршруты, указанные на вкладке **Сервисы -> Маршрутизация -> Локальных сетей**.
-* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/all-ethernet.md). Если настройку отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в конфигурацию OSPF Loopback-интерфейса.
+* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/all-ethernet.md).
+
+{% hint style="warning" %}  
+Если **Redistribute connected** отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в таблицу OSPF **Loopback-интерфейса**.
+{% endhint %}
 
 Подробнее о значении поля **Метрика** - в [статье](https://docs.frrouting.org/en/latest/ospfd.html#ospf-redistribute).
 
