@@ -37,12 +37,12 @@ Ideco Client работает по одному из двух протоколо
 
 ## Возможности Ideco Сlient
 
-* Авторизация в локальной сети;
-* VPN-подключение из внешних сетей;
-* VPN-подключение из локальных сетей;
-* Двухфакторная аутентификация;
-* Режим работы [Device VPN](/settings/users/ideco-client/device-vpn.md);
-* Сбор данных о подключающихся устройствах.
+* [x] Авторизация в локальной сети
+* [x] VPN-подключение из внешних сетей
+* [x] VPN-подключение из локальных сетей
+* [x] Двухфакторная аутентификация
+* [x] Режим работы [Device VPN](/settings/users/ideco-client/device-vpn.md)
+* [x] Сбор данных о подключающихся устройствах
 
 {% hint style="info" %}
 Сбор данных о подключающихся устройствах позволяет задавать критерии проверки - [HIP-профили](/settings/users/hip-profiles.md) - и использовать их в правилах [Файрвола](/settings/access-rules/firewall.md).
@@ -52,13 +52,13 @@ HIP-профили помогают реализовать ZTNA (Zero Trust Netw
 
 ## Поддерживаемые версии ОС и порты подключения
 
-<table data-header-hidden><thead><tr><th width="200"></th><th></th></tr></thead><tbody><tr><td>Поддерживаемые версии ОС</td><td><p>- Windows с 10 версии и выше;<br>- MacOS версии 12.7 и выше. При этом Ideco Client работает с <a href="ideco-client-macos.md">некоторыми ограничениями</a>;<br>- Astra Linux 1.7.0 и выше;<br>- РЕД ОС 8.0 и выше;</p><p>- Alt OS (Alt Workstation) 9.0 и выше;</p><p>- Fedora 35 и выше;</p><p>- Ubuntu 18.04 LTS (23.04) и выше.<br><strong>Важно</strong>: Ideco Client не работает на ОС Windows 11 версии 24H2. Варианты решения <a href="./#varianty-resheniya-problem-na-os-windows-11-versii-24h2">описаны ниже</a>.</p></td></tr><tr><td>Порты для подключения, если NGFW за NAT</td><td>- 80 TCP - для работы сертификатов Let’s Encrypt;<br>- 14765 TCP и 3051 UDP - для работы Ideco Client.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="200"></th><th></th></tr></thead><tbody><tr><td>Поддерживаемые версии ОС</td><td><p>- Windows 10 22H2 и выше<br>- MacOS версии 12.7 и выше. При этом Ideco Client работает с <a href="ideco-client-macos.md">некоторыми ограничениями</a><br>- Astra Linux 1.7.0 и выше<br>- РЕД ОС 8.0 и выше</p><p>- Alt OS (Alt Workstation) 9.0 и выше</p><p>- Fedora 35 и выше</p><p>- Ubuntu 18.04 LTS (23.04) и выше<br><strong>Важно</strong>: Ideco Client не работает на ОС Windows 11 версии 24H2. Варианты решения <a href="./#varianty-resheniya-problem-na-os-windows-11-versii-24h2">описаны ниже</a></p></td></tr><tr><td>Порты для подключения, если NGFW за NAT</td><td>- 80 TCP - для работы сертификатов Let’s Encrypt<br>- 14765 TCP и 3051 UDP - для работы Ideco Client</td></tr></tbody></table>
 
 <details>
 
 <summary>Варианты решения проблем на ОС Windows 11 версии 24H2</summary>
 
-* Включить компонент **Virtual Machine Platform**:
+**Вариант 1.** Включить компонент **Virtual Machine Platform**:
 
   1\. Установите последнюю версию [MS Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
 
@@ -70,9 +70,9 @@ HIP-профили помогают реализовать ZTNA (Zero Trust Netw
 
   5\. Нажмите **ОК** и перезагрузите компьютер.
 
-* Вернуть предыдущую версию операционной системы Windows 11 23H2;
+**Вариант 2.** Вернуть предыдущую версию операционной системы Windows 11 23H2.
 
-* Использовать альтернативный способ [VPN-подключения](/settings/users/authorization/vpn-connection/README.md).
+**Вариант 3.** Использовать альтернативный способ [VPN-подключения](/settings/users/authorization/vpn-connection/README.md).
 
 </details>
 
@@ -86,9 +86,7 @@ HIP-профили помогают реализовать ZTNA (Zero Trust Netw
 
 <summary>Настройка двухфакторной аутентификации в Ideco Client</summary>
 
-Выполните действия:
-
-* В веб-интерфейсе Ideco NGFW:
+**В веб-интерфейсе Ideco NGFW:**
 
 1\. Создайте учетную запись пользователя в разделе **Пользователи -> Учетные записи**.
 
@@ -98,7 +96,7 @@ HIP-профили помогают реализовать ZTNA (Zero Trust Netw
 
 ![](/.gitbook/assets/vpn-authorization2.png)
 
-* На устройстве пользователя:
+**На устройстве пользователя:**
 
 1\. Установите и запустите приложение Ideco Client. Инструкции по установке: [Windows](/settings/users/ideco-client/ideco-client-windows.md), [MacOS](/settings/users/ideco-client/ideco-client-macos.md), [Linux](/settings/users/ideco-client/ideco-client-linux.md).
 
@@ -125,12 +123,12 @@ Ideco NGFW поддерживает только один DNS-суффикс. Н
 ## Особенности работы Ideco Client
 
 * Только один профиль может быть с опцией автоподключения. Если активировать автоподключение для другого профиля, у предыдущего эта опция отключится.
-* Чтобы использовать SSO-профиль с автоподключением, вручную укажите доменное имя в поле **Хост**. Для предварительной настройки адреса подключения используйте групповую политику или запустите файл через командную строку с ключом: `IdecoAgent.msi utm_address=адрес_ngfw`;
+* Чтобы использовать SSO-профиль с автоподключением, вручную укажите доменное имя в поле **Хост**. Для предварительной настройки адреса подключения используйте групповую политику или запустите файл через командную строку с ключом: `IdecoAgent.msi utm_address=адрес_ngfw`.
 * При попытке повторной авторизации пользователя, который уже авторизован по IP, появляется предупреждение:
 
 ![](/.gitbook/assets/ideco-client8.png)
 
-* После каждого обновления приложение Ideco Client запускается автоматически;
+* После каждого обновления приложение Ideco Client запускается автоматически.
 * Информация о сессиях пользователей отображается в разделе [Сессии пользователей](/settings/monitor/authorized-users.md):
 
 ![](/.gitbook/assets/monitor-connections8.png)
@@ -139,7 +137,7 @@ Ideco NGFW поддерживает только один DNS-суффикс. Н
 
 При подключении через Ideco Client DNS-запросы могут не проходить, если выбран тип передачи маршрутов **Отправлять только указанные сети**. При выборе **Отправлять маршруты до локальных сетей Ideco NGFW** сеть до NGFW отправляется автоматически. Это связано с особенностями построения таблицы маршрутизации при подключении через Ideco Client:
 
-* При VPN-подключении без Ideco Client DNS-запросы идут на DNS, прописанный в настройках подключения (как правило, адрес NGFW);
+* При VPN-подключении без Ideco Client DNS-запросы идут на DNS, прописанный в настройках подключения (как правило, адрес NGFW).
 * При VPN-подключении через Ideco Client DNS-запросы идут на адрес NGFW, но в передаваемом на Ideco Client списке нет маршрута до DNS NGFW.
 
 Рекомендуем при выборе типа передачи маршрутов **Отправлять только указанные сети** добавить в список DNS NGFW, чтобы клиент VPN построил таблицу маршрутизации до этой сети.
