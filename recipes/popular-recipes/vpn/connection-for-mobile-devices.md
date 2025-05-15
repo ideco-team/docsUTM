@@ -1,6 +1,6 @@
 ---
 description: >-
-  В статье описана настройка VPN-подключения на мобильных устройствах по протоколам IKEv2/IPsec, L2TP/IPsec и PPTP.
+  В статье описана настройка VPN-подключения на мобильных устройствах по протоколам IKEv2/IPsec, L2TP/IPsec, SSTP и PPTP.
 ---
 
 # Инструкция по созданию VPN-подключения на мобильных устройствах
@@ -9,7 +9,7 @@ description: >-
 
 {% hint style="info" %}
 
-Применение сертификатов в протоколе IKEv2/IPsec:
+Применение сертификатов в протоколе IKEv2/IPsec и SSTP:
 
 * Если сертификат для VPN-подключений издан NGFW, установите корневой сертификат NGFW на устройство пользователя.
 * Если для VPN-подключения используется сертификат, выданный Let\`s Encrypt, то установка корневого сертификата на устройство не требуется.
@@ -21,6 +21,8 @@ description: >-
 {% hint style="warning" %}
 Не рекомендуем использовать для VPN-подключений кириллические логины.
 {% endhint %}
+
+## Android
 
 {% tabs %}
 
@@ -88,6 +90,101 @@ description: >-
 3\. Нажмите **Сохранить** и активируйте подключение.
 
 {% endtab %}
+
+{% tab title="StrongSwan" %}
+
+
+{% hint style="info" %}
+Приложение StrongSwan позволяет создавать VPN-подключение только через протокол IKEv2.
+{% endhint %}
+
+1\. Нажмите **Добавить VPN профиль**:
+
+![](/.gitbook/assets/connection-for-mobile-devices1.png)
+
+2\. Заполните поля:
+
+![](/.gitbook/assets/connection-for-mobile-devices2.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **Сервер** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
+* **VPN тип** - IKEv2 EAP (Логин/Пароль);
+* **Логин** - логин пользователя, которому разрешено подключение по VPN;
+* **Пароль** - пароль пользователя.
+
+</details>
+
+3\. Нажмите **Сохранить** и перейдите по созданному подключению:
+
+![](/.gitbook/assets/connection-for-mobile-devices3.png)
+
+{% endtab %}
+
+{% tab title="Open SSTP Client" %}
+
+{% hint style="info" %}
+Приложение Open SSTP Client позволяет создавать VPN-подключение через протокол SSTP.
+{% endhint %}
+
+1\. Откройте приложение и заполните поля:
+
+![](/.gitbook/assets/connection-for-mobile-devices13.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **Hostname** - домен, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по SSTP**.
+* **Username** - логин пользователя, которому разрешено подключение по VPN.
+* **Password** - пароль пользователя.
+
+</details>
+
+2\. На вкладке **SETTING** укажите в поле **Port Number** порт подключения, указанный в NGFW. По умолчанию порт 1443.
+
+![](/.gitbook/assets/connection-for-mobile-devices14.png)
+
+{% hint style="info" %}
+Для автоматического подключения включите опцию **Enable Reconnection** на вкладке **SETTING**.
+{% endhint %}
+
+3\. На вкладке **HOME** переключите опцию в правом нижнем углу в положение включено.
+
+{% endtab %}
+
+{% tab title="SSTP Max" %}
+
+{% hint style="info" %}
+Приложение SSTP Max позволяет создавать VPN-подключение через протокол SSTP. Но рекомендуем к использованию приложение Open SSTP Client.
+{% endhint %}
+
+1\. Откройте приложение и заполните поля:
+
+![](/.gitbook/assets/connection-for-mobile-devices15.png)
+
+<details>
+
+<summary>Расшифровка полей</summary>
+
+* **remote_addr** - домен, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по SSTP**.
+* **remote_port** - порт подключения, указанный в NGFW. По умолчанию порт 1443.
+* **remote_username** - логин пользователя, которому разрешено подключение по VPN.
+* **remote_password** - пароль пользователя.
+
+</details>
+
+2\. Нажмите start.
+
+{% endtab %}
+
+{% endtabs %}
+
+## iOS
+
+{% tabs %}
 
 {% tab title="iOS" %}
 
@@ -160,39 +257,8 @@ description: >-
 
 {% endtab %}
 
-{% tab title="StrongSwan (Android)" %}
 
-
-{% hint style="info" %}
-Приложение StrongSwan позволяет создавать VPN-подключение только через протокол IKEv2.
-{% endhint %}
-
-1\. Нажмите **Добавить VPN профиль**:
-
-![](/.gitbook/assets/connection-for-mobile-devices1.png)
-
-2\. Заполните поля:
-
-![](/.gitbook/assets/connection-for-mobile-devices2.png)
-
-<details>
-
-<summary>Расшифровка полей</summary>
-
-* **Сервер** - домен или IP-адрес, указанный в Ideco NGFW в разделе **Пользователи -> VPN-подключения -> Основное -> Подключение по IKEv2/IPsec**;
-* **VPN тип** - IKEv2 EAP (Логин/Пароль);
-* **Логин** - логин пользователя, которому разрешено подключение по VPN;
-* **Пароль** - пароль пользователя.
-
-</details>
-
-3\. Нажмите **Сохранить** и перейдите по созданному подключению:
-
-![](/.gitbook/assets/connection-for-mobile-devices3.png)
-
-{% endtab %}
-
-{% tab title="Brooog IKEv2 (iOS)" %}
+{% tab title="Brooog IKEv2" %}
 
 1\. Нажмите **Add VPN Connection**:
 
