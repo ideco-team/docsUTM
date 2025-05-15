@@ -60,15 +60,15 @@ HIP-профили помогают реализовать ZTNA (Zero Trust Netw
 
 * Включить компонент **Virtual Machine Platform**:
 
-1\. Установите последнюю версию [MS Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
+  1\. Установите последнюю версию [MS Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
 
-2\. Нажмите комбинацию клавиш **Windows + R** и введите команду `appwiz.cpl`.
+  2\. Нажмите комбинацию клавиш **Windows + R** и введите команду `appwiz.cpl`.
 
-3\. В левой части окна выберите **Включение или отключение компонентов Windows**.
+  3\. В левой части окна выберите **Включение или отключение компонентов Windows**.
 
-4\. Включите функцию **Virtual Machine Platform** (**Платформа виртуальной машины**).
+  4\. Включите функцию **Virtual Machine Platform** (**Платформа виртуальной машины**).
 
-5\. Нажмите **ОК** и перезагрузите компьютер.
+  5\. Нажмите **ОК** и перезагрузите компьютер.
 
 * Вернуть предыдущую версию операционной системы Windows 11 23H2;
 

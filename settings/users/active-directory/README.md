@@ -72,7 +72,7 @@ touch /run/ideco-ad-backend/ldap-passwd
 
 ## Настройка DNS для разрешения имен локального домена
 
-В Ideco NGFW Forward-зона DNS создается автоматически при вводе сервера в домен:
+В Ideco NGFW Forward-зона DNS создается в разделе **Сервисы -> Защита и управление DNS** автоматически при вводе сервера в домен:
 
 ![](/.gitbook/assets/dns.png)
 
