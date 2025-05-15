@@ -60,7 +60,6 @@ redirects:
   bgp: ./settings/services/bgp.md
   traffic: ./settings/reports/traffic.md
   ideco_client: ./settings/users/ideco-client/README.md
-  two_factor_authentication: ./settings/users/two-factor-authentication.md
   web_authorization: ./settings/users/authorization/web-authorization.md
   web_traffic_log: ./settings/reports/web-traffic-log.md
   ddns: ./settings/services/dns/ddns.md 
@@ -109,7 +108,8 @@ redirects:
   dpi: ./settings/security-profiles/application-control/README.md
   version_support: ./general/support-period.md
   ips_profiles: ./settings/security-profiles/ips-profiles/README.md
-  two_factor: ./settings/users/two-factor-authentication.md
+  authentication: ./settings/users/authentication/README.md
+  domain_suffix: ./settings/users/authentication/README.md
   netflow: ./settings/monitor/netflow.md
   traffic_log: ./settings/reports/traffic-log.md
   usb_token: ./settings/services/usb_tokens.md
