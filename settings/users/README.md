@@ -28,6 +28,10 @@
 [ald-pro.md](ald-pro.md)
 {% endcontent-ref %}
 
+{% content-ref url="radius.md" %}
+[radius.md](radius.md)
+{% endcontent-ref %}
+
 {% content-ref url="device-discovery.md" %}
 [device-discovery.md](device-discovery.md)
 {% endcontent-ref %}
