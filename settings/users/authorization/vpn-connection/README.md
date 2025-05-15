@@ -89,7 +89,7 @@ description: >-
 * **Пользователи и группы** - выберите, для каких пользовалетей будет применяться правило;
 * **Протоколы подключения** - выберите протокол (настраивается на вкладке **Основное**);
 * **Доступ по VPN** - разрешите или запретите доступ по созданному правилу;
-* **Способ 2FA** - выберите способ [двухфакторной аутентификации](/settings/users/two-factor-authentication.md). Для разных групп пользователей можно указать разные типы двухфакторной аутентификации (опционально);
+* **Способ 2FA** - выберите способ [двухфакторной аутентификации](/settings/users/authentication/two-factor-authentication.md). Для разных групп пользователей можно указать разные типы двухфакторной аутентификации (опционально);
 * **Комментарий** - добавьте комментарий (опционально).
 
 </details>
@@ -198,8 +198,8 @@ IP-адрес назначается пользователю автоматич
 [/recipes/popular-recipes/vpn/README.md](/recipes/popular-recipes/vpn/README.md)
 {% endcontent-ref %}
 
-{% content-ref url="/settings/users/two-factor-authentication.md" %}
-[/settings/users/two-factor-authentication.md](/settings/users/two-factor-authentication.md)
+{% content-ref url="/settings/users/authentication/two-factor-authentication.md" %}
+[/settings/users/authentication/two-factor-authentication.md](/settings/users/authentication/two-factor-authentication.md)
 {% endcontent-ref %}
 
 {% content-ref url="/settings/services/README.md" %}
