@@ -92,6 +92,15 @@ description: >-
 
 </details>
 
+<details>
+
+<summary>VCE</summary>
+
+Содержит информацию о загруженности всех VCE, для которых были назначены ресурсы (ядра процессора и оперативная память).
+Инстракция по настройке VCE доступна по [ссылке](/settings/server-management/vce.md).
+
+</details>
+
 ## Полезные ссылки
 
 * [Сетевые интерфейсы](/settings/services/connection-to-provider/README.md)
