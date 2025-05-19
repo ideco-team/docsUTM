@@ -33,26 +33,26 @@ description: В статье описана настройка нод Ideco NGFW
 
 1\. При входе в локальное меню резервной ноды, увидев следующее сообщение, введите **y** и нажмите **Enter**:
 
-<img src="/.gitbook/assets/local-menu8.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu8.png)
 
 2\. Выберите сетевой порт:
 
-<img src="/.gitbook/assets/local-menu9.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu9.png)
 
 3\. Подтвердите создание кластера, введя **y** и нажав **Enter**:
 
-<img src="/.gitbook/assets/local-menu10.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu10.png)
 
 4\. NGFW предложит изменить название сервера. При положительном  ответе на вопрос _Изменить название сервера?_, появится надпись с предложением ввести новое название.\
 Допустимое количество символов в названии - от 2 до 62:
 
-<img src="/.gitbook/assets/local-menu11.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu11.png)
 
 После ввода нового названия нажмите **Enter** для продолжения.
 
 5\. Появится сообщение, что процесс создания кластера запущен:
 
-<img src="/.gitbook/assets/local-menu12.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu12.png)
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт _Конфигурация активной ноды_). Для этого выделяется 3600 секунд.
 
@@ -73,18 +73,18 @@ description: В статье описана настройка нод Ideco NGFW
 
 3\. Выберите свободный физический сетевой порт для создания кластерной сети и подтвердите выбор:
 
-<img src="/.gitbook/assets/local-menu6.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu6.png)
 
 4\. NGFW предложит изменить название сервера. При положительном ответе на вопрос _"Изменить название сервера?"_ появится надпись с предложением ввести новое название.\
 Допустимое количество символов в названии - от 2 до 42:
 
-<img src="/.gitbook/assets/local-menu7.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu7.png)
 
 После ввода нового названия нажмите **Enter** для продолжения.
 
 5\. Появится сообщение, что процесс создания кластера запущен:
 
-<img src="/.gitbook/assets/local-menu12.png" alt="" data-size="original">
+![](/.gitbook/assets/local-menu12.png)
 
 Необходимо зайти в веб-интерфейс активной ноды и выполнить настройки (см. пункт *Конфигурация активной ноды*). Для этого выделяется 3600 секунд.
 
@@ -156,8 +156,8 @@ description: В статье описана настройка нод Ideco NGFW
 
 2\. Появится окно с предупреждением:
 
-<img src="/.gitbook/assets/clustering18.png" alt="" data-size="original">
+![](/.gitbook/assets/clustering18.png)
 
 3\. Нажмите **ОК**:
 
-<img src="/.gitbook/assets/clustering19.png" alt="" data-size="original">
+![](/.gitbook/assets/clustering19.png)

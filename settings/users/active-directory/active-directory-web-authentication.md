@@ -114,12 +114,12 @@ description: >-
 
 Если в Internet Explorer появляется окно с текстом **Для получения доступа требуется аутентификация** и аутентификация происходит только при ручном переходе по ссылке, установите параметр **Активные сценарии** в Internet Explorer в значение **Включить**:
 
-<img src="/.gitbook/assets/active-directory-user-authorization5.png" alt="" data-size="original">
+![](/.gitbook/assets/active-directory-user-authorization5.png)
 
 Доменному пользователю должно быть разрешено аутентифицироваться на Ideco NGFW. На контроллере домена зайдите в свойства выбранных пользователей на вкладку **Учетная запись** -> **Вход на...**, выберите пункт **только на указанные компьютеры** и пропишите имя рабочей станции для входа в систему.
 
 Пример такой настройки представлен на скриншоте ниже:
 
-<img src="/.gitbook/assets/active-directory-user-authorization6.png" alt="" data-size="original">
+![](/.gitbook/assets/active-directory-user-authorization6.png)
 
 </details>

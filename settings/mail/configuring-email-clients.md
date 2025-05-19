@@ -41,15 +41,15 @@ description: Настройка и примеры настроек популя�
 
 Пример настроек клиента Microsoft Outlook 2013 по протоколу IMAP:
 
-<img src="/.gitbook/assets/configuring-email-clients.png" alt="" data-size="original">
+![](/.gitbook/assets/configuring-email-clients.png)
 
 Пример настроек клиента Microsoft Outlook 2016 по протоколу IMAP:
 
-<img src="/.gitbook/assets/configuring-email-clients1.png" alt="" data-size="original">
+![](/.gitbook/assets/configuring-email-clients1.png)
 
 Для отображения IMAP-папок отключите опцию **При просмотре дерева в Outlook показывать только подписанные папки** в свойствах IMAP-папок:
 
-<img src="/.gitbook/assets/mail-settings4.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings4.png)
 
 </details>
 
@@ -69,25 +69,25 @@ description: Настройка и примеры настроек популя�
 
 3\. Зайдите в раздел **Настройки -> Основные**.
 
-<img src="/.gitbook/assets/mail-settings5.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings5.png)
 
 4\. Выберите **Об этом устройстве -> Доверие сертификатов**:
 
-<img src="/.gitbook/assets/mail-settings6.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings6.png)
 
 5\. Включите настройку **Доверять корневым сертификатам полностью**
 
-<img src="/.gitbook/assets/mail-settings7.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings7.png)
 
 **Настройка почтового ящика:**
 
 1\. Перейдите в Учетную запись почты и нажмите **Дополнительно**:
 
-<img src="/.gitbook/assets/mail-settings8.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings8.png)
 
 2\. Скорректируйте настройки:
 
-<img src="/.gitbook/assets/mail-settings9.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings9.png)
 
 </details>
 
@@ -107,6 +107,6 @@ description: Настройка и примеры настроек популя�
 
 При необходимости заполните _Параметры сервера_ и _Хранилище сообщений_.
 
-<img src="/.gitbook/assets/mail-settings10.png" alt="" data-size="original">
+![](/.gitbook/assets/mail-settings10.png)
 
 </details>

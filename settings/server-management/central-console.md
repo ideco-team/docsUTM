@@ -12,7 +12,8 @@ Ideco Center - это центральная консоль, которая по
 {% hint style="danger" %}
 При синхронизации Ideco Center и Ideco NGFW с разными мажорными версиями передача правил с Ideco Center происходить не будет. При этом в разделе **Серверы** будет информация о том, что Ideco Center и Ideco NGFW несовместимы:
 
-<img src="/.gitbook/assets/servers1.png" alt="" data-size="original">
+![](/.gitbook/assets/servers1.png)
+
 {% endhint %}
 
 {% hint style="warning" %}
