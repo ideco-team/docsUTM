@@ -191,7 +191,7 @@ network 192.168.100.0 0.0.255.255 area 0
 ## Особенности работы OSPF в Ideco NGFW
 
 * Ideco NGFW всегда будет являться шлюзом по умолчанию для других устройств. Считать другие устройства шлюзом по умолчанию NGFW не сможет.
-* * OSPF работает только на локальных интерфейсах: [Локальные Ethernet-интерфейсы](/settings/services/connection-to-provider/all-ethernet.md), [Туннельные интерфейсы GRE](/settings/services/connection-to-provider/gre-connection.md), [GRE over IPsec](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md) и [ГОСТ VPN](/settings/services/gost-vpn.md).
+* OSPF работает только на локальных интерфейсах: [Локальные Ethernet-интерфейсы](/settings/services/connection-to-provider/all-ethernet.md), [Туннельные интерфейсы GRE](/settings/services/connection-to-provider/gre-connection.md), [GRE over IPsec](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md) и [ГОСТ VPN](/settings/services/gost-vpn.md).
 * Значение *Типа сети* (*Network Type*) в Ideco NGFW устанавливается автоматически в зависимости от типа интерфейса, используемого для OSPF:
   * GRE-интерфейсы - значение `p2p`.
   * Ethernet-интерфейсы - значение `broadcast`.
