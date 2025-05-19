@@ -91,7 +91,7 @@ description: >-
 
 На вкладке **Маршрутизация локальных сетей** создайте правило Null route:
 
-<img src="/.gitbook/assets/routing11.png" alt="" data-size="original">
+![](/.gitbook/assets/routing11.png)
 
 Укажите Loopback-интерфейс в качестве шлюза. В этом случае весь входящий на NGFW трафик, предназначенный для подсети `89.50.100.0/24`, будет отбрасываться.
 
@@ -101,7 +101,7 @@ description: >-
 
 <summary>Задача: любой трафик в подсеть `150.1.0.0/16` направлять на шлюз `67.12.8.9`</summary>
 
-<img src="/.gitbook/assets/routing8.png" alt="" data-size="original">
+![](/.gitbook/assets/routing8.png)
 
 </details>
 

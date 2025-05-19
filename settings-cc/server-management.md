@@ -163,7 +163,7 @@
 
 Новый бэкап появится в таблице:
 
-<img src="../.gitbook/assets/backup4.png" alt="" data-size="original">
+![](/.gitbook/assets/backup4.png)
 
 </details>
 
@@ -179,7 +179,7 @@
 
 Пример создания бэкапа через локальное меню приведен на скриншоте ниже:
 
-<img src="../.gitbook/assets/cc-local-menu1.png" alt="" data-size="original">
+![](/.gitbook/assets/cc-local-menu1.png)
 
 Настройка сохранения бэкапа в сетевом файловом хранилище возможна только через веб-интерфейс Ideco Center. Выгрузка на внешние сетевые хранилища производится только при автоматическом создании бэкапа.
 
@@ -207,7 +207,7 @@
 
 Также можно загрузить бэкап из файла. Например, в случае переноса с другого сервера. Для восстановления конфигураций бэкапа, который находится на внешнем носителе, перейдите в **Управление сервером -> Бэкапы -> Бэкапы**, нажмите на кнопку **Добавить** и выберите **Загрузить из файла**:
 
-<img src="../.gitbook/assets/backup2.png" alt="" data-size="original">
+![](/.gitbook/assets/backup2.png)
 
 </details>
 
@@ -230,7 +230,7 @@
 
 Пример восстановления из бэкапа через локальное меню:
 
-<img src="../.gitbook/assets/cc-local-menu2.png" alt="" data-size="original">
+![](/.gitbook/assets/cc-local-menu2.png)
 
 Чтобы перенести установленный Ideco Center с одного сервера на другой с сохранением всех настроек, воспользуйтесь статьей [Перенос данных и настроек на другой сервер](../recipes/popular-recipes/transferring-data-to-another-server.md).
 
@@ -266,7 +266,7 @@
 
 Настройка осуществляется через веб-интерфейс в **Управление сервером -> Дополнительно**.
 
-![](../.gitbook/assets/cc-additionally1.png)
+![](/.gitbook/assets/cc-additionally1.png)
 
 <details>
 
