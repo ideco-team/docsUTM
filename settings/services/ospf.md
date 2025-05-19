@@ -93,9 +93,11 @@ Ideco NGFW поддерживает OSPF (Open Shortest Path First) — прот
 
 {% tab title="Дополнительные" %}
 
-* **Redistribute default** - будут анонсироваться маршруты по умолчанию. Устройство, принявшее эту информацию, будет отправлять на NGFW весь трафик.
-* **Redistribute static** - будут анонсироваться статические маршруты, указанные на вкладке **Сервисы -> Маршрутизация -> Локальных сетей**.
-* **Redistribute connected** - будут анонсироваться маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/all-ethernet.md).
+Включите настройки (по умолчанию включены). Будут анонсироваться:
+
+* **Redistribute default** - маршруты по умолчанию. Устройство, принявшее эту информацию, будет отправлять на NGFW весь трафик.
+* **Redistribute static** - статические маршруты, указанные на вкладке на вкладке **Локальных сетей** в разделе **Сервисы -> Маршрутизация**.
+* **Redistribute connected** - маршруты подсетей, подключенных напрямую, в том числе и [Loopback-интерфейсов](/settings/services/connection-to-provider/all-ethernet.md).
 
 {% hint style="warning" %}  
 Если **Redistribute connected** отключить, сети Loopback-интерфейсов будут анонсироваться при добавлении в таблицу OSPF **Loopback-интерфейса**.
@@ -189,7 +191,7 @@ network 192.168.100.0 0.0.255.255 area 0
 ## Особенности работы OSPF в Ideco NGFW
 
 * Ideco NGFW всегда будет являться шлюзом по умолчанию для других устройств. Считать другие устройства шлюзом по умолчанию NGFW не сможет.
-* OSPF работает только на локальных интерфейсах: [Локальные Ethernet-интерфейсы](/settings/services/connection-to-provider/all-ethernet.md#loopback) и [GRE over IPsec](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md).
+* * OSPF работает только на локальных интерфейсах: [Локальные Ethernet-интерфейсы](/settings/services/connection-to-provider/all-ethernet.md), [Туннельные интерфейсы GRE](/settings/services/connection-to-provider/gre-connection.md), [GRE over IPsec](/settings/services/ipsec/site-to-site/ipsec-utm-to-utm-transport.md) и [ГОСТ VPN](/settings/services/gost-vpn.md).
 * Значение *Типа сети* (*Network Type*) в Ideco NGFW устанавливается автоматически в зависимости от типа интерфейса, используемого для OSPF:
   * GRE-интерфейсы - значение `p2p`.
   * Ethernet-интерфейсы - значение `broadcast`.
