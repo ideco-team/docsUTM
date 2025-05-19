@@ -75,6 +75,20 @@ description: >-
 *  Первый ключ должен иметь тип `REG_SZ`, имя `AuthServerAllowlist` и значение `*.имя_домена`.
 *  Второй ключ также должен иметь тип `REG_SZ`, имя `AuthNegotiateDelegateAllowlist` и значение `*.имя_домена`.
 
+</details>
+
+<details>
+
+<summary>Настройка браузера Яндекс для веб-аутентификации по SSO или NTLM</summary>
+
+1\. Откройте **Редактор реестра**.
+
+2\. Перейдите по пути `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\YandexBrowser` (для компьютера) или `HKEY_CURRENT_USER\SOFTWARE\Policies\YandexBrowser` (для конкретного пользователя).
+
+3\. Создайте два новых ключа:
+
+*  Первый ключ должен иметь тип `REG_SZ`, имя `AuthServerAllowlist` и значение `*.имя_домена`.
+*  Второй ключ также должен иметь тип `REG_SZ`, имя `AuthNegotiateDelegateAllowlist` и значение `*.имя_домена`.
 
 </details>
 
