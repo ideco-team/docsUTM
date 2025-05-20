@@ -256,7 +256,7 @@
   * [Ручная корректировка GeoIP](recipes/popular-recipes/correct-geoip.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
-  * [Что делать если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
+  * [Что делать, если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
   * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
   * [Если соединение по IPsec не устанавливается](recipes/problem-diagnosis/ipsec.md)
   * [Ошибка 400 Bad Request Request Header Or Cookie Too Large при авторизации в браузерах](recipes/problem-diagnosis/maxtokensize.md)
