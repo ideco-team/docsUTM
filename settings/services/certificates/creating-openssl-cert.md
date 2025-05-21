@@ -2,8 +2,8 @@
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/b6d23fab68fd4c6be6184e23e65abf1e/?r=wd);
-* [Youtube](https://youtu.be/yEdUfLVab_4?si=fZW8lq-lFuHU-Fkj).
+* [Rutube](https://rutube.ru/video/b6d23fab68fd4c6be6184e23e65abf1e/?r=wd)
+* [Youtube](https://youtu.be/yEdUfLVab_4?si=fZW8lq-lFuHU-Fkj)
 {% endhint %}
 
 {% hint style="info" %}

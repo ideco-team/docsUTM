@@ -4,8 +4,8 @@
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/20b2277f194e98a4faebb1cc7a2f2df2/);
-* [Youtube](https://youtu.be/sy_ANcdgrxk?si=fM86bL6WMkqs13C7).
+* [Rutube](https://rutube.ru/video/20b2277f194e98a4faebb1cc7a2f2df2/)
+* [Youtube](https://youtu.be/sy_ANcdgrxk?si=fM86bL6WMkqs13C7)
 {% endhint %}
 
 {% hint style="info" %}

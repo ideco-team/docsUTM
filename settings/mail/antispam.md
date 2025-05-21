@@ -2,8 +2,8 @@
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/9d39d3d9e170f0df6d07a626ff001b39/?r=wd);
-* [Youtube](https://youtu.be/k2UqtI4yi84?si=8c8laLD5Qul0Yhpw).
+* [Rutube](https://rutube.ru/video/9d39d3d9e170f0df6d07a626ff001b39/?r=wd)
+* [Youtube](https://youtu.be/k2UqtI4yi84?si=8c8laLD5Qul0Yhpw)
 {% endhint %}
 
 Раздел **Антиспам и антивирус** состоит из двух подразделов: **Основное** и **Настройки фильтрации**.
