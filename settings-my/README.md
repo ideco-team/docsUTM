@@ -17,8 +17,8 @@ MY.IDECO - ваш личный кабинет, где вы сможете:
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/1cc0ac23b4f957ece277f767beccda39/).
-* [Youtube](https://youtu.be/e0zmOur4tzY?si=uw7WeZQKx2EnmFiu).
+* [Rutube](https://rutube.ru/video/1cc0ac23b4f957ece277f767beccda39/)
+* [Youtube](https://youtu.be/e0zmOur4tzY?si=uw7WeZQKx2EnmFiu)
 {% endhint %}
 
 Порядок регистрации на [my.ideco.ru](https://my.ideco.ru/):

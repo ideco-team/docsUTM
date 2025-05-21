@@ -2,8 +2,8 @@
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/c494be37c4c052722e5a9bea319f429b/);
-* [Youtube](https://youtu.be/zxsEQ1bAAAw?si=tLqTRQpRsdtkOHRk).
+* [Rutube](https://rutube.ru/video/c494be37c4c052722e5a9bea319f429b/)
+* [Youtube](https://youtu.be/zxsEQ1bAAAw?si=tLqTRQpRsdtkOHRk)
 {% endhint %}
 
 {% hint style="danger" %}
@@ -36,7 +36,7 @@ L2TP/IPsec - протокол позволяет создавать защище
 
 ### Настройка доступа по VPN
 
-Разрешите пользователю подключение по VPN из интернета, создав в разделе **Пользователи -> VPN-подключения -> Доступ по VPN** разрешающее правило. Подробнее в статье [VPN-подключение](/settings/users/authorization/vpn-connection/README.md).
+Разрешите пользователю подключение по VPN из интернета, создав в разделе **Пользователи -> VPN-подключения -> Доступ по VPN** разрешающее правило. Подробнее в статье [VPN-подключения](/settings/users/authorization/vpn-connection/README.md).
 
 ### Полезные ссылки
 

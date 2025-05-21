@@ -2,8 +2,8 @@
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/cab99c95cec5e6c09f4e75ddb7cbe4c2/).
-* [Youtube](https://youtu.be/RO_f8PBMscA?si=F6vtlpnjSYEWzZQp).
+* [Rutube](https://rutube.ru/video/cab99c95cec5e6c09f4e75ddb7cbe4c2/)
+* [Youtube](https://youtu.be/RO_f8PBMscA?si=F6vtlpnjSYEWzZQp)
 {% endhint %}
 
 В разделе **Профили безопасности -> Предотвращение вторжений** создаются профили с правилами выбора сигнатур и действиями, которые NGFW будет применять к трафику, соответствующему этим сигнатурам.

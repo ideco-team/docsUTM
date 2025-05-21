@@ -64,8 +64,8 @@
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/6f2432c7b6e98d41237954c35cf1cc7a/);
-* [Youtube](https://youtu.be/ettq8MMEXE0?si=vhflzzbs4TW1dMXi).
+* [Rutube](https://rutube.ru/video/6f2432c7b6e98d41237954c35cf1cc7a/)
+* [Youtube](https://youtu.be/ettq8MMEXE0?si=vhflzzbs4TW1dMXi)
 {% endhint %}
 
 ### Офлайн-привязка лицензии
@@ -108,7 +108,7 @@
 
 Посмотреть информацию о модулях и лицензии можно:
 
-* В личном кабинете [MY.IDECO](/settings-my/README.md) в разделе **NGFW -> Лицензирование**, нажав на иконку ![](/.gitbook/assets/icon-eye.png) напротив нужного сервера;
+* В личном кабинете [MY.IDECO](/settings-my/README.md) в разделе **NGFW -> Лицензирование**, нажав на иконку ![](/.gitbook/assets/icon-eye.png) напротив нужного сервера.
 * В веб-интерфейсе Ideco NGFW, в разделе **Управление сервером -> Лицензия**.
 
 Информация о лицензии содержит сведения о сроке действия лицензии, количестве пользователей, сроке окончания обновлений, технической поддержки продукта и др.

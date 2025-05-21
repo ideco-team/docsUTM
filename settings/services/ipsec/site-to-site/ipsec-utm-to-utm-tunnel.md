@@ -8,8 +8,8 @@ description: >-
 
 {% hint style="success" %}
 Видеоинструкцию смотрите по ссылкам:
-* [Rutube](https://rutube.ru/video/7d644e005cecd2f8c7270586e87d0df8/);
-* [Youtube](https://www.youtube.com/watch?v=Lo-aWXKO0A8&t).
+* [Rutube](https://rutube.ru/video/7d644e005cecd2f8c7270586e87d0df8/)
+* [Youtube](https://www.youtube.com/watch?v=Lo-aWXKO0A8&t)
 {% endhint %}
 
 ![](/.gitbook/assets/ipsec-utm-to-utm-tunnel.png)
