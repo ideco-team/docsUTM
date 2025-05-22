@@ -63,7 +63,6 @@
   * [Интеграция с RADIUS-сервером](settings/users/radius.md)
   * [ALD Pro](settings/users/ald-pro.md)
   * [Обнаружение устройств](settings/users/device-discovery.md)
-  * [Wi-Fi-сети](settings/users/wifi-network.md)
 * [Мониторинг](settings/monitor/README.md)
   * [Сессии администраторов](settings/monitor/administrator-sessions.md)
   * [Авторизованные пользователи](settings/monitor/authorized-users.md)
