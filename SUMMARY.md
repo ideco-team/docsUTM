@@ -5,8 +5,10 @@
 ## Общая информация <a href="#general" id="general"></a>
 
 * [Лицензирование](general/license.md)
-* [Системные требования и источники обновления данных Ideco NGFW](general/data-update-source-ideco-utm.md)
-  * [Выбор аппаратной платформы для Ideco NGFW](general/choosing-hardware-platform.md)
+* [Системные требования](general/data-update-source-ideco-utm.md)
+  * [Выбор аппаратной платформы](general/choosing-hardware-platform.md)
+  * [Виртуальная платформа](general/choosing-hypervisor.md)
+  * [Производительность платформы](general/performance.md)
 * [Техническая поддержка](general/technical-support.md)
   * [Информация о поддержке версий Ideco NGFW](general/support-period.md)
 
@@ -225,7 +227,8 @@
   * [Настройка cовместной работы ViPNet Координатор с Ideco NGFW](recipes/popular-recipes/vipnet-coordinator.md)
   * [Блокировка чат-ботов](recipes/popular-recipes/block-chat-bot.md)
   * [Таблица портов Ideco NGFW, доступных из локальной и внешних сетей](recipes/popular-recipes/open-ports.md)
-  * [Как включить таймер при загрузке Ideco NGFW](/recipes/popular-recipes/setup-timeout.md)
+  * [Источники данных](recipes/popular-recipes/data-update-source.md)
+  * [Как включить таймер при загрузке Ideco NGFW](recipes/popular-recipes/setup-timeout.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
   * [Что делать если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
