@@ -3,14 +3,14 @@
 Ideco NGFW может обращаться к адресам для получения данных:
 
 <table><thead><tr><th width="300">Тип запроса</th><th>Адрес</th></tr></thead><tbody>
-<tr><td>Отсылка уведомлений в личный кабинет/телеграм-бот</td><td>alerts.v20.ideco.dev</td></tr>
-<tr><td>Обновление баз Контент-фильтра</td><td>content-filter.v20.ideco.dev</td></tr>
-<tr><td>Отсылка анонимной статистики</td><td>gatherstat.v20.ideco.dev</td></tr>
-<tr><td>Обновления баз GeoIP</td><td>ip-list.v20.ideco.dev</td></tr>
-<tr><td>Обмен информации о лицензии</td><td>license.v20.ideco.dev</td></tr>
-<tr><td>Отправка отчетов по почте</td><td>send-reports.v20.ideco.dev</td></tr>
-<tr><td>Обновления сигнатур IDS/IPS</td><td>suricata.v20.ideco.dev</td></tr>
-<tr><td>Обновления системы</td><td>sysupdate.v20.ideco.dev</td></tr>
+<tr><td>Отсылка уведомлений в личный кабинет/телеграм-бот</td><td>alerts.v21.ideco.dev</td></tr>
+<tr><td>Обновление баз Контент-фильтра</td><td>content-filter.v21.ideco.dev</td></tr>
+<tr><td>Отсылка анонимной статистики</td><td>gatherstat.v21.ideco.dev</td></tr>
+<tr><td>Обновления баз GeoIP</td><td>ip-list.v21.ideco.dev</td></tr>
+<tr><td>Обмен информации о лицензии</td><td>license.v21.ideco.dev</td></tr>
+<tr><td>Отправка отчетов по почте</td><td>send-reports.v21.ideco.dev</td></tr>
+<tr><td>Обновления сигнатур IDS/IPS</td><td>suricata.v21.ideco.dev</td></tr>
+<tr><td>Обновления системы</td><td>sysupdate.v21.ideco.dev</td></tr>
 <tr><td>Синхронизация времени</td><td>ntp.ideco.ru</td></tr>
 <tr><td>Получение сертификатов Let's Encrypt</td><td>acme-v02.api.letsencrypt.org</td></tr>
 <tr><td>Антивирус Касперского (обновление баз)</td><td>Серверы с <a href="https://support.kaspersky.ru/common/start/6105">официального сайта</a> Лаборатории Касперского</td></tr>
@@ -21,5 +21,5 @@ Ideco NGFW может обращаться к адресам для получе
 {% hint style="warning" %}
 Для корректной работы всех модулей фильтрации Ideco NGFW необходимо, чтобы доступ к вышеуказанным ресурсам был разрешен настройками фильтрации.
 
-Учитывайте при обновлении, что `v20` в домене соответствует версии Ideco NGFW. Эту часть можно заменить символом `*` при настройке фильтрации (пример: `license.*.ideco.dev`).
+Учитывайте при обновлении, что `v21` в домене соответствует версии Ideco NGFW. Эту часть можно заменить символом `*` при настройке фильтрации (пример: `license.*.ideco.dev`).
 {% endhint %}
