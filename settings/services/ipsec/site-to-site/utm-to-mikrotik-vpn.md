@@ -1,10 +1,64 @@
-# Подключение MikroTik и Ideco NGFW по L2TP/IPsec 
+# Подключение MikroTik и Ideco NGFW по L2TP/IPsec
 
 ## Подключение MikroTik к Ideco NGFW по L2TP/IPsec
 
 * Настройте VPN-сервер на Ideco NGFW в разделе **Пользователи -> VPN-подключения**. Подробная инструкция по настройке - в статье [Подключение по L2TP/IPsec](/settings/users/authorization/vpn-connection/l2tp-ipsec.md);
 
-* Настройте подключение на MikroTik, выполнив команды:
+* Настройте подключение на MikroTik:
+
+{% tabs %}
+
+{% tab title="Веб-интерфейс" %}
+
+1\. Перейдите в раздел **IP -> IPsec -> Profiles**, выберите профиль **default** и заполните поля:
+
+![](/.gitbook/assets/mikrotik.png)
+
+* **Hash Algorithms** - `sha1`.
+* **Encryption Algorithm** - `aes-256`.
+* **DH Group** - `modp2048`.
+
+2\. Нажмите **OK**.
+
+3\. Перейдите в раздел **IP -> IPsec -> Proposals**, выберите профиль **default** и заполните поля:
+
+![](/.gitbook/assets/mikrotik1.png)
+
+* **Auth. Algorithms** - `sha1`.
+* **Encr. Algorithms** - `aes-256-cbc`, `aes-192-cbc`, `aes-128-cbc`.
+* **PFS Group** - `modp2048`.
+
+4\. Нажмите **OK**.
+
+5\. Перейдите в раздел **Interfaces**, нажмите **New** и выберите **L2TP Client**.
+
+6\. Заполните поля:
+
+![](/.gitbook/assets/mikrotik2.png)
+
+<details>
+<summary>Расшифровка полей</summary>
+
+* **Dial Out**:
+  * **Connect To** - IP-адрес Ideco NGFW.
+  * **User** - логин пользователя, которому разрешено подключение по VPN.
+  * **Password** - пароль пользователя.
+  * **Use IPsec** - включите опцию.
+  * **IPsec Secret** - ключ, скопированный по пути **Пользователи -> VPN-подключения -> Основное** из поля **PSK**.
+* **Advanced**:
+  * **Allow** - `mschap2`.
+
+</details>
+
+7\. Нажмите **OK**.
+
+8\. Перейдите в раздел **IP -> Routes** и проверьте, что маршрут создан:
+
+![](/.gitbook/assets/mikrotik3.png)
+
+{% endtab %}
+
+{% tab title="Терминал" %}
 
 1\. Отредактируйте IPsec profile:
 
@@ -38,18 +92,6 @@ ip route add dst-address=<remote VPN subnet> gateway=l2tp-out1
 ```
 {% endcode %}
 
-{% hint style="info" %}
-Для работы удаленных сетей на NGFW и на MikroTik нужно создавать маршруты на обоих устройствах.
-{% endhint %}
+{% endtab %}
 
-{% hint style="info" %}
-Если у вас в разделе **Правила трафика -> Файрвол -> SNAT** отключен **Автоматический SNAT локальных сетей**, то может понадобиться прописать маршрут до сети VPN, где шлюзом является NGFW.
-
-Пример:
-
-* Aдрес NGFW = `169.254.1.5`
-* Первый адрес VPN = `10.128.0.1`
-
-`ip route add dst-address=169.254.1.5 gateway==10.128.0.1`
-{% endhint %}
-
+{% endtabs %}
