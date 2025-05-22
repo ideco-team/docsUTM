@@ -74,6 +74,7 @@ redirects:
   dhcp_option: ./settings/services/dhcp.md
   radius: ./settings/users/radius.md
   vce: ./settings/server-management/vce.md
+  vce_no_contexts: ./settings/server-management/vce.md
   antivirus_log: ./settings/reports/antivirus-logs.md
   auto_logout_script: ./settings/users/active-directory/auto-de-authorization-script.md
   session_sync: ./settings/server-management/cluster/cluster.md
