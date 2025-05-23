@@ -212,7 +212,7 @@
   * [Удаленный доступ к серверу](recipes/popular-recipes/remote-access-for-server-management.md)
   * [Тестирование оперативной памяти сервера](recipes/popular-recipes/memory-testing.md)
   * [Как избавиться от асимметричной маршрутизации трафика](recipes/popular-recipes/access-to-remote-networks.md)
-  * [Что делать если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
+  * [Что делать, если ваш IP попал в черные списки DNSBL](recipes/popular-recipes/dnsbl-list.md)
   * [Как восстановить доступ к Ideco NGFW](recipes/popular-recipes/restore-access-to-ideco-utm.md)
   * [Как восстановиться на прошлую версию после обновления Ideco NGFW](recipes/popular-recipes/go-back.md)
   * [Проверка настроек фильтрации с помощью security ideco](recipes/popular-recipes/security-ideco.md)
@@ -231,7 +231,7 @@
   * [Как включить таймер при загрузке Ideco NGFW](recipes/popular-recipes/setup-timeout.md)
 * [Диагностика проблем](recipes/problem-diagnosis/README.md)
   * [Ошибка при открытии сайта ERR\_CONNECTION\_TIMED\_OUT или Не открывается сайт](recipes/problem-diagnosis/site-does-not-open.md)
-  * [Что делать если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
+  * [Что делать, если не работает интернет](recipes/problem-diagnosis/what-to-do-if-the-internet-does-not-work.md)
   * [Ошибка при авторизации "The browser is outdated"](recipes/problem-diagnosis/old-browser.md)
   * [Если соединение по IPsec не устанавливается](recipes/problem-diagnosis/ipsec.md)
 
